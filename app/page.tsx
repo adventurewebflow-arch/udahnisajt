@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import AdventureCard from "./components/AdventureCard";
 import InquiryForm from "./components/InquiryForm";
@@ -7,32 +8,56 @@ export default function Home() {
   return (
     <main>
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center">
-        <div className="absolute inset-0 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950"></div>
-        <div className="absolute inset-0 bg-[url('/images/hero.jpg')] bg-cover bg-center opacity-10"></div>
-        <div className="relative z-10 mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white">
-            Otkrij prirodu
-          </h1>
-          <h2 className="text-4xl md:text-6xl font-bold text-emerald-400 mb-6">
-            Udahni avanturu
-          </h2>
-          <p className="text-xl md:text-2xl text-slate-300 mb-8 max-w-3xl mx-auto">
-            Vaša vrata ka nezaboravnim avanturama u prirodi. Otkrijte ljepotu Bosne i Hercegovine sa nama.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="#kontakt"
-              className="px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-white font-medium rounded-lg transition-colors"
-            >
-              Rezerviši turu
-            </a>
-            <a
-              href="#popularne"
-              className="px-8 py-4 bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white font-medium rounded-lg transition-colors border border-white/10"
-            >
-              Pogledaj ture
-            </a>
+      <section className="relative overflow-hidden bg-slate-950">
+        <div className="relative min-h-[78vh]">
+          <Image
+            src="/hero.webp"
+            alt="Udahni Avanturu hero"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover"
+          />
+          <div className="absolute inset-0">
+            <div className="absolute inset-0 bg-gradient-to-b from-slate-950/30 via-slate-950/20 to-slate-950/55" />
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(16,185,129,0.08),transparent_55%)]" />
+            <div className="absolute inset-x-0 bottom-0 h-40 sm:h-48 md:h-56 bg-gradient-to-b from-transparent to-slate-950" />
+          </div>
+          <div className="relative mx-auto flex min-h-[78vh] max-w-6xl items-center justify-center px-4 py-20 text-center">
+            <div className="max-w-3xl">
+              <div className="mb-4 flex flex-col items-center gap-2">
+                <div className="flex flex-wrap justify-center gap-2 text-xs sm:text-sm">
+                  <span className="rounded-full border border-white/15 bg-white/5 px-3 py-1 text-slate-100/90">
+                    Hiking • Kampovanje • Rafting
+                  </span>
+                </div>
+
+                <div className="flex flex-wrap justify-center gap-2 text-xs sm:text-sm">
+                  <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-slate-200/90">NP Sutjeska</span>
+                  <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-slate-200/90">Park prirode Piva</span>
+                  <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-slate-200/90">NP Durmitor</span>
+                </div>
+              </div>
+
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white leading-[1.05] drop-shadow-[0_12px_40px_rgba(0,0,0,0.75)]">
+                Otkrij prirodu <span className="text-emerald-400">Udahni avanturu</span>
+              </h1>
+
+              <p className="mt-4 text-sm sm:text-base md:text-lg text-slate-100/90 leading-relaxed drop-shadow-[0_10px_30px_rgba(0,0,0,0.75)]">
+                Vaša vrata ka nezaboravnim avanturama u prirodi. Otkrijte ljepotu Bosne i Hercegovine sa nama.
+              </p>
+
+              <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
+                <a href="#kontakt"
+                   className="inline-flex items-center justify-center rounded-lg bg-emerald-500 px-6 py-3 font-semibold text-slate-950 hover:bg-emerald-400 transition shadow-[0_18px_45px_-20px_rgba(16,185,129,0.65)]">
+                  Pošalji upit
+                </a>
+                <a href="#ture"
+                   className="inline-flex items-center justify-center rounded-lg border border-white/20 bg-white/5 px-6 py-3 font-semibold text-white hover:bg-white/10 transition">
+                  Pogledaj ture
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -72,7 +97,7 @@ export default function Home() {
       </section>
 
       {/* Popular Tours Section */}
-      <section id="popularne" className="py-16 md:py-24 relative">
+      <section id="ture" className="py-16 md:py-24 relative">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-slate-900/30 to-transparent"></div>
         <div className="relative mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
           <div className="mb-12">
