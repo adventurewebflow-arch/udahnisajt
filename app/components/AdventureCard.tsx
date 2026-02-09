@@ -23,6 +23,15 @@ export default function AdventureCard({ adventure }: AdventureCardProps) {
   // Safe image check
   const hasImage = Boolean(adventure.image && adventure.image.trim().length > 0);
 
+  // Scale image by slug for better framing
+  const imageScaleClass =
+    adventure.slug === "porodicni-vikend-tjentiste-zelengora"
+      ? "scale-[1.2]"
+      : adventure.slug === "kampovanje-trnovacko-jezero-maglic" ||
+        adventure.slug === "kampovanje-zelengora-bregoč-jeep-safari"
+        ? "scale-110"
+        : "";
+
   return (
     <Link href={`/ture/${adventure.slug}`}>
       <div className="group rounded-2xl border border-white/10 bg-white/5 shadow-lg backdrop-blur-sm overflow-hidden hover:scale-[1.02] hover:shadow-xl hover:border-emerald-500/30 transition-all duration-300 cursor-pointer h-full flex flex-col">
@@ -31,9 +40,10 @@ export default function AdventureCard({ adventure }: AdventureCardProps) {
           {hasImage ? (
             <Image
               src={adventure.image!}
-              alt={adventure.title}
+              alt={adventure.imageAlt ?? adventure.title}
               fill
-              className="object-cover group-hover:scale-110 transition-transform duration-500"
+              className={`object-cover transition-transform duration-500 ${imageScaleClass} group-hover:scale-110`}
+              style={{ objectFit: "cover", objectPosition: adventure.imagePosition ?? "center" }}
             />
           ) : (
             <div className="w-full h-full bg-gradient-to-br from-slate-800 via-slate-900 to-slate-800" />

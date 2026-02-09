@@ -12,6 +12,8 @@ export interface Adventure {
   dates?: string[];
   discount?: string;
   image?: string;
+  imageAlt?: string;
+  imagePosition?: string;
   highlights: string[];
   itinerary: { dayTitle: string; description: string }[];
   includes: string[];
@@ -27,6 +29,7 @@ export const adventures: Adventure[] = [
     title: "Kampovanje na Trnovačkom jezeru s usponom na Maglić",
     category: "popular",
     location: "NP Sutjeska / Trnovačko jezero / Maglić",
+    imagePosition: "center 75%",
     shortDescription: "Nezaboravna avantura kombinujući kampovanje na jednom od najljepših jezera u BiH sa usponom na najviši vrh zemlje.",
     duration: "3 dana / 2 noći",
     difficulty: "Srednja",
@@ -42,7 +45,8 @@ export const adventures: Adventure[] = [
       "26.04.2026",
       "03.05.2026"
     ],
-    image: "/images/tours/trnovacko-maglic.jpg",
+    image: "/images/tours/kampovanje-trnovacko/trnovacko-jezero-card.webp",
+    imageAlt: "Kampovanje na Trnovačkom jezeru s usponom na Maglić – NP Sutjeska, Trnovačko jezero",
     highlights: [
       "Trnovačko jezero",
       "Uspon na Maglić",
@@ -102,6 +106,7 @@ export const adventures: Adventure[] = [
     title: "Kampovanje na Zelengori sa usponom na Bregoč + Jeep safari",
     category: "popular",
     location: "NP Sutjeska / Zelengora",
+    imagePosition: "center 70%",
     shortDescription: "Kombinovana tura koja spaja planinarenje, kampovanje i avanturistički jeep safari kroz prekrasne dinarske livade.",
     duration: "3 dana / 2 noći",
     difficulty: "Laka",
@@ -116,7 +121,8 @@ export const adventures: Adventure[] = [
       "12.04.2026",
       "19.04.2026"
     ],
-    image: "/images/tours/zelengora-bregoč.jpg",
+    image: "/images/tours/zelengora/zelengora-kampovanje-card.webp",
+    imageAlt: "Kampovanje na Zelengori sa usponom na Bregoč i Jeep safari – NP Sutjeska, Zelengora",
     highlights: [
       "Orlovačko jezero",
       "Bregoč (najviši vrh Zelengore)",
@@ -187,7 +193,8 @@ export const adventures: Adventure[] = [
       "14.04.2026",
       "21.04.2026"
     ],
-    image: "/images/tours/rafting-tara.jpg",
+    image: "/images/tours/rafting-tara/rafting-hero-card.webp",
+    imageAlt: "Rafting Tarom kroz kanjon – brzaci, rijeka i priroda",
     highlights: [
       "25 km raftinga",
       "Kupanje i skokovi",
@@ -263,7 +270,8 @@ export const adventures: Adventure[] = [
       "18.04.2026",
       "25.04.2026"
     ],
-    image: "/images/tours/porodicni-vikend.jpg",
+    image: "/images/tours/porodicni-vikend-tjentiste-zelengora/porodicni-vikend-zelengora-tjentiste.webp",
+    imageAlt: "Porodični vikend na Tjentištu i Zelengori – priroda i šetnje",
     highlights: [
       "Edukativne šetnje",
       "Aktivnosti za djecu",
@@ -331,7 +339,8 @@ export const adventures: Adventure[] = [
     difficulty: "Zahtjevna",
     price: "220€",
     groupSize: "max 16",
-    image: "/images/tours/premium-maglic-tara.jpg",
+    image: "/images/tours/premium/top-tura-rafting-tarom-maglic-perucica.webp",
+    imageAlt: "Maglić, Trnovačko jezero i rafting Tarom – premium avantura u prirodi",
     highlights: [
       "Kampovanje na Prijevoru",
       "Uspon na Maglić",
@@ -392,13 +401,14 @@ export const adventures: Adventure[] = [
     slug: "zelengora-uspon-bregoč",
     title: "Zelengora – uspon na Bregoč",
     category: "day-trip",
-    location: "Zelengora / Bregoč",
+    location: "NP Sutjeska – Zelengora (Bregoč)",
+    imagePosition: "center 70%",
     shortDescription: "Jednodnevna tura na najviši vrh Zelengore sa prekrasnim vidicima na okolna jezera i planine.",
     duration: "1 dan",
     difficulty: "Srednja",
     price: "Na upit",
     groupSize: "6–16 osoba",
-    image: "/images/tours/day-bregoč.jpg",
+    image: "/images/tours/day-trips/zelengora-bregoc.webp",
     highlights: [
       "Bregoč (2017m)",
       "Panoramski vidici",
@@ -442,13 +452,14 @@ export const adventures: Adventure[] = [
     slug: "zelengora-jezera-vidikovci",
     title: "Zelengora – jezera i vidikovci",
     category: "day-trip",
-    location: "Zelengora",
+    location: "NP Sutjeska – Zelengora",
+    imagePosition: "center 70%",
     shortDescription: "Jednodnevna šetnja kroz najljepša jezera Zelengore sa prekrasnim vidikovcima i fotografskim prilikama.",
     duration: "1 dan",
     difficulty: "Laka",
     price: "Na upit",
     groupSize: "6–20 osoba",
-    image: "/images/tours/day-zelengora-jezera.jpg",
+    image: "/images/tours/day-trips/zelengora-jezera.webp",
     highlights: [
       "Orlovačko jezero",
       "Štirinsko jezero",
@@ -488,13 +499,14 @@ export const adventures: Adventure[] = [
     slug: "prasuma-perucica-vodopad-skakavac",
     title: "Prašuma Perućica i vodopad Skakavac",
     category: "day-trip",
-    location: "NP Sutjeska / Perućica",
+    location: "NP Sutjeska – Prašuma Perućica",
+    imagePosition: "center 70%",
     shortDescription: "Jednodnevna tura kroz najstariju prašumu u Evropi sa posjetom impresivnom vodopadu Skakavac.",
     duration: "1 dan",
     difficulty: "Laka",
     price: "Na upit",
     groupSize: "6–20 osoba",
-    image: "/images/tours/day-perucica.jpg",
+    image: "/images/tours/day-trips/perucica-skakavac.webp",
     highlights: [
       "Prašuma Perućica",
       "Vodopad Skakavac",
@@ -535,13 +547,13 @@ export const adventures: Adventure[] = [
     slug: "kanjoning-hrcavka",
     title: "Kanjoning Hrčavka",
     category: "day-trip",
-    location: "Hrčavka / Foča",
+    location: "NP Sutjeska – kanjon Hrčavke",
     shortDescription: "Adrenalinška jednodnevna kanjoning avantura kroz kanjon rijeke Hrčavke sa skokovima, plivanjem i spuštanjem.",
     duration: "1 dan",
     difficulty: "Srednja",
     price: "Na upit",
     groupSize: "6–12 osoba",
-    image: "/images/tours/day-kanjoning.jpg",
+    image: "/images/tours/day-trips/kanjoning-hrcavka.webp",
     highlights: [
       "Kanjoning kroz Hrčavku",
       "Skokovi sa stijena",
@@ -586,13 +598,13 @@ export const adventures: Adventure[] = [
     slug: "trnovacko-jezero",
     title: "Trnovačko jezero",
     category: "day-trip",
-    location: "NP Sutjeska / Trnovačko jezero",
+    location: "Trnovačko jezero / NP Sutjeska",
     shortDescription: "Jednodnevna tura do jednog od najljepših jezera u BiH sa prekrasnim vidicima i mogućnošću kupanja.",
     duration: "1 dan",
     difficulty: "Srednja",
     price: "Na upit",
     groupSize: "6–16 osoba",
-    image: "/images/tours/day-trnovacko.jpg",
+    image: "/images/tours/day-trips/trnovacko-jezero.webp",
     highlights: [
       "Trnovačko jezero",
       "Panoramski vidici",
@@ -638,7 +650,7 @@ export const adventures: Adventure[] = [
     difficulty: "Zahtjevna",
     price: "Na upit",
     groupSize: "6–12 osoba",
-    image: "/images/tours/day-maglic-trnovacko.jpg",
+    image: "/images/tours/day-trips/maglic-trnovacko.webp",
     highlights: [
       "Maglić (2386m)",
       "Trnovačko jezero",
@@ -674,6 +686,83 @@ export const adventures: Adventure[] = [
       {
         q: "Kada počinje tura?",
         a: "Tura počinje vrlo rano (5-6h ujutro) kako bismo imali dovoljno vremena za uspon, spust i povratak prije mraka."
+      }
+    ]
+  },
+  {
+    id: "12",
+    slug: "jeep-safari-zelengora",
+    title: "Jeep safari Zelengora",
+    category: "day-trip",
+    location: "NP Sutjeska – Zelengora",
+    shortDescription: "Jednodnevna jeep safari tura kroz prekrasne dinarske livade Zelengore sa prekrasnim vidikovcima i mogućnošću fotografisanja.",
+    duration: "1 dan",
+    difficulty: "Lako",
+    price: "70€ po osobi",
+    groupSize: "4–16 osoba",
+    image: "/images/tours/day-trips/jeep-safari-zelengora.webp",
+    highlights: [
+      "Jeep safari",
+      "Zelengora",
+      "Vidikovci",
+      "Jezera"
+    ],
+    itinerary: [
+      {
+        dayTitle: "Jednodnevna tura",
+        description: "Polazak i dolazak na Zelengoru. Jeep ruta i vidikovci. Pauze za fotografije. Povratak."
+      }
+    ],
+    includes: [
+      "Vodič",
+      "Organizacija ture"
+    ],
+    excludes: [
+      "Lični troškovi",
+      "Osiguranje (po želji)"
+    ],
+    faqs: [
+      {
+        q: "Da li je potrebna posebna oprema?",
+        a: "Ne, preporučene su patike i slojevita odjeća."
+      }
+    ]
+  },
+  {
+    id: "13",
+    slug: "via-ferata-piva",
+    title: "Via ferrata Piva",
+    category: "day-trip",
+    location: "Park prirode Piva",
+    shortDescription: "Jednodnevna via ferrata avantura u Parku prirode Piva sa prekrasnim panoramskim pogledima i sigurnim usponom uz vodiča.",
+    duration: "1 dan",
+    difficulty: "Srednja",
+    price: "65€ po osobi",
+    groupSize: "4–16 osoba",
+    image: "/images/tours/day-trips/via-ferata-piva.webp",
+    highlights: [
+      "Via ferrata",
+      "Piva",
+      "Panoramski pogledi"
+    ],
+    itinerary: [
+      {
+        dayTitle: "Jednodnevna tura",
+        description: "Okupljanje i brifing. Oprema i sigurnosne instrukcije. Uspon via ferratom. Pauza i povratak."
+      }
+    ],
+    includes: [
+      "Vodič",
+      "Osnovna oprema (kaciga/pojas)"
+    ],
+    excludes: [
+      "Prevoz",
+      "Hrana i piće"
+    ],
+    faqs: [
+      {
+        q: "Da li je sigurno za početnike?",
+        a: "Da, uz vodiča i pravilnu opremu, tempo se prilagođava grupi."
       }
     ]
   }
