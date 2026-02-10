@@ -3,6 +3,7 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import { getAdventureBySlug, adventures } from "../../data/adventures";
 import InquiryForm from "../../components/InquiryForm";
+import Accordion from "../../components/Accordion";
 import type { Metadata } from "next";
 
 console.log("DETAIL PAGE MODULE LOADED ✅");
@@ -47,30 +48,45 @@ export default async function TourDetailPage({ params }: { params: Promise<{ slu
     notFound();
   }
 
+  const itineraryItems =
+    adventure.itinerary?.map((d) => ({
+      title: d.dayTitle,
+      content: <p className="text-gray-300 leading-relaxed">{d.description}</p>,
+    })) ?? [];
+  const faqItems =
+    adventure.faqs?.map((f) => ({
+      title: f.q,
+      content: <p className="text-gray-300 leading-relaxed">{f.a}</p>,
+    })) ?? [];
+
   return (
     <main className="min-h-screen pt-20">
       {/* Hero Banner */}
-      <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center">
-        {adventure.image ? (
-          <div className="absolute inset-0">
-            <Image
-              src={adventure.image}
-              alt={adventure.title}
-              fill
-              className="object-cover"
-              priority
-            />
-            <div className="absolute inset-0 bg-black/50" />
-          </div>
-        ) : (
-          <div className="absolute inset-0 bg-gradient-to-br from-gray-800 to-gray-900" />
-        )}
+      <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center min-[900px]:min-h-0 min-[900px]:h-auto min-[900px]:py-16">
+        <div className="absolute inset-0 min-[900px]:hidden">
+          {adventure.image ? (
+            <>
+              <Image
+                src={adventure.image}
+                alt={adventure.title}
+                fill
+                className="object-cover"
+                priority
+              />
+              <div className="absolute inset-0 bg-black/50" />
+            </>
+          ) : (
+            <div className="w-full h-full bg-gradient-to-br from-gray-800 to-gray-900" />
+          )}
+        </div>
 
-        <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
+        <div className="relative z-10 w-full max-w-4xl mx-auto px-4 py-6 text-center min-[900px]:max-w-2xl min-[900px]:px-6">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
             {adventure.title}
           </h1>
-          <p className="text-xl text-gray-200">{adventure.shortDescription}</p>
+          <p className="text-xl text-gray-200 max-w-[70ch] mx-auto">
+            {adventure.shortDescription}
+          </p>
           {adventure.location && (
             <p className="text-lg text-gray-300 mt-2">📍 {adventure.location}</p>
           )}
@@ -121,19 +137,10 @@ export default async function TourDetailPage({ params }: { params: Promise<{ slu
             )}
 
             {/* Itinerary */}
-            {adventure.itinerary && adventure.itinerary.length > 0 && (
+            {itineraryItems.length > 0 && (
               <section>
                 <h2 className="text-3xl font-bold mb-6">Itinerar</h2>
-                <div className="space-y-6">
-                  {adventure.itinerary.map((day, index) => (
-                    <div key={index} className="bg-gray-800 rounded-xl p-6">
-                      <h3 className="text-xl font-semibold text-emerald-400 mb-2">
-                        {day.dayTitle}
-                      </h3>
-                      <p className="text-gray-300 leading-relaxed">{day.description}</p>
-                    </div>
-                  ))}
-                </div>
+                <Accordion items={itineraryItems} defaultOpenIndex={0} />
               </section>
             )}
 
@@ -196,17 +203,10 @@ export default async function TourDetailPage({ params }: { params: Promise<{ slu
             )}
 
             {/* FAQs */}
-            {adventure.faqs && adventure.faqs.length > 0 && (
+            {faqItems.length > 0 && (
               <section>
                 <h2 className="text-3xl font-bold mb-6">Često postavljana pitanja</h2>
-                <div className="space-y-6">
-                  {adventure.faqs.map((faq, index) => (
-                    <div key={index} className="bg-gray-800 rounded-xl p-6">
-                      <h3 className="text-xl font-semibold text-white mb-3">{faq.q}</h3>
-                      <p className="text-gray-300 leading-relaxed">{faq.a}</p>
-                    </div>
-                  ))}
-                </div>
+                <Accordion items={faqItems} />
               </section>
             )}
           </div>
@@ -272,11 +272,11 @@ export default async function TourDetailPage({ params }: { params: Promise<{ slu
                   {adventure.dates && adventure.dates.length > 0 && (
                     <div>
                       <div className="text-sm text-gray-400 mb-3">Dostupni datumi</div>
-                      <div className="space-y-2">
+                      <div className="grid grid-cols-2 gap-x-3 gap-y-2">
                         {adventure.dates.map((date, index) => (
                           <div
                             key={index}
-                            className="px-3 py-2 bg-gray-900 rounded-lg text-emerald-400 text-sm font-medium"
+                            className="text-sm px-2 py-1 rounded-lg bg-gray-900 text-emerald-400 font-medium"
                           >
                             {date}
                           </div>
