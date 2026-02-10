@@ -12,3 +12,76 @@ body {
 body {
   background: #020617; /* slate-950 */
 }
+
+/* Tour detail accordion */
+.ua-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.ua-accordion [role="region"] {
+  border-top: 1px solid rgba(55, 65, 81, 0.5);
+}
+
+/* Tour detail hero: desktop text-only, mobile keeps image */
+@media (min-width: 900px) {
+  .ua-tour-hero {
+    min-height: 0;
+    height: auto;
+    display: block;
+    padding: 0;
+  }
+
+  .ua-tour-heroMedia {
+    display: none;
+  }
+
+  .ua-tour-heroText {
+    padding: 64px 0 28px;
+    max-width: 980px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .ua-tour-heroText h1 {
+    font-size: clamp(34px, 4.2vw, 58px);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+  }
+
+  .ua-tour-heroText .ua-tour-sub {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    opacity: 0.9;
+    max-width: 70ch;
+    text-align: center;
+  }
+
+  .ua-tour-heroText .ua-tour-loc {
+    margin-top: 10px;
+    font-size: 14px;
+    opacity: 0.85;
+    text-align: center;
+  }
+
+  .ua-tour-heroText .ua-tour-chips {
+    display: none;
+  }
+}
+
+/* Tour detail sidebar: dates in 2 columns */
+.ua-dates-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px 12px;
+  font-size: 13px;
+}
+
+.ua-dates-grid__item {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
