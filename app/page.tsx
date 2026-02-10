@@ -62,40 +62,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About Section */}
-      <section id="o-nama" className="py-16 md:py-24 relative">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-slate-900/50 to-transparent"></div>
-        <div className="relative mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
-          <div className="mb-12">
-            <h2 className="text-4xl font-bold text-white mb-3">O nama</h2>
-            <div className="w-16 h-1 bg-emerald-400"></div>
-          </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 text-center border border-white/10 hover:border-emerald-500/30 transition-colors">
-              <div className="text-4xl mb-4">👥</div>
-              <h3 className="text-xl font-semibold mb-2 text-white">Male grupe</h3>
-              <p className="text-slate-400">
-                Organizujemo ture sa malim brojem učesnika kako bismo osigurali personalizovani pristup.
-              </p>
-            </div>
-            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 text-center border border-white/10 hover:border-emerald-500/30 transition-colors">
-              <div className="text-4xl mb-4">🏠</div>
-              <h3 className="text-xl font-semibold mb-2 text-white">Domaćinski pristup</h3>
-              <p className="text-slate-400">
-                Naš domaćinski pristup čini da se osjećate kao dio porodice.
-              </p>
-            </div>
-            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 text-center border border-white/10 hover:border-emerald-500/30 transition-colors">
-              <div className="text-4xl mb-4">📍</div>
-              <h3 className="text-xl font-semibold mb-2 text-white">Najatraktivnije lokacije</h3>
-              <p className="text-slate-400">
-                Pažljivo birane lokacije koje predstavljaju najljepše dijelove BiH.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Popular Tours Section */}
       <section id="ture" className="py-16 md:py-24 relative">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-slate-900/30 to-transparent"></div>
@@ -165,6 +131,40 @@ export default function Home() {
                 className="aspect-square rounded-lg bg-gradient-to-br from-slate-800 via-slate-900 to-slate-800 border border-white/10"
               />
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section id="o-nama" className="py-16 md:py-24 relative">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-slate-900/50 to-transparent"></div>
+        <div className="relative mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-12">
+            <h2 className="text-4xl font-bold text-white mb-3">O nama</h2>
+            <div className="w-16 h-1 bg-emerald-400"></div>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 text-center border border-white/10 hover:border-emerald-500/30 transition-colors">
+              <div className="text-4xl mb-4">👥</div>
+              <h3 className="text-xl font-semibold mb-2 text-white">Male grupe</h3>
+              <p className="text-slate-400">
+                Organizujemo ture sa malim brojem učesnika kako bismo osigurali personalizovani pristup.
+              </p>
+            </div>
+            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 text-center border border-white/10 hover:border-emerald-500/30 transition-colors">
+              <div className="text-4xl mb-4">🏠</div>
+              <h3 className="text-xl font-semibold mb-2 text-white">Domaćinski pristup</h3>
+              <p className="text-slate-400">
+                Naš domaćinski pristup čini da se osjećate kao dio porodice.
+              </p>
+            </div>
+            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 text-center border border-white/10 hover:border-emerald-500/30 transition-colors">
+              <div className="text-4xl mb-4">📍</div>
+              <h3 className="text-xl font-semibold mb-2 text-white">Najatraktivnije lokacije</h3>
+              <p className="text-slate-400">
+                Pažljivo birane lokacije koje predstavljaju najljepše dijelove BiH.
+              </p>
+            </div>
           </div>
         </div>
       </section>

@@ -5,6 +5,10 @@ import { getAdventureBySlug, adventures } from "../../data/adventures";
 import InquiryForm from "../../components/InquiryForm";
 import type { Metadata } from "next";
 
+console.log("DETAIL PAGE MODULE LOADED ✅");
+console.log("ADVENTURES COUNT (module):", adventures?.length);
+console.log("FIRST 5 SLUGS (module):", adventures?.slice(0,5).map(a => a.slug));
+
 export async function generateStaticParams() {
   return adventures.map((adventure) => ({
     slug: adventure.slug,
@@ -14,9 +18,10 @@ export async function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
-  const adventure = getAdventureBySlug(params.slug);
+  const { slug } = await params;
+  const adventure = getAdventureBySlug(slug);
 
   if (!adventure) {
     return {
@@ -30,8 +35,13 @@ export async function generateMetadata({
   };
 }
 
-export default function TourDetailPage({ params }: { params: { slug: string } }) {
-  const adventure = getAdventureBySlug(params.slug);
+export default async function TourDetailPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  console.log("PARAMS.SLUG:", slug);
+  console.log("DECODED:", decodeURIComponent(slug));
+  console.log("FOUND:", !!getAdventureBySlug(slug));
+  
+  const adventure = getAdventureBySlug(slug);
 
   if (!adventure) {
     notFound();

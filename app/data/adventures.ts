@@ -769,7 +769,8 @@ export const adventures: Adventure[] = [
 ];
 
 export function getAdventureBySlug(slug: string): Adventure | undefined {
-  return adventures.find((a) => a.slug === slug);
+  const s = decodeURIComponent(slug).trim().toLowerCase();
+  return adventures.find((a) => a.slug.trim().toLowerCase() === s);
 }
 
 export const popularAdventures = adventures.filter((a) => a.category === "popular");
