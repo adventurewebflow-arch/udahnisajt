@@ -65,6 +65,12 @@ export default function Navbar() {
               Galerija
             </Link>
             <Link
+              href="/o-nama"
+              className="text-slate-200 hover:text-emerald-400 transition-colors"
+            >
+              O nama
+            </Link>
+            <Link
               href="/vodici"
               className="text-slate-200 hover:text-emerald-400 transition-colors"
             >
@@ -150,6 +156,13 @@ export default function Navbar() {
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Galerija
+              </Link>
+              <Link
+                href="/o-nama"
+                className="text-slate-200 hover:text-emerald-400 transition-colors"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                O nama
               </Link>
               <Link
                 href="/vodici"

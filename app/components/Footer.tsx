@@ -43,6 +43,14 @@ export default function Footer() {
               </li>
               <li>
                 <Link
+                  href="/galerija"
+                  className="text-slate-400 hover:text-emerald-400 transition-colors"
+                >
+                  Galerija
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/vodici"
                   className="text-slate-400 hover:text-emerald-400 transition-colors"
                 >

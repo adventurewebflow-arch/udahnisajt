@@ -150,6 +150,14 @@ export default function Home() {
               </p>
             </div>
           </div>
+          <div className="mt-12 text-center">
+            <Link
+              href="/o-nama"
+              className="inline-flex items-center justify-center rounded-lg border border-white/20 bg-white/5 px-6 py-3 font-semibold text-white hover:bg-white/10 transition"
+            >
+              Saznaj više
+            </Link>
+          </div>
         </div>
       </section>
 
