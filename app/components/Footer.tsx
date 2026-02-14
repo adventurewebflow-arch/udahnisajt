@@ -54,7 +54,7 @@ export default function Footer() {
                   href="/vodici"
                   className="text-slate-400 hover:text-emerald-400 transition-colors"
                 >
-                  Vodiči
+                  Blog
                 </Link>
               </li>
               <li>

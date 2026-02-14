@@ -3,9 +3,9 @@ import Image from "next/image";
 import { blogPosts } from "../data/blog";
 
 export const metadata = {
-  title: "Vodici - Udahni Avanturu",
+  title: "Blog - Udahni Avanturu",
   description:
-    "Upoznajte naše iskusne vodiče i pročitajte korisne članke o planinarenju, sigurnosti i avanturama u prirodi.",
+    "Korisni vodiči, savjeti i priče sa naših avantura. Planinarenje, NP Sutjeska, Zelengora, Perućica i više.",
 };
 
 export default function GuidesPage() {
@@ -14,10 +14,9 @@ export default function GuidesPage() {
       {/* Hero Section */}
       <section className="py-20 px-4 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">Vodici i blog</h1>
+          <h1 className="text-5xl md:text-6xl font-bold mb-6">Blog</h1>
           <p className="text-xl text-gray-300">
-            Upoznajte naše iskusne vodiče i pročitajte korisne članke o planinarenju, sigurnosti i
-            avanturama u prirodi.
+            Korisni vodiči, savjeti i priče sa naših avantura. Planinarenje, NP Sutjeska, Zelengora, Perućica i više.
           </p>
         </div>
       </section>

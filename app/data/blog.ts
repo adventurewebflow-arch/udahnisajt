@@ -537,8 +537,124 @@ export const blogPosts: BlogPost[] = [
     image: "/images/blog/perucica.jpg",
     tags: ["Prašuma Perućica", "NP Sutjeska", "priroda", "biodiverzitet"],
   },
+  {
+    id: "5",
+    title: "Zelengora: jezera, vidikovci i najljepše rute",
+    slug: "zelengora-jezera-vidikovci-vodic",
+    excerpt:
+      "Zelengora nudi preko devet prekrasnih jezera, spektakularne vidikove i rute za sve nivoe. Kompletan vodič kroz ovu planinu u srcu NP Sutjeska.",
+    content: `
+      <h1>Zelengora: jezera, vidikovci i najljepše rute</h1>
+      
+      <p>Zelengora je planina u srcu Nacionalnog parka Sutjeska koja nudi preko devet prirodnih jezera, dinarske livade i nezaboravne vidikove. Ovaj vodič će vam pomoći da se pripremite za avanturu na Zelengori i izaberete rutu koja vam odgovara.</p>
+
+      <h2>Zašto Zelengora?</h2>
+      
+      <p>Zelengora je jedinstvena po broju jezera – Orlovačko, Štirinsko, Kotlaničko, Donje i Gornje bare, i druga. Svako jezero ima svoj karakter, a staze koje ih povezuju prolaze kroz livade, šume i kamenite predjele. Planina je pristupačna i za početnike (lakše rute) i za iskusnije planinare (npr. uspon na Bregoč, 2017m).</p>
+
+      <h2>Najpopularnije rute</h2>
+      
+      <h3>Jezera i vidikovci (laka)</h3>
+      <p>Ruta koja vodi kroz Orlovačko, Štirinsko i druga jezera, sa pauzama na vidikovcima. Idealna za jednodnevni izlet i fotografe. Trajanje: 4–6 sati.</p>
+
+      <h3>Uspon na Bregoč (srednja)</h3>
+      <p>Bregoč je najviši vrh Zelengore (2017m). Ruta traje oko 4–5 sati uspona, sa spektakularnim vidicima na okolna jezera i planine. Zahtijeva srednju kondiciju.</p>
+
+      <h2>Kada ići?</h2>
+      
+      <p>Najbolje vrijeme je od maja do oktobra. Ljeti je toplo i sunčano, jesen donosi zlatne boje. Zimi je potrebna posebna oprema i iskustvo.</p>
+
+      <h2>Šta ponijeti?</h2>
+      
+      <p>Planinske cipele, ruksak sa vodom (2L+), slojevita odjeća, krema za sunce i naočale. Za duže ture – hrana za snagu i rezervna odjeća.</p>
+
+      <h2>Organizovane ture</h2>
+      
+      <p>Ako želite iskusiti Zelengoru sa vodičem, pogledajte naše <a href="/ture/zelengora-jezera-vidikovci" class="text-emerald-400 hover:text-emerald-300 underline">jednodnevnu turu Zelengora – jezera i vidikovci</a> ili <a href="/ture/zelengora-uspon-bregoč" class="text-emerald-400 hover:text-emerald-300 underline">uspon na Bregoč</a>. Takođe nudimo <a href="/ture/kampovanje-zelengora-bregoč-jeep-safari" class="text-emerald-400 hover:text-emerald-300 underline">kampovanje na Zelengori sa jeep safarijem</a>.</p>
+
+      <p>Za sve informacije i rezervacije, <a href="/#kontakt" class="text-emerald-400 hover:text-emerald-300 underline">kontaktirajte nas</a>.</p>
+    `,
+    author: "Udahni Avanturu",
+    date: "2026-02-10",
+    image: "/images/tours/gallery/zelengora-jezero.webp",
+    tags: ["Zelengora", "NP Sutjeska", "jezera", "Bregoč"],
+  },
+  {
+    id: "6",
+    title: "Vodopad Skakavac u Perućici: šta treba znati prije ture",
+    slug: "vodopad-skakavac-perucica-vodic",
+    excerpt:
+      "Vodopad Skakavac, visok 75 metara, nalazi se u prašumi Perućici. Evo svega što trebate znati prije posjete – rute, oprema, najbolje vrijeme.",
+    content: `
+      <h1>Vodopad Skakavac u Perućici: šta treba znati prije ture</h1>
+      
+      <p>Vodopad Skakavac je jedan od najimpresivnijih vodopada u Bosni i Hercegovini. Sa visinom od 75 metara, smješten je u prašumi Perućici, unutar Nacionalnog parka Sutjeska. Ovaj vodič će vam pomoći da se pripremite za posjetu i uživate u ovom spektakularnom prirodnom fenomenu.</p>
+
+      <h2>Gdje se nalazi Skakavac?</h2>
+      
+      <p>Vodopad Skakavac se nalazi unutar prašume Perućica, najstarije prašume u Evropi. Pristup je moguć samo uz licenciranog vodiča, jer je prašuma striktno zaštićena. Ruta od ulaza do vodopada traje oko 2–3 sata lagane šetnje kroz netaknutu prirodu.</p>
+
+      <h2>Šta vidjeti na putu?</h2>
+      
+      <p>Put do Skakavca vodi kroz stara stabla, bujnu vegetaciju i potoke. Prašuma sama po sebi je atrakcija – možete vidjeti stabla stara preko 300 godina i brojne vrste biljaka i životinja. Vodopad se otkriva naglo, nakon posljednjeg uspona – impresivan i bučan.</p>
+
+      <h2>Najbolje vrijeme za posjetu</h2>
+      
+      <p>Pro proljeće i ljeto (maj–septembar) su idealni – voda je obilna, a priroda u punom cvijetu. U jesen je takođe lijepo zbog boja lišća. Zimi može biti opasno zbog klizavih staza.</p>
+
+      <h2>Šta ponijeti?</h2>
+      
+      <ul>
+        <li>Planinske cipele sa dobrim prijanjanjem (staze mogu biti vlažne)</li>
+        <li>Vodootporna jakna (prašuma je vlažna, kiša moguća)</li>
+        <li>Ruksak sa vodom i hranom</li>
+        <li>Fotoaparat – Skakavac je spektakularan za fotografisanje</li>
+      </ul>
+
+      <h2>Organizovane ture</h2>
+      
+      <p>Pristup Perućici i Skakavcu je moguć samo uz vodiča. Naša <a href="/ture/prasuma-perucica-vodopad-skakavac" class="text-emerald-400 hover:text-emerald-300 underline">jednodnevna tura Prašuma Perućica i vodopad Skakavac</a> uključuje transfer, vodiča, ručak i edukativni sadržaj. Pogledajte datume i <a href="/#kontakt" class="text-emerald-400 hover:text-emerald-300 underline">kontaktirajte nas</a> za rezervaciju.</p>
+    `,
+    author: "Udahni Avanturu",
+    date: "2026-02-12",
+    image: "/images/tours/gallery/vodopad-skakavac-perucica.webp",
+    tags: ["Vodopad Skakavac", "Prašuma Perućica", "NP Sutjeska"],
+  },
+  {
+    id: "7",
+    title: "Prvomajska avantura: kako nam je bilo prošle godine",
+    slug: "prvomajska-avantura-utisci",
+    excerpt:
+      "Prošlog prvog maja – skoro 70 učesnika, edukativni program u petak, odlična prognoza, Trnovačko i Zelengora. Kratak recap naše Prvomajske avanture.",
+    content: `
+      <h1>Prvomajska avantura: kako nam je bilo prošle godine</h1>
+      
+      <p>Prošlog prvog maja organizovali smo Prvomajsku avanturu na Tjentištu – aranžman u bungalovima sa turama po izboru (Trnovačko jezero ili Prašuma Perućica u subotu, Zelengora u nedjelju). Evo kratkog recap-a.</p>
+
+      <h2>Brojke i atmosfera</h2>
+      
+      <p>Skoro 70 učesnika – grupa koju smo dugo željeli vidjeti. Petak je bio posvećen dolasku, smještaju i edukativnom programu o NP Sutjesci i prašumi Perućici. Vecera, druženje i priprema za subotu.</p>
+
+      <h2>Subota – izbor avanture</h2>
+      
+      <p>Subota je bila dan za veliki izbor: ili Trnovačko jezero (srednje zahtjevno) ili Prašuma Perućica (zahtjevnije). Vrijeme je bilo odlično – sunce, vedro nebo. Grupe su se vratile zadovoljne, a uveče je bila žurka i druženje uz muziku.</p>
+
+      <h2>Nedjelja – Zelengora</h2>
+      
+      <p>Nedjelja je bila rezervisana za laganu turu po Zelengori – Donje i Gornje bare, vidikovac Borić. Idealno za opuštanje prije povratka kući. Prognoza je i dalje bila odlična.</p>
+
+      <h2>Šta nas čeka ove godine?</h2>
+      
+      <p>Ponovo organizujemo Prvomajsku avanturu – bungalovi, hrana, ulaznice, ture po izboru. Ako želite biti dio sljedeće ekipe, pogledajte našu <a href="/ture/prvomajska-avantura" class="text-emerald-400 hover:text-emerald-300 underline">Prvomajsku avanturu</a> i <a href="/#kontakt" class="text-emerald-400 hover:text-emerald-300 underline">kontaktirajte nas</a> za rezervaciju.</p>
+    `,
+    author: "Udahni Avanturu",
+    date: "2026-02-14",
+    image: "/images/tours/premium/ekipa-prvi-maj.webp",
+    tags: ["Prvomajska", "Tjentište", "recap", "avantura"],
+  },
 ];
 
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {
-  return blogPosts.find((post) => post.slug === slug);
+  const s = decodeURIComponent(slug).trim().toLowerCase();
+  return blogPosts.find((post) => post.slug.trim().toLowerCase() === s);
 }

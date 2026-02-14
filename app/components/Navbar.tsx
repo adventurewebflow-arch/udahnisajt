@@ -74,7 +74,7 @@ export default function Navbar() {
               href="/vodici"
               className="text-slate-200 hover:text-emerald-400 transition-colors"
             >
-              Vodiči
+              Blog
             </Link>
             <a
               href="/#kontakt"
@@ -169,7 +169,7 @@ export default function Navbar() {
                 className="text-slate-200 hover:text-emerald-400 transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Vodiči
+                Blog
               </Link>
               <a
                 href="/#kontakt"

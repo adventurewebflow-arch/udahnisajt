@@ -14,9 +14,10 @@ export async function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
-  const post = getBlogPostBySlug(params.slug);
+  const { slug } = await params;
+  const post = getBlogPostBySlug(slug);
 
   if (!post) {
     return {
@@ -30,8 +31,9 @@ export async function generateMetadata({
   };
 }
 
-export default function BlogPostPage({ params }: { params: { slug: string } }) {
-  const post = getBlogPostBySlug(params.slug);
+export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const post = getBlogPostBySlug(slug);
 
   if (!post) {
     notFound();
@@ -61,16 +63,16 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
       </section>
 
       {/* Content */}
-      <article className="py-12 px-4">
-        <div className="max-w-4xl mx-auto">
+      <div className="pt-10 md:pt-14">
+        <article className="ua-article max-w-3xl mx-auto px-4 pb-16">
           <div
-            className="prose prose-invert prose-lg max-w-none prose-headings:text-white prose-headings:font-bold prose-h1:text-3xl prose-h1:mb-6 prose-h1:mt-0 prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-4 prose-h3:text-2xl prose-h3:mt-8 prose-h3:mb-3 prose-p:text-gray-300 prose-p:leading-relaxed prose-p:mb-4 prose-ul:text-gray-300 prose-li:mb-2 prose-a:text-emerald-400 prose-a:no-underline hover:prose-a:underline prose-strong:text-white"
+            className="ua-article"
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
 
           {/* Tags */}
           {post.tags && post.tags.length > 0 && (
-            <div className="mt-8 flex flex-wrap gap-2">
+            <div className="mt-10 flex flex-wrap gap-2">
               {post.tags.map((tag, index) => (
                 <span
                   key={index}
@@ -83,16 +85,16 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
           )}
 
           {/* CTAs */}
-          <div className="mt-12 grid md:grid-cols-2 gap-4">
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
             <Link
-              href="/#popularne"
-              className="px-6 py-4 bg-emerald-500 hover:bg-emerald-600 text-white font-medium rounded-lg transition-colors text-center"
+              href="/#ture"
+              className="w-full px-6 py-3 bg-emerald-500 hover:bg-emerald-600 text-white font-medium rounded-lg transition-colors text-center"
             >
               Pogledaj ture
             </Link>
             <a
               href="#kontakt-form"
-              className="px-6 py-4 bg-gray-800 hover:bg-gray-700 text-white font-medium rounded-lg transition-colors text-center"
+              className="w-full px-6 py-3 bg-white/10 hover:bg-white/15 text-white font-medium rounded-lg border border-white/10 transition-colors text-center"
             >
               Pošalji upit
             </a>
@@ -125,8 +127,8 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
               Nazad na članke
             </Link>
           </div>
-        </div>
-      </article>
+        </article>
+      </div>
     </main>
   );
 }
