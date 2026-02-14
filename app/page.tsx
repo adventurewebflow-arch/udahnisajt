@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import AdventureCard from "./components/AdventureCard";
+import GalleryPreview from "./components/GalleryPreview";
 import InquiryForm from "./components/InquiryForm";
 import { popularAdventures, premiumAdventures, dayTripAdventures } from "./data/adventures";
 
@@ -116,24 +117,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Gallery Section Placeholder */}
-      <section id="galerija" className="py-16 md:py-24 relative">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-slate-900/30 to-transparent"></div>
-        <div className="relative mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
-          <div className="mb-12">
-            <h2 className="text-4xl font-bold text-white mb-3">Galerija</h2>
-            <div className="w-16 h-1 bg-emerald-400"></div>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {Array.from({ length: 8 }).map((_, i) => (
-              <div
-                key={i}
-                className="aspect-square rounded-lg bg-gradient-to-br from-slate-800 via-slate-900 to-slate-800 border border-white/10"
-              />
-            ))}
-          </div>
-        </div>
-      </section>
+      <GalleryPreview />
 
       {/* About Section */}
       <section id="o-nama" className="py-16 md:py-24 relative">
