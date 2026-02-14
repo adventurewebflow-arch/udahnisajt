@@ -327,6 +327,70 @@ export const adventures: Adventure[] = [
       }
     ]
   },
+  {
+    id: "POP-01MAY-01",
+    slug: "prvomajska-avantura",
+    title: "PRVOMAJSKA AVANTURA",
+    category: "popular",
+    location: "Tjentište / NP Sutjeska / Zelengora",
+    image: "/images/tours/premium/ekipa-prvi-maj.webp",
+    imageAlt: "Prvomajska avantura na Tjentištu – bungalovi, ture po Sutjesci i izlet na Zelengoru",
+    imagePosition: "center 55%",
+    shortDescription: "Prvomajski aranžman u bungalovima na Tjentištu: smještaj, hrana, ulaznice i dvije velike avanture — subota po izboru (Trnovačko jezero ili Prašuma Perućica), nedjelja lagana tura po Zelengori.",
+    duration: "3 dana / 2 noći",
+    difficulty: "Srednja",
+    price: "165€ po osobi",
+    groupSize: "8–20 osoba",
+    discount: "",
+    dates: ["01.05.2026"],
+    highlights: [
+      "Bungalovi na Tjentištu (2 noći)",
+      "Subota: Trnovačko jezero (srednje) ili Prašuma Perućica (zahtjevnije)",
+      "Nedjelja: Zelengora (Donje i Gornje bare + vidikovac Borić) — lakša tura",
+      "Lunch paketi za ture",
+      "Subotnja žurka i druženje",
+      "Ulaznice: NP Sutjeska + Park prirode Piva"
+    ],
+    itinerary: [
+      {
+        dayTitle: "Dan 1 (petak): Dolazak na Tjentište",
+        description: "Dolazak i smještaj u bungalove na Tjentištu. Večera, upoznavanje grupe i opušteno druženje."
+      },
+      {
+        dayTitle: "Dan 2 (subota): Izbor avanture + žurka",
+        description: "Doručak. Odlazak na jednu od opcija: Trnovačko jezero (srednje zahtjevno) ili Prašuma Perućica (zahtjevnije). Lunch paket. Povratak, večera i žurka/druženje."
+      },
+      {
+        dayTitle: "Dan 3 (nedjelja): Zelengora (lakša tura) i završetak",
+        description: "Doručak. Lakša tura po Zelengori: Donje i Gornje bare + vidikovac Borić. Lunch paket. Povratak na Tjentište i završetak aranžmana."
+      }
+    ],
+    includes: [
+      "Smještaj u bungalovima na Tjentištu (2 noći)",
+      "Večera (petak), doručak + lunch paket (subota), večera (subota), doručak + lunch paket (nedjelja)",
+      "Ulaznice: NP Sutjeska i Park prirode Piva",
+      "Organizacija i vođenje ture",
+      "Bez skrivenih troškova (piće nije uključeno)"
+    ],
+    excludes: [
+      "Piće",
+      "Lični troškovi van programa"
+    ],
+    faqs: [
+      {
+        q: "Da li moram izabrati opciju unaprijed (Trnovačko ili Perućica)?",
+        a: "Preporučujemo da izbor potvrdite ranije radi organizacije, ali se u dogovoru može uskladiti."
+      },
+      {
+        q: "Koja opcija je lakša u subotu?",
+        a: "Trnovačko jezero je srednje zahtjevno, dok je Prašuma Perućica zahtjevnija."
+      },
+      {
+        q: "Šta je uključeno u cijenu?",
+        a: "Smještaj, hrana, lunch paketi, ulaznice i organizacija — bez skrivenih troškova. Piće nije uključeno."
+      }
+    ]
+  },
   // PREMIUM TOUR
   {
     id: "5",
@@ -392,6 +456,75 @@ export const adventures: Adventure[] = [
       {
         q: "Kako rezervisati premium turu?",
         a: "Kontaktirajte nas direktno sa željenim terminom i brojem osoba. Organizujemo ture za grupe od minimum 4 osobe."
+      }
+    ]
+  },
+  {
+    id: "P-hrcavka-perucica-01",
+    slug: "hrcavka-perucica-kanjoning-prasuma-skakavac",
+    title: "Hrčavka kanjoning + Prašuma Perućica i vodopad Skakavac",
+    category: "premium",
+    location: "Tjentište / NP Sutjeska / Kanjon Hrčavke / Prašuma Perućica",
+    image: "/images/tours/premium/kanjoning-prasuma-perucica.webp",
+    imageAlt: "Kanjoning Hrčavka i prašuma Perućica do vodopada Skakavac – premium tura u Nacionalnom parku Sutjeska",
+    imagePosition: "center 55%",
+    shortDescription: "Premium vikend aranžman: kanjoning u Hrčavki i obilazak prašume Perućice do vodopada Skakavac, uz smještaj na Tjentištu, obroke i druženje oko vatre.",
+    duration: "3 dana / 2 noći",
+    difficulty: "Srednja",
+    price: "270€ po osobi",
+    groupSize: "8–13 osoba",
+    discount: "",
+    dates: ["18.07.2026", "19.07.2026"],
+    highlights: [
+      "Kanjoning Hrčavka (oko 4 sata)",
+      "Prašuma Perućica",
+      "Vodopad Skakavac",
+      "Smještaj na Tjentištu",
+      "Večernje druženje oko vatre",
+      "Kompletna kanjoning oprema uključena (najviši standardi)"
+    ],
+    itinerary: [
+      {
+        dayTitle: "Dan 1 (petak): Dolazak na Tjentište",
+        description: "Dolazak i smještaj na Tjentištu. Večera, slobodno vrijeme i druženje oko vatre. Noćenje."
+      },
+      {
+        dayTitle: "Dan 2 (subota): Kanjoning Hrčavka",
+        description: "Doručak. Odlazak na kanjoning u Hrčavku (oko 4 sata). Povratak u bazu, večera i slobodno vrijeme. Noćenje."
+      },
+      {
+        dayTitle: "Dan 3 (nedjelja): Prašuma Perućica i Skakavac",
+        description: "Doručak. Odlazak u prašumu Perućicu i obilazak do vodopada Skakavac. Povratak na Tjentište i završetak ture."
+      }
+    ],
+    includes: [
+      "Smještaj na Tjentištu (2 noći)",
+      "Večera (petak), doručak (subota), večera (subota), doručak (nedjelja)",
+      "Licencirani vodič i organizacija ture",
+      "Kompletna oprema za kanjoning (najviši standardi)",
+      "Sigurnosni brifing i podrška tokom aktivnosti"
+    ],
+    excludes: [
+      "Piće",
+      "Lična oprema (obuća/odjeća)",
+      "Troškovi van programa"
+    ],
+    faqs: [
+      {
+        q: "Da li je tura fizički zahtjevna?",
+        a: "Tura je srednje zahtjevna. Kanjoning traje oko 4 sata i zahtijeva osnovnu kondiciju i spremnost na boravak u prirodi."
+      },
+      {
+        q: "Da li je oprema za kanjoning uključena?",
+        a: "Da. Kompletna oprema za kanjoning je uključena, po najvišim standardima."
+      },
+      {
+        q: "Šta ponijeti?",
+        a: "Rezervnu odjeću, peškir, slojevitu odjeću za večernje sate i lične stvari. Detaljnu listu šaljemo prije polaska."
+      },
+      {
+        q: "Šta ako je loše vrijeme?",
+        a: "U slučaju nepovoljnih uslova, tura se prilagođava ili se dogovara novi termin."
       }
     ]
   },
