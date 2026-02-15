@@ -28,17 +28,17 @@ export default function GuidesPage() {
             <Link key={post.id} href={`/vodici/${post.slug}`}>
               <article className="h-full flex flex-col rounded-2xl overflow-hidden border border-white/10 bg-gray-900/40 hover:-translate-y-1 hover:border-white/20 transition-all duration-300 cursor-pointer">
                 {post.image ? (
-                  <div className="relative h-48 w-full overflow-hidden bg-gray-700">
+                  <div className="relative aspect-[16/9] w-full overflow-hidden rounded-t-2xl">
                     <Image
                       src={post.image}
-                      alt={post.title}
+                      alt={post.imageAlt ?? post.title}
                       fill
                       className="object-cover"
                       sizes="(max-width: 768px) 100vw, 33vw"
                     />
                   </div>
                 ) : (
-                  <div className="h-48 w-full bg-gradient-to-br from-gray-800 via-gray-700 to-gray-800" />
+                  <div className="aspect-[16/9] w-full rounded-t-2xl bg-gradient-to-br from-gray-800 to-gray-900" />
                 )}
                 <div className="p-6 flex-1 flex flex-col">
                   <h2 className="text-xl font-bold text-white mb-2 hover:text-emerald-400 transition-colors">

@@ -7,6 +7,9 @@ export interface BlogPost {
   author: string;
   date: string;
   image?: string;
+  imageAlt?: string;
+  coverImage?: string;
+  coverAlt?: string;
   tags: string[];
 }
 
@@ -85,7 +88,10 @@ export const blogPosts: BlogPost[] = [
     `,
     author: "Marko Petrović",
     date: "2026-02-05",
-    image: "/images/blog/trnovacko.jpg",
+    image: "/images/tours/blog-vodici-sutjeska-tjentiste-perucica-maglic-trnovacko/trnovacko-jezero-vodic.webp",
+    imageAlt: "Trnovačko jezero – vodič",
+    coverImage: "/images/tours/blog-vodici-sutjeska-tjentiste-perucica-maglic-trnovacko/trnovacko-jezero-vodic.webp",
+    coverAlt: "Trnovačko jezero u Nacionalnom parku Sutjeska – vodič za posjetu",
     tags: ["Trnovačko jezero", "NP Sutjeska", "planinarenje", "kampovanje"],
   },
   {
@@ -186,7 +192,10 @@ export const blogPosts: BlogPost[] = [
     `,
     author: "Stefan Jovanović",
     date: "2026-02-03",
-    image: "/images/blog/maglic.jpg",
+    image: "/images/tours/blog-vodici-sutjeska-tjentiste-perucica-maglic-trnovacko/uspon-na-maglic-savjeti.webp",
+    imageAlt: "Uspon na Maglić – savjeti",
+    coverImage: "/images/tours/blog-vodici-sutjeska-tjentiste-perucica-maglic-trnovacko/uspon-na-maglic-savjeti.webp",
+    coverAlt: "Uspon na Maglić – savjeti za rutu, opremu i sigurnost",
     tags: ["Maglić", "planinarenje", "NP Sutjeska", "savjeti"],
   },
   {
@@ -385,7 +394,10 @@ export const blogPosts: BlogPost[] = [
     `,
     author: "Ana Marić",
     date: "2026-02-01",
-    image: "/images/blog/oprema.jpg",
+    image: "/images/tours/blog-vodici-sutjeska-tjentiste-perucica-maglic-trnovacko/sta-popnijeti-u-np-sutjeska.webp",
+    imageAlt: "Šta ponijeti u NP Sutjeska",
+    coverImage: "/images/tours/blog-vodici-sutjeska-tjentiste-perucica-maglic-trnovacko/sta-popnijeti-u-np-sutjeska.webp",
+    coverAlt: "Šta ponijeti u NP Sutjeska – spisak opreme za jednodnevne i višednevne ture",
     tags: ["NP Sutjeska", "oprema", "priprema", "savjeti"],
   },
   {
@@ -534,7 +546,8 @@ export const blogPosts: BlogPost[] = [
     `,
     author: "Marko Petrović",
     date: "2026-01-28",
-    image: "/images/blog/perucica.jpg",
+    image: "/images/tours/blog-vodici-sutjeska-tjentiste-perucica-maglic-trnovacko/djevojka-na-vodopadu-skakavac.webp",
+    imageAlt: "Prašuma Perućica i vodopad Skakavac – šta treba znati prije obilaska",
     tags: ["Prašuma Perućica", "NP Sutjeska", "priroda", "biodiverzitet"],
   },
   {
@@ -576,7 +589,8 @@ export const blogPosts: BlogPost[] = [
     `,
     author: "Udahni Avanturu",
     date: "2026-02-10",
-    image: "/images/tours/gallery/zelengora-jezero.webp",
+    image: "/images/tours/blog-vodici-sutjeska-tjentiste-perucica-maglic-trnovacko/zelengora-jezera-vidikovci.webp",
+    imageAlt: "Zelengora: jezera, vidikovci i najljepše rute",
     tags: ["Zelengora", "NP Sutjeska", "jezera", "Bregoč"],
   },
   {
@@ -617,7 +631,8 @@ export const blogPosts: BlogPost[] = [
     `,
     author: "Udahni Avanturu",
     date: "2026-02-12",
-    image: "/images/tours/gallery/vodopad-skakavac-perucica.webp",
+    image: "/images/tours/blog-vodici-sutjeska-tjentiste-perucica-maglic-trnovacko/djevojka-na-vodopadu-skakavac.webp",
+    imageAlt: "Vodopad Skakavac u Perućici – šta treba znati",
     tags: ["Vodopad Skakavac", "Prašuma Perućica", "NP Sutjeska"],
   },
   {
@@ -649,7 +664,8 @@ export const blogPosts: BlogPost[] = [
     `,
     author: "Udahni Avanturu",
     date: "2026-02-14",
-    image: "/images/tours/premium/ekipa-prvi-maj.webp",
+    image: "/images/tours/blog-vodici-sutjeska-tjentiste-perucica-maglic-trnovacko/prvi-maj-blog.webp",
+    imageAlt: "Prvomajska avantura – utisci",
     tags: ["Prvomajska", "Tjentište", "recap", "avantura"],
   },
 ];

@@ -47,32 +47,46 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
   const readingTime = estimateReadingTime(post.content);
 
+  const coverSrc = post.image;
+
   return (
     <main className="min-h-screen pt-20">
-      <div className="max-w-4xl mx-auto px-4 py-12">
-        {/* Cover image */}
-        {post.image ? (
-          <div className="relative aspect-video rounded-2xl overflow-hidden mb-8 bg-gray-800">
-            <Image src={post.image} alt={post.title} fill className="object-cover" priority sizes="(max-width: 768px) 100vw, 896px" />
-          </div>
-        ) : null}
-
-        {/* Article header */}
-        <header className="mb-10">
+      {/* Hero cover image */}
+      <section className="relative h-[45vh] min-h-[320px] lg:h-[60vh] lg:min-h-[480px] flex items-center justify-center">
+        <div className="absolute inset-0">
+          {coverSrc ? (
+            <Image
+              src={coverSrc}
+              alt={post.imageAlt ?? post.title}
+              fill
+              className="object-cover"
+              priority
+              sizes="100vw"
+            />
+          ) : (
+            <div className="w-full h-full bg-gradient-to-br from-gray-800 to-gray-900" />
+          )}
+          <div className="absolute inset-0 bg-gradient-to-b from-black/65 via-black/35 to-black/70" />
+        </div>
+        <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-extrabold text-white leading-tight mb-4">
             {post.title}
           </h1>
-          <div className="flex items-center gap-2 text-gray-400 text-sm mb-4">
+          <div className="flex items-center justify-center gap-2 text-gray-300 text-sm">
             <span>{new Date(post.date).toLocaleDateString("sr-RS")}</span>
             <span>•</span>
             <span>~{readingTime} min čitanja</span>
           </div>
-          {post.excerpt ? (
-            <p className="text-gray-300 text-lg leading-relaxed max-w-2xl">
-              {post.excerpt}
-            </p>
-          ) : null}
-        </header>
+        </div>
+      </section>
+
+      <div className="max-w-4xl mx-auto px-4 py-12">
+        {/* Excerpt below hero */}
+        {post.excerpt && (
+          <p className="text-gray-300 text-lg leading-relaxed max-w-2xl mb-10">
+            {post.excerpt}
+          </p>
+        )}
 
         {/* Article content */}
         <article className="ua-article">

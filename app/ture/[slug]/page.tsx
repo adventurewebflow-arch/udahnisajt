@@ -6,10 +6,6 @@ import InquiryForm from "../../components/InquiryForm";
 import Accordion from "../../components/Accordion";
 import type { Metadata } from "next";
 
-console.log("DETAIL PAGE MODULE LOADED ✅");
-console.log("ADVENTURES COUNT (module):", adventures?.length);
-console.log("FIRST 5 SLUGS (module):", adventures?.slice(0,5).map(a => a.slug));
-
 export async function generateStaticParams() {
   return adventures.map((adventure) => ({
     slug: adventure.slug,
@@ -38,10 +34,6 @@ export async function generateMetadata({
 
 export default async function TourDetailPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  console.log("PARAMS.SLUG:", slug);
-  console.log("DECODED:", decodeURIComponent(slug));
-  console.log("FOUND:", !!getAdventureBySlug(slug));
-  
   const adventure = getAdventureBySlug(slug);
 
   if (!adventure) {
@@ -62,25 +54,54 @@ export default async function TourDetailPage({ params }: { params: Promise<{ slu
   return (
     <main className="min-h-screen pt-20">
       {/* Hero Banner */}
-      <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center min-[900px]:min-h-0 min-[900px]:h-auto min-[900px]:py-16">
-        <div className="absolute inset-0 min-[900px]:hidden">
+      <section className="ua-tour-hero relative h-[50vh] min-h-[400px] lg:h-[70vh] lg:min-h-[520px] flex items-center justify-center">
+        <div className="ua-tour-heroMedia absolute inset-0">
           {adventure.image ? (
             <>
-              <Image
-                src={adventure.image}
-                alt={adventure.title}
-                fill
-                className="object-cover"
-                priority
-              />
-              <div className="absolute inset-0 bg-black/50" />
+              {/* Mobile: blurred bg + object-contain foreground (current behavior) */}
+              <div className="lg:hidden absolute inset-0">
+                <Image
+                  src={adventure.image}
+                  alt={adventure.imageAlt ?? adventure.title}
+                  fill
+                  className="object-cover blur-md scale-110 opacity-35"
+                  priority
+                  sizes="100vw"
+                />
+                <div className="absolute inset-0 flex items-center justify-center px-4 pt-6">
+                  <div className="relative w-full h-full max-w-6xl">
+                    <Image
+                      src={adventure.image}
+                      alt={adventure.imageAlt ?? adventure.title}
+                      fill
+                      className="object-contain"
+                      priority
+                      sizes="100vw"
+                    />
+                  </div>
+                </div>
+              </div>
+              {/* Desktop: single cinematic object-cover banner */}
+              <div className="hidden lg:block absolute inset-0">
+                <Image
+                  src={adventure.image}
+                  alt={adventure.imageAlt ?? adventure.title}
+                  fill
+                  className="object-cover"
+                  priority
+                  sizes="100vw"
+                  style={{ objectPosition: adventure.imagePosition ?? "center" }}
+                />
+              </div>
+              {/* Readability overlay (stronger on desktop) */}
+              <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/35 to-black/60 lg:from-black/65 lg:via-black/35 lg:to-black/70" />
             </>
           ) : (
             <div className="w-full h-full bg-gradient-to-br from-gray-800 to-gray-900" />
           )}
         </div>
 
-        <div className="relative z-10 w-full max-w-4xl mx-auto px-4 py-6 text-center min-[900px]:max-w-2xl min-[900px]:px-6">
+        <div className="ua-tour-heroText relative z-10 w-full max-w-4xl mx-auto px-4 py-6 text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
             {adventure.title}
           </h1>

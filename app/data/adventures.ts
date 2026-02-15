@@ -528,6 +528,75 @@ export const adventures: Adventure[] = [
       }
     ]
   },
+  {
+    id: "P-durmitor-01",
+    slug: "durmitorski-prsten-via-ferata-piva-prutas",
+    title: "Durmitorski prsten + Via ferrata Piva + uspon na Prutaš",
+    category: "premium",
+    location: "Durmitor / Piva (via ferrata) / Prutaš",
+    image: "/images/tours/durmitor-aranzman/durmitor.webp",
+    imageAlt: "Durmitorski prsten, via ferrata Piva i uspon na Prutaš – premium avantura u Crnoj Gori",
+    imagePosition: "center 60%",
+    shortDescription: "Premium višednevna avantura koja kombinuje Durmitorski prsten, via ferratu Piva i uspon na Prutaš – za ljubitelje zahtjevnih planinarskih i alpinističkih izazova.",
+    duration: "3 dana / 2 noći",
+    difficulty: "Srednja–zahtjevna",
+    price: "Na upit",
+    groupSize: "6–14 osoba",
+    discount: "",
+    dates: ["Po dogovoru"],
+    highlights: [
+      "Durmitorski prsten",
+      "Via ferrata Piva",
+      "Uspon na Prutaš",
+      "Pogledi na Durmitor"
+    ],
+    itinerary: [
+      {
+        dayTitle: "Dan 1: Dolazak i Durmitorski prsten",
+        description: "Dolazak na početnu tačku. Početak obilaska Durmitorskog prstena – prekrasna planinska ruta koja otkriva najljepše vidikove na masiv Durmitora. Noćenje."
+      },
+      {
+        dayTitle: "Dan 2: Via ferrata Piva",
+        description: "Doručak. Transfer do Parka prirode Piva. Via ferrata avantura – siguran uspon uz vodiča, sa spektakularnim pogledima na jezero Piva i okolne stijene. Večera i noćenje."
+      },
+      {
+        dayTitle: "Dan 3: Uspon na Prutaš i završetak",
+        description: "Doručak. Uspon na Prutaš (2393m) – jedan od najimpresivnijih vrhova u regiji. Panoramski vidici na Durmitor, Piva i okolne planine. Povratak i završetak ture."
+      }
+    ],
+    includes: [
+      "Licencirani vodič za planinarenje i via ferrata",
+      "Tehnička oprema za via ferratu (kaciga, pojas, užad)",
+      "Transferi tokom programa",
+      "Smještaj (2 noći)",
+      "Obroci prema dogovoru",
+      "Osiguranje",
+      "Organizacija ture"
+    ],
+    excludes: [
+      "Lična oprema (planinske cipele, ruksak)",
+      "Piće",
+      "Troškovi van programa"
+    ],
+    faqs: [
+      {
+        q: "Da li trebam iskustvo sa via ferratom?",
+        a: "Preporučujemo osnovnu kondiciju i spremnost na izazov. Via ferrata je prilagođena uz vodiča – početnici mogu sudjelovati uz pravilnu opremu i instrukcije."
+      },
+      {
+        q: "Je li tehnička oprema uključena?",
+        a: "Da. Kaciga, pojas i via ferrata set su uključeni. Trebate samo planinske cipele i odgovarajuću odjeću."
+      },
+      {
+        q: "Koliko je zahtjevna tura?",
+        a: "Tura je srednje do zahtjevne – kombinuje planinarenje, via ferratu i uspon na Prutaš. Preporučujemo redovnu fizičku aktivnost prije polaska."
+      },
+      {
+        q: "Kako rezervisati?",
+        a: "Kontaktirajte nas sa željenim terminom. Organizujemo ture po dogovoru za grupe od 6 do 14 osoba."
+      }
+    ]
+  },
   // DAY TRIPS
   {
     id: "6",
