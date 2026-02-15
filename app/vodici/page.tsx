@@ -8,53 +8,61 @@ export const metadata = {
     "Korisni vodiči, savjeti i priče sa naših avantura. Planinarenje, NP Sutjeska, Zelengora, Perućica i više.",
 };
 
+function estimateReadingTime(content: string): number {
+  const text = content.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+  const words = text ? text.split(" ").length : 0;
+  return Math.max(1, Math.ceil(words / 200));
+}
+
 export default function GuidesPage() {
   return (
     <main className="min-h-screen pt-20">
-      {/* Hero Section */}
-      <section className="py-20 px-4 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">Blog</h1>
-          <p className="text-xl text-gray-300">
-            Korisni vodiči, savjeti i priče sa naših avantura. Planinarenje, NP Sutjeska, Zelengora, Perućica i više.
-          </p>
-        </div>
-      </section>
+      <div className="max-w-7xl mx-auto px-4 py-12">
+        <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Blog</h1>
+        <p className="text-gray-400 text-lg max-w-2xl mb-12">
+          Korisni vodiči, savjeti i priče sa naših avantura. Planinarenje, NP Sutjeska, Zelengora, Perućica i više.
+        </p>
 
-      {/* Blog Posts */}
-      <section className="py-20 px-4">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12">Najnoviji članci</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {blogPosts.map((post) => (
-              <Link key={post.id} href={`/vodici/${post.slug}`}>
-                <article className="bg-gray-800 rounded-xl overflow-hidden hover:scale-105 transition-all duration-300 cursor-pointer h-full flex flex-col">
-                  {post.image && (
-                    <div className="relative h-48 w-full overflow-hidden bg-gray-700">
-                      <Image
-                        src={post.image}
-                        alt={post.title}
-                        fill
-                        className="object-cover"
-                      />
-                    </div>
-                  )}
-                  <div className="p-6 flex-1 flex flex-col">
-                    <h3 className="text-xl font-bold mb-2 hover:text-emerald-400 transition-colors">
-                      {post.title}
-                    </h3>
-                    <p className="text-gray-400 text-sm mb-4 line-clamp-3">{post.excerpt}</p>
-                    <div className="mt-auto flex items-center justify-between text-sm text-gray-500">
-                      <span>{post.author}</span>
-                      <span>{new Date(post.date).toLocaleDateString("sr-RS")}</span>
-                    </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {blogPosts.map((post) => (
+            <Link key={post.id} href={`/vodici/${post.slug}`}>
+              <article className="h-full flex flex-col rounded-2xl overflow-hidden border border-white/10 bg-gray-900/40 hover:-translate-y-1 hover:border-white/20 transition-all duration-300 cursor-pointer">
+                {post.image ? (
+                  <div className="relative h-48 w-full overflow-hidden bg-gray-700">
+                    <Image
+                      src={post.image}
+                      alt={post.title}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                    />
                   </div>
-                </article>
-              </Link>
-            ))}
-          </div>
+                ) : (
+                  <div className="h-48 w-full bg-gradient-to-br from-gray-800 via-gray-700 to-gray-800" />
+                )}
+                <div className="p-6 flex-1 flex flex-col">
+                  <h2 className="text-xl font-bold text-white mb-2 hover:text-emerald-400 transition-colors">
+                    {post.title}
+                  </h2>
+                  <p className="text-gray-400 text-sm mb-4 line-clamp-3 leading-relaxed">
+                    {post.excerpt}
+                  </p>
+                  <div className="mt-auto flex items-center justify-between text-sm text-gray-500">
+                    <span>{new Date(post.date).toLocaleDateString("sr-RS")}</span>
+                    <span>~{estimateReadingTime(post.content)} min čitanja</span>
+                  </div>
+                  <span className="mt-4 inline-flex items-center text-emerald-400 text-sm font-medium hover:text-emerald-300 transition-colors">
+                    Pročitaj
+                    <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </span>
+                </div>
+              </article>
+            </Link>
+          ))}
         </div>
-      </section>
+      </div>
     </main>
   );
 }

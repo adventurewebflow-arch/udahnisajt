@@ -19,10 +19,10 @@ body {
 }
 
 .ua-article p {
-  margin-top: 0.9rem;
-  margin-bottom: 0.9rem;
-  line-height: 1.75;
+  margin: 0.9rem 0;
+  line-height: 1.85;
   font-size: 1.05rem;
+  color: rgb(209 213 219);
 }
 
 .ua-article h1 {
@@ -35,8 +35,8 @@ body {
 
 .ua-article h2 {
   margin-top: 2.2rem;
-  margin-bottom: 0.9rem;
-  font-size: 1.6rem;
+  margin-bottom: 0.8rem;
+  font-size: 1.75rem;
   font-weight: 800;
   color: white;
 }
@@ -44,7 +44,7 @@ body {
 .ua-article h3 {
   margin-top: 1.6rem;
   margin-bottom: 0.6rem;
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   font-weight: 700;
   color: rgb(243 244 246); /* gray-100 */
 }
@@ -58,14 +58,14 @@ body {
 }
 
 .ua-article ul, .ua-article ol {
-  margin-top: 0.9rem;
-  margin-bottom: 0.9rem;
-  padding-left: 1.2rem;
+  margin: 0.9rem 0;
+  padding-left: 1.25rem;
 }
 
 .ua-article li {
   margin: 0.35rem 0;
-  line-height: 1.7;
+  line-height: 1.8;
+  color: rgb(209 213 219);
 }
 
 .ua-article a {
@@ -87,10 +87,10 @@ body {
 
 .ua-article blockquote {
   margin: 1.2rem 0;
-  padding: 0.8rem 1rem;
+  padding: 0.9rem 1rem;
   border-left: 3px solid rgba(52, 211, 153, 0.6);
   background: rgba(255,255,255,0.04);
-  border-radius: 0.75rem;
+  border-radius: 1rem;
   color: rgb(229 231 235); /* gray-200 */
 }
 
