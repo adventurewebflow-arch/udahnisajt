@@ -43,12 +43,20 @@ export default async function TourDetailPage({ params }: { params: Promise<{ slu
   const itineraryItems =
     adventure.itinerary?.map((d) => ({
       title: d.dayTitle,
-      content: <p className="text-gray-300 leading-relaxed">{d.description}</p>,
+      content: (
+        <div className="text-gray-300 leading-relaxed space-y-4">
+          {(d.description ?? "")
+            .split(/\n\s*\n/)
+            .map((para, i) => (
+              <p key={i}>{para.trim()}</p>
+            ))}
+        </div>
+      ),
     })) ?? [];
   const faqItems =
     adventure.faqs?.map((f) => ({
       title: f.q,
-      content: <p className="text-gray-300 leading-relaxed">{f.a}</p>,
+      content: <p className="text-gray-300 leading-relaxed whitespace-pre-line">{f.a}</p>,
     })) ?? [];
 
   return (
@@ -122,7 +130,7 @@ export default async function TourDetailPage({ params }: { params: Promise<{ slu
             {/* O turi */}
             <section>
               <h2 className="text-3xl font-bold mb-6">O turi</h2>
-              <p className="text-lg text-gray-300 leading-relaxed">{adventure.shortDescription}</p>
+              <p className="text-lg text-gray-300 leading-relaxed">{adventure.aboutTour ?? adventure.shortDescription}</p>
             </section>
 
             {/* Highlights */}

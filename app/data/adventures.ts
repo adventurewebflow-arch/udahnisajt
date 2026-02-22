@@ -5,6 +5,7 @@ export interface Adventure {
   category: "popular" | "premium" | "day-trip";
   location: string;
   shortDescription: string;
+  aboutTour: string;
   duration: string;
   difficulty: string;
   price: string;
@@ -15,6 +16,7 @@ export interface Adventure {
   imageAlt?: string;
   imagePosition?: string;
   highlights: string[];
+  /** description: use template literal with blank lines between paragraphs, e.g. description: `Paragraph 1...\n\nParagraph 2...`.trim() */
   itinerary: { dayTitle: string; description: string }[];
   includes: string[];
   excludes: string[];
@@ -30,7 +32,8 @@ export const adventures: Adventure[] = [
     category: "popular",
     location: "NP Sutjeska / Trnovačko jezero / Maglić",
     imagePosition: "center 75%",
-    shortDescription: "Nezaboravna avantura kombinujući kampovanje na jednom od najljepših jezera u BiH sa usponom na najviši vrh zemlje.",
+    shortDescription: "Nezaboravna avantura kombinujući kampovanje na jednom od najljepših jezera u Crnoj Gori sa usponom na najviši vrh Bosne i Hercegovine.",
+    aboutTour: "Kampovanje na Trnovačkom jezeru i uspon na Maglić predstavljaju jedinstveno planinsko iskustvo koje spaja tišinu visokogorskog kampa, snažnu prirodu i autentičan život ljudi ovog kraja. Tokom ture posjećujemo vidikovce prašume Perućice, prolazimo katunima u kojima se i danas živi kao prije 300–400 godina i doručkujemo kod domaćina uz uštipke, toplo mlijeko i domaći kajmak.\n\n Tri dana smo bez mreže i struje, oslonjeni na vatru, kamp i planinu oko nas. Uz sam kamp nalazi se mala planinska kafana gdje možemo popiti kafu, čaj, pivo ili rakiju i polako završiti dan. Bez žurbe, sa dovoljno vremena za prirodu, razgovor i istinski doživljaj prostora, ovo je tura za one koji žele da osjete planinu, a ne samo da je obiđu.",
     duration: "3 dana / 2 noći",
     difficulty: "Srednja",
     price: "170€ po osobi",
@@ -51,12 +54,14 @@ export const adventures: Adventure[] = [
       "Trnovačko jezero",
       "Uspon na Maglić",
       "Kampovanje",
-      "Panoramski pogledi"
+      "Panoramski pogledi",
+      "Autenticni katuni ispod Volujaka",
+      "Vidikovci prašume Perućice"
     ],
     itinerary: [
       {
-        dayTitle: "Dan 1: Dolazak i kampovanje na Trnovačkom jezeru",
-        description: "Sastanak u Foči ujutro. Transfer do NP Sutjeska i šetnja do Trnovačkog jezera. Postavljanje kampa i upoznavanje sa grupom. Večera uz jezero i uživanje u prekrasnom zalasku sunca."
+        dayTitle: "Dan 1 — Dolazak u Foču i kampovanje na Trnovačkom jezeru",
+        description: "Okupljanje grupe je u 12:30 časova u Foči. Preporuka je da se dođe 20–30 minuta ranije, kako bismo na vrijeme obavili upoznavanje, provjeru opreme i kratki brifing. U 13:00 časova polazimo terenskim vozilima prema Prijevoru, početnoj tački pješačke ture.\n\n Vožnja traje oko sat i po vremena, nakon čega započinje lagani planinarski uspon prema Trnovačkom jezeru. Pješačenje traje približno 1,5 sat, umjerenog je tempa i prilagođeno grupi, uz pauze po potrebi. \n\n Po dolasku na Trnovačko jezero postavljamo kamp — šatore, vreće i ostalu opremu. Nakon toga ložimo vatru i ostatak dana je rezervisan za odmor, druženje i upoznavanje ekipe, uz slobodno vrijeme za šetnju oko jezera i uživanje u ambijentu. Veče provodimo u kampu, u miru i tišini planine."
       },
       {
         dayTitle: "Dan 2: Uspon na Maglić",
@@ -71,32 +76,32 @@ export const adventures: Adventure[] = [
       "Vodič sa licencom",
       "Transfer iz Foče i povratak",
       "2 noći kampovanja",
-      "Svi obroci tokom ture",
-      "Osnovna oprema za kampiranje (šatori, spavaće vreće)",
-      "Osiguranje",
-      "Osnovna oprema za planinarenje"
+      "4 obroka tokom ture (doručak, lunch paket, večera, doručak)",
+      "Osnovna oprema za kampiranje (šatori, vreće za spavanje, podloške)",
+      "Takse u NP Sutjeska i boravišne takse u Park prirode Piva",
+      "Transport opreme za kampovanje na Trnovačko jezero"
     ],
     excludes: [
       "Lična oprema (planinske cipele, ruksak)",
-      "Dodatne pića",
+      "Dodatna pića",
       "Troškovi van programa"
     ],
     faqs: [
       {
         q: "Da li je potrebna posebna fizička kondicija?",
-        a: "Tura je srednje težine. Preporučujemo redovnu fizičku aktivnost najmanje mjesec dana prije ture. Uspon na Maglić traje oko 6-7 sati."
+        a: "Za boravak i kampovanje na Trnovačkom jezeru nije potrebna naročita kondicija — pristup je umjeren i prilagođen većini učesnika. Uspon na Maglić, sa druge strane, zahtijeva dobru osnovnu kondiciju, jer podrazumijeva višesatno hodanje uz uspon i spust po planinskom terenu. Tempo je prilagođen grupi i prave se pauze. Učesnici koji ne žele ili ne mogu na uspon mogu ostati kod Trnovačkog jezera, provesti dan u šetnji, kupanju, odmoru i uživanju u prirodi, bez ikakvog pritiska."
       },
       {
         q: "Šta trebam ponijeti sa sobom?",
         a: "Planinske cipele, ruksak (min. 40L), voda (min. 2L), hrana za snagu, odjeća za sve vremenske prilike, osobne stvari. Detaljnu listu šaljemo prije ture."
       },
       {
-        q: "Kako funkcioniše popust za grupe?",
-        a: "Grupe od 4 ili više osoba dobijaju 15% popusta na cijenu. Popust se primjenjuje automatski pri rezervaciji."
+        q: "Da li ću dobiti dodatne informacije prije polaska?",
+        a: "Da. Svi učesnici biće dodani u WhatsApp grupu ture Trnovačko jezero – Maglić, nekoliko dana prije polaska. U toj grupi ćete dobiti tačne informacije o okupljanju, satnici, spisku opreme, vremenskoj prognozi i sve važne upute vodiča. Tu ćemo podijeliti i posljednje detalje uoči polaska, kao i odgovore na eventualna pitanja."
       },
       {
         q: "Šta ako je loše vrijeme?",
-        a: "Ako očekujemo loše vrijeme, javljamo vam 48 sati prije ture. U takvim slučajevima možemo reorganizovati termin ili vratiti uplatu."
+        a: "Vremenski uslovi u planini mogu se brzo promijeniti. Sigurnost učesnika je prioritet i u slučaju lošeg vremena vodič može izmijeniti plan aktivnosti, pomjeriti ili odgoditi uspon na Maglić ili ponuditi alternativnu rutu. Sve promjene se jasno i blagovremeno komuniciraju, uključujući i putem WhatsApp grupe."
       }
     ]
   },
@@ -108,18 +113,15 @@ export const adventures: Adventure[] = [
     location: "NP Sutjeska / Zelengora",
     imagePosition: "center 70%",
     shortDescription: "Kombinovana tura koja spaja planinarenje, kampovanje i avanturistički jeep safari kroz prekrasne dinarske livade.",
+    aboutTour: "Kampovanje na Zelengori uz uspon na Bregoč zamišljeno je kao trodnevni boravak u srcu planine, bez žurbe i bez pritiska, gdje je fokus na prirodi, kretanju i zajedničkom doživljaju. Ova tura kombinuje jeep safari, planinarenje i kampovanje pored jezera, uz dovoljno vremena za odmor, kupanje i uživanje u pejzažima po kojima je Zelengora poznata.",
     duration: "3 dana / 2 noći",
-    difficulty: "Laka",
-    price: "150€ po osobi",
+    difficulty: "Laka - Srednja",
+    price: "160€ po osobi",
     groupSize: "6–16 osoba",
     dates: [
       "08.03.2026",
       "15.03.2026",
-      "22.03.2026",
-      "29.03.2026",
-      "05.04.2026",
-      "12.04.2026",
-      "19.04.2026"
+      
     ],
     image: "/images/tours/zelengora/zelengora-kampovanje-card.webp",
     imageAlt: "Kampovanje na Zelengori sa usponom na Bregoč i Jeep safari – NP Sutjeska, Zelengora",
@@ -128,48 +130,51 @@ export const adventures: Adventure[] = [
       "Bregoč (najviši vrh Zelengore)",
       "Jeep safari Štirinsko jezero",
       "Kampovanje",
-      "Dinarske livade"
+      "Dinarske livade",
+      "Oprema za kampovanje, obezbjedjena",
+
     ],
     itinerary: [
       {
-        dayTitle: "Dan 1: Dolazak i kampovanje na Orlovačkom jezeru",
-        description: "Sastanak u Foči ujutro. Transfer do Zelengore i šetnja do Orlovačkog jezera. Postavljanje kampa i upoznavanje sa grupom. Večera uz jezero."
+        dayTitle: "Dan 1: Dolazak i kampovanje u blizini Orlovačkog jezeru",
+        description: "Okupljanje je u Foči oko 14h, odakle se terenskim vozilima ide prema Zelengori. Parkiranje je obezbijeđeno (na lokaciji koju dobijete u Whatapp grupi učesnika), a već prvi dan provodimo u laganom ritmu, postavljajući kamp u blizini Olovačkog jezera. Ostatak dana namijenjen je upoznavanju terena, šetnjama do Olovačkog i Jugovog jezera i opuštenom druženju u kampu. Prvo veče je bez večere i rezervisano za razgovor i boravak oko vatre, u miru planine."
       },
       {
-        dayTitle: "Dan 2: Uspon na Bregoč i jeep safari",
-        description: "Rani početak sa doručkom. Uspon na Bregoč (2017m) - najviši vrh Zelengore. Prekrasni vidici na okolna jezera i planine. Poslijepodne jeep safari do Štirinskog jezera kroz dinarske livade. Večera u kampu."
+        dayTitle: "Dan 2: Uspon na Bregoč - najviši vrh Zelengore",
+        description: "Drugi dan je centralni dio ture. Nakon doručka krećemo na uspon na Bregoč, koji je najviši vrh Zelengore. Uspon traje oko tri sata i vodi preko Kozijih strana, sa kojih se pružaju široki, otvoreni panoramski pogledi na cijeli masiv Zelengore, Maglića, Lebršnika, Volujaka.\n\n Tokom uspona obezbijeđen je lanč paket. Na vrhu i duž rute pravimo pauze za odmor i fotografisanje, bez forsiranja tempa. Cijeli dan provodimo na planini, uz povratak prema kampu u popodnevnim satima. Po dolasku slijedi slobodno vrijeme za kupanje u Olovačkom jezeru, odmor i opuštanje, a uveče je obezbijeđena večera i druženje oko vatre."
       },
       {
-        dayTitle: "Dan 3: Posljednji dan i povratak",
-        description: "Lagani doručak i pakovanje. Kratka šetnja oko jezera. Povratak u Foču."
+        dayTitle: "Dan 3: Jeep Safari i povratak",
+        description: "Treći dan započinje doručkom i pakovanjem kampa. Nakon toga slijedi jeep safari, koji se realizuje specijalnim kamionom bez cerade, sa klupama, što omogućava otvoren pogled i pravi doživljaj vožnje kroz planinu. Safari vodi do panoramskih tačaka iznad Kotaričkog jezera, nakon čega se ide u kratki hiking do Štirickog jezera. Tu pravimo pauzu za odmor i kupanje za one koji to žele. Po završetku obilaska vraćamo se do kampa, uzimamo opremu, sjedamo u terenska vozila i vraćamo se u Foču, gdje tura završava u ranim popodnevnim satima.\n\n Ova tura je namijenjena svima koji žele da dožive Zelengoru sporije i potpunije,uz jezera, vrhove, tišinu i osjećaj boravka u planini, a ne samo prolaska kroz nju."
       }
     ],
     includes: [
-      "Vodič sa licencom",
+      "Vodič",
       "Transfer iz Foče i povratak",
       "Jeep safari transfer",
       "2 noći kampovanja",
-      "Svi obroci tokom ture",
-      "Osnovna oprema za kampiranje",
-      "Osiguranje"
+      "4 obroka",
+      "Oprema za kampovanje",
+      "Takse"
+      
     ],
     excludes: [
       "Lična oprema",
-      "Dodatne pića",
+      "Dodatna pića",
       "Troškovi van programa"
     ],
     faqs: [
       {
         q: "Da li je tura pogodna za početnike?",
-        a: "Da, ova tura je laka i pogodna za sve uzraste. Uspon na Bregoč je pristupačan i ne zahtijeva posebnu fizičku kondiciju."
+        a: "Tura je namijenjena osobama sa umjerenom kondicijom. Uspon na Bregoč traje oko tri sata i nije tehnički zahtjevan, ali podrazumijeva duže hodanje po planinskom terenu. Tempo je prilagođen grupi i ne forsira se brzina. Ako imate nedoumica oko svoje spremnosti, slobodno nam se javite prije prijave."
       },
       {
-        q: "Šta je uključeno u jeep safari?",
-        a: "Jeep safari uključuje transfer do Štirinskog jezera kroz prekrasne dinarske livade, sa mogućnošću fotografisanja divlje prirode i uživanja u prekrasnim vidicima."
+        q: "Da li ću dobiti dodatne informacije prije polaska?",
+        a: "Da. Svi učesnici biće dodani u WhatsApp grupu ture Zelengora, nekoliko dana prije polaska. U grupi ćete dobiti tačne informacije o mjestu okupljanja, satnici, spisku opreme, vremenskoj prognozi, kao i sve dodatne savjete i upute vodiča. Tu smo i za sva pitanja prije same ture."
       },
       {
-        q: "Gdje se kampuje?",
-        a: "Kampovanje je na Orlovačkom jezeru, jednom od najljepših jezera na Zelengori, sa prekrasnim vidicima i pristupom vodi."
+        q: "Šta ako bude loše vrijeme?",
+        a: "Vremenske prilike u planini mogu se brzo promijeniti. Sigurnost nam je prioritet i program se uvijek prilagođava uslovima na terenu. U slučaju lošeg vremena, vodič može izmijeniti redoslijed aktivnosti ili dio ture, o čemu se učesnici blagovremeno obavještavaju, uključujući i putem WhatsApp grupe."
       }
     ]
   },
@@ -180,6 +185,7 @@ export const adventures: Adventure[] = [
     category: "popular",
     location: "Rijeka Tara / Foča",
     shortDescription: "Jedinstvena rafting avantura kroz kanjon rijeke Tare sa dodatnim aktivnostima i nezaboravnim trenutcima.",
+    aboutTour: "Ova tura vas vodi kroz spektakularni kanjon rijeke Tare i spaja adrenalin raftinga s prirodom, dobrom energijom ekipe i osjećajem da ste stvarno 'pobjegli' iz grada.\n\nSve je organizovano tako da vi samo uživate: idemo u manjim grupama, uz licencirane vodiče, jasna pravila kretanja i sigurnost na prvom mjestu.\n\nU cijenu su uključene ulaznice i svi ključni troškovi organizacije (rafting oprema, transfer), bez skrivenih troškova. Piće nije uključeno u cijenu.",
     duration: "3 dana / 2 noći",
     difficulty: "Lako",
     price: "Na upit",
@@ -187,11 +193,7 @@ export const adventures: Adventure[] = [
     dates: [
       "10.03.2026",
       "17.03.2026",
-      "24.03.2026",
-      "31.03.2026",
-      "07.04.2026",
-      "14.04.2026",
-      "21.04.2026"
+      
     ],
     image: "/images/tours/rafting-tara/rafting-hero-card.webp",
     imageAlt: "Rafting Tarom kroz kanjon – brzaci, rijeka i priroda",
@@ -204,31 +206,31 @@ export const adventures: Adventure[] = [
     ],
     itinerary: [
       {
-        dayTitle: "Dan 1: Dolazak i upoznavanje sa Tarom",
-        description: "Sastanak u Foči ujutro. Transfer do rijeke Tare. Upoznavanje sa opremom i sigurnosnim procedurama. Kratka probna vožnja. Večera i noćenje."
+        dayTitle: "Dan 1 — Dolazak u kamp i večernje druženje",
+        description: "Učesnici dolaze direktno u rafting kamp, čiju tačnu lokaciju i upute za dolazak dobijaju unaprijed putem WhatsApp grupe učesnika. Dolazak je planiran u popodnevnim i večernjim satima.\n\n Po dolasku slijedi smještaj u kampu, kratko upoznavanje ekipe i večera. Veče je rezervisano za opušteno druženje uz muziku uživo, razgovor i upoznavanje, bez obaveza i žurbe. Noćenje u kampu."
       },
       {
         dayTitle: "Dan 2: Rafting avantura",
-        description: "Rani početak sa doručkom. Cjelodnevni rafting kroz kanjon Tare (25 km) sa pauzama za kupanje i skokove sa stijena. Ručak na rijeci. Večera i uživanje uz muziku."
+        description: "Nakon odmornog jutra slijedi doručak u kampu. Zatim se preuzima kompletna rafting oprema (neopreni, prsluci, kacige) i održava kratak sigurnosni brifing od strane skipera i vodiča.\n\n Nakon toga terenskim vozilima krećemo prema početnoj tački raftinga. Spust Tarom traje cijeli dan i organizovan je u laganom ritmu, sa pauzama za odmor, kupanje i fotografisanje. Ručak je organizovan na rijeci, tokom samog spusta, što omogućava da dan protiče bez vremenskog pritiska i bez vezivanja za tačne termine povratka u kamp.\n\n Rafting je kombinacija adrenalina, prirode i uživanja u kanjonu Tare, uz stalnu pratnju iskusnih skipera.\n\n Po završetku spusta vraćamo se u kamp. Nakon tuširanja i odmora slijedi večera, a veče je ponovo rezervisano za druženje i muziku uživo."
       },
       {
-        dayTitle: "Dan 3: Dodatne aktivnosti i povratak",
-        description: "Doručak i izbor dodatnih aktivnosti: hiking, zipline ili jeep safari (opciono). Ručak i povratak u Foču."
+        dayTitle: "Dan 3 — Doručak i rastanak",
+        description: "Ujutru doručkujemo u kampu. Nakon doručka slijedi slobodno vrijeme, pakovanje i polazak učesnika, čime se rafting aranžman završava."
       }
     ],
     includes: [
-      "Vodič sa licencom",
-      "Transfer iz Foče i povratak",
+      "Skiper sa licencom",
+      "Go pro snimak ture",
       "Rafting oprema (čamac, vesla, prsluk, kaciga)",
       "2 noćenja",
       "Svi obroci tokom ture",
-      "Osiguranje",
-      "Profesionalni fotograf"
+      "Boravišne takse"
+    
     ],
     excludes: [
-      "Lična oprema (kupaći kostim, obuća za vodu)",
+      "Lična oprema (kupaći kostim, šorc)",
       "Dodatne aktivnosti (hiking, zipline, jeep safari)",
-      "Dodatne pića",
+      "Dodatna pića",
       "Troškovi van programa"
     ],
     faqs: [
@@ -237,16 +239,16 @@ export const adventures: Adventure[] = [
         a: "Ne, ova tura je pogodna i za početnike. Naši vodiči će vas uputiti u sve potrebno i osigurati sigurnost tokom cijele ture."
       },
       {
-        q: "Šta trebam ponijeti za rafting?",
-        a: "Kupaći kostim, obuću koja se može mokra (ne cipele), sunčane naočale sa vezom, kremu za sunce, i suhu odjeću za nakon raftinga."
+        q: "Da li ću dobiti sve informacije prije dolaska?",
+        a: "Da. Svi učesnici biće dodani u WhatsApp grupu raftinga Tara nekoliko dana prije dolaska. U grupi ćete dobiti tačnu lokaciju kampa, upute za dolazak, satnicu, spisak stvari koje treba ponijeti, kao i sve važne informacije i savjete vodiča."
       },
       {
-        q: "Kako funkcionišu dodatne aktivnosti?",
-        a: "Dodatne aktivnosti (hiking, zipline, jeep safari) su opcione i mogu se rezervisati na licu mjesta ili unaprijed. Cijene se razlikuju po aktivnosti."
+        q: "Gdje se ruča tokom raftinga?",
+        a: "Ručak je organizovan na rijeci, tokom samog spusta. Zbog toga rafting dan protiče opušteno, bez žurbe i bez obaveze da se u tačno vrijeme stiže nazad u kamp."
       },
       {
         q: "Zašto je cijena 'Na upit'?",
-        a: "Cijena zavisi od broja učesnika, datuma i dodatnih aktivnosti. Kontaktirajte nas za tačnu ponudu prilagođenu vašim potrebama."
+        a: "Cijena je na upit jer zavisi od broja učesnika i strukture smještaja. U zavisnosti od toga da li se više osoba smješta u jedan bungalov ili se bira manji broj osoba po smještajnoj jedinici, ukupna cijena se može razlikovati. Veće grupe i zajednički smještaj obično omogućavaju nižu cijenu po osobi, dok manji broj ljudi ili komforniji raspored utiče na višu cijenu. Na ovaj način možemo svakom timu ili grupi ponuditi najpovoljniju i najrealniju opciju, bez skrivenih troškova."
       }
     ]
   },
@@ -257,55 +259,48 @@ export const adventures: Adventure[] = [
     category: "popular",
     location: "Tjentište / Zelengora",
     shortDescription: "Specijalno dizajnirana porodična tura koja omogućava svim članovima porodice da uživaju u prirodi i uče o okolini.",
+    aboutTour: "Ova porodična tura vas vodi kroz Tjentište i Zelengoru — edukativne šetnje, aktivnosti za djecu i uživanje u prirodi za cijelu porodicu.\n\nSve je organizovano tako da vi samo uživate: idemo u manjim grupama, uz licencirane vodiče, jasna pravila kretanja i sigurnost na prvom mjestu.\n\nU cijenu su uključene ulaznice i svi ključni troškovi organizacije (transfer, oprema za kampiranje) — bez skrivenih troškova. Piće nije uključeno u cijenu.",
     duration: "3 dana / 2 noći",
     difficulty: "Lako",
     price: "Na upit",
-    groupSize: "6–20 osoba",
+    groupSize: "4–30 osoba",
     dates: [
-      "14.03.2026",
-      "21.03.2026",
-      "28.03.2026",
-      "04.04.2026",
-      "11.04.2026",
-      "18.04.2026",
-      "25.04.2026"
+      "14.03.2026"
+    
     ],
     image: "/images/tours/porodicni-vikend-tjentiste-zelengora/porodicni-vikend-zelengora-tjentiste.webp",
     imageAlt: "Porodični vikend na Tjentištu i Zelengori – priroda i šetnje",
     highlights: [
       "Edukativne šetnje",
-      "Aktivnosti za djecu",
+      "Odmor za porodicu",
       "Tjentište spomenik",
-      "Zelengora jezera",
-      "Porodično kampovanje"
+      "Zelengora jezera"
+      
     ],
     itinerary: [
       {
         dayTitle: "Dan 1: Dolazak i upoznavanje sa Tjentištem",
-        description: "Sastanak u Foči ujutro. Transfer do Tjentišta. Posjeta spomeniku i edukativna šetnja sa vodičem. Postavljanje kampa i upoznavanje sa grupom. Večera i aktivnosti za djecu."
+        description: "Dolazak učesnika na Tjentište planiran je u popodnevnim satima. Nakon smještaja slijedi lagano upoznavanje grupe i šetnja Dolinom heroja, uz obilazak Spomenika Bitke na Sutjesci. Program prvog dana je opušten i prilagođen porodicama, bez žurbe i obaveza.\n\n Ukoliko se dođe ranije, postoji mogućnost korišćenja otvorenog bazena na Tjentištu, što je posebno zanimljivo za djecu. Veče je rezervisano za druženje, odmor i upoznavanje u mirnom ambijentu prirode."
       },
       {
-        dayTitle: "Dan 2: Istraživanje Zelengore",
-        description: "Doručak i transfer do Zelengore. Edukativna šetnja kroz prirodu sa fokusom na floru i faunu. Posjeta jezerima i uživanje u prirodi. Aktivnosti prilagođene djeci. Večera u kampu."
+        dayTitle: "Dan 2 — Zelengora i jezera (lagani porodični dan)",
+        description: "Nakon doručka, polazimo prema Zelengori. Dan je osmišljen kao lagani izlet, bez zahtjevnih uspona i velikih nadmorskih visina. Obilazimo Olovačko jezero i okolne predjele, uz kratke šetnje i boravak u prirodi.\n\n Program je prilagođen djeci — ima dovoljno prostora za igru, kretanje, pauze i boravak na čistom planinskom vazduhu. Ne idemo na vrhove niti radimo zahtjevne ture, već provodimo dan u sporom ritmu, uz šetnju, fotografisanje i uživanje u pejzažima Zelengore.\n\n Povratak na Tjentište je planiran u popodnevnim satima. Po povratku slijedi odmor, slobodno vrijeme i večera. Veče je predviđeno za opuštanje i porodično druženje."
       },
       {
-        dayTitle: "Dan 3: Finalne aktivnosti i povratak",
-        description: "Lagani doručak i pakovanje. Kratke igre i aktivnosti za djecu. Ručak i povratak u Foču sa nezaboravnim uspomenama."
+        dayTitle: "Dan 3 — Doručak i završetak ture",
+        description: "Ujutru doručkujemo, nakon čega se porodični vikend zvanično završava. Za one koji imaju vremena i žele da ostanu duže, postoji mogućnost dodatnog boravka na Tjentištu, uključujući kupanje u bazenu i lagano uživanje prije povratka kući."
       }
     ],
     includes: [
       "Vodič sa licencom",
-      "Transfer iz Foče i povratak",
-      "2 noći kampovanja",
-      "Svi obroci tokom ture",
-      "Edukativne šetnje",
-      "Aktivnosti za djecu",
-      "Osnovna oprema za kampiranje",
-      "Osiguranje"
+      "Transfer sa Tjentišta i povratak",
+      "2 noći",
+      "3 obroka",
+      "Sve takseS"
     ],
     excludes: [
       "Lična oprema",
-      "Dodatne pića",
+      "Dodatna pića",
       "Troškovi van programa"
     ],
     faqs: [
@@ -315,11 +310,11 @@ export const adventures: Adventure[] = [
       },
       {
         q: "Da li je sigurno za djecu?",
-        a: "Apsolutno. Svi naši vodiči su obučeni za rad sa djecom i porodicama. Tereni su laki i sigurni, a sve aktivnosti su pod nadzorom."
+        a: "Apsolutno.Tereni su laki i sigurni, a sve aktivnosti su pod nadzorom."
       },
       {
-        q: "Šta uključuju edukativne šetnje?",
-        a: "Edukativne šetnje uključuju učenje o lokalnoj flori i fauni, geologiji, istoriji regije i važnosti očuvanja prirode na način razumljiv djeci."
+        q: "Kako izgleda ishrana tokom vikenda?",
+        a: "U cijenu su uključeni doručci i večere na Tjentištu. Tokom boravka na Zelengori nema lanč paketa, jer je program lagan i prilagođen djeci, a povratak na Tjentište je planiran u vrijeme večere. Ukoliko porodica ima posebne prehrambene potrebe, to se dogovara unaprijed."
       },
       {
         q: "Kako funkcioniše cijena za djecu?",
@@ -336,33 +331,34 @@ export const adventures: Adventure[] = [
     image: "/images/tours/premium/ekipa-prvi-maj.webp",
     imageAlt: "Prvomajska avantura na Tjentištu – bungalovi, ture po Sutjesci i izlet na Zelengoru",
     imagePosition: "center 55%",
-    shortDescription: "Prvomajski aranžman u bungalovima na Tjentištu: smještaj, hrana, ulaznice i dvije velike avanture — subota po izboru (Trnovačko jezero ili Prašuma Perućica), nedjelja lagana tura po Zelengori.",
+    shortDescription: "Prvomajski aranžman u bungalovima na Tjentištu: smještaj, hrana, ulaznice i dvije velike avanture, subota Trnovačko jezero, nedjelja lagana tura po Zelengori.",
+    aboutTour: "Ova trodnevna avantura osmišljena je kao spoj prirode, laganog kretanja i istinskog doživljaja planine, bez žurbe i bez pritiska. Fokus nije na „osvajanju“ kilometara, već na boravku u prostoru, druženju i osjećaju slobode koji planina pruža.",
     duration: "3 dana / 2 noći",
     difficulty: "Srednja",
-    price: "165€ po osobi",
+    price: "185€ po osobi",
     groupSize: "8–20 osoba",
-    discount: "",
+    discount: "5+ osoba - 10% popusta \n\n 10+ osoba - 15% popusta",
     dates: ["01.05.2026"],
     highlights: [
       "Bungalovi na Tjentištu (2 noći)",
-      "Subota: Trnovačko jezero (srednje) ili Prašuma Perućica (zahtjevnije)",
+      "Subota: Trnovačko jezero",
       "Nedjelja: Zelengora (Donje i Gornje bare + vidikovac Borić) — lakša tura",
       "Lunch paketi za ture",
-      "Subotnja žurka i druženje",
+      "Subotnja mala žurka i druženje",
       "Ulaznice: NP Sutjeska + Park prirode Piva"
     ],
     itinerary: [
       {
         dayTitle: "Dan 1 (petak): Dolazak na Tjentište",
-        description: "Dolazak i smještaj u bungalove na Tjentištu. Večera, upoznavanje grupe i opušteno druženje."
+        description: "Dolazak učesnika planiran je tokom dana na Tjentište. Nakon smještaja slijedi slobodno vrijeme za odmor i prvo upoznavanje sa ambijentom Nacionalnog parka Sutjeska. Lagana šetnja Dolinom heroja i obilazak Spomenika Bitke na Sutjesci uvod su u dane koji slijede, bez žurbe i bez pritiska.\n\n Ovo je dan za prilagođavanje, upoznavanje grupe i uživanje u prostoru. U večernjim satima, oko 20:00, planirana je zajednička večera. Nakon večere slijedi lagano druženje u kampu, razgovor, upoznavanje i opuštanje u prirodnom ambijentu, uz mirnu atmosferu i osjećaj da praznik zaista počinje."
       },
       {
-        dayTitle: "Dan 2 (subota): Izbor avanture + žurka",
-        description: "Doručak. Odlazak na jednu od opcija: Trnovačko jezero (srednje zahtjevno) ili Prašuma Perućica (zahtjevnije). Lunch paket. Povratak, večera i žurka/druženje."
+        dayTitle: "Dan 2 (subota):Trnovačko jezero, vidikovci i prašuma Perućica",
+        description: "Nakon doručka preuzimamo lanč pakete i krećemo prema Trnovačkom jezeru. Dolazak na jezero planiran je u prijepodnevnim satima, gdje nas dočekuje jedno od najljepših planinskih jezera regiona. Ovdje imamo dovoljno vremena za odmor, šetnju obalom, fotografisanje i uživanje u prirodi.\n\n Za one koji žele više aktivnosti, nudimo opcije laganog i srednje zahtjevnog hoda do vidikovaca iznad jezera. Kraća varijanta podrazumijeva oko 15 minuta hoda, dok je duža varijanta približno sat i po hoda u jednom pravcu, do vidikovca sa kojeg se vidi cijelo Trnovačko jezero u prepoznatljivom obliku srca. Svako bira tempo i mjeru po sopstvenim željama.\n\n U popodnevnim satima, oko 16:00, krećemo prema Prijevoru, gdje nas čekaju terenska vozila. Pravimo pauzu na panoramskoj tački ispod Maglića, sa pogledom prema Volujaku, Zelengori, Jahorini, Lebršniku i Treskavici. Nakon toga obilazimo vidikovce prašume Perućice, u skladu sa vremenom i uslovima na terenu.\n\n Povratak u kamp je u večernjim satima, gdje nas čeka večera i opušteno druženje uz tihu muziku, sabiranje utisaka i razgovor o danu koji je iza nas."
       },
       {
-        dayTitle: "Dan 3 (nedjelja): Zelengora (lakša tura) i završetak",
-        description: "Doručak. Lakša tura po Zelengori: Donje i Gornje bare + vidikovac Borić. Lunch paket. Povratak na Tjentište i završetak aranžmana."
+        dayTitle: "Dan 3 (nedjelja): Zelengora, jezera i završetak avanture",
+        description: "Treći dan započinjemo doručkom, nakon čega krećemo prema Zelengori. Vožnja traje oko sat do sat i po vremena. Dan je osmišljen kao lagan i opuštajući, bez zahtjevnih uspona, sa fokusom na boravak u prirodi i uživanje u prostoru.\n\n Na Zelengori obilazimo vidikovce, područje Borić i jezera Donje bare, uz mogućnost šetnje do Gornjih Bara za one koji žele. Program je fleksibilan, prilagođen grupi i idealan za završetak višednevne avanture u mirnom ritmu.\n\n U popodnevnim satima započinjemo povratak, čime se program za 1. maj zvanično završava.\n\n Za detaljan program, cijenu i sve informacije o ovoj 1. maj avanturi, PDF program možete dobiti javljanjem putem Instagram stranice ili direktno na WhatsApp broj +387 65 797 200."
       }
     ],
     includes: [
@@ -378,16 +374,16 @@ export const adventures: Adventure[] = [
     ],
     faqs: [
       {
-        q: "Da li moram izabrati opciju unaprijed (Trnovačko ili Perućica)?",
-        a: "Preporučujemo da izbor potvrdite ranije radi organizacije, ali se u dogovoru može uskladiti."
+        q: "Kako mogu dobiti detaljan program i cijenu?",
+        a: "Detaljan program, cijenu i sve dodatne informacije možete dobiti u PDF formatu javljanjem putem naše Instagram stranice ili direktno na WhatsApp broj +387 65 797 200. Nakon javljanja šaljemo kompletan program i stojimo na raspolaganju za sva pitanja."
       },
       {
-        q: "Koja opcija je lakša u subotu?",
-        a: "Trnovačko jezero je srednje zahtjevno, dok je Prašuma Perućica zahtjevnija."
+        q: "Da li je tura fizički zahtjevna?",
+        a: "Tura je osmišljena tako da bude pristupačna većini učesnika. Program kombinuje lagane šetnje i mogućnost srednje zahtjevnog hoda do vidikovaca, ali bez obaveze da svi učestvuju u svim aktivnostima. Svako bira tempo i nivo aktivnosti koji mu odgovara."
       },
       {
-        q: "Šta je uključeno u cijenu?",
-        a: "Smještaj, hrana, lunch paketi, ulaznice i organizacija — bez skrivenih troškova. Piće nije uključeno."
+        q: "Da li ćemo prije polaska dobiti dodatne informacije i upute?",
+        a: "Da. Svi prijavljeni učesnici biće dodani u WhatsApp grupu 1. maj avanture, gdje će dobiti tačne informacije o mjestu okupljanja, satnici, opremi, vremenskoj prognozi i svim važnim uputama prije polaska."
       }
     ]
   },
@@ -399,9 +395,10 @@ export const adventures: Adventure[] = [
     category: "premium",
     location: "NP Sutjeska / Trnovačko / Maglić / Tara",
     shortDescription: "Zahtjevna kombinovana tura koja spaja planinarenje, kampovanje i rafting za iskusne avanturiste koji traže izazov.",
+    aboutTour: "Ova tura je namijenjena onima koji žele više od klasične avanture. Kombinacija Maglića, Trnovačkog jezera i raftinga Tarom predstavlja fizički zahtjevno, ali izuzetno bogato iskustvo, sa snažnim pejzažima, ozbiljnim usponima i potpunim izlaskom iz zone komfora.\n\n Grupa je namjerno mala – maksimalno do 8, eventualno 15 učesnika – kako bi se zadržao kvalitet doživljaja, sigurnost i pravi timski duh. Ovo nije masovna tura. Ovo je avantura za ljude koji znaju zašto dolaze u planinu.",
     duration: "3 dana / 2 noći",
     difficulty: "Zahtjevna",
-    price: "220€",
+    price: "235€",
     groupSize: "max 16",
     image: "/images/tours/premium/top-tura-rafting-tarom-maglic-perucica.webp",
     imageAlt: "Maglić, Trnovačko jezero i rafting Tarom – premium avantura u prirodi",
@@ -409,53 +406,54 @@ export const adventures: Adventure[] = [
       "Kampovanje na Prijevoru",
       "Uspon na Maglić",
       "Spust na Trnovačko",
-      "Rafting Tarom"
+      "Rafting Tarom",
+      "Vidikovci prašume Perućice"
     ],
     itinerary: [
       {
-        dayTitle: "Dan 1: Uspon na Maglić i kampovanje na Prijevoru",
-        description: "Rani sastanak u Foči. Transfer do NP Sutjeska i direktan uspon na Maglić (2386m). Zahtjevna staza za iskusne planinare. Kampovanje na Prijevoru sa prekrasnim vidicima. Večera."
+        dayTitle: "Dan 1: Dolazak u Foču i kampovanje na Prijevoru",
+        description: "Prvi dan dolazimo u Foču u popodnevnim satima i nastavljamo prema Prijevoru, na visinu od preko 1.500 metara. Kamp postavljamo direktno ispod Maglića, u sirovom i moćnom planinskom ambijentu. Tu zajedno spremamo večeru, odmaramo i noćimo pod zvijezdama, u potpunoj tišini planine."
       },
       {
-        dayTitle: "Dan 2: Spust na Trnovačko jezero i rafting",
-        description: "Doručak i spust do Trnovačkog jezera. Kupanje i uživanje u prekrasnom okruženju. Transfer do rijeke Tare i rafting kroz kanjon. Večera i noćenje."
+        dayTitle: "Dan 2: Uspon na Maglić - Trnovačko jezero",
+        description: "Drugi dan je centralni i najzahtjevniji dio ture. Nakon doručka krećemo na kružnu turu prema Magliću, jednom od najljepših i najatraktivnijih planinarskih pravaca u regionu. Uspon traje oko 2,5 sata i fizički je zahtjevan. Ova tura nije za osnovnu kondiciju – potrebna je dobra fizička spremnost i volja za ozbiljan uspon.\n\n Ruta prolazi kroz područje Nacionalnog parka Sutjeska i Parka prirode Piva. Sa Maglića nastavljamo prema vidikovcu iznad Trnovačkog jezera, a zatim se spuštamo direktno na obalu jezera. Tu pravimo dužu pauzu za odmor i osvježenje – kafa, čaj, pivo ili rakija – uz lanč pakete i vrijeme da se doživi prostor.\n\n Nakon odmora vraćamo se prema Prijevoru. U kasnim popodnevnim satima, uz zalazak sunca, pred nama se otvaraju pogledi prema Vranjaku, Zelengori, Lebršniku, Jahorini i Treskavici. Veče ponovo provodimo u kampu, uz večeru, razgovor i sabiranje utisaka jednog od najsnažnijih planinarskih dana koje možete doživjeti."
       },
       {
-        dayTitle: "Dan 3: Finalni rafting i povratak",
-        description: "Doručak i nastavak rafting avanture. Ručak na rijeci. Povratak u Foču sa nezaboravnim uspomenama izazovne ture."
+        dayTitle: "Dan 3: Rafting na Tari i kraj avanture",
+        description: "Treći dan ustajemo rano, pakujemo kamp i krećemo prema Tari. Po dolasku u rafting kamp slijedi doručak, zaduživanje kompletne rafting opreme i priprema za spust. Rafting Tarom traje cijeli dan, bez žurbe i vremenskog pritiska. Rijeka, kanjon, pauze, uživanje i potpuni kontrast u odnosu na planinu.\n\n U kasnim popodnevnim satima dolazimo nazad u kamp, gdje se presvlačimo, tuširamo i završavamo turu.\n\n Ovo je snažna, intenzivna i nezaboravna avantura. Tura puna kontrasta, visoki vrhovi, najljepse jereo regiona i moćna rijeka Tara. Namijenjena onima koji žele pravu priču, a ne samo izlet. Ko krene na ovu turu, nosi je sa sobom dugo nakon povratka."
       }
     ],
     includes: [
       "Iskusni vodič sa licencom",
       "Transfer iz Foče i povratak",
       "2 noći kampovanja",
-      "Svi obroci tokom ture",
+      "Svi obroci tokom ture (5 obroka)",
       "Rafting oprema",
-      "Premium oprema za kampiranje",
-      "Osiguranje",
-      "Profesionalni fotograf"
+      "Oprema za kampovanje",
+      "Ulaznice u NP Sutjeska i Park prirode Piva",
+      
     ],
     excludes: [
-      "Lična oprema (planinske cipele, ruksak min. 50L)",
-      "Dodatne pića",
+      "Lična oprema (planinske cipele, ruksak, kupaći kostim)",
+      "Dodatna pića",
       "Troškovi van programa"
     ],
     faqs: [
       {
-        q: "Zašto je ova tura zahtjevna?",
-        a: "Tura kombinuje zahtjevni uspon na Maglić, spust sa opterećenjem, i rafting. Zahtijeva dobru fizičku kondiciju i iskustvo u planinarenju."
+        q: "Da li ćemo prije polaska dobiti detaljne informacije?",
+        a: "Da. Svi učesnici biće dodani u WhatsApp grupu ture nekoliko dana prije polaska. U grupi ćete dobiti tačne informacije o opremi, vremenskoj prognozi, logistici, satnici i svim važnim uputama. Tu ćemo razjasniti i posljednje detalje prije dolaska."
       },
       {
-        q: "Da li trebam imati iskustvo?",
-        a: "Da, preporučujemo iskustvo u planinarenju i dobru fizičku kondiciju. Ova tura nije pogodna za početnike."
+        q: "Kolika je veličina grupe i zašto je mala?",
+        a: "Grupa je namjerno mala – idealno 8 učesnika, maksimalno do 15. Manja grupa znači veću sigurnost, bolju organizaciju, jači timski osjećaj i kvalitetniji doživljaj na zahtjevnom terenu. Ovo nije masovna tura i tako je i zamišljena."
       },
       {
-        q: "Zašto nema fiksnih datuma?",
-        a: "Premium ture organizujemo po dogovoru kako bismo osigurali optimalne vremenske uslove i personalizovani pristup svakoj grupi."
+        q: "Da li je rafting zahtjevan nakon planine?",
+        a: "Rafting Tarom nije tehnički zahtjevan i predstavlja savršen kontrast planinarskom dijelu ture. Spust je organizovan sa iskusnim skiperima, u sigurnim čamcima, uz pauze i bez žurbe. Nakon dva dana u planini, rafting dolazi kao snažan, ali prijatan završetak avanture."
       },
       {
-        q: "Kako rezervisati premium turu?",
-        a: "Kontaktirajte nas direktno sa željenim terminom i brojem osoba. Organizujemo ture za grupe od minimum 4 osobe."
+        q: "Kakva kondicija je potrebna?",
+        a: "Za ovu turu potrebna je dobra fizička spremnost, ali nije riječ o ekstremnoj ili tehničkoj alpinizmu. Uspon na Maglić vodi najpoznatijom i najčešće korišćenom rutom, koja je tehnički zahtjevnija na pojedinim dionicama i uključuje vertikalniji teren sa sajlama koje pomažu pri kretanju.\n\n Tura je zahtjevna u smislu dužine i visinske razlike, ali se krećemo kontrolisanim tempom, uz pauze i jasne instrukcije vodiča. Uz osnovno planinarsko iskustvo, dobru kondiciju i sposobnost sigurnog kretanja po planini, većina fizički spremnih učesnika može bez problema savladati ovu rutu. Važno je da se osjećate stabilno na strmijem terenu i da ste spremni na ozbiljniji planinarski dan."
       }
     ]
   },
@@ -469,14 +467,15 @@ export const adventures: Adventure[] = [
     imageAlt: "Kanjoning Hrčavka i prašuma Perućica do vodopada Skakavac – premium tura u Nacionalnom parku Sutjeska",
     imagePosition: "center 55%",
     shortDescription: "Premium vikend aranžman: kanjoning u Hrčavki i obilazak prašume Perućice do vodopada Skakavac, uz smještaj na Tjentištu, obroke i druženje oko vatre.",
+    aboutTour: "Ova avantura spaja divlji kanjon Hrčavke i prašumu Perućicu, dvije potpuno različite, ali jednako snažne prirodne cjeline Nacionalnog parka Sutjeska. Program je osmišljen za ljude koji žele aktivnu, sadržajnu i autentičnu turu, bez nepotrebnog forsiranja, ali sa pravim doživljajem prirode.\n\nTura je dinamična, raznovrsna i puna kontrasta – od vode, stijena i skokova u kanjonu, do tišine prašume i moćnog vodopada Skakavac. Idealna je za one koji žele nešto više od klasičnog izleta, ali bez ekstremnih rizika.",
     duration: "3 dana / 2 noći",
     difficulty: "Srednja",
-    price: "270€ po osobi",
+    price: "255€ po osobi",
     groupSize: "8–13 osoba",
-    discount: "",
-    dates: ["18.07.2026", "19.07.2026"],
+    discount: "4+ osoba - 10% popusta",
+    dates: ["18.07.2026",],
     highlights: [
-      "Kanjoning Hrčavka (oko 4 sata)",
+      "Kanjoning Hrčavka (duža ruta oko 5-6 sati kanjoninga)",
       "Prašuma Perućica",
       "Vodopad Skakavac",
       "Smještaj na Tjentištu",
@@ -485,46 +484,46 @@ export const adventures: Adventure[] = [
     ],
     itinerary: [
       {
-        dayTitle: "Dan 1 (petak): Dolazak na Tjentište",
-        description: "Dolazak i smještaj na Tjentištu. Večera, slobodno vrijeme i druženje oko vatre. Noćenje."
+        dayTitle: "Dan 1 — Dolazak na Tjentište i lagano popodne",
+        description: "Dolazak učesnika planiran je na Tjentište u popodnevnim satima. Nakon smještaja u bungalove slijedi kratko osvježenje i slobodno vrijeme. Prvi dan je lagan i opušten – šetnja Dolinom heroja, obilazak Spomenika Bitke na Sutjesci i upoznavanje sa okruženjem.\n\n U večernjim satima organizovana je večera, nakon čega slijedi lagano druženje i opuštanje, bez žurbe, uz razgovor i uživanje u ambijentu Tjentišta."
       },
       {
-        dayTitle: "Dan 2 (subota): Kanjoning Hrčavka",
+        dayTitle: "Dan 2 — Kanjoning Hrčavka (duža i atraktivnija ruta)",
         description: "Doručak. Odlazak na kanjoning u Hrčavku (oko 4 sata). Povratak u bazu, večera i slobodno vrijeme. Noćenje."
       },
       {
-        dayTitle: "Dan 3 (nedjelja): Prašuma Perućica i Skakavac",
-        description: "Doručak. Odlazak u prašumu Perućicu i obilazak do vodopada Skakavac. Povratak na Tjentište i završetak ture."
+        dayTitle: "Dan 3 — Prašuma Perućica i vodopad Skakavac",
+        description: "Treći dan započinjemo doručkom, nakon čega krećemo u obilazak prašume Perućice. Šetnja vodi prema vodopadu Skakavac, jednom od najimpresivnijih prirodnih lokaliteta u ovom području.\n\nDo vodopada nam je potrebno oko dva sata hoda, dok je povratak nešto duži, oko dva i po sata. Teren je mjestimično zahtjevniji, ali uz dobre patike ili planinarske gojzerice ne predstavlja problem za fizički spremne učesnike. Hodamo kroz gustu šumu, uz potoke i stare staze, u ambijentu koji ostavlja snažan utisak.\n\nTokom ovog dana obezbijeđeni su lanč paketi. Nakon povratka iz Perućice tura se završava, uz osjećaj zaokružene, snažne i sadržajne avanture.\n\nOva tura je vrhunska kombinacija vode, šume i kanjona. Nije ekstremna, ali jeste intenzivna i bogata doživljajem. Idealna za one koji žele da osjete divlju prirodu Sutjeske iz više uglova i ponesu kući iskustvo koje se pamti."
       }
     ],
     includes: [
       "Smještaj na Tjentištu (2 noći)",
-      "Večera (petak), doručak (subota), večera (subota), doručak (nedjelja)",
+      "Doručak (subota), lunch paket, večera (subota), doručak (nedjelja), lunch paket",
       "Licencirani vodič i organizacija ture",
       "Kompletna oprema za kanjoning (najviši standardi)",
       "Sigurnosni brifing i podrška tokom aktivnosti"
     ],
     excludes: [
       "Piće",
-      "Lična oprema (obuća/odjeća)",
+      "Lična oprema",
       "Troškovi van programa"
     ],
     faqs: [
       {
-        q: "Da li je tura fizički zahtjevna?",
-        a: "Tura je srednje zahtjevna. Kanjoning traje oko 4 sata i zahtijeva osnovnu kondiciju i spremnost na boravak u prirodi."
+        q: "Koliko je kanjoning fizički zahtjevan?",
+        a: "Kanjoning traje oko šest sati i podrazumijeva kretanje kroz vodu, prelazak prirodnih prepreka i stalno kretanje, ali bez ekstremnih tehničkih dionica. Tempo je prilagođen grupi, uz pauze. Potrebna je solidna kondicija i spremnost na duži aktivan dan, ali ne i vrhunska fizička forma."
       },
       {
-        q: "Da li je oprema za kanjoning uključena?",
-        a: "Da. Kompletna oprema za kanjoning je uključena, po najvišim standardima."
+        q: "Kakva oprema je obezbijeđena za kanjoning?",
+        a: "U cijenu su uključeni neopreno odijelo, kaciga, sigurnosni prsluk i sva neophodna tehnička oprema za prolazak kanjona. Učesnici treba da ponesu kupaći, peškir i obuću za vodu ili patike koje se mogu pokvasiti. Sve detaljne upute o opremi dobijate unaprijed."
       },
       {
-        q: "Šta ponijeti?",
-        a: "Rezervnu odjeću, peškir, slojevitu odjeću za večernje sate i lične stvari. Detaljnu listu šaljemo prije polaska."
+        q: "Da li je obilazak Perućice zahtjevan?",
+        a: "Obilazak prašume Perućice i vodopada Skakavac je planinarski zahtjevniji, ali tehnički jednostavan. Hod traje oko dva sata do vodopada i oko dva i po sata nazad. Uz dobre patike ili planinarske gojzerice, kretanje je sigurno i stabilno. Nije potrebna posebna tehnika, već pažnja i kondicija."
       },
       {
-        q: "Šta ako je loše vrijeme?",
-        a: "U slučaju nepovoljnih uslova, tura se prilagođava ili se dogovara novi termin."
+        q: "Da li ćemo prije dolaska dobiti sve informacije?",
+        a: "Da. Svi učesnici biće dodani u WhatsApp grupu ture nekoliko dana prije polaska. U grupi ćete dobiti tačne informacije o programu, satnici, opremi, vremenskoj prognozi i svim važnim uputama. Tu možete postaviti pitanja i dobiti dodatna pojašnjenja."
       }
     ]
   },
@@ -538,6 +537,7 @@ export const adventures: Adventure[] = [
     imageAlt: "Durmitorski prsten, via ferrata Piva i uspon na Prutaš – premium avantura u Crnoj Gori",
     imagePosition: "center 60%",
     shortDescription: "Premium višednevna avantura koja kombinuje Durmitorski prsten, via ferratu Piva i uspon na Prutaš – za ljubitelje zahtjevnih planinarskih i alpinističkih izazova.",
+    aboutTour: "Ova premium tura vas vodi kroz Durmitorski prsten, via ferratu Piva i uspon na Prutaš — za ljubitelje zahtjevnih planinarskih i alpinističkih izazova.\n\nSve je organizovano tako da vi samo uživate: idemo u manjim grupama, uz licencirane vodiče, tehničku opremu i sigurnost na prvom mjestu.\n\nU cijenu su uključene ulaznice, oprema za via ferratu i smještaj — bez skrivenih troškova. Piće nije uključeno u cijenu.",
     duration: "3 dana / 2 noći",
     difficulty: "Srednja–zahtjevna",
     price: "Na upit",
@@ -606,6 +606,7 @@ export const adventures: Adventure[] = [
     location: "NP Sutjeska – Zelengora (Bregoč)",
     imagePosition: "center 70%",
     shortDescription: "Jednodnevna tura na najviši vrh Zelengore sa prekrasnim vidicima na okolna jezera i planine.",
+    aboutTour: "Ova jednodnevna tura vas vodi na najviši vrh Zelengore — Bregoč, sa prekrasnim vidicima na okolna jezera i planine.\n\nSve je organizovano tako da vi samo uživate: idemo u manjim grupama, uz licencirane vodiče, jasna pravila kretanja i sigurnost na prvom mjestu.\n\nU cijenu su uključeni transfer, ručak i svi ključni troškovi — bez skrivenih troškova. Piće nije uključeno u cijenu.",
     duration: "1 dan",
     difficulty: "Srednja",
     price: "Na upit",
@@ -657,6 +658,7 @@ export const adventures: Adventure[] = [
     location: "NP Sutjeska – Zelengora",
     imagePosition: "center 70%",
     shortDescription: "Jednodnevna šetnja kroz najljepša jezera Zelengore sa prekrasnim vidikovcima i fotografskim prilikama.",
+    aboutTour: "Ova jednodnevna tura vas vodi kroz najljepša jezera Zelengore — Orlovačko, Štirinsko i druga, sa prekrasnim vidikovcima i fotografskim prilikama.\n\nSve je organizovano tako da vi samo uživate: idemo u manjim grupama, uz licencirane vodiče, jasna pravila kretanja i sigurnost na prvom mjestu.\n\nU cijenu su uključeni transfer, ručak i svi ključni troškovi — bez skrivenih troškova. Piće nije uključeno u cijenu.",
     duration: "1 dan",
     difficulty: "Laka",
     price: "Na upit",
@@ -704,6 +706,7 @@ export const adventures: Adventure[] = [
     location: "NP Sutjeska – Prašuma Perućica",
     imagePosition: "center 70%",
     shortDescription: "Jednodnevna tura kroz najstariju prašumu u Evropi sa posjetom impresivnom vodopadu Skakavac.",
+    aboutTour: "Ova jednodnevna tura vas vodi kroz najstariju prašumu u Evropi — Perućicu, do impresivnog vodopada Skakavac.\n\nSve je organizovano tako da vi samo uživate: idemo u manjim grupama, uz licencirane vodiče, jasna pravila kretanja i sigurnost na prvom mjestu.\n\nU cijenu su uključeni transfer, ručak, ulaznice i edukativni sadržaj — bez skrivenih troškova. Piće nije uključeno u cijenu.",
     duration: "1 dan",
     difficulty: "Laka",
     price: "Na upit",
@@ -751,6 +754,7 @@ export const adventures: Adventure[] = [
     category: "day-trip",
     location: "NP Sutjeska – kanjon Hrčavke",
     shortDescription: "Adrenalinška jednodnevna kanjoning avantura kroz kanjon rijeke Hrčavke sa skokovima, plivanjem i spuštanjem.",
+    aboutTour: "Ova adrenalinška tura vas vodi kroz kanjon rijeke Hrčavke — skokovi, plivanje i spuštanje niz vodopade.\n\nSve je organizovano tako da vi samo uživate: idemo u manjim grupama, uz licencirane vodiče, profesionalnu opremu i sigurnost na prvom mjestu.\n\nU cijenu su uključeni transfer, kanjoning oprema i ručak — bez skrivenih troškova. Piće nije uključeno u cijenu.",
     duration: "1 dan",
     difficulty: "Srednja",
     price: "Na upit",
@@ -802,6 +806,7 @@ export const adventures: Adventure[] = [
     category: "day-trip",
     location: "Trnovačko jezero / NP Sutjeska",
     shortDescription: "Jednodnevna tura do jednog od najljepših jezera u BiH sa prekrasnim vidicima i mogućnošću kupanja.",
+    aboutTour: "Ova jednodnevna tura vas vodi do jednog od najljepših jezera u BiH — Trnovačkog jezera, sa prekrasnim vidicima i mogućnošću kupanja.\n\nSve je organizovano tako da vi samo uživate: idemo u manjim grupama, uz licencirane vodiče, jasna pravila kretanja i sigurnost na prvom mjestu.\n\nU cijenu su uključeni transfer, ručak i svi ključni troškovi — bez skrivenih troškova. Piće nije uključeno u cijenu.",
     duration: "1 dan",
     difficulty: "Srednja",
     price: "Na upit",
@@ -848,6 +853,7 @@ export const adventures: Adventure[] = [
     category: "day-trip",
     location: "NP Sutjeska / Maglić / Trnovačko jezero",
     shortDescription: "Zahtjevna jednodnevna tura koja kombinuje uspon na najviši vrh BiH sa posjetom prekrasnom Trnovačkom jezeru.",
+    aboutTour: "Ova zahtjevna jednodnevna tura vas vodi na Maglić i Trnovačko jezero — uspon na najviši vrh BiH i posjeta prekrasnom jezeru.\n\nSve je organizovano tako da vi samo uživate: idemo u manjim grupama, uz licencirane vodiče, jasna pravila kretanja i sigurnost na prvom mjestu.\n\nU cijenu su uključeni transfer, ručak i svi ključni troškovi — bez skrivenih troškova. Piće nije uključeno u cijenu.",
     duration: "1 dan",
     difficulty: "Zahtjevna",
     price: "Na upit",
@@ -898,6 +904,7 @@ export const adventures: Adventure[] = [
     category: "day-trip",
     location: "NP Sutjeska – Zelengora",
     shortDescription: "Jednodnevna jeep safari tura kroz prekrasne dinarske livade Zelengore sa prekrasnim vidikovcima i mogućnošću fotografisanja.",
+    aboutTour: "Ova jeep safari tura vas vodi kroz prekrasne dinarske livade Zelengore — vidikovci, fotografiranje i uživanje u prirodi.\n\nSve je organizovano tako da vi samo uživate: idemo u manjim grupama, uz iskusnog vodiča, jasna pravila kretanja i sigurnost na prvom mjestu.\n\nU cijenu su uključena organizacija i vođenje ture — bez skrivenih troškova. Piće nije uključeno u cijenu.",
     duration: "1 dan",
     difficulty: "Lako",
     price: "70€ po osobi",
@@ -937,6 +944,7 @@ export const adventures: Adventure[] = [
     category: "day-trip",
     location: "Park prirode Piva",
     shortDescription: "Jednodnevna via ferrata avantura u Parku prirode Piva sa prekrasnim panoramskim pogledima i sigurnim usponom uz vodiča.",
+    aboutTour: "Ova via ferrata tura vas vodi kroz Park prirode Piva — siguran uspon uz vodiča i prekrasni panoramski pogledi.\n\nSve je organizovano tako da vi samo uživate: idemo u manjim grupama, uz licencirane vodiče, tehničku opremu i sigurnost na prvom mjestu.\n\nU cijenu su uključeni vodič i osnovna oprema (kaciga, pojas) — bez skrivenih troškova. Prevoz, hrana i piće nisu uključeni u cijenu.",
     duration: "1 dan",
     difficulty: "Srednja",
     price: "65€ po osobi",
