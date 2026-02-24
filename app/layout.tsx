@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "./components/Navbar";
@@ -21,16 +22,15 @@ export const metadata: Metadata = {
   manifest: "/site.webmanifest",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const showVercelAnalytics = process.env.NODE_ENV === "production" && Boolean(process.env.VERCEL);
+
   return (
     <html lang="sr">
       <body className="min-h-screen bg-slate-950 text-slate-100 antialiased">
         <Navbar />
         <main className="pt-20">{children}</main>
+        {showVercelAnalytics && <Analytics />}
         <Footer />
       </body>
     </html>
