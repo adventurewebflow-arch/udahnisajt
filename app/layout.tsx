@@ -6,6 +6,19 @@ import Footer from "./components/Footer";
 export const metadata: Metadata = {
   title: "Udahni Avanturu - Avanturističke ture u prirodi",
   description: "Otkrijte ljepotu Bosne i Hercegovine kroz planinarenje, rafting i kampiranje. Nezaboravne avanture u prirodi.",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icons/icon-16.png", sizes: "16x16", type: "image/png" },
+      { url: "/icons/icon-32.png", sizes: "32x32", type: "image/png" },
+      { url: "/icons/icon-48.png", sizes: "48x48", type: "image/png" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: [
+      { url: "/icons/icon-180.png", sizes: "180x180", type: "image/png" },
+    ],
+  },
+  manifest: "/site.webmanifest",
 };
 
 export default function RootLayout({
