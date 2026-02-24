@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "Udahni Avanturu - Avanturističke ture u prirodi",
@@ -19,6 +20,7 @@ export default function RootLayout({
         <Navbar />
         <main className="pt-20">{children}</main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
