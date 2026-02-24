@@ -62,47 +62,22 @@ export default async function TourDetailPage({ params }: { params: Promise<{ slu
   return (
     <main className="min-h-screen pt-20">
       {/* Hero Banner */}
-      <section className="ua-tour-hero relative h-[50vh] min-h-[400px] lg:h-[70vh] lg:min-h-[520px] flex items-center justify-center">
+      <section className="ua-tour-hero relative w-full min-h-[85vh] md:min-h-screen flex items-center justify-center">
         <div className="ua-tour-heroMedia absolute inset-0">
           {adventure.image ? (
             <>
-              {/* Mobile: blurred bg + object-contain foreground (current behavior) */}
-              <div className="lg:hidden absolute inset-0">
+              <div className="absolute inset-0">
                 <Image
                   src={adventure.image}
                   alt={adventure.imageAlt ?? adventure.title}
                   fill
-                  className="object-cover blur-md scale-110 opacity-35"
-                  priority
-                  sizes="100vw"
-                />
-                <div className="absolute inset-0 flex items-center justify-center px-4 pt-6">
-                  <div className="relative w-full h-full max-w-6xl">
-                    <Image
-                      src={adventure.image}
-                      alt={adventure.imageAlt ?? adventure.title}
-                      fill
-                      className="object-contain"
-                      priority
-                      sizes="100vw"
-                    />
-                  </div>
-                </div>
-              </div>
-              {/* Desktop: single cinematic object-cover banner */}
-              <div className="hidden lg:block absolute inset-0">
-                <Image
-                  src={adventure.image}
-                  alt={adventure.imageAlt ?? adventure.title}
-                  fill
-                  className="object-cover"
+                  className="object-cover object-center"
                   priority
                   sizes="100vw"
                   style={{ objectPosition: adventure.imagePosition ?? "center" }}
                 />
               </div>
-              {/* Readability overlay (stronger on desktop) */}
-              <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/35 to-black/60 lg:from-black/65 lg:via-black/35 lg:to-black/70" />
+              <div className="absolute inset-0 bg-black/40" aria-hidden />
             </>
           ) : (
             <div className="w-full h-full bg-gradient-to-br from-gray-800 to-gray-900" />
