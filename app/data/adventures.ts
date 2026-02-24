@@ -191,7 +191,7 @@ export const adventures: Adventure[] = [
     price: "Na upit",
     groupSize: "6–16 osoba",
     dates: [
-      "19.-21.06.",
+      "26.-28.06.",
     ],
     image: "/images/tours/rafting-tara/rafting-hero-card.webp",
     imageAlt: "Rafting Tarom kroz kanjon – brzaci, rijeka i priroda",
@@ -399,7 +399,7 @@ export const adventures: Adventure[] = [
     price: "235€",
     groupSize: "max 16",
     image: "/images/tours/premium/top-tura-rafting-tarom-maglic-perucica.webp",
-    dates: ["26.-28.06.2026"],
+    dates: ["19.-21.06.2026"],
     imageAlt: "Maglić, Trnovačko jezero i rafting Tarom – premium avantura u prirodi",
     highlights: [
       "Kampovanje na Prijevoru",

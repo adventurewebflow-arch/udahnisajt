@@ -11,7 +11,16 @@ export default function AdventureCard({ adventure }: AdventureCardProps) {
   let dateLabel = "";
   let showCalendarIcon = false;
 
-  if (adventure.category === "popular") {
+  const campingTourSlugs = [
+    "kampovanje-trnovacko-jezero-maglic",
+    "kampovanje-zelengora-bregoč-jeep-safari",
+  ] as const;
+  const isCampingWithMultipleDates =
+    Array.isArray(adventure.dates) &&
+    adventure.dates.length > 1 &&
+    campingTourSlugs.includes(adventure.slug as (typeof campingTourSlugs)[number]);
+
+  if (isCampingWithMultipleDates) {
     dateLabel = "Više termina";
     showCalendarIcon = true;
   } else if (adventure.category === "premium") {

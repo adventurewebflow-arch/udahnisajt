@@ -98,3 +98,14 @@ body {
   margin: 2rem 0;
   border-color: rgba(255,255,255,0.10);
 }
+
+/* Home hero image: desktop center, mobile lower framing */
+.ua-home-hero-img {
+  object-fit: cover;
+  object-position: center;
+}
+@media (max-width: 767px) {
+  .ua-home-hero-img {
+    object-position: 50% 70%;
+  }
+}
