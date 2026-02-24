@@ -65,11 +65,11 @@ export const adventures: Adventure[] = [
       },
       {
         dayTitle: "Dan 2: Uspon na Maglić",
-        description: "Rani početak sa doručkom. Uspon na Maglić (2386m) uz iskusnog vodiča. Prekrasni panoramski vidici na okolne planine i jezera. Povratak u kamp i večera."
+        description: "Ustajanje u ranim jutarnjim satima, po dogovoru sa vodičem. Nakon doručka i pripreme opreme, krećemo na uspon prema Magliću. Uspon traje oko 4 sata, sa polazne visine od oko 1.520 m do vrha na 2.386 m nadmorske visine.Teren je zahtjevniji, sa strmijim dionicama i dužim usponom, ali se krećemo sigurnim i kontrolisanim tempom, uz pauze za odmor i hidrataciju. Tokom uspona obezbijeđen je lanč paket.\n\nZa učesnike koji ne žele ili ne mogu na uspon, postoji opcija da ostanu kod Trnovačkog jezera i provedu dan u laganijim aktivnostima — šetnji, odmoru, kupanju u jezeru ili fotografisanju. Po povratku u kamp čeka nas topla večera (gulaš) i slobodno vrijeme za odmor uz vatru, razgovor i sabiranje utisaka sa Maglića.\n\n Noćenje u kampu."
       },
       {
-        dayTitle: "Dan 3: Posljednji dan i povratak",
-        description: "Lagani doručak i pakovanje. Kratka šetnja oko jezera i fotografisanje. Povratak u Foču sa nezaboravnim uspomenama."
+        dayTitle: "Dan 3 — Katuni, Perućica i povratak u Foču",
+        description: "Ujutru ustajemo ranije, pakujemo kamp opremu (šatore, vreće i lične stvari) i laganom šetnjom od oko 15 minuta dolazimo do obližnjih katuna, gdje nas dočekuju domaćini.\n\n Kod domaćina doručkujemo uštipke, domaći kajmak i toplo mlijeko, uz priču o životu na planini i načinu na koji su ljudi ovdje živjeli prije nekoliko vijekova.\n\n Nakon doručka vraćamo se prema Prijevoru, gdje su ostavljena terenska vozila. U povratku prema Foči pravimo pauze na vidikovcima prašume Perućice, uz kratko zadržavanje i fotografisanje.\n\n Dolazak u Foču je u popodnevnim satima, kod privatnih vozila, čime se tura završava."
       }
     ],
     includes: [
@@ -553,16 +553,16 @@ export const adventures: Adventure[] = [
     ],
     itinerary: [
       {
-        dayTitle: "Dan 1: Dolazak i Durmitorski prsten",
-        description: "Dolazak na početnu tačku. Početak obilaska Durmitorskog prstena – prekrasna planinska ruta koja otkriva najljepše vidikove na masiv Durmitora. Noćenje."
+        dayTitle: "Dan 1 — Via Ferrata Piva i dolazak na Durmitor",
+        description: "Okupljanje grupe je u jutarnjim satima u Foči, odakle se vozilima krećemo prema Plužinama i lokalitetu Via Ferrata Piva. Po dolasku zadužujemo kompletnu ferata opremu (pojas, kaciga, sajle) i prolazimo kratak sigurnosni brifing sa vodičem.\n\n Nakon pripreme započinjemo uspon Via Ferrata Piva, atraktivnom i preglednom rutom koja omogućava sigurno kretanje strmim stijenama iznad kanjona. Ruta pruža snažan osjećaj visine i slobode, ali je tehnički dobro osigurana i vođena, uz stalnu pratnju vodiča.\n\n Po završetku ferate vraćamo se vozilima i nastavljamo put Durmitorskim prstenom, jednom od najljepših panoramskih cesta u regionu. U večernjim satima dolazimo u smještaj na Durmitoru, gdje slijedi večera i odmor nakon aktivnog dana."
       },
       {
-        dayTitle: "Dan 2: Via ferrata Piva",
-        description: "Doručak. Transfer do Parka prirode Piva. Via ferrata avantura – siguran uspon uz vodiča, sa spektakularnim pogledima na jezero Piva i okolne stijene. Večera i noćenje."
+        dayTitle: "Dan 2 — Uspon na Prutaš (2.393 m)",
+        description: "Nakon doručka krećemo na uspon na Prutaš, jedan od najljepših i najprepoznatljivijih vrhova Durmitora. Ovaj dan je u potpunosti posvećen planinarenju. Uspon traje veći dio dana i vodi otvorenim, preglednim stazama, uz stalne poglede na durmitorske vrhove i prostranstva.\n\nKrećemo kontrolisanim tempom, sa pauzama za odmor, hidrataciju i fotografisanje. Na vrhu pravimo dužu pauzu za uživanje u panorami, a tokom dana konzumiramo lunch pakete. Nakon spuštanja vraćamo se u smještaj u popodnevnim ili večernjim satima, gdje slijedi večera i zasluženi odmor."
       },
       {
-        dayTitle: "Dan 3: Uspon na Prutaš i završetak",
-        description: "Doručak. Uspon na Prutaš (2393m) – jedan od najimpresivnijih vrhova u regiji. Panoramski vidici na Durmitor, Piva i okolne planine. Povratak i završetak ture."
+        dayTitle: "Dan 3 — Kajak na Pivskom jezeru i povratak",
+        description: "Treći dan započinjemo ranim doručkom, nakon čega se spuštamo prema Pivskom jezeru. Ovaj dio ture donosi potpuno drugačiji ritam – mir, vodu i opuštanje.\n\nNa jezeru provodimo oko 2 do 3 sata u vožnji kajaka. Kajakarenje je lagano i opuštajuće, uz pauze za kupanje, fotografisanje i uživanje u tišini i boji vode. Nakon završetka aktivnosti slijedi povratak prema Foči, sopstvenim vozilima, čime se tura završava.\n\nOva avantura je snažna, raznovrsna i izuzetno bogata doživljajem. Spaja stijene, vrhove i vodu u jednu cjelinu i idealna je za one koji žele više od klasičnog izleta – tri dana prirode, kretanja i istinske avanture."
       }
     ],
     includes: [
@@ -571,7 +571,7 @@ export const adventures: Adventure[] = [
       "Transferi tokom programa",
       "Smještaj (2 noći)",
       "Obroci prema dogovoru",
-      "Osiguranje",
+      "Iznajmljivanje kajaka",
       "Organizacija ture"
     ],
     excludes: [
@@ -590,7 +590,7 @@ export const adventures: Adventure[] = [
       },
       {
         q: "Koliko je zahtjevna tura?",
-        a: "Tura je srednje do zahtjevne – kombinuje planinarenje, via ferratu i uspon na Prutaš. Preporučujemo redovnu fizičku aktivnost prije polaska."
+        a: "Tura je srednje do zahtjevne – kombinuje planinarenje, via ferratu i uspon na Prutaš sa kajakarenjem na Pivskom jezeru. Preporučujemo redovnu fizičku aktivnost prije polaska."
       },
       {
         q: "Kako rezervisati?",
