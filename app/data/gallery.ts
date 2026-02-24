@@ -1,8 +1,6 @@
 export const galleryImages: { src: string; alt: string }[] = [
   { src: "/images/tours/gallery/bregoc-ekipa.webp", alt: "Ekipa na Bregoču" },
-  { src: "/images/tours/gallery/djevojka-na-vodopadu-skakavac.webp", alt: "Vodopad Skakavac u Perućici" },
   { src: "/images/tours/gallery/dorucak-trnovacko-jezero.webp", alt: "Doručak na Trnovačkom jezeru" },
-  { src: "/images/tours/gallery/ekipa-prvi-maj.webp", alt: "Prvomajska ekipa na Tjentištu" },
   { src: "/images/tours/gallery/hiking-nacionalni-park-sutjeska.webp", alt: "Hiking u Nacionalnom parku Sutjeska" },
   { src: "/images/tours/gallery/hiking-na-trnovacko-jezero.webp", alt: "Hiking ka Trnovačkom jezeru" },
   { src: "/images/tours/gallery/kupanje-trnovacko-jezero.webp", alt: "Kupanje na Trnovačkom jezeru" },
@@ -26,4 +24,9 @@ export const galleryImages: { src: string; alt: string }[] = [
   { src: "/images/tours/gallery/vidikovac-trnovackojezero.webp", alt: "Vidikovac – Trnovačko jezero" },
   { src: "/images/tours/gallery/vodopad-skakavac-perucica.webp", alt: "Vodopad Skakavac – Perućica" },
   { src: "/images/tours/gallery/zelengora-jezero.webp", alt: "Zelengora – jezero" },
+  { src: "/images/tours/gallery/ekipa-ide-na-maglic.webp", alt: "Ekipa ide na Maglić" },
+  { src: "/images/tours/gallery/kamp-na-trnovackom-jezeru.webp", alt: "Kamp na Trnovačkom jezeru" },
+  { src: "/images/tours/gallery/pogled-maglic.webp", alt: "Pogled na Maglić" },
+  { src: "/images/tours/gallery/slika-iz-satora-na-trnovackom-jezeru.webp", alt: "Pogled iz šatora na Trnovačko jezero" },
+  { src: "/images/tours/gallery/za-galeriju-trnovacko-jezero.webp", alt: "Trnovačko jezero – galerija" },
 ];

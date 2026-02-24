@@ -334,7 +334,7 @@ export const adventures: Adventure[] = [
     duration: "3 dana / 2 noći",
     difficulty: "Srednja",
     price: "185€ po osobi",
-    groupSize: "8–20 osoba",
+    groupSize: "1–100+ osoba",
     discount: "5+ osoba - 10% popusta \n\n 10+ osoba - 15% popusta",
     dates: ["01.05.2026"],
     highlights: [

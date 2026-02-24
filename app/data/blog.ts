@@ -190,8 +190,8 @@ export const blogPosts: BlogPost[] = [
 
       <p>Ako želite iskusiti uspon na Maglić sa profesionalnim vodičem i sigurnošću, pogledajte naše <a href="/ture/kampovanje-trnovacko-jezero-maglic" class="text-emerald-400 hover:text-emerald-300 underline">ture na Maglić</a> ili kontaktirajte nas za više informacija.</p>
     `,
-    author: "Stefan Jovanović",
-    date: "2026-02-03",
+    author: "Petar Kostić",
+    date: "2026-02-24",
     image: "/images/tours/blog-vodici-sutjeska-tjentiste-perucica-maglic-trnovacko/uspon-na-maglic-savjeti.webp",
     imageAlt: "Uspon na Maglić – savjeti",
     coverImage: "/images/tours/blog-vodici-sutjeska-tjentiste-perucica-maglic-trnovacko/uspon-na-maglic-savjeti.webp",
@@ -392,7 +392,7 @@ export const blogPosts: BlogPost[] = [
       
       <p>Pravilna oprema i priprema su ključni za sigurnu i ugodnu avanturu u NP Sutjeska. Ne štedite na kvalitetnoj opremi - to je investicija u vašu sigurnost i uživanje. Ako imate pitanja o opremi ili pripremi, kontaktirajte nas - rado ćemo pomoći.</p>
     `,
-    author: "Ana Marić",
+    author: "Nevena Matović",
     date: "2026-02-01",
     image: "/images/tours/blog-vodici-sutjeska-tjentiste-perucica-maglic-trnovacko/sta-popnijeti-u-np-sutjeska.webp",
     imageAlt: "Šta ponijeti u NP Sutjeska",
@@ -546,7 +546,7 @@ export const blogPosts: BlogPost[] = [
     `,
     author: "Marko Petrović",
     date: "2026-01-28",
-    image: "/images/tours/blog-vodici-sutjeska-tjentiste-perucica-maglic-trnovacko/djevojka-na-vodopadu-skakavac.webp",
+    image: "/images/tours/blog-vodici-sutjeska-tjentiste-perucica-maglic-trnovacko/skakavac.webp",
     imageAlt: "Prašuma Perućica i vodopad Skakavac – šta treba znati prije obilaska",
     tags: ["Prašuma Perućica", "NP Sutjeska", "priroda", "biodiverzitet"],
   },

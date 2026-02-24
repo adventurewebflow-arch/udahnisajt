@@ -15,33 +15,77 @@ export default function InquiryForm({ tourTitle, tourSlug }: InquiryFormProps) {
     phone: "",
     numberOfPeople: "",
     selectedTour: tourSlug || "",
+    selectedDate: "",
     message: "",
   });
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Frontend only - just show success message
+  const selectedAdventure = adventures.find((a) => a.slug === formData.selectedTour);
+  const availableDates = selectedAdventure?.dates ?? [];
+
+  const FORMSPREE_URL = "https://formspree.io/f/xqedwzll";
+
+const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+
+  try {
+    const payload = {
+      ...formData,
+      tourTitle: tourTitle ?? "",
+      tourSlug: tourSlug ?? "",
+      selectedTourTitle: selectedAdventure?.title ?? "",
+    };
+
+    const res = await fetch(FORMSPREE_URL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify(payload),
+    });
+
+    if (!res.ok) {
+      const text = await res.text();
+      console.error("Formspree error:", text);
+      alert("Nije poslato. Pogledaj Console (F12) za grešku.");
+      return;
+    }
+
     setSubmitted(true);
-    setTimeout(() => {
-      setSubmitted(false);
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        numberOfPeople: "",
-        selectedTour: tourSlug || "",
-        message: "",
-      });
-    }, 5000);
-  };
+
+    // reset polja
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      numberOfPeople: "",
+      selectedTour: tourSlug || "",
+      selectedDate: "",
+      message: "",
+    });
+
+  } catch (err) {
+    console.error(err);
+    alert("Greška sa internetom. Pokušaj ponovo.");
+  }
+};
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
   ) => {
+    const { name, value } = e.target;
+    if (name === "selectedTour") {
+      setFormData({
+        ...formData,
+        [name]: value,
+        selectedDate: "",
+      });
+      return;
+    }
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value,
+      [name]: value,
     });
   };
 
@@ -146,6 +190,30 @@ export default function InquiryForm({ tourTitle, tourSlug }: InquiryFormProps) {
                 {adventure.title}
               </option>
             ))}
+          </select>
+        </div>
+
+        <div className="md:col-span-2">
+          <label htmlFor="selectedDate" className="block text-sm font-medium text-gray-300 mb-2">
+            Izaberi datum *
+          </label>
+          <select
+            id="selectedDate"
+            name="selectedDate"
+            required
+            value={formData.selectedDate}
+            onChange={handleChange}
+            disabled={!formData.selectedTour || availableDates.length === 0}
+            className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-white focus:outline-none focus:border-emerald-500 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+          >
+            <option value="">Odaberi datum</option>
+            {availableDates.length === 0 ? (
+              <option disabled>Nema dostupnih datuma</option>
+            ) : (
+              availableDates.map((d) => (
+                <option key={d} value={d}>{d}</option>
+              ))
+            )}
           </select>
         </div>
 
