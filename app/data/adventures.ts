@@ -530,15 +530,15 @@ export const adventures: Adventure[] = [
   },
   {
     id: "P-durmitor-01",
-    slug: "durmitorski-prsten-via-ferata-piva-prutas",
-    title: "Durmitorski prsten + Via ferrata Piva + uspon na Prutaš",
+    slug: "durmitorski-prsten-via-ferata-piva-prutas-kajk-pivsko-jezero",
+    title: "Durmitorski prsten + Via ferrata Piva + uspon na Prutaš + kajakarenje na Pivskom jezeru",
     category: "premium",
     location: "Durmitor / Piva (via ferrata) / Prutaš",
     image: "/images/tours/durmitor-aranzman/durmitor.webp",
     imageAlt: "Durmitorski prsten, via ferrata Piva i uspon na Prutaš – premium avantura u Crnoj Gori",
     imagePosition: "center 60%",
-    shortDescription: "Premium višednevna avantura koja kombinuje Durmitorski prsten, via ferratu Piva i uspon na Prutaš – za ljubitelje zahtjevnih planinarskih i alpinističkih izazova.",
-    aboutTour: "Ova premium tura vas vodi kroz Durmitorski prsten, via ferratu Piva i uspon na Prutaš — za ljubitelje zahtjevnih planinarskih i alpinističkih izazova.\n\nSve je organizovano tako da vi samo uživate: idemo u manjim grupama, uz licencirane vodiče, tehničku opremu i sigurnost na prvom mjestu.\n\nU cijenu su uključene ulaznice, oprema za via ferratu i smještaj — bez skrivenih troškova. Piće nije uključeno u cijenu.",
+    shortDescription: "Ova premium tura spaja via ferratu, visoke planinske vrhove i mirnu vodu u jedno snažno, raznovrsno iskustvo. Namijenjena je onima koji žele pravu avanturu – aktivnu, sadržajnu i nezaboravnu.",
+    aboutTour: "Ova tura je čista avantura u punom smislu riječi. Spoj stijene, vrhova i vode, osmišljena za ljude koji žele da nekoliko dana provedu aktivno, snažno i sadržajno, daleko od svakodnevice i rutine.\n\nKroz Via Ferratu Piva, uspon na Prutaš i kajakarenje na Pivskom jezeru, prolazimo kroz tri potpuno različita svijeta prirode – vertikalne stijene iznad kanjona, široke durmitorske visoravni i mirnu, smaragdnu vodu jezera. Svaki dan donosi novi doživljaj i drugačiji ritam, bez ponavljanja i bez praznog hoda.\n\nVia Ferrata Piva donosi snažan osjećaj visine i slobode, ali uz sigurnost i kontrolu. To je savršen uvod u turu – adrenalinska, ali dostupna, i dovoljno izazovna da probudi fokus i timski duh. Vožnja Durmitorskim prstenom nakon ferate dodatno pojačava osjećaj prostora i veličine planine.\n\nUspon na Prutaš je dan za prave planinare. Dugačak, otvoren i vizuelno moćan, sa panoramama koje se otvaraju u svim pravcima. Ovo je dan koji se pamti – ne zbog brzine ili brojki, već zbog osjećaja kretanja kroz ogroman planinski prostor i pogleda koji ostaje u glavi dugo nakon povratka.\n\nTreći dan donosi potpuni kontrast. Nakon stijena i visina, dolazimo na vodu. Kajak na Pivskom jezeru je smiren, lagan i oslobađajući – idealan završetak ture. Tišina, voda i opušten tempo omogućavaju da se svi utisci slegnu i da se avantura zatvori na pravi način.\n\nOvo nije klasičan izlet niti turistička tura. Ovo je iskustvo. Tura za ljude koji žele da osjete prirodu cijelim tijelom – da se penju, hodaju, veslaju i budu dio prostora kroz koji prolaze. Ko se odluči na ovu avanturu, nosi je sa sobom još dugo nakon povratka.",
     duration: "3 dana / 2 noći",
     difficulty: "Srednja–zahtjevna",
     price: "Na upit",
@@ -549,7 +549,8 @@ export const adventures: Adventure[] = [
       "Durmitorski prsten",
       "Via ferrata Piva",
       "Uspon na Prutaš",
-      "Pogledi na Durmitor"
+      "Pogledi na Durmitor",
+      "Kajakarenje na Pivskom jezeru"
     ],
     itinerary: [
       {
