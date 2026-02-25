@@ -266,7 +266,7 @@ export const adventures: Adventure[] = [
       "14.03.2026"
     
     ],
-    image: "/images/tours/porodicni-vikend-tjentiste-zelengora/porodicni-vikend-zelengora-tjentiste.webp",
+    image: "/images/tours/porodicni-vikend-tjentiste-zelengora/porodicni-vikend-zelengora-tjentiste1.webp",
     imageAlt: "Porodični vikend na Tjentištu i Zelengori – priroda i šetnje",
     highlights: [
       "Edukativne šetnje",
