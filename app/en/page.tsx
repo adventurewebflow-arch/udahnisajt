@@ -6,9 +6,18 @@ import InquiryForm from "../components/InquiryForm";
 import { popularAdventures, premiumAdventures, dayTripAdventures } from "../data/adventures";
 import type { Metadata } from "next";
 
+const BASE = "https://www.udahniavanturu.com";
+
 export const metadata: Metadata = {
   title: "Udahni Avanturu - Outdoor Adventure Tours",
   description: "Discover the beauty of Bosnia and Herzegovina through hiking, rafting, and camping. Unforgettable adventures in nature.",
+  alternates: {
+    canonical: `${BASE}/en`,
+    languages: {
+      sr: BASE,
+      en: `${BASE}/en`,
+    },
+  },
 };
 
 export default function HomeEN() {

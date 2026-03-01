@@ -39,6 +39,55 @@ const nextConfig: NextConfig = {
         destination: "/#kontakt-form",
         permanent: true,
       },
+
+      // Legacy redirects (Webflow/old site)
+      {
+        source: "/kampovanje",
+        destination: "/ture",
+        permanent: true,
+      },
+      {
+        source: "/izletibosna",
+        destination: "/ture",
+        permanent: true,
+      },
+      {
+        source: "/posebneponude",
+        destination: "/ture",
+        permanent: true,
+      },
+      {
+        source: "/specijalne-ponude/porodicni-paket",
+        destination: "/ture/porodicni-vikend-tjentiste-zelengora",
+        permanent: true,
+      },
+      {
+        source: "/specijalne-ponude/teambilding",
+        destination: "/ture",
+        permanent: true,
+      },
+      {
+        source: "/izleti/zelengora",
+        destination: "/ture",
+        permanent: true,
+      },
+
+      // Catch-all legacy redirects
+      {
+        source: "/izleti/:path*",
+        destination: "/ture",
+        permanent: true,
+      },
+      {
+        source: "/specijalne-ponude/:path*",
+        destination: "/ture",
+        permanent: true,
+      },
+      {
+        source: "/posebneponude/:path*",
+        destination: "/ture",
+        permanent: true,
+      },
     ];
   },
 };

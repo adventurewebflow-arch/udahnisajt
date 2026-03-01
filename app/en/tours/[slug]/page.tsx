@@ -6,6 +6,8 @@ import InquiryForm from "../../../components/InquiryForm";
 import Accordion from "../../../components/Accordion";
 import type { Metadata } from "next";
 
+const BASE = "https://www.udahniavanturu.com";
+
 function translatePeople(value: string): string {
   if (!value) return value;
   return value.replace(/\bosoba\b/gi, "people").trim();
@@ -64,6 +66,13 @@ export async function generateMetadata({
   return {
     title: `${adventure.title} - Udahni Avanturu`,
     description: adventure.shortDescription,
+    alternates: {
+      canonical: `${BASE}/en/tours/${slug}`,
+      languages: {
+        sr: `${BASE}/ture/${slug}`,
+        en: `${BASE}/en/tours/${slug}`,
+      },
+    },
   };
 }
 

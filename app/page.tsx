@@ -4,6 +4,19 @@ import AdventureCard from "./components/AdventureCard";
 import GalleryPreview from "./components/GalleryPreview";
 import InquiryForm from "./components/InquiryForm";
 import { popularAdventures, premiumAdventures, dayTripAdventures } from "./data/adventures";
+import type { Metadata } from "next";
+
+const BASE = "https://www.udahniavanturu.com";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: BASE,
+    languages: {
+      sr: BASE,
+      en: `${BASE}/en`,
+    },
+  },
+};
 
 export default function Home() {
   return (

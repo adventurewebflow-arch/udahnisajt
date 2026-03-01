@@ -6,6 +6,8 @@ import InquiryForm from "../../components/InquiryForm";
 import Accordion from "../../components/Accordion";
 import type { Metadata } from "next";
 
+const BASE = "https://www.udahniavanturu.com";
+
 export async function generateStaticParams() {
   return adventures.map((adventure) => ({
     slug: adventure.slug,
@@ -29,6 +31,13 @@ export async function generateMetadata({
   return {
     title: `${adventure.title} - Udahni Avanturu`,
     description: adventure.shortDescription,
+    alternates: {
+      canonical: `${BASE}/ture/${slug}`,
+      languages: {
+        sr: `${BASE}/ture/${slug}`,
+        en: `${BASE}/en/tours/${slug}`,
+      },
+    },
   };
 }
 
