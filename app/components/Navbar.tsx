@@ -3,10 +3,50 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
+
+function getAlternatePath(pathname: string): { isEn: boolean; srPath: string; enPath: string } {
+  const isEn = pathname.startsWith("/en");
+
+  if (isEn) {
+    const rest = pathname.replace(/^\/en/, "") || "/";
+    const srPath = rest.replace(/^\/tours/, "/ture") || "/";
+    return { isEn, srPath, enPath: pathname };
+  }
+
+  const enPath = "/en" + (pathname === "/" ? "" : pathname.replace(/^\/ture/, "/tours"));
+  return { isEn, srPath: pathname, enPath };
+}
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
+  const { isEn, srPath, enPath } = getAlternatePath(pathname);
+
+  const labels = isEn
+    ? {
+        tours: "Tours",
+        premium: "Premium",
+        dayTrips: "Day Trips",
+        gallery: "Gallery",
+        about: "About",
+        blog: "Blog",
+        contact: "Contact",
+        cta: "Book Now",
+      }
+    : {
+        tours: "Ture",
+        premium: "Premium",
+        dayTrips: "Izleti",
+        gallery: "Galerija",
+        about: "O nama",
+        blog: "Blog",
+        contact: "Kontakt",
+        cta: "Rezerviši",
+      };
+
+  const homeBase = isEn ? "/en" : "/";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -41,56 +81,75 @@ export default function Navbar() {
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
             <a
-              href="/#ture"
+              href={isEn ? "/en#tours" : "/#ture"}
               className="text-slate-200 hover:text-emerald-400 transition-colors"
             >
-              Ture
+              {labels.tours}
             </a>
             <a
-              href="/#premium"
+              href={`${homeBase}#premium`}
               className="text-slate-200 hover:text-emerald-400 transition-colors"
             >
-              Premium
+              {labels.premium}
             </a>
             <a
-              href="/#izleti"
+              href={isEn ? "/en#day-trips" : "/#izleti"}
               className="text-slate-200 hover:text-emerald-400 transition-colors"
             >
-              Izleti
+              {labels.dayTrips}
             </a>
             <Link
               href="/galerija"
               className="text-slate-200 hover:text-emerald-400 transition-colors"
             >
-              Galerija
+              {labels.gallery}
             </Link>
             <Link
               href="/o-nama"
               className="text-slate-200 hover:text-emerald-400 transition-colors"
             >
-              O nama
+              {labels.about}
             </Link>
             <Link
               href="/vodici"
               className="text-slate-200 hover:text-emerald-400 transition-colors"
             >
-              Blog
+              {labels.blog}
             </Link>
             <a
-              href="/#kontakt"
+              href={isEn ? "/en#contact" : "/#kontakt"}
               className="text-slate-200 hover:text-emerald-400 transition-colors"
             >
-              Kontakt
+              {labels.contact}
             </a>
           </div>
 
-          {/* Desktop CTA */}
-          <div className="hidden lg:block">
+          {/* Desktop CTA + Lang Switch */}
+          <div className="hidden lg:flex items-center gap-4">
+            <div className="flex items-center gap-1 text-sm">
+              <Link
+                href={srPath}
+                className={`px-2 py-1 rounded transition-colors ${
+                  !isEn ? "text-emerald-400 font-semibold" : "text-slate-400 hover:text-white"
+                }`}
+              >
+                SR
+              </Link>
+              <span className="text-slate-600">|</span>
+              <Link
+                href={enPath}
+                className={`px-2 py-1 rounded transition-colors ${
+                  isEn ? "text-emerald-400 font-semibold" : "text-slate-400 hover:text-white"
+                }`}
+              >
+                EN
+              </Link>
+            </div>
             <a
-              href="/#kontakt"
+              href={isEn ? "/en#contact" : "/#kontakt"}
               className="px-6 py-2 bg-emerald-500 hover:bg-emerald-600 text-white rounded-lg font-medium transition-colors"
             >
-              Rezerviši
+              {labels.cta}
             </a>
           </div>
 
@@ -130,60 +189,81 @@ export default function Navbar() {
           <div className="lg:hidden pb-4 border-t border-white/10 mt-4">
             <div className="flex flex-col space-y-4 pt-4">
               <a
-                href="/#ture"
+                href={isEn ? "/en#tours" : "/#ture"}
                 className="text-slate-200 hover:text-emerald-400 transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Ture
+                {labels.tours}
               </a>
               <a
-                href="/#premium"
+                href={`${homeBase}#premium`}
                 className="text-slate-200 hover:text-emerald-400 transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Premium
+                {labels.premium}
               </a>
               <a
-                href="/#izleti"
+                href={isEn ? "/en#day-trips" : "/#izleti"}
                 className="text-slate-200 hover:text-emerald-400 transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Izleti
+                {labels.dayTrips}
               </a>
               <Link
                 href="/galerija"
                 className="text-slate-200 hover:text-emerald-400 transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Galerija
+                {labels.gallery}
               </Link>
               <Link
                 href="/o-nama"
                 className="text-slate-200 hover:text-emerald-400 transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                O nama
+                {labels.about}
               </Link>
               <Link
                 href="/vodici"
                 className="text-slate-200 hover:text-emerald-400 transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Blog
+                {labels.blog}
               </Link>
               <a
-                href="/#kontakt"
+                href={isEn ? "/en#contact" : "/#kontakt"}
                 className="text-slate-200 hover:text-emerald-400 transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Kontakt
+                {labels.contact}
               </a>
+              <div className="flex items-center gap-2 text-sm pt-2 border-t border-white/10">
+                <Link
+                  href={srPath}
+                  className={`px-3 py-1 rounded transition-colors ${
+                    !isEn ? "text-emerald-400 font-semibold" : "text-slate-400 hover:text-white"
+                  }`}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  SR
+                </Link>
+                <span className="text-slate-600">|</span>
+                <Link
+                  href={enPath}
+                  className={`px-3 py-1 rounded transition-colors ${
+                    isEn ? "text-emerald-400 font-semibold" : "text-slate-400 hover:text-white"
+                  }`}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  EN
+                </Link>
+              </div>
               <a
-                href="/#kontakt"
+                href={isEn ? "/en#contact" : "/#kontakt"}
                 className="px-6 py-2 bg-emerald-500 hover:bg-emerald-600 text-white rounded-lg font-medium transition-colors text-center"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Rezerviši
+                {labels.cta}
               </a>
             </div>
           </div>

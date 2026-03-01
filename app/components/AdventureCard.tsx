@@ -4,9 +4,10 @@ import { Adventure } from "../data/adventures";
 
 interface AdventureCardProps {
   adventure: Adventure;
+  linkPrefix?: string;
 }
 
-export default function AdventureCard({ adventure }: AdventureCardProps) {
+export default function AdventureCard({ adventure, linkPrefix = "/ture" }: AdventureCardProps) {
   // Determine label based on category
   let dateLabel = "";
   let showCalendarIcon = false;
@@ -42,7 +43,7 @@ export default function AdventureCard({ adventure }: AdventureCardProps) {
         : "";
 
   return (
-    <Link href={`/ture/${adventure.slug}`}>
+    <Link href={`${linkPrefix}/${adventure.slug}`}>
       <div className="group rounded-2xl border border-white/10 bg-white/5 shadow-lg backdrop-blur-sm overflow-hidden hover:scale-[1.02] hover:shadow-xl hover:border-emerald-500/30 transition-all duration-300 cursor-pointer h-full flex flex-col">
         {/* Image Section */}
         <div className="relative h-64 w-full overflow-hidden bg-slate-900">
