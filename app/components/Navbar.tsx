@@ -186,58 +186,58 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden pb-4 border-t border-white/10 mt-4">
-            <div className="flex flex-col space-y-4 pt-4">
+          <div className="fixed left-0 right-0 top-20 bottom-0 z-[60] bg-slate-950 lg:hidden overflow-auto">
+            <div className="px-6 pt-6 pb-10 space-y-6">
               <a
                 href={isEn ? "/en#tours" : "/#ture"}
-                className="text-slate-200 hover:text-emerald-400 transition-colors"
+                className="block text-lg font-medium text-slate-200 hover:text-emerald-400 transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {labels.tours}
               </a>
               <a
                 href={`${homeBase}#premium`}
-                className="text-slate-200 hover:text-emerald-400 transition-colors"
+                className="block text-lg font-medium text-slate-200 hover:text-emerald-400 transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {labels.premium}
               </a>
               <a
                 href={isEn ? "/en#day-trips" : "/#izleti"}
-                className="text-slate-200 hover:text-emerald-400 transition-colors"
+                className="block text-lg font-medium text-slate-200 hover:text-emerald-400 transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {labels.dayTrips}
               </a>
               <Link
                 href="/galerija"
-                className="text-slate-200 hover:text-emerald-400 transition-colors"
+                className="block text-lg font-medium text-slate-200 hover:text-emerald-400 transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {labels.gallery}
               </Link>
               <Link
                 href="/o-nama"
-                className="text-slate-200 hover:text-emerald-400 transition-colors"
+                className="block text-lg font-medium text-slate-200 hover:text-emerald-400 transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {labels.about}
               </Link>
               <Link
                 href="/vodici"
-                className="text-slate-200 hover:text-emerald-400 transition-colors"
+                className="block text-lg font-medium text-slate-200 hover:text-emerald-400 transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {labels.blog}
               </Link>
               <a
                 href={isEn ? "/en#contact" : "/#kontakt"}
-                className="text-slate-200 hover:text-emerald-400 transition-colors"
+                className="block text-lg font-medium text-slate-200 hover:text-emerald-400 transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {labels.contact}
               </a>
-              <div className="flex items-center gap-2 text-sm pt-2 border-t border-white/10">
+              <div className="flex items-center gap-2 text-sm pt-4 mt-4 border-t border-white/10">
                 <Link
                   href={srPath}
                   className={`px-3 py-1 rounded transition-colors ${
@@ -260,7 +260,7 @@ export default function Navbar() {
               </div>
               <a
                 href={isEn ? "/en#contact" : "/#kontakt"}
-                className="px-6 py-2 bg-emerald-500 hover:bg-emerald-600 text-white rounded-lg font-medium transition-colors text-center"
+                className="block px-6 py-3 bg-emerald-500 hover:bg-emerald-600 text-white rounded-lg font-medium transition-colors text-center"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {labels.cta}
