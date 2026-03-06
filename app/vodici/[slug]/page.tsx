@@ -26,8 +26,8 @@ export async function generateMetadata({
   }
 
   return {
-    title: `${post.title} - Udahni Avanturu`,
-    description: post.excerpt,
+    title: post.metadataTitle ?? `${post.title} - Udahni Avanturu`,
+    description: post.metadataDescription ?? post.excerpt,
   };
 }
 

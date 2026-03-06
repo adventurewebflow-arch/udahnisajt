@@ -11,87 +11,87 @@ export interface BlogPost {
   coverImage?: string;
   coverAlt?: string;
   tags: string[];
+  metadataTitle?: string;
+  metadataDescription?: string;
 }
 
 export const blogPosts: BlogPost[] = [
   {
     id: "1",
-    title: "Trnovačko jezero – vodič",
+    title: "Trnovačko jezero – kompletan vodič za posjetu jednom od najljepših jezera Balkana",
     slug: "trnovacko-jezero-vodic",
     excerpt:
-      "Sve što trebate znati o Trnovačkom jezeru - jednom od najljepših jezera u Bosni i Hercegovini. Otkrijte kako doći, šta vidjeti i kako se pripremiti za nezaboravnu avanturu.",
+      "Saznaj kako doći do Trnovačkog jezera, kada je najbolje vrijeme za posjetu, gdje kampovati i kako izgleda uspon na Maglić iznad jednog od najljepših jezera Balkana.",
+    metadataTitle: "Trnovačko jezero – vodič, kampovanje i uspon na Maglić | NP Sutjeska",
+    metadataDescription:
+      "Saznaj kako doći do Trnovačkog jezera, kada je najbolje vrijeme za posjetu, gdje kampovati i kako izgleda uspon na Maglić iznad jednog od najljepših jezera Balkana.",
     content: `
-      <h1>Trnovačko jezero – kompletan vodič za avanturiste</h1>
+      <h2>Gdje se nalazi Trnovačko jezero</h2>
       
-      <p>Trnovačko jezero je jedno od najljepših i najfotografisanijih jezera u Bosni i Hercegovini. Smješteno u srcu Nacionalnog parka Sutjeska, ovo prekrasno jezero predstavlja pravi dragulj dinarskih planina. Ako planirate posjetu ovom čarobnom mjestu, ovaj vodič će vam pomoći da se pripremite i uživate u svakom trenutku.</p>
+      <p>Trnovačko jezero nalazi se u Nacionalnom parku Sutjeska, na granici Bosne i Hercegovine i Crne Gore, ispod planine <a href="/ture/kampovanje-trnovacko-jezero-maglic" class="text-emerald-400 hover:text-emerald-300 underline">Maglić</a> koja je ujedno i najviši vrh Bosne i Hercegovine. Ovo ledenjačko jezero smješteno je na nadmorskoj visini od oko 1517 metara i poznato je po svom jedinstvenom obliku srca koji ga čini jednim od najfotografisanijih prirodnih lokaliteta na Balkanu. Pristup jezeru vodi kroz planinske staze iz pravca Foče i Prijevora, a u blizini se nalazi i prašuma Perućica – najstarija prašuma u Evropi.</p>
 
-      <h2>Gdje se nalazi Trnovačko jezero?</h2>
+      <h2>Zašto je Trnovačko jezero posebno</h2>
       
-      <p>Trnovačko jezero se nalazi u Nacionalnom parku Sutjeska, na nadmorskoj visini od 1517 metara. Okruženo je planinama Maglić, Volujak i Bioč, što čini njegovu poziciju spektakularnom. Jezero je udaljeno oko 20 kilometara od Foče, što ga čini pristupačnim za planinare svih nivoa.</p>
+      <p>Trnovačko jezero smatra se jednim od najljepših planinskih jezera u regionu zbog svoje boje, okruženja i pogleda na planinu Maglić. Okruženo je strmim planinskim padinama, zelenim livadama i kamenitim vrhovima koji stvaraju impresivan pejzaž.</p>
+      <p>Tokom ljetnih mjeseci voda jezera poprima tirkizne nijanse, dok planinski vrhovi stvaraju dramatičnu pozadinu koja oduzima dah. Jezero je formirano tokom ledenog doba i proteže se na oko 700 metara dužine i 300 metara širine, sa maksimalnom dubinom od 15 metara. Kristalno čista voda reflektuje okolne planine – Maglić, Volujak i Bioč – stvarajući panorame koje ostaju u sjećanju svakog posjetioca.</p>
 
-      <h2>Kako doći do Trnovačkog jezera?</h2>
+      <h2>Kako doći do Trnovačkog jezera</h2>
       
-      <p>Postoje nekoliko načina da dođete do Trnovačkog jezera. Najpopularnija ruta vodi iz Tjentišta, kroz prašumu Perućica, do Prijevora, a zatim spustom do jezera. Ova ruta traje oko 3-4 sata hoda i zahtijeva srednju fizičku kondiciju. Alternativna ruta vodi iz Foče direktno do jezera, što je nešto kraća opcija.</p>
+      <p>Postoji nekoliko načina da se dođe do Trnovačkog jezera.</p>
+      <p><strong>1. Planinarska ruta iz pravca Prijevora.</strong> Jedna od najčešćih ruta vodi iz pravca Prijevora i traje nekoliko sati planinarenja kroz planinske pašnjake i staze.</p>
+      <p><strong>2. Ruta iz pravca Crne Gore.</strong> Druga ruta vodi iz pravca sela Mratinje u Crnoj Gori i uključuje dužu planinarsku stazu.</p>
+      <p><strong>3. Organizovana tura sa vodičem.</strong> Za mnoge posjetioce najjednostavniji način je dolazak uz organizovanu turu sa vodičem koji poznaje teren. Ruta iz Prijevora traje oko 3–4 sata planinarenja i zahtijeva srednju fizičku kondiciju. Ruta iz Crne Gore je nešto duža i uključuje više sati hoda kroz planinske pašnjake i staze. U oba slučaja preporučujemo da provjerite vremensku prognozu i da budete pripremljeni za promjenu vremena u planinama.</p>
 
-      <p>Za najbolje iskustvo, preporučujemo organizovanu turu sa iskusnim vodičem. Naša <a href="/ture/kampovanje-trnovacko-jezero-maglic" class="text-emerald-400 hover:text-emerald-300 underline">tura na Trnovačko jezero sa usponom na Maglić</a> kombinuje kampovanje uz jezero sa usponom na najviši vrh BiH, pružajući vam kompletnu avanturu u prirodi.</p>
-
-      <h2>Šta čini Trnovačko jezero posebnim?</h2>
+      <h2>Kampovanje na Trnovačkom jezeru</h2>
       
-      <h3>Prirodna ljepota</h3>
-      <p>Trnovačko jezero je prirodno jezero formirano tokom ledenog doba. Njegova kristalno čista voda reflektuje okolne planine, stvarajući spektakularne fotografije. Jezero je dugo oko 700 metara i široko oko 300 metara, sa maksimalnom dubinom od 15 metara.</p>
+      <p>Kampovanje na Trnovačkom jezeru jedno je od najposebnijih iskustava koje planinari i ljubitelji prirode mogu doživjeti u Bosni i Hercegovini.</p>
+      <p>Noć pod zvijezdama, pogled na planinu Maglić i jutarnja magla iznad jezera stvaraju atmosferu koja ostaje u sjećanju cijeli život.</p>
+      <p>Tokom ljeta mnogi planinari postavljaju šatore na livadama oko jezera i provode noć u prirodi. Uz jezero postoji planinska kafana gdje možete popiti kafu, čaj ili nešto jače dok uživate u pogledu. Za kampovanje potrebna vam je odgovarajuća oprema – šator, spavaća vreća prilagođena visini, karimat i topla odjeća, jer noći na 1500 metara mogu biti hladne čak i u ljetnim mjesecima.</p>
 
-      <h3>Biodiverzitet</h3>
-      <p>Okolina jezera je dom brojnim vrstama biljaka i životinja. U ljetnim mjesecima možete vidjeti različite vrste cvijeća, dok su okolne planine dom divljim životinjama kao što su medvjedi, vukovi i divlje koze.</p>
-
-      <h2>Najbolje vrijeme za posjetu</h2>
+      <h2>Uspon na Maglić iznad Trnovačkog jezera</h2>
       
-      <p>Najbolje vrijeme za posjetu Trnovačkom jezeru je od maja do oktobra. U ovom periodu vremenske prilike su najstabilnije, a temperature su prijatne za planinarenje i kampovanje. Ljetni mjeseci (jul i august) su idealni za kupanje u hladnoj vodi jezera.</p>
+      <p><a href="/ture/kampovanje-trnovacko-jezero-maglic" class="text-emerald-400 hover:text-emerald-300 underline">Maglić</a>, najviši vrh Bosne i Hercegovine (2386 m), nalazi se iznad Trnovačkog jezera i predstavlja jedan od najatraktivnijih planinarskih ciljeva u regionu.</p>
+      <p>Uspon na Maglić pruža spektakularne poglede na Trnovačko jezero, planine Volujak i Bioč, kao i prostranstva Nacionalnog parka Sutjeska.</p>
+      <p>Za mnoge planinare kombinacija Trnovačko jezero + Maglić predstavlja jednu od najljepših avantura na Balkanu.</p>
 
-      <h2>Šta ponijeti sa sobom?</h2>
+      <h2>Kada je najbolje vrijeme za posjetu</h2>
       
-      <h3>Osnovna oprema</h3>
-      <p>Za posjetu Trnovačkom jezeru potrebno je ponijeti:</p>
+      <p>Najbolji period za posjetu Trnovačkom jezeru je od juna do septembra, kada su planinske staze prohodne, a vremenski uslovi stabilniji. U tom periodu priroda je najživlja, a jezero ima svoju najljepšu boju. Jul i august su idealni za kupanje u hladnoj vodi jezera i za duže boravke u kampu. U ranom ljetu (jun) i ranoj jeseni (septembar) možete izbjeći gužve i uživati u tišini – ali budite svjesni da vremenske prilike mogu biti nestabilnije.</p>
+
+      <h2>Šta ponijeti na turu</h2>
+      
       <ul>
-        <li>Planinske cipele sa dobrom prijanjanjem</li>
-        <li>Ruksak (minimalno 30L) sa vodom (minimalno 2L po osobi)</li>
-        <li>Odjeća za sve vremenske prilike (slojevi su ključni)</li>
-        <li>Hrana za snagu (energetski barovi, orašasti plodovi)</li>
-        <li>Prva pomoć (osnovni set)</li>
-        <li>Krema za sunce i naočale</li>
+        <li>planinarske cipele</li>
+        <li>dovoljno vode</li>
+        <li>zaštitu od sunca</li>
+        <li>laganu jaknu</li>
+        <li>kameru ili telefon za fotografije</li>
       </ul>
 
-      <h3>Za kampovanje</h3>
-      <p>Ako planirate kampovanje uz jezero, dodatno trebate:</p>
+      <h2>Mapa – gdje se nalazi Trnovačko jezero</h2>
+      
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2903.475!2d18.7358!3d43.2828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDE2JzU4LjEiTiAxOMKwNDQnMDguOSJF!5e0!3m2!1ssr!2sba!4v1709308800" width="100%" height="400" style="border:0;max-width:100%;border-radius:12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Lokacija Trnovačkog jezera"></iframe>
+
+      <h2>Organizovana tura na Trnovačko jezero</h2>
+      
+      <p>Ako želiš doživjeti Trnovačko jezero na najbolji način, možeš se pridružiti organizovanoj turi sa vodičem.</p>
+      <p>Organizovane ture obično uključuju:</p>
       <ul>
-        <li>Šator sa vodootpornom podlogom</li>
-        <li>Spavaća vreća prilagođena visini</li>
-        <li>Karimat ili dušek</li>
-        <li>Fenjer ili čarobna svjetiljka</li>
-        <li>Kuhinjski pribor i hrana</li>
+        <li>planinarenje do jezera</li>
+        <li>kampovanje</li>
+        <li>obilazak vidikovaca</li>
+        <li>mogućnost uspona na Maglić</li>
       </ul>
+      <p>Pogledaj našu <a href="/ture/kampovanje-trnovacko-jezero-maglic" class="text-emerald-400 hover:text-emerald-300 underline">turu na Trnovačko jezero sa kampovanjem i usponom na Maglić</a> – idealan izbor za one koji žele kompletnu avanturu u srcu NP Sutjeska.</p>
 
-      <h2>Sigurnost i preporuke</h2>
-      
-      <p>Trnovačko jezero je prekrasno mjesto, ali zahtijeva poštovanje prirode i sigurnosnih mjera. Uvijek idite sa licenciranim vodičem, posebno ako ste početnik. Vremenske prilike u planinama mogu se brzo promijeniti, pa je važno biti pripremljen.</p>
-
-      <p>Poštujte prirodu - ne ostavljajte smeće, ne palite vatru van određenih mjesta, i ne uzimajte ništa iz prirode. Trnovačko jezero je dio Nacionalnog parka Sutjeska, što znači da su posebne zaštitne mjere na snazi.</p>
-
-      <h2>Fotografisanje</h2>
-      
-      <p>Trnovačko jezero je jedno od najfotografisanijih mjesta u BiH, i to sa razlogom. Najbolje fotografije možete napraviti ujutro ili uveče, kada je svjetlost najbolja. Zlatni sat (sunrise i sunset) pruža spektakularne prilike za fotografisanje.</p>
-
-      <h2>Zaključak</h2>
-      
-      <p>Trnovačko jezero je mjesto koje svaki ljubitelj prirode mora posjetiti. Njegova prirodna ljepota, netaknuta okolina i spektakularni vidici čine ga idealnom destinacijom za avanturiste svih nivoa. Bez obzira da li dolazite sami ili sa organizovanom turom, ovo jezero će vas oduševiti.</p>
-
-      <p>Ako želite iskusiti Trnovačko jezero sa iskusnim vodičem i u društvu avanturista, pogledajte naše <a href="/ture/kampovanje-trnovacko-jezero-maglic" class="text-emerald-400 hover:text-emerald-300 underline">ture na Trnovačko jezero</a> ili kontaktirajte nas za više informacija.</p>
+      <p>Također preporučujemo ture na <a href="/ture/zelengora-jezera-vidikovci" class="text-emerald-400 hover:text-emerald-300 underline">Zelengoru</a> i kroz <a href="/ture/prasuma-perucica-vodopad-skakavac" class="text-emerald-400 hover:text-emerald-300 underline">prašumu Perućica</a> – sve u okviru Nacionalnog parka Sutjeska i parka prirode Piva.</p>
     `,
     author: "Marko Petrović",
     date: "2026-02-05",
-    image: "/images/tours/blog-vodici-sutjeska-tjentiste-perucica-maglic-trnovacko/trnovacko-jezero-vodic.webp",
-    imageAlt: "Trnovačko jezero – vodič",
-    coverImage: "/images/tours/blog-vodici-sutjeska-tjentiste-perucica-maglic-trnovacko/trnovacko-jezero-vodic.webp",
-    coverAlt: "Trnovačko jezero u Nacionalnom parku Sutjeska – vodič za posjetu",
+    image: "/images/tours/blog/trnovacko-jezero-maglic-sutjeska.webp",
+    imageAlt: "Trnovačko jezero ispod planine Maglić u Nacionalnom parku Sutjeska",
+    coverImage: "/images/tours/blog/trnovacko-jezero-maglic-sutjeska.webp",
+    coverAlt: "Trnovačko jezero ispod planine Maglić u Nacionalnom parku Sutjeska",
     tags: ["Trnovačko jezero", "NP Sutjeska", "planinarenje", "kampovanje"],
   },
   {
@@ -192,9 +192,9 @@ export const blogPosts: BlogPost[] = [
     `,
     author: "Petar Kostić",
     date: "2026-02-24",
-    image: "/images/tours/blog-vodici-sutjeska-tjentiste-perucica-maglic-trnovacko/uspon-na-maglic-savjeti.webp",
+    image: "/images/tours/blog/uspon-na-maglic-savjeti.webp",
     imageAlt: "Uspon na Maglić – savjeti",
-    coverImage: "/images/tours/blog-vodici-sutjeska-tjentiste-perucica-maglic-trnovacko/uspon-na-maglic-savjeti.webp",
+    coverImage: "/images/tours/blog/uspon-na-maglic-savjeti.webp",
     coverAlt: "Uspon na Maglić – savjeti za rutu, opremu i sigurnost",
     tags: ["Maglić", "planinarenje", "NP Sutjeska", "savjeti"],
   },
@@ -394,9 +394,9 @@ export const blogPosts: BlogPost[] = [
     `,
     author: "Nevena Matović",
     date: "2026-02-01",
-    image: "/images/tours/blog-vodici-sutjeska-tjentiste-perucica-maglic-trnovacko/sta-popnijeti-u-np-sutjeska.webp",
+    image: "/images/tours/blog/sta-popnijeti-u-np-sutjeska.webp",
     imageAlt: "Šta ponijeti u NP Sutjeska",
-    coverImage: "/images/tours/blog-vodici-sutjeska-tjentiste-perucica-maglic-trnovacko/sta-popnijeti-u-np-sutjeska.webp",
+    coverImage: "/images/tours/blog/sta-popnijeti-u-np-sutjeska.webp",
     coverAlt: "Šta ponijeti u NP Sutjeska – spisak opreme za jednodnevne i višednevne ture",
     tags: ["NP Sutjeska", "oprema", "priprema", "savjeti"],
   },
@@ -546,7 +546,7 @@ export const blogPosts: BlogPost[] = [
     `,
     author: "Marko Petrović",
     date: "2026-01-28",
-    image: "/images/tours/blog-vodici-sutjeska-tjentiste-perucica-maglic-trnovacko/skakavac.webp",
+    image: "/images/tours/blog/skakavac.webp",
     imageAlt: "Prašuma Perućica i vodopad Skakavac – šta treba znati prije obilaska",
     tags: ["Prašuma Perućica", "NP Sutjeska", "priroda", "biodiverzitet"],
   },
@@ -589,7 +589,7 @@ export const blogPosts: BlogPost[] = [
     `,
     author: "Udahni Avanturu",
     date: "2026-02-10",
-    image: "/images/tours/blog-vodici-sutjeska-tjentiste-perucica-maglic-trnovacko/zelengora-jezera-vidikovci.webp",
+    image: "/images/tours/blog/zelengora-jezera-vidikovci.webp",
     imageAlt: "Zelengora: jezera, vidikovci i najljepše rute",
     tags: ["Zelengora", "NP Sutjeska", "jezera", "Bregoč"],
   },
@@ -631,7 +631,7 @@ export const blogPosts: BlogPost[] = [
     `,
     author: "Udahni Avanturu",
     date: "2026-02-12",
-    image: "/images/tours/blog-vodici-sutjeska-tjentiste-perucica-maglic-trnovacko/djevojka-na-vodopadu-skakavac.webp",
+    image: "/images/tours/blog/djevojka-na-vodopadu-skakavac.webp",
     imageAlt: "Vodopad Skakavac u Perućici – šta treba znati",
     tags: ["Vodopad Skakavac", "Prašuma Perućica", "NP Sutjeska"],
   },
@@ -664,7 +664,7 @@ export const blogPosts: BlogPost[] = [
     `,
     author: "Udahni Avanturu",
     date: "2026-02-14",
-    image: "/images/tours/blog-vodici-sutjeska-tjentiste-perucica-maglic-trnovacko/prvi-maj-blog.webp",
+    image: "/images/tours/blog/prvi-maj-blog.webp",
     imageAlt: "Prvomajska avantura – utisci",
     tags: ["Prvomajska", "Tjentište", "recap", "avantura"],
   },
