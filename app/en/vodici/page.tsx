@@ -25,7 +25,7 @@ export default function BlogPageEN() {
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {blogPostsEN.map((post) => (
-            <Link key={post.id} href={`/en/blog/${post.slug}`}>
+            <Link key={post.id} href={`/en/vodici/${post.slug}`}>
               <article className="h-full flex flex-col rounded-2xl overflow-hidden border border-white/10 bg-gray-900/40 hover:-translate-y-1 hover:border-white/20 transition-all duration-300 cursor-pointer">
                 {post.image ? (
                   <div className="relative aspect-[16/9] w-full overflow-hidden rounded-t-2xl">
