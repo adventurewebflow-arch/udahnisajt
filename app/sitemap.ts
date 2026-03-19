@@ -40,6 +40,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/maglic-planina`, lastModified: now },
     { url: `${BASE}/zelengora`, lastModified: now },
     { url: `${BASE}/perucica`, lastModified: now },
+    { url: `${BASE}/sutjeska`, lastModified: now },
     ...tourDetailsSr,
     ...vodiciDetails,
 
