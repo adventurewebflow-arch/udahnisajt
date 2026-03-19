@@ -40,6 +40,11 @@ export default function ZelengoraPage() {
             Ime sve kaže — Zelen Gora. Planina toliko zelena da su je proglasili najljepšom planinom bivše Jugoslavije. Smještena u srcu Nacionalnog parka Sutjeska, Zelengora nije jedna tačka na karti — to je cijeli svijet jezera, vidikovaca, livada i tišine.
           </p>
 
+          <h2 className="text-2xl font-bold text-white md:text-3xl">Koliko jezera ima Zelengora?</h2>
+          <p className="leading-8">
+            Više nego što misliš. Orlovačko, Štirinsko, Kotlaničko, Bijelo, Crno, Kladopoljsko, Borlovačko, Donje bare, Gornje bare — svako jezero ima svoj karakter, svoju boju, svoje okruženje. Orlovačko je možda najpoznatije i mnogima najljepše. Ali pravi poznavatelji znaju da Zelengora ima još toga da pokaže.
+          </p>
+
           <h2 className="text-2xl font-bold text-white md:text-3xl">Tri cjeline Zelengore</h2>
           <p className="leading-8">
             Zelengora nije jedna ruta — ona ima tri različite cjeline, svaka sa svojom pričom.
@@ -48,7 +53,7 @@ export default function ZelengoraPage() {
             <div>
               <h3 className="text-xl font-semibold text-emerald-300 mb-2">Prva cjelina: Borić, Donje i Gornje bare, Uglješin vrh</h3>
               <p className="leading-8">
-                Vidikovac Borić je prelijepo mjesto sa kojeg se vidi kanjon Sutjeske i Maglić ti je ispred čela. Tu su odmah Donje i Gornje bare, a u blizini je i Uglješin vrh. Na Čemernu, koje gledamo sa vidikovca Borić, nalazi se granica između Bosne i Hercegovine (to je ono i) i evo detalja koji malo ko zna: sa jedne strane Čemerna voda teče prema Jadranskom moru, a sa druge prema Crnom moru. Dva sliva, jedan pogled.
+                Vidikovac Borić je prelijepo mjesto sa kojeg se vidi kanjon Sutjeske i Maglić ti je ispred čela. Tu su odmah Donje i Gornje bare, a u blizini je i Uglješin vrh. Na Čemernu, koje gledamo sa vidikovca Borić, nalazi se granica između Bosne i Hercegovine — i evo detalja koji malo ko zna: sa jedne strane Čemerna voda teče prema Jadranskom moru, a sa druge prema Crnom moru. Dva sliva, jedan pogled.
               </p>
             </div>
             <div>
@@ -64,19 +69,6 @@ export default function ZelengoraPage() {
               </p>
             </div>
           </div>
-
-          <h2 className="text-2xl font-bold text-white md:text-3xl">Koliko jezera ima Zelengora?</h2>
-          <p className="leading-8">
-            Više nego što misliš. Orlovačko, Štirinsko, Kotlaničko, Bijelo, Crno, Kladopoljsko, Borlovačko, Donje bare, Gornje bare — svako jezero ima svoj karakter, svoju boju, svoje okruženje. Orlovačko je možda najpoznatije i mnogima najljepše. Ali pravi poznavatelji znaju da Zelengora ima još toga da pokaže.
-          </p>
-
-          <h2 className="text-2xl font-bold text-white md:text-3xl">Bregoč i vidikovac Borić — kruna Zelengore</h2>
-          <p className="leading-8">
-            Po mišljenju onih koji je dobro poznaju, najljepša tačka Zelengore nije jezero — nego vidikovac Borić ispod Bregoča. Sa tog mjesta Maglić ti je ispred čela. Vidi se kanjon Sutjeske, Čemerno, granica Hercegovine i Bosne. I evo detalja koji malo ko zna: sa jedne strane vidikovca voda teče prema Jadranskom moru, a sa druge prema Crnom moru. Dva sliva, jedan pogled.
-          </p>
-          <p className="leading-8">
-            Bregoč je najviši vrh Zelengore na 2.017 metara. Uspon traje oko 3 sata i namijenjen je ljudima umjerene kondicije — nije ekstremno zahtjevan kao Maglić, ali nije ni šetnja.
-          </p>
 
           <h2 className="text-2xl font-bold text-white md:text-3xl">Jeep safari — zvučnik od kanistera i chill muzika</h2>
           <p className="leading-8">
