@@ -36,6 +36,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/o-nama`, lastModified: now },
     { url: `${BASE}/vodici`, lastModified: now },
     { url: `${BASE}/galerija`, lastModified: now },
+    { url: `${BASE}/trnovacko-jezero`, lastModified: now },
     ...tourDetailsSr,
     ...vodiciDetails,
 
