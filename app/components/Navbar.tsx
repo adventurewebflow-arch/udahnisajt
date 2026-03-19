@@ -14,12 +14,12 @@ function getAlternatePath(pathname: string): {
 
   if (isEn) {
     const rest = pathname.replace(/^\/en/, "") || "/";
-    const srPath = rest.replace(/^\/tours/, "/ture") || "/";
+    const srPath = (rest.replace(/^\/tours/, "/ture").replace(/^\/blog/, "/vodici") || "/");
     return { isEn, srPath, enPath: pathname };
   }
 
   const enPath =
-    "/en" + (pathname === "/" ? "" : pathname.replace(/^\/ture/, "/tours"));
+    "/en" + (pathname === "/" ? "" : pathname.replace(/^\/ture/, "/tours").replace(/^\/vodici/, "/blog"));
 
   return { isEn, srPath: pathname, enPath };
 }
@@ -103,19 +103,19 @@ export default function Navbar() {
                 {labels.dayTrips}
               </a>
               <Link
-                href="/galerija"
+                href={isEn ? "/en/galerija" : "/galerija"}
                 className="text-slate-200 hover:text-emerald-400 transition-colors"
               >
                 {labels.gallery}
               </Link>
               <Link
-                href="/o-nama"
+                href={isEn ? "/en/o-nama" : "/o-nama"}
                 className="text-slate-200 hover:text-emerald-400 transition-colors"
               >
                 {labels.about}
               </Link>
               <Link
-                href="/vodici"
+                href={isEn ? "/en/blog" : "/vodici"}
                 className="text-slate-200 hover:text-emerald-400 transition-colors"
               >
                 {labels.blog}
@@ -221,7 +221,7 @@ export default function Navbar() {
             </a>
 
             <Link
-              href="/galerija"
+              href={isEn ? "/en/galerija" : "/galerija"}
               className="block text-lg font-medium text-slate-200 hover:text-emerald-400 transition-colors"
               onClick={closeMenu}
             >
@@ -229,7 +229,7 @@ export default function Navbar() {
             </Link>
 
             <Link
-              href="/o-nama"
+              href={isEn ? "/en/o-nama" : "/o-nama"}
               className="block text-lg font-medium text-slate-200 hover:text-emerald-400 transition-colors"
               onClick={closeMenu}
             >
@@ -237,7 +237,7 @@ export default function Navbar() {
             </Link>
 
             <Link
-              href="/vodici"
+              href={isEn ? "/en/blog" : "/vodici"}
               className="block text-lg font-medium text-slate-200 hover:text-emerald-400 transition-colors"
               onClick={closeMenu}
             >
