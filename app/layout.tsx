@@ -7,6 +7,29 @@ import Footer from "./components/Footer";
 export const metadata: Metadata = {
   title: "Udahni Avanturu - Avanturističke ture u prirodi",
   description: "Otkrijte ljepotu Bosne i Hercegovine kroz planinarenje, rafting i kampiranje. Nezaboravne avanture u prirodi.",
+  metadataBase: new URL("https://www.udahniavanturu.com"),
+  openGraph: {
+    title: "Udahni Avanturu - Avanturističke ture u prirodi",
+    description: "Otkrijte ljepotu Bosne i Hercegovine kroz planinarenje, rafting i kampiranje. Nezaboravne avanture u prirodi.",
+    url: "https://www.udahniavanturu.com",
+    siteName: "Udahni Avanturu",
+    images: [
+      {
+        url: "/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Udahni Avanturu - Avanturističke ture u prirodi",
+      },
+    ],
+    locale: "sr_BA",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Udahni Avanturu - Avanturističke ture u prirodi",
+    description: "Otkrijte ljepotu Bosne i Hercegovine kroz planinarenje, rafting i kampiranje. Nezaboravne avanture u prirodi.",
+    images: ["/opengraph-image.png"],
+  },
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
