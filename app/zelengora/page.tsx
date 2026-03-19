@@ -40,6 +40,31 @@ export default function ZelengoraPage() {
             Ime sve kaže — Zelen Gora. Planina toliko zelena da su je proglasili najljepšom planinom bivše Jugoslavije. Smještena u srcu Nacionalnog parka Sutjeska, Zelengora nije jedna tačka na karti — to je cijeli svijet jezera, vidikovaca, livada i tišine.
           </p>
 
+          <h2 className="text-2xl font-bold text-white md:text-3xl">Tri cjeline Zelengore</h2>
+          <p className="leading-8">
+            Zelengora nije jedna ruta — ona ima tri različite cjeline, svaka sa svojom pričom.
+          </p>
+          <div className="space-y-6">
+            <div>
+              <h3 className="text-xl font-semibold text-emerald-300 mb-2">Prva cjelina: Borić, Donje i Gornje bare, Uglješin vrh</h3>
+              <p className="leading-8">
+                Vidikovac Borić je prelijepo mjesto sa kojeg se vidi kanjon Sutjeske i Maglić ti je ispred čela. Tu su odmah Donje i Gornje bare, a u blizini je i Uglješin vrh. Na Čemernu, koje gledamo sa vidikovca Borić, nalazi se granica između Bosne i Hercegovine (to je ono i) i evo detalja koji malo ko zna: sa jedne strane Čemerna voda teče prema Jadranskom moru, a sa druge prema Crnom moru. Dva sliva, jedan pogled.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-emerald-300 mb-2">Druga cjelina: Bregoč, Orlovačko, Kotlaničko, Štirinsko, Borlovačko jezero</h3>
+              <p className="leading-8">
+                Bregoč je najviši vrh Zelengore na 2.017 metara. Uspon traje oko 2 sata i namijenjen je ljudima umjerene kondicije. Ova cjelina obuhvata najpoznatija jezera Zelengore — Orlovačko, Kotlaničko, Štirinsko i Borlovačko.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-emerald-300 mb-2">Treća cjelina: Pašina poljana, Crno i Bijelo jezero</h3>
+              <p className="leading-8">
+                Mirniji, udaljeniji dio Zelengore — idealan za one koji žele tišinu i netaknutu prirodu dalje od glavnih ruta. Tu možete jahati konje i obići Crno i Bijelo jezero.
+              </p>
+            </div>
+          </div>
+
           <h2 className="text-2xl font-bold text-white md:text-3xl">Koliko jezera ima Zelengora?</h2>
           <p className="leading-8">
             Više nego što misliš. Orlovačko, Štirinsko, Kotlaničko, Bijelo, Crno, Kladopoljsko, Borlovačko, Donje bare, Gornje bare — svako jezero ima svoj karakter, svoju boju, svoje okruženje. Orlovačko je možda najpoznatije i mnogima najljepše. Ali pravi poznavatelji znaju da Zelengora ima još toga da pokaže.
