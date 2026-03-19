@@ -92,19 +92,23 @@ export default function TrnovackoJezeroPage() {
 
           <h2 className="text-2xl font-bold text-white md:text-3xl">Organizovana tura – kampovanje i Maglić</h2>
           <p className="leading-8">
-            Ako želite doživjeti Trnovačko jezero i Maglić u najboljem obliku, pridružite se organizovanoj turi sa vodičem. Naša
-            tura kombinuje kampovanje na jezeru s usponom na najviši vrh zemlje – nezaboravna trodnevna avantura u srcu Sutjeske.
+            Ako želite doživjeti Trnovačko jezero i Maglić u najboljem obliku, pridružite se organizovanoj turi sa vodičem.
           </p>
-          <div className="rounded-xl border border-emerald-500/30 bg-slate-900/70 p-6">
-            <Link
-              href="/ture/kampovanje-trnovacko-jezero-maglic"
-              className="block text-emerald-300 transition hover:text-emerald-200"
-            >
-              <h3 className="text-xl font-semibold mb-2">Kampovanje na Trnovačkom jezeru s usponom na Maglić</h3>
-              <p className="text-slate-300 text-sm">
-                3 dana / 2 noći • Uključeno: vodič, transfer, kamp oprema, obroci, ulaznice za NP Sutjeska i Park prirode Piva
-              </p>
-              <span className="inline-block mt-3 text-emerald-400 font-medium">Pogledaj turu →</span>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+            <Link href="/ture/kampovanje-trnovacko-jezero-maglic" className="block p-5 rounded-xl bg-white/5 border border-white/10 hover:border-emerald-500/40 transition">
+              <h3 className="text-emerald-400 font-semibold mb-1">Kampovanje na Trnovačkom jezeru s usponom na Maglić</h3>
+              <p className="text-slate-400 text-sm mb-3">3 dana / 2 noći • 170€ po osobi</p>
+              <span className="text-emerald-400 text-sm">Pogledaj turu →</span>
+            </Link>
+            <Link href="/ture/maglic-trnovacko-jezero" className="block p-5 rounded-xl bg-white/5 border border-white/10 hover:border-emerald-500/40 transition">
+              <h3 className="text-emerald-400 font-semibold mb-1">Maglić i Trnovačko jezero</h3>
+              <p className="text-slate-400 text-sm mb-3">1 dan • 95€ po osobi</p>
+              <span className="text-emerald-400 text-sm">Pogledaj turu →</span>
+            </Link>
+            <Link href="/ture/trnovacko-jezero" className="block p-5 rounded-xl bg-white/5 border border-white/10 hover:border-emerald-500/40 transition">
+              <h3 className="text-emerald-400 font-semibold mb-1">Trnovačko jezero – jednodnevni izlet</h3>
+              <p className="text-slate-400 text-sm mb-3">1 dan • 75€ po osobi</p>
+              <span className="text-emerald-400 text-sm">Pogledaj turu →</span>
             </Link>
           </div>
 
