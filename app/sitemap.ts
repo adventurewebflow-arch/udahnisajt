@@ -39,6 +39,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/trnovacko-jezero`, lastModified: now },
     { url: `${BASE}/maglic-planina`, lastModified: now },
     { url: `${BASE}/zelengora`, lastModified: now },
+    { url: `${BASE}/perucica`, lastModified: now },
     ...tourDetailsSr,
     ...vodiciDetails,
 
