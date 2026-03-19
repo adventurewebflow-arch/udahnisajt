@@ -222,6 +222,17 @@ export default async function TourDetailPage({ params }: { params: Promise<{ slu
                 <Accordion items={faqItems} />
               </section>
             )}
+
+            {slug === "kampovanje-trnovacko-jezero-maglic" && (
+              <section>
+                <Link
+                  href="/trnovacko-jezero"
+                  className="inline-flex items-center text-emerald-400 hover:text-emerald-300 transition-colors"
+                >
+                  Saznaj više o Trnovačkom jezeru →
+                </Link>
+              </section>
+            )}
           </div>
 
           {/* Right Column - Sticky Details Card */}

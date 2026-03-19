@@ -110,6 +110,17 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           </div>
         )}
 
+        {slug === "trnovacko-jezero-vodic" && (
+          <div className="mt-8">
+            <Link
+              href="/trnovacko-jezero"
+              className="inline-flex items-center text-emerald-400 hover:text-emerald-300 transition-colors"
+            >
+              Saznaj više o Trnovačkom jezeru →
+            </Link>
+          </div>
+        )}
+
         {/* CTA box */}
         <div className="mt-12 p-8 rounded-2xl bg-gray-900/60 border border-white/10">
           <h3 className="text-xl font-bold text-white mb-2">Spreman za svoju avanturu?</h3>
