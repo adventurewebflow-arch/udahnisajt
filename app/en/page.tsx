@@ -3,7 +3,7 @@ import Link from "next/link";
 import AdventureCard from "../components/AdventureCard";
 import GalleryPreview from "../components/GalleryPreview";
 import InquiryForm from "../components/InquiryForm";
-import { popularAdventures, premiumAdventures, dayTripAdventures } from "../data/adventures";
+import { popularAdventuresEN, premiumAdventuresEN, dayTripAdventuresEN } from "../data/adventures-en";
 import type { Metadata } from "next";
 
 const BASE = "https://www.udahniavanturu.com";
@@ -90,7 +90,7 @@ export default function HomeEN() {
             <div className="w-16 h-1 bg-emerald-400"></div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {popularAdventures.map((adventure) => (
+            {popularAdventuresEN.map((adventure) => (
               <AdventureCard key={adventure.id} adventure={adventure} linkPrefix="/en/tours" />
             ))}
           </div>
@@ -109,7 +109,7 @@ export default function HomeEN() {
             Premium tours are private, handpicked adventures at the most attractive locations. Small groups, personalised approach, and an unforgettable experience.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {premiumAdventures.map((adventure) => (
+            {premiumAdventuresEN.map((adventure) => (
               <AdventureCard key={adventure.id} adventure={adventure} linkPrefix="/en/tours" />
             ))}
           </div>
@@ -128,7 +128,7 @@ export default function HomeEN() {
             Day trips by arrangement &ndash; ideal for those with limited time who still want to enjoy nature.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {dayTripAdventures.map((adventure) => (
+            {dayTripAdventuresEN.map((adventure) => (
               <AdventureCard key={adventure.id} adventure={adventure} linkPrefix="/en/tours" />
             ))}
           </div>

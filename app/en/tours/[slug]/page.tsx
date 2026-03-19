@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import { getAdventureBySlug, adventures } from "../../../data/adventures";
+import { getAdventureENBySlug, adventuresEN } from "../../../data/adventures-en";
 import InquiryForm from "../../../components/InquiryForm";
 import Accordion from "../../../components/Accordion";
 import type { Metadata } from "next";
@@ -46,7 +46,7 @@ function translateDifficulty(value: string): string {
 }
 
 export async function generateStaticParams() {
-  return adventures.map((adventure) => ({
+  return adventuresEN.map((adventure) => ({
     slug: adventure.slug,
   }));
 }
@@ -57,7 +57,7 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const adventure = getAdventureBySlug(slug);
+  const adventure = getAdventureENBySlug(slug);
 
   if (!adventure) {
     return { title: "Tour not found" };
@@ -78,7 +78,7 @@ export async function generateMetadata({
 
 export default async function TourDetailPageEN({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const adventure = getAdventureBySlug(slug);
+  const adventure = getAdventureENBySlug(slug);
 
   if (!adventure) {
     notFound();
