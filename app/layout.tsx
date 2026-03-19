@@ -5,12 +5,12 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
-  title: "Udahni Avanturu - Avanturističke ture u prirodi",
-  description: "Otkrijte ljepotu Bosne i Hercegovine kroz planinarenje, rafting i kampiranje. Nezaboravne avanture u prirodi.",
+  title: "Udahni Avanturu – Hiking, Rafting & Camping Tours in Bosnia and Herzegovina",
+  description: "Join guided hiking, rafting and camping tours in Sutjeska National Park, Bosnia and Herzegovina. Small groups, licensed guides, unforgettable nature adventures near Foča.",
   metadataBase: new URL("https://www.udahniavanturu.com"),
   openGraph: {
-    title: "Udahni Avanturu - Avanturističke ture u prirodi",
-    description: "Otkrijte ljepotu Bosne i Hercegovine kroz planinarenje, rafting i kampiranje. Nezaboravne avanture u prirodi.",
+    title: "Udahni Avanturu – Hiking, Rafting & Camping Tours in Bosnia and Herzegovina",
+    description: "Join guided hiking, rafting and camping tours in Sutjeska National Park, Bosnia and Herzegovina. Small groups, licensed guides, unforgettable nature adventures near Foča.",
     url: "https://www.udahniavanturu.com",
     siteName: "Udahni Avanturu",
     images: [
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
         url: "/opengraph-image.png",
         width: 1200,
         height: 630,
-        alt: "Udahni Avanturu - Avanturističke ture u prirodi",
+        alt: "Udahni Avanturu – Hiking, Rafting & Camping Tours in Bosnia and Herzegovina",
       },
     ],
     locale: "sr_BA",
@@ -26,8 +26,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Udahni Avanturu - Avanturističke ture u prirodi",
-    description: "Otkrijte ljepotu Bosne i Hercegovine kroz planinarenje, rafting i kampiranje. Nezaboravne avanture u prirodi.",
+    title: "Udahni Avanturu – Hiking, Rafting & Camping Tours in Bosnia and Herzegovina",
+    description: "Join guided hiking, rafting and camping tours in Sutjeska National Park, Bosnia and Herzegovina. Small groups, licensed guides, unforgettable nature adventures near Foča.",
     images: ["/opengraph-image.png"],
   },
   icons: {
