@@ -5,9 +5,9 @@ import Link from "next/link";
 const BASE = "https://www.udahniavanturu.com";
 
 export const metadata: Metadata = {
-  title: "Maglic Hike Guide: Routes, Difficulty, and Best Season | Udahni Avanturu",
+  title: "Maglić – The Highest Peak in Bosnia and Herzegovina | Hike Guide",
   description:
-    "Plan your Maglic hike with practical advice on routes, terrain, weather, safety, and guided options in Sutjeska National Park.",
+    "Maglić (2,386m) is the highest peak in Bosnia and Herzegovina. Complete hiking guide — routes from Prijevor and Trnovačko Lake, gear, difficulty and organised tours.",
   alternates: {
     canonical: `${BASE}/en/maglic-hike`,
   },
@@ -19,7 +19,7 @@ export default function MaglicHikePage() {
       <section className="relative h-[42vh] min-h-[320px] flex items-center">
         <Image
           src="/images/tours/blog/uspon-na-maglic-savjeti.webp"
-          alt="Hiking on Maglic above Trnovacko Lake"
+          alt="Hiking on Maglić above Trnovačko Lake"
           fill
           priority
           sizes="100vw"
@@ -29,84 +29,88 @@ export default function MaglicHikePage() {
         <div className="relative z-10 mx-auto w-full max-w-5xl px-4 sm:px-6 lg:px-8">
           <p className="mb-3 text-sm uppercase tracking-[0.2em] text-emerald-300">Sutjeska National Park</p>
           <h1 className="max-w-3xl text-4xl font-extrabold leading-tight text-white md:text-5xl">
-            Maglic Hike: Complete Guide to Bosnia and Herzegovina&apos;s Highest Peak
+            Maglić — The Highest Peak in Bosnia and Herzegovina
           </h1>
         </div>
       </section>
 
       <section className="mx-auto w-full max-w-5xl px-4 py-12 sm:px-6 lg:px-8">
         <article className="space-y-8 text-slate-200">
-          <h2 className="text-2xl font-bold text-white md:text-3xl">Why Maglic Is One of the Best Mountain Experiences in the Balkans</h2>
-          <p className="leading-8">
-            A hike to Maglic is more than a summit objective. It is a complete high mountain day that combines broad panoramas,
-            steep alpine sections, wild landscapes, and a deep sense of remoteness that many travelers miss in more commercial
-            destinations. Rising above Sutjeska National Park, Maglic offers a dramatic profile and one of the most rewarding
-            viewpoints in the Dinaric range. On clear days, hikers can trace ridges and valleys stretching toward Volujak,
-            Zelengora, and beyond, while the distinctive shape of Trnovacko Lake below the massif adds a visual highlight that
-            makes this route unforgettable.
-          </p>
-          <p className="leading-8">
-            The mountain is well known among regional hikers, but international travelers are only beginning to discover how
-            special this zone is. Terrain changes quickly from open meadows to rocky traverses, and weather can shift from calm
-            sunshine to strong wind in a short time. Because of that, proper planning is essential. Good boots, layered clothing,
-            adequate hydration, and realistic pacing are the difference between a hard but enjoyable challenge and an unsafe day.
-            For visitors who want to focus on experience rather than logistics, joining a guided tour is often the smartest
-            choice.
+          <p className="leading-8 text-lg">
+            Maglić (2,386m) is the highest peak in Bosnia and Herzegovina and one of the most spectacular hiking destinations in the Balkans. Located in Sutjeska National Park, on the border between Bosnia and Herzegovina and Montenegro, Maglić is not just a mountain — it is an experience you carry with you long after you return home.
           </p>
 
-          <h2 className="text-2xl font-bold text-white md:text-3xl">Route Overview, Difficulty, and Expected Time</h2>
-          <h3 className="text-xl font-semibold text-emerald-300">Typical Approach from Prijevor</h3>
+          <h2 className="text-2xl font-bold text-white md:text-3xl">Why is it called Maglić?</h2>
           <p className="leading-8">
-            Most organized hikes begin from the Prijevor area. From there, the route gains elevation steadily and becomes more
-            demanding in upper sections. The ascent is not technical mountaineering, but it does require sure footing, comfort on
-            steeper ground, and enough endurance for several hours of continuous movement. In practical terms, fit beginners with
-            prior hiking experience can complete the route under guidance, while experienced hikers will appreciate the variation
-            in terrain and scenery.
-          </p>
-          <h3 className="text-xl font-semibold text-emerald-300">Physical Demand and Safety Considerations</h3>
-          <p className="leading-8">
-            Maglic is commonly described as a demanding day hike. Total effort depends on weather, group pace, and route variant.
-            Plan for a long day with regular breaks, snacks, and controlled movement on exposed sections. During summer weekends,
-            early departure helps avoid heat and afternoon storms. In shoulder seasons, mornings can be cold and windy, so warm
-            layers and waterproof protection remain necessary even when forecasts look stable.
+            The name is no accident. Local people named it Maglić — from the word for fog — because mist so often surrounds it. Even when the forecast promises clear skies, the mountain has a way of surprising you. We were once at the very summit when a hailstorm broke out in the middle of summer — hailstones the size of gravel, lightning, thunder, and nothing around us but sky and rock. Whoever experiences that never forgets it. That is Maglić.
           </p>
 
-          <h2 className="text-2xl font-bold text-white md:text-3xl">Best Time to Hike and What to Pack</h2>
+          <h2 className="text-2xl font-bold text-white md:text-3xl">The View from the Summit</h2>
           <p className="leading-8">
-            The prime season for Maglic generally runs from late spring into early autumn, with peak conditions often in June,
-            July, and September. August can be very warm, which makes pacing and hydration especially important. Always check
-            current conditions before departure, and do not rely only on lowland forecasts. Weather at altitude behaves
-            differently and can change rapidly. Essential equipment includes ankle-supporting hiking boots, a 30 to 40 liter
-            backpack, at least two liters of water, layered clothing, sun protection, and basic first aid.
-          </p>
-          <p className="leading-8">
-            If you prefer a multi-day mountain experience, consider camping combinations that include Maglic and Trnovacko Lake.
-            These itineraries create more time in nature and reduce time pressure on summit day. If your goal is a single,
-            high-energy challenge, one-day options are also available and popular.
+            On a clear day, the view from Maglić stretches across almost the entire region — the Perućica rainforest directly below, Durmitor in the distance, Zelengora, Jahorina, Volujak, Bioč, Piva Lake, Mratinje, Piva, Plužine, Foča. A panorama that takes your breath away and cannot be described — it has to be experienced.
           </p>
 
-          <h2 className="text-2xl font-bold text-white md:text-3xl">Recommended Guided Tours</h2>
+          <h2 className="text-2xl font-bold text-white md:text-3xl">The Route and Difficulty</h2>
           <p className="leading-8">
-            For a safe and well-organized Maglic experience, these tours are the most relevant choices:
+            The most common route starts from Prijevor, at around 1,500 metres above sea level. The ascent takes 3 to 4 hours and requires good physical fitness and hiking experience. This is not a walk — Maglić is a serious mountain with steep sections and rocky terrain where hiking boots are non-negotiable. Regular trainers are not an option.
           </p>
-          <div className="grid gap-4 sm:grid-cols-2">
-            <Link href="/en/tours/kampovanje-trnovacko-jezero-maglic" className="rounded-xl border border-emerald-500/30 bg-slate-900/70 p-4 text-emerald-300 transition hover:border-emerald-400 hover:text-emerald-200">
-              Camping at Trnovacko Lake with Ascent to Maglic
+          <p className="leading-8">
+            The difficulty varies depending on how you organise your visit. If you camp at Trnovačko Lake and attack Maglić on the second day — the tour is moderately demanding because you are already at altitude and rested. If you go in a single day from Foča — it becomes more demanding because everything happens in one day.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white md:text-3xl">The Border Madness</h2>
+          <p className="leading-8">
+            Here is a detail most visitors do not know in advance: when you camp at Trnovačko Lake, you sleep in Montenegro. The lake sits on the Montenegrin side of the border. In the morning you climb Maglić — the highest peak in Bosnia and Herzegovina — and return to Montenegro to sleep. The next morning you cross back into Bosnia. All on foot, through the mountain, with no border crossings. Very few travellers can say they slept in one country, stood on the highest peak of another, and walked back — all in two days.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white md:text-3xl">Water on the Route</h2>
+          <p className="leading-8">
+            There is a spring at Carevo Dolo on the route to Maglić, but it can dry up — especially in summer. Golden rule: always bring your own water, minimum 2–3 litres. You do not take chances on the mountain.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white md:text-3xl">The Café at Trnovačko Lake</h2>
+          <p className="leading-8">
+            This might be the finest detail of the entire tour. On the shore of Trnovačko Lake, at nearly 1,520 metres above sea level, there is a small mountain café run by Miloš and Ilija. Rakija, beer, coffee, tea — everything you need after the ascent. Beer chills in a 100-litre barrel of ice-cold spring water. Whoever sits there after Maglić and picks up that beer — they will never forget the taste. People who have never touched a beer in their lives drink one there.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white md:text-3xl">When to Go</h2>
+          <p className="leading-8">
+            Maglić is beautiful from June to October — each period in its own way. June brings melting snow and lush green nature. July and August are the warmest but also the most unpredictable — exactly when a hailstorm can catch you by surprise. September is perhaps the finest: more stable weather, fewer crowds, golden colours on the slopes.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white md:text-3xl">Who Comes to Maglić?</h2>
+          <p className="leading-8">
+            Absolutely everyone. Young, older, experienced hikers, people putting on a backpack for the first time. Nobody knows anyone at the start of the tour. By the end — everyone is friends. Not metaphorically, but genuinely. There are groups of people who hiked Maglić together 2–3 years ago and still message each other today, still wish each other happy holidays. The mountain connects people in a way that is hard to explain but easy to recognise.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white md:text-3xl">What to Bring</h2>
+          <ul className="list-disc list-inside space-y-2 text-slate-200 leading-8 pl-2">
+            <li>Hiking boots — non-negotiable</li>
+            <li>Backpack minimum 40L</li>
+            <li>Warm jacket — even in summer, the summit can be cold</li>
+            <li>Minimum 2–3L of water</li>
+            <li>Energy food for the ascent</li>
+            <li>Waterproof jacket or windbreaker — Maglić is Maglić</li>
+          </ul>
+
+          <h2 className="text-2xl font-bold text-white md:text-3xl">Organised Tours to Maglić</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+            <Link href="/en/tours/kampovanje-trnovacko-jezero-maglic" className="block p-5 rounded-xl bg-white/5 border border-white/10 hover:border-emerald-500/40 transition">
+              <h3 className="text-emerald-400 font-semibold mb-1">Camping at Trnovačko Lake with Maglić Summit</h3>
+              <p className="text-slate-400 text-sm mb-3">3 days / 2 nights • 170€ per person</p>
+              <span className="text-emerald-400 text-sm">View tour →</span>
             </Link>
-            <Link href="/en/tours/maglic-trnovacko-jezero" className="rounded-xl border border-emerald-500/30 bg-slate-900/70 p-4 text-emerald-300 transition hover:border-emerald-400 hover:text-emerald-200">
-              Maglic and Trnovacko Lake (Day Trip)
+            <Link href="/en/tours/maglic-trnovacko-jezero" className="block p-5 rounded-xl bg-white/5 border border-white/10 hover:border-emerald-500/40 transition">
+              <h3 className="text-emerald-400 font-semibold mb-1">Maglić and Trnovačko Lake</h3>
+              <p className="text-slate-400 text-sm mb-3">1 day • 95€ per person</p>
+              <span className="text-emerald-400 text-sm">View tour →</span>
             </Link>
-            <Link href="/en/tours/tura-za-malo-jace-ljude-maglic-trnovacko-rafting" className="rounded-xl border border-emerald-500/30 bg-slate-900/70 p-4 text-emerald-300 transition hover:border-emerald-400 hover:text-emerald-200 sm:col-span-2">
-              For the Stronger Ones - Maglic, Trnovacko Lake and Tara Rafting
+            <Link href="/en/tours/tura-za-malo-jace-ljude-maglic-trnovacko-rafting" className="block p-5 rounded-xl bg-white/5 border border-white/10 hover:border-emerald-500/40 transition">
+              <h3 className="text-emerald-400 font-semibold mb-1">For the Stronger Ones – Maglić, Trnovačko & Tara Rafting</h3>
+              <p className="text-slate-400 text-sm mb-3">3 days / 2 nights • 235€</p>
+              <span className="text-emerald-400 text-sm">View tour →</span>
             </Link>
           </div>
-
-          <h2 className="text-2xl font-bold text-white md:text-3xl">Final Planning Advice</h2>
-          <p className="leading-8 pb-4">
-            Treat Maglic with respect, prepare properly, and choose an itinerary that matches your current fitness. This mountain
-            rewards patience and consistency more than speed. With the right plan, the hike is not only achievable, but one of the
-            strongest outdoor memories you can have in Bosnia and Herzegovina.
-          </p>
         </article>
       </section>
     </main>
