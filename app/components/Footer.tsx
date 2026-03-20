@@ -1,6 +1,38 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Footer() {
+  const pathname = usePathname();
+  const isEn = pathname.startsWith("/en");
+
+  const tagline = isEn
+    ? "Your gateway to unforgettable adventures in nature. Discover the beauty of Bosnia and Herzegovina with us."
+    : "Vaša vrata ka nezaboravnim avanturama u prirodi. Otkrijte ljepotu Bosne i Hercegovine sa nama.";
+
+  const quickLinks = isEn ? "Quick Links" : "Brzi linkovi";
+  const contactHeading = isEn ? "Contact" : "Kontakt";
+  const rights = isEn ? "All rights reserved" : "Sva prava zadržana";
+
+  const links = isEn
+    ? [
+        { href: "/en#tours", label: "Popular Tours" },
+        { href: "/en#premium", label: "Premium Tours" },
+        { href: "/en#day-trips", label: "Day Trips" },
+        { href: "/en/galerija", label: "Gallery" },
+        { href: "/en/blog", label: "Blog" },
+        { href: "/en#contact", label: "Contact" },
+      ]
+    : [
+        { href: "/#popularne", label: "Popularne ture" },
+        { href: "/#premium", label: "Premium ture" },
+        { href: "/#izleti", label: "Izleti" },
+        { href: "/galerija", label: "Galerija" },
+        { href: "/vodici", label: "Blog" },
+        { href: "/#kontakt", label: "Kontakt" },
+      ];
+
   return (
     <footer className="bg-slate-950 border-t border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -8,69 +40,29 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <h3 className="text-2xl font-bold text-white mb-3">Udahni Avanturu</h3>
-            <p className="text-slate-400 text-sm leading-relaxed">
-              Vaša vrata ka nezaboravnim avanturama u prirodi. Otkrijte ljepotu Bosne i Hercegovine sa nama.
-            </p>
+            <p className="text-slate-400 text-sm leading-relaxed">{tagline}</p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-semibold text-white mb-4">Brzi linkovi</h4>
+            <h4 className="text-lg font-semibold text-white mb-4">{quickLinks}</h4>
             <ul className="space-y-2">
-              <li>
-                <a
-                  href="/#popularne"
-                  className="text-slate-400 hover:text-emerald-400 transition-colors"
-                >
-                  Popularne ture
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/#premium"
-                  className="text-slate-400 hover:text-emerald-400 transition-colors"
-                >
-                  Premium ture
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/#izleti"
-                  className="text-slate-400 hover:text-emerald-400 transition-colors"
-                >
-                  Izleti
-                </a>
-              </li>
-              <li>
-                <Link
-                  href="/galerija"
-                  className="text-slate-400 hover:text-emerald-400 transition-colors"
-                >
-                  Galerija
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/vodici"
-                  className="text-slate-400 hover:text-emerald-400 transition-colors"
-                >
-                  Blog
-                </Link>
-              </li>
-              <li>
-                <a
-                  href="/#kontakt"
-                  className="text-slate-400 hover:text-emerald-400 transition-colors"
-                >
-                  Kontakt
-                </a>
-              </li>
+              {links.map((item) => (
+                <li key={item.href + item.label}>
+                  <Link
+                    href={item.href}
+                    className="text-slate-400 hover:text-emerald-400 transition-colors"
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
           {/* Contact */}
           <div>
-            <h4 className="text-lg font-semibold text-white mb-4">Kontakt</h4>
+            <h4 className="text-lg font-semibold text-white mb-4">{contactHeading}</h4>
             <ul className="space-y-2 text-slate-400 mb-4">
               <li>
                 <a
@@ -111,7 +103,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-white/10 mt-8 pt-8 text-center text-slate-400 text-sm">
-          <p>© 2026 Udahni Avanturu. Sva prava zadržana.</p>
+          <p>© 2026 Udahni Avanturu. {rights}.</p>
         </div>
       </div>
     </footer>

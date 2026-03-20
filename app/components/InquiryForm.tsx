@@ -1,7 +1,9 @@
 "use client";
 
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 import { adventures } from "../data/adventures";
+import { adventuresEN } from "../data/adventures-en";
 
 interface InquiryFormProps {
   tourTitle?: string;
@@ -9,6 +11,10 @@ interface InquiryFormProps {
 }
 
 export default function InquiryForm({ tourTitle, tourSlug }: InquiryFormProps) {
+  const pathname = usePathname();
+  const isEn = pathname.startsWith("/en");
+  const tourList = isEn ? adventuresEN : adventures;
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -20,56 +26,96 @@ export default function InquiryForm({ tourTitle, tourSlug }: InquiryFormProps) {
   });
   const [submitted, setSubmitted] = useState(false);
 
-  const selectedAdventure = adventures.find((a) => a.slug === formData.selectedTour);
+  const selectedAdventure = tourList.find((a) => a.slug === formData.selectedTour);
   const availableDates = selectedAdventure?.dates ?? [];
 
   const FORMSPREE_URL = "https://formspree.io/f/xqedwzll";
 
-const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-  e.preventDefault();
+  const t = isEn
+    ? {
+        bookPrefix: "Book:",
+        fullName: "Full Name *",
+        fullNamePh: "Your full name",
+        phone: "Phone",
+        numPeople: "Number of People *",
+        numPeoplePh: "Number of people",
+        selectTour: "Select Tour *",
+        selectTourPh: "Select a tour",
+        selectDate: "Select Date *",
+        selectDatePh: "Select a date",
+        noDates: "No available dates",
+        message: "Message",
+        messagePh: "Additional information or questions...",
+        submit: "Send Inquiry",
+        thanks: "Thank you for your inquiry",
+        respond: "We will respond within 1 hour.",
+        notSent: "Not sent. Check Console (F12) for error.",
+        network: "Network error. Please try again.",
+      }
+    : {
+        bookPrefix: "Rezerviši:",
+        fullName: "Ime i prezime *",
+        fullNamePh: "Vaše ime i prezime",
+        phone: "Telefon",
+        numPeople: "Broj osoba *",
+        numPeoplePh: "Broj osoba",
+        selectTour: "Izbor ture *",
+        selectTourPh: "Odaberite turu",
+        selectDate: "Izaberi datum *",
+        selectDatePh: "Odaberi datum",
+        noDates: "Nema dostupnih datuma",
+        message: "Poruka",
+        messagePh: "Dodatne informacije ili pitanja...",
+        submit: "Pošalji upit",
+        thanks: "Hvala Vam na upitu",
+        respond: "Odgovaramo u roku 1h.",
+        notSent: "Nije poslato. Pogledaj Console (F12) za grešku.",
+        network: "Greška sa internetom. Pokušaj ponovo.",
+      };
 
-  try {
-    const payload = {
-      ...formData,
-      tourTitle: tourTitle ?? "",
-      tourSlug: tourSlug ?? "",
-      selectedTourTitle: selectedAdventure?.title ?? "",
-    };
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
 
-    const res = await fetch(FORMSPREE_URL, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: JSON.stringify(payload),
-    });
+    try {
+      const payload = {
+        ...formData,
+        tourTitle: tourTitle ?? "",
+        tourSlug: tourSlug ?? "",
+        selectedTourTitle: selectedAdventure?.title ?? "",
+      };
 
-    if (!res.ok) {
-      const text = await res.text();
-      console.error("Formspree error:", text);
-      alert("Nije poslato. Pogledaj Console (F12) za grešku.");
-      return;
+      const res = await fetch(FORMSPREE_URL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      if (!res.ok) {
+        const text = await res.text();
+        console.error("Formspree error:", text);
+        alert(t.notSent);
+        return;
+      }
+
+      setSubmitted(true);
+
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        numberOfPeople: "",
+        selectedTour: tourSlug || "",
+        selectedDate: "",
+        message: "",
+      });
+    } catch (err) {
+      console.error(err);
+      alert(t.network);
     }
-
-    setSubmitted(true);
-
-    // reset polja
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      numberOfPeople: "",
-      selectedTour: tourSlug || "",
-      selectedDate: "",
-      message: "",
-    });
-
-  } catch (err) {
-    console.error(err);
-    alert("Greška sa internetom. Pokušaj ponovo.");
-  }
-};
+  };
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
@@ -93,8 +139,8 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     return (
       <div className="bg-gray-800 rounded-xl p-8 text-center">
         <div className="text-emerald-400 text-5xl mb-4">✓</div>
-        <h3 className="text-2xl font-bold text-white mb-2">Hvala Vam na upitu</h3>
-        <p className="text-gray-300">Odgovaramo u roku 1h.</p>
+        <h3 className="text-2xl font-bold text-white mb-2">{t.thanks}</h3>
+        <p className="text-gray-300">{t.respond}</p>
       </div>
     );
   }
@@ -103,14 +149,14 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     <form onSubmit={handleSubmit} className="bg-gray-800 rounded-xl p-8">
       {tourTitle && (
         <h3 className="text-2xl font-bold text-white mb-6">
-          Rezerviši: {tourTitle}
+          {t.bookPrefix} {tourTitle}
         </h3>
       )}
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
           <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
-            Ime i prezime *
+            {t.fullName}
           </label>
           <input
             type="text"
@@ -120,7 +166,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
             value={formData.name}
             onChange={handleChange}
             className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-emerald-500 transition-colors"
-            placeholder="Vaše ime i prezime"
+            placeholder={t.fullNamePh}
           />
         </div>
 
@@ -142,7 +188,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
 
         <div>
           <label htmlFor="phone" className="block text-sm font-medium text-gray-300 mb-2">
-            Telefon
+            {t.phone}
           </label>
           <input
             type="tel"
@@ -157,7 +203,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
 
         <div>
           <label htmlFor="numberOfPeople" className="block text-sm font-medium text-gray-300 mb-2">
-            Broj osoba *
+            {t.numPeople}
           </label>
           <input
             type="number"
@@ -168,13 +214,13 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
             value={formData.numberOfPeople}
             onChange={handleChange}
             className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-emerald-500 transition-colors"
-            placeholder="Broj osoba"
+            placeholder={t.numPeoplePh}
           />
         </div>
 
         <div className="md:col-span-2">
           <label htmlFor="selectedTour" className="block text-sm font-medium text-gray-300 mb-2">
-            Izbor ture *
+            {t.selectTour}
           </label>
           <select
             id="selectedTour"
@@ -184,8 +230,8 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
             onChange={handleChange}
             className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-white focus:outline-none focus:border-emerald-500 transition-colors"
           >
-            <option value="">Odaberite turu</option>
-            {adventures.map((adventure) => (
+            <option value="">{t.selectTourPh}</option>
+            {tourList.map((adventure) => (
               <option key={adventure.id} value={adventure.slug}>
                 {adventure.title}
               </option>
@@ -195,7 +241,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
 
         <div className="md:col-span-2">
           <label htmlFor="selectedDate" className="block text-sm font-medium text-gray-300 mb-2">
-            Izaberi datum *
+            {t.selectDate}
           </label>
           <select
             id="selectedDate"
@@ -206,12 +252,14 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
             disabled={!formData.selectedTour || availableDates.length === 0}
             className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-white focus:outline-none focus:border-emerald-500 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
           >
-            <option value="">Odaberi datum</option>
+            <option value="">{t.selectDatePh}</option>
             {availableDates.length === 0 ? (
-              <option disabled>Nema dostupnih datuma</option>
+              <option disabled>{t.noDates}</option>
             ) : (
               availableDates.map((d) => (
-                <option key={d} value={d}>{d}</option>
+                <option key={d} value={d}>
+                  {d}
+                </option>
               ))
             )}
           </select>
@@ -219,7 +267,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
 
         <div className="md:col-span-2">
           <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
-            Poruka
+            {t.message}
           </label>
           <textarea
             id="message"
@@ -228,7 +276,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
             value={formData.message}
             onChange={handleChange}
             className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-emerald-500 transition-colors resize-none"
-            placeholder="Dodatne informacije ili pitanja..."
+            placeholder={t.messagePh}
           />
         </div>
       </div>
@@ -237,7 +285,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         type="submit"
         className="w-full mt-6 px-6 py-3 bg-emerald-500 hover:bg-emerald-600 text-white font-medium rounded-lg transition-colors"
       >
-        Pošalji upit
+        {t.submit}
       </button>
     </form>
   );
