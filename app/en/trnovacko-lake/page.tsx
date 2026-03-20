@@ -5,9 +5,9 @@ import Link from "next/link";
 const BASE = "https://www.udahniavanturu.com";
 
 export const metadata: Metadata = {
-  title: "Trnovacko Lake Guide: How to Visit, Hike, and Plan | Udahni Avanturu",
+  title: "Trnovačko Lake – Complete Guide | Camping, Hiking & Maglić Summit",
   description:
-    "Explore Trnovacko Lake with route ideas, practical preparation tips, and guided tour options from Sutjeska National Park and Foča.",
+    "Trnovačko Lake is one of the most beautiful mountain lakes in the Balkans. Complete guide — how to get there, camping, Maglić summit and organised tours from Foča.",
   alternates: {
     canonical: `${BASE}/en/trnovacko-lake`,
   },
@@ -19,7 +19,7 @@ export default function TrnovackoLakePage() {
       <section className="relative h-[42vh] min-h-[320px] flex items-center">
         <Image
           src="/images/tours/blog/trnovacko-jezero-maglic-sutjeska.webp"
-          alt="Trnovacko Lake with mountain backdrop"
+          alt="Trnovačko Lake beneath Maglić — mountain lake in the Balkans"
           fill
           priority
           sizes="100vw"
@@ -27,79 +27,84 @@ export default function TrnovackoLakePage() {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/55 to-slate-950" />
         <div className="relative z-10 mx-auto w-full max-w-5xl px-4 sm:px-6 lg:px-8">
-          <p className="mb-3 text-sm uppercase tracking-[0.2em] text-emerald-300">Iconic Mountain Lake</p>
+          <p className="mb-3 text-sm uppercase tracking-[0.2em] text-emerald-300">Balkans</p>
           <h1 className="max-w-3xl text-4xl font-extrabold leading-tight text-white md:text-5xl">
-            Trnovacko Lake: Heart-Shaped Jewel of the Maglic Region
+            Trnovačko Lake — One of the Most Beautiful Mountain Lakes in the Balkans
           </h1>
         </div>
       </section>
 
       <section className="mx-auto w-full max-w-5xl px-4 py-12 sm:px-6 lg:px-8">
         <article className="space-y-8 text-slate-200">
-          <h2 className="text-2xl font-bold text-white md:text-3xl">Why Trnovacko Lake Is a Must-See in Bosnia and Herzegovina</h2>
-          <p className="leading-8">
-            Trnovacko Lake is one of the most recognizable natural landmarks in the region, famous for its shape, emerald water,
-            and dramatic alpine setting beneath the Maglic massif. For many visitors, this is the single place that defines their
-            memory of Sutjeska and the wider Dinaric mountains. What makes the lake special is not only its look in photos, but the
-            full atmosphere around it: quiet mornings, broad rocky slopes, changing light through the day, and a feeling of being
-            far away from crowded tourist circuits.
-          </p>
-          <p className="leading-8">
-            Whether you come for a day hike or as part of a multi-day camping program, Trnovacko offers strong contrast. On one
-            side, the route to reach it is active and rewarding. On the other, once you arrive, the pace naturally slows down. You
-            can walk along the shore, rest, take photos from different angles, and, in warm periods, even swim. This balance of
-            movement and calm makes the destination ideal for both experienced hikers and travelers who simply want a powerful
-            mountain landscape without a highly technical route.
+          <p className="leading-8 text-lg">
+            Trnovačko Lake sits at 1,520 metres above sea level on the border between Bosnia and Herzegovina and Montenegro, beneath Maglić — the highest peak in Bosnia and Herzegovina. It is shaped like a heart. It is surrounded by steep mountain slopes, green meadows and rocky peaks. And it is one of those places that changes people.
           </p>
 
-          <h2 className="text-2xl font-bold text-white md:text-3xl">How to Reach the Lake and What to Expect on Trail</h2>
-          <h3 className="text-xl font-semibold text-emerald-300">Approach and Hiking Style</h3>
+          <h2 className="text-2xl font-bold text-white md:text-3xl">You Sleep in Montenegro</h2>
           <p className="leading-8">
-            Most guided itineraries use off-road transfer to a higher starting point, then continue on foot to the lake. The walk
-            is usually moderate in difficulty and can be managed by participants with basic hiking fitness. The exact timing depends
-            on route variant, group pace, and weather, but the goal is typically a steady rhythm with regular short breaks. The
-            terrain includes open mountain sections and uneven surfaces where stable footwear is important.
-          </p>
-          <h3 className="text-xl font-semibold text-emerald-300">Best Conditions and Seasonal Considerations</h3>
-          <p className="leading-8">
-            Late spring to early autumn is the main season. In midsummer, warm temperatures can increase fatigue on exposed areas,
-            so early starts and proper hydration are recommended. In early and late season, temperatures at elevation can be cool,
-            especially in the morning and evening. Even when forecasts look good in lower valleys, mountain weather can shift
-            quickly, so waterproof protection and a warm layer should always be in your backpack.
+            Here is something most visitors do not know before they arrive: Trnovačko Lake is on the Montenegrin side of the border. When you camp here, you sleep in Montenegro. In the morning you climb Maglić — the highest peak in Bosnia and Herzegovina — and return to Montenegro to sleep. The next morning you cross back into Bosnia on foot, through the mountain, with no border crossings. Very few travellers in the world can say they have done that.
           </p>
 
-          <h2 className="text-2xl font-bold text-white md:text-3xl">Packing Advice for a Comfortable Day</h2>
+          <h2 className="text-2xl font-bold text-white md:text-3xl">How to Get There</h2>
           <p className="leading-8">
-            Practical gear for Trnovacko Lake includes hiking boots with good grip, layered clothing, a windproof outer layer, a
-            small first-aid kit, and enough water and snacks for the entire outing. If you plan to swim, pack a towel and dry
-            clothing for the return. Trekking poles can help on uneven terrain, especially during descent. A 30 to 40 liter
-            backpack is usually enough for day use, while multi-day camping tours may require additional organization depending on
-            what equipment is provided by the operator.
+            The most common route starts from Prijevor, at around 1,500 metres above sea level. The hike to the lake takes approximately 1.5 hours at a comfortable pace. The terrain is moderate and suitable for most participants.
+          </p>
+          <p className="leading-8">
+            There is also a route from the village of Mratinje in Montenegro — longer but equally beautiful.
           </p>
 
-          <h2 className="text-2xl font-bold text-white md:text-3xl">Best Tours for Visiting Trnovacko Lake</h2>
+          <h2 className="text-2xl font-bold text-white md:text-3xl">The Lake Itself</h2>
           <p className="leading-8">
-            These options are the most relevant if Trnovacko Lake is your main destination:
+            The water is crystal clear and cold even in summer. You can swim in it — and in July and August many people do. The lake stretches around 700 metres in length and 300 metres in width. On clear days it reflects Maglić, Volujak and Bioč. The heart shape is most visible from the viewpoint above — worth the extra 15 minutes of climbing.
           </p>
-          <div className="grid gap-4 sm:grid-cols-2">
-            <Link href="/en/tours/trnovacko-jezero" className="rounded-xl border border-emerald-500/30 bg-slate-900/70 p-4 text-emerald-300 transition hover:border-emerald-400 hover:text-emerald-200">
-              Trnovacko Lake (Day Trip)
+
+          <h2 className="text-2xl font-bold text-white md:text-3xl">The Café at the Lake</h2>
+          <p className="leading-8">
+            On the shore of Trnovačko Lake there is a small mountain café run by Miloš and Ilija. Rakija, beer, coffee, tea — everything you need after the hike or the Maglić summit. Beer chills in a 100-litre barrel of ice-cold spring water. Whoever sits there and picks up that beer — they will never forget the taste. People who have never touched a beer in their lives drink one there.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white md:text-3xl">Maglić Above the Lake</h2>
+          <p className="leading-8">
+            Maglić (2,386m) rises directly above Trnovačko Lake. The ascent from the lake takes around 2.5 hours and offers spectacular views back down to the lake and across the entire region — Durmitor, Zelengora, Jahorina, Volujak, Bioč, Piva Lake, Foča. The combination of Trnovačko Lake and Maglić is one of the finest adventures in the Balkans.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white md:text-3xl">Camping</h2>
+          <p className="leading-8">
+            Camping at Trnovačko Lake is one of the most special experiences you can have in Bosnia and Herzegovina. A night under the stars, the sound of silence, morning mist rising over the water, Maglić above you. The meadows around the lake are perfect for pitching a tent. Bring a sleeping bag rated for the altitude — nights at 1,500 metres can be cold even in summer.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white md:text-3xl">When to Go</h2>
+          <p className="leading-8">
+            June to September is ideal. The trails are passable, the weather more stable, and the lake has its most beautiful colour. July and August are perfect for swimming. June and September offer fewer crowds and more quiet — but be prepared for less predictable weather.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white md:text-3xl">Organised Tours</h2>
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-3 mt-6">
+            <Link
+              href="/en/tours/kampovanje-trnovacko-jezero-maglic"
+              className="block rounded-xl border border-white/10 bg-white/5 p-5 transition hover:border-emerald-500/40"
+            >
+              <h3 className="mb-1 font-semibold text-emerald-400">Camping at Trnovačko Lake with Maglić Summit</h3>
+              <p className="mb-3 text-sm text-slate-400">3 days / 2 nights • 170€ per person</p>
+              <span className="text-sm text-emerald-400">View tour →</span>
             </Link>
-            <Link href="/en/tours/kampovanje-trnovacko-jezero-maglic" className="rounded-xl border border-emerald-500/30 bg-slate-900/70 p-4 text-emerald-300 transition hover:border-emerald-400 hover:text-emerald-200">
-              Camping at Trnovacko Lake with Ascent to Maglic
+            <Link
+              href="/en/tours/maglic-trnovacko-jezero"
+              className="block rounded-xl border border-white/10 bg-white/5 p-5 transition hover:border-emerald-500/40"
+            >
+              <h3 className="mb-1 font-semibold text-emerald-400">Maglić and Trnovačko Lake</h3>
+              <p className="mb-3 text-sm text-slate-400">1 day • 95€ per person</p>
+              <span className="text-sm text-emerald-400">View tour →</span>
             </Link>
-            <Link href="/en/tours/maglic-trnovacko-jezero" className="rounded-xl border border-emerald-500/30 bg-slate-900/70 p-4 text-emerald-300 transition hover:border-emerald-400 hover:text-emerald-200 sm:col-span-2">
-              Maglic and Trnovacko Lake
+            <Link
+              href="/en/tours/trnovacko-jezero"
+              className="block rounded-xl border border-white/10 bg-white/5 p-5 transition hover:border-emerald-500/40"
+            >
+              <h3 className="mb-1 font-semibold text-emerald-400">Trnovačko Lake – Day Trip</h3>
+              <p className="mb-3 text-sm text-slate-400">1 day • 75€ per person</p>
+              <span className="text-sm text-emerald-400">View tour →</span>
             </Link>
           </div>
-
-          <h2 className="text-2xl font-bold text-white md:text-3xl">Photography and Experience Tips</h2>
-          <p className="leading-8 pb-4">
-            If your priority is photography, keep in mind that light changes the lake&apos;s appearance throughout the day. Morning
-            conditions can feel softer and quieter, while later light can produce stronger contrast around the surrounding slopes.
-            For the most complete experience, avoid rushing your visit. Build in enough time at the lake itself, not only on the
-            approach trail. That is often what turns a good trip into a memorable one.
-          </p>
         </article>
       </section>
     </main>
