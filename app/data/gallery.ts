@@ -29,4 +29,11 @@ export const galleryImages: { src: string; alt: string }[] = [
   { src: "/images/tours/gallery/pogled-maglic.webp", alt: "Pogled na Maglić" },
   { src: "/images/tours/gallery/slika-iz-satora-na-trnovackom-jezeru.webp", alt: "Pogled iz šatora na Trnovačko jezero" },
   { src: "/images/tours/gallery/za-galeriju-trnovacko-jezero.webp", alt: "Trnovačko jezero – galerija" },
+  { src: "/images/tours/gallery/dolazak.trnovacko-jezero.webp", alt: "Dolazak na Trnovačko jezero" },
+  { src: "/images/tours/gallery/jutro-kampovanje-trnovacko-jezero.webp", alt: "Jutro u kampu na Trnovačkom jezeru" },
+  { src: "/images/tours/gallery/kampovanje.webp", alt: "Kampovanje u prirodi" },
+  { src: "/images/tours/gallery/katuni-trnovacko-jezero.webp", alt: "Katuni ispod Trnovačkog jezera" },
+  { src: "/images/tours/gallery/najlepsa-slika-trnovacko.webp", alt: "Najljepša slika Trnovačkog jezera" },
+  { src: "/images/tours/gallery/rucak-trnovacko.webp", alt: "Ručak na Trnovačkom jezeru" },
+  { src: "/images/tours/gallery/trnovacko-jutro.webp", alt: "Jutro na Trnovačkom jezeru" },
 ];
