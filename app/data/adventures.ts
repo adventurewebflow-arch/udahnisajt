@@ -385,6 +385,82 @@ export const adventures: Adventure[] = [
       }
     ]
   },
+  {
+    id: "vikend-durmitor-01",
+    slug: "vikend-na-durmitoru",
+    title: "Vikend na Durmitoru",
+    category: "popular",
+    location: "Žabljak / NP Durmitor",
+    image: "/images/tours/predivan-pogled-sa-vidikovca-na-durmitoru.webp",
+    imageAlt: "Vikend na Durmitoru – predivan pogled sa vidikovca",
+    imagePosition: "center 60%",
+    shortDescription:
+      "Tvoja tura, tvoja pravila. Kućice sa vanjskim djakuzijem na Žabljaku, licencirani vodič i aktivnosti po tvom izboru — Prutaš, Crvena Greda ili Crno jezero.",
+    aboutTour:
+      "Postoje mjesta gdje se sve usporava. Gdje jutro miriše na borove i planinski vazduh, a veče završava u toploj vodi djakuzija dok Durmitor stoji pred tobom tiho i veličanstven. Žabljak je jedno od tih mjesta, a mi smo pronašli smještaj koji mu odgovara.\n\nKućice su smještene na jednoj od najljepših lokacija na Žabljaku. Svaka ima sopstvenu kuhinju, kupatilo i dnevni boravak. A napolju, vanjski djakuziji sa pogledom na masiv Durmitora. Jedan od najljepših pogleda na Žabljaku, to možemo reći slobodno.\n\nOva tura nema fiksni program — vi birate. Jedna noć ili dvije, aktivnosti po vašem izboru, raspored koji odgovara vama. Mi organizujemo, vodič je uz vas kako se dogovorimo.",
+    duration: "1-2 noći / po dogovoru",
+    difficulty: "Laka - Srednja",
+    price: "Na upit",
+    groupSize: "2+ osoba",
+    dates: [],
+    highlights: [
+      "Kućice sa vanjskim djakuzijem",
+      "Pogled na masiv Durmitora",
+      "Uspon na Prutaš (2.393m)",
+      "Crvena Greda vidikovac",
+      "Crno jezero – UNESCO svjetska baština",
+      "Žabljak obilazak",
+      "Licencirani vodič uvijek uz vas",
+      "Program potpuno po vašem izboru"
+    ],
+    itinerary: [
+      {
+        dayTitle: "Dan 1 — Dolazak i smještaj",
+        description:
+          "Gosti dolaze na Žabljak i smještaju se u kućice. Slobodno popodne za odmor, prvu šetnju oko Crnog jezera ili džakuzi sa pogledom na Durmitor. Večera i dogovor sa vodičem za sutrašnji dan — Prutaš, Crvena Greda ili Crno jezero, vi birate."
+      },
+      {
+        dayTitle: "Dan 2 — Aktivnost po izboru",
+        description:
+          "Nakon doručka kreće odabrana aktivnost.\n\n**Opcija A — Uspon na Prutaš (2.393m):** Jedan od najljepših vrhova Durmitora. Uspon traje oko 3,5 sata, panorama koja oduzima dah — Durmitorski masiv, Crno jezero, prostranstva Crne Gore i Bosne.\n\n**Opcija B — Crvena Greda:** Spektakularan vidikovac sa pogledom koji se ne zaboravlja. Lakša opcija, jednako impresivna.\n\n**Opcija C — Crno jezero:** UNESCO svjetska baština, šetnja kroz borovu šumu do smaragdnog jezera ispod Medjeda.\n\n**Opcija D — Žabljak obilazak:** Centar Durmitora, lokalna atmosfera, planinski ugođaj.\n\nPo povratku slobodno vrijeme, djakuzi, odmor."
+      },
+      {
+        dayTitle: "Dan 3 — Odlazak (ili još jedan dan po dogovoru)",
+        description:
+          "Jutarnji doručak i polako pakovanje. Za one koji žele ostati još jedan dan — organizujemo drugu aktivnost po izboru. Nema žurbe, nema pritiska — Durmitor ostaje."
+      }
+    ],
+    includes: [
+      "Smještaj u kućici sa vanjskim džakuzijem",
+      "Licencirani vodič tokom svih aktivnosti",
+      "Ulaznica za NP Durmitor",
+      "Organizacija programa po dogovoru"
+    ],
+    excludes: [
+      "Transfer do Žabljaka (gosti dolaze sami)",
+      "Ishrana po dogovoru",
+      "Piće i lični troškovi",
+      "Troškovi van programa"
+    ],
+    faqs: [
+      {
+        q: "Kako rezervisati?",
+        a: "Pošaljite upit sa brojem osoba i željenim datumima. Mi vam šaljemo opcije — aktivnosti, broj noći, ishrana — vi birate šta vam odgovara."
+      },
+      {
+        q: "Da li treba planinarsko iskustvo?",
+        a: "Za Crno jezero i Žabljak obilazak nije potrebno. Za Prutaš i Crvenu Gredu preporučujemo dobru fizičku kondiciju. Vodič je uvijek uz vas."
+      },
+      {
+        q: "Koliko osoba može biti?",
+        a: "Minimum 2 osobe. Kućice primaju do 6 osoba — idealno za parove, prijatelje ili manju porodicu."
+      },
+      {
+        q: "Kada je djakuzi dostupan?",
+        a: "Djakuzi je dostupan cijelo vrijeme boravka — ujutro, poslijepodne i navečer. Idealan je uveče nakon aktivnosti sa pogledom na Durmitor."
+      }
+    ]
+  },
   // PREMIUM TOUR
   {
     id: "5",
@@ -535,18 +611,18 @@ export const adventures: Adventure[] = [
     category: "premium",
     location: "Durmitor / Piva (via ferrata) / Prutaš",
     image: "/images/tours/nevena-na-putu-za-prutas.webp",
-    imageAlt: "Vikend na Durmitoru – put prema Prutašu",
+    imageAlt: "Via ferrata Piva, uspon na Prutaš i kajakarenje – premium avantura",
     imagePosition: "center 60%",
     shortDescription: "Ova premium tura spaja via ferratu, visoke planinske vrhove i mirnu vodu u jedno snažno, raznovrsno iskustvo. Namijenjena je onima koji žele pravu avanturu – aktivnu, sadržajnu i nezaboravnu.",
     aboutTour: `Ima mjesta koja te promijene. Durmitor te nauči koliko si mali pred prirodom. Kanjon Pive te nauči da strah nije prepreka. A Pivsko jezero te nauči da tišina može biti najglasnija stvar koju si čuo. Ova tura nije samo izlet — ona je tri dana u kojima ćeš osjetiti stijene pod rukama, vrh pod nogama i vodu pod veslom.
 
 Na turama Udahni avanturu uvijek su prisutni ljudi koji žive život kako treba — otvoreni, kulturni, željni više od svakodnevice. Upravo to čini svaku grupu posebnom i svaku turu nezaboravnom. Dolaze parovi i prijatelji koji znaju da su najljepše uspomene uvijek napravljene negdje daleko od kauča.
 
-Tura polazi iz Foče, vodi vas kroz tri lica divlje prirode Crne Gore i vraća vas nazad — bogatije za iskustvo koje se ne može kupiti, samo doživjeti.`,
+Tura polazi iz Foče, vodi vas kroz tri lica divlje prirode Crne Gore i vraća vas nazad, bogatije za iskustvo koje se ne može kupiti, samo doživjeti.`,
     duration: "3 dana / 2 noći",
     difficulty: "Srednja–zahtjevna",
     price: "190€ po osobi",
-    groupSize: "6–16 osoba",
+    groupSize: "1–16 osoba",
     discount: "",
     dates: ["24. - 26.07.2026"],
     highlights: [
@@ -554,7 +630,7 @@ Tura polazi iz Foče, vodi vas kroz tri lica divlje prirode Crne Gore i vraća v
       "Via ferrata Piva",
       "Uspon na Prutaš",
       "Pogledi na Durmitor",
-      "Kajakarenje na Pivskom jezeru"
+      "Kajak na Pivskom jezeru"
     ],
     itinerary: [
       {
