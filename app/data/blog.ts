@@ -668,6 +668,56 @@ export const blogPosts: BlogPost[] = [
     imageAlt: "Prvomajska avantura – utisci",
     tags: ["Prvomajska", "Tjentište", "recap", "avantura"],
   },
+  {
+    id: "8",
+    title: "Zašto je Sutjeska najbolja destinacija u Bosni i Hercegovini",
+    slug: "zasto-je-sutjeska-najbolja-destinacija",
+    excerpt:
+      "Svako ko dođe u Sutjesku kaže isto: trebam ovdje sedam dana. Zašto je Nacionalni park Sutjeska jedinstven i zašto stranci to znaju bolje od nas.",
+    metadataTitle: "Zašto je Sutjeska najbolja destinacija u BiH | Udahni Avanturu",
+    metadataDescription:
+      "Prašuma Perućica, Maglić, Trnovačko jezero, Via Dinarica i najveći bazen na Balkanu — otkrijte zašto je Sutjeska jedinstven nacionalni park.",
+    content: `
+    <h2>Najstariji nacionalni park u BiH — i još uvijek neotkriven</h2>
+    <p>Sutjeska je proglašena nacionalnim parkom 1962. godine. Više od 60 godina zaštićena priroda, netaknuta šuma, rijeke koje se mogu piti direktno iz korita. I još uvijek — malo naših ljudi zna šta se tamo krije.</p>
+    <p>Stranci to znaju bolje. Avanturisti iz cijele Evrope, planinari koji hodaju Via Dinaricu kroz sedam država, parovi koji traže nešto što nije Dubrovnik ni Sarajevo. Dolaze u Sutjesku i ostaju bez teksta. Odmah prepoznaju vrijednost — bez priče, bez uvoda. Samo stanu, pogledaju i ućute.</p>
+    <p>Naši ljudi? Mnogi iz Foče nikad nisu bili na Magliću. A pred nosom im je.</p>
+
+    <h2>Maglić gleda u Volujak</h2>
+    <p>Maglić je najviši vrh Bosne i Hercegovine — 2.386 metara. Ali nije samo broj. Sa Maglića se vidi Volujak — drugi najviši vrh u BiH. Dvije planine koje se gledaju jedna u drugu kao da razgovaraju. Između njih — prostranstva Sutjeske, kanjon, prašuma, rijeka.</p>
+    <p>Kada izvedeš grupu na taj pogled — nema pitanja, nema priče. Svi stoje i gledaju. To je Sutjeska.</p>
+
+    <h2>Prašuma Perućica — jedina u Evropi</h2>
+    <p>Perućica nije šuma. Perućica je živi muzej koji nitko nije gradio. Jedna od dvije preostale prašume u Evropi, gdje stabla rastu i padaju po vlastitim zakonima već hiljadama godina. Neka stabla imaju više od 300 godina. Neka su pala prije vijekova i još uvijek leže, obrasla mahovinom, vraćajući se polako u zemlju.</p>
+    <p>I usred te tišine — Skakavac. Vodopad visok 75 metara koji čuješ prije nego ga vidiš.</p>
+    <p>Na jednom izvoru u prašumi žive tri poskoka već više od deset godina. Uvijek su tu. Zovemo ih čuvari prašume Perućice.</p>
+
+    <h2>Najveći otvoreni bazen na Balkanu</h2>
+    <p>Na Tjentištu, u srcu nacionalnog parka, nalazi se najveći otvoreni bazen na Balkanu. Puni se direktno vodom iz rijeke Sutjeske — hladnom, providnom, planinom mirisnom. Djeca se kupaju, odrasli odmaraju, a okolo — NP Sutjeska.</p>
+    <p>Nigdje drugdje na Balkanu ne možeš plivati u bazenu koji se puni vodom iz planinskog kanjona.</p>
+
+    <h2>Historija koja se osjeća</h2>
+    <p>Tjentište nije samo priroda. Dolina heroja i Spomenik Bitke na Sutjesci nose u sebi 1943. godinu — jednu od najdramatičnijih epizoda Drugog svjetskog rata na ovim prostorima. Stranci dolaze znajući historiju, pitaju, istražuju, fotografišu. Poštuju ono što vide.</p>
+    <p>Sutjeska nije samo planina. Ona je priča o prirodi i ljudima, o otporu i ljepoti, o tome šta znači živjeti u ovom prostoru.</p>
+
+    <h2>Via Dinarica — Sutjeska na mapi svijeta</h2>
+    <p>Kroz Sutjesku prolazi Via Dinarica — planinska ruta koja spaja Alpe sa Dinaridima kroz sedam država. Planinari iz Njemačke, Austrije, Holandije, Skandinavije — hodaju kroz Sutjesku i pišu o njoj. Ona je već na mapi ozbiljnih avanturista.</p>
+    <p>Mi ih srećemo na stazama. I uvijek kažu isto: ovo je jedan od najljepših dijelova cijele rute.</p>
+
+    <h2>Sedam dana nije previše</h2>
+    <p>Svaki dio Sutjeske ima svoju draž. Maglić i Trnovačko jezero — jedno iskustvo. Perućica i Skakavac — potpuno drugo. Zelengora sa devet jezera — treće. Kanjon Sutjeske — četvrto. Kanjoning Hrčavke — peto.</p>
+    <p>Ne možeš to sve doživjeti za vikend. I to je možda najveći kompliment koji jedna destinacija može dobiti — da ti treba sedam dana, a imaš samo dva.</p>
+    <p>Sutjeska te neće požuriti. Ona čeka. I uvijek ima više da pokaže.</p>
+    <p>Pogledaj naše <a href="/ture/kampovanje-trnovacko-jezero-maglic" class="text-emerald-400 hover:text-emerald-300 underline">ture u NP Sutjeska</a> i uvjeri se sam.</p>
+  `,
+    author: "Petar & Nevena",
+    date: "2026-03-23",
+    image: "/images/tours/blog/trnovacko-jezero-maglic-sutjeska.webp",
+    imageAlt: "Nacionalni park Sutjeska – Maglić i Trnovačko jezero",
+    coverImage: "/images/tours/blog/trnovacko-jezero-maglic-sutjeska.webp",
+    coverAlt: "Zašto je Sutjeska najbolja destinacija u BiH",
+    tags: ["NP Sutjeska", "Maglić", "Perućica", "Via Dinarica", "BiH"],
+  },
 ];
 
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {

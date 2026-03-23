@@ -596,6 +596,56 @@ export const blogPostsEN: BlogPostEN[] = [
     imageAlt: "May Day Adventure – recap from Sutjeska National Park",
     tags: ["May Day", "Tjentište", "recap", "adventure"],
   },
+  {
+    id: "8",
+    title: "Why Sutjeska is the Best Destination in Bosnia and Herzegovina",
+    slug: "why-sutjeska-is-the-best-destination",
+    excerpt:
+      "Everyone who comes to Sutjeska says the same thing: I need seven days here. Why Sutjeska National Park is unique — and why foreigners know it better than locals.",
+    metadataTitle: "Why Sutjeska is the Best Destination in Bosnia | Breathe Adventure",
+    metadataDescription:
+      "Perućica rainforest, Maglić, Trnovačko Lake, Via Dinarica and the largest open-air pool in the Balkans — discover why Sutjeska is a truly unique national park.",
+    content: `
+    <h2>The Oldest National Park in Bosnia and Herzegovina — and Still Undiscovered</h2>
+    <p>Sutjeska was declared a national park in 1962. More than 60 years of protected nature, untouched forest, rivers you can drink directly from the riverbed. And still — very few people know what lies there.</p>
+    <p>Foreigners know it better. Adventurers from across Europe, hikers walking the Via Dinarica through seven countries, couples looking for something that isn't Dubrovnik or Sarajevo. They come to Sutjeska and are left speechless. They recognise its value immediately — no explanation needed. They just stop, look, and go quiet.</p>
+    <p>Our own people? Many from Foča have never been to Maglić. And it's right on their doorstep.</p>
+
+    <h2>Maglić Looks at Volujak</h2>
+    <p>Maglić is the highest peak in Bosnia and Herzegovina — 2,386 metres. But it's not just a number. From Maglić you can see Volujak — the second highest peak in BiH. Two mountains looking at each other as if in conversation. Between them — the expanse of Sutjeska, the canyon, the rainforest, the river.</p>
+    <p>When you bring a group to that viewpoint — there are no questions, no words. Everyone just stands and stares. That is Sutjeska.</p>
+
+    <h2>Perućica Rainforest — The Only One in Europe</h2>
+    <p>Perućica is not a forest. Perućica is a living museum that nobody built. One of only two remaining primeval forests in Europe, where trees grow and fall by their own laws as they have for thousands of years. Some trees are over 300 years old. Some fell centuries ago and still lie there, covered in moss, slowly returning to the earth.</p>
+    <p>And in the middle of that silence — Skakavac. A waterfall 75 metres tall that you hear before you see it.</p>
+    <p>At one spring in the forest, three vipers have lived for over ten years. They are always there. We call them the guardians of Perućica.</p>
+
+    <h2>The Largest Open-Air Swimming Pool in the Balkans</h2>
+    <p>At Tjentište, in the heart of the national park, lies the largest open-air swimming pool in the Balkans. It is filled directly with water from the Sutjeska River — cold, crystal clear, smelling of mountain and pine. Children swim, adults rest, and all around — Sutjeska National Park.</p>
+    <p>Nowhere else in the Balkans can you swim in a pool filled with water from a mountain canyon.</p>
+
+    <h2>History You Can Feel</h2>
+    <p>Tjentište is not just nature. The Valley of Heroes and the Battle of Sutjeska Memorial carry within them 1943 — one of the most dramatic episodes of the Second World War in this region. Foreigners arrive knowing the history, asking questions, exploring, photographing. They respect what they see.</p>
+    <p>Sutjeska is not just a mountain. It is a story about nature and people, about resistance and beauty, about what it means to live in this place.</p>
+
+    <h2>Via Dinarica — Sutjeska on the World Map</h2>
+    <p>The Via Dinarica passes through Sutjeska — a mountain route connecting the Alps with the Dinaric Alps across seven countries. Hikers from Germany, Austria, the Netherlands, Scandinavia — they walk through Sutjeska and write about it. It is already on the map of serious adventurers.</p>
+    <p>We meet them on the trails. And they always say the same thing: this is one of the most beautiful sections of the entire route.</p>
+
+    <h2>Seven Days is Not Too Much</h2>
+    <p>Every part of Sutjeska has its own character. Maglić and Trnovačko Lake — one experience. Perućica and Skakavac — something completely different. Zelengora with nine lakes — a third. The Sutjeska Canyon — a fourth. Hrčavka Canyoning — a fifth.</p>
+    <p>You cannot experience all of this in a weekend. And that is perhaps the greatest compliment a destination can receive — that you need seven days, but only have two.</p>
+    <p>Sutjeska will not rush you. It waits. And it always has more to show.</p>
+    <p>Check out our <a href="/en/tours/kampovanje-trnovacko-jezero-maglic" class="text-emerald-400 hover:text-emerald-300 underline">tours in Sutjeska NP</a> and see for yourself.</p>
+  `,
+    author: "Petar & Nevena",
+    date: "2026-03-23",
+    image: "/images/tours/blog/trnovacko-jezero-maglic-sutjeska.webp",
+    imageAlt: "Sutjeska National Park – Maglić and Trnovačko Lake",
+    coverImage: "/images/tours/blog/trnovacko-jezero-maglic-sutjeska.webp",
+    coverAlt: "Why Sutjeska is the best destination in Bosnia and Herzegovina",
+    tags: ["Sutjeska NP", "Maglić", "Perućica", "Via Dinarica", "Bosnia"],
+  },
 ];
 
 export function getBlogPostENBySlug(slug: string): BlogPostEN | undefined {
