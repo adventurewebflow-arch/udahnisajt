@@ -538,10 +538,14 @@ export const adventures: Adventure[] = [
     imageAlt: "Durmitorski prsten, via ferrata Piva i uspon na Prutaš – premium avantura u Crnoj Gori",
     imagePosition: "center 60%",
     shortDescription: "Ova premium tura spaja via ferratu, visoke planinske vrhove i mirnu vodu u jedno snažno, raznovrsno iskustvo. Namijenjena je onima koji žele pravu avanturu – aktivnu, sadržajnu i nezaboravnu.",
-    aboutTour: "Ova tura je čista avantura u punom smislu riječi. Spoj stijene, vrhova i vode, osmišljena za ljude koji žele da nekoliko dana provedu aktivno, snažno i sadržajno, daleko od svakodnevice i rutine.\n\nKroz Via Ferratu Piva, uspon na Prutaš i kajakarenje na Pivskom jezeru, prolazimo kroz tri potpuno različita svijeta prirode – vertikalne stijene iznad kanjona, široke durmitorske visoravni i mirnu, smaragdnu vodu jezera. Svaki dan donosi novi doživljaj i drugačiji ritam, bez ponavljanja i bez praznog hoda.\n\nVia Ferrata Piva donosi snažan osjećaj visine i slobode, ali uz sigurnost i kontrolu. To je savršen uvod u turu – adrenalinska, ali dostupna, i dovoljno izazovna da probudi fokus i timski duh. Vožnja Durmitorskim prstenom nakon ferate dodatno pojačava osjećaj prostora i veličine planine.\n\nUspon na Prutaš je dan za prave planinare. Dugačak, otvoren i vizuelno moćan, sa panoramama koje se otvaraju u svim pravcima. Ovo je dan koji se pamti – ne zbog brzine ili brojki, već zbog osjećaja kretanja kroz ogroman planinski prostor i pogleda koji ostaje u glavi dugo nakon povratka.\n\nTreći dan donosi potpuni kontrast. Nakon stijena i visina, dolazimo na vodu. Kajak na Pivskom jezeru je smiren, lagan i oslobađajući – idealan završetak ture. Tišina, voda i opušten tempo omogućavaju da se svi utisci slegnu i da se avantura zatvori na pravi način.\n\nOvo nije klasičan izlet niti turistička tura. Ovo je iskustvo. Tura za ljude koji žele da osjete prirodu cijelim tijelom – da se penju, hodaju, veslaju i budu dio prostora kroz koji prolaze. Ko se odluči na ovu avanturu, nosi je sa sobom još dugo nakon povratka.",
+    aboutTour: `Ima mjesta koja te promijene. Durmitor te nauči koliko si mali pred prirodom. Kanjon Pive te nauči da strah nije prepreka. A Pivsko jezero te nauči da tišina može biti najglasnija stvar koju si čuo. Ova tura nije samo izlet — ona je tri dana u kojima ćeš osjetiti stijene pod rukama, vrh pod nogama i vodu pod veslom.
+
+Na turama Udahni avanturu uvijek su prisutni ljudi koji žive život kako treba — otvoreni, kulturni, željni više od svakodnevice. Upravo to čini svaku grupu posebnom i svaku turu nezaboravnom. Dolaze parovi i prijatelji koji znaju da su najljepše uspomene uvijek napravljene negdje daleko od kauča.
+
+Tura polazi iz Foče, vodi vas kroz tri lica divlje prirode Crne Gore i vraća vas nazad — bogatije za iskustvo koje se ne može kupiti, samo doživjeti.`,
     duration: "3 dana / 2 noći",
     difficulty: "Srednja–zahtjevna",
-    price: "Na upit",
+    price: "190€ po osobi",
     groupSize: "6–16 osoba",
     discount: "",
     dates: ["24. - 26.07.2026"],
@@ -554,31 +558,38 @@ export const adventures: Adventure[] = [
     ],
     itinerary: [
       {
-        dayTitle: "Dan 1 — Via Ferrata Piva i dolazak na Durmitor",
-        description: "Okupljanje grupe je u jutarnjim satima u Foči, odakle se vozilima krećemo prema Plužinama i lokalitetu Via Ferrata Piva. Po dolasku zadužujemo kompletnu ferata opremu (pojas, kaciga, sajle) i prolazimo kratak sigurnosni brifing sa vodičem.\n\n Nakon pripreme započinjemo uspon Via Ferrata Piva, atraktivnom i preglednom rutom koja omogućava sigurno kretanje strmim stijenama iznad kanjona. Ruta pruža snažan osjećaj visine i slobode, ali je tehnički dobro osigurana i vođena, uz stalnu pratnju vodiča.\n\n Po završetku ferate vraćamo se vozilima i nastavljamo put Durmitorskim prstenom, jednom od najljepših panoramskih cesta u regionu. U večernjim satima dolazimo u smještaj na Durmitoru, gdje slijedi večera i odmor nakon aktivnog dana."
+        dayTitle: "Dan 1 — Okupljanje i via ferrata Piva",
+        description:
+          "Ujutro se skupljamo u Foči. Kratko upoznavanje, osmijesi koji tek počinju, i krenemo prema Plužinama. Put kroz kanjonske krajolike već najavljuje ono što dolazi.\n\nU kanjonu rijeke Pive nas čeka via ferrata — jedna od najljepših i najspektakularnijih u cijelom regionu. Čelične stepenice iznad tirkizne Pive, pogled koji oduzima dah, i osjećaj da si malo veći nego jutros. Vodič je uz vas, oprema je obezbijeđena, i ne treba vam nikakvo prethodno iskustvo.\n\nNavečer stižemo u etno selo Izlazak — jedno od najpoznatijih u regionu, smješteno na uzvisini s pogledom koji je teško opisati riječima. Svako spava u svojoj odvojenoj kućici. Večera, priče, smijeh. Ovdje se ekipa sklopi."
       },
       {
-        dayTitle: "Dan 2 — Uspon na Prutaš (2.393 m)",
-        description: "Nakon doručka krećemo na uspon na Prutaš, jedan od najljepših i najprepoznatljivijih vrhova Durmitora. Ovaj dan je u potpunosti posvećen planinarenju. Uspon traje veći dio dana i vodi otvorenim, preglednim stazama, uz stalne poglede na durmitorske vrhove i prostranstva.\n\nKrećemo kontrolisanim tempom, sa pauzama za odmor, hidrataciju i fotografisanje. Na vrhu pravimo dužu pauzu za uživanje u panorami, a tokom dana konzumiramo lunch pakete. Nakon spuštanja vraćamo se u smještaj u popodnevnim ili večernjim satima, gdje slijedi večera i zasluženi odmor."
+        dayTitle: "Dan 2 — Uspon na Prutaš",
+        description:
+          "Jutro u etno selu, doručak, i kretanje prema Durmitoru. Već na putu shvatite da vas planina zove — pejzaži koji se smjenjuju kao kadrovi filma, šume crnog bora, kameni grebeni i nebo koje postaje sve bliže.\n\nUspon na Prutaš traje oko tri i po sata. Svaki korak ima smisla jer iza svakog okuka otvara se novi pogled, brutalniji i ljepši od prethodnog. Na vrhu nema riječi — samo panorama Durmitora, UNESCO svjetske baštine, i osjećaj da si to zaslužio.\n\nCijeli dan je vaš na planini. Silazak, povratak u etno selo, večera i sabiranje utisaka. Ovaj dan se pamti."
       },
       {
-        dayTitle: "Dan 3 — Kajak na Pivskom jezeru i povratak",
-        description: "Treći dan započinjemo ranim doručkom, nakon čega se spuštamo prema Pivskom jezeru. Ovaj dio ture donosi potpuno drugačiji ritam – mir, vodu i opuštanje.\n\nNa jezeru provodimo oko 2 do 3 sata u vožnji kajaka. Kajakarenje je lagano i opuštajuće, uz pauze za kupanje, fotografisanje i uživanje u tišini i boji vode. Nakon završetka aktivnosti slijedi povratak prema Foči, sopstvenim vozilima, čime se tura završava.\n\nOva avantura je snažna, raznovrsna i izuzetno bogata doživljajem. Spaja stijene, vrhove i vodu u jednu cjelinu i idealna je za one koji žele više od klasičnog izleta – tri dana prirode, kretanja i istinske avanture."
+        dayTitle: "Dan 3 — Kajak na Pivskom jezeru i povratak u Foču",
+        description:
+          "Posljednje jutro. Pakovanje, doručak i jedan posljednji poklon ove ture — Pivsko jezero. Dugačko 45 km, okruženo liticama kanjona, smaragdnozeleno i savršeno tiho. Dva sata veslate kroz tišinu između stijena koje se ogledaju u vodi.\n\nBez iskustva veslanja? Savršeno. Voda je mirna, vodič je tu, i sve što trebate je da podignete veslo i pustite da vas Piva nosi.\n\nZatim povratak prema Foči, prema vozilima i svakodnevici. Ali nešto ostaje — stijene pod prstima, vrh koji ste osvojili, voda pod veslom, i ekipa s kojom ste to dijelili."
       }
     ],
     includes: [
-      "Licencirani vodič za planinarenje i via ferrata",
-      "Tehnička oprema za via ferratu (kaciga, pojas, užad)",
-      "Transferi tokom programa",
-      "Smještaj (2 noći)",
-      "Obroci prema dogovoru",
-      "Iznajmljivanje kajaka",
-      "Organizacija ture"
+      "Smještaj u etno selu Izlazak (2 noći u odvojenim kućicama)",
+      "Doručak oba jutra",
+      "Večere tokom ture",
+      "Prevoz kombijem tokom cijele ture",
+      "Stručni vodič za uspon na Prutaš",
+      "Ulaznica za Nacionalni park Durmitor",
+      "Ulaznica za Park prirode Piva",
+      "Boravišne takse"
     ],
     excludes: [
-      "Lična oprema (planinske cipele, ruksak)",
-      "Piće",
-      "Troškovi van programa"
+      "Piće tokom ture",
+      "Lični troškovi i kupovina suvenira",
+      "Obroci tokom dana na planini i terenu (preporučujemo ponijeti grickalice i sendviče)",
+      "Troškovi van programa ture",
+      "Via ferrata Piva (50€ po osobi, plaća se na licu mjesta)",
+      "Kajak na Pivskom jezeru (20€ po osobi, plaća se na licu mjesta)"
     ],
     faqs: [
       {
