@@ -15,6 +15,7 @@ export interface Adventure {
   image?: string;
   imageAlt?: string;
   imagePosition?: string;
+  images?: { src: string; alt: string }[];
   highlights: string[];
   itinerary: { dayTitle: string; description: string }[];
   includes: string[];

@@ -114,7 +114,13 @@ export default async function TourDetailPage({ params }: { params: Promise<{ slu
             {/* O turi */}
             <section>
               <h2 className="text-3xl font-bold mb-6">O turi</h2>
-              <p className="text-lg text-gray-300 leading-relaxed">{adventure.aboutTour ?? adventure.shortDescription}</p>
+              <div className="text-lg text-gray-300 leading-relaxed space-y-4">
+                {(adventure.aboutTour ?? adventure.shortDescription)
+                  .split(/\n\s*\n/)
+                  .map((para, i) => (
+                    <p key={i}>{para.trim()}</p>
+                  ))}
+              </div>
             </section>
 
             {/* Highlights */}

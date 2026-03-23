@@ -614,9 +614,11 @@ export const adventures: Adventure[] = [
     imageAlt: "Via ferrata Piva, uspon na Prutaš i kajakarenje – premium avantura",
     imagePosition: "center 60%",
     shortDescription: "Ova premium tura spaja via ferratu, visoke planinske vrhove i mirnu vodu u jedno snažno, raznovrsno iskustvo. Namijenjena je onima koji žele pravu avanturu – aktivnu, sadržajnu i nezaboravnu.",
-    aboutTour: `Ima mjesta koja te promijene. Durmitor te nauči koliko si mali pred prirodom. Kanjon Pive te nauči da strah nije prepreka. A Pivsko jezero te nauči da tišina može biti najglasnija stvar koju si čuo. Ova tura nije samo izlet — ona je tri dana u kojima ćeš osjetiti stijene pod rukama, vrh pod nogama i vodu pod veslom.
+    aboutTour: `Ima mjesta koja te promijene. Durmitor te nauči koliko si mali pred prirodom. Kanjon Pive te nauči da strah nije prepreka. A Pivsko jezero te nauči da tišina može biti najglasnija stvar koju si čuo.
+    
+    Ova tura nije samo izlet, ona je tri dana u kojima ćeš osjetiti stijene pod rukama, vrh pod nogama i vodu pod veslom.
 
-Na turama Udahni avanturu uvijek su prisutni ljudi koji žive život kako treba — otvoreni, kulturni, željni više od svakodnevice. Upravo to čini svaku grupu posebnom i svaku turu nezaboravnom. Dolaze parovi i prijatelji koji znaju da su najljepše uspomene uvijek napravljene negdje daleko od kauča.
+Na turama Udahni avanturu uvijek su prisutni ljudi koji žive život kako treba. Otvoreni, kulturni, željni više od svakodnevice. Upravo to čini svaku grupu posebnom i svaku turu nezaboravnom. Dolaze parovi i prijatelji koji znaju da su najljepše uspomene uvijek napravljene negdje daleko od kauča.
 
 Tura polazi iz Foče, vodi vas kroz tri lica divlje prirode Crne Gore i vraća vas nazad, bogatije za iskustvo koje se ne može kupiti, samo doživjeti.`,
     duration: "3 dana / 2 noći",
