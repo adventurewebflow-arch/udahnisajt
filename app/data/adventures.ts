@@ -326,8 +326,8 @@ export const adventures: Adventure[] = [
     title: "PRVOMAJSKA AVANTURA",
     category: "popular",
     location: "Tjentište / NP Sutjeska / Zelengora",
-    image: "/images/tours/premium/ekipa-prvi-maj.webp",
-    imageAlt: "Prvomajska avantura na Tjentištu – bungalovi, ture po Sutjesci i izlet na Zelengoru",
+    image: "/images/tours/gallery/ugljesin-vrh.webp",
+    imageAlt: "Prvomajska avantura – pogled sa Uglješinog vrha, NP Sutjeska",
     imagePosition: "center 55%",
     shortDescription: "Prvomajski aranžman u bungalovima na Tjentištu: smještaj, hrana, ulaznice i dvije velike avanture, subota Trnovačko jezero, nedjelja lagana tura po Zelengori.",
     aboutTour: "Ova trodnevna avantura osmišljena je kao spoj prirode, laganog kretanja i istinskog doživljaja planine, bez žurbe i bez pritiska. Fokus nije na „osvajanju“ kilometara, već na boravku u prostoru, druženju i osjećaju slobode koji planina pruža.",
@@ -601,6 +601,89 @@ export const adventures: Adventure[] = [
       {
         q: "Da li ćemo prije dolaska dobiti sve informacije?",
         a: "Da. Svi učesnici biće dodani u WhatsApp grupu ture nekoliko dana prije polaska. U grupi ćete dobiti tačne informacije o programu, satnici, opremi, vremenskoj prognozi i svim važnim uputama. Tu možete postaviti pitanja i dobiti dodatna pojašnjenja."
+      }
+    ]
+  },
+  {
+    id: "P-teambuilding-01",
+    slug: "teambuilding-sutjeska",
+    title: "Teambuilding u srcu prirode – NP Sutjeska",
+    category: "premium",
+    location: "NP Sutjeska / Tjentište / Foča",
+    image: "/images/tours/premium/ekipa-prvi-maj.webp",
+    imageAlt: "Teambuilding u prirodi – ekipa u NP Sutjeska",
+    imagePosition: "center 55%",
+    shortDescription:
+      "Pravi teambuilding nije u sali sa projektorom. On je na rijeci, na planini, u kanjonu — gdje se ljudi upoznaju kakvi zaista jesu.",
+    aboutTour: `Petnaest godina rada u turizmu naučilo nas je jedno: tim koji je zajedno proveo noć u šatoru na Trnovačkom jezeru, prošao kroz kanjon ili se popeo na Maglić, vraća se u kancelariju drugačiji. Ne zato što su pričali o timskom radu — već zato što su ga živjeli.
+
+NP Sutjeska je savršen ambijent za to. Bez signala, bez mejlova, bez uredskih zidova. Samo priroda, izazov i ekipa koja mora da funkcioniše zajedno.
+
+Jedna od najpopularnijih opcija je kampovanje na Trnovačkom jezeru. Šatori na obali jednog od najljepših jezera na Balkanu, spavanje pod zvijezdama, jutarnje kupanje u bistrom jezeru i hladno pivo direktno sa izvora. Nema telefona, nema mejlova, nema pritiska. Samo ljudi, vatra i razgovor koji traje do kasno u noć. Tu se ekipa stvarno upozna.
+
+Organizujemo programe za sve veličine grupa, od 2 do 100 i više osoba. Rafting Tarom na naš poseban način, kanjoning Hrčavkom, jeep safari Zelengori, uspon na Maglić ili Bregoč, jahanje konja ili kombinacija svega. Smještaj u bungalovima na Tjentištu, konferencijske sale, obroci, transfer — sve organizujemo od A do Ž.
+
+Svaki program pravimo po mjeri grupe. Javite se sa brojem ljudi i terminom, mi predlažemo program koji ima smisla za vas.`,
+    duration: "3 dana / 2 noći (po dogovoru)",
+    difficulty: "Po dogovoru",
+    price: "Na upit",
+    groupSize: "2–100+ osoba",
+    dates: [],
+    highlights: [
+      "Rafting Tarom – na naš poseban način",
+      "Kanjoning Hrčavka",
+      "Kampovanje na Trnovačkom jezeru (bez mreže i struje)",
+      "Uspon na Maglić ili Bregoč",
+      "Jeep safari Zelengora",
+      "Jahanje konja",
+      "Smještaj u bungalovima na Tjentištu",
+      "Konferencijske sale",
+      "Program po mjeri grupe",
+      "Petar – vodič sa 15+ godina iskustva"
+    ],
+    itinerary: [
+      {
+        dayTitle: "Dan 1 — Dolazak i prva avantura",
+        description:
+          "Dolazak grupe na Tjentište ili u Foču. Smještaj, kratki brifing i odmah prva aktivnost — rafting, kanjoning ili jeep safari, zavisno od dogovora. Veče uz vatru, večera i prvo pravo upoznavanje ekipe — daleko od kancelarije."
+      },
+      {
+        dayTitle: "Dan 2 — Glavni izazov",
+        description:
+          "Centralni dan programa. Uspon na Maglić, kampovanje na Trnovačkom jezeru, kanjoning ili kombinacija aktivnosti — sve po dogovoru sa grupom. Cijeli dan u prirodi, bez telefona, bez pritiska. Samo izazov i ekipa."
+      },
+      {
+        dayTitle: "Dan 3 — Završetak i povratak",
+        description:
+          "Jutarnji doručak, posljednja aktivnost po izboru (jahanje konja, šetnja Perućicom ili lagani jeep safari) i povratak. Ekipa koja odlazi nije ista koja je došla."
+      }
+    ],
+    includes: [
+      "Smještaj na Tjentištu (bungalovi)",
+      "Svi obroci tokom programa",
+      "Vodič sa licencom – Petar (15+ godina iskustva)",
+      "Transfer tokom programa",
+      "Sve aktivnosti po dogovoru",
+      "Konferencijska sala (po potrebi)",
+      "Takse NP Sutjeska"
+    ],
+    excludes: ["Piće", "Lični troškovi", "Troškovi van programa"],
+    faqs: [
+      {
+        q: "Kako izgleda proces organizacije?",
+        a: "Javite se sa brojem ljudi i željenim terminom. Mi vam predlažemo program i cijenu. Nakon dogovora organizujemo sve od A do Ž — smještaj, aktivnosti, obroke i transfer."
+      },
+      {
+        q: "Da li možete organizovati za veliku grupu od 50+ osoba?",
+        a: "Da. Organizujemo programe za grupe svih veličina — od 2 do 100+ osoba. Za veće grupe pravimo prilagođeni program sa više paralelnih aktivnosti."
+      },
+      {
+        q: "Da li imate konferencijske sale?",
+        a: "Da, na Tjentištu su dostupne konferencijske sale. Možemo kombinovati outdoor aktivnosti sa radnim sesijama, zavisno od potreba vaše firme."
+      },
+      {
+        q: "Može li program biti samo 1 dan?",
+        a: "Da, organizujemo i jednodnevne programe. Javite se sa brojem osoba i mi predlažemo najbolju opciju za vaš tim."
       }
     ]
   },
