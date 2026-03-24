@@ -6,12 +6,14 @@ import Footer from "./components/Footer";
 import WhatsAppButton from "./components/WhatsAppButton";
 
 export const metadata: Metadata = {
-  title: "Udahni Avanturu – Hiking, Rafting & Camping Tours in Bosnia and Herzegovina",
-  description: "Join guided hiking, rafting and camping tours in Sutjeska National Park, Bosnia and Herzegovina. Small groups, licensed guides, unforgettable nature adventures near Foča.",
+  title: "Udahni Avanturu – Hiking, rafting i kampovanje u Bosni i Hercegovini",
+  description:
+    "Organizovane ture u Nacionalnom parku Sutjeska, Bosna i Hercegovina. Male grupe, licencirani vodiči, nezaboravne avanture u prirodi blizu Foče.",
   metadataBase: new URL("https://www.udahniavanturu.com"),
   openGraph: {
-    title: "Udahni Avanturu – Hiking, Rafting & Camping Tours in Bosnia and Herzegovina",
-    description: "Join guided hiking, rafting and camping tours in Sutjeska National Park, Bosnia and Herzegovina. Small groups, licensed guides, unforgettable nature adventures near Foča.",
+    title: "Udahni Avanturu – Hiking, rafting i kampovanje u Bosni i Hercegovini",
+    description:
+      "Organizovane ture u Nacionalnom parku Sutjeska, Bosna i Hercegovina. Male grupe, licencirani vodiči, nezaboravne avanture u prirodi blizu Foče.",
     url: "https://www.udahniavanturu.com",
     siteName: "Udahni Avanturu",
     images: [
@@ -27,8 +29,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Udahni Avanturu – Hiking, Rafting & Camping Tours in Bosnia and Herzegovina",
-    description: "Join guided hiking, rafting and camping tours in Sutjeska National Park, Bosnia and Herzegovina. Small groups, licensed guides, unforgettable nature adventures near Foča.",
+    title: "Udahni Avanturu – Hiking, rafting i kampovanje u Bosni i Hercegovini",
+    description:
+      "Organizovane ture u Nacionalnom parku Sutjeska, Bosna i Hercegovina. Male grupe, licencirani vodiči, nezaboravne avanture u prirodi blizu Foče.",
     images: ["/opengraph-image.png"],
   },
   icons: {
