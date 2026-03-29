@@ -718,6 +718,59 @@ export const blogPosts: BlogPost[] = [
     coverAlt: "Zašto je Sutjeska najbolja destinacija u BiH",
     tags: ["NP Sutjeska", "Maglić", "Perućica", "Via Dinarica", "BiH"],
   },
+  {
+    id: "9",
+    title: "Zašto višednevna tura kroz BiH i Crnu Goru mijenja perspektivu",
+    slug: "visednevne-avanture-bih-crna-gora",
+    excerpt:
+      "Postoje destinacije koje posjećuješ i destinacije koje te promijene. BiH i Crna Gora su druga vrsta. Ovdje ću ti ispričati zašto višednevna tura kroz ove dvije zemlje nije samo odmor — nego iskustvo koje nosiš sa sobom.",
+    metadataTitle: "Višednevne avanture BiH i Crna Gora — perspektiva koja ostaje | Udahni Avanturu",
+    metadataDescription:
+      "Maglić, Trnovačko jezero, katuni, Zelengora, Hrčavka, Tara, Durmitor i Pivsko jezero — zašto višednevna tura kroz Bosnu i Hercegovinu i Crnu Goru mijenja način na koji gledaš putovanje.",
+    content: `
+    <p>Svake sezone me ljudi pitaju isto: &quot;Petar, zašto baš ovdje? Zašto ne Alpe, zašto ne Norveška, zašto ne neko &apos;poznatije&apos; mjesto?&quot;</p>
+    <p>I svaki put im kažem isto: dođite jednom. Samo jednom. Pa mi recite.</p>
+    <p>BiH i Crna Gora su dvije zemlje koje turistički svijet još uvijek nije sasvim otkrio. I upravo to ih čini posebnim. Ovdje nema gužvi na stazama, nema restorana na vrhovima planina, nema Instagram filtera koji bi popravili ono što priroda nije uspjela sama. Ovdje je sve sirovo, autentično i snažno — baš onako kako priroda treba da bude.</p>
+
+    <h2>Maglić i Trnovačko jezero — gdje sve počinje</h2>
+    <p>Svaka višednevna tura koju organizujemo počinje na Magliću. Najviši vrh Bosne i Hercegovine — 2.386 metara — nije tehnički zahtjevan kao neki alpski vrhovi, ali ima nešto što ti vrhovi nemaju: tišinu. Na Magliću nema gondola, nema kafića, nema organizovanih grupa od 50 ljudi. Samo ti, planina i pogled koji seže do Jadrana.</p>
+    <p>A onda se spustiš na Trnovačko jezero. Jedno od najljepših planinskih jezera na Balkanu, u obliku srca, okruženo vrhovima. Šator na obali, vatra uveče, bez mreže i bez telefona. Mnogi mi kažu da je to prva noć u godinama da su stvarno spavali.</p>
+
+    <h2>Katuni — autentični život koji nestaje</h2>
+    <p>Drugi dan ture vodim ljude na katune. Kamene kućice, stoka, domaćini koji žive bez struje i mreže — ne zbog filozofije, nego zato što je to tu uvijek tako bilo. Doručak koji nam spreme: uštipci, kajmak, toplo mlijeko direktno od krave, pršut, sir.</p>
+    <p>Jednom mi je jedan gost iz Berlina rekao: &quot;Ovo je prva hrana u godinama za koju znam odakle dolazi.&quot;</p>
+    <p>To je ono što ne možeš kupiti ni na jednom drugom putovanju. To je ono zašto dolaze ljudi iz Njemačke, Holandije, Skandinavije — ne da vide planinu, nego da osjete da takav život još postoji.</p>
+
+    <h2>Zelengora — planina koja liječi</h2>
+    <p>Zelengora je drugačija od Maglića. Niža, zelenija, prostranija. Jezera, dinarske livade, vidikovci sa kojih se vidi pola Balkana. Ovo je dan za hodanje bez pritiska, za razgovor, za disanje.</p>
+    <p>Nakon dva zahtjevna dana — Maglić i katuni — Zelengora dolazi kao poklon. Lagana tura, ručak u prirodi, povratak na Tjentište. Mnogi mi kažu da je ovo njihov omiljeni dan cijele ture.</p>
+
+    <h2>Kanjoning Hrčavka — voda i stijene</h2>
+    <p>Hrčavka nije ekstremna. Ali jeste intenzivna. Ulaz u kanjon, voda, stijene, prirodni bazeni, skokovi za one koji žele. Nekoliko sati potpunog fokusa na ono što je pred vama — ne možeš razmišljati o poslu kad se spaštaš niz vodopad.</p>
+    <p>Ovo je dan koji grupu spoji. Uvijek. Bez izuzetka.</p>
+
+    <h2>Rafting Tarom — deset godina na ovoj rijeci</h2>
+    <p>Tara je posebna priča. Licencirani sam skipper sa više od deset godina iskustva na ovoj rijeci i mogu vam reći — svaki spust je drugačiji. Kanjon koji je drugi po dubini u svijetu, voda koja mijenja boju sa svjetlom, pauze na mjestima gdje nije stao ni jedan autobus turistima.</p>
+    <p>Rafting radimo na naš način: bez žurbe, bez vremenskog pritiska, sa ručkom direktno na rijeci. Cijeli dan. To nije rafting tura za mase — to je dan na jednoj od najljepših rijeka u Evropi.</p>
+
+    <h2>Durmitor i Pivsko jezero — Crna Gora kao finale</h2>
+    <p>Durmitor je UNESCO svjetska baština i to s razlogom. Foto safari kroz masiv, Žabljak, Crno jezero ispod Medjeda — to je jedan od onih dana kad shvatiš koliko je ova regija zaista bogata.</p>
+    <p>A onda Pivsko jezero. 45 kilometara dužine, okruženo kanjonima. Kajak ujutru, tišina između stijena koje se ogledaju u vodi. To je kraj ture — ali ne kraj iskustva.</p>
+
+    <h2>Zašto BiH i Crna Gora a ne Alpe ili Skandinavija?</h2>
+    <p>Alpe su lijepe. Skandinavija je spektakularna. Ali ni jedno ni drugo ti ne može dati ono što daju BiH i Crna Gora: autentičnost.</p>
+    <p>Ovdje još uvijek možeš sjediti sa čovjekom koji je cijeli život proveo na planini i čuti priču koja se prenosi generacijama. Ovdje još uvijek možeš hodati satima bez da vidiš drugog čovjeka. Ovdje planina još nije postala produkt.</p>
+    <p>I upravo zato, dok još traje — vrijedi doći.</p>
+    <p>Ako te zanima neka od naših višednevnih tura, pogledaj <a href="/ture/srce-sutjeske-5-dana" class="text-emerald-400 hover:text-emerald-300 underline">Srce Sutjeske – 5 dana</a> ili <a href="/ture/divlja-bosna-i-crna-gora-7-dana" class="text-emerald-400 hover:text-emerald-300 underline">Divlja Bosna i Crna Gora – 7 dana</a>. Za sve informacije i rezervacije, slobodno nam se javi.</p>
+  `,
+    author: "Petar",
+    date: "2026-03-29",
+    image: "/images/tours/gallery/zelengora.webp",
+    imageAlt: "Višednevne avanture u Bosni i Hercegovini i Crnoj Gori – Zelengora, Maglić, Durmitor",
+    coverImage: "/images/tours/gallery/zelengora.webp",
+    coverAlt: "Zašto višednevna tura kroz BiH i Crnu Goru mijenja perspektivu",
+    tags: ["višednevne ture", "BiH", "Crna Gora", "Maglić", "Tara", "Durmitor"],
+  },
 ];
 
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {

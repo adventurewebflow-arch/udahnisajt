@@ -3,7 +3,7 @@ import Link from "next/link";
 import AdventureCard from "./components/AdventureCard";
 import GalleryPreview from "./components/GalleryPreview";
 import InquiryForm from "./components/InquiryForm";
-import { popularAdventures, premiumAdventures, dayTripAdventures } from "./data/adventures";
+import { popularAdventures, premiumAdventures, dayTripAdventures, multiDayAdventures } from "./data/adventures";
 import type { Metadata } from "next";
 
 const BASE = "https://www.udahniavanturu.com";
@@ -105,6 +105,25 @@ export default function Home() {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {premiumAdventures.map((adventure) => (
+              <AdventureCard key={adventure.id} adventure={adventure} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Multi-day Tours Section */}
+      <section id="visednevne" className="py-16 md:py-24 relative">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-slate-900/50 to-transparent"></div>
+        <div className="relative mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-12">
+            <h2 className="text-4xl font-bold text-white mb-3">Višednevne avanture</h2>
+            <div className="w-16 h-1 bg-emerald-400"></div>
+          </div>
+          <p className="text-center text-slate-400 mb-12 max-w-2xl mx-auto">
+            Za one koji žele više od vikenda. Višednevne ture koje te stvarno promijene — planina, kanjon, jezero, autentični ljudi i iskustvo koje nosiš sa sobom zauvijek.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {multiDayAdventures.map((adventure) => (
               <AdventureCard key={adventure.id} adventure={adventure} />
             ))}
           </div>

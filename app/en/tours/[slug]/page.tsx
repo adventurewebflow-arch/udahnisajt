@@ -150,7 +150,13 @@ export default async function TourDetailPageEN({ params }: { params: Promise<{ s
             {/* About */}
             <section>
               <h2 className="text-3xl font-bold mb-6">About the Tour</h2>
-              <p className="text-lg text-gray-300 leading-relaxed">{adventure.aboutTour ?? adventure.shortDescription}</p>
+              <div className="text-lg text-gray-300 leading-relaxed space-y-4">
+                {(adventure.aboutTour ?? adventure.shortDescription)
+                  .split(/\n\s*\n/)
+                  .map((para, i) => (
+                    <p key={i}>{para.trim()}</p>
+                  ))}
+              </div>
             </section>
 
             {/* Highlights */}
@@ -264,6 +270,16 @@ export default async function TourDetailPageEN({ params }: { params: Promise<{ s
                     <div>
                       <div className="text-sm text-gray-400 mb-1">Group Size</div>
                       <div className="text-lg font-semibold text-white">{translatePeople(adventure.groupSize)}</div>
+                    </div>
+                  )}
+
+                  {/* Transport */}
+                  {adventure.transport && (
+                    <div>
+                      <div className="text-sm text-gray-400 mb-1">Transport</div>
+                      <div className="text-sm font-medium text-white leading-relaxed">
+                        {adventure.transport}
+                      </div>
                     </div>
                   )}
 

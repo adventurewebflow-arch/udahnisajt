@@ -288,6 +288,16 @@ export default async function TourDetailPage({ params }: { params: Promise<{ slu
                     </div>
                   )}
 
+                  {/* Prevoz */}
+                  {adventure.transport && (
+                    <div>
+                      <div className="text-sm text-gray-400 mb-1">Prevoz</div>
+                      <div className="text-sm font-medium text-white leading-relaxed">
+                        {adventure.transport}
+                      </div>
+                    </div>
+                  )}
+
                   {/* Popusti na grupe */}
                   {adventure.discount && (
                     <div>

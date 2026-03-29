@@ -26,6 +26,8 @@ export default function AdventureCard({ adventure, linkPrefix = "/ture" }: Adven
     showCalendarIcon = true;
   } else if (adventure.category === "premium") {
     dateLabel = "Na upit";
+  } else if (adventure.category === "multi-day") {
+    dateLabel = "Na upit";
   } else if (adventure.category === "day-trip") {
     dateLabel = "Po dogovoru";
   }

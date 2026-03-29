@@ -646,6 +646,59 @@ export const blogPostsEN: BlogPostEN[] = [
     coverAlt: "Why Sutjeska is the best destination in Bosnia and Herzegovina",
     tags: ["Sutjeska NP", "Maglić", "Perućica", "Via Dinarica", "Bosnia"],
   },
+  {
+    id: "9",
+    title: "Why a Multi-Day Adventure Through Bosnia and Montenegro Changes Everything",
+    slug: "multi-day-adventures-bosnia-montenegro",
+    excerpt:
+      "There are destinations you visit and destinations that change you. Bosnia and Herzegovina and Montenegro are the second kind. Here is why a multi-day tour through these two countries is not just a holiday — it is an experience you carry with you.",
+    metadataTitle: "Multi-Day Adventures in Bosnia & Montenegro — A Shift in Perspective | Breathe Adventure",
+    metadataDescription:
+      "Maglić, Trnovačko Lake, mountain homesteads, Zelengora, Hrčavka, Tara, Durmitor and Piva Lake — why a multi-day tour through Bosnia and Herzegovina and Montenegro changes how you see travel.",
+    content: `
+    <p>Every season people ask me the same question: &quot;Petar, why here? Why not the Alps, why not Norway, why not somewhere more famous?&quot;</p>
+    <p>And every time I tell them the same thing: come once. Just once. Then tell me.</p>
+    <p>Bosnia and Herzegovina and Montenegro are two countries the tourism world has not yet fully discovered. And that is exactly what makes them special. No crowded trails, no restaurants on mountain summits, no Instagram filters needed to improve what nature has already done perfectly. Everything here is raw, authentic and powerful — exactly the way nature should be.</p>
+
+    <h2>Maglić and Trnovačko Lake — where everything begins</h2>
+    <p>Every multi-day tour we run starts on Maglić. The highest peak in Bosnia and Herzegovina — 2,386 metres — is not technically demanding like some Alpine summits, but it has something those summits do not: silence. No cable cars, no cafés, no organised groups of fifty people. Just you, the mountain and a view that reaches the Adriatic.</p>
+    <p>And then you descend to Trnovačko Lake. One of the most beautiful mountain lakes in the Balkans, heart-shaped, surrounded by peaks. A tent on the shore, a fire in the evening, no signal and no phones. Many guests tell me it was the first night in years that they truly slept.</p>
+
+    <h2>Katun homesteads — an authentic life that is disappearing</h2>
+    <p>On the second day I take people to the katun homesteads. Stone houses, livestock, hosts who live without electricity or signal — not as a lifestyle choice, but because that is simply how it has always been here. The breakfast they prepare: fried dough, kajmak, warm milk straight from the cow, prosciutto, cheese.</p>
+    <p>A guest from Berlin once told me: &quot;This is the first food in years where I know exactly where it comes from.&quot;</p>
+    <p>That is something you cannot buy on any other trip. That is why people come from Germany, the Netherlands, Scandinavia — not to see a mountain, but to feel that this kind of life still exists somewhere.</p>
+
+    <h2>Zelengora — the mountain that heals</h2>
+    <p>Zelengora is different from Maglić. Lower, greener, more open. Lakes, Dinaric meadows, viewpoints from which you can see half the Balkans. This is a day for walking without pressure, for conversation, for breathing.</p>
+    <p>After two demanding days — Maglić and the homesteads — Zelengora arrives like a gift. An easy hike, lunch in the open air, return to Tjentište. Many guests tell me this is their favourite day of the entire tour.</p>
+
+    <h2>Hrčavka canyoning — water and rock</h2>
+    <p>Hrčavka is not extreme. But it is intense. Entering the canyon, water, rock, natural pools, jumps for those who want them. Several hours of complete focus on what is in front of you — you cannot think about work when you are descending a waterfall.</p>
+    <p>This is the day that bonds the group. Always. Without exception.</p>
+
+    <h2>Rafting the Tara — ten years on this river</h2>
+    <p>The Tara is a story of its own. I am a licensed skipper with over ten years of experience on this river and I can tell you — every descent is different. The second deepest canyon in the world, water that changes colour with the light, stops at places no tourist bus has ever reached.</p>
+    <p>We run the rafting our way: without rush, without time pressure, with lunch served directly on the river. A full day. This is not a mass-market rafting trip — this is a day on one of the most beautiful rivers in Europe.</p>
+
+    <h2>Durmitor and Piva Lake — Montenegro as a finale</h2>
+    <p>Durmitor is a UNESCO World Heritage Site and for good reason. A photo safari through the massif, Žabljak, the Black Lake beneath Međed — this is one of those days when you realise just how rich this region truly is.</p>
+    <p>And then Piva Lake. Forty-five kilometres long, surrounded by canyon walls. Kayaking in the morning, silence between cliffs reflected in the water. This is the end of the tour — but not the end of the experience.</p>
+
+    <h2>Why Bosnia and Montenegro rather than the Alps or Scandinavia?</h2>
+    <p>The Alps are beautiful. Scandinavia is spectacular. But neither can give you what Bosnia and Montenegro offer: authenticity.</p>
+    <p>Here you can still sit with a man who has spent his whole life on the mountain and hear a story passed down through generations. Here you can still walk for hours without seeing another person. Here the mountain has not yet become a product.</p>
+    <p>And precisely because of that — while it still lasts — it is worth coming.</p>
+    <p>If you are interested in one of our multi-day tours, take a look at <a href="/en/tours/srce-sutjeske-5-dana" class="text-emerald-400 hover:text-emerald-300 underline">Heart of Sutjeska – 5 Days</a> or <a href="/en/tours/divlja-bosna-i-crna-gora-7-dana" class="text-emerald-400 hover:text-emerald-300 underline">Wild Bosnia and Montenegro – 7 Days</a>. For all information and reservations, feel free to get in touch.</p>
+  `,
+    author: "Petar",
+    date: "2026-03-29",
+    image: "/images/tours/gallery/zelengora.webp",
+    imageAlt: "Multi-day adventures in Bosnia and Herzegovina and Montenegro – Zelengora, Maglić, Durmitor",
+    coverImage: "/images/tours/gallery/zelengora.webp",
+    coverAlt: "Why a multi-day adventure through Bosnia and Montenegro changes everything",
+    tags: ["multi-day tours", "Bosnia", "Montenegro", "Maglić", "Tara", "Durmitor"],
+  },
 ];
 
 export function getBlogPostENBySlug(slug: string): BlogPostEN | undefined {

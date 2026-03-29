@@ -1,5 +1,10 @@
 import AdventureCard from "../../components/AdventureCard";
-import { popularAdventuresEN, premiumAdventuresEN, dayTripAdventuresEN } from "../../data/adventures-en";
+import {
+  popularAdventuresEN,
+  premiumAdventuresEN,
+  multiDayAdventuresEN,
+  dayTripAdventuresEN,
+} from "../../data/adventures-en";
 import type { Metadata } from "next";
 
 const BASE = "https://www.udahniavanturu.com";
@@ -48,6 +53,25 @@ export default function ToursPageEN() {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {premiumAdventuresEN.map((adventure) => (
+              <AdventureCard key={adventure.id} adventure={adventure} linkPrefix="/en/tours" />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Multi-day */}
+      <section className="py-16 md:py-24 relative">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-slate-900/40 to-transparent"></div>
+        <div className="relative mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-12">
+            <h2 className="text-4xl font-bold text-white mb-3">Multi-day tours</h2>
+            <div className="w-16 h-1 bg-emerald-400"></div>
+          </div>
+          <p className="text-center text-slate-400 mb-12 max-w-2xl mx-auto">
+            Longer tours in the heart of the mountains — private groups, full itinerary, unhurried pace.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {multiDayAdventuresEN.map((adventure) => (
               <AdventureCard key={adventure.id} adventure={adventure} linkPrefix="/en/tours" />
             ))}
           </div>
