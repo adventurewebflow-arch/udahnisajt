@@ -17,7 +17,9 @@ export default function HomeSchema() {
         "email": "info@udahniavanturu.com",
         "address": {
           "@type": "PostalAddress",
+          "streetAddress": "Foča",
           "addressLocality": "Foča",
+          "postalCode": "73300",
           "addressRegion": "Republika Srpska",
           "addressCountry": "BA"
         },
@@ -42,10 +44,13 @@ export default function HomeSchema() {
         "@type": "TouristInformationCenter",
         "name": "Udahni Avanturu",
         "url": BASE,
+        "image": `${BASE}/logo-icon.png`,
         "telephone": "+38765797200",
         "address": {
           "@type": "PostalAddress",
+          "streetAddress": "Foča",
           "addressLocality": "Foča",
+          "postalCode": "73300",
           "addressRegion": "Republika Srpska",
           "addressCountry": "BA"
         },

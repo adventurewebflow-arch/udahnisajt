@@ -10,52 +10,52 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
 
   const tourDetailsSr = adventures.map((a) => ({
-    url: `${BASE}/ture/${a.slug}`,
+    url: encodeURI(`${BASE}/ture/${a.slug}`),
     lastModified: now,
   }));
 
   const tourDetailsEn = adventuresEN.map((a) => ({
-    url: `${BASE}/en/tours/${a.slug}`,
+    url: encodeURI(`${BASE}/en/tours/${a.slug}`),
     lastModified: now,
   }));
 
   const vodiciDetails = blogPosts.map((p) => ({
-    url: `${BASE}/vodici/${p.slug}`,
+    url: encodeURI(`${BASE}/vodici/${p.slug}`),
     lastModified: now,
   }));
 
   const blogDetailsEn = blogPostsEN.map((p) => ({
-    url: `${BASE}/en/blog/${p.slug}`,
+    url: encodeURI(`${BASE}/en/blog/${p.slug}`),
     lastModified: now,
   }));
 
   return [
     // Serbian
-    { url: BASE, lastModified: now },
-    { url: `${BASE}/ture`, lastModified: now },
-    { url: `${BASE}/o-nama`, lastModified: now },
-    { url: `${BASE}/vodici`, lastModified: now },
-    { url: `${BASE}/galerija`, lastModified: now },
-    { url: `${BASE}/trnovacko-jezero`, lastModified: now },
-    { url: `${BASE}/maglic-planina`, lastModified: now },
-    { url: `${BASE}/zelengora`, lastModified: now },
-    { url: `${BASE}/perucica`, lastModified: now },
-    { url: `${BASE}/sutjeska`, lastModified: now },
+    { url: encodeURI(BASE), lastModified: now },
+    { url: encodeURI(`${BASE}/ture`), lastModified: now },
+    { url: encodeURI(`${BASE}/o-nama`), lastModified: now },
+    { url: encodeURI(`${BASE}/vodici`), lastModified: now },
+    { url: encodeURI(`${BASE}/galerija`), lastModified: now },
+    { url: encodeURI(`${BASE}/trnovacko-jezero`), lastModified: now },
+    { url: encodeURI(`${BASE}/maglic-planina`), lastModified: now },
+    { url: encodeURI(`${BASE}/zelengora`), lastModified: now },
+    { url: encodeURI(`${BASE}/perucica`), lastModified: now },
+    { url: encodeURI(`${BASE}/sutjeska`), lastModified: now },
     ...tourDetailsSr,
     ...vodiciDetails,
 
     // English
-    { url: `${BASE}/en`, lastModified: now },
-    { url: `${BASE}/en/tours`, lastModified: now },
-    { url: `${BASE}/en/o-nama`, lastModified: now },
-    { url: `${BASE}/en/galerija`, lastModified: now },
-    { url: `${BASE}/en/blog`, lastModified: now },
+    { url: encodeURI(`${BASE}/en`), lastModified: now },
+    { url: encodeURI(`${BASE}/en/tours`), lastModified: now },
+    { url: encodeURI(`${BASE}/en/o-nama`), lastModified: now },
+    { url: encodeURI(`${BASE}/en/galerija`), lastModified: now },
+    { url: encodeURI(`${BASE}/en/blog`), lastModified: now },
     ...tourDetailsEn,
     ...blogDetailsEn,
-    { url: `${BASE}/en/maglic-hike`, lastModified: now },
-    { url: `${BASE}/en/sutjeska-hiking`, lastModified: now },
-    { url: `${BASE}/en/trnovacko-lake`, lastModified: now },
-    { url: `${BASE}/en/perucica-rainforest`, lastModified: now },
-    { url: `${BASE}/en/zelengora-lakes`, lastModified: now },
+    { url: encodeURI(`${BASE}/en/maglic-hike`), lastModified: now },
+    { url: encodeURI(`${BASE}/en/sutjeska-hiking`), lastModified: now },
+    { url: encodeURI(`${BASE}/en/trnovacko-lake`), lastModified: now },
+    { url: encodeURI(`${BASE}/en/perucica-rainforest`), lastModified: now },
+    { url: encodeURI(`${BASE}/en/zelengora-lakes`), lastModified: now },
   ];
 }

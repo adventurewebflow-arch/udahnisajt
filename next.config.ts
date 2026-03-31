@@ -26,7 +26,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/specijalne-ponude/kreiraj-svoju-avanturu",
-        destination: "/ture/kanjoning-hrcavka-prasuma-perucica-skakavac",
+        destination: "/kreiraj-avanturu",
         permanent: true,
       },
       {
@@ -37,6 +37,36 @@ const nextConfig: NextConfig = {
       {
         source: "/contact",
         destination: "/#kontakt-form",
+        permanent: true,
+      },
+      {
+        source: "/en/vodici/:slug",
+        destination: "/en/blog/:slug",
+        permanent: true,
+      },
+      {
+        source: "/avantura-trnovacko-jezero-kanjoning-hrcavka",
+        destination: "/ture/kampovanje-trnovacko-jezero-maglic",
+        permanent: true,
+      },
+      {
+        source: "/blog",
+        destination: "/vodici",
+        permanent: true,
+      },
+      {
+        source: "/blog/:slug",
+        destination: "/vodici/:slug",
+        permanent: true,
+      },
+      {
+        source: "/kontakt",
+        destination: "/#kontakt",
+        permanent: true,
+      },
+      {
+        source: "/ture",
+        destination: "/#ture",
         permanent: true,
       },
 
