@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { getAdventureBySlug, adventures } from "../../data/adventures";
+import TourSchema from "../../components/TourSchema";
 import InquiryForm from "../../components/InquiryForm";
 import Accordion from "../../components/Accordion";
 import type { Metadata } from "next";
@@ -70,6 +71,7 @@ export default async function TourDetailPage({ params }: { params: Promise<{ slu
 
   return (
     <main className="min-h-screen pt-20">
+      <TourSchema adventure={adventure} slug={slug} lang="sr" />
       {/* Hero Banner */}
       <section className="ua-tour-hero relative w-full min-h-[85vh] md:min-h-screen flex items-center justify-center">
         <div className="ua-tour-heroMedia absolute inset-0">

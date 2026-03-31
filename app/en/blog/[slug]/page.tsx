@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { getBlogPostENBySlug, blogPostsEN } from "../../../data/blog-en";
+import BlogPostSchema from "../../../components/BlogPostSchema";
 import InquiryForm from "../../../components/InquiryForm";
 import type { Metadata } from "next";
 
@@ -50,6 +51,7 @@ export default async function BlogPostPageEN({ params }: { params: Promise<{ slu
 
   return (
     <main className="min-h-screen pt-20">
+      <BlogPostSchema post={post} lang="en" />
       {/* Hero cover image */}
       <section className="relative h-[45vh] min-h-[320px] lg:h-[60vh] lg:min-h-[480px] flex items-center justify-center">
         <div className="absolute inset-0">

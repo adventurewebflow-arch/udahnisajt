@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import AdventureCard from "./components/AdventureCard";
+import HomeSchema from "./components/HomeSchema";
 import GalleryPreview from "./components/GalleryPreview";
 import InquiryForm from "./components/InquiryForm";
 import { popularAdventures, premiumAdventures, dayTripAdventures, multiDayAdventures } from "./data/adventures";
@@ -21,6 +22,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main>
+      <HomeSchema />
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-slate-950">
         <div className="relative min-h-[78vh]">
