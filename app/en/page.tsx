@@ -49,7 +49,7 @@ export default function HomeEN() {
               <div className="mb-4 flex flex-col items-center gap-2">
                 <div className="flex flex-wrap justify-center gap-2 text-xs sm:text-sm">
                   <span className="rounded-full border border-white/15 bg-white/5 px-3 py-1 text-slate-100/90">
-                    Hiking &bull; Camping &bull; Rafting
+                    Hiking • Rafting • Canyoning • Camping
                   </span>
                 </div>
                 <div className="flex flex-wrap justify-center gap-2 text-xs sm:text-sm">
@@ -60,19 +60,20 @@ export default function HomeEN() {
               </div>
 
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white leading-[1.05] drop-shadow-[0_12px_40px_rgba(0,0,0,0.75)]">
-                Discover Nature <span className="text-emerald-400">Breathe Adventure</span>
+                Sutjeska is waiting.{" "}
+                <span className="text-emerald-400">Breathe adventure.</span>
               </h1>
 
               <p className="mt-4 text-sm sm:text-base md:text-lg text-slate-100/90 leading-relaxed drop-shadow-[0_10px_30px_rgba(0,0,0,0.75)]">
-                Your gateway to unforgettable outdoor adventures. Explore the beauty of Bosnia and Herzegovina with us.
+                Hiking, rafting, canyoning and camping in Sutjeska National Park, Bosnia and Herzegovina — fully guided, small groups.
               </p>
 
               <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
                 <a
-                  href="#contact"
+                  href="/en/kreiraj-avanturu"
                   className="inline-flex items-center justify-center rounded-lg bg-emerald-500 px-6 py-3 font-semibold text-slate-950 hover:bg-emerald-400 transition shadow-[0_18px_45px_-20px_rgba(16,185,129,0.65)]"
                 >
-                  Send Inquiry
+                  Build Your Adventure
                 </a>
                 <a
                   href="#tours"

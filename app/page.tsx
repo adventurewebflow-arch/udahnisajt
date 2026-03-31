@@ -42,7 +42,7 @@ export default function Home() {
               <div className="mb-4 flex flex-col items-center gap-2">
                 <div className="flex flex-wrap justify-center gap-2 text-xs sm:text-sm">
                   <span className="rounded-full border border-white/15 bg-white/5 px-3 py-1 text-slate-100/90">
-                    Hiking • Kampovanje • Rafting
+                    Hiking • Rafting • Kanjoning • Kampovanje
                   </span>
                 </div>
 
@@ -54,17 +54,18 @@ export default function Home() {
               </div>
 
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white leading-[1.05] drop-shadow-[0_12px_40px_rgba(0,0,0,0.75)]">
-                Otkrij prirodu <span className="text-emerald-400">Udahni avanturu</span>
+                Sutjeska te čeka.{" "}
+                <span className="text-emerald-400">Udahni avanturu.</span>
               </h1>
 
               <p className="mt-4 text-sm sm:text-base md:text-lg text-slate-100/90 leading-relaxed drop-shadow-[0_10px_30px_rgba(0,0,0,0.75)]">
-                Vaša vrata ka nezaboravnim avanturama u prirodi. Otkrijte ljepotu Bosne i Hercegovine sa nama.
+                Hiking, rafting, kanjoning i kampovanje u Nacionalnom parku Sutjeska — organizovano za tebe od A do Ž.
               </p>
 
               <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
-                <a href="#kontakt"
+                <a href="/kreiraj-avanturu"
                    className="inline-flex items-center justify-center rounded-lg bg-emerald-500 px-6 py-3 font-semibold text-slate-950 hover:bg-emerald-400 transition shadow-[0_18px_45px_-20px_rgba(16,185,129,0.65)]">
-                  Pošalji upit
+                  Kreiraj svoju avanturu
                 </a>
                 <a href="#ture"
                    className="inline-flex items-center justify-center rounded-lg border border-white/20 bg-white/5 px-6 py-3 font-semibold text-white hover:bg-white/10 transition">
