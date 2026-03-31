@@ -39,13 +39,12 @@ export default function Home() {
           </div>
           <div className="relative mx-auto flex min-h-[78vh] max-w-6xl items-center justify-center px-4 py-20 text-center">
             <div className="max-w-3xl">
-              <div className="mb-4 flex flex-col items-center gap-2">
+              <div className="mb-4 flex flex-col items-center gap-2 animate-fade-in-up">
                 <div className="flex flex-wrap justify-center gap-2 text-xs sm:text-sm">
                   <span className="rounded-full border border-white/15 bg-white/5 px-3 py-1 text-slate-100/90">
                     Hiking • Rafting • Kanjoning • Kampovanje
                   </span>
                 </div>
-
                 <div className="flex flex-wrap justify-center gap-2 text-xs sm:text-sm">
                   <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-slate-200/90">NP Sutjeska</span>
                   <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-slate-200/90">Park prirode Piva</span>
@@ -53,16 +52,16 @@ export default function Home() {
                 </div>
               </div>
 
-              <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white leading-[1.05] drop-shadow-[0_12px_40px_rgba(0,0,0,0.75)]">
+              <h1 className="animate-fade-in-up-delay-1 text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white leading-[1.05] drop-shadow-[0_12px_40px_rgba(0,0,0,0.75)]">
                 Sutjeska te čeka.{" "}
                 <span className="text-emerald-400">Udahni avanturu.</span>
               </h1>
 
-              <p className="mt-4 text-sm sm:text-base md:text-lg text-slate-100/90 leading-relaxed drop-shadow-[0_10px_30px_rgba(0,0,0,0.75)]">
-                Hiking, rafting, kanjoning i kampovanje u Nacionalnom parku Sutjeska — organizovano za tebe od A do Ž.
+              <p className="animate-fade-in-up-delay-2 mt-4 text-sm sm:text-base md:text-lg text-slate-100/90 leading-relaxed drop-shadow-[0_10px_30px_rgba(0,0,0,0.75)]">
+                Najviši vrh BiH. Najstarija prašuma Evrope. Najdublji kanjon Evrope. Divlja i netaknuta — ovo je Sutjeska.
               </p>
 
-              <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
+              <div className="animate-fade-in-up-delay-3 mt-8 flex flex-col sm:flex-row gap-3 justify-center">
                 <a href="/kreiraj-avanturu"
                    className="inline-flex items-center justify-center rounded-lg bg-emerald-500 px-6 py-3 font-semibold text-slate-950 hover:bg-emerald-400 transition shadow-[0_18px_45px_-20px_rgba(16,185,129,0.65)]">
                   Kreiraj svoju avanturu
@@ -84,6 +83,9 @@ export default function Home() {
           <div className="mb-12">
             <h2 className="text-4xl font-bold text-white mb-3">Popularne ture</h2>
             <div className="w-16 h-1 bg-emerald-400"></div>
+            <p className="text-slate-400 mt-4 text-lg">
+              Dolaziš sam, u paru ili sa ekipom — svejedno. Ovdje svi postanu ekipa.
+            </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {popularAdventures.map((adventure) => (
@@ -101,8 +103,8 @@ export default function Home() {
             <h2 className="text-4xl font-bold text-white mb-3">Premium ture</h2>
             <div className="w-16 h-1 bg-emerald-400"></div>
           </div>
-          <p className="text-center text-slate-400 mb-12 max-w-2xl mx-auto">
-            Premium ture su privatne ture i strogo birane najatraktivnije lokacije. Mali broj učesnika, personalizovani pristup i nezaboravno iskustvo.
+          <p className="text-slate-400 mt-4 text-lg mb-12">
+            Dolaziš sam, u paru ili sa ekipom — svejedno. Ovdje svi postanu ekipa.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {premiumAdventures.map((adventure) => (
