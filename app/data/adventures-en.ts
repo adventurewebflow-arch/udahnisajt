@@ -989,10 +989,10 @@ export const adventuresEN: Adventure[] = [
     imageAlt: "Heart of Sutjeska – 5 days of adventure in Sutjeska National Park",
     imagePosition: "center 60%",
     shortDescription:
-      "Five days in the heart of Bosnia's largest national park. Maglić summit, camping at Trnovačko Lake, mountain homesteads, canyoning, Zelengora and the Valley of Heroes — authentic, unhurried, uncompromising.",
+      "Five days in the heart of Bosnia's largest national park. Maglić, camping at Trnovačko Lake, mountain homesteads, canyoning, Zelengora and Perućica rainforest — authentic, unhurried, uncompromising.",
     aboutTour: `Some tours you visit. Others change you. This is the second kind.
 
-Five days in Sutjeska National Park means five days without rush, without office emails and without false priorities. It means summiting Maglić, sleeping in a tent at Trnovačko Lake, having breakfast with people who live on a mountain homestead without electricity or signal, canyoning through Hrčavka, and walking Zelengora's ridges until nature simply brings you back to yourself.
+Five days in Sutjeska National Park means five days without rush, without office emails and without false priorities. It means summiting Maglić, sleeping in a tent at Trnovačko Lake, having breakfast with people who live on a mountain homestead without electricity or signal, canyoning through Hrčavka, and easy walks on Zelengora until nature simply brings you back to yourself.
 
 What makes this tour different from anything else on the market isn't the itinerary on paper — it's the details that aren't on paper. Coffee with Miloš at Prijevor, a man who has spent his whole life here and knows every stone of this mountain. Breakfast at the katun — homemade cheese, kajmak, warm milk, prosciutto — prepared on the spot by people who still live the way people lived three hundred years ago. A cold beer from the spring by the fire in the evening, while Trnovačko Lake lies before you silent and perfect.
 
@@ -1013,8 +1013,7 @@ Petar is with you for all five days.`,
       "Perućica rainforest viewpoints and Skakavac waterfall",
       "Zelengora — lakes and panoramic viewpoints",
       "Hrčavka canyoning (full equipment included)",
-      "Visit to the Battle of Sutjeska Memorial Complex",
-      "Valley of Heroes",
+      "Visit to Perućica rainforest and Skakavac waterfall",
       "Accommodation in bungalows at Tjentište (3 nights) + camping (1 night)",
       "11 meals included",
       "Private groups only — 6 to 16 people",
@@ -1023,27 +1022,27 @@ Petar is with you for all five days.`,
       {
         dayTitle: "Day 1 — Prijevor, Maglić summit and camping at Trnovačko Lake",
         description:
-          "The group meets in Foča, from where we drive in off-road vehicles to Prijevor at around 1,520m elevation. While the camping equipment is transported to Trnovačko Lake, we set off on the ascent to Maglić.\n\nThe climb takes around 3.5 to 4 hours and is physically demanding. The terrain is steeper in places, but we move at a controlled pace with breaks for rest and hydration. Lunch packs are provided for the ascent. The view from the summit — Zelengora, Volujak, Lebršnik, Treskavica and the Adriatic in the distance — is a reward that justifies every step.\n\nFrom the summit we descend to Trnovačko Lake, where the camp and dinner await. We spend the evening by the fire on the shore of one of the most beautiful mountain lakes in the Balkans. No signal, no phones — just the fire, the group and the silence of the mountain.",
+          "The group meets in Foča and we drive in off-road vehicles to Prijevor at around 1,520m elevation. While the equipment is transported to Trnovačko Lake, we set off on the ascent to Maglić.\n\nThe climb takes around 3.5 to 4 hours and is physically demanding. We move at a controlled pace with breaks and lunch packs. The view from the summit — Zelengora, Volujak, Lebršnik, Treskavica and the Adriatic in the distance — is a reward that justifies every step.\n\nFrom the summit we descend to Trnovačko Lake, where the camp and dinner await. Evening by the fire on the shore of one of the most beautiful mountain lakes in the Balkans. No signal, no phones — just the fire, the group and the silence of the mountain.",
       },
       {
         dayTitle: "Day 2 — Mountain homestead, local host at Prijevor and Perućica viewpoints",
         description:
-          "We wake up at Trnovačko Lake. A short 15-minute walk brings us to the nearby katun homesteads, where we are welcomed by hosts who still live without electricity or signal, in stone houses, with their livestock and a mountain rhythm unchanged for centuries.\n\nBreakfast is the real thing: fried dough, homemade kajmak, warm milk straight from the cow, prosciutto, cheese. We eat slowly, without rush, while the hosts share stories about life on the mountain.\n\nAfter breakfast we return to Prijevor. Here we meet Miloš — a man who has spent his whole life at Prijevor and knows every stone of this mountain. A sit-down with coffee, conversation and a first-hand account of what this place truly looks like from the inside is something no tour can manufacture.\n\nAfter coffee we drive to the Perućica rainforest viewpoints, from where Skakavac waterfall and the entire ancient forest spread out below us. We arrive at Tjentište in the afternoon, check into the bungalows and have dinner.",
+          "We wake up at Trnovačko Lake. A short 15-minute walk brings us to the katun homesteads where hosts who live without electricity or signal welcome us, in stone houses with their livestock and a mountain rhythm unchanged for centuries.\n\nBreakfast: fried dough, homemade kajmak, warm milk, prosciutto, cheese. We eat slowly while the hosts share stories about life on the mountain.\n\nWe return to Prijevor where Miloš awaits — a man who has spent his whole life here and knows every stone of this mountain. Coffee, conversation and a story about what this region truly looks like from the inside.\n\nAfter coffee we drive to the Perućica rainforest viewpoints, from where Skakavac waterfall and the entire forest are visible. We arrive at Tjentište, check into bungalows and have dinner.",
       },
       {
         dayTitle: "Day 3 — Zelengora, lakes and viewpoints",
         description:
-          "After breakfast at Tjentište we head towards Zelengora. The drive takes about an hour, and the day is designed as an easy, open-air hike without demanding ascents.\n\nWe visit Orlovačko Lake, Donje Bare and panoramic viewpoints overlooking Maglić, Volujak and Lebršnik. For those who want more movement, there is an option to walk to Gornje Bare. The programme is flexible and adapted to the group — the goal is to be present in the landscape, not to race through it.\n\nLunch is served in the open air on Zelengora. We return to Tjentište in the afternoon, with the evening reserved for rest, dinner and reflection.",
+          "After breakfast at Tjentište we head towards Zelengora. The day is easy and open — no demanding ascents, focused on time in nature.\n\nWe visit Orlovačko Lake, Donje Bare and panoramic viewpoints with views of Maglić, Volujak and Lebršnik. For those who want more, an optional walk to Gornje Bare. Lunch in nature on Zelengora.\n\nReturn to Tjentište in the afternoon, dinner and rest.",
       },
       {
         dayTitle: "Day 4 — Hrčavka canyoning",
         description:
-          "The fourth day is dedicated to canyoning through Hrčavka canyon — one of the most spectacular canyoning routes in the region. Hrčavka is not extreme, but it is intense and full of content: water, rock, natural pools, passages and jumps for those who want them.\n\nAfter breakfast at Tjentište we collect the full canyoning kit — wetsuit, helmet and safety vest. A short safety briefing, and we enter the canyon. Canyoning lasts several hours with breaks and lunch packs during the activity.\n\nWe return to Tjentište in the afternoon. After showering and resting, dinner and the last evening of the tour follow — conversation, laughter and five days worth of memories.",
+          "After breakfast at Tjentište we collect the canyoning kit — wetsuit, helmet and vest. A short briefing and we enter Hrčavka canyon. Canyoning lasts several hours with breaks and lunch packs during the activity. Water, rock, natural pools and jumps for those who want them — intense but not extreme.\n\nReturn to Tjentište in the afternoon. After showering and rest, dinner follows.",
       },
       {
-        dayTitle: "Day 5 — Valley of Heroes and end of tour",
+        dayTitle: "Day 5 — Perućica Rainforest, Skakavac Waterfall and return to Foča",
         description:
-          "The last morning. Breakfast at Tjentište, then a gentle walk through the Battle of Sutjeska Memorial Complex. The Valley of Heroes, the Monument to the Fallen and the quiet of a place that carries one of the most powerful stories of this region — a calm and dignified end to the tour.\n\nNo rush, no pressure. We walk slowly, talk and close what we began on Maglić. The tour ends at Tjentište, from where everyone makes their own way home — but not in quite the same state they arrived.",
+          "The last morning. Breakfast at Tjentište, then we enter Perućica rainforest — one of the oldest and largest primeval forests in Europe, with trees over 300 years old.\n\nThe walk leads to Skakavac waterfall, 75 metres high. Around two hours through dense ancient forest, along streams and old paths that feel untouched by time. Lunch packs in nature.\n\nAfter Perućica we return to Foča where the tour ends. You leave richer for an experience that cannot be bought, only lived.",
       },
     ],
     includes: [
@@ -1093,17 +1092,17 @@ Petar is with you for all five days.`,
     slug: "divlja-bosna-i-crna-gora-7-dana",
     title: "Wild Bosnia & Montenegro – 7 Days",
     category: "multi-day",
-    location: "Sutjeska NP / Tara / Durmitor / Piva Lake",
+    location: "Sutjeska NP / Tara / Durmitor / Foča",
     image: "/images/tours/put-na-prutaš.webp",
-    imageAlt: "Wild Bosnia and Montenegro – 7 days, Sutjeska, Tara, Durmitor, Piva Lake",
+    imageAlt: "Wild Bosnia and Montenegro – 7 days, Sutjeska, Tara, Durmitor",
     imagePosition: "center 60%",
     shortDescription:
-      "Seven days through the heart of the Balkans. Maglić, Trnovačko Lake, mountain homesteads, canyoning, rafting the Tara, Durmitor and kayaking on Piva Lake — one tour that covers everything this region has to offer.",
+      "Seven days through the heart of the Balkans. Maglić, Trnovačko Lake, mountain homesteads, canyoning, rafting the Tara, Perućica rainforest and Durmitor — one tour that covers everything this region has to offer.",
     aboutTour: `Seven days. Two countries. Several mountains. One river you remember for the rest of your life.
 
-This tour begins where everything begins — on Maglić, the highest peak in Bosnia and Herzegovina. It continues through mountain homesteads where people still live without electricity or signal, through Hrčavka canyon, down the Tara river with skippers who know it like their own home, to the foot of Durmitor and finally to Piva Lake where 45 kilometres of silence between canyon walls await beneath kayak paddles.
+This tour begins where everything begins — on Maglić, the highest peak in Bosnia and Herzegovina. It continues through mountain homesteads where people still live without electricity or signal, through Hrčavka canyon and Perućica rainforest, down the Tara river with skippers who know it like their own home, to Durmitor and the ring road that ranks among the finest drives in the Balkans.
 
-This is not a tour for those who want a hotel and a minute-by-minute programme. This is a tour for those who want to feel the landscape — all of it. Mountain, river, canyon and lake. Petar is with you for all seven days, and he knows every detail of this terrain — he is a licensed guide and skipper with over ten years of experience on the Tara.
+This is not a tour for those who want a hotel and a minute-by-minute programme. This is a tour for those who want to feel the landscape — all of it. Mountain, river, canyon and rainforest. Petar is with you for all seven days, and he knows every detail of this terrain — he is a licensed guide and skipper with over ten years of experience on the Tara.
 
 Transport to Foča is arranged separately — we organise transfers from Belgrade, Sarajevo, Dubrovnik, Podgorica, Zagreb and Tirana by arrangement, not included in the price.`,
     duration: "7 days / 6 nights",
@@ -1121,10 +1120,9 @@ Transport to Foča is arranged separately — we organise transfers from Belgrad
       "Zelengora — lakes and panoramic viewpoints",
       "Hrčavka canyoning",
       "Rafting the Tara — our way (licensed skipper)",
-      "Durmitor photo safari + Žabljak + Black Lake",
-      "Kayaking on Piva Lake (45km, surrounded by canyon)",
+      "Perućica rainforest and Skakavac waterfall (75m)",
+      "Durmitor ring road + Žabljak + Black Lake",
       "Camp on the Tara riverbank",
-      "Camp above Piva Lake",
       "16 meals included",
       "Private groups only — 6 to 16 people",
     ],
@@ -1137,32 +1135,32 @@ Transport to Foča is arranged separately — we organise transfers from Belgrad
       {
         dayTitle: "Day 2 — Mountain homestead, local host at Prijevor and Perućica viewpoints",
         description:
-          "We wake up at Trnovačko Lake. A short 15-minute walk brings us to the katun homesteads where hosts live without electricity or signal, in stone houses with their livestock and an unchanged mountain rhythm.\n\nBreakfast: fried dough, homemade kajmak, warm milk, prosciutto, cheese. We eat slowly while the hosts share stories about life on the mountain.\n\nWe return to Prijevor where Miloš awaits — a man who has spent his whole life here and knows every stone of this mountain. Coffee, conversation and a first-hand account of what this place truly looks like from the inside.\n\nAfter coffee we drive to the Perućica rainforest viewpoints, from where Skakavac waterfall and the ancient forest spread out below. We arrive at Tjentište in the afternoon, check into bungalows and have dinner.",
+          "We wake up at Trnovačko Lake. A short 15-minute walk brings us to the katun homesteads where hosts live without electricity or signal, in stone houses with their livestock and an unchanged mountain rhythm.\n\nBreakfast: fried dough, homemade kajmak, warm milk, prosciutto, cheese. We eat slowly while the hosts share stories about life on the mountain.\n\nWe return to Prijevor where Miloš awaits — a man who has spent his whole life here and knows every stone of this mountain. Coffee, conversation and a first-hand account of what this place truly looks like from the inside.\n\nAfter coffee we drive to the Perućica rainforest viewpoints. We arrive at Tjentište, check into bungalows and have dinner.",
       },
       {
         dayTitle: "Day 3 — Zelengora, lakes and viewpoints",
         description:
-          "After breakfast at Tjentište we head to Zelengora. The day is easy and open — no demanding ascents, focused on being present in the landscape.\n\nWe visit Orlovačko Lake, Donje Bare and panoramic viewpoints overlooking Maglić, Volujak and Lebršnik. For those who want more movement, there is an option to walk to Gornje Bare. Lunch in the open air on Zelengora.\n\nWe return to Tjentište in the afternoon, with dinner and rest to follow.",
+          "After breakfast at Tjentište we head to Zelengora. The day is easy and open — no demanding ascents, focused on being present in the landscape.\n\nWe visit Orlovačko Lake, Donje Bare and panoramic viewpoints. For those who want more movement, there is an option to walk to Gornje Bare. Lunch in nature on Zelengora.\n\nWe return to Tjentište in the afternoon, with dinner and rest to follow.",
       },
       {
-        dayTitle: "Day 4 — Hrčavka canyoning and camp on the Tara",
+        dayTitle: "Day 4 — Hrčavka canyoning",
         description:
-          "After breakfast at Tjentište we collect the canyoning kit — wetsuit, helmet and vest. A short briefing and we enter Hrčavka canyon. Canyoning lasts several hours with breaks and lunch packs. Water, rock, natural pools and jumps for those who want them — intense but not extreme.\n\nAfter canyoning we do not return to Tjentište. We drive directly to the camp on the Tara. Dinner and real relaxation by the sound of the river. This transition — from canyon to riverbank — is one of the most powerful moments of the tour.",
+          "After breakfast we collect the canyoning kit — wetsuit, helmet and vest. A short briefing and we enter Hrčavka canyon. Canyoning lasts several hours with breaks and lunch packs. Water, rock, natural pools and jumps for those who want them.\n\nReturn to Tjentište, dinner and rest.",
       },
       {
-        dayTitle: "Day 5 — Rafting the Tara",
+        dayTitle: "Day 5 — Perućica Rainforest, Skakavac Waterfall and camp on the Tara",
         description:
-          "Breakfast at the camp on the Tara riverbank. We collect the rafting equipment and head to the put-in point.\n\nRafting the Tara our way means a full day on the river without rush or time pressure. We float through the canyon, stop where we like, swim, jump and have lunch directly on the river. Petar is a licensed skipper with over ten years of experience on the Tara — this is not a mass-market rafting tour, this is a day on the river with a crew that knows what it is doing.\n\nBack at camp, dinner and the quiet satisfaction of one of the freest days of the entire tour.",
+          "Breakfast at Tjentište, then we enter Perućica rainforest. The walk to Skakavac waterfall — two hours through ancient forest that looks as though centuries have stood still. Lunch packs in nature.\n\nAfter Perućica we do not return to Tjentište. We drive directly to the camp on the Tara. Dinner by the sound of the river that becomes ours tomorrow.",
       },
       {
-        dayTitle: "Day 6 — Durmitor photo safari and camp above Piva Lake",
+        dayTitle: "Day 6 — Rafting the Tara",
         description:
-          "Breakfast at camp, pack up and drive towards Durmitor. The road passes through some of the most dramatic landscapes in the Balkans — canyon rims, black pine forests, limestone ridges and a sky that keeps getting closer.\n\nOn Durmitor we do a photo safari — viewpoints, Žabljak town and a walk to the Black Lake, a UNESCO World Heritage site. Emerald-green water beneath Međed peak, pine forest and the silence of the massif.\n\nIn the afternoon we drive to Plužine and the camp above Piva Lake. One of the most beautiful spots on the tour — a camp on a ridge with views over the lake and the canyons that surround it. Dinner and the last evening of the tour.",
+          "Breakfast at the camp on the Tara riverbank. We collect the rafting equipment and head to the put-in point.\n\nRafting the Tara our way means a full day on the river without rush or time pressure. We float through the canyon, stop where we like, swim, jump and have lunch directly on the river. Petar is a licensed skipper with over ten years of experience on the Tara.\n\nBack at camp, dinner and the quiet satisfaction of one of the freest days of the entire tour.",
       },
       {
-        dayTitle: "Day 7 — Kayaking on Piva Lake and return to Foča",
+        dayTitle: "Day 7 — Durmitor ring road, Žabljak and return to Foča",
         description:
-          "The last morning. Breakfast at the camp above Piva Lake, then we make our way down to the water.\n\nPiva Lake stretches for 45 kilometres, surrounded by canyon walls and perfectly silent. Two hours of paddling through stillness between cliffs reflected in the water. No kayaking experience? Perfect — the water is calm and the guide is there.\n\nAfter kayaking we drive back to Foča. The tour ends where it began — but you are not the same as when you set out. Seven days of mountain, canyon, river and lake stay with you long after you get home.",
+          "Breakfast at camp, pack up and drive towards Durmitor. The Durmitor ring road ranks among the top 10 drives a person should do in their lifetime. Canyon rims, black pine forests and limestone ridges while the sky keeps getting closer.\n\nWe stop at viewpoints, take our time, pass through Žabljak and walk to the Black Lake — a UNESCO World Heritage site. Emerald-green water beneath Međed peak and the silence of the massif.\n\nIn the afternoon we drive back to Foča where the tour ends. Seven days of mountain, canyon, rainforest and river — and you returning different from when you left.",
       },
     ],
     includes: [
@@ -1171,12 +1169,10 @@ Transport to Foča is arranged separately — we organise transfers from Belgrad
       "1 night camping at Trnovačko Lake",
       "2 nights in bungalows at Tjentište",
       "1 night at the camp on the Tara riverbank",
-      "1 night at the camp above Piva Lake",
       "16 meals throughout the tour",
       "Breakfast and coffee at the mountain homestead",
       "Full canyoning equipment",
       "Full rafting equipment",
-      "Kayak equipment on Piva Lake",
       "Transport of camping equipment",
       "Sutjeska NP, Piva Nature Park and Durmitor NP entrance fees",
       "Residence taxes",
@@ -1191,7 +1187,7 @@ Transport to Foča is arranged separately — we organise transfers from Belgrad
     faqs: [
       {
         q: "What level of fitness is required?",
-        a: "The Maglić ascent on Day 1 is the most demanding part of the tour. The remaining days range from moderate to easy. Rafting and kayaking require no previous experience. We recommend regular physical activity before departure.",
+        a: "The Maglić ascent on Day 1 is the most demanding part of the tour. The remaining days range from moderate to easy. Rafting requires no previous experience. We recommend regular physical activity before departure.",
       },
       {
         q: "Is the rafting safe?",
@@ -1200,6 +1196,145 @@ Transport to Foča is arranged separately — we organise transfers from Belgrad
       {
         q: "Can you organise transport from Belgrade, Sarajevo or other cities?",
         a: "Yes. We organise transfers from Belgrade, Sarajevo, Dubrovnik, Podgorica, Zagreb and Tirana by arrangement. Transport is not included in the tour price — contact us with the number of people and departure point.",
+      },
+      {
+        q: "Will we receive information before departure?",
+        a: "Yes. All participants will be added to the tour WhatsApp group a few days before departure with full information on equipment, timing and the weather forecast.",
+      },
+    ],
+  },
+  {
+    id: "multi-grand-tour-01",
+    slug: "grand-tour-balkan-9-dana",
+    title: "Balkan Grand Tour – 9 Days",
+    category: "multi-day",
+    location: "Sutjeska NP / Tara / Durmitor / Piva Lake / Foča",
+    image: "/images/tours/gallery/dolazak.trnovacko-jezero.webp",
+    imageAlt: "Balkan Grand Tour – 9 days, Sutjeska, Tara, Durmitor, Piva Lake",
+    imagePosition: "center 60%",
+    shortDescription:
+      "Nine days through everything Bosnia and Herzegovina and Montenegro have to offer. From the highest peak in BiH to a UNESCO canyon, from a rainforest thousands of years old to a river you remember for life — a tour you do once and talk about forever.",
+    aboutTour: `There are trips. And then there is the Grand Tour.
+
+Nine days, two countries, several mountains, one rainforest, one river and one lake. Everything this corner of the Balkans has to offer — gathered into a single tour that has no pauses, but has a rhythm. Every day is different. Every day is powerful in its own way.
+
+We begin on Maglić, the highest peak in Bosnia and Herzegovina. We end with a kayak on Piva Lake, surrounded by canyon walls reflected in the water. In between: mountain homesteads where people still live without electricity, a rainforest thousands of years old, a canyon you cannot forget, the Tara river carrying you without rush, the Durmitor ring road ranking among the top 10 drives of a lifetime, and the summit of Prutaš with a panorama that takes your breath away.
+
+Petar is with you for all nine days. Licensed guide and skipper with fifteen years of experience — a man who knows every stone of this terrain and who knows when to stop and when to keep going.
+
+This tour is not for those who want a hotel and a minute-by-minute programme. This tour is for those willing to give nine days and receive in return an experience that lasts a lifetime.
+
+Transport is arranged by agreement from Belgrade, Sarajevo, Dubrovnik, Podgorica, Zagreb and Tirana. At the end of the tour we drive you back to your starting point — you only need to get here.`,
+    duration: "9 days / 8 nights",
+    difficulty: "Moderate",
+    price: "1,650€ per person",
+    groupSize: "6–16 people",
+    transport: "By arrangement – Belgrade, Sarajevo, Dubrovnik, Podgorica, Zagreb, Tirana",
+    dates: [],
+    highlights: [
+      "Maglić summit (2,386m) — highest peak in BiH",
+      "Camping at Trnovačko Lake",
+      "Breakfast at a mountain homestead — homemade cheese, kajmak, warm milk, prosciutto",
+      "Coffee with Miloš at Prijevor",
+      "Zelengora — lakes and panoramic viewpoints",
+      "Hrčavka canyoning",
+      "Perućica rainforest and Skakavac waterfall (75m)",
+      "Rafting the Tara — licensed skipper, full day",
+      "Durmitor ring road — top 10 drives in the world",
+      "Žabljak and Black Lake — UNESCO World Heritage",
+      "Prutaš or Crvena Greda — by agreement with the group",
+      "Kayaking on Piva Lake",
+      "Return to starting point included",
+      "Private groups only — 6 to 16 people",
+    ],
+    itinerary: [
+      {
+        dayTitle: "Day 1 — Prijevor, Maglić summit and camping at Trnovačko Lake",
+        description:
+          "The group meets in Foča and we drive in off-road vehicles to Prijevor at around 1,520m. While the camping equipment is transported to Trnovačko Lake, we set off on the ascent to Maglić.\n\nThe climb takes around 3.5 to 4 hours. The view from the summit — Zelengora, Volujak, Lebršnik, Treskavica and the Adriatic in the distance. From the summit we descend to Trnovačko Lake where the camp and dinner await.\n\nEvening by the fire on the shore of one of the most beautiful mountain lakes in the Balkans. No signal, no phones — just the fire, the group and the silence of the mountain.",
+      },
+      {
+        dayTitle: "Day 2 — Mountain homestead, local host at Prijevor and Perućica viewpoints",
+        description:
+          "We wake up at Trnovačko Lake. A short walk brings us to the katun homesteads where hosts live without electricity or signal, in stone houses with their livestock.\n\nBreakfast: fried dough, homemade kajmak, warm milk, prosciutto, cheese — prepared on the spot by people who still live the way people lived 300 years ago.\n\nWe return to Prijevor where Miloš awaits. Coffee, conversation, a story about mountain life that you will not find in any guidebook.\n\nAfter coffee we drive to the Perućica rainforest viewpoints. We arrive at Tjentište, check into bungalows and have dinner.",
+      },
+      {
+        dayTitle: "Day 3 — Zelengora, lakes and viewpoints",
+        description:
+          "After breakfast at Tjentište we head to Zelengora. An easy, open day — no demanding ascents, focused on being present in the landscape.\n\nWe visit Orlovačko Lake, Donje Bare and panoramic viewpoints. Lunch in nature. Option to walk to Gornje Bare for those who want more.\n\nReturn to Tjentište in the afternoon, dinner and rest.",
+      },
+      {
+        dayTitle: "Day 4 — Hrčavka canyoning",
+        description:
+          "After breakfast we collect the canyoning kit — wetsuit, helmet and vest. A short briefing and we enter Hrčavka canyon.\n\nCanyoning lasts several hours with breaks and lunch packs. Water, rock, natural pools and jumps for those who want them — intense but not extreme. This is the day that bonds every group, without exception.\n\nReturn to Tjentište, dinner and rest.",
+      },
+      {
+        dayTitle: "Day 5 — Perućica Rainforest, Skakavac Waterfall and camp on the Tara",
+        description:
+          "Breakfast at Tjentište, then we enter Perućica rainforest — one of the oldest and largest primeval forests in Europe, with trees over 300 years old. The walk to Skakavac waterfall, 75 metres high, through dense ancient forest that looks as though time has stood still.\n\nAfter Perućica we drive directly to the camp on the Tara. Dinner by the sound of the river that becomes ours tomorrow.",
+      },
+      {
+        dayTitle: "Day 6 — Rafting the Tara — a full day on the river",
+        description:
+          "Breakfast at the camp on the Tara riverbank. We collect the rafting equipment and head to the put-in point.\n\nRafting the Tara our way: a full day on the river without rush or time pressure. The second deepest canyon in the world, water that changes colour with the light, stops at places no tourist bus has ever reached. We swim, jump and have lunch directly on the river.\n\nPetar is a licensed skipper with over ten years of experience on the Tara. This is not mass-market rafting — this is a day of freedom on one of the most beautiful rivers in Europe.\n\nBack at camp, dinner and reflection.",
+      },
+      {
+        dayTitle: "Day 7 — Durmitor ring road, Žabljak and Black Lake",
+        description:
+          "Breakfast at camp, pack up and drive towards Durmitor.\n\nThe Durmitor ring road ranks among the top 10 drives a person should do in their lifetime. Canyon rims, black pine forests and limestone ridges while the sky keeps getting closer. We stop at viewpoints, take our time at every bend that opens a new panorama.\n\nWe arrive in Žabljak, check in and walk to the Black Lake — a UNESCO World Heritage site. Emerald-green water beneath Međed peak, pine forest and the silence of the massif.\n\nDinner in Žabljak and rest before tomorrow's ascent.",
+      },
+      {
+        dayTitle: "Day 8 — Prutaš or Crvena Greda and a final evening by the fire",
+        description:
+          "Breakfast in Žabljak, then the mountain calls.\n\nBy agreement with the group: ascent to Prutaš (2,393m), one of the most beautiful summits on Durmitor with a panorama that takes your breath away — the Durmitor massif, Black Lake, and the expanse of Montenegro and Bosnia. Or Crvena Greda, a spectacular viewpoint with an unforgettable view, an easier option but equally impressive.\n\nA full day on the mountain, without rush. Back at the accommodation, dinner and the last evening by the fire — conversation, laughter and nine days you carry with you.",
+      },
+      {
+        dayTitle: "Day 9 — Kayaking on Piva Lake and the journey home",
+        description:
+          "The last morning. Breakfast, then one final gift from this tour — Piva Lake.\n\nForty-five kilometres long, surrounded by canyon walls, emerald-green and perfectly silent. Paddling through stillness between cliffs reflected in the water. No kayaking experience needed — the water is calm and the guide is there.\n\nAfter kayaking — the journey home. To Foča, Sarajevo or Belgrade, depending on where you started. We drive you back to your starting point.\n\nThe tour ends. But something stays — the mountain underfoot, the river beneath the paddle, the fire from the camp and the people you shared it all with.",
+      },
+    ],
+    includes: [
+      "Licensed guide and skipper Petar — all 9 days",
+      "Off-road vehicle transfers throughout the tour",
+      "1 night camping at Trnovačko Lake",
+      "2 nights in bungalows at Tjentište",
+      "1 night at the camp on the Tara riverbank",
+      "2 nights accommodation in Žabljak",
+      "Kayaking on Piva Lake",
+      "Return transfer to starting point (Foča, Sarajevo or Belgrade)",
+      "20+ meals throughout the tour",
+      "Breakfast and coffee at the mountain homestead",
+      "Full canyoning equipment",
+      "Full rafting equipment",
+      "Kayak equipment on Piva Lake",
+      "Transport of camping equipment",
+      "Sutjeska NP, Piva Nature Park and Durmitor NP entrance fees",
+      "Residence taxes",
+      "Transport by arrangement — Belgrade, Sarajevo, Dubrovnik, Podgorica, Zagreb, Tirana (not included in price)",
+    ],
+    excludes: [
+      "Personal equipment (hiking boots, backpack, swimwear)",
+      "Drinks throughout the tour",
+      "Transport to Foča (transfers available by arrangement, not included in price)",
+      "Expenses outside the programme",
+    ],
+    faqs: [
+      {
+        q: "What level of fitness is required?",
+        a: "The Maglić ascent and the optional Prutaš ascent are the most demanding days. The remaining days range from moderate to easy. Rafting, canyoning and kayaking require no previous experience. We recommend regular physical activity before departure. If you have any doubts, contact us — we will honestly tell you whether this tour is right for you.",
+      },
+      {
+        q: "Can we choose between Prutaš and Crvena Greda?",
+        a: "Yes. Day 8 is flexible — we decide together with the group which summit or viewpoint to go to. Prutaš is a longer, more demanding ascent with a spectacular panorama, while Crvena Greda is an easier option with an equally impressive view.",
+      },
+      {
+        q: "Where do you drop us off at the end of the tour?",
+        a: "At the end of the tour we drive you back to your starting point — Foča, Sarajevo or Belgrade, depending on where you began. The return transfer is included in the tour price.",
+      },
+      {
+        q: "Can you organise transport from my city?",
+        a: "Yes. We organise transfers from Belgrade, Sarajevo, Dubrovnik, Podgorica, Zagreb and Tirana by arrangement. Transport to Foča is not included in the tour price — contact us with the number of people and departure point.",
       },
       {
         q: "Will we receive information before departure?",

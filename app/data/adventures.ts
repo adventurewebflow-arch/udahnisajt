@@ -782,7 +782,7 @@ Tura polazi iz Foče, vodi vas kroz tri lica divlje prirode Crne Gore i vraća v
     imageAlt: "Srce Sutjeske – 5 dana avanture u NP Sutjeska, Maglić, Trnovačko jezero, Zelengora",
     imagePosition: "center 60%",
     shortDescription:
-      "Pet dana u srcu najvećeg nacionalnog parka u BiH. Maglić, kampovanje na Trnovačkom jezeru, katuni, kanjoning, Zelengora i Dolina heroja — autentično, bez žurbe, bez kompromisa.",
+      "Pet dana u srcu najvećeg nacionalnog parka u BiH. Maglić, kampovanje na Trnovačkom jezeru, katuni, kanjoning, Zelengora i prašuma Perućica — autentično, bez žurbe, bez kompromisa.",
     aboutTour: `Postoje ture koje obilaziš. I postoje ture koje te promijene. Ova je druga vrsta.
 
 Pet dana u Nacionalnom parku Sutjeska znači pet dana bez brzine, bez uredskih mejlova i bez lažnih prioriteta. Znači uspon na Maglić, spavanje u šatoru na Trnovačkom jezeru, doručak kod ljudi koji žive na katunu bez struje i mreže, kanjoning kroz Hrčavku i lagane šetnje Zelengore gdje te priroda jednostavno vrati sebi.
@@ -806,8 +806,7 @@ Petar je uz vas svih pet dana.`,
       "Vidikovci prašume Perućice i vodopad Skakavac",
       "Zelengora — jezera i panoramski vidikovci",
       "Kanjoning Hrčavka (kompletna oprema uključena)",
-      "Obilazak Memorijalnog kompleksa Bitke na Sutjesci",
-      "Dolina heroja",
+      "Obilazak prašume Perućice i vodopada Skakavac",
       "Smještaj u bungalovima na Tjentištu (3 noći) + kampovanje (1 noć)",
       "11 obroka uključeno",
       "Samo privatne grupe — 6 do 16 osoba",
@@ -816,27 +815,27 @@ Petar je uz vas svih pet dana.`,
       {
         dayTitle: "Dan 1 — Prijevor, uspon na Maglić i kampovanje na Trnovačkom jezeru",
         description:
-          "Okupljanje grupe je u Foči, odakle terenskim vozilima krećemo prema Prijevoru na visini od oko 1.520 metara. Dok se oprema za kampovanje transportuje prema Trnovačkom jezeru, mi krećemo na uspon prema Magliću.\n\nUspon traje oko 3,5 do 4 sata i fizički je zahtjevan. Teren je strmiji na pojedinim dionicama, ali se krećemo kontrolisanim tempom sa pauzama za odmor i hidrataciju. Tokom uspona imamo obezbjeđene lunch pakete. Pogled sa vrha — Zelengora, Volujak, Lebršnik, Treskavica i Jadran u daljini — nagrada je koja opravdava svaki korak.\n\nSa vrha se spuštamo prema Trnovačkom jezeru, gdje nas čeka postavljeni kamp i večera. Veče provodimo uz vatru na obali jednog od najljepših planinskih jezera na Balkanu. Nema mreže, nema telefona — samo vatra, ekipa i tišina planine.",
+          "Okupljanje u Foči, terenskim vozilima prema Prijevoru na visini od oko 1.520 metara. Dok se oprema transportuje na Trnovačko jezero, krećemo na uspon prema Magliću.\n\nUspon traje oko 3,5 do 4 sata i fizički je zahtjevan. Krećemo se kontrolisanim tempom sa pauzama, uz lunch pakete. Pogled sa vrha — Zelengora, Volujak, Lebršnik, Treskavica i Jadran u daljini — nagrada je koja opravdava svaki korak.\n\nSa vrha se spuštamo prema Trnovačkom jezeru, gdje nas čeka postavljeni kamp i večera. Veče uz vatru na obali jednog od najljepših planinskih jezera na Balkanu. Bez mreže, bez telefona — samo vatra, ekipa i tišina planine.",
       },
       {
         dayTitle: "Dan 2 — Katuni, domaćin na Prijevoru i vidikovci Perućice",
         description:
-          "Ujutru se budimo na Trnovačkom jezeru. Kratkom šetnjom od oko 15 minuta dolazimo do obližnjih katuna gdje nas dočekuju domaćini koji i danas žive bez struje i mreže, u kamenim kućicama, uz stoku i planinski ritam koji se nije promijenio vjekovima.\n\nDoručak je pravi: uštipci, domaći kajmak, toplo mlijeko direktno od krave, pršut, sir. Jedemo polako, bez žurbe, dok domaćini pričaju o životu na planini.\n\nNakon doručka vraćamo se prema Prijevoru. Tu nas čeka Miloš — čovjek koji je cijeli život na Prijevoru i koji zna svaki kamen ove planine. Sjed uz kafu, razgovor i priča o tome kako ovaj kraj zaista izgleda iznutra, nije nešto što se može kupiti ni na jednoj turi.\n\nNakon kafe sjedamo u vozila i pravimo pauzu na vidikovcima prašume Perućice, odakle se vidi vodopad Skakavac i cijela prašuma koja se prostire ispod nas. Stižemo na Tjentište u poslijepodnevnim satima, smještamo se u bungalove i večeramo.",
+          "Budimo se na Trnovačkom jezeru. Kratkom šetnjom od 15 minuta dolazimo do katuna gdje nas dočekuju domaćini koji žive bez struje i mreže, u kamenim kućicama, uz stoku i planinski ritam koji se nije promijenio vjekovima.\n\nDoručak: uštipci, domaći kajmak, toplo mlijeko, pršut, sir. Jedemo polako, dok domaćini pričaju o životu na planini.\n\nVraćamo se prema Prijevoru gdje nas čeka Miloš — čovjek koji je cijeli život tu i zna svaki kamen ove planine. Kafa, razgovor i priča o tome kako ovaj kraj zaista izgleda iznutra.\n\nNakon kafe vozilima do vidikovaca prašume Perućice, odakle se vidi vodopad Skakavac i cijela prašuma. Stižemo na Tjentište, smještamo se u bungalove i večeramo.",
       },
       {
         dayTitle: "Dan 3 — Zelengora, jezera i vidikovci",
         description:
-          "Nakon doručka na Tjentištu krećemo prema Zelengori. Vožnja traje oko sat vremena, a dan je osmišljen kao lagana, prostrana tura bez zahtjevnih uspona.\n\nObilazimo Orlovačko jezero, Donje bare i panoramske vidikovce sa kojih se pruža pogled na Maglić, Volujak i Lebršnik. Za one koji žele više kretanja, postoji opcija šetnje do Gornjih bara. Program je fleksibilan i prilagođen grupi — cilj je boravak u prostoru, ne trka.\n\nRučak je organizovan na Zelengori, u prirodi. Povratak na Tjentište je u poslijepodnevnim satima, a veče je predviđeno za odmor, večeru i sabiranje utisaka.",
+          "Nakon doručka na Tjentištu krećemo prema Zelengori. Dan je lagan i prostran — bez zahtjevnih uspona, sa fokusom na boravak u prirodi.\n\nObilazimo Orlovačko jezero, Donje bare i panoramske vidikovce sa pogledom na Maglić, Volujak i Lebršnik. Za one koji žele više, opcija šetnje do Gornjih bara. Ručak u prirodi na Zelengori.\n\nPovratak na Tjentište u poslijepodnevnim satima, večera i odmor.",
       },
       {
         dayTitle: "Dan 4 — Kanjoning Hrčavka",
         description:
-          "Četvrti dan je rezervisan za kanjoning kroz kanjon Hrčavke — jednu od najatraktivnijih kanjoning ruta u regionu. Hrčavka nije ekstremna, ali jeste intenzivna i puna sadržaja: voda, stijene, prirodni bazeni, prolazi i skokovi za one koji žele.\n\nNakon doručka na Tjentištu preuzimamo kompletnu kanjoning opremu — neopreno odijelo, kacigu i sigurnosni prsluk. Kratki sigurnosni brifing i ulazimo u kanjon. Kanjoning traje nekoliko sati, sa pauzama i lunch paketima tokom aktivnosti.\n\nPovratak na Tjentište je u poslijepodnevnim satima. Nakon tuširanja i odmora slijedi večera i posljednje veče ture — razgovor, smijeh i sabiranje pet dana koji se ne zaboravljaju.",
+          "Nakon doručka na Tjentištu preuzimamo kanjoning opremu — neopreno odijelo, kacigu i prsluk. Kratki brifing i ulazimo u kanjon Hrčavke. Kanjoning traje nekoliko sati, uz pauze i lunch pakete tokom aktivnosti. Voda, stijene, prirodni bazeni i skokovi za one koji žele — intenzivno, ali ne ekstremno.\n\nPovratak na Tjentište u poslijepodnevnim satima. Nakon tuširanja i odmora slijedi večera.",
       },
       {
-        dayTitle: "Dan 5 — Dolina heroja i završetak ture",
+        dayTitle: "Dan 5 — Prašuma Perućica, vodopad Skakavac i povratak u Foču",
         description:
-          "Posljednje jutro. Doručak na Tjentištu, pa lagana šetnja kroz Memorijalni kompleks Bitke na Sutjesci. Dolina heroja, Spomenik palim borcima i tišina mjesta koje nosi jednu od najsnažnijih priča ovog prostora — miran i dostojanstven završetak ture.\n\nNema žurbe, nema pritiska. Hodamo polako, razgovaramo i pažljivo završavamo ono što smo počeli na Magliću. Tura se završava na Tjentištu, odakle se svako vraća svojim putem — ali ne i u istom stanju u kom je došao.",
+          "Posljednje jutro. Doručak na Tjentištu, pa krećemo u obilazak prašume Perućice — jedne od najstarijih i najvećih prašuma u Evropi, sa stablima starijim od 300 godina.\n\nŠetnja vodi do vodopada Skakavac, visokog 75 metara. Oko dva sata hoda kroz gustu šumu, uz potoke i stare staze, u ambijentu koji ostavlja snažan utisak. Ručak iz lunch paketa u prirodi.\n\nNakon Perućice vraćamo se u Foču gdje se tura završava. Odlaziš bogatiji za iskustvo koje se ne može kupiti, samo doživjeti.",
       },
     ],
     includes: [
@@ -886,17 +885,17 @@ Petar je uz vas svih pet dana.`,
     slug: "divlja-bosna-i-crna-gora-7-dana",
     title: "Divlja Bosna i Crna Gora – 7 dana",
     category: "multi-day",
-    location: "NP Sutjeska / Tara / Durmitor / Pivsko jezero",
+    location: "NP Sutjeska / Tara / Durmitor / Foča",
     image: "/images/tours/put-na-prutaš.webp",
-    imageAlt: "Divlja Bosna i Crna Gora – 7 dana avanture, Sutjeska, Tara, Durmitor, Pivsko jezero",
+    imageAlt: "Divlja Bosna i Crna Gora – 7 dana avanture, Sutjeska, Tara, Durmitor, Foča",
     imagePosition: "center 60%",
     shortDescription:
-      "Sedam dana kroz srce Balkana. Maglić, Trnovačko jezero, katuni, kanjoning, rafting Tarom, Durmitor i kajak na Pivskom jezeru — jedna tura koja pokriva sve što ovaj region ima da ponudi.",
+      "Sedam dana kroz srce Balkana. Maglić, Trnovačko jezero, katuni, kanjoning, rafting Tarom, prašuma Perućica i Durmitor — jedna tura koja pokriva sve što ovaj region ima da ponudi.",
     aboutTour: `Sedam dana. Dvije države. Nekoliko planina. Jedna rijeka koja se pamti cijelog života.
 
-Ova tura počinje tamo gdje počinje sve — na Magliću, najvišem vrhu Bosne i Hercegovine. Nastavlja se kroz katune gdje se i danas živi bez struje i mreže, kroz kanjon Hrčavke, niz rijeku Taru sa skiperima koji je znaju kao vlastitu kuću, do podnožja Durmitora i na kraju do Pivskog jezera gdje 45 kilometara tišine između kanjona čeka ispod veslova kajaka.
+Ova tura počinje tamo gdje počinje sve — na Magliću, najvišem vrhu Bosne i Hercegovine. Nastavlja se kroz katune gdje se i danas živi bez struje i mreže, kroz kanjon Hrčavke i prašumu Perućicu, niz rijeku Taru sa skiperima koji je znaju kao vlastitu kuću, do Durmitora i prstenom koji spada među najljepše vožnje na Balkanu.
 
-Ovo nije tura za one koji žele hotel i program po minutama. Ovo je tura za one koji žele da osjete prostor — svaki od njega. Planinu, rijeku, kanjon i jezero. Petara imate uz sebe svih sedam dana, a on zna svaki detalj ovog terena — licencirani je vodič i skipper sa više od desetogodišnjim iskustvom na Tari.
+Ovo nije tura za one koji žele hotel i program po minutama. Ovo je tura za one koji žele da osjete prostor — svaki od njega. Planinu, rijeku, kanjon i prašumu. Petara imate uz sebe svih sedam dana, a on zna svaki detalj ovog terena — licencirani je vodič i skipper sa više od desetogodišnjim iskustvom na Tari.
 
 Prevoz do Foče organizujete sami ili po dogovoru — organizujemo transfer iz Beograda, Sarajeva, Dubrovnika, Podgorice, Zagreba i Tirane, nije uključen u cijenu.`,
     duration: "7 dana / 6 noći",
@@ -914,10 +913,9 @@ Prevoz do Foče organizujete sami ili po dogovoru — organizujemo transfer iz B
       "Zelengora — jezera i panoramski vidikovci",
       "Kanjoning Hrčavka",
       "Rafting Tarom — na naš način (licencirani skipper)",
-      "Durmitor foto safari + Žabljak + Crno jezero",
-      "Kajak na Pivskom jezeru (45km, okružen kanjonom)",
+      "Prašuma Perućica i vodopad Skakavac (75m)",
+      "Durmitorski prsten + Žabljak + Crno jezero",
       "Kamp na obali Tare",
-      "Kamp iznad Pivskog jezera",
       "16 obroka uključeno",
       "Samo privatne grupe — 6 do 16 osoba",
     ],
@@ -925,37 +923,37 @@ Prevoz do Foče organizujete sami ili po dogovoru — organizujemo transfer iz B
       {
         dayTitle: "Dan 1 — Prijevor, uspon na Maglić i kampovanje na Trnovačkom jezeru",
         description:
-          "Okupljanje u Foči, terenskim vozilima prema Prijevoru na visini od oko 1.520 metara. Dok se oprema transportuje na Trnovačko jezero, krećemo na uspon prema Magliću.\n\nUspon traje oko 3,5 do 4 sata i fizički je zahtjevan. Krećemo se kontrolisanim tempom sa pauzama, uz lunch pakete. Pogled sa vrha — Zelengora, Volujak, Lebršnik, Treskavica i Jadran u daljini — nagrada je koja opravdava svaki korak.\n\nSa vrha se spuštamo prema Trnovačkom jezeru, gdje nas čeka postavljeni kamp i večera. Veče uz vatru na obali jednog od najljepših planinskih jezera na Balkanu. Bez mreže, bez telefona — samo vatra, ekipa i tišina planine.",
+          "Okupljanje u Foči, terenskim vozilima prema Prijevoru na visini od oko 1.520 metara. Dok se oprema transportuje na Trnovačko jezero, krećemo na uspon prema Magliću.\n\nUspon traje oko 3,5 do 4 sata i fizički je zahtjevan. Krećemo se kontrolisanim tempom sa pauzama, uz lunch pakete. Pogled sa vrha — Zelengora, Volujak, Lebršnik, Treskavica i Jadran u daljini — nagrada koja opravdava svaki korak.\n\nSa vrha se spuštamo prema Trnovačkom jezeru, gdje nas čeka postavljeni kamp i večera. Veče uz vatru na obali jednog od najljepših planinskih jezera na Balkanu. Bez mreže, bez telefona — samo vatra, ekipa i tišina planine.",
       },
       {
         dayTitle: "Dan 2 — Katuni, domaćin na Prijevoru i vidikovci Perućice",
         description:
-          "Budimo se na Trnovačkom jezeru. Kratkom šetnjom od 15 minuta dolazimo do katuna gdje nas dočekuju domaćini koji žive bez struje i mreže, u kamenim kućicama, uz stoku i planinski ritam koji se nije promijenio vjekovima.\n\nDoručak: uštipci, domaći kajmak, toplo mlijeko, pršut, sir. Jedemo polako, dok domaćini pričaju o životu na planini.\n\nVraćamo se prema Prijevoru gdje nas čeka Miloš — čovjek koji je cijeli život tu i zna svaki kamen ove planine. Kafa, razgovor i priča o tome kako ovaj kraj zaista izgleda iznutra.\n\nNakon kafe vozilima do vidikovaca prašume Perućice, odakle se vidi vodopad Skakavac i cijela prašuma. Stižemo na Tjentište, smještamo se u bungalove i večeramo.",
+          "Budimo se na Trnovačkom jezeru. Kratkom šetnjom od 15 minuta dolazimo do katuna gdje nas dočekuju domaćini koji žive bez struje i mreže, u kamenim kućicama, uz stoku i planinski ritam koji se nije promijenio vjekovima.\n\nDoručak: uštipci, domaći kajmak, toplo mlijeko, pršut, sir. Jedemo polako, dok domaćini pričaju o životu na planini.\n\nVraćamo se prema Prijevoru gdje nas čeka Miloš — čovjek koji je cijeli život tu i zna svaki kamen ove planine. Kafa, razgovor i priča o tome kako ovaj kraj zaista izgleda iznutra.\n\nNakon kafe vozilima do vidikovaca prašume Perućice. Stižemo na Tjentište, smještamo se u bungalove i večeramo.",
       },
       {
         dayTitle: "Dan 3 — Zelengora, jezera i vidikovci",
         description:
-          "Nakon doručka na Tjentištu krećemo prema Zelengori. Dan je lagan i prostran — bez zahtjevnih uspona, sa fokusom na boravak u prirodi.\n\nObilazimo Orlovačko jezero, Donje bare i panoramske vidikovce sa pogledom na Maglić, Volujak i Lebršnik. Za one koji žele više, opcija šetnje do Gornjih bara. Ručak u prirodi na Zelengori.\n\nPovratak na Tjentište u poslijepodnevnim satima, večera i odmor.",
+          "Nakon doručka na Tjentištu krećemo prema Zelengori. Dan je lagan i prostran — bez zahtjevnih uspona, sa fokusom na boravak u prirodi.\n\nObilazimo Orlovačko jezero, Donje bare i panoramske vidikovce. Za one koji žele više, opcija šetnje do Gornjih bara. Ručak u prirodi na Zelengori.\n\nPovratak na Tjentište u poslijepodnevnim satima, večera i odmor.",
       },
       {
-        dayTitle: "Dan 4 — Kanjoning Hrčavka i kamp na Tari",
+        dayTitle: "Dan 4 — Kanjoning Hrčavka",
         description:
-          "Nakon doručka na Tjentištu preuzimamo kanjoning opremu — neopreno odijelo, kacigu i prsluk. Kratki brifing i ulazimo u kanjon Hrčavke. Kanjoning traje nekoliko sati, uz pauze i lunch pakete tokom aktivnosti. Voda, stijene, prirodni bazeni i skokovi za one koji žele — intenzivno, ali ne ekstremno.\n\nNakon kanjoninga ne vraćamo se na Tjentište. Direktno krećemo prema kampu na Tari. Uveče nas čeka večera i pravo opuštanje uz zvuk rijeke. Ovaj prijelaz — iz kanjona na obalu rijeke — jedan je od najsnažnijih trenutaka ture.",
+          "Nakon doručka preuzimamo kanjoning opremu — neopreno odijelo, kacigu i prsluk. Kratki brifing i ulazimo u kanjon Hrčavke. Kanjoning traje nekoliko sati, uz pauze i lunch pakete. Voda, stijene, prirodni bazeni i skokovi za one koji žele.\n\nPovratak na Tjentište, večera i odmor.",
       },
       {
-        dayTitle: "Dan 5 — Rafting Tarom",
+        dayTitle: "Dan 5 — Prašuma Perućica, vodopad Skakavac i kamp na Tari",
         description:
-          "Doručak u kampu na obali Tare. Preuzimamo rafting opremu i krećemo na spust.\n\nRafting Tarom na naš način znači cijeli dan na rijeci bez žurbe i bez vremenskog pritiska. Spuštamo se kroz kanjon, stajemo gdje nam se sviđa, kupamo se, skačemo, ručamo direktno na rijeci. Petar je licencirani skipper sa više od deset godina iskustva na Tari — ovo nije organizovana tura za mase, ovo je dan na rijeci sa ekipom koja zna šta radi.\n\nKad se vratimo u kamp čeka nas večera i sabiranje utisaka jednog od najslobodnijih dana na cijeloj turi.",
+          "Doručak na Tjentištu, pa krećemo u obilazak prašume Perućice. Šetnja do vodopada Skakavac — dva sata kroz gustu pradrevnu šumu, uz potoke i staze koje kao da nisu promijenjene vijekovima. Lunch paket u prirodi.\n\nNakon Perućice ne vraćamo se na Tjentište. Direktno krećemo prema kampu na Tari. Uveče nas čeka večera i pravo opuštanje uz zvuk rijeke — jedan od najsnažnijih prijelaza na cijeloj turi.",
       },
       {
-        dayTitle: "Dan 6 — Durmitor foto safari i kamp iznad Pivskog jezera",
+        dayTitle: "Dan 6 — Rafting Tarom",
         description:
-          "Doručak u kampu, pakovanje i kretanje prema Durmitoru. Vožnja kroz jedne od najdramatičnijih pejzaža na Balkanu — kanjonski obodi, crnoborove šume, kameni grebeni i nebo koje postaje sve bliže.\n\nNa Durmitoru nas čeka foto safari — obilazak vidikovaca, Žabljak i šetnja do Crnog jezera, UNESCO svjetske baštine. Smaragdnozeleno jezero ispod Medjeda, borova šuma i tišina planinskog masiva.\n\nU poslijepodnevnim satima krećemo prema Plužinama i kampu iznad Pivskog jezera. Jedno od najljepših mjesta na ovoj turi — kamp na uzvisini sa pogledom na jezero i kanjone koji ga okružuju. Večera i posljednje veče ture.",
+          "Doručak u kampu na obali Tare. Preuzimamo rafting opremu i krećemo na spust.\n\nRafting Tarom na naš način znači cijeli dan na rijeci bez žurbe i bez vremenskog pritiska. Spuštamo se kroz kanjon, stajemo gdje nam se sviđa, kupamo se, skačemo, ručamo direktno na rijeci. Petar je licencirani skipper sa više od deset godina iskustva na Tari.\n\nKad se vratimo u kamp čeka nas večera i sabiranje utisaka jednog od najslobodnijih dana na cijeloj turi.",
       },
       {
-        dayTitle: "Dan 7 — Kajak na Pivskom jezeru i povratak u Foču",
+        dayTitle: "Dan 7 — Durmitor, Žabljak i povratak u Foču",
         description:
-          "Posljednje jutro. Doručak u kampu iznad Pivskog jezera, pa spuštamo se do vode.\n\nPivsko jezero je dugačko 45 kilometara, okruženo liticama kanjona i savršeno tiho. Dva sata veslamo kroz tišinu između stijena koje se ogledaju u vodi. Bez iskustva veslanja? Savršeno — voda je mirna i vodič je tu.\n\nNakon kajaka povratak prema Foči. Tura se završava tamo gdje je počela — ali vi niste isti kao kad ste krenuli. Sedam dana planine, kanjona, rijeke i jezera ostaju s vama dugo nakon što se vratite kući.",
+          "Doručak u kampu, pakovanje i kretanje prema Durmitoru. Durmitorski prsten — jedan od top 10 puteva koje čovjek treba obići u životu. Vožnja kroz dramatične kanjone, crnoborove šume i kamene grebene dok nebo postaje sve bliže.\n\nObilazimo vidikovce, stajemo tamo gdje nas impresionira pogled, prolazimo kroz Žabljak i šetamo do Crnog jezera — UNESCO svjetske baštine. Smaragdnozelena voda ispod Medjeda i tišina planinskog masiva.\n\nU poslijepodnevnim satima krećemo prema Foči gdje se tura završava. Sedam dana planine, kanjona, prašume i rijeke — i ti koji se vraćaš drugačiji nego što si otišao.",
       },
     ],
     includes: [
@@ -964,12 +962,10 @@ Prevoz do Foče organizujete sami ili po dogovoru — organizujemo transfer iz B
       "1 noć kampovanja na Trnovačkom jezeru",
       "2 noći u bungalovima na Tjentištu",
       "1 noć u kampu na obali Tare",
-      "1 noć u kampu iznad Pivskog jezera",
       "16 obroka tokom ture",
       "Doručak i kafa kod domaćina na katunu",
       "Kompletna kanjoning oprema",
       "Kompletna rafting oprema",
-      "Kajak oprema na Pivskom jezeru",
       "Transport kampovske opreme",
       "Ulaznice NP Sutjeska, Park prirode Piva i NP Durmitor",
       "Boravišne takse",
@@ -984,7 +980,7 @@ Prevoz do Foče organizujete sami ili po dogovoru — organizujemo transfer iz B
     faqs: [
       {
         q: "Kakva fizička kondicija je potrebna?",
-        a: "Uspon na Maglić prvog dana je najzahtjevniji dio ture. Ostali dani su srednje do lako zahtjevni. Rafting i kajak ne zahtijevaju prethodno iskustvo. Preporučujemo redovnu fizičku aktivnost prije polaska.",
+        a: "Uspon na Maglić prvog dana je najzahtjevniji dio ture. Ostali dani su srednje do lako zahtjevni. Rafting ne zahtijeva prethodno iskustvo. Preporučujemo redovnu fizičku aktivnost prije polaska.",
       },
       {
         q: "Da li je rafting bezbijedan?",
@@ -993,6 +989,145 @@ Prevoz do Foče organizujete sami ili po dogovoru — organizujemo transfer iz B
       {
         q: "Mogu li organizovati prevoz iz Beograda, Sarajeva ili drugih gradova?",
         a: "Da. Organizujemo transfer iz Beograda, Sarajeva, Dubrovnika, Podgorice, Zagreba i Tirane po dogovoru. Prevoz nije uključen u cijenu — kontaktirajte nas sa brojem osoba i mjestom polaska.",
+      },
+      {
+        q: "Da li ćemo dobiti informacije prije polaska?",
+        a: "Da. Svi učesnici biće dodani u WhatsApp grupu ture nekoliko dana prije polaska sa svim informacijama o opremi, satnici i vremenskoj prognozi.",
+      },
+    ],
+  },
+  {
+    id: "multi-grand-tour-01",
+    slug: "grand-tour-balkan-9-dana",
+    title: "Grand Tour Balkana – 9 dana",
+    category: "multi-day",
+    location: "NP Sutjeska / Tara / Durmitor / Pivsko jezero / Foča",
+    image: "/images/tours/gallery/dolazak.trnovacko-jezero.webp",
+    imageAlt: "Grand Tour Balkana – 9 dana avanture, Sutjeska, Tara, Durmitor, Pivsko jezero",
+    imagePosition: "center 60%",
+    shortDescription:
+      "Devet dana kroz sve što Bosna i Hercegovina i Crna Gora imaju da ponude. Od najvišeg vrha BiH do UNESCO kanjona, od prašume stare hiljadama godina do rijeke koja se pamti cijelog života — ovo je tura koja se radi jednom, a priča zauvijek.",
+    aboutTour: `Postoje putovanja. I postoji Grand Tour.
+
+Devet dana, dvije države, nekoliko planina, jedna prašuma, jedna rijeka i jedno jezero. Sve što ovaj kutak Balkana ima da ponudi — skupljeno u jednu turu koja nema pauze, ali ima ritam. Svaki dan je drugačiji. Svaki dan je snažan na svoj način.
+
+Počinjemo na Magliću, najvišem vrhu Bosne i Hercegovine. Završavamo kajakom na Pivskom jezeru, okruženi kanjonima koji se ogledaju u vodi. Između toga: katuni gdje se i danas živi bez struje, prašuma stara hiljadama godina, kanjon koji ne možeš zaboraviti, rijeka Tara koja te nosi bez žurbe, Durmitorski prsten koji spada u top 10 puteva koje čovjek treba obići u životu, i vrh Prutaš sa panoramom koja oduzima dah.
+
+Petar je uz vas svih devet dana. Licencirani vodič i skipper sa petnaest godina iskustva — čovjek koji zna svaki kamen ovog terena i koji zna kada treba stati i kada treba ići dalje.
+
+Ova tura nije za one koji žele hotel i program po minutama. Ova tura je za one koji su spremni da daju devet dana i prime nazad iskustvo koje traje cijeli život.
+
+Prevoz organizujemo po dogovoru iz Beograda, Sarajeva, Dubrovnika, Podgorice, Zagreba i Tirane. Na kraju ture odvozimo vas do polazne tačke — plaćate samo dolazak.`,
+    duration: "9 dana / 8 noći",
+    difficulty: "Srednja",
+    price: "1.650€ po osobi",
+    groupSize: "6–16 osoba",
+    transport: "Po dogovoru – Beograd, Sarajevo, Dubrovnik, Podgorica, Zagreb, Tirana",
+    dates: [],
+    highlights: [
+      "Uspon na Maglić (2.386m) — najviši vrh BiH",
+      "Kampovanje na Trnovačkom jezeru",
+      "Doručak na katunu — uštipci, kajmak, domaće mlijeko, pršut",
+      "Kafa kod Miloša na Prijevoru",
+      "Zelengora — jezera i panoramski vidikovci",
+      "Kanjoning Hrčavka",
+      "Prašuma Perućica i vodopad Skakavac (75m)",
+      "Rafting Tarom — licencirani skipper, cijeli dan",
+      "Durmitorski prsten — top 10 puteva svijeta",
+      "Žabljak i Crno jezero — UNESCO svjetska baština",
+      "Prutaš ili Crvena Greda — po dogovoru sa ekipom",
+      "Kajak na Pivskom jezeru",
+      "Povratak do polazne tačke uključen",
+      "Samo privatne grupe — 6 do 16 osoba",
+    ],
+    itinerary: [
+      {
+        dayTitle: "Dan 1 — Prijevor, uspon na Maglić i kampovanje na Trnovačkom jezeru",
+        description:
+          "Okupljanje u Foči, terenskim vozilima prema Prijevoru na visini od oko 1.520 metara. Dok se oprema transportuje na Trnovačko jezero, krećemo na uspon prema Magliću.\n\nUspon traje oko 3,5 do 4 sata. Pogled sa vrha — Zelengora, Volujak, Lebršnik, Treskavica i Jadran u daljini. Sa vrha se spuštamo prema Trnovačkom jezeru gdje nas čeka postavljeni kamp i večera.\n\nVeče uz vatru na obali jednog od najljepših planinskih jezera na Balkanu. Bez mreže, bez telefona — samo vatra, ekipa i tišina planine.",
+      },
+      {
+        dayTitle: "Dan 2 — Katuni, domaćin na Prijevoru i vidikovci Perućice",
+        description:
+          "Budimo se na Trnovačkom jezeru. Kratkom šetnjom dolazimo do katuna gdje nas dočekuju domaćini koji žive bez struje i mreže, u kamenim kućicama uz stoku.\n\nDoručak: uštipci, domaći kajmak, toplo mlijeko, pršut, sir — spravljeni na licu mjesta kod ljudi koji i danas žive kao što se živjelo prije 300 godina.\n\nVraćamo se prema Prijevoru gdje nas čeka Miloš. Kafa, razgovor, priča o životu na planini koja se ne može naći ni u jednom vodiču.\n\nNakon kafe vozilima do vidikovaca prašume Perućice. Stižemo na Tjentište, smještamo se u bungalove i večeramo.",
+      },
+      {
+        dayTitle: "Dan 3 — Zelengora, jezera i vidikovci",
+        description:
+          "Nakon doručka na Tjentištu krećemo prema Zelengori. Dan je lagan i prostran — bez zahtjevnih uspona, sa fokusom na boravak u prirodi i disanje.\n\nObilazimo Orlovačko jezero, Donje bare i panoramske vidikovce. Ručak u prirodi. Za one koji žele više, opcija šetnje do Gornjih bara.\n\nPovratak na Tjentište u poslijepodnevnim satima, večera i odmor.",
+      },
+      {
+        dayTitle: "Dan 4 — Kanjoning Hrčavka",
+        description:
+          "Nakon doručka preuzimamo kanjoning opremu — neopreno odijelo, kacigu i prsluk. Kratki brifing i ulazimo u kanjon Hrčavke.\n\nKanjoning traje nekoliko sati, uz pauze i lunch pakete. Voda, stijene, prirodni bazeni i skokovi za one koji žele — intenzivno, ali ne ekstremno. Ovo je dan koji grupu spoji bez izuzetka.\n\nPovratak na Tjentište, večera i odmor.",
+      },
+      {
+        dayTitle: "Dan 5 — Prašuma Perućica, vodopad Skakavac i kamp na Tari",
+        description:
+          "Doručak na Tjentištu, pa ulazimo u prašumu Perućicu — jednu od najstarijih i najvećih prašuma u Evropi, sa stablima starijim od 300 godina. Šetnja do vodopada Skakavac, visokog 75 metara, kroz gustu pradrevnu šumu koja izgleda kao da je vijek stala.\n\nNakon Perućice ne vraćamo se na Tjentište. Direktno krećemo prema kampu na Tari. Uveče nas čeka večera uz zvuk rijeke koja sutra postaje naša.",
+      },
+      {
+        dayTitle: "Dan 6 — Rafting Tarom — cijeli dan na rijeci",
+        description:
+          "Doručak u kampu na obali Tare. Preuzimamo rafting opremu i krećemo na spust.\n\nRafting Tarom na naš način: cijeli dan na rijeci bez žurbe i bez vremenskog pritiska. Kanjon drugi po dubini u svijetu, voda koja mijenja boju sa svjetlom, pauze na mjestima gdje nije stao ni jedan turistički autobus. Kupamo se, skačemo, ručamo direktno na rijeci.\n\nPetar je licencirani skipper sa više od deset godina iskustva na Tari. Ovo nije rafting za mase — ovo je dan slobode na jednoj od najljepših rijeka u Evropi.\n\nKad se vratimo u kamp čeka nas večera i sabiranje utisaka.",
+      },
+      {
+        dayTitle: "Dan 7 — Durmitorski prsten, Žabljak i Crno jezero",
+        description:
+          "Doručak u kampu, pakovanje i kretanje prema Durmitoru.\n\nDurmitorski prsten spada u top 10 puteva koje čovjek treba obići u životu. Vožnja kroz dramatične kanjone, crnoborove šume i kamene grebene dok nebo postaje sve bliže. Stajemo na vidikovcima, fotografišemo, uživamo u svakom okuku koji otvara novi pogled.\n\nDolazimo u Žabljak, smještamo se i krećemo na šetnju do Crnog jezera — UNESCO svjetske baštine. Smaragdnozelena voda ispod Medjeda i tišina planinskog masiva.\n\nVečera u Žabljaku i odmor pred sutrašnji uspon.",
+      },
+      {
+        dayTitle: "Dan 8 — Prutaš ili Crvena Greda i večera uz vatru",
+        description:
+          "Doručak u Žabljaku, a onda — planina bira nas ili mi biramo planinu.\n\nPo dogovoru sa ekipom: uspon na Prutaš (2.393m), jedan od najljepših vrhova Durmitora sa panoramom koja oduzima dah — Durmitorski masiv, Crno jezero, prostranstva Crne Gore i Bosne. Ili Crvena Greda, spektakularni vidikovac sa pogledom koji se ne zaboravlja, lakša opcija, jednako impresivna.\n\nCijeli dan na planini, bez žurbe. Po povratku večera i posljednje veče uz vatru — razgovor, smijeh i devet dana koje nosite sa sobom.",
+      },
+      {
+        dayTitle: "Dan 9 — Kajak na Pivskom jezeru i povratak kući",
+        description:
+          "Posljednje jutro. Doručak, a onda jedan posljednji poklon ove ture — Pivsko jezero.\n\nDugačko 45 kilometara, okruženo liticama kanjona, smaragdnozeleno i savršeno tiho. Veslamo kroz tišinu između stijena koje se ogledaju u vodi. Bez iskustva veslanja? Savršeno — voda je mirna i vodič je tu.\n\nNakon kajaka — povratak. Do Foče, Sarajeva ili Beograda, zavisno odakle ste krenuli. Odvozimo vas do polazne tačke.\n\nTura se završava. Ali nešto ostaje — planina pod nogama, rijeka pod veslom, vatra iz kampa i ljudi s kojima ste sve to podijelili.",
+      },
+    ],
+    includes: [
+      "Licencirani vodič i skipper Petar — svih 9 dana",
+      "Transfer terenskim vozilima tokom cijele ture",
+      "1 noć kampovanja na Trnovačkom jezeru",
+      "2 noći u bungalovima na Tjentištu",
+      "1 noć u kampu na obali Tare",
+      "2 noći smještaja u Žabljaku",
+      "Kajak na Pivskom jezeru",
+      "Povratak do polazne tačke (Foča, Sarajevo ili Beograd)",
+      "20+ obroka tokom ture",
+      "Doručak i kafa kod domaćina na katunu",
+      "Kompletna kanjoning oprema",
+      "Kompletna rafting oprema",
+      "Kajak oprema na Pivskom jezeru",
+      "Transport kampovske opreme",
+      "Ulaznice NP Sutjeska, Park prirode Piva i NP Durmitor",
+      "Boravišne takse",
+      "Prevoz po dogovoru — Beograd, Sarajevo, Dubrovnik, Podgorica, Zagreb, Tirana (nije uključen u cijenu)",
+    ],
+    excludes: [
+      "Lična oprema (planinske cipele, ruksak, kupaći kostim)",
+      "Piće tokom ture",
+      "Prevoz do Foče (organizujemo transfer po dogovoru, nije uključen u cijenu)",
+      "Troškovi van programa",
+    ],
+    faqs: [
+      {
+        q: "Kakva fizička kondicija je potrebna?",
+        a: "Uspon na Maglić i opcioni uspon na Prutaš su najzahtjevniji dani. Ostali dani su srednje do lako zahtjevni. Rafting, kanjoning i kajak ne zahtijevaju prethodno iskustvo. Preporučujemo redovnu fizičku aktivnost prije polaska. Ako imate nedoumica, javite nam se — iskreno ćemo vam reći da li je tura za vas.",
+      },
+      {
+        q: "Da li mogu birati između Prutaša i Crvene Grede?",
+        a: "Da. Dan 8 je fleksibilan — zajedno sa grupom dogovaramo koji vrh ili vidikovac idemo. Prutaš je zahtjevniji i duži uspon sa spektakularnom panoramom, dok je Crvena Greda lakša opcija sa jednako impresivnim pogledom.",
+      },
+      {
+        q: "Gdje nas odvozite na kraju ture?",
+        a: "Na kraju ture odvozimo vas do polazne tačke — Foča, Sarajevo ili Beograd, zavisno odakle ste krenuli. Povratak je uključen u cijenu ture.",
+      },
+      {
+        q: "Mogu li organizovati prevoz iz svog grada?",
+        a: "Da. Organizujemo transfer iz Beograda, Sarajeva, Dubrovnika, Podgorice, Zagreba i Tirane po dogovoru. Prevoz do Foče nije uključen u cijenu ture — kontaktirajte nas sa brojem osoba i mjestom polaska.",
       },
       {
         q: "Da li ćemo dobiti informacije prije polaska?",
