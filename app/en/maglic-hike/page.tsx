@@ -7,7 +7,7 @@ const BASE = "https://www.udahniavanturu.com";
 export const metadata: Metadata = {
   title: "Maglić – The Highest Peak in Bosnia and Herzegovina | Hike Guide",
   description:
-    "Maglić (2,386m) is the highest peak in Bosnia and Herzegovina. Complete hiking guide — routes from Prijevor and Trnovačko Lake, gear, difficulty and organised tours.",
+    "Maglić (2,386m) — the highest peak in Bosnia and Herzegovina with views stretching to the Adriatic. A summit you remember for life. Routes, gear and guided tours from Foča. Book your spot today.",
   alternates: {
     canonical: `${BASE}/en/maglic-hike`,
   },

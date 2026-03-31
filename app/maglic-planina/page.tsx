@@ -7,7 +7,7 @@ const BASE = "https://www.udahniavanturu.com";
 export const metadata: Metadata = {
   title: "Maglić – najviši vrh Bosne i Hercegovine | Uspon, rute i savjeti",
   description:
-    "Maglić (2.386m) je najviši vrh BiH u NP Sutjeska. Savjeti za uspon, rute sa Prijevora i Trnovačkog jezera, oprema i organizovane ture.",
+    "Maglić (2.386m) — najviši vrh BiH sa pogledom koji seže do Jadrana. Uspon koji se pamti cijelog života. Rute sa Prijevora i Trnovačkog jezera, oprema i organizovane ture iz Foče. Rezerviši mjesto danas.",
   alternates: {
     canonical: `${BASE}/maglic-planina`,
   },

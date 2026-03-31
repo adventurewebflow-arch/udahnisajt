@@ -7,7 +7,7 @@ const BASE = "https://www.udahniavanturu.com";
 export const metadata: Metadata = {
   title: "Prašuma Perućica i vodopad Skakavac | Vodič za posjetu",
   description:
-    "Prašuma Perućica je jedna od dvije preostale prašume u Evropi. Vodopad Skakavac pada 75 metara. Vodič za posjetu, rute i organizovane ture iz Foče.",
+    "Prašuma stara hiljadama godina i vodopad Skakavac koji pada 75 metara. Jedna od dvije preostale prašume u Evropi — netaknuta, divlja i savršena. Organizovane ture iz Foče, male grupe, licencirani vodič.",
   alternates: {
     canonical: `${BASE}/perucica`,
   },

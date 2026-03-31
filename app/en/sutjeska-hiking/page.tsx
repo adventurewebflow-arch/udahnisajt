@@ -7,7 +7,7 @@ const BASE = "https://www.udahniavanturu.com";
 export const metadata: Metadata = {
   title: "Sutjeska National Park – Complete Visitor Guide | Bosnia and Herzegovina",
   description:
-    "Sutjeska is the oldest national park in Bosnia and Herzegovina. Home to Maglić, Perućica rainforest, Zelengora and the Tara River. Complete guide for hiking and visiting.",
+    "Highest peak in BiH. Oldest rainforest in Europe. Deepest canyon in Europe. All in one place — no signal, no rush. Hiking, rafting, canyoning and camping in Sutjeska NP. Fully guided, small groups.",
   alternates: {
     canonical: `${BASE}/en/sutjeska-hiking`,
   },

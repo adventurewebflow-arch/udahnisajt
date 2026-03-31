@@ -7,7 +7,7 @@ const BASE = "https://www.udahniavanturu.com";
 export const metadata: Metadata = {
   title: "Nacionalni park Sutjeska – najstariji NP u BiH | Maglić, Perućica, Zelengora",
   description:
-    "NP Sutjeska, osnovan 1962., dom je prašume Perućice, Maglića, Zelengore i rijeke Sutjeske. Vodič za posjetu i organizovane ture iz Foče.",
+    "Najviši vrh BiH. Najstarija prašuma Evrope. Najdublji kanjon Evrope. Sve na jednom mjestu — bez mreže, bez žurbe. Hiking, rafting, kanjoning i kampovanje u NP Sutjeska. Organizovano od A do Ž sa licenciranim vodičem.",
   alternates: {
     canonical: `${BASE}/sutjeska`,
   },

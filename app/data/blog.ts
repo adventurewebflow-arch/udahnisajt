@@ -18,11 +18,11 @@ export interface BlogPost {
 export const blogPosts: BlogPost[] = [
   {
     id: "1",
-    title: "Trnovačko jezero – kompletan vodič za posjetu jednom od najljepših jezera Balkana",
+    title: "Trnovačko jezero: Kako doći, gdje spavati i zašto morate doći",
     slug: "trnovacko-jezero-vodic",
     excerpt:
       "Saznaj kako doći do Trnovačkog jezera, kada je najbolje vrijeme za posjetu, gdje kampovati i kako izgleda uspon na Maglić iznad jednog od najljepših jezera Balkana.",
-    metadataTitle: "Trnovačko jezero – vodič, kampovanje i uspon na Maglić | NP Sutjeska",
+    metadataTitle: "Trnovačko jezero: Kako doći, gdje spavati i zašto morate doći | Udahni Avanturu",
     metadataDescription:
       "Saznaj kako doći do Trnovačkog jezera, kada je najbolje vrijeme za posjetu, gdje kampovati i kako izgleda uspon na Maglić iznad jednog od najljepših jezera Balkana.",
     content: `

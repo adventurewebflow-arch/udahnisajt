@@ -18,11 +18,11 @@ export interface BlogPostEN {
 export const blogPostsEN: BlogPostEN[] = [
   {
     id: "1",
-    title: "Trnovačko Lake – Complete Guide to One of the Balkans' Most Beautiful Lakes",
+    title: "Trnovačko Lake: How to Get There, Where to Sleep and Why You Must Visit",
     slug: "trnovacko-lake-guide",
     excerpt:
       "Find out how to reach Trnovačko Lake, the best time to visit, where to camp, and what the ascent of Maglić looks like above one of the most beautiful lakes in the Balkans.",
-    metadataTitle: "Trnovačko Lake – Guide, Camping & Maglić Hike | Sutjeska National Park",
+    metadataTitle: "Trnovačko Lake Bosnia: How to Get There, Where to Sleep and Why You Must Visit | Udahni Avanturu",
     metadataDescription:
       "Find out how to reach Trnovačko Lake, the best time to visit, where to camp, and what the ascent of Maglić looks like above one of the most beautiful lakes in the Balkans.",
     content: `

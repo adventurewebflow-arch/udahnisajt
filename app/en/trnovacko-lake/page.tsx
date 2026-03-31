@@ -5,9 +5,9 @@ import Link from "next/link";
 const BASE = "https://www.udahniavanturu.com";
 
 export const metadata: Metadata = {
-  title: "Trnovačko Lake – Complete Guide | Camping, Hiking & Maglić Summit",
+  title: "Trnovačko Lake Bosnia – Camping and Maglić in the Heart of Sutjeska | Udahni Avanturu",
   description:
-    "Trnovačko Lake is one of the most beautiful mountain lakes in the Balkans. Complete guide — how to get there, camping, Maglić summit and organised tours from Foča.",
+    "A heart-shaped lake surrounded by peaks — no signal, no rush, no crowds. Camping on the shore, Maglić summit and breakfast at a mountain homestead. Guided tours from Foča with licensed guide Petar.",
   alternates: {
     canonical: `${BASE}/en/trnovacko-lake`,
   },

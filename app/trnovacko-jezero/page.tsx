@@ -5,9 +5,9 @@ import Link from "next/link";
 const BASE = "https://www.udahniavanturu.com";
 
 export const metadata: Metadata = {
-  title: "Trnovačko jezero – vodič, kampovanje i uspon na Maglić | Udahni Avanturu",
+  title: "Trnovačko jezero BiH – Kampovanje i Maglić u srcu Sutjeske | Udahni Avanturu",
   description:
-    "Saznajte sve o Trnovačkom jezeru: kako doći, gdje kampovati, kada posjetiti i kako izgleda uspon na Maglić. Praktični savjeti za jedan od najljepših planinskih jezera na Balkanu.",
+    "Jezero u obliku srca, okruženo vrhovima — bez mreže, bez signala, bez žurbe. Kampovanje na obali, uspon na Maglić i doručak na katunu kod domaćina. Organizovane ture iz Foče sa licenciranim vodičem Petarom.",
   alternates: {
     canonical: `${BASE}/trnovacko-jezero`,
   },

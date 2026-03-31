@@ -7,7 +7,7 @@ const BASE = "https://www.udahniavanturu.com";
 export const metadata: Metadata = {
   title: "Zelengora – The Most Beautiful Mountain of Former Yugoslavia | Lakes & Hiking Guide",
   description:
-    "Zelengora in Sutjeska NP offers nine mountain lakes, Bregoč summit, jeep safari and wildlife. Complete hiking and camping guide for Bosnia and Herzegovina.",
+    "Nine mountain lakes, Dinaric meadows and panoramas that take your breath away. Zelengora before the tourist crowds arrive. Hiking, jeep safari and camping — guided tours from Foča with licensed guide Petar.",
   alternates: {
     canonical: `${BASE}/en/zelengora-lakes`,
   },

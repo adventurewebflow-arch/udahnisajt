@@ -7,7 +7,7 @@ const BASE = "https://www.udahniavanturu.com";
 export const metadata: Metadata = {
   title: "Perućica Rainforest & Skakavac Waterfall | Bosnia Hiking Guide",
   description:
-    "Perućica is one of the last two primeval forests in Europe. Skakavac Waterfall drops 75 metres. Complete visitor guide, routes and organised tours from Foča.",
+    "A rainforest thousands of years old and Skakavac waterfall dropping 75 metres. One of only two primeval forests left in Europe — untouched, wild and perfect. Small groups, licensed guide, tours from Foča.",
   alternates: {
     canonical: `${BASE}/en/perucica-rainforest`,
   },

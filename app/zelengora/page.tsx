@@ -7,7 +7,7 @@ const BASE = "https://www.udahniavanturu.com";
 export const metadata: Metadata = {
   title: "Zelengora – najljepša planina bivše Jugoslavije | Jezera, vidikovci i ture",
   description:
-    "Zelengora u NP Sutjeska nudi devet jezera, vidikovac Borić, Bregoč vrh i jeep safari. Vodič za planinarenje, kampovanje i organizovane ture.",
+    "Devet planinskih jezera, dinarske livade i panorame koje oduzimaju dah. Zelengora kakvu turistički vodiči još nisu otkrili. Hiking, jeep safari i kampovanje — organizovane ture iz Foče sa licenciranim vodičem Petarom.",
   alternates: {
     canonical: `${BASE}/zelengora`,
   },
