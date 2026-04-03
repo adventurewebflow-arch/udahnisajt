@@ -41,6 +41,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: encodeURI(`${BASE}/zelengora`), lastModified: now },
     { url: encodeURI(`${BASE}/perucica`), lastModified: now },
     { url: encodeURI(`${BASE}/sutjeska`), lastModified: now },
+    { url: encodeURI(`${BASE}/kako-doci`), lastModified: now },
     ...tourDetailsSr,
     ...vodiciDetails,
 
@@ -50,6 +51,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: encodeURI(`${BASE}/en/o-nama`), lastModified: now },
     { url: encodeURI(`${BASE}/en/galerija`), lastModified: now },
     { url: encodeURI(`${BASE}/en/blog`), lastModified: now },
+    { url: encodeURI(`${BASE}/en/kako-doci`), lastModified: now },
     ...tourDetailsEn,
     ...blogDetailsEn,
     { url: encodeURI(`${BASE}/en/maglic-hike`), lastModified: now },

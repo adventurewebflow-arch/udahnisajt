@@ -40,6 +40,11 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: "/en/how-to-get-here",
+        destination: "/en/kako-doci",
+        permanent: true,
+      },
+      {
         source: "/en/vodici/:slug",
         destination: "/en/blog/:slug",
         permanent: true,

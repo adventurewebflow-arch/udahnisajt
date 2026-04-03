@@ -103,6 +103,18 @@ export default function Navbar() {
                 {labels.dayTrips}
               </a>
               <Link
+                href={isEn ? "/en/kako-doci" : "/kako-doci"}
+                className="text-slate-200 hover:text-emerald-400 transition-colors"
+              >
+                {isEn ? "How to Get Here" : "Kako doći"}
+              </Link>
+              <a
+                href={isEn ? "/en#multi-day" : "/#visednevne"}
+                className="text-slate-200 hover:text-emerald-400 transition-colors"
+              >
+                {isEn ? "Multi-day" : "Višednevne avanture"}
+              </a>
+              <Link
                 href={isEn ? "/en/galerija" : "/galerija"}
                 className="text-slate-200 hover:text-emerald-400 transition-colors"
               >
@@ -218,6 +230,22 @@ export default function Navbar() {
               onClick={closeMenu}
             >
               {labels.dayTrips}
+            </a>
+
+            <Link
+              href={isEn ? "/en/kako-doci" : "/kako-doci"}
+              className="block text-lg font-medium text-slate-200 hover:text-emerald-400 transition-colors"
+              onClick={closeMenu}
+            >
+              {isEn ? "How to Get Here" : "Kako doći"}
+            </Link>
+
+            <a
+              href={isEn ? "/en#multi-day" : "/#visednevne"}
+              className="block text-lg font-medium text-slate-200 hover:text-emerald-400 transition-colors"
+              onClick={closeMenu}
+            >
+              {isEn ? "Multi-day" : "Višednevne avanture"}
             </a>
 
             <Link
