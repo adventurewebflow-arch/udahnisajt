@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import Accordion from "../../components/Accordion";
 
 const KAKO_DOCI_MAP_SRC = "/images/tours/gallery/kako-doci-do-Tjentista.webp";
 
@@ -126,28 +127,18 @@ export default function HowToGetHere() {
       <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-12 text-center">Directions</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {routes.map((route) => (
-              <div
-                key={route.city}
-                className="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-emerald-500/40 transition-colors"
-              >
-                <div className="flex items-center gap-3 mb-4">
-                  <span className="text-3xl">{route.flag}</span>
-                  <div>
-                    <h3 className="text-xl font-bold text-white">{route.city}</h3>
-                    <div className="flex gap-4 text-sm text-gray-400 mt-1">
-                      <span>🚗 {route.distance}</span>
-                      <span>⏱️ {route.time}</span>
-                    </div>
-                  </div>
+          <Accordion
+            items={routes.map((route) => ({
+              title: `${route.flag} ${route.city} — ${route.distance} · ${route.time}`,
+              content: (
+                <div className="text-gray-300 space-y-3">
+                  <p>{route.description}</p>
+                  <p className="text-gray-400">🚌 {route.bus}</p>
+                  <p className="text-emerald-400 font-mono text-sm">{route.coordinates}</p>
                 </div>
-                <p className="text-gray-300 text-sm mb-3">{route.description}</p>
-                <p className="text-gray-400 text-sm mb-3">🚌 {route.bus}</p>
-                <p className="text-emerald-400 text-xs font-mono">{route.coordinates}</p>
-              </div>
-            ))}
-          </div>
+              ),
+            }))}
+          />
         </div>
       </section>
 
