@@ -5,9 +5,9 @@ import Link from "next/link";
 const BASE = "https://www.udahniavanturu.com";
 
 export const metadata: Metadata = {
-  title: "Zelengora – najljepša planina bivše Jugoslavije | Jezera, vidikovci i ture",
+  title: "Zelengora – 9 planinskih jezera i panorame | Hiking i jeep safari iz Foče",
   description:
-    "Devet planinskih jezera, dinarske livade i panorame koje oduzimaju dah. Zelengora kakvu turistički vodiči još nisu otkrili. Hiking, jeep safari i kampovanje — organizovane ture iz Foče sa licenciranim vodičem Petarom.",
+    "Devet jezera, vidikovci na sve strane i nijedno turističko razgledanje. Zelengora se može pješice, jeepom ili kombinirano — organizovane ture iz Foče sa licenciranim vodičem. Od 70€ po osobi.",
   alternates: {
     canonical: `${BASE}/zelengora`,
   },
@@ -37,7 +37,11 @@ export default function ZelengoraPage() {
       <section className="mx-auto w-full max-w-5xl px-4 py-12 sm:px-6 lg:px-8">
         <article className="space-y-8 text-slate-200">
           <p className="leading-8 text-lg">
-            Ime sve kaže — Zelen Gora. Planina toliko zelena da su je proglasili najljepšom planinom bivše Jugoslavije. Smještena u srcu Nacionalnog parka Sutjeska, Zelengora nije jedna tačka na karti — to je cijeli svijet jezera, vidikovaca, livada i tišine.
+            Ime sve kaže — Zelen Gora. Planina toliko zelena da su je proglasili najljepšom planinom bivše Jugoslavije. Smještena u srcu{" "}
+            <Link href="/sutjeska" className="text-emerald-400 hover:underline">
+              Nacionalnog parka Sutjeska
+            </Link>
+            , Zelengora nije jedna tačka na karti — to je cijeli svijet jezera, vidikovaca, livada i tišine.
           </p>
 
           <h2 className="text-2xl font-bold text-white md:text-3xl">Koliko jezera ima Zelengora?</h2>
@@ -53,7 +57,11 @@ export default function ZelengoraPage() {
             <div>
               <h3 className="text-xl font-semibold text-emerald-300 mb-2">Prva cjelina: Borić, Donje i Gornje bare, Uglješin vrh</h3>
               <p className="leading-8">
-                Vidikovac Borić je prelijepo mjesto sa kojeg se vidi kanjon Sutjeske i Maglić ti je ispred čela. Tu su odmah Donje i Gornje bare, a u blizini je i Uglješin vrh. Na Čemernu, koje gledamo sa vidikovca Borić, nalazi se granica između Bosne i Hercegovine — i evo detalja koji malo ko zna: sa jedne strane Čemerna voda teče prema Jadranskom moru, a sa druge prema Crnom moru. Dva sliva, jedan pogled.
+                Vidikovac Borić je prelijepo mjesto sa kojeg se vidi kanjon Sutjeske i{" "}
+                <Link href="/maglic-planina" className="text-emerald-400 hover:underline">
+                  Maglić
+                </Link>{" "}
+                ti je ispred čela. Tu su odmah Donje i Gornje bare, a u blizini je i Uglješin vrh. Na Čemernu, koje gledamo sa vidikovca Borić, nalazi se granica između Bosne i Hercegovine — i evo detalja koji malo ko zna: sa jedne strane Čemerna voda teče prema Jadranskom moru, a sa druge prema Crnom moru. Dva sliva, jedan pogled.
               </p>
             </div>
             <div>

@@ -5,9 +5,9 @@ import Link from "next/link";
 const BASE = "https://www.udahniavanturu.com";
 
 export const metadata: Metadata = {
-  title: "Prašuma Perućica i vodopad Skakavac | Vodič za posjetu",
+  title: "Prašuma Perućica – jedna od dvije preostale u Evropi | Vodopad Skakavac 75m",
   description:
-    "Prašuma stara hiljadama godina i vodopad Skakavac koji pada 75 metara. Jedna od dvije preostale prašume u Evropi — netaknuta, divlja i savršena. Organizovane ture iz Foče, male grupe, licencirani vodič.",
+    "Stabla stara 300 godina, tišina koju ne možete zamisliti i vodopad koji pada 75 metara ravno. Perućica se ne posjećuje bez vodiča — mi ulazimo svake sedmice. Ture iz Foče od 90€.",
   alternates: {
     canonical: `${BASE}/perucica`,
   },
@@ -37,7 +37,11 @@ export default function PerucicaPage() {
       <section className="mx-auto w-full max-w-5xl px-4 py-12 sm:px-6 lg:px-8">
         <article className="space-y-8 text-slate-200">
           <p className="leading-8 text-lg">
-            Perućica nije šuma. Perućica je drugi svijet. Jedna od dvije preostale prašume u Evropi, zaštićena i netaknuta, gdje stabla rastu i padaju po vlastitim zakonima već hiljadama godina.
+            Perućica nije šuma. Perućica je drugi svijet. Jedna od dvije preostale prašume u Evropi, zaštićena i netaknuta, u{" "}
+            <Link href="/sutjeska" className="text-emerald-400 hover:underline">
+              Nacionalnom parku Sutjeska
+            </Link>
+            , gdje stabla rastu i padaju po vlastitim zakonima već hiljadama godina.
           </p>
 
           <h2 className="text-2xl font-bold text-white md:text-3xl">Šta ćeš vidjeti</h2>
@@ -50,7 +54,11 @@ export default function PerucicaPage() {
             Skakavac pada sa 75 metara i to se osjeća. Zvuk, prskanje, moć vode. Ali postoji i ruta koja te dovede direktno iznad vodopada — pogled odozgo na taj slobodni pad je iskustvo koje malo koji vodopad na Balkanu može pružiti.
           </p>
           <p className="leading-8">
-            Cijeli izlet traje oko 5 sati. Spust je strm i zahtijeva pažnju i poznavanje terena. Nemoj ući bez vodiča — nisu šale. Pričaju da su dva Slovenca ušla u Perućicu i nikad ih nisu pronašli.
+            Cijeli izlet traje oko 5 sati. Spust je strm i zahtijeva pažnju i poznavanje terena. Nemoj ući bez vodiča — nisu šale. Pričaju da su dva Slovenca ušla u Perućicu i nikad ih nisu pronašli. Ako želiš produžiti avanturu u istom parku, kombinuj s kampovanjem na{" "}
+            <Link href="/trnovacko-jezero" className="text-emerald-400 hover:underline">
+              Trnovačkom jezeru
+            </Link>{" "}
+            i usponom na Maglić — pogledaj ture u gridu ispod.
           </p>
 
           <h2 className="text-2xl font-bold text-white md:text-3xl">Čuvari prašume</h2>
@@ -64,7 +72,7 @@ export default function PerucicaPage() {
           </p>
 
           <h2 className="text-2xl font-bold text-white md:text-3xl">Organizovane ture</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
             <Link href="/ture/prasuma-perucica-vodopad-skakavac" className="block p-5 rounded-xl bg-white/5 border border-white/10 hover:border-emerald-500/40 transition">
               <h3 className="text-emerald-400 font-semibold mb-1">Prašuma Perućica i vodopad Skakavac</h3>
               <p className="text-slate-400 text-sm mb-3">1 dan • 90€ po osobi</p>
@@ -73,6 +81,11 @@ export default function PerucicaPage() {
             <Link href="/ture/hrcavka-perucica-kanjoning-prasuma-skakavac" className="block p-5 rounded-xl bg-white/5 border border-white/10 hover:border-emerald-500/40 transition">
               <h3 className="text-emerald-400 font-semibold mb-1">Hrčavka kanjoning + Prašuma Perućica i Skakavac</h3>
               <p className="text-slate-400 text-sm mb-3">3 dana / 2 noći • 255€ po osobi</p>
+              <span className="text-emerald-400 text-sm">Pogledaj turu →</span>
+            </Link>
+            <Link href="/ture/kampovanje-trnovacko-jezero-maglic" className="block p-5 rounded-xl bg-white/5 border border-white/10 hover:border-emerald-500/40 transition">
+              <h3 className="text-emerald-400 font-semibold mb-1">Kampovanje na Trnovačkom jezeru s usponom na Maglić</h3>
+              <p className="text-slate-400 text-sm mb-3">3 dana / 2 noći • 170€ po osobi</p>
               <span className="text-emerald-400 text-sm">Pogledaj turu →</span>
             </Link>
           </div>

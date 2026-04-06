@@ -5,9 +5,9 @@ import Link from "next/link";
 const BASE = "https://www.udahniavanturu.com";
 
 export const metadata: Metadata = {
-  title: "Nacionalni park Sutjeska – najstariji NP u BiH | Maglić, Perućica, Zelengora",
+  title: "NP Sutjeska – Maglić, Perućica i Zelengora | Ture iz Foče",
   description:
-    "Najviši vrh BiH. Najstarija prašuma Evrope. Najdublji kanjon Evrope. Sve na jednom mjestu — bez mreže, bez žurbe. Hiking, rafting, kanjoning i kampovanje u NP Sutjeska. Organizovano od A do Ž sa licenciranim vodičem.",
+    "Tri evropska rekorda na jednom mjestu — najviši vrh BiH, najstarija prašuma i najdublji kanjon. Hiking, rafting, kanjoning i kampovanje. Organizovano od A do Ž, male grupe, polazak iz Foče.",
   alternates: {
     canonical: `${BASE}/sutjeska`,
   },
@@ -67,7 +67,23 @@ export default function SutjeskaPage() {
 
           <h2 className="text-2xl font-bold text-white md:text-3xl">Prirodne ljepote</h2>
           <p className="leading-8">
-            Sutjeska nije jedna destinacija — ona je cijela regija. Maglić — najviši vrh BiH. Trnovačko jezero — oduševljenje, iako pripada Parku prirode Piva, svi prolaze kroz Sutjesku. Zelengora — proglašena najljepšom planinom bivše Jugoslavije. Perućica — najstarija prašuma u Evropi.
+            Sutjeska nije jedna destinacija — ona je cijela regija.{" "}
+            <Link href="/maglic-planina" className="text-emerald-400 hover:underline">
+              Maglić
+            </Link>{" "}
+            — najviši vrh BiH.{" "}
+            <Link href="/trnovacko-jezero" className="text-emerald-400 hover:underline">
+              Trnovačko jezero
+            </Link>{" "}
+            — oduševljenje, iako pripada Parku prirode Piva, svi prolaze kroz Sutjesku.{" "}
+            <Link href="/zelengora" className="text-emerald-400 hover:underline">
+              Zelengora
+            </Link>{" "}
+            — proglašena najljepšom planinom bivše Jugoslavije.{" "}
+            <Link href="/perucica" className="text-emerald-400 hover:underline">
+              Perućica
+            </Link>{" "}
+            — najstarija prašuma u Evropi.
           </p>
 
           <h2 className="text-2xl font-bold text-white md:text-3xl">Kako doći</h2>
@@ -76,7 +92,7 @@ export default function SutjeskaPage() {
           </p>
 
           <h2 className="text-2xl font-bold text-white md:text-3xl">Organizovane ture u NP Sutjeska</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 mt-6">
             <Link href="/ture/kampovanje-trnovacko-jezero-maglic" className="block p-5 rounded-xl bg-white/5 border border-white/10 hover:border-emerald-500/40 transition">
               <h3 className="text-emerald-400 font-semibold mb-1">Kampovanje na Trnovačkom jezeru s usponom na Maglić</h3>
               <p className="text-slate-400 text-sm mb-3">3 dana / 2 noći • 170€ po osobi</p>
@@ -90,6 +106,11 @@ export default function SutjeskaPage() {
             <Link href="/ture/kanjoning-hrcavka" className="block p-5 rounded-xl bg-white/5 border border-white/10 hover:border-emerald-500/40 transition">
               <h3 className="text-emerald-400 font-semibold mb-1">Kanjoning Hrčavka</h3>
               <p className="text-slate-400 text-sm mb-3">1 dan • 130€ po osobi</p>
+              <span className="text-emerald-400 text-sm">Pogledaj turu →</span>
+            </Link>
+            <Link href="/ture/srce-sutjeske-5-dana" className="block p-5 rounded-xl bg-white/5 border border-white/10 hover:border-emerald-500/40 transition">
+              <h3 className="text-emerald-400 font-semibold mb-1">Srce Sutjeske – 5 dana</h3>
+              <p className="text-slate-400 text-sm mb-3">5 dana / 4 noći • 550€ po osobi</p>
               <span className="text-emerald-400 text-sm">Pogledaj turu →</span>
             </Link>
           </div>

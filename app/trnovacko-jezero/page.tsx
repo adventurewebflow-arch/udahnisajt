@@ -5,9 +5,9 @@ import Link from "next/link";
 const BASE = "https://www.udahniavanturu.com";
 
 export const metadata: Metadata = {
-  title: "Trnovačko jezero BiH – Kampovanje i Maglić u srcu Sutjeske | Udahni Avanturu",
+  title: "Trnovačko jezero – kampovanje, uspon na Maglić i katuni | Udahni Avanturu",
   description:
-    "Jezero u obliku srca, okruženo vrhovima — bez mreže, bez signala, bez žurbe. Kampovanje na obali, uspon na Maglić i doručak na katunu kod domaćina. Organizovane ture iz Foče sa licenciranim vodičem Petarom.",
+    "Kampuj na obali Trnovačkog jezera, osvoji Maglić i doručkuj na katunu kod domaćina. Bez mreže, bez žurbe — organizovane ture iz Foče sa licenciranim vodičem. Male grupe, autentično iskustvo.",
   alternates: {
     canonical: `${BASE}/trnovacko-jezero`,
   },
@@ -27,106 +27,165 @@ export default function TrnovackoJezeroPage() {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/55 to-slate-950" />
         <div className="relative z-10 mx-auto w-full max-w-5xl px-4 sm:px-6 lg:px-8">
-          <p className="mb-3 text-sm uppercase tracking-[0.2em] text-emerald-300">Ikonsko planinsko jezero</p>
+          <p className="mb-3 text-sm uppercase tracking-[0.2em] text-emerald-300">NP Sutjeska, Bosna i Hercegovina</p>
           <h1 className="max-w-3xl text-4xl font-extrabold leading-tight text-white md:text-5xl">
-            Trnovačko jezero – vodič, kampovanje i uspon na Maglić
+            Trnovačko jezero – kampovanje, Maglić i tri dana bez mreže
           </h1>
         </div>
       </section>
 
       <section className="mx-auto w-full max-w-5xl px-4 py-12 sm:px-6 lg:px-8">
         <article className="space-y-8 text-slate-200">
-          <h2 className="text-2xl font-bold text-white md:text-3xl">Zašto je Trnovačko jezero posebno mjesto</h2>
-          <p className="leading-8">
-            Trnovačko jezero smatra se jednim od najprepoznatljivijih prirodnih simbola regije – poznato po obliku srca,
-            tirkiznoj vodi i dramatičnom planinskom okruženju ispod masiva Maglića. Za mnoge posjetioce ovo je mjesto koje
-            definiše njihovu uspomenu na Nacionalni park Sutjeska i šire Dinarsko gorje. Ono što jezero čini posebnim nije samo
-            izgled na fotografijama, već cijela atmosfera: tiha jutra, široke kamenite padine, promjena svjetlosti tokom dana i
-            osjećaj udaljenosti od pretrpanih turističkih ruta.
+
+          {/* UVOD — autentičan, ne generički */}
+          <p className="leading-8 text-lg">
+            Na Prijevoru, na 1.662 metra, sjedi Miloš. Cijeli život živi tu, u maloj kamenoj kući bez struje i interneta.
+            Kada prođete pored njega ujutro, on već kuha kafu. Nudi je svima. I tu negdje, između te kafe i prvog pogleda
+            prema jezeru kroz magle, počinje ono zbog čega se ide na Trnovačko.
           </p>
           <p className="leading-8">
-            Bilo da dolazite na jednodnevnu šetnju ili kao dio višednevnog kampovanja, Trnovačko nudi jak kontrast. S jedne
-            strane, put do jezera je aktivan i nagrađujući. S druge, kada stignete, tempo se prirodno usporava. Možete hodati
-            obalom, odmarati se, fotografirati iz različitih uglova, a u toplijim periodima čak i plivati. Ova ravnoteža pokreta
-            i mira čini destinaciju idealnom i za iskusne planinare i za putnike koji žele impresivan planinski pejzaž bez tehnički
-            zahtjevnih ruta.
+            Trnovačko jezero leži na 1.517 metara, okruženo Maglićem, Vodujakom i Biočem. Oblik srca, tirkizna voda,
+            tišina koja nije prazna nego puna — ptica, vjetra, vode. Do njega se ne može automobilom. Nema mobilne mreže.
+            Nema wi-fi-a. Ima samo planina, jezero i vi — što je, ispostavlja se, više nego dovoljno.
           </p>
 
-          <h2 className="text-2xl font-bold text-white md:text-3xl">Gdje se nalazi i kako doći do Trnovačkog jezera</h2>
-          <h3 className="text-xl font-semibold text-emerald-300">Pristup i stil planinarenja</h3>
+          {/* QUICK CTA */}
+          <div className="rounded-xl bg-emerald-900/30 border border-emerald-500/20 p-6">
+            <p className="text-emerald-300 font-semibold mb-1">Spreman za Trnovačko jezero?</p>
+            <p className="text-slate-300 text-sm mb-4">Kampovanje 3 dana od 170€ · Jednodnevni izlet od 75€ · Male grupe · Licencirani vodič</p>
+            <div className="flex flex-wrap gap-3">
+              <Link href="/ture/kampovanje-trnovacko-jezero-maglic" className="inline-block bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold px-5 py-2.5 rounded-lg text-sm transition">
+                Kampovanje + Maglić – 170€
+              </Link>
+              <Link href="/ture/trnovacko-jezero" className="inline-block border border-emerald-500/40 hover:border-emerald-400 text-emerald-300 px-5 py-2.5 rounded-lg text-sm transition">
+                Jednodnevni izlet – 75€
+              </Link>
+            </div>
+          </div>
+
+          {/* GDJE SE NALAZI */}
+          <h2 className="text-2xl font-bold text-white md:text-3xl">Gdje se nalazi Trnovačko jezero</h2>
           <p className="leading-8">
-            Većina organizovanih tura koristi terensko vozilo do višeg polaznog mjesta, nakon čega se nastavlja pješice do
-            jezera. Šetnja je obično umjerene težine i može je završiti većina učesnika sa osnovnom planinarskom kondicijom.
-            Tačno vrijeme zavisi od varijante rute, tempa grupe i vremena, ali cilj je obično ujednačen ritam s redovitim kratkim
-            pauzama. Teren uključuje otvorene planinske dionice i neravne površine gdje je stabilna obuća važna.
+            Jezero se nalazi u Nacionalnom parku Sutjeska, u Bosni i Hercegovini, na granici sa Crnom Gorom. Od Foče je
+            udaljeno oko 50 kilometara — oko sat vožnje do Prijevora, a zatim 5 kilometara pješačenja do jezera. Staza
+            traje sat i po do dva, ovisno o tempu. Nije tehnički zahtjevna — može je proći svako u dobroj fizičkoj formi,
+            od tinejdžera do šezdesetogodišnjaka.
           </p>
-          <h3 className="text-xl font-semibold text-emerald-300">Najbolji uslovi i sezonska razmatranja</h3>
           <p className="leading-8">
-            Kasno proljeće do rane jeseni predstavlja glavnu sezonu. Usred ljeta tople temperature mogu povećati zamor na
-            izloženim dijelovima, pa se preporučuje rano polazak i dovoljna hidratacija. U ranoj i kasnoj sezoni temperature na
-            visini mogu biti hladne, posebno ujutro i navečer. Čak i kada prognoza izgleda dobro u nižim dolinama, planinsko
-            vrijeme može se brzo promijeniti, pa uvijek treba imati u ruksaku zaštitu od kiše i topli sloj.
+            Polazišna tačka za sve naše ture je Foča. Terenskim vozilima idemo do Prijevora, gdje počinje pješačenje.
+            Na Prijevoru su katuni — planinski stanovi gdje se i danas živi kao prije 300 godina. Ovce, konji, kamene
+            kućice, dim iz dimnjaka. I Miloš sa kafom.
           </p>
 
-          <h2 className="text-2xl font-bold text-white md:text-3xl">Uspon na Maglić iznad Trnovačkog jezera</h2>
+          {/* USPON NA MAGLIĆ */}
+          <h2 className="text-2xl font-bold text-white md:text-3xl">Uspon na Maglić — najviši vrh BiH</h2>
           <p className="leading-8">
-            Maglić, najviši vrh Bosne i Hercegovine na 2.386 metara, uzdize se direktno iznad Trnovačkog jezera i predstavlja
-            jedan od najatraktivnijih planinarskih ciljeva u regiji. Uspon nudi spektakularne poglede na jezero, vrhove Volujaka
-            i Bioča te prostranstva Nacionalnog parka Sutjeska. Za mnoge planinare kombinacija Trnovačkog jezera i Maglića
-            predstavlja jednu od najljepših avantura na Balkanu. Ruta prolazi kroz Nacionalni park Sutjeska i Park prirode Piva.
+            Maglić je na 2.386 metara — najviši vrh Bosne i Hercegovine. Diže se direktno iznad Trnovačkog jezera.
+            Sa vrha se vidi sve: jezero ispod vas, Volujak i Bioč sa strane, Crna Gora u daljini. Ljetni dan, vjetar
+            koji smiruje, i osjećaj da ste na krovu jedne cijele zemlje.
           </p>
           <p className="leading-8">
-            Organizovana tura sa iskusnim vodičem olakšava logistiku, osigurava sigurnost i omogućava da se fokusirate na
-            iskustvo umjesto na navigaciju. Grupe su male, tempo prilagođen učesnicima, a uključena je oprema za kampovanje,
-            prevozi i sve potrebne dozvole za ulazak u zaštićena područja.
-          </p>
-
-          <h2 className="text-2xl font-bold text-white md:text-3xl">Savjeti za pakovanje i pripremu</h2>
-          <p className="leading-8">
-            Praktična oprema za Trnovačko jezero uključuje planinarske cipele s dobrom prianjanjem, slojevitu odjeću, vjetrootpornu
-            jaknu, malu prvu pomoć i dovoljno vode i hrane za cijeli izlet. Ako planirate plivanje, ponesite ručnik i suhu odjeću
-            za povratak. Planinarski štapovi mogu pomoći na neravnom terenu, posebno pri silasku. Ruksak od 30 do 40 litara obično
-            je dovoljan za dnevnu upotrebu, dok višednevne kamp ture mogu zahtijevati dodatnu organizaciju ovisno o tome šta
-            organizator pruža.
+            Uspon iz kampa na vrh i nazad traje oko četiri do pet sati, ovisno o tempu. Tehnički nije via ferrata,
+            ali zadnji dio prema vrhu zahtijeva pažnju na terenu. Vodimo male grupe — ne trka, ne gužva. Oni koji
+            ne žele na vrh ostaju uz jezero, šetaju obalom, kupaju se ako je toplo.
           </p>
 
-          <h2 className="text-2xl font-bold text-white md:text-3xl">Organizovana tura – kampovanje i Maglić</h2>
+          {/* KAMPOVANJE */}
+          <h2 className="text-2xl font-bold text-white md:text-3xl">Kampovanje na obali jezera</h2>
           <p className="leading-8">
-            Ako želite doživjeti Trnovačko jezero i Maglić u najboljem obliku, pridružite se organizovanoj turi sa vodičem.
+            Kamp je direktno uz jezero. Šatori, vatra, zvijezde — i apsolutna tišina osim vode i vjetra. Bez mreže.
+            Bez signala. Telefon postaje fotoaparat i ništa više. Večera se kuha na vatri, a jutro počinje kafom dok
+            magla još stoji nad vodom.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+          <p className="leading-8">
+            Uz kamp je mala planinska kafana. Može se popiti pivo, čaj ili rakija. Sjedi se vani, gleda u jezero,
+            razgovara. Nema žurbe. Nema programa koji mora biti ispoštovan do minute. Ima samo planina i onoliko
+            vremena koliko vam treba.
+          </p>
+          <p className="leading-8">
+            Svu opremu za kampovanje obezbjeđujemo mi — šatori, vreće za spavanje, podloge, kuhinja. Vi nosite
+            samo lični prtljag i dobro raspoloženje.
+          </p>
+
+          {/* KATUNI */}
+          <h2 className="text-2xl font-bold text-white md:text-3xl">Doručak na katunu — kod Miloša na Prijevoru</h2>
+          <p className="leading-8">
+            Drugi dan ujutro, prije ili poslije uspona, svraćamo do Miloša na Prijevoru. Uštipci, domaći kajmak,
+            toplo mlijeko direktno od ovce, pršut koji miriše na dim. Sve što ima — napravio je tu, na planini,
+            bez supermarketa i dostavnih servisa.
+          </p>
+          <p className="leading-8">
+            Miloš na Prijevoru cijeli život živi onako kako mi idemo na planinu da se odmorimo. Razgovor s njim
+            vrijedi jednako koliko i pogled s vrha Maglića — samo na drugi način.
+          </p>
+
+          {/* TURE KARTICE */}
+          <h2 className="text-2xl font-bold text-white md:text-3xl">Naše ture na Trnovačko jezero</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-2">
             <Link href="/ture/kampovanje-trnovacko-jezero-maglic" className="block p-5 rounded-xl bg-white/5 border border-white/10 hover:border-emerald-500/40 transition">
-              <h3 className="text-emerald-400 font-semibold mb-1">Kampovanje na Trnovačkom jezeru s usponom na Maglić</h3>
-              <p className="text-slate-400 text-sm mb-3">3 dana / 2 noći • 170€ po osobi</p>
+              <p className="text-xs text-emerald-400 uppercase tracking-widest mb-2">Najpopularnija</p>
+              <h3 className="text-emerald-400 font-semibold mb-1">Kampovanje + Maglić</h3>
+              <p className="text-slate-400 text-sm mb-3">3 dana / 2 noći · 170€ po osobi</p>
+              <p className="text-slate-400 text-xs mb-3">Kamp na jezeru, uspon na vrh BiH, doručak na katunu kod Miloša.</p>
               <span className="text-emerald-400 text-sm">Pogledaj turu →</span>
             </Link>
             <Link href="/ture/maglic-trnovacko-jezero" className="block p-5 rounded-xl bg-white/5 border border-white/10 hover:border-emerald-500/40 transition">
               <h3 className="text-emerald-400 font-semibold mb-1">Maglić i Trnovačko jezero</h3>
-              <p className="text-slate-400 text-sm mb-3">1 dan • 95€ po osobi</p>
+              <p className="text-slate-400 text-sm mb-3">1 dan · 95€ po osobi</p>
+              <p className="text-slate-400 text-xs mb-3">Zahtjevnija jednodnevna tura — vrh i jezero u jednom danu.</p>
               <span className="text-emerald-400 text-sm">Pogledaj turu →</span>
             </Link>
             <Link href="/ture/trnovacko-jezero" className="block p-5 rounded-xl bg-white/5 border border-white/10 hover:border-emerald-500/40 transition">
-              <h3 className="text-emerald-400 font-semibold mb-1">Trnovačko jezero – jednodnevni izlet</h3>
-              <p className="text-slate-400 text-sm mb-3">1 dan • 75€ po osobi</p>
+              <h3 className="text-emerald-400 font-semibold mb-1">Jednodnevni izlet</h3>
+              <p className="text-slate-400 text-sm mb-3">1 dan · 75€ po osobi</p>
+              <p className="text-slate-400 text-xs mb-3">Opuštenija verzija — samo jezero, bez uspona na vrh.</p>
               <span className="text-emerald-400 text-sm">Pogledaj turu →</span>
             </Link>
           </div>
 
-          <h2 className="text-2xl font-bold text-white md:text-3xl">Najbolje vrijeme za posjetu</h2>
+          {/* SEZONA */}
+          <h2 className="text-2xl font-bold text-white md:text-3xl">Kada ići na Trnovačko jezero</h2>
           <p className="leading-8">
-            Idealno razdoblje za posjetu Trnovačkom jezeru je od juna do septembra, kada su planinske staze prohodne i vremenski
-            uslovi stabilniji. Priroda je u punom sjaju, a jezero ima najljepšu boju. Juli i august su savršeni za kupanje u
-            hladnoj vodi i duže boravke u kampu. U ranom ljetu (jun) i ranoj jeseni (septembar) možete izbjeći gužve i uživati u
-            tišini – ali imajte na umu da vrijeme može biti manje predvidivo.
+            Sezona je od juna do septembra. Juni i septembar su tiši — manje ljudi, svježiji zrak, ali temperatura
+            noću može pasti i blizu nule, pa treba spavaća vreća za hladnije uslove. Juli i august su topli,
+            jezero ima najljepšu boju, idealno za kupanje. Gužve su relativne — Trnovačko nikad nije masovni
+            turizam jer do njega nema ceste.
+          </p>
+          <p className="leading-8">
+            Planina radi šta želi. Jutro može biti vedro, podne maglovito, popodne opet lijepo. Dajemo vam
+            spisak opreme koji pokriva sve scenarije — ponesite ga ozbiljno.
           </p>
 
-          <h2 className="text-2xl font-bold text-white md:text-3xl">Fotografija i savjeti za iskustvo</h2>
-          <p className="leading-8 pb-4">
-            Ako vam je fotografija prioritet, imajte na umu da svjetlost mijenja izgled jezera tokom dana. Jutarnji uslovi mogu
-            biti mekši i tiši, dok kasnija svjetlost može stvoriti jači kontrast oko okolnih padina. Za najpotpunije iskustvo,
-            izbjegavajte žurbu. Uključite dovoljno vremena na samom jezeru, ne samo na prilaznoj stazi. To često pretvara dobro
-            putovanje u nezaboravno.
+          {/* ŠTA PONIJETI */}
+          <h2 className="text-2xl font-bold text-white md:text-3xl">Šta ponijeti na Trnovačko jezero</h2>
+          <p className="leading-8">
+            Planinarske cipele su obavezne — ne tenisice, ne sandale. Slojevita odjeća jer temperatura varira
+            tokom dana. Vjetrootporna jakna čak i u augustu. Ruksak 25 do 35 litara. Dovoljna hidratacija —
+            na stazi ima izvora ali ponesite rezervu. Kapa i rukavice za noć u kampu čak i ljeti. Kamera
+            ili telefon s punom baterijom — pejzaži ne čekaju.
           </p>
+          <p className="leading-8 pb-4">
+            Svu opremu za kampovanje (šatori, vreće za spavanje, kuhinja) obezbjeđujemo mi. Vaš ruksak
+            treba da bude lagan — ovo je planinarenje, ne vojni marš.
+          </p>
+
+          {/* ZAVRŠNI CTA */}
+          <div className="rounded-xl bg-slate-900 border border-white/10 p-8 text-center">
+            <h2 className="text-2xl font-bold text-white mb-3">Rezervišite mjesto na Trnovačkom jezeru</h2>
+            <p className="text-slate-400 mb-6 max-w-lg mx-auto">
+              Male grupe. Licencirani vodič s 15+ godina iskustva. Sva oprema uključena.
+              Polazak iz Foče.
+            </p>
+            <div className="flex flex-wrap gap-3 justify-center">
+              <Link href="/ture/kampovanje-trnovacko-jezero-maglic" className="inline-block bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold px-6 py-3 rounded-lg transition">
+                Kampovanje + Maglić – 170€
+              </Link>
+              <Link href="/kreiraj-avanturu" className="inline-block border border-white/20 hover:border-white/40 text-white px-6 py-3 rounded-lg transition">
+                Kreiraj svoju avanturu
+              </Link>
+            </div>
+          </div>
+
         </article>
       </section>
     </main>

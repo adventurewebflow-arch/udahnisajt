@@ -5,9 +5,9 @@ import Link from "next/link";
 const BASE = "https://www.udahniavanturu.com";
 
 export const metadata: Metadata = {
-  title: "Maglić – najviši vrh Bosne i Hercegovine | Uspon, rute i savjeti",
+  title: "Uspon na Maglić – najviši vrh BiH (2.386m) | Organizovane ture iz Foče",
   description:
-    "Maglić (2.386m) — najviši vrh BiH sa pogledom koji seže do Jadrana. Uspon koji se pamti cijelog života. Rute sa Prijevora i Trnovačkog jezera, oprema i organizovane ture iz Foče. Rezerviši mjesto danas.",
+    "Stoji na 2.386 metara i gleda prema Jadranskom moru. Maglić se osvaja iz Foče — terenskim vozilom do Prijevora, pješice do vrha. Male grupe, licencirani vodič, kampovanje na Trnovačkom jezeru opciono.",
   alternates: {
     canonical: `${BASE}/maglic-planina`,
   },
@@ -55,7 +55,11 @@ export default function MaglicPlaninaPage() {
             Najčešća ruta vodi sa Prijevora, na visini od oko 1.500 metara. Uspon traje 3 do 4 sata i zahtijeva dobru fizičku kondiciju i planinarsko iskustvo. Ovo nije šetnja — Maglić je ozbiljna planina sa strmim dionicama i kamenitim terenom gdje su planinske cipele obavezne. Obične patike nisu opcija.
           </p>
           <p className="leading-8">
-            Težina uspona varira ovisno o tome kako organizuješ posjet. Ako kampuješ na Trnovačkom jezeru i napadaš Maglić drugog dana — tura je srednje zahtjevna jer si već na visini i odmoran. Ako ideš na jedan dan iz Foče — tura postaje zahtjevnija jer je sve u jednom danu.
+            Težina uspona varira ovisno o tome kako organizuješ posjet. Ako kampuješ na{" "}
+            <Link href="/trnovacko-jezero" className="text-emerald-400 hover:underline">
+              Trnovačkom jezeru
+            </Link>{" "}
+            i napadaš Maglić drugog dana — tura je srednje zahtjevna jer si već na visini i odmoran. Ako ideš na jedan dan iz Foče — tura postaje zahtjevnija jer je sve u jednom danu.
           </p>
 
           <h2 className="text-2xl font-bold text-white md:text-3xl">Ludnica na granici</h2>
