@@ -13,11 +13,7 @@ export const metadata: Metadata = {
   title: "Sve ture - Udahni Avanturu",
   description: "Pregledajte sve avanturističke ture u Bosni i Hercegovini.",
   alternates: {
-    canonical: `${BASE}/ture`,
-    languages: {
-      sr: `${BASE}/ture`,
-      en: `${BASE}/en/tours`,
-    },
+    canonical: `${BASE}/`,
   },
 };
 
