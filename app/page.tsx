@@ -4,10 +4,57 @@ import AdventureCard from "./components/AdventureCard";
 import HomeSchema from "./components/HomeSchema";
 import GalleryPreview from "./components/GalleryPreview";
 import InquiryForm from "./components/InquiryForm";
+import Accordion from "./components/Accordion";
+import NewsletterSection from "./components/NewsletterSection";
 import { popularAdventures, premiumAdventures, dayTripAdventures, multiDayAdventures } from "./data/adventures";
 import type { Metadata } from "next";
 
 const BASE = "https://www.udahniavanturu.com";
+
+const faqs = [
+  {
+    q: "Da li mogu ići sam/sama?",
+    a: "Naravno! Možeš doći sam, sama, u paru ili sa ekipom — svejedno. Ovdje svi postanu ekipa. Naše grupe su male i atmosfera je takva da se svi upoznaju prvog dana.",
+  },
+  {
+    q: "Da li je oprema za kampovanje obezbijeđena?",
+    a: "Da, sva potrebna oprema je obezbijeđena — šatori, vreće za spavanje, podloge i kuhinja. Ti nosiš samo lični prtljag.",
+  },
+  {
+    q: "Da li svako ima svoj šator?",
+    a: "Da, svaki učesnik ima svoj šator. Nema dijeljenja — tvoj prostor, tvoja privatnost.",
+  },
+  {
+    q: "Kako da rezervišem mjesto?",
+    a: "Možeš rezervisati putem kontakt forme na sajtu, emailom, Instagram DM-om ili direktno na WhatsApp +387 65 797 200. Odgovaramo u roku od 1 sat.",
+  },
+  {
+    q: "Koliko ljudi je potrebno za privatnu turu?",
+    a: "Minimalan broj učesnika za organizaciju ture je 4 osobe. Privatne ture su moguće uz 20% veću cijenu po osobi — kontaktiraj nas za ponudu.",
+  },
+  {
+    q: "Kakva oprema mi je potrebna?",
+    a: "Posebna planinska oprema nije obavezna. U sezoni bez snijega dovoljne su jake patike (ne tenisice), ruksak dovoljno velik za ličnu higijenu, presvlaku i vodu, te štapovi ako ih koristiš. Pošaljemo ti detaljan spisak opreme prije ture.",
+  },
+  {
+    q: "Postoji li dobna granica?",
+    a: "Ne postoji! Gospođa Vesna je sa 71 godinom popela Maglić — najviši vrh BiH. Ture su prilagođene svim uzrastima i kondicijama. Važno je da si u dobroj formi za odabranu turu — savjetujemo te iskreno pri odabiru.",
+  },
+  {
+    q: "Šta je uključeno u cijenu?",
+    a: "Svaka tura ima detaljno naveden spisak što je uključeno i što nije — nema skrivenih troškova. Generalno su uključeni: transfer, vodič, ulaznice za nacionalne parkove, oprema i obroci kako je navedeno za svaku turu.",
+  },
+  {
+    q: "Šta ako je loše vrijeme?",
+    a: "Sigurnost je prioritet. U slučaju kiše, snijega ili bilo kakve situacije gdje ne možemo garantovati bezbjednost — tura se otkazuje ili pomjera. Obavještavamo sve učesnike pravovremeno putem WhatsApp grupe.",
+  },
+  {
+    q: "Kako funkcioniše plaćanje?",
+    a: "Rezervacija se potvrđuje uplatom avansa. Preostali iznos se uplaćuje najkasnije 10 dana prije polaska ture. Sve detalje o uplati dajemo pri rezervaciji.",
+  },
+];
+
+const faqAccordionItems = faqs.map(({ q, a }) => ({ title: q, content: a }));
 
 export const metadata: Metadata = {
   alternates: {
@@ -196,6 +243,14 @@ export default function Home() {
             </Link>
           </div>
         </div>
+      </section>
+
+      <NewsletterSection />
+
+      <section id="faq" className="mx-auto w-full max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
+        <h2 className="text-3xl font-bold text-white mb-2">Često postavljana pitanja</h2>
+        <p className="text-slate-400 mb-10">Sve što trebaš znati prije prve avanture.</p>
+        <Accordion items={faqAccordionItems} />
       </section>
 
       {/* Contact Form */}

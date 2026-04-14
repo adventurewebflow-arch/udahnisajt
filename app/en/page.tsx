@@ -3,6 +3,8 @@ import Link from "next/link";
 import AdventureCard from "../components/AdventureCard";
 import GalleryPreview from "../components/GalleryPreview";
 import InquiryForm from "../components/InquiryForm";
+import Accordion from "../components/Accordion";
+import NewsletterSection from "../components/NewsletterSection";
 import {
   popularAdventuresEN,
   premiumAdventuresEN,
@@ -12,6 +14,51 @@ import {
 import type { Metadata } from "next";
 
 const BASE = "https://www.udahniavanturu.com";
+
+const faqsEn = [
+  {
+    q: "Can I join alone?",
+    a: "Absolutely! You can come alone, as a couple, or with a group — it doesn't matter. Everyone becomes a team here. Our groups are small and the atmosphere means everyone gets to know each other on day one.",
+  },
+  {
+    q: "Is camping equipment provided?",
+    a: "Yes, all necessary equipment is provided — tents, sleeping bags, mats and kitchen. You only need to bring your personal belongings.",
+  },
+  {
+    q: "Does everyone get their own tent?",
+    a: "Yes, every participant has their own tent. No sharing — your space, your privacy.",
+  },
+  {
+    q: "How do I book a spot?",
+    a: "You can book via the contact form on our website, by email, Instagram DM or directly on WhatsApp +387 65 797 200. We respond within 1 hour.",
+  },
+  {
+    q: "How many people do I need for a private tour?",
+    a: "The minimum group size is 4 people. Private tours are available at a 20% higher price per person — contact us for a quote.",
+  },
+  {
+    q: "What equipment do I need?",
+    a: "No special mountain gear required. In snow-free season, sturdy shoes (not trainers), a backpack large enough for personal hygiene, a change of clothes and water, and trekking poles if you use them. We send you a detailed gear list before the tour.",
+  },
+  {
+    q: "Is there an age limit?",
+    a: "There is no age limit! Vesna joined us at 71 and climbed Maglić — the highest peak in Bosnia and Herzegovina. Tours are adapted to all ages and fitness levels. We'll honestly advise you when choosing a tour.",
+  },
+  {
+    q: "What's included in the price?",
+    a: "Every tour has a detailed list of what is and isn't included — no hidden costs. Generally included: transfer, guide, national park entry fees, equipment and meals as listed for each tour.",
+  },
+  {
+    q: "What if the weather is bad?",
+    a: "Safety is our priority. In case of rain, snow or any situation where we cannot guarantee safety — the tour is cancelled or rescheduled. We notify all participants in advance via the WhatsApp group.",
+  },
+  {
+    q: "How does payment work?",
+    a: "A deposit is required to confirm your booking. The remaining balance is due no later than 10 days before departure. Full payment details are provided at the time of booking.",
+  },
+];
+
+const faqEnAccordionItems = faqsEn.map(({ q, a }) => ({ title: q, content: a }));
 
 export const metadata: Metadata = {
   title: "Udahni Avanturu - Outdoor Adventure Tours",
@@ -202,6 +249,14 @@ export default function HomeEN() {
             </Link>
           </div>
         </div>
+      </section>
+
+      <NewsletterSection lang="en" />
+
+      <section id="faq" className="mx-auto w-full max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
+        <h2 className="text-3xl font-bold text-white mb-2">Frequently asked questions</h2>
+        <p className="text-slate-400 mb-10">Everything you need to know before your first adventure.</p>
+        <Accordion items={faqEnAccordionItems} />
       </section>
 
       {/* Contact Form */}
