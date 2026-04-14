@@ -1,20 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 
-function parseListIds(): number[] {
-  const raw = process.env.BREVO_NEWSLETTER_LIST_ID;
-  if (raw) {
-    const ids = raw
-      .split(",")
-      .map((s) => Number(s.trim()))
-      .filter((n) => Number.isFinite(n) && n > 0);
-    if (ids.length > 0) return ids;
-  }
-  return [2];
-}
-
 export async function POST(req: NextRequest) {
   console.log("BREVO_API_KEY exists:", !!process.env.BREVO_API_KEY);
-  console.log("BREVO_LIST_ID:", process.env.BREVO_NEWSLETTER_LIST_ID);
 
   const apiKey = process.env.BREVO_API_KEY;
   if (!apiKey) {
@@ -45,7 +32,7 @@ export async function POST(req: NextRequest) {
     },
     body: JSON.stringify({
       email,
-      listIds: parseListIds(),
+      listIds: [1],
       updateEnabled: true,
     }),
   });
