@@ -1,8 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(req: NextRequest) {
-  console.log("BREVO_API_KEY exists:", !!process.env.BREVO_API_KEY);
-
   const apiKey = process.env.BREVO_API_KEY;
   if (!apiKey) {
     return NextResponse.json({ error: "Newsletter not configured" }, { status: 500 });
