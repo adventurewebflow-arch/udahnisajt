@@ -13,6 +13,9 @@ function parseListIds(): number[] {
 }
 
 export async function POST(req: NextRequest) {
+  console.log("BREVO_API_KEY exists:", !!process.env.BREVO_API_KEY);
+  console.log("BREVO_LIST_ID:", process.env.BREVO_NEWSLETTER_LIST_ID);
+
   const apiKey = process.env.BREVO_API_KEY;
   if (!apiKey) {
     return NextResponse.json({ error: "Newsletter not configured" }, { status: 500 });
