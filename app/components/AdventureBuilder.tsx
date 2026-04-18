@@ -14,9 +14,9 @@ const activities = [
   { value: "kanjoning", label: "Kanjoning Hrčavka", desc: "Oprema, vodič, takse, lunch, prevoz", price: 130 },
   { value: "perucica", label: "Prašuma Perućica + Skakavac", desc: "Prevoz, takse, lunch paket", price: 80 },
   { value: "durmitor", label: "Durmitor vikend", desc: "Smještaj, vodič (prevoz nije uključen)", price: 150, noTransport: true },
-  { value: "via-ferrata", label: "Via ferrata Piva", desc: "Oprema, vodič, takse, prevoz", price: 65 },
+  { value: "via-ferrata", label: "Via ferrata Piva", desc: "Vodič, takse, prevoz", price: 75 },
   { value: "kajak", label: "Kajak – Pivsko jezero", desc: "Oprema, vodič", price: 40 },
-  { value: "jahanje", label: "Jahanje konja", desc: "Vodič, oprema", price: 50 },
+  { value: "jahanje", label: "Jahanje konja", desc: "Vodič, prevoz", price: 65 },
   { value: "katuni", label: "Katuni + doručak kod domaćina", desc: "Autentičan doručak na planini", price: 30 },
   { value: "bregoč", label: "Zelengora – uspon na Bregoč", desc: "Vodič, transfer, lunch, takse", price: 70 },
   { value: "zelengora-jezera", label: "Zelengora – jezera i vidikovci", desc: "Vodič, transfer, lunch, takse", price: 70 },
@@ -33,9 +33,9 @@ const activities_en = [
   { value: "kanjoning", label: "Hrčavka Canyoning", desc: "Equipment, guide, fees, lunch, transport", price: 130 },
   { value: "perucica", label: "Perućica Rainforest + Skakavac", desc: "Transport, fees, lunch", price: 80 },
   { value: "durmitor", label: "Durmitor Weekend", desc: "Accommodation, guide (transport not included)", price: 150, noTransport: true },
-  { value: "via-ferrata", label: "Via Ferrata Piva", desc: "Equipment, guide, fees, transport", price: 65 },
+  { value: "via-ferrata", label: "Via Ferrata Piva", desc: "Guide, fees, transport", price: 75 },
   { value: "kajak", label: "Kayak – Piva Lake", desc: "Equipment, guide", price: 40 },
-  { value: "jahanje", label: "Horse Riding", desc: "Guide, equipment", price: 50 },
+  { value: "jahanje", label: "Horse Riding", desc: "Guide, transport", price: 65 },
   { value: "katuni", label: "Mountain Homesteads + Breakfast", desc: "Authentic mountain breakfast", price: 30 },
   { value: "bregoč", label: "Zelengora – Bregoč Summit", desc: "Guide, transfer, lunch, fees", price: 70 },
   { value: "zelengora-jezera", label: "Zelengora – Lakes & Viewpoints", desc: "Guide, transfer, lunch, fees", price: 70 },
@@ -94,6 +94,35 @@ const packages = [
   },
 ];
 
+const crossSell: Record<string, { value: string; reasonSr: string; reasonEn: string }[]> = {
+  "via-ferrata": [
+    { value: "kajak", reasonSr: "U blizini je Pivsko jezero — iskoristi dan za kajak!", reasonEn: "Piva Lake is nearby — add a kayak day!" },
+  ],
+  "trnovacko": [
+    { value: "katuni", reasonSr: "Katuni su 15 min od jezera — doručak kod domaćina je nezaboravan!", reasonEn: "Mountain homesteads are 15min away — breakfast there is unforgettable!" },
+  ],
+  "trnovacko-1d": [
+    { value: "katuni", reasonSr: "Katuni su tik uz Trnovačko — dodaj doručak kod domaćina!", reasonEn: "Homesteads are right by Trnovačko — add a local breakfast!" },
+    { value: "perucica", reasonSr: "Prašuma Perućica je u blizini — iskoristi još jedan dan!", reasonEn: "Perućica rainforest is nearby — make it a two-day trip!" },
+  ],
+  "maglic-1d": [
+    { value: "perucica", reasonSr: "Prašuma Perućica je na putu nazad — savršen spoj!", reasonEn: "Perućica is on the way back — a perfect combination!" },
+  ],
+  "zelengora": [
+    { value: "jahanje", reasonSr: "Jahanje konja je organizovano na Zelengori — ne propusti!", reasonEn: "Horse riding is organised on Zelengora — don't miss it!" },
+  ],
+  "zelengora-jezera": [
+    { value: "jahanje", reasonSr: "Jahanje konja je organizovano na Zelengori — ne propusti!", reasonEn: "Horse riding is organised on Zelengora — don't miss it!" },
+  ],
+  "bregoč": [
+    { value: "jahanje", reasonSr: "Jahanje konja je organizovano na Zelengori — ne propusti!", reasonEn: "Horse riding is organised on Zelengora — don't miss it!" },
+  ],
+  "perucica": [
+    { value: "kanjoning", reasonSr: "Kanjoning Hrčavka je odmah u blizini — dva adrenalina u jedan dan!", reasonEn: "Hrčavka canyoning is right nearby — two thrills in one trip!" },
+    { value: "trnovacko-1d", reasonSr: "Trnovačko jezero je nadohvat ruke — dodaj izlet!", reasonEn: "Trnovačko Lake is just around the corner — add a day trip!" },
+  ],
+};
+
 export default function AdventureBuilder() {
   const pathname = usePathname();
   const isEn = pathname.startsWith("/en");
@@ -112,6 +141,7 @@ export default function AdventureBuilder() {
   useEffect(() => {
     if (prevStep.current !== step) {
       setVisible(false);
+      window.scrollTo({ top: 0, behavior: "smooth" });
       const t = setTimeout(() => {
         setVisible(true);
         prevStep.current = step;
@@ -143,6 +173,13 @@ export default function AdventureBuilder() {
     people > 0 ? Math.round(totalAllDiscounted / people) : 0;
 
   const suggestedNights = Math.max(1, selectedActivities.length - 1);
+
+  const crossSellSuggestions = selectedActivities
+    .flatMap((v) => crossSell[v] ?? [])
+    .filter(
+      (s, i, arr) =>
+        !selectedActivities.includes(s.value) && arr.findIndex((x) => x.value === s.value) === i
+    );
 
   const selectedPkg = packages.find((p) => p.value === selectedPackage) ?? packages[0];
   const accommodationTotal =
@@ -460,6 +497,39 @@ export default function AdventureBuilder() {
               );
             })}
           </div>
+
+          {crossSellSuggestions.length > 0 && (
+            <div className="mt-6 space-y-3">
+              <p className="text-sm font-medium text-white">
+                {isEn ? "\uD83D\uDCA1 You might also like:" : "\uD83D\uDCA1 U blizini je i:"}
+              </p>
+              {crossSellSuggestions.map((s) => {
+                const act = activityCatalog.find((a) => a.value === s.value);
+                if (!act) return null;
+                return (
+                  <div
+                    key={s.value}
+                    className="flex items-center justify-between gap-3 bg-emerald-500/8 border border-emerald-500/25 rounded-xl p-4"
+                  >
+                    <div className="flex-1">
+                      <p className="text-emerald-300 text-sm font-medium mb-0.5">{act.label}</p>
+                      <p className="text-gray-400 text-xs">{isEn ? s.reasonEn : s.reasonSr}</p>
+                    </div>
+                    <div className="flex items-center gap-2 flex-shrink-0">
+                      <span className="text-emerald-400 text-sm font-bold">{act.price}€</span>
+                      <button
+                        type="button"
+                        onClick={() => toggleActivity(s.value)}
+                        className="px-3 py-1.5 bg-emerald-500 hover:bg-emerald-400 text-white text-xs font-semibold rounded-lg transition-colors"
+                      >
+                        {isEn ? "+ Add" : "+ Dodaj"}
+                      </button>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          )}
 
           {durmitorTransportWarning && (
             <div className="mt-4 rounded-xl border border-amber-500/40 bg-amber-500/10 p-4 text-sm text-amber-200">
