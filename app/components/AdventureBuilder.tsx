@@ -1,10 +1,10 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 
 const FORMSPREE_URL = "https://formspree.io/f/xqedwzll";
-const TOTAL_STEPS = 4;
+const TOTAL_STEPS = 5;
 
 const activities = [
   { value: "trnovacko", label: "Kampovanje na Trnovačkom jezeru", desc: "2 noći, oprema, prevoz, takse", price: 130 },
@@ -18,6 +18,11 @@ const activities = [
   { value: "kajak", label: "Kajak – Pivsko jezero", desc: "Oprema, vodič", price: 40 },
   { value: "jahanje", label: "Jahanje konja", desc: "Vodič, oprema", price: 50 },
   { value: "katuni", label: "Katuni + doručak kod domaćina", desc: "Autentičan doručak na planini", price: 30 },
+  { value: "bregoč", label: "Zelengora – uspon na Bregoč", desc: "Vodič, transfer, lunch, takse", price: 70 },
+  { value: "zelengora-jezera", label: "Zelengora – jezera i vidikovci", desc: "Vodič, transfer, lunch, takse", price: 70 },
+  { value: "trnovacko-1d", label: "Trnovačko jezero (jednodnevni)", desc: "Vodič, transfer, lunch, takse", price: 75 },
+  { value: "maglic-1d", label: "Maglić i Trnovačko jezero", desc: "Vodič, transfer, lunch, takse", price: 95 },
+  { value: "jeep-safari", label: "Jeep safari Zelengora", desc: "Vodič, transfer, lunch, takse", price: 70 },
 ];
 
 const activities_en = [
@@ -32,6 +37,11 @@ const activities_en = [
   { value: "kajak", label: "Kayak – Piva Lake", desc: "Equipment, guide", price: 40 },
   { value: "jahanje", label: "Horse Riding", desc: "Guide, equipment", price: 50 },
   { value: "katuni", label: "Mountain Homesteads + Breakfast", desc: "Authentic mountain breakfast", price: 30 },
+  { value: "bregoč", label: "Zelengora – Bregoč Summit", desc: "Guide, transfer, lunch, fees", price: 70 },
+  { value: "zelengora-jezera", label: "Zelengora – Lakes & Viewpoints", desc: "Guide, transfer, lunch, fees", price: 70 },
+  { value: "trnovacko-1d", label: "Trnovačko Lake (day trip)", desc: "Guide, transfer, lunch, fees", price: 75 },
+  { value: "maglic-1d", label: "Maglić & Trnovačko Lake", desc: "Guide, transfer, lunch, fees", price: 95 },
+  { value: "jeep-safari", label: "Jeep Safari Zelengora", desc: "Guide, transfer, lunch, fees", price: 70 },
 ];
 
 const origins = [
@@ -54,6 +64,36 @@ const origins_en = [
   { value: "drugo", label: "Other", transport: 0 },
 ];
 
+const packages = [
+  {
+    value: "standard",
+    labelSr: "Standard",
+    labelEn: "Standard",
+    descSr: "Aktivnosti + vodi\u010d + prevoz + lunch paketi + takse",
+    descEn: "Activities + guide + transport + lunch + fees",
+    extraPerNight: 0,
+    icon: "\uD83C\uDF92",
+  },
+  {
+    value: "smjestaj",
+    labelSr: "Sa smje\u0161tajem",
+    labelEn: "With accommodation",
+    descSr: "Standard + no\u0107enje (30\u20AC/no\u0107i/osobi)",
+    descEn: "Standard + accommodation (30\u20AC/night/person)",
+    extraPerNight: 30,
+    icon: "\uD83C\uDFD5\uFE0F",
+  },
+  {
+    value: "allinclusive",
+    labelSr: "All inclusive",
+    labelEn: "All inclusive",
+    descSr: "Sa smje\u0161tajem + doru\u010dak (8\u20AC) + ve\u010dera (12\u20AC) po osobi",
+    descEn: "With accommodation + breakfast (8\u20AC) + dinner (12\u20AC) per person",
+    extraPerNight: 50,
+    icon: "\u2B50",
+  },
+];
+
 export default function AdventureBuilder() {
   const pathname = usePathname();
   const isEn = pathname.startsWith("/en");
@@ -64,8 +104,24 @@ export default function AdventureBuilder() {
   const [origin, setOrigin] = useState("");
   const [needsTransport, setNeedsTransport] = useState(false);
   const [selectedActivities, setSelectedActivities] = useState<string[]>([]);
-  const [people, setPeople] = useState(4);
+  const [people, setPeople] = useState(2);
   const [formData, setFormData] = useState({ name: "", email: "", phone: "", message: "" });
+  const [visible, setVisible] = useState(true);
+  const prevStep = useRef(step);
+
+  useEffect(() => {
+    if (prevStep.current !== step) {
+      setVisible(false);
+      const t = setTimeout(() => {
+        setVisible(true);
+        prevStep.current = step;
+      }, 180);
+      return () => clearTimeout(t);
+    }
+  }, [step]);
+
+  const [selectedPackage, setSelectedPackage] = useState("standard");
+  const [nights, setNights] = useState(1);
 
   const activityCatalog = isEn ? activities_en : activities;
   const originCatalog = isEn ? origins_en : origins;
@@ -86,6 +142,18 @@ export default function AdventureBuilder() {
   const totalPerPersonDiscounted =
     people > 0 ? Math.round(totalAllDiscounted / people) : 0;
 
+  const suggestedNights = Math.max(1, selectedActivities.length - 1);
+
+  const selectedPkg = packages.find((p) => p.value === selectedPackage) ?? packages[0];
+  const accommodationTotal =
+    selectedPkg.extraPerNight > 0 ? nights * selectedPkg.extraPerNight : 0;
+  const totalPerPersonWithPkg = totalPerPerson + accommodationTotal;
+  const totalAllWithPkg = totalPerPersonWithPkg * people;
+  const discountAmountWithPkg = Math.round((totalAllWithPkg * discountPct) / 100);
+  const totalAllWithPkgDiscounted = totalAllWithPkg - discountAmountWithPkg;
+  const totalPerPersonWithPkgDiscounted =
+    people > 0 ? Math.round(totalAllWithPkgDiscounted / people) : 0;
+
   const lang = useMemo(() => {
     const activityLabelsJoined = selectedActivities
       .map((v) => activityCatalog.find((a) => a.value === v)?.label)
@@ -97,13 +165,16 @@ export default function AdventureBuilder() {
     const discountLine =
       discountPct > 0
         ? isEn
-          ? `\nGroup discount: ${discountPct}% (you save ${discountAmount}€)`
-          : `\nGrupni popust: ${discountPct}% (uštedite ${discountAmount}€)`
+          ? `\nGroup discount: ${discountPct}% (you save ${discountAmountWithPkg}€)`
+          : `\nGrupni popust: ${discountPct}% (uštedite ${discountAmountWithPkg}€)`
         : "";
 
+    const pkgLineSr = `\nPaket: ${selectedPkg.labelSr}${selectedPkg.extraPerNight > 0 ? ` (${nights} noći)` : ""}`;
+    const pkgLineEn = `\nPackage: ${selectedPkg.labelEn}${selectedPkg.extraPerNight > 0 ? ` (${nights} nights)` : ""}`;
+
     const whatsappMsg = isEn
-      ? `Hello! I'm interested in an adventure:\n\nActivities: ${activityLabelsJoined}\nPeople: ${people}\nFrom: ${originLabel}${needsTransport ? " (transport needed)" : ""}\nEstimated price: ${totalPerPersonDiscounted}€/person (${totalAllDiscounted}€ total)\n\nName: ${formData.name}\nEmail: ${formData.email}${formData.phone ? `\nPhone: ${formData.phone}` : ""}${discountLine}`
-      : `Zdravo! Zanima me avantura:\n\nAktivnosti: ${activityLabelsJoined}\nBroj osoba: ${people}\nOdakle: ${originLabel}${needsTransport ? " (treba prevoz)" : ""}\nOkvirna cijena: ${totalPerPersonDiscounted}€/osobi (${totalAllDiscounted}€ ukupno)\n\nIme: ${formData.name}\nEmail: ${formData.email}${formData.phone ? `\nTelefon: ${formData.phone}` : ""}${discountLine}`;
+      ? `Hello! I'm interested in an adventure:\n\nActivities: ${activityLabelsJoined}\nPeople: ${people}${pkgLineEn}\nFrom: ${originLabel}${needsTransport ? " (transport needed)" : ""}\nEstimated price: ${totalPerPersonWithPkgDiscounted}€/person (${totalAllWithPkgDiscounted}€ total)\n\nName: ${formData.name}\nEmail: ${formData.email}${formData.phone ? `\nPhone: ${formData.phone}` : ""}${discountLine}`
+      : `Zdravo! Zanima me avantura:\n\nAktivnosti: ${activityLabelsJoined}\nBroj osoba: ${people}${pkgLineSr}\nOdakle: ${originLabel}${needsTransport ? " (treba prevoz)" : ""}\nOkvirna cijena: ${totalPerPersonWithPkgDiscounted}€/osobi (${totalAllWithPkgDiscounted}€ ukupno)\n\nIme: ${formData.name}\nEmail: ${formData.email}${formData.phone ? `\nTelefon: ${formData.phone}` : ""}${discountLine}`;
 
     return {
       step1Title: isEn ? "Where are you travelling from?" : "Odakle dolaziš?",
@@ -112,12 +183,18 @@ export default function AdventureBuilder() {
         ? "Select activities — price is calculated automatically"
         : "Odaberi aktivnosti — cijena se računa automatski",
       step3Title: isEn ? "How many of you are there?" : "Koliko vas ima?",
-      step4Title: isEn ? "Almost there!" : "Skoro smo gotovi!",
+      step4PackageTitle: isEn ? "Choose your package" : "Odaberi paket",
+      step5Title: isEn ? "Almost there!" : "Skoro smo gotovi!",
+      nightsLabel: isEn ? "Number of nights" : "Broj no\u0107i",
+      packageLabel: isEn ? "Package" : "Paket",
+      accommodationLine: isEn
+        ? `Accommodation (${nights} nights × ${selectedPkg.extraPerNight}€)`
+        : `Smje\u0161taj (${nights} no\u0107i × ${selectedPkg.extraPerNight}€)`,
       next: isEn ? "Next →" : "Dalje →",
       back: isEn ? "← Back" : "← Nazad",
       minPeople: isEn
-        ? "\u26A0\uFE0F Minimum group size for tours is 4 people. For smaller groups contact us directly."
-        : "\u26A0\uFE0F Minimalan broj za grupne ture je 4 osobe. Za manje grupe kontaktiraj nas direktno.",
+        ? "\u26A0\uFE0F Minimum group size is 2 people."
+        : "\u26A0\uFE0F Minimalan broj osoba je 2.",
       totalPerPersonLabel: isEn ? "Total per person:" : "Ukupno po osobi:",
       totalAllLabel: isEn ? "Total:" : "Ukupno:",
       totalAll: isEn ? "Total" : "Ukupno",
@@ -142,9 +219,9 @@ export default function AdventureBuilder() {
         ? "\uD83D\uDCA1 This is an estimated price based on your selections. The final price may be lower or higher depending on availability, group size and the specific programme. After your inquiry, Petar will send you a detailed PDF with the exact offer."
         : "\uD83D\uDCA1 Ovo je okvirna cijena na osnovu tvojih odabira. Finalna cijena može biti niža ili viša u zavisnosti od dostupnosti termina, veličine grupe i konkretnog programa. Nakon upita, Petar \u0107e ti poslati detaljan PDF sa tačnom ponudom.",
       pricingShort: isEn
-        ? `\uD83D\uDCA1 Estimated price: ${totalPerPersonDiscounted}€ per person / ${totalAllDiscounted}€ total. After your inquiry you'll receive a detailed PDF with the exact offer.`
-        : `\uD83D\uDCA1 Okvirna cijena: ${totalPerPersonDiscounted}€ po osobi / ${totalAllDiscounted}€ ukupno. Nakon upita dobi\u0107e\u0161 detaljan PDF sa ta\u010Dnom ponudom.`,
-      stepOf: isEn ? `Step ${step} of 4` : `Korak ${step} od 4`,
+        ? `\uD83D\uDCA1 Estimated price: ${totalPerPersonWithPkgDiscounted}€ per person / ${totalAllWithPkgDiscounted}€ total. After your inquiry you'll receive a detailed PDF with the exact offer.`
+        : `\uD83D\uDCA1 Okvirna cijena: ${totalPerPersonWithPkgDiscounted}€ po osobi / ${totalAllWithPkgDiscounted}€ ukupno. Nakon upita dobi\u0107e\u0161 detaljan PDF sa ta\u010Dnom ponudom.`,
+      stepOf: isEn ? `Step ${step} of 5` : `Korak ${step} od 5`,
       durmitorWarning: isEn
         ? "Note: transport to Durmitor is not included in the package. Arrange your own arrival or contact us."
         : "Napomena: prevoz do Durmitora nije uključen u paket. Organizuj dolazak samostalno ili kontaktiraj nas.",
@@ -168,23 +245,41 @@ export default function AdventureBuilder() {
     totalAll,
     totalPerPersonDiscounted,
     totalAllDiscounted,
+    totalPerPersonWithPkg,
+    totalAllWithPkg,
+    totalPerPersonWithPkgDiscounted,
+    totalAllWithPkgDiscounted,
     discountPct,
     discountAmount,
+    discountAmountWithPkg,
     selectedActivities,
     activityCatalog,
     originCatalog,
     origin,
     needsTransport,
     people,
+    selectedPackage,
+    nights,
     formData.name,
     formData.email,
     formData.phone,
   ]);
 
+  const mutuallyExclusive: Record<string, string[]> = {
+    "trnovacko": ["trnovacko-1d"],
+    "trnovacko-1d": ["trnovacko"],
+    "maglic": ["maglic-1d"],
+    "maglic-1d": ["maglic"],
+  };
+
   const toggleActivity = (value: string) => {
-    setSelectedActivities((prev) =>
-      prev.includes(value) ? prev.filter((v) => v !== value) : [...prev, value]
-    );
+    setSelectedActivities((prev) => {
+      if (prev.includes(value)) {
+        return prev.filter((v) => v !== value);
+      }
+      const toRemove = mutuallyExclusive[value] ?? [];
+      return [...prev.filter((v) => !toRemove.includes(v)), value];
+    });
   };
 
   const setOriginAndResetTransport = (value: string) => {
@@ -214,6 +309,10 @@ export default function AdventureBuilder() {
       discountAmount: String(discountAmount),
       totalPerPersonDiscounted: String(totalPerPersonDiscounted),
       totalAllDiscounted: String(totalAllDiscounted),
+      package: isEn ? selectedPkg.labelEn : selectedPkg.labelSr,
+      nights: selectedPackage !== "standard" ? String(nights) : "0",
+      accommodationTotal: String(accommodationTotal * people),
+      totalWithPackage: String(totalAllWithPkgDiscounted),
       source: "Adventure Builder",
       page: pathname,
     };
@@ -256,7 +355,7 @@ export default function AdventureBuilder() {
   const progressPct = Math.round((step / TOTAL_STEPS) * 100);
 
   return (
-    <div className="max-w-3xl mx-auto pt-0 mt-0">
+    <div className="max-w-3xl mx-auto pt-0 mt-0 pb-24">
       <div className="mb-8">
         <div className="flex justify-between text-sm text-gray-400 mb-2">
           <span>{lang.stepOf}</span>
@@ -268,8 +367,22 @@ export default function AdventureBuilder() {
             style={{ width: progressWidth }}
           />
         </div>
+        <div className="mt-2 text-xs text-emerald-400/70 font-medium tracking-wide">
+          {step === 1 && (isEn ? "Where are you from?" : "Odakle dolaziš?")}
+          {step === 2 && (isEn ? "Choose activities" : "Odaberi aktivnosti")}
+          {step === 3 && (isEn ? "Choose package" : "Odaberi paket")}
+          {step === 4 && (isEn ? "Number of people" : "Broj osoba")}
+          {step === 5 && (isEn ? "Contact & summary" : "Kontakt i sažetak")}
+        </div>
       </div>
 
+      <div
+        style={{
+          opacity: visible ? 1 : 0,
+          transform: visible ? "translateY(0)" : "translateY(8px)",
+          transition: "opacity 0.18s ease, transform 0.18s ease",
+        }}
+      >
       {step === 1 && (
         <div>
           <h3 className="text-2xl font-bold text-white mb-8">{lang.step1Title}</h3>
@@ -392,12 +505,164 @@ export default function AdventureBuilder() {
 
       {step === 3 && (
         <div>
+          <h3 className="text-2xl font-bold text-white mb-2">{lang.step4PackageTitle}</h3>
+          <p className="text-gray-400 mb-8 text-sm">
+            {isEn
+              ? "All packages include activities, guide, transport, lunch and fees."
+              : "Svi paketi uklju\u010duju aktivnosti, vodi\u010da, prevoz, lunch pakete i takse."}
+          </p>
+
+          <div className="grid grid-cols-1 gap-4 mb-8">
+            {packages.map((pkg) => (
+              <button
+                key={pkg.value}
+                type="button"
+                onClick={() => setSelectedPackage(pkg.value)}
+                className={`p-5 rounded-xl border-2 text-left transition-all ${
+                  selectedPackage === pkg.value
+                    ? "border-emerald-500 bg-emerald-500/10"
+                    : "border-gray-700 bg-gray-800 hover:border-gray-500"
+                }`}
+              >
+                <div className="flex items-center justify-between mb-1">
+                  <div className="flex items-center gap-2">
+                    <span className="text-xl">{pkg.icon}</span>
+                    <span className="font-bold text-white text-lg">
+                      {isEn ? pkg.labelEn : pkg.labelSr}
+                    </span>
+                  </div>
+                  {pkg.extraPerNight > 0 ? (
+                    <span className="text-emerald-400 font-semibold text-sm">
+                      +{pkg.extraPerNight}€/{isEn ? "night/person" : "no\u0107/osobi"}
+                    </span>
+                  ) : (
+                    <span className="text-gray-400 text-sm">
+                      {isEn ? "Included" : "Uklju\u010deno"}
+                    </span>
+                  )}
+                </div>
+                <p className="text-gray-400 text-sm ml-7">{isEn ? pkg.descEn : pkg.descSr}</p>
+              </button>
+            ))}
+          </div>
+
+          {selectedPackage !== "standard" && (
+            <div className="mb-8">
+              <label className="block text-white font-medium mb-2">{lang.nightsLabel}</label>
+              <p className="text-xs text-emerald-400/80 mb-4">
+                {isEn
+                  ? `Based on your ${selectedActivities.length} activities, we suggest ${suggestedNights} night(s).`
+                  : `Na osnovu ${selectedActivities.length} aktivnosti, predlažemo ${suggestedNights} noć(i).`}
+                {" "}
+                <button
+                  type="button"
+                  onClick={() => setNights(suggestedNights)}
+                  className="underline hover:text-emerald-300 transition-colors"
+                >
+                  {isEn ? "Apply suggestion" : "Primijeni prijedlog"}
+                </button>
+              </p>
+              <div className="flex items-center gap-6 flex-wrap">
+                <button
+                  type="button"
+                  onClick={() => setNights((n) => Math.max(1, n - 1))}
+                  className="w-12 h-12 rounded-xl border border-gray-600 bg-gray-800 text-white text-2xl font-bold hover:bg-gray-700 transition-colors"
+                >
+                  −
+                </button>
+                <span className="text-4xl font-bold text-white w-16 text-center">{nights}</span>
+                <button
+                  type="button"
+                  onClick={() => setNights((n) => Math.min(14, n + 1))}
+                  className="w-12 h-12 rounded-xl border border-gray-600 bg-gray-800 text-white text-2xl font-bold hover:bg-gray-700 transition-colors"
+                >
+                  +
+                </button>
+                <span className="text-gray-400 text-sm">
+                  × {selectedPkg.extraPerNight}€ × {people}{" "}
+                  {isEn ? "people" : "osoba"} ={" "}
+                  <span className="text-emerald-400 font-bold">{accommodationTotal * people}€</span>
+                </span>
+              </div>
+            </div>
+          )}
+
+          <div className="bg-gray-800 rounded-xl p-4 border border-gray-700 text-sm mb-6 space-y-2">
+            <div className="flex justify-between text-gray-300">
+              <span>{isEn ? "Activities" : "Aktivnosti"}</span>
+              <span>
+                {totalPerPerson}€ {isEn ? "per person" : "po osobi"}
+              </span>
+            </div>
+            {selectedPackage !== "standard" && (
+              <div className="flex justify-between text-gray-300">
+                <span>
+                  {isEn
+                    ? `Accommodation (${nights} nights × ${selectedPkg.extraPerNight}€)`
+                    : `Smje\u0161taj (${nights} no\u0107i × ${selectedPkg.extraPerNight}€)`}
+                </span>
+                <span>
+                  {accommodationTotal}€ {isEn ? "per person" : "po osobi"}
+                </span>
+              </div>
+            )}
+            {discountPct > 0 && (
+              <div className="flex justify-between text-emerald-400">
+                <span>
+                  {isEn ? `Group discount (${discountPct}%)` : `Grupni popust (${discountPct}%)`}
+                </span>
+                <span>− {discountAmountWithPkg}€</span>
+              </div>
+            )}
+            <div className="flex justify-between text-white font-bold text-lg border-t border-gray-700 pt-3 mt-2">
+              <span>{isEn ? "Total" : "Ukupno"}</span>
+              <div className="text-right">
+                {discountPct > 0 && (
+                  <span className="line-through text-gray-500 text-sm mr-2">{totalAllWithPkg}€</span>
+                )}
+                <span className="text-emerald-400">{totalAllWithPkgDiscounted}€</span>
+              </div>
+            </div>
+            <div className="text-right text-gray-400 text-sm">
+              ({totalPerPersonWithPkgDiscounted}€ {isEn ? "per person" : "po osobi"})
+            </div>
+          </div>
+
+          <div className="mb-6 bg-amber-500/10 border border-amber-500/20 rounded-xl p-4">
+            <p className="text-amber-200 text-sm leading-relaxed">
+              {isEn
+                ? "\uD83D\uDCA1 This is an estimate. After your inquiry Petar will put together a tailored package \u2014 things can be added, removed or adjusted to suit your group."
+                : "\uD83D\uDCA1 Ovo je okvirni paket. Nakon upita Petar \u0107e slo\u017eiti ponudu po mjeri \u2014 mo\u017ee se dodati, izbaciti ili prilagoditi po potrebi grupe."}
+            </p>
+          </div>
+
+          <div className="flex gap-4">
+            <button
+              type="button"
+              onClick={() => setStep(2)}
+              className="flex-1 py-4 border border-gray-700 text-gray-300 hover:bg-gray-800 font-semibold rounded-xl transition-colors"
+            >
+              {lang.back}
+            </button>
+            <button
+              type="button"
+              onClick={() => setStep(4)}
+              className="flex-1 py-4 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold rounded-xl transition-colors"
+            >
+              {lang.next}
+            </button>
+          </div>
+        </div>
+      )}
+
+      {step === 4 && (
+        <div>
           <h3 className="text-2xl font-bold text-white mb-8 text-center">{lang.step3Title}</h3>
 
           <div className="flex items-center justify-center gap-6 mb-6">
             <button
               type="button"
-              onClick={() => setPeople((p) => Math.max(1, p - 1))}
+              onClick={() => setPeople((p) => Math.max(2, p - 1))}
               className="w-14 h-14 rounded-xl border border-gray-600 bg-gray-800 text-white text-2xl font-bold hover:bg-gray-700 transition-colors"
             >
               −
@@ -423,7 +688,7 @@ export default function AdventureBuilder() {
             </div>
           )}
 
-          {people < 4 && (
+          {people < 2 && (
             <p className="text-center text-amber-300 text-sm mb-4 max-w-lg mx-auto">{lang.minPeople}</p>
           )}
 
@@ -487,14 +752,14 @@ export default function AdventureBuilder() {
           <div className="flex gap-4 mt-8">
             <button
               type="button"
-              onClick={() => setStep(2)}
+              onClick={() => setStep(3)}
               className="flex-1 py-4 border border-gray-700 text-gray-300 hover:bg-gray-800 font-semibold rounded-xl transition-colors"
             >
               {lang.back}
             </button>
             <button
               type="button"
-              onClick={() => setStep(4)}
+              onClick={() => setStep(5)}
               className="flex-1 py-4 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold rounded-xl transition-colors"
             >
               {lang.next}
@@ -503,15 +768,23 @@ export default function AdventureBuilder() {
         </div>
       )}
 
-      {step === 4 && (
+      {step === 5 && (
         <div>
-          <h3 className="text-2xl font-bold text-white mb-6">{lang.step4Title}</h3>
+          <h3 className="text-2xl font-bold text-white mb-6">{lang.step5Title}</h3>
 
           <div className="bg-gray-800 rounded-xl p-4 border border-gray-700 mb-6 text-sm">
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
               <div>
                 <div className="text-gray-400 text-xs mb-1">{lang.activities}</div>
                 <div className="text-white font-medium line-clamp-3">{activityList || lang.dash}</div>
+              </div>
+              <div>
+                <div className="text-gray-400 text-xs mb-1">{lang.packageLabel}</div>
+                <div className="text-white font-medium">
+                  {isEn ? selectedPkg.labelEn : selectedPkg.labelSr}
+                  {selectedPackage !== "standard" &&
+                    ` (${nights} ${isEn ? "nights" : "noći"})`}
+                </div>
               </div>
               <div>
                 <div className="text-gray-400 text-xs mb-1">{lang.people}</div>
@@ -519,11 +792,11 @@ export default function AdventureBuilder() {
               </div>
               <div>
                 <div className="text-gray-400 text-xs mb-1">{lang.perPersonShort}</div>
-                <div className="text-white font-medium">{totalPerPersonDiscounted}€</div>
+                <div className="text-white font-medium">{totalPerPersonWithPkgDiscounted}€</div>
               </div>
               <div>
                 <div className="text-gray-400 text-xs mb-1">{lang.totalAllLabel}</div>
-                <div className="text-emerald-400 font-bold">{totalAllDiscounted}€</div>
+                <div className="text-emerald-400 font-bold">{totalAllWithPkgDiscounted}€</div>
               </div>
             </div>
           </div>
@@ -600,11 +873,71 @@ export default function AdventureBuilder() {
 
           <button
             type="button"
-            onClick={() => setStep(3)}
+            onClick={() => setStep(4)}
             className="mt-6 w-full py-3 text-gray-400 hover:text-white text-sm transition-colors"
           >
             {lang.back}
           </button>
+        </div>
+      )}
+      </div>
+      {selectedActivities.length > 0 && step < 5 && (
+        <div className="fixed bottom-0 left-0 right-0 z-50 bg-slate-950/95 backdrop-blur-sm border-t border-white/10 px-4 py-3">
+          <div className="max-w-3xl mx-auto flex items-center justify-between gap-4 flex-wrap">
+            <div className="flex flex-col">
+              <span className="text-xs text-gray-500 mb-0.5">
+                {isEn ? "Selected" : "Odabrano"}:{" "}
+                <span className="text-white">
+                  {selectedActivities.length} {isEn ? "activities" : "aktivnosti"}
+                </span>
+              </span>
+              <div className="flex items-center gap-2">
+                {selectedPackage !== "standard" && nights > 0 && (
+                  <span className="text-xs text-gray-500">
+                    {isEn ? `${nights} nights` : `${nights} noći`}
+                    {" · "}
+                  </span>
+                )}
+                <span className="text-emerald-400 font-bold text-lg">
+                  {totalAllWithPkgDiscounted > 0
+                    ? `${totalAllWithPkgDiscounted}€`
+                    : `${totalAllDiscounted}€`}
+                </span>
+                {people > 1 && (
+                  <span className="text-gray-500 text-xs">
+                    (
+                    {totalPerPersonWithPkgDiscounted > 0
+                      ? totalPerPersonWithPkgDiscounted
+                      : totalPerPersonDiscounted}
+                    € {isEn ? "p.p." : "po osobi"})
+                  </span>
+                )}
+                {discountPct > 0 && (
+                  <span className="text-xs bg-emerald-500/20 text-emerald-400 px-2 py-0.5 rounded-full">
+                    -{discountPct}%
+                  </span>
+                )}
+              </div>
+            </div>
+            <div className="flex gap-2 flex-wrap">
+              {selectedActivities.slice(0, 3).map((v) => {
+                const act = activityCatalog.find((a) => a.value === v);
+                return act ? (
+                  <span
+                    key={v}
+                    className="text-xs bg-white/5 border border-white/10 rounded-full px-2 py-1 text-gray-300 max-w-[120px] truncate"
+                  >
+                    {act.label.split(" ")[0]} {act.label.split(" ")[1] ?? ""}
+                  </span>
+                ) : null;
+              })}
+              {selectedActivities.length > 3 && (
+                <span className="text-xs bg-white/5 border border-white/10 rounded-full px-2 py-1 text-gray-400">
+                  +{selectedActivities.length - 3}
+                </span>
+              )}
+            </div>
+          </div>
         </div>
       )}
     </div>
