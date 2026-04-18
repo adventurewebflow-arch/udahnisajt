@@ -2,46 +2,47 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 const FORMSPREE_URL = "https://formspree.io/f/xqedwzll";
 const TOTAL_STEPS = 5;
 
 const activities = [
-  { value: "trnovacko", label: "Kampovanje na Trnovačkom jezeru", desc: "2 noći, oprema, prevoz, takse", price: 130 },
-  { value: "maglic", label: "Uspon na Maglić", desc: "Vodič, lunch, takse", price: 80 },
-  { value: "zelengora", label: "Zelengora – jezera i vidikovci", desc: "Vodič, transfer, lunch, takse", price: 70 },
-  { value: "rafting", label: "Rafting Tarom", desc: "Oprema, skipper, 2 obroka, prevoz", price: 80 },
-  { value: "kanjoning", label: "Kanjoning Hrčavka", desc: "Oprema, vodič, takse, lunch, prevoz", price: 130 },
-  { value: "perucica", label: "Prašuma Perućica + Skakavac", desc: "Prevoz, takse, lunch paket", price: 80 },
-  { value: "durmitor", label: "Durmitor vikend", desc: "Smještaj, vodič (prevoz nije uključen)", price: 150, noTransport: true },
-  { value: "via-ferrata", label: "Via ferrata Piva", desc: "Vodič, takse, prevoz", price: 75 },
-  { value: "kajak", label: "Kajak – Pivsko jezero", desc: "Oprema, vodič", price: 40 },
-  { value: "jahanje", label: "Jahanje konja", desc: "Vodič, prevoz", price: 65 },
-  { value: "katuni", label: "Katuni + doručak kod domaćina", desc: "Autentičan doručak na planini", price: 30 },
-  { value: "bregoč", label: "Zelengora – uspon na Bregoč", desc: "Vodič, transfer, lunch, takse", price: 70 },
-  { value: "zelengora-jezera", label: "Zelengora – jezera i vidikovci", desc: "Vodič, transfer, lunch, takse", price: 70 },
-  { value: "trnovacko-1d", label: "Trnovačko jezero (jednodnevni)", desc: "Vodič, transfer, lunch, takse", price: 75 },
-  { value: "maglic-1d", label: "Maglić i Trnovačko jezero", desc: "Vodič, transfer, lunch, takse", price: 95 },
-  { value: "jeep-safari", label: "Jeep safari Zelengora", desc: "Vodič, transfer, lunch, takse", price: 70 },
+  { value: "trnovacko", label: "Kampovanje na Trnovačkom jezeru", desc: "2 noći, oprema, prevoz, takse", price: 130, image: "/images/tours/gallery/najlepsa-slika-trnovacko.webp" },
+  { value: "maglic", label: "Uspon na Maglić", desc: "Vodič, lunch, takse", price: 80, image: "/images/tours/gallery/pogled-sa-vrha-maglica.webp" },
+  { value: "zelengora", label: "Zelengora – jezera i vidikovci", desc: "Vodič, transfer, lunch, takse", price: 70, image: "/images/tours/gallery/zelengora-jezero.webp" },
+  { value: "rafting", label: "Rafting Tarom", desc: "Oprema, skipper, 2 obroka, prevoz", price: 80, image: "/images/tours/rafting-tara/rafting-hero-card.webp" },
+  { value: "kanjoning", label: "Kanjoning Hrčavka", desc: "Oprema, vodič, takse, lunch, prevoz", price: 130, image: "/images/tours/day-trips/kanjoning-hrcavka.webp" },
+  { value: "perucica", label: "Prašuma Perućica + Skakavac", desc: "Prevoz, takse, lunch paket", price: 80, image: "/images/tours/gallery/vodopad-skakavac-perucica.webp" },
+  { value: "durmitor", label: "Durmitor vikend", desc: "Smještaj, vodič (prevoz nije uključen)", price: 150, noTransport: true, image: "/images/tours/gallery/ugljesin-vrh.webp" },
+  { value: "via-ferrata", label: "Via ferrata Piva", desc: "Vodič, takse, prevoz", price: 75, image: "/images/tours/gallery/via-ferata-piva-djevojka-na-stijeni.webp" },
+  { value: "kajak", label: "Kajak – Pivsko jezero", desc: "Oprema, vodič", price: 40, image: "/images/tours/nevena-na-putu-za-prutas.webp" },
+  { value: "jahanje", label: "Jahanje konja", desc: "Vodič, prevoz", price: 65, image: "/images/tours/gallery/Ovce.webp" },
+  { value: "katuni", label: "Katuni + doručak kod domaćina", desc: "Autentičan doručak na planini", price: 30, image: "/images/tours/gallery/katuni-trnovacko-jezero.webp" },
+  { value: "bregoč", label: "Zelengora – uspon na Bregoč", desc: "Vodič, transfer, lunch, takse", price: 70, image: "/images/tours/gallery/zelengora-vrh.webp" },
+  { value: "zelengora-jezera", label: "Zelengora – jezera i vidikovci", desc: "Vodič, transfer, lunch, takse", price: 70, image: "/images/tours/gallery/zelengora-orlovacko.webp" },
+  { value: "trnovacko-1d", label: "Trnovačko jezero (jednodnevni)", desc: "Vodič, transfer, lunch, takse", price: 75, image: "/images/tours/gallery/hiking-na-trnovacko-jezero.webp" },
+  { value: "maglic-1d", label: "Maglić i Trnovačko jezero", desc: "Vodič, transfer, lunch, takse", price: 95, image: "/images/tours/gallery/ekipa-ide-na-maglic.webp" },
+  { value: "jeep-safari", label: "Jeep safari Zelengora", desc: "Vodič, transfer, lunch, takse", price: 70, image: "/images/tours/gallery/zelengora-djevojka-u-planini.webp" },
 ];
 
 const activities_en = [
-  { value: "trnovacko", label: "Trnovačko Lake Camping", desc: "2 nights, equipment, transport, fees", price: 130 },
-  { value: "maglic", label: "Maglić Summit", desc: "Guide, lunch, fees", price: 80 },
-  { value: "zelengora", label: "Zelengora – Lakes & Viewpoints", desc: "Guide, transfer, lunch, fees", price: 70 },
-  { value: "rafting", label: "Tara River Rafting", desc: "Equipment, skipper, 2 meals, transport", price: 80 },
-  { value: "kanjoning", label: "Hrčavka Canyoning", desc: "Equipment, guide, fees, lunch, transport", price: 130 },
-  { value: "perucica", label: "Perućica Rainforest + Skakavac", desc: "Transport, fees, lunch", price: 80 },
-  { value: "durmitor", label: "Durmitor Weekend", desc: "Accommodation, guide (transport not included)", price: 150, noTransport: true },
-  { value: "via-ferrata", label: "Via Ferrata Piva", desc: "Guide, fees, transport", price: 75 },
-  { value: "kajak", label: "Kayak – Piva Lake", desc: "Equipment, guide", price: 40 },
-  { value: "jahanje", label: "Horse Riding", desc: "Guide, transport", price: 65 },
-  { value: "katuni", label: "Mountain Homesteads + Breakfast", desc: "Authentic mountain breakfast", price: 30 },
-  { value: "bregoč", label: "Zelengora – Bregoč Summit", desc: "Guide, transfer, lunch, fees", price: 70 },
-  { value: "zelengora-jezera", label: "Zelengora – Lakes & Viewpoints", desc: "Guide, transfer, lunch, fees", price: 70 },
-  { value: "trnovacko-1d", label: "Trnovačko Lake (day trip)", desc: "Guide, transfer, lunch, fees", price: 75 },
-  { value: "maglic-1d", label: "Maglić & Trnovačko Lake", desc: "Guide, transfer, lunch, fees", price: 95 },
-  { value: "jeep-safari", label: "Jeep Safari Zelengora", desc: "Guide, transfer, lunch, fees", price: 70 },
+  { value: "trnovacko", label: "Trnovačko Lake Camping", desc: "2 nights, equipment, transport, fees", price: 130, image: "/images/tours/gallery/najlepsa-slika-trnovacko.webp" },
+  { value: "maglic", label: "Maglić Summit", desc: "Guide, lunch, fees", price: 80, image: "/images/tours/gallery/pogled-sa-vrha-maglica.webp" },
+  { value: "zelengora", label: "Zelengora – Lakes & Viewpoints", desc: "Guide, transfer, lunch, fees", price: 70, image: "/images/tours/gallery/zelengora-jezero.webp" },
+  { value: "rafting", label: "Tara River Rafting", desc: "Equipment, skipper, 2 meals, transport", price: 80, image: "/images/tours/rafting-tara/rafting-hero-card.webp" },
+  { value: "kanjoning", label: "Hrčavka Canyoning", desc: "Equipment, guide, fees, lunch, transport", price: 130, image: "/images/tours/day-trips/kanjoning-hrcavka.webp" },
+  { value: "perucica", label: "Perućica Rainforest + Skakavac", desc: "Transport, fees, lunch", price: 80, image: "/images/tours/gallery/vodopad-skakavac-perucica.webp" },
+  { value: "durmitor", label: "Durmitor Weekend", desc: "Accommodation, guide (transport not included)", price: 150, noTransport: true, image: "/images/tours/gallery/ugljesin-vrh.webp" },
+  { value: "via-ferrata", label: "Via Ferrata Piva", desc: "Guide, fees, transport", price: 75, image: "/images/tours/gallery/via-ferata-piva-djevojka-na-stijeni.webp" },
+  { value: "kajak", label: "Kayak – Piva Lake", desc: "Equipment, guide", price: 40, image: "/images/tours/nevena-na-putu-za-prutas.webp" },
+  { value: "jahanje", label: "Horse Riding", desc: "Guide, transport", price: 65, image: "/images/tours/gallery/Ovce.webp" },
+  { value: "katuni", label: "Mountain Homesteads + Breakfast", desc: "Authentic mountain breakfast", price: 30, image: "/images/tours/gallery/katuni-trnovacko-jezero.webp" },
+  { value: "bregoč", label: "Zelengora – Bregoč Summit", desc: "Guide, transfer, lunch, fees", price: 70, image: "/images/tours/gallery/zelengora-vrh.webp" },
+  { value: "zelengora-jezera", label: "Zelengora – Lakes & Viewpoints", desc: "Guide, transfer, lunch, fees", price: 70, image: "/images/tours/gallery/zelengora-orlovacko.webp" },
+  { value: "trnovacko-1d", label: "Trnovačko Lake (day trip)", desc: "Guide, transfer, lunch, fees", price: 75, image: "/images/tours/gallery/hiking-na-trnovacko-jezero.webp" },
+  { value: "maglic-1d", label: "Maglić & Trnovačko Lake", desc: "Guide, transfer, lunch, fees", price: 95, image: "/images/tours/gallery/ekipa-ide-na-maglic.webp" },
+  { value: "jeep-safari", label: "Jeep Safari Zelengora", desc: "Guide, transfer, lunch, fees", price: 70, image: "/images/tours/gallery/zelengora-djevojka-u-planini.webp" },
 ];
 
 const origins = [
@@ -150,6 +151,7 @@ export default function AdventureBuilder() {
     }
   }, [step]);
 
+  const [dayType, setDayType] = useState("vikend");
   const [selectedPackage, setSelectedPackage] = useState("standard");
   const [nights, setNights] = useState(1);
 
@@ -166,7 +168,11 @@ export default function AdventureBuilder() {
   const totalPerPerson = activitiesTotal + transportPerPerson;
   const totalAll = totalPerPerson * people;
 
-  const discountPct = people >= 8 ? 15 : people >= 6 ? 10 : 0;
+  const weekdayDiscount = dayType === "radni" ? 10 : 0;
+  const discountPct = Math.min(
+    (people >= 8 ? 15 : people >= 6 ? 10 : 0) + weekdayDiscount,
+    25
+  );
   const discountAmount = Math.round((totalAll * discountPct) / 100);
   const totalAllDiscounted = totalAll - discountAmount;
   const totalPerPersonDiscounted =
@@ -210,8 +216,8 @@ export default function AdventureBuilder() {
     const pkgLineEn = `\nPackage: ${selectedPkg.labelEn}${selectedPkg.extraPerNight > 0 ? ` (${nights} nights)` : ""}`;
 
     const whatsappMsg = isEn
-      ? `Hello! I'm interested in an adventure:\n\nActivities: ${activityLabelsJoined}\nPeople: ${people}${pkgLineEn}\nFrom: ${originLabel}${needsTransport ? " (transport needed)" : ""}\nEstimated price: ${totalPerPersonWithPkgDiscounted}€/person (${totalAllWithPkgDiscounted}€ total)\n\nName: ${formData.name}\nEmail: ${formData.email}${formData.phone ? `\nPhone: ${formData.phone}` : ""}${discountLine}`
-      : `Zdravo! Zanima me avantura:\n\nAktivnosti: ${activityLabelsJoined}\nBroj osoba: ${people}${pkgLineSr}\nOdakle: ${originLabel}${needsTransport ? " (treba prevoz)" : ""}\nOkvirna cijena: ${totalPerPersonWithPkgDiscounted}€/osobi (${totalAllWithPkgDiscounted}€ ukupno)\n\nIme: ${formData.name}\nEmail: ${formData.email}${formData.phone ? `\nTelefon: ${formData.phone}` : ""}${discountLine}`;
+      ? `Hello! I'm interested in an adventure:\n\nActivities: ${activityLabelsJoined}\nPeople: ${people}${pkgLineEn}\nFrom: ${originLabel}${needsTransport ? " (transport needed)" : ""}\nWhen: ${dayType === "radni" ? "Weekday (10% discount)" : dayType === "vikend" ? "Weekend" : "Not decided yet"}\nEstimated price: ${totalPerPersonWithPkgDiscounted}€/person (${totalAllWithPkgDiscounted}€ total)\n\nName: ${formData.name}\nEmail: ${formData.email}${formData.phone ? `\nPhone: ${formData.phone}` : ""}${discountLine}`
+      : `Zdravo! Zanima me avantura:\n\nAktivnosti: ${activityLabelsJoined}\nBroj osoba: ${people}${pkgLineSr}\nOdakle: ${originLabel}${needsTransport ? " (treba prevoz)" : ""}\nKada: ${dayType === "radni" ? "Radni dan (10% popusta)" : dayType === "vikend" ? "Vikend" : "Nije odlučeno"}\nOkvirna cijena: ${totalPerPersonWithPkgDiscounted}€/osobi (${totalAllWithPkgDiscounted}€ ukupno)\n\nIme: ${formData.name}\nEmail: ${formData.email}${formData.phone ? `\nTelefon: ${formData.phone}` : ""}${discountLine}`;
 
     return {
       step1Title: isEn ? "Where are you travelling from?" : "Odakle dolaziš?",
@@ -295,6 +301,8 @@ export default function AdventureBuilder() {
     origin,
     needsTransport,
     people,
+    dayType,
+    weekdayDiscount,
     selectedPackage,
     nights,
     formData.name,
@@ -343,6 +351,8 @@ export default function AdventureBuilder() {
       totalPerPerson: String(totalPerPerson),
       totalAll: String(totalAll),
       discountPct: String(discountPct),
+      dayType: dayType,
+      weekdayDiscount: String(weekdayDiscount),
       discountAmount: String(discountAmount),
       totalPerPersonDiscounted: String(totalPerPersonDiscounted),
       totalAllDiscounted: String(totalAllDiscounted),
@@ -455,6 +465,72 @@ export default function AdventureBuilder() {
             </div>
           )}
 
+          <div className="mt-8">
+            <p className="text-white font-medium mb-4">
+              {isEn ? "When are you planning to go?" : "Kada planiraš ići?"}
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+              {[
+                {
+                  value: "vikend",
+                  labelSr: "Vikend",
+                  labelEn: "Weekend",
+                  descSr: "Subota ili nedjelja",
+                  descEn: "Saturday or Sunday",
+                  icon: "\uD83C\uDFD5\uFE0F",
+                  discountSr: "Standardna cijena",
+                  discountEn: "Standard price",
+                },
+                {
+                  value: "radni",
+                  labelSr: "Radni dan",
+                  labelEn: "Weekday",
+                  descSr: "Ponedjeljak – petak",
+                  descEn: "Monday – Friday",
+                  icon: "\uD83D\uDCC5",
+                  discountSr: "10% popusta",
+                  discountEn: "10% discount",
+                },
+                {
+                  value: "nisam-siguran",
+                  labelSr: "Još nisam siguran/na",
+                  labelEn: "Not sure yet",
+                  descSr: "Dogovorićemo zajedno",
+                  descEn: "We'll figure it out",
+                  icon: "\uD83E\uDD14",
+                  discountSr: "Standardna cijena",
+                  discountEn: "Standard price",
+                },
+              ].map((d) => (
+                <button
+                  key={d.value}
+                  type="button"
+                  onClick={() => setDayType(d.value)}
+                  className={`p-4 rounded-xl border-2 text-left transition-all ${
+                    dayType === d.value
+                      ? "border-emerald-500 bg-emerald-500/10"
+                      : "border-gray-700 bg-gray-800 hover:border-gray-500"
+                  }`}
+                >
+                  <div className="flex items-center gap-2 mb-1">
+                    <span className="text-lg">{d.icon}</span>
+                    <span className="font-semibold text-white text-sm">
+                      {isEn ? d.labelEn : d.labelSr}
+                    </span>
+                  </div>
+                  <p className="text-gray-400 text-xs ml-7">{isEn ? d.descEn : d.descSr}</p>
+                  <p
+                    className={`text-xs ml-7 mt-1 font-medium ${
+                      d.value === "radni" ? "text-emerald-400" : "text-gray-500"
+                    }`}
+                  >
+                    {isEn ? d.discountEn : d.discountSr}
+                  </p>
+                </button>
+              ))}
+            </div>
+          </div>
+
           <button
             type="button"
             onClick={() => setStep(2)}
@@ -479,20 +555,40 @@ export default function AdventureBuilder() {
                   key={act.value}
                   type="button"
                   onClick={() => toggleActivity(act.value)}
-                  className={`relative p-5 rounded-xl border-2 text-left transition-all ${
+                  className={`relative rounded-xl border-2 text-left transition-all overflow-hidden flex items-center gap-4 p-4 ${
                     selected
                       ? "border-emerald-500 bg-emerald-500/10"
                       : "border-gray-700 bg-gray-800 hover:border-gray-500"
                   }`}
                 >
+                  {"image" in act && act.image && (
+                    <div className="relative w-16 h-16 rounded-lg overflow-hidden flex-shrink-0">
+                      <Image
+                        src={act.image}
+                        alt={act.label}
+                        fill
+                        className="object-cover"
+                        sizes="64px"
+                      />
+                      {selected && (
+                        <div className="absolute inset-0 bg-emerald-500/40 flex items-center justify-center">
+                          <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                          </svg>
+                        </div>
+                      )}
+                    </div>
+                  )}
+                  <div className="flex-1 min-w-0">
+                    <div className="font-semibold text-white text-sm pr-12">{act.label}</div>
+                    <div className="text-xs text-gray-400 mt-1">{act.desc}</div>
+                    {"noTransport" in act && act.noTransport && (
+                      <p className="text-xs text-amber-400 mt-1">{lang.noTransportNote}</p>
+                    )}
+                  </div>
                   <span className="absolute top-3 right-3 px-2 py-0.5 rounded-full bg-emerald-500/90 text-white text-xs font-semibold">
                     {act.price}€
                   </span>
-                  <div className="font-semibold text-white pr-16">{act.label}</div>
-                  <div className="text-xs text-gray-400 mt-1">{act.desc}</div>
-                  {"noTransport" in act && act.noTransport && (
-                    <p className="text-xs text-amber-400 mt-2">{lang.noTransportNote}</p>
-                  )}
                 </button>
               );
             })}
@@ -750,10 +846,25 @@ export default function AdventureBuilder() {
           {discountPct > 0 && (
             <div className="mt-4 bg-emerald-500/15 border border-emerald-500/30 rounded-xl p-3 text-center">
               <span className="text-emerald-400 font-bold text-lg">
-                {discountPct}% {isEn ? "group discount applied!" : "grupnog popusta!"}
+                {discountPct}% {isEn ? "discount applied!" : "popusta!"}
               </span>
+              <div className="flex justify-center gap-3 mt-1 flex-wrap">
+                {people >= 6 && (
+                  <span className="text-emerald-300/70 text-xs">
+                    {"\uD83D\uDC65 "}
+                    {people >= 8 ? "15%" : "10%"} {isEn ? "group" : "grupni"}
+                  </span>
+                )}
+                {weekdayDiscount > 0 && (
+                  <span className="text-emerald-300/70 text-xs">
+                    {"\uD83D\uDCC5 "}10% {isEn ? "weekday" : "radni dan"}
+                  </span>
+                )}
+              </div>
               <p className="text-emerald-300/70 text-xs mt-1">
-                {isEn ? `You save ${discountAmount}€ total` : `Uštediš ${discountAmount}€ ukupno`}
+                {isEn
+                  ? `You save ${discountAmountWithPkg}€ total`
+                  : `Uštediš ${discountAmountWithPkg}€ ukupno`}
               </p>
             </div>
           )}
