@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import AdventureCard from "./components/AdventureCard";
 import HomeSchema from "./components/HomeSchema";
+import AdventureCard from "./components/AdventureCard";
 import GalleryPreview from "./components/GalleryPreview";
 import InquiryForm from "./components/InquiryForm";
 import Accordion from "./components/Accordion";
@@ -10,6 +10,9 @@ import { popularAdventures, premiumAdventures, dayTripAdventures, multiDayAdvent
 import type { Metadata } from "next";
 
 const BASE = "https://www.udahniavanturu.com";
+
+const tourRowScrollbarHide =
+  "[scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden";
 
 const faqs = [
   {
@@ -72,7 +75,7 @@ export default function Home() {
       <HomeSchema />
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-slate-950">
-        <div className="relative min-h-[78vh]">
+        <div className="relative min-h-[75vh]">
           <Image
             src="/hero.webp"
             alt="Udahni Avanturu hero"
@@ -86,59 +89,87 @@ export default function Home() {
             <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(16,185,129,0.08),transparent_55%)]" />
             <div className="absolute inset-x-0 bottom-0 h-40 sm:h-48 md:h-56 bg-gradient-to-b from-transparent to-slate-950" />
           </div>
-          <div className="relative mx-auto flex min-h-[78vh] max-w-6xl items-center justify-center px-4 py-20 text-center">
+          <div className="relative mx-auto flex min-h-[75vh] max-w-6xl items-center justify-center px-4 py-16 text-center">
             <div className="max-w-3xl">
-              <div className="mb-4 flex flex-col items-center gap-2 animate-fade-in-up">
-                <div className="flex flex-wrap justify-center gap-2 text-xs sm:text-sm">
-                  <span className="rounded-full border border-white/15 bg-white/5 px-3 py-1 text-slate-100/90">
-                    Hiking • Rafting • Kanjoning • Kampovanje
+              <div className="mb-6 flex flex-wrap justify-center gap-2 animate-fade-in-up">
+                {["Hiking", "Rafting", "Kanjoning", "Kampovanje"].map((tag) => (
+                  <span key={tag} className="rounded-full border border-white/20 bg-white/8 px-3 py-1 text-xs text-slate-200/90 backdrop-blur-sm">
+                    {tag}
                   </span>
-                </div>
-                <div className="flex flex-wrap justify-center gap-2 text-xs sm:text-sm">
-                  <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-slate-200/90">NP Sutjeska</span>
-                  <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-slate-200/90">Park prirode Piva</span>
-                  <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-slate-200/90">NP Durmitor</span>
-                </div>
+                ))}
+                {["NP Sutjeska", "Park prirode Piva", "NP Durmitor"].map((tag) => (
+                  <span key={tag} className="rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3 py-1 text-xs text-emerald-300/90 backdrop-blur-sm">
+                    {tag}
+                  </span>
+                ))}
               </div>
 
-              <h1 className="animate-fade-in-up-delay-1 text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white leading-[1.05] drop-shadow-[0_12px_40px_rgba(0,0,0,0.75)]">
+              <h1 className="animate-fade-in-up-delay-1 mt-2 text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white leading-[1.05] drop-shadow-[0_12px_40px_rgba(0,0,0,0.75)]">
                 Sutjeska te čeka.{" "}
                 <span className="text-emerald-400">Udahni avanturu.</span>
               </h1>
 
-              <p className="animate-fade-in-up-delay-2 mt-4 text-sm sm:text-base md:text-lg text-slate-100/90 leading-relaxed drop-shadow-[0_10px_30px_rgba(0,0,0,0.75)]">
+              <p className="animate-fade-in-up-delay-2 mt-5 mb-6 text-sm sm:text-base md:text-lg text-slate-100/90 leading-relaxed drop-shadow-[0_10px_30px_rgba(0,0,0,0.75)]">
                 Najviši vrh BiH. Najstarija prašuma Evrope. Najdublji kanjon Evrope. Divlja i netaknuta — ovo je Sutjeska.
               </p>
 
-              <div className="animate-fade-in-up-delay-3 mt-8 flex flex-col sm:flex-row gap-3 justify-center">
-                <a href="/kreiraj-avanturu"
-                   className="inline-flex items-center justify-center rounded-lg bg-emerald-500 px-6 py-3 font-semibold text-slate-950 hover:bg-emerald-400 transition shadow-[0_18px_45px_-20px_rgba(16,185,129,0.65)]">
+              <div className="animate-fade-in-up-delay-3 mt-8 flex flex-col items-center gap-3">
+                <a
+                  href="/kreiraj-avanturu"
+                  className="w-full sm:w-auto inline-flex items-center justify-center rounded-xl bg-emerald-500 px-8 py-4 text-base font-bold text-white hover:bg-emerald-400 transition shadow-[0_18px_45px_-20px_rgba(16,185,129,0.65)]"
+                >
                   Kreiraj svoju avanturu
                 </a>
-                <a href="#ture"
-                   className="inline-flex items-center justify-center rounded-lg border border-white/20 bg-white/5 px-6 py-3 font-semibold text-white hover:bg-white/10 transition">
-                  Pogledaj ture
+                <a
+                  href="#ture"
+                  className="inline-flex items-center gap-2 text-sm text-slate-300/70 hover:text-white transition"
+                >
+                  <span>Pogledaj ture</span>
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
                 </a>
               </div>
             </div>
           </div>
         </div>
+        <div className="grid grid-cols-3 border-t border-white/10 bg-slate-950/80 backdrop-blur-sm">
+          {[
+            { num: "10+", label: "godina iskustva" },
+            { num: "3000+", label: "zadovoljnih gostiju" },
+            { num: "3", label: "države" },
+          ].map((item) => (
+            <div key={item.label} className="flex flex-col items-center justify-center py-4 border-r border-white/10 last:border-r-0 px-2">
+              <span className="text-emerald-400 font-bold text-lg leading-none">{item.num}</span>
+              <span className="text-slate-500 text-xs mt-1 text-center leading-tight">{item.label}</span>
+            </div>
+          ))}
+        </div>
       </section>
 
       {/* Popular Tours Section */}
       <section id="ture" className="py-16 md:py-24 relative">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-slate-900/30 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-slate-900/30 to-transparent" />
         <div className="relative mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
           <div className="mb-12">
-            <h2 className="text-4xl font-bold text-white mb-3">Popularne ture</h2>
-            <div className="w-16 h-1 bg-emerald-400"></div>
+            <div className="mb-3">
+              <h2 className="text-3xl font-bold text-white">Popularne ture</h2>
+            </div>
+            <div className="w-14 h-1 bg-emerald-400 mb-3" />
+            <a href="/ture" className="inline-block text-sm text-emerald-400 hover:text-emerald-300 transition mb-3">
+              Sve ture →
+            </a>
             <p className="text-slate-400 mt-4 text-lg">
               Dolaziš sam, u paru ili sa ekipom — svejedno. Ovdje svi postanu ekipa.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            className={`flex snap-x snap-mandatory gap-8 overflow-x-auto md:grid md:grid-cols-2 md:snap-none md:overflow-x-visible lg:grid-cols-3 ${tourRowScrollbarHide}`}
+          >
             {popularAdventures.map((adventure) => (
-              <AdventureCard key={adventure.id} adventure={adventure} />
+              <div key={adventure.id} className="w-[280px] flex-shrink-0 snap-start md:w-auto">
+                <AdventureCard adventure={adventure} />
+              </div>
             ))}
           </div>
         </div>
@@ -146,18 +177,27 @@ export default function Home() {
 
       {/* Premium Tours Section */}
       <section id="premium" className="py-16 md:py-24 relative">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-slate-900/50 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-slate-900/50 to-transparent" />
         <div className="relative mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
           <div className="mb-12">
-            <h2 className="text-4xl font-bold text-white mb-3">Premium ture</h2>
-            <div className="w-16 h-1 bg-emerald-400"></div>
+            <div className="mb-3">
+              <h2 className="text-3xl font-bold text-white">Premium ture</h2>
+            </div>
+            <div className="w-14 h-1 bg-emerald-400 mb-3" />
+            <a href="/ture" className="inline-block text-sm text-emerald-400 hover:text-emerald-300 transition mb-3">
+              Sve ture →
+            </a>
           </div>
           <p className="text-slate-400 mt-4 text-lg mb-12">
             Dolaziš sam, u paru ili sa ekipom — svejedno. Ovdje svi postanu ekipa.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            className={`flex snap-x snap-mandatory gap-8 overflow-x-auto md:grid md:grid-cols-2 md:snap-none md:overflow-x-visible lg:grid-cols-3 ${tourRowScrollbarHide}`}
+          >
             {premiumAdventures.map((adventure) => (
-              <AdventureCard key={adventure.id} adventure={adventure} />
+              <div key={adventure.id} className="w-[280px] flex-shrink-0 snap-start md:w-auto">
+                <AdventureCard adventure={adventure} />
+              </div>
             ))}
           </div>
         </div>
@@ -165,18 +205,27 @@ export default function Home() {
 
       {/* Multi-day Tours Section */}
       <section id="visednevne" className="py-16 md:py-24 relative">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-slate-900/50 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-slate-900/50 to-transparent" />
         <div className="relative mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
           <div className="mb-12">
-            <h2 className="text-4xl font-bold text-white mb-3">Višednevne avanture</h2>
-            <div className="w-16 h-1 bg-emerald-400"></div>
+            <div className="mb-3">
+              <h2 className="text-3xl font-bold text-white">Višednevne avanture</h2>
+            </div>
+            <div className="w-14 h-1 bg-emerald-400 mb-3" />
+            <a href="/ture" className="inline-block text-sm text-emerald-400 hover:text-emerald-300 transition mb-3">
+              Sve ture →
+            </a>
           </div>
           <p className="text-center text-slate-400 mb-12 max-w-2xl mx-auto">
             Za one koji žele više od vikenda. Višednevne ture koje te stvarno promijene — planina, kanjon, jezero, autentični ljudi i iskustvo koje nosiš sa sobom zauvijek.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            className={`flex snap-x snap-mandatory gap-8 overflow-x-auto md:grid md:grid-cols-2 md:snap-none md:overflow-x-visible lg:grid-cols-3 ${tourRowScrollbarHide}`}
+          >
             {multiDayAdventures.map((adventure) => (
-              <AdventureCard key={adventure.id} adventure={adventure} />
+              <div key={adventure.id} className="w-[280px] flex-shrink-0 snap-start md:w-auto">
+                <AdventureCard adventure={adventure} />
+              </div>
             ))}
           </div>
         </div>
@@ -184,18 +233,27 @@ export default function Home() {
 
       {/* Day Trips Section */}
       <section id="izleti" className="py-16 md:py-24 relative">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-slate-900/30 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-slate-900/30 to-transparent" />
         <div className="relative mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
           <div className="mb-12">
-            <h2 className="text-4xl font-bold text-white mb-3">Jednodnevni izleti</h2>
-            <div className="w-16 h-1 bg-emerald-400"></div>
+            <div className="mb-3">
+              <h2 className="text-3xl font-bold text-white">Jednodnevni izleti</h2>
+            </div>
+            <div className="w-14 h-1 bg-emerald-400 mb-3" />
+            <a href="/ture" className="inline-block text-sm text-emerald-400 hover:text-emerald-300 transition mb-3">
+              Sve ture →
+            </a>
           </div>
           <p className="text-center text-slate-400 mb-12 max-w-2xl mx-auto">
             Jednodnevne ture po dogovoru - idealne za one koji imaju ograničeno vrijeme ali žele uživati u prirodi.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            className={`flex snap-x snap-mandatory gap-8 overflow-x-auto md:grid md:grid-cols-2 md:snap-none md:overflow-x-visible lg:grid-cols-3 ${tourRowScrollbarHide}`}
+          >
             {dayTripAdventures.map((adventure) => (
-              <AdventureCard key={adventure.id} adventure={adventure} />
+              <div key={adventure.id} className="w-[280px] flex-shrink-0 snap-start md:w-auto">
+                <AdventureCard adventure={adventure} />
+              </div>
             ))}
           </div>
         </div>

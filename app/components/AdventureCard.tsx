@@ -8,28 +8,29 @@ interface AdventureCardProps {
 }
 
 export default function AdventureCard({ adventure, linkPrefix = "/ture" }: AdventureCardProps) {
-  // Determine label based on category
-  let dateLabel = "";
-  let showCalendarIcon = false;
+  const hasDates = Array.isArray(adventure.dates) && adventure.dates.length > 0;
 
-  const campingTourSlugs = [
-    "kampovanje-trnovacko-jezero-maglic",
-    "kampovanje-zelengora-bregoč-jeep-safari",
-  ] as const;
-  const isCampingWithMultipleDates =
-    Array.isArray(adventure.dates) &&
-    adventure.dates.length > 1 &&
-    campingTourSlugs.includes(adventure.slug as (typeof campingTourSlugs)[number]);
+  let primaryBadge = { text: "", color: "emerald" as "emerald" | "blue" | "amber" };
+  let secondaryBadge = "";
 
-  if (isCampingWithMultipleDates) {
-    dateLabel = "Više termina";
-    showCalendarIcon = true;
+  if (adventure.category === "popular") {
+    if (hasDates) {
+      primaryBadge = { text: "Grupni polasci", color: "emerald" };
+      secondaryBadge = `${adventure.dates!.length} termina`;
+    }
   } else if (adventure.category === "premium") {
-    dateLabel = "Na upit";
+    if (hasDates) {
+      primaryBadge = { text: "Grupni polasci", color: "emerald" };
+      secondaryBadge = `${adventure.dates!.length} termina`;
+    } else {
+      primaryBadge = { text: "Na upit", color: "amber" };
+    }
   } else if (adventure.category === "multi-day") {
-    dateLabel = "Na upit";
+    primaryBadge = { text: "Privatna tura", color: "blue" };
+    secondaryBadge = "Vi birate datum";
   } else if (adventure.category === "day-trip") {
-    dateLabel = "Po dogovoru";
+    primaryBadge = { text: "Privatna tura", color: "blue" };
+    secondaryBadge = "Min. 4 osobe";
   }
 
   // Safe image check
@@ -62,27 +63,24 @@ export default function AdventureCard({ adventure, linkPrefix = "/ture" }: Adven
           )}
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
 
-          {/* Date Label Badge */}
-          {dateLabel && (
-            <div className="absolute top-4 right-4">
-              <span className="px-3 py-1.5 bg-emerald-500/90 backdrop-blur-sm text-white text-sm font-medium rounded-full flex items-center gap-1.5 shadow-lg">
-                {showCalendarIcon && (
-                  <svg
-                    className="w-3.5 h-3.5"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                    />
-                  </svg>
-                )}
-                {dateLabel}
+          {primaryBadge.text && (
+            <div className="absolute top-3 right-3 flex flex-col items-end gap-1.5">
+              <span
+                className={`px-2.5 py-1 text-xs font-semibold rounded-full shadow-lg ${
+                  primaryBadge.color === "emerald"
+                    ? "bg-emerald-500/90 text-white"
+                    : primaryBadge.color === "blue"
+                      ? "bg-blue-500/90 text-white"
+                      : "bg-amber-500/90 text-slate-900"
+                }`}
+              >
+                {primaryBadge.text}
               </span>
+              {secondaryBadge && (
+                <span className="px-2 py-0.5 text-xs bg-black/50 backdrop-blur-sm text-white/80 rounded-full">
+                  {secondaryBadge}
+                </span>
+              )}
             </div>
           )}
         </div>
@@ -136,18 +134,8 @@ export default function AdventureCard({ adventure, linkPrefix = "/ture" }: Adven
             )}
             {adventure.groupSize && (
               <div className="flex items-center text-slate-300">
-                <svg
-                  className="w-4 h-4 mr-1.5 text-slate-400"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
-                  />
+                <svg className="w-4 h-4 mr-1.5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                 </svg>
                 {adventure.groupSize}
               </div>
