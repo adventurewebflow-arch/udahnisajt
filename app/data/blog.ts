@@ -771,6 +771,72 @@ export const blogPosts: BlogPost[] = [
     coverAlt: "Zašto višednevna tura kroz BiH i Crnu Goru mijenja perspektivu",
     tags: ["višednevne ture", "BiH", "Crna Gora", "Maglić", "Tara", "Durmitor"],
   },
+  {
+    id: "10",
+    title: "Izlet iz Sarajeva do Maglića i Sutjeske — 2 sata i drugi svijet",
+    slug: "izlet-iz-sarajeva-sutjeska-maglic",
+    excerpt:
+      "Iz Sarajeva do najvišeg vrha BiH i najstarije prašume Evrope — svega 2 sata vožnje. Većina Sarajlija ne zna da im je jedna od najljepših avantura na Balkanu doslovno iza leđa.",
+    metadataTitle:
+      "Izlet iz Sarajeva do Maglića i Sutjeske — 2 sata vožnje | Udahni Avanturu",
+    metadataDescription:
+      "Put Sarajevo–NP Sutjeska, Maglić, Trnovačko jezero, Perućica, vikend tura i kako doći autom, autobusom ili organizovanim transferom.",
+    content: `
+    <p>Jedna od najčešćih rečenica koju čujemo od gostiju iz Sarajeva je: &quot;Nisam znao da je ovo tako blizu.&quot;</p>
+
+    <p>Dva sata. Toliko dijeli Sarajevo od Nacionalnog parka Sutjeska — od najvišeg vrha Bosne i Hercegovine, od najstarije prašume u Evropi, od planinskog jezera u obliku srca na 1.517 metara. Dva sata i — drugi svijet.</p>
+
+    <h2>Put od Sarajeva do Tjentišta</h2>
+    <p>Kreće se iz Sarajeva magistralnim putem prema Foči — kroz Kijevo, Trnovo, Dobro Polje, Miljevinu. Već na ovom dijelu puta počinje show: kanjon Bistrice. Stijene s obje strane, rijeka dolje, asfalt kroz sredinu. Nije to autoput — ali to mu je i prednost.</p>
+    <p>Od Foče do Tjentišta je još 30 kilometara. Krivine, planine okolo, rijeka Sutjeska uz put. Kad stigneš na Tjentište i vidiš Dolinu heroja pred sobom — shvatiš zašto su ti rekli da dođeš.</p>
+    <p><strong>Organizovani transfer:</strong> Ako ne voziš, organizujemo transfer iz Sarajeva direktno do Tjentišta. Sjedneš u kombi i budiš se u planini.</p>
+
+    <h2>Šta radiš kad stigneš</h2>
+
+    <h3>Jednodnevni izlet — Maglić i Trnovačko jezero (95€)</h3>
+    <p>Ovo je naša najpoznatija tura u regiji i nije slučajno.</p>
+    <p>Terenskim vozilom idemo do Prijevora na 1.520 metara. Odatle uspon na Maglić — 2.386 metara, najviši vrh BiH. Sa vrha se vide Durmitor, Zelengora, Jahorina, Volujak i — po lijepom vremenu — Jadransko more u daljini.</p>
+    <p>Zatim silazimo direktno na Trnovačko jezero. Jezero u obliku srca, tirkizna voda, tišina. Kod Miloša i Ilije možeš popiti kafu, pivo ili rakiju — u kafani na skoro 1.520 metara, pivo hladi se u buretu od 100 litara na izvorskoj vodi.</p>
+    <p>Tura traje cijeli dan. Fizički je zahtjevna ali nagrađujuća.</p>
+
+    <h3>Jednodnevni izlet — Prašuma Perućica i vodopad Skakavac (90€)</h3>
+    <p>Ako planinarenje nije tvoja stvar, ovo je alternativa koja ne prašta na impresivnosti.</p>
+    <p>Perućica je jedna od dvije preostale prašume u Evropi. Stabla stara 300 godina, tišina kakvu u gradu nikad nisi čuo, i na kraju — Skakavac. Vodopad koji pada 75 metara slobodnog pada. Zvuk, prskanje, moć.</p>
+    <p>Izlet traje oko 5-6 sati. Idealno za one koji žele prirodu bez zahtjevnog uspona.</p>
+
+    <h3>Vikend — Maglić, Trnovačko jezero i katuni (170€)</h3>
+    <p>Ovo je ono zbog čega se vraćaju.</p>
+    <p>Petak uveče dolazak, subota uspon na Maglić i spust na Trnovačko jezero gdje postavljamo kamp. Spavaš uz jezero bez mreže, bez signala, bez žurbe. Nedjelja ujutro — šetnja do katuna. Kamene kućice bez struje, ovce, konji, domaćin koji pravi uštipce i toplo mlijeko. Život kakav se živio prije 400 godina, na 1.500 metara nadmorske visine.</p>
+    <p>Nije to izlet. To je iskustvo koje nosiš sa sobom.</p>
+
+    <h2>Priča koja govori sama za sebe</h2>
+    <p>Prošle sezone stigao je Tim iz Holandije sa djevojkom — rezervisali jednodnevni izlet na Maglić i Trnovačko jezero. Standardna stvar.</p>
+    <p>Na kraju dana — nisu otišli.</p>
+    <p>Ostali su još četiri dana. Prvog dana Maglić i Trnovačko. Drugog Perućica i Skakavac. Trećeg Zelengora — jezera, vidikovci, tišina. Četvrtog — samo sjedili uz rijeku Sutjesku.</p>
+    <p>Ove godine dolaze ponovo. Na rasporedu je Volujak.</p>
+    <p>Nije ih zadržala infrastruktura ni hoteli. Zadržala ih je planina.</p>
+
+    <h2>Usputan: Pješčane piramide u Foči</h2>
+    <p>Ako kreneš autom iz Sarajeva, vrijedi napraviti kratku pauzu u Foči. Na izlazu iz grada, uz cestu, stoje prirodne pješčane piramide — geološka zanimljivost kakvu rijetko gdje možeš vidjeti. Desetak minuta zaustavljanja, fotografija i nastavljaš prema Tjentištu. Malo poznato mjesto, vrijedi vidjeti.</p>
+
+    <h2>Kako doći iz Sarajeva</h2>
+    <p><strong>Autom:</strong> Sarajevo → Kijevo → Trnovo → Dobro Polje → Miljevina → Foča → Tjentište. Oko 2 sata, 130 km.</p>
+    <p><strong>Autobusom:</strong> Iz Istočnog Sarajeva svakodnevne linije prema Foči — polasci u 7:45, 8:00, 9:00, 11:00, 13:00, 14:00, 16:00, 18:00, 19:00, 20:00h. Sa Foče organizujemo transfer do Tjentišta.</p>
+    <p><strong>Organizovani transfer:</strong> Direktan kombi iz Sarajeva do Tjentišta — organizujemo po dogovoru za grupe. Pitaj nas na WhatsApp +387 65 797 200.</p>
+    <p><strong>Aerodrom Sarajevo</strong> je samo 85 km od Tjentišta — najbliži aerodrom za dolazak u NP Sutjeska.</p>
+
+    <h2>Krenite</h2>
+    <p>Sutjeska je za Sarajlije ono što Alpe nisu za Bečlije — blizu, ali neistraženo. Dvije trećine Bosanaca nikad nije bilo na Magliću, a pred nosom im je.</p>
+    <p>Dođite jednom. Posle toga odlučite sami.</p>
+  `,
+    author: "Petar & Nevena",
+    date: "2026-04-22",
+    image: "/images/tours/blog/uspon-na-maglic-savjeti.webp",
+    imageAlt: "Pogled sa Maglića na Trnovačko jezero — NP Sutjeska",
+    coverImage: "/images/tours/blog/uspon-na-maglic-savjeti.webp",
+    coverAlt: "Pogled sa Maglića na Trnovačko jezero — NP Sutjeska",
+    tags: ["Sarajevo", "Maglić", "NP Sutjeska", "Trnovačko jezero", "izlet"],
+  },
 ];
 
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {

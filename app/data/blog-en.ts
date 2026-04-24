@@ -699,6 +699,72 @@ export const blogPostsEN: BlogPostEN[] = [
     coverAlt: "Why a multi-day adventure through Bosnia and Montenegro changes everything",
     tags: ["multi-day tours", "Bosnia", "Montenegro", "Maglić", "Tara", "Durmitor"],
   },
+  {
+    id: "10",
+    title: "Day Trip from Sarajevo to Maglić and Sutjeska — 2 Hours and Another World",
+    slug: "day-trip-sarajevo-maglic-sutjeska",
+    excerpt:
+      "From Sarajevo to the highest peak in Bosnia and Herzegovina and the oldest rainforest in Europe — just 2 hours by car. Most people visiting Sarajevo have no idea that one of the most beautiful adventures in the Balkans is right on their doorstep.",
+    metadataTitle:
+      "Day Trip from Sarajevo to Maglić and Sutjeska — 2 Hours | Udahni Avanturu",
+    metadataDescription:
+      "How to reach Sutjeska from Sarajevo: Maglić, Trnovačko Lake, Perućica, weekend tours, by car, bus or organised transfer.",
+    content: `
+    <p>One of the most common things we hear from guests who come through Sarajevo is: &quot;I had no idea this was so close.&quot;</p>
+
+    <p>Two hours. That is all that separates Sarajevo from Sutjeska National Park — from the highest peak in Bosnia and Herzegovina, from one of the last primeval forests in Europe, from a heart-shaped mountain lake at 1,517 metres. Two hours and another world entirely.</p>
+
+    <h2>The Drive from Sarajevo to Tjentište</h2>
+    <p>You leave Sarajevo on the main road towards Foča — through Kijevo, Trnovo, Dobro Polje and Miljevina. The scenery starts before you even arrive: the Bistrica canyon. Cliffs on both sides, the river below, the road cutting through the middle. It is not a motorway — but that is exactly what makes it memorable.</p>
+    <p>From Foča it is another 30 kilometres to Tjentište. Winding roads, mountains on all sides, the Sutjeska river running alongside. When you arrive at Tjentište and see the Valley of Heroes ahead of you, you understand why people told you to come.</p>
+    <p><strong>Organised transfer:</strong> If you are not driving, we organise transfers from Sarajevo directly to Tjentište. You sit back, and wake up in the mountains.</p>
+
+    <h2>What to Do When You Arrive</h2>
+
+    <h3>Day trip — Maglić and Trnovačko Lake (€95)</h3>
+    <p>This is our most well-known tour in the region, and not by accident.</p>
+    <p>We drive in off-road vehicles to Prijevor at 1,520 metres above sea level. From there, the ascent to Maglić — 2,386 metres, the highest peak in Bosnia and Herzegovina. From the summit you can see Durmitor, Zelengora, Jahorina, Volujak and — on a clear day — the Adriatic Sea in the distance.</p>
+    <p>Then we descend directly to Trnovačko Lake. A heart-shaped lake, turquoise water, complete silence. At Miloš and Ilija&apos;s place you can have a coffee, a beer or a rakija — in a mountain café at nearly 1,520 metres, where the beer is cooled in a 100-litre barrel of spring water.</p>
+    <p>The tour takes a full day. Physically demanding, but the reward matches the effort.</p>
+
+    <h3>Day trip — Perućica Rainforest and Skakavac Waterfall (€90)</h3>
+    <p>If hiking is not your thing, this is the alternative — and it does not disappoint.</p>
+    <p>Perućica is one of only two remaining primeval forests in Europe. Trees over 300 years old, a silence you simply cannot find in a city, and at the end — Skakavac. A waterfall falling 75 metres in free fall. Sound, spray, raw power.</p>
+    <p>The excursion takes around 5-6 hours. Perfect for those who want nature without a demanding ascent.</p>
+
+    <h3>Weekend — Maglić, Trnovačko Lake and mountain homesteads (€170)</h3>
+    <p>This is what people come back for.</p>
+    <p>Friday evening arrival, Saturday ascent to Maglić and descent to Trnovačko Lake where we pitch camp. You sleep beside the lake without signal, without noise, without any rush. Sunday morning — a walk to the katun homesteads. Stone houses without electricity, sheep, horses, a host making fresh fried dough and warm milk. A way of life unchanged for 400 years, at 1,500 metres above sea level.</p>
+    <p>This is not a day trip. It is an experience you carry with you.</p>
+
+    <h2>The Story That Says It All</h2>
+    <p>Last season Tim arrived from the Netherlands with his girlfriend — they had booked a one-day trip to Maglić and Trnovačko Lake. Standard plan.</p>
+    <p>At the end of the day, they did not leave.</p>
+    <p>They stayed for four more days. Day one: Maglić and Trnovačko. Day two: Perućica and Skakavac. Day three: Zelengora — lakes, viewpoints, silence. Day four: sitting beside the Sutjeska river.</p>
+    <p>This year they are coming back. On the agenda: Volujak.</p>
+    <p>It was not the infrastructure or the hotels that kept them. It was the mountain.</p>
+
+    <h2>On the Way: Sand Pyramids in Foča</h2>
+    <p>If you are driving from Sarajevo, it is worth making a brief stop in Foča. On the edge of town, beside the road, stand natural sand pyramids — a geological curiosity you rarely encounter anywhere else. Ten minutes, a few photos, and you continue towards Tjentište. Little known, worth seeing.</p>
+
+    <h2>How to Get There from Sarajevo</h2>
+    <p><strong>By car:</strong> Sarajevo → Kijevo → Trnovo → Dobro Polje → Miljevina → Foča → Tjentište. Around 2 hours, 130 km.</p>
+    <p><strong>By bus:</strong> From East Sarajevo there are daily services to Foča — departures at 07:45, 08:00, 09:00, 11:00, 13:00, 14:00, 16:00, 18:00, 19:00, 20:00. From Foča we organise the transfer to Tjentište.</p>
+    <p><strong>Organised transfer:</strong> Direct minibus from Sarajevo to Tjentište — organised on request for groups. Contact us on WhatsApp +387 65 797 200.</p>
+    <p><strong>Sarajevo Airport</strong> is just 85 km from Tjentište — the closest airport to Sutjeska National Park.</p>
+
+    <h2>Come and See</h2>
+    <p>Sutjeska is for people from Sarajevo what the Alps are not for people from Vienna — close, but unexplored. A two-hour drive separates the city from one of the most extraordinary national parks in Europe.</p>
+    <p>Come once. After that, you will decide for yourself.</p>
+  `,
+    author: "Petar & Nevena",
+    date: "2026-04-22",
+    image: "/images/tours/blog/uspon-na-maglic-savjeti.webp",
+    imageAlt: "View from Maglić summit towards Trnovačko Lake — Sutjeska National Park",
+    coverImage: "/images/tours/blog/uspon-na-maglic-savjeti.webp",
+    coverAlt: "View from Maglić summit towards Trnovačko Lake — Sutjeska National Park",
+    tags: ["Sarajevo", "Maglić", "Sutjeska National Park", "Trnovačko Lake", "day trip"],
+  },
 ];
 
 export function getBlogPostENBySlug(slug: string): BlogPostEN | undefined {
