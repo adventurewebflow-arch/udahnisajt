@@ -479,11 +479,11 @@ Tri dana u srcu Nacionalnog parka Sutjeska — jednog od posljednjih netaknutih 
 
 Petak je za dolazak i prve utiske. Tjentište te dočekuje Dolinom heroja, rijekom Sutjeskom i najvećim otvorenim bazenom na Balkanu. Uveče lagana muzika i druženje uz kamp.
 
-Subota je tvoja — biraš između dvije opcije. Trnovačko jezero, jedno od najljepših visokoplaninskih jezera na Balkanu, u obliku srca na granici BiH i Crne Gore. Ili Prašuma Perućica i vodopad Skakavac — jedna od dvije preostale prašume u Evropi, i vodopad koji pada 75 metara slobodnog pada. Obje opcije su uključene u cijenu.
+Subota je za Trnovačko jezero. Pješačimo od Prijevora do jezera u obliku srca na granici BiH i Crne Gore, svraćamo do katuna gdje se živi bez struje i signala, i završavamo na vidikovcu iznad Prašume Perućice. Pun dan u planini.
 
-Nedjelja je za Zelengoru — ko želi. Lagana tura do vidikovca Borić i planinskih jezera Donje Bare. Ko ne želi, slobodno vrijeme i polazak kući kada bude spreman.
+Nedjelja je za Zelengoru — vidikovac Borić i planinska jezera Donje Bare. Lagana tura, idealna za dan poslije Trnovačkog. Završavamo oko 15h i krenemo kući.
 
-Smještaj biraš i ti — bungalov sa zajedničkim kupatilom ili šator (oprema obezbijeđena). Razlika je samo 20€.`,
+Smještaj biraš ti — bungalov sa zajedničkim kupatilom ili šator (oprema obezbijeđena). Razlika je samo 20€.`,
     duration: "3 dana / 2 noći",
     difficulty: "Lako - Srednje",
     price: "od 150€ po osobi",
