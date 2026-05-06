@@ -475,7 +475,7 @@ export const adventures: Adventure[] = [
       "Tri dana u srcu NP Sutjeska. Trnovačko jezero, katuni bez struje i mreže, vidikovac Perućice i Zelengora. Mi se pobrinemo za sve.",
     aboutTour: `Vikend kakav treba.
 
-Tri dana u srcu Nacionalnog parka Sutjeska — jednog od posljednjih netaknutih prirodnih rezervata u Evropi. Bez komplikovane logistike, bez puno planiranja. Ti kaži šta hoćeš, mi se pobrinemo za sve ostalo.
+Tri dana u srcu Nacionalnog parka Sutjeska i Parka prirode Piva (CG) — jednih od posljednjih netaknutih prirodnih rezervata u Evropi.
 
 Petak je za dolazak i prve utiske. Tjentište te dočekuje Dolinom heroja, rijekom Sutjeskom i najvećim otvorenim bazenom na Balkanu. Uveče lagana muzika i druženje uz kamp.
 
@@ -483,7 +483,7 @@ Subota je za Trnovačko jezero. Pješačimo od Prijevora do jezera u obliku srca
 
 Nedjelja je za Zelengoru — vidikovac Borić i planinska jezera Donje Bare. Lagana tura, idealna za dan poslije Trnovačkog. Završavamo oko 15h i krenemo kući.
 
-Smještaj biraš ti — bungalov sa zajedničkim kupatilom ili šator (oprema obezbijeđena). Razlika je samo 20€.`,
+Smještaj biraš ti — bungalov sa zajedničkim kupatilom ili šator (oprema obezbijeđena). PDF možeš preuzeti na kraju stranice.`,
     duration: "3 dana / 2 noći",
     difficulty: "Lako - Srednje",
     price: "od 150€ po osobi",
