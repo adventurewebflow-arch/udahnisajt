@@ -411,7 +411,7 @@ Accommodation is also your choice — a bungalow with shared bathroom or a tent 
       "Accommodation at Tjentište camp — bungalow or tent",
       "Saturday: Trnovačko Lake OR Perućica Rainforest (your choice)",
       "Sunday: Zelengora — Borić viewpoint and Donje Bare (optional, +€20)",
-      "3 meals (2 breakfasts + 1 dinner) + 2 lunch packs",
+      "5 meals (2 breakfasts + 1 dinner) + 2 lunch packs",
       "Off-road vehicle transfers",
       "Sutjeska NP and Piva Nature Park entry fees",
       "Licensed guides",

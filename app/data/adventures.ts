@@ -493,7 +493,7 @@ Smještaj biraš i ti — bungalov sa zajedničkim kupatilom ili šator (oprema 
       "Smještaj u kampu Tjentište — bungalov ili šator",
       "Subota: Trnovačko jezero ILI Prašuma Perućica (ti biraš)",
       "Nedjelja: Zelengora — vidikovac Borić i Donje Bare (opciono, +20€)",
-      "3 obroka (2 doručka + 1 večera) + 2 lunch paketa",
+      "5 obroka (2 doručka + 1 večera) + 2 lunch paketa",
       "Prevoz terenskim vozilima",
       "Ulaznice NP Sutjeska i PP Piva",
       "Licencirani vodiči",
