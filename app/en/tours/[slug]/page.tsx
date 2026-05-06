@@ -186,7 +186,7 @@ export default async function TourDetailPageEN({ params }: { params: Promise<{ s
             {adventure.slug === "vikend-u-divljini" && (
               <div className="mt-6">
                 <a
-                  href="/vikend_divljina.pdf"
+                  href="/vikend_divljina1.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/30 rounded-xl px-5 py-3 text-emerald-400 hover:bg-emerald-500/20 transition text-sm font-medium"
