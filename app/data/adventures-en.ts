@@ -380,6 +380,98 @@ export const adventuresEN: Adventure[] = [
       }
     ]
   },
+  {
+    id: "vikend-divljina-01",
+    slug: "vikend-u-divljini",
+    title: "Weekend in the Wild",
+    category: "popular",
+    location: "Sutjeska NP / Tjentište",
+    imagePosition: "center 30%",
+    image: "/images/tours/vikend-divljina/vikend-u-divljini-hero.webp",
+    imageAlt: "Weekend in the Wild – Sutjeska National Park, Tjentište",
+    shortDescription:
+      "Three days in the heart of Sutjeska NP. You choose the activities — Trnovačko Lake or Perućica Rainforest, with Zelengora as an option. We take care of everything else.",
+    aboutTour: `A weekend done right.
+
+Three days in the heart of Sutjeska National Park — one of the last untouched natural reserves in Europe. No complicated logistics, no extensive planning. You tell us what you want, we take care of the rest.
+
+Friday is for arrival and first impressions. Tjentište welcomes you with the Valley of Heroes, the Sutjeska river and the largest open-air swimming pool in the Balkans. In the evening, relaxed music and socialising at camp.
+
+Saturday is yours — you choose between two options. Trnovačko Lake, one of the most beautiful high-altitude lakes in the Balkans, heart-shaped on the border of Bosnia and Herzegovina and Montenegro. Or Perućica Rainforest and Skakavac Waterfall — one of only two remaining primeval forests in Europe, and a waterfall dropping 75 metres straight down. Both options are included in the price.
+
+Sunday is for Zelengora — if you want. A relaxed tour to Borić viewpoint and Donje Bare mountain lakes. Those who prefer can have free time and head home whenever they are ready.
+
+Accommodation is also your choice — a bungalow with shared bathroom or a tent (equipment provided). The difference is just €20.`,
+    duration: "3 days / 2 nights",
+    difficulty: "Easy - Moderate",
+    price: "from €140 per person",
+    groupSize: "6–30 people",
+    dates: ["22.-24.05.", "05.-07.06.", "13.-15.06.", "19.-21.06.", "24.-26.07."],
+    highlights: [
+      "Accommodation at Tjentište camp — bungalow or tent",
+      "Saturday: Trnovačko Lake OR Perućica Rainforest (your choice)",
+      "Sunday: Zelengora — Borić viewpoint and Donje Bare (optional, +€20)",
+      "3 meals (2 breakfasts + 1 dinner) + 2 lunch packs",
+      "Off-road vehicle transfers",
+      "Sutjeska NP and Piva Nature Park entry fees",
+      "Licensed guides",
+      "€50 deposit, remainder on arrival",
+    ],
+    itinerary: [
+      {
+        dayTitle: "Day 1 (Friday) — Arrival and first impressions",
+        description:
+          "Arrival at camp at any time. Check-in to bungalow or tent.\n\nFree time to explore Tjentište — the Sutjeska Battle Monument, one of the most impressive monumental sculptures in Europe. The Memorial Complex and Sutjeska NP Museum. A walk along the Sutjeska river, crystal clear water and untouched nature. The largest open-air swimming pool in the Balkans.\n\nIn the evening, relaxed music and socialising at camp.",
+      },
+      {
+        dayTitle: "Day 2 (Saturday) — Hiking | You choose",
+        description:
+          "Breakfast at the camp restaurant from 07:00 to 08:00. After breakfast we collect lunch packs and depart by off-road vehicles at 08:15.\n\nOPTION A — Heart-shaped Trnovačko Lake\nHiking from Prijevor to Trnovačko Lake — 5 kilometres one way, around 1h 40min walking. One of the most beautiful high-altitude lakes in the Balkans, on the border of Bosnia and Herzegovina and Montenegro. Free time at the lake, viewpoint and an unforgettable view. Lunch packs included. Included in the tour price.\n\nOPTION B — Perućica Rainforest\nOne of only two remaining primeval forests in Europe. We walk to Skakavac Waterfall which falls from a height of 75 metres and return by the same path. This tour is more demanding than Trnovačko Lake. Lunch packs included. Included in the tour price.\n\nEvening: return to camp, dinner and free time.",
+      },
+      {
+        dayTitle: "Day 3 (Sunday) — Zelengora (optional) and departure",
+        description:
+          "Breakfast at the camp restaurant from 08:00 to 09:00.\n\nZELENGORA — Borić Viewpoint and Donje Bare (+€20 per person)\nOrganised transfer by off-road vehicles. A relaxed tour, ideal for the day after more demanding hiking. Borić viewpoint, one of the finest viewpoints in Sutjeska NP, and Donje Bare mountain lakes. For those who want more — ascent to Uglješin vrh (1h30min, panorama of Maglić, Volujak, Jahorina, Treskavica). Lunch packs included. Ends around 15:00.\n\nThose who prefer to skip Zelengora have free time and can head home whenever they are ready.",
+      },
+    ],
+    includes: [
+      "2 nights accommodation at Tjentište camp (bungalow or tent of your choice)",
+      "3 meals (2 breakfasts + 1 dinner at camp restaurant)",
+      "2 lunch packs (Saturday and Sunday)",
+      "Off-road vehicle transfers",
+      "Licensed guides",
+      "Sutjeska NP and Piva Nature Park entry fees",
+      "Tent equipment (if tent option selected)",
+    ],
+    excludes: [
+      "Zelengora Sunday (+€20 per person, optional)",
+      "Personal equipment (hiking boots, backpack)",
+      "Drinks",
+      "Costs outside the programme",
+    ],
+    faqs: [
+      {
+        q: "Which accommodation should I choose — bungalow or tent?",
+        a: "The bungalow (€160) has a shared bathroom at the camp — more comfortable, in a solid structure. The tent (€140) uses our equipment, set up at the camp, with camp toilets. Both options have the same programme and the same meals. If you need a room with a private bathroom, contact us to check availability.",
+      },
+      {
+        q: "Which Saturday activity should I choose — Trnovačko Lake or Perućica?",
+        a: "Trnovačko Lake is the easier option — 5km walking one way, around 1h 40min. Suitable for all ages. Perućica is more demanding — a longer tour through the rainforest to Skakavac Waterfall (75m). If you are in good physical shape and have never been in a primeval forest — Perućica is an unforgettable experience. If you are coming with children or prefer a lighter tour — Trnovačko Lake.",
+      },
+      {
+        q: "Do I have to go to Zelengora on Sunday?",
+        a: "No, Zelengora is completely optional. Those who want to go pay +€20 per person, those who prefer not to have free time and can leave whenever they are ready. No pressure.",
+      },
+      {
+        q: "How do I book?",
+        a: "Contact us on WhatsApp +387 65 797 200 or by email at udahniavanturu@gmail.com. Tell us which dates, which accommodation (bungalow or tent), which Saturday activity and whether you want Zelengora. Booking is confirmed with a €50 deposit per person, the remainder is paid on arrival.",
+      },
+      {
+        q: "Can children join this tour?",
+        a: "Yes, the tour is suitable for children accompanied by parents. The programme is flexible — we adapt the pace to the group.",
+      },
+    ],
+  },
   // PREMIUM TOURS
   {
     id: "5",
