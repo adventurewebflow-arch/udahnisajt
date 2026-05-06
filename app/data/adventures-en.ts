@@ -406,7 +406,7 @@ Accommodation is also your choice — a bungalow with shared bathroom or a tent 
     difficulty: "Easy - Moderate",
     price: "from €140 per person",
     groupSize: "6–30 people",
-    dates: ["22.-24.05.", "05.-07.06.", "13.-15.06.", "19.-21.06.", "24.-26.07."],
+    dates: ["05.-07.07.", "24.-27.07."],
     highlights: [
       "Accommodation at Tjentište camp — bungalow or tent",
       "Saturday: Trnovačko Lake OR Perućica Rainforest (your choice)",

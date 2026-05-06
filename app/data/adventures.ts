@@ -488,7 +488,7 @@ Smještaj biraš i ti — bungalov sa zajedničkim kupatilom ili šator (oprema 
     difficulty: "Lako - Srednje",
     price: "od 140€ po osobi",
     groupSize: "6–30 osoba",
-    dates: ["22.-24.05.", "05.-07.06.", "13.-15.06.", "19.-21.06.", "24.-26.07."],
+    dates: ["05.-07.07.", "24.-27.07."],
     highlights: [
       "Smještaj u kampu Tjentište — bungalov ili šator",
       "Subota: Trnovačko jezero ILI Prašuma Perućica (ti biraš)",
