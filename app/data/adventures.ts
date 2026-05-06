@@ -472,7 +472,7 @@ export const adventures: Adventure[] = [
     image: "/images/tours/vikend-divljina/vikend-u-divljini-hero.webp",
     imageAlt: "Vikend u divljini – NP Sutjeska, Tjentište",
     shortDescription:
-      "Tri dana u srcu NP Sutjeska. Ti biraš aktivnosti — Trnovačko jezero ili Prašuma Perućica, sa opcijom Zelengore. Mi se pobrinemo za sve ostalo.",
+      "Tri dana u srcu NP Sutjeska. Trnovačko jezero, katuni bez struje i mreže, vidikovac Perućice i Zelengora. Mi se pobrinemo za sve.",
     aboutTour: `Vikend kakav treba.
 
 Tri dana u srcu Nacionalnog parka Sutjeska — jednog od posljednjih netaknutih prirodnih rezervata u Evropi. Bez komplikovane logistike, bez puno planiranja. Ti kaži šta hoćeš, mi se pobrinemo za sve ostalo.
@@ -486,13 +486,13 @@ Nedjelja je za Zelengoru — ko želi. Lagana tura do vidikovca Borić i planins
 Smještaj biraš i ti — bungalov sa zajedničkim kupatilom ili šator (oprema obezbijeđena). Razlika je samo 20€.`,
     duration: "3 dana / 2 noći",
     difficulty: "Lako - Srednje",
-    price: "od 140€ po osobi",
+    price: "od 150€ po osobi",
     groupSize: "6–30 osoba",
     dates: ["05.-07.07.", "24.-26.07."],
     highlights: [
       "Smještaj u kampu Tjentište — bungalov ili šator",
       "Subota: Trnovačko jezero ILI Prašuma Perućica (ti biraš)",
-      "Nedjelja: Zelengora — vidikovac Borić i Donje Bare (opciono, +20€)",
+      "Nedjelja: Zelengora — vidikovac Borić i Donje Bare",
       "5 obroka (2 doručka + 1 večera) + 2 lunch paketa",
       "Prevoz terenskim vozilima",
       "Ulaznice NP Sutjeska i PP Piva",
@@ -506,14 +506,14 @@ Smještaj biraš i ti — bungalov sa zajedničkim kupatilom ili šator (oprema 
           "Dolazak u kamp u bilo koje doba. Smještaj u bungalov ili šator.\n\nSlobodno vrijeme za obilazak Tjentišta — Spomenik Bitke na Sutjesci, jedan od najimpresivnijih monumentalnih skulptura u Evropi. Memorijalni kompleks i Muzej NP Sutjeska. Šetnja uz rijeku Sutjesku, kristalno čista voda i netaknuta priroda. Najveći otvoreni bazen na Balkanu.\n\nUveče lagana muzika i druženje uz kamp.",
       },
       {
-        dayTitle: "Dan 2 (Subota) — Hajking | Biraš opciju",
+        dayTitle: "Dan 2 (Subota) — Trnovačko jezero, katuni i vidikovac Perućice",
         description:
-          "Doručak u restoranu kampa od 07:00 do 08:00. Nakon doručka preuzimamo lunch pakete i krećemo terenskim vozilima u 08:15.\n\nOPCIJA A — Trnovačko jezero u obliku srca\nHajking od Prijevora do Trnovačkog jezera — 5 kilometara u jednom pravcu, oko 1h 40min hoda. Jedno od najljepših visokoplaninskih jezera na Balkanu, na granici BiH i Crne Gore. Na jezeru slobodno vrijeme, vidikovac i nezaboravan pogled. Lunch paketi uključeni. Uključeno u cijenu aranžmana.\n\nOPCIJA B — Prašuma Perućica\nJedna od dvije preostale prašume u Evropi. Odlazimo do vodopada Skakavac koji pada sa visine od 75 metara i vraćamo se istim putem. Tura je zahtjevnija od Trnovačkog jezera. Lunch paketi uključeni. Uključeno u cijenu aranžmana.\n\nUveče povratak u kamp, večera i slobodno vrijeme.",
+          "Doručak u restoranu kampa od 07:00 do 08:00. Nakon doručka preuzimamo lunch pakete i krećemo terenskim vozilima u 08:15 prema Prijevoru.\n\nOd Prijevora pješačimo do Trnovačkog jezera — 5 kilometara u jednom pravcu, oko 1h 40min hoda. Jedno od najljepših visokoplaninskih jezera na Balkanu, u obliku srca na granici BiH i Crne Gore. Na jezeru slobodno vrijeme za odmor, fotografisanje i uživanje u tišini planine.\n\nIćićemo do katuna ispod Volujaka — kamene kućice bez struje i signala, ovce, konji, domaćini koji žive ovako već decenijama. Život kakav se živio prije 400 godina, na 1.500 metara.\n\nZatim kada se vratimo do naših vozila posjetićemo vidikovce iznad Prašume Perućice. Pogled na jednu od dvije preostale prašume u Evropi i vodopad Skakavac u daljini — bez ulaska u prašumu, ali sa pogledom koji govori sve.\n\nPovratak u kamp poslijepodne, večera i slobodno vrijeme.",
       },
       {
-        dayTitle: "Dan 3 (Nedjelja) — Zelengora (opciono) i povratak",
+        dayTitle: "Dan 3 (Nedjelja) — Zelengora, vidikovac Borić i Donje Bare",
         description:
-          "Doručak u restoranu kampa od 08:00 do 09:00.\n\nZELENGORA — Vidikovac Borić i Donje Bare (+20€ po osobi)\nOrganizovan prevoz terenskim vozilima. Lagana tura, idealna za dan poslije zahtjevnijeg hajkinga. Vidikovac Borić, jedan od najljepših vidikovaca u NP Sutjeska, i planinska jezera Donje Bare. Ko želi više — uspon na Uglješin vrh (1h30min, panorama na Maglić, Volujak, Jahorinu, Treskavicu). Lunch paketi uključeni. Završava se oko 15h.\n\nKo ne želi Zelengoru — slobodno vrijeme i polazak kući kada bude spreman.",
+          "Doručak u restoranu kampa od 08:00 do 09:00. Krećemo terenskim vozilima prema Zelengori.\n\nVidikovac Borić — jedan od najljepših vidikovaca u NP Sutjeska. Sa Borića se vidi kanjon Sutjeske, Maglić, Volujak, Jahorina i Treskavica. Nastavljamo do planinskih jezera Donje Bare. Ko želi više — uspon na Uglješin vrh (1h30min, panorama na sve strane).\n\nLunch paketi uključeni. Završavamo oko 15h i vraćamo se u kamp. Polazak kući.",
       },
     ],
     includes: [
@@ -526,7 +526,6 @@ Smještaj biraš i ti — bungalov sa zajedničkim kupatilom ili šator (oprema 
       "Oprema za šator (ako je odabrana šator opcija)",
     ],
     excludes: [
-      "Zelengora nedjelja (+20€ po osobi, opciono)",
       "Lična oprema (patike, ruksak)",
       "Pića",
       "Troškovi izvan programa",
@@ -541,12 +540,8 @@ Smještaj biraš i ti — bungalov sa zajedničkim kupatilom ili šator (oprema 
         a: "Trnovačko jezero je lakša opcija — 5km pješačenja u jednom pravcu, oko 1h 40min. Idealno za sve uzraste. Perućica je zahtjevnija — duža tura kroz prašumu do vodopada Skakavac (75m). Ako si u dobroj fizičkoj formi i nikad nisi bio u prašumi — Perućica je nezaboravno iskustvo. Ako dolaziš sa djecom ili preferiraš lakšu turu — Trnovačko jezero.",
       },
       {
-        q: "Moram li ići na Zelengoru u nedjelju?",
-        a: "Ne, Zelengora je potpuno opciona. Ko želi ide (+20€ po osobi), ko ne želi ima slobodno vrijeme i može krenuti kući kada bude spreman. Nema pritiska.",
-      },
-      {
         q: "Kako da rezervišem mjesto?",
-        a: "Javi nam se na WhatsApp +387 65 797 200 ili emailom udahniavanturu@gmail.com. Reci nam koji termin, koji smještaj (bungalov ili šator), koju aktivnost u subotu i da li ideš na Zelengoru. Rezervacija se potvrđuje avansom od 50€ po osobi, ostatak plaćaš po dolasku.",
+        a: "Javi nam se na WhatsApp +387 65 797 200 ili emailom udahniavanturu@gmail.com. Reci nam koji termin i koji smještaj (bungalov ili šator). Rezervacija se potvrđuje avansom od 50€ po osobi, ostatak plaćaš po dolasku.",
       },
       {
         q: "Može li dijete ići na ovu turu?",
