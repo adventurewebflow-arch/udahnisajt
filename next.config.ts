@@ -164,6 +164,18 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
 
+      // EN ture bez zapisa u adventures-en.ts — privremeno na EN početnu (izbjegava 404)
+      {
+        source: "/en/tours/vikend-na-durmitoru",
+        destination: "/en",
+        permanent: true,
+      },
+      {
+        source: "/en/tours/teambuilding-sutjeska",
+        destination: "/en",
+        permanent: true,
+      },
+
       // ─── Ostale stranice ──────────────────────────────────────────────────
       // FIX #5: uklonjen /ture → /#ture (bio redirect chain za sve gore)
       // /faq i /contact vode na homepage direktno
