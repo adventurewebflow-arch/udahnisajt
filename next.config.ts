@@ -105,6 +105,65 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
 
+      // ─── EN blog: srpski slugovi → engleski slugovi ─────────────────────────
+      {
+        source: "/en/blog/trnovacko-jezero-vodic",
+        destination: "/en/blog/trnovacko-lake-guide",
+        permanent: true,
+      },
+      {
+        source: "/en/blog/uspon-na-maglic-savjeti",
+        destination: "/en/blog/maglic-hike-guide",
+        permanent: true,
+      },
+      {
+        source: "/en/blog/sta-ponijeti-np-sutjeska",
+        destination: "/en/blog/what-to-pack-sutjeska-national-park",
+        permanent: true,
+      },
+      {
+        source: "/en/blog/prasuma-perucica-sta-treba-znati",
+        destination: "/en/blog/perucica-rainforest-guide",
+        permanent: true,
+      },
+      {
+        source: "/en/blog/zelengora-jezera-vidikovci-vodic",
+        destination: "/en/blog/zelengora-lakes-hiking-guide",
+        permanent: true,
+      },
+      {
+        source: "/en/blog/vodopad-skakavac-perucica-vodic",
+        destination: "/en/blog/skakavac-waterfall-guide",
+        permanent: true,
+      },
+      {
+        source: "/en/blog/prvomajska-avantura-utisci",
+        destination: "/en/blog/may-day-adventure-recap",
+        permanent: true,
+      },
+      {
+        source: "/en/blog/zasto-je-sutjeska-najbolja-destinacija",
+        destination: "/en/blog/why-sutjeska-is-the-best-destination",
+        permanent: true,
+      },
+      {
+        source: "/en/blog/visednevne-avanture-bih-crna-gora",
+        destination: "/en/blog/multi-day-adventures-bosnia-montenegro",
+        permanent: true,
+      },
+      {
+        source: "/en/blog/izlet-iz-sarajeva-sutjeska-maglic",
+        destination: "/en/blog/day-trip-sarajevo-maglic-sutjeska",
+        permanent: true,
+      },
+
+      // SR blog: engleski slug (pogrešan jezik u putanji) → ispravan srpski slug
+      {
+        source: "/vodici/day-trip-sarajevo-maglic-sutjeska",
+        destination: "/vodici/izlet-iz-sarajeva-sutjeska-maglic",
+        permanent: true,
+      },
+
       // ─── Ostale stranice ──────────────────────────────────────────────────
       // FIX #5: uklonjen /ture → /#ture (bio redirect chain za sve gore)
       // /faq i /contact vode na homepage direktno
