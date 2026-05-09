@@ -6,6 +6,9 @@ import { galleryImages } from "../data/gallery";
 
 const SWIPE_THRESHOLD = 50;
 
+const LIGHTBOX_BLUR_DATA_URL =
+  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN88f9hDwADYwGFJcJ6WQAAAABJRU5ErkJggg==";
+
 export default function GalerijaPage() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const touchStartXRef = useRef<number | null>(null);
@@ -62,12 +65,12 @@ export default function GalerijaPage() {
       <div className="max-w-7xl mx-auto px-4 py-12">
         <h1 className="text-4xl font-bold mb-8">Galerija</h1>
 
-        <div className="flex gap-4 overflow-x-auto md:grid md:grid-cols-4 md:gap-6">
+        <div className="grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-6">
           {galleryImages.map((img, idx) => (
             <button
               key={img.src}
               type="button"
-              className="relative min-w-[80%] md:min-w-0 aspect-[4/3] rounded-xl overflow-hidden bg-gray-800 border border-white/10"
+              className="relative aspect-square rounded-xl overflow-hidden bg-gray-800 border border-white/10"
               onClick={() => setActiveIndex(idx)}
             >
               <Image
@@ -76,6 +79,8 @@ export default function GalerijaPage() {
                 fill
                 className="object-cover hover:scale-105 transition-transform"
                 sizes="(max-width: 768px) 80vw, 25vw"
+                loading={idx < 4 ? "eager" : "lazy"}
+                priority={idx < 4}
               />
             </button>
           ))}
@@ -129,6 +134,9 @@ export default function GalerijaPage() {
                 fill
                 className="object-contain pointer-events-none"
                 sizes="100vw"
+                placeholder="blur"
+                blurDataURL={LIGHTBOX_BLUR_DATA_URL}
+                priority
               />
             </div>
           </div>
