@@ -67,6 +67,5 @@ export const galleryImages: { src: string; alt: string }[] = [
   { src: "/images/tours/gallery/put-do-borica.webp", alt: "Put do Borića" },
   { src: "/images/tours/gallery/kanjon-sutjeske-zelengora.webp", alt: "Kanjon Sutjeske sa Zelengore" },
   { src: "/images/tours/gallery/par-na-zelengori.webp", alt: "Par na Zelengori" },
-  { src: "/images/tours/gallery/sreca-trnovacko-konacno.webp", alt: "Sreća na Trnovačkom" },
   { src: "/images/tours/gallery/somersby-udahniavanturu.webp", alt: "Udahni Avanturu" },
 ];
