@@ -16,6 +16,7 @@ export interface Adventure {
   image?: string;
   imageAlt?: string;
   imagePosition?: string;
+  images?: { src: string; alt: string }[];
   highlights: string[];
   /** description: use template literal with blank lines between paragraphs, e.g. description: `Paragraph 1...\n\nParagraph 2...`.trim() */
   itinerary: { dayTitle: string; description: string }[];
@@ -51,6 +52,19 @@ export const adventures: Adventure[] = [
     ],
     image: "/images/tours/kampovanje-trnovacko/trnovacko-jezero-card.webp",
     imageAlt: "Kampovanje na Trnovačkom jezeru s usponom na Maglić – NP Sutjeska, Trnovačko jezero",
+    images: [
+      { src: "/images/gallery/suva-jezerina-put-na-trnovacko.webp", alt: "Put na Trnovačko jezero" },
+      { src: "/images/gallery/put-na-trnovacko-jezero.webp", alt: "Staza prema Trnovačkom jezeru" },
+      { src: "/images/gallery/put-za-jezero.webp", alt: "Put za jezero" },
+      { src: "/images/gallery/dolazak-na-trnovacko-maj.webp", alt: "Dolazak na Trnovačko jezero" },
+      { src: "/images/gallery/sreca-trnovacko-konacno.webp", alt: "Sreća na Trnovačkom jezeru" },
+      { src: "/images/gallery/odmor-na-trnovackom.webp", alt: "Odmor na Trnovačkom jezeru" },
+      { src: "/images/gallery/uzivanje-na-trnovackom.webp", alt: "Uživanje na Trnovačkom jezeru" },
+      { src: "/images/gallery/mali-vidikovac-trnovacko.webp", alt: "Vidikovac Trnovačko jezero" },
+      { src: "/images/gallery/ana-na-vidikovcu-trnovacko.webp", alt: "Vidikovac iznad Trnovačkog jezera" },
+      { src: "/images/gallery/ema-na-trnovackom-vidikovcu.webp", alt: "Pogled sa vidikovca Trnovačko" },
+      { src: "/images/gallery/ekipa-na-vidikovcu-trnovacko.webp", alt: "Ekipa na vidikovcu Trnovačko jezero" },
+    ],
     highlights: [
       "Trnovačko jezero",
       "Uspon na Maglić",
@@ -126,6 +140,29 @@ export const adventures: Adventure[] = [
     ],
     image: "/images/tours/zelengora/zelengora-kampovanje-card.webp",
     imageAlt: "Kampovanje na Zelengori sa usponom na Bregoč i Jeep safari – NP Sutjeska, Zelengora",
+    images: [
+      { src: "/images/gallery/donje-bare-cure-zelengora.webp", alt: "Donje Bare Zelengora" },
+      { src: "/images/gallery/put-na-boric.jpg", alt: "Put na vidikovac Borić" },
+      { src: "/images/gallery/put-na-vidikovac-boric.jpg", alt: "Staza do vidikovca Borić" },
+      { src: "/images/gallery/na-boricu.jpg", alt: "Na vidikovcu Borić" },
+      { src: "/images/gallery/boric-stizemo.jpg", alt: "Stižemo na Borić" },
+      { src: "/images/gallery/pauza-do-vidikovca.jpg", alt: "Pauza na putu do vidikovca" },
+      { src: "/images/gallery/boric-zelengora.jpg", alt: "Borić Zelengora" },
+      { src: "/images/gallery/nevena-i-ja-boric-zelengora.jpg", alt: "Na Boriću Zelengora" },
+      { src: "/images/gallery/boric-vidikovac-zelengora.jpg", alt: "Vidikovac Borić Zelengora" },
+      { src: "/images/gallery/vidikovac-zelengora.jpg", alt: "Vidikovac Zelengora" },
+      { src: "/images/gallery/aleksa-na-zelengori.jpg", alt: "Na Zelengori" },
+      { src: "/images/gallery/slika-na-boricu-zelengora.jpg", alt: "Borić Zelengora panorama" },
+      { src: "/images/gallery/pauza-zelengora.jpg", alt: "Pauza na Zelengori" },
+      { src: "/images/gallery/uzivanje-zelengora.jpg", alt: "Uživanje na Zelengori" },
+      { src: "/images/gallery/sikanje-na-zelengori.jpg", alt: "Zelengora planina" },
+      { src: "/images/gallery/zelengora-slika-boric.jpg", alt: "Zelengora Borić" },
+      { src: "/images/gallery/pauza-na-vidikovcu-zelengora.jpg", alt: "Pauza na vidikovcu Zelengora" },
+      { src: "/images/gallery/boric-zelengora-pogled.jpg", alt: "Pogled sa Borića Zelengora" },
+      { src: "/images/gallery/put-do-borica.jpg", alt: "Put do Borića" },
+      { src: "/images/gallery/kanjon-sutjeske-zelengora.jpg", alt: "Kanjon Sutjeske sa Zelengore" },
+      { src: "/images/gallery/par-na-zelengori.jpg", alt: "Par na Zelengori" },
+    ],
     highlights: [
       "Orlovačko jezero",
       "Bregoč (najviši vrh Zelengore)",

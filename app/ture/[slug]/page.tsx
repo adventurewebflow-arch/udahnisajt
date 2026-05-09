@@ -5,6 +5,7 @@ import { getAdventureBySlug, adventures } from "../../data/adventures";
 import TourSchema from "../../components/TourSchema";
 import InquiryForm from "../../components/InquiryForm";
 import Accordion from "../../components/Accordion";
+import TourGallery from "@/app/components/TourGallery";
 import type { Metadata } from "next";
 
 const BASE = "https://www.udahniavanturu.com";
@@ -174,6 +175,10 @@ export default async function TourDetailPage({ params }: { params: Promise<{ slu
                 <h2 className="text-3xl font-bold mb-6">Itinerar</h2>
                 <Accordion items={itineraryItems} defaultOpenIndex={0} />
               </section>
+            )}
+
+            {adventure.images && adventure.images.length > 0 && (
+              <TourGallery images={adventure.images} />
             )}
 
             {/* Included */}
