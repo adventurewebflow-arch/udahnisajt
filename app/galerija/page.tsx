@@ -78,7 +78,7 @@ export default function GalerijaPage() {
                 alt={img.alt}
                 fill
                 className="object-cover hover:scale-105 transition-transform"
-                sizes="(max-width: 768px) 80vw, 25vw"
+                sizes="(max-width: 768px) 50vw, 25vw"
                 loading={idx < 4 ? "eager" : "lazy"}
                 priority={idx < 4}
               />
