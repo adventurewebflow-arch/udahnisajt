@@ -588,7 +588,7 @@ export const blogPostsEN: BlogPostEN[] = [
 
       <h2>What's Coming This Year?</h2>
 
-      <p>We are organising the May Day Adventure again — bungalows, food, park tickets and tours of your choice. If you want to be part of the next crew, check out our <a href="/en/tours/prvomajska-avantura" class="text-emerald-400 hover:text-emerald-300 underline">May Day Adventure</a> and <a href="/en#contact" class="text-emerald-400 hover:text-emerald-300 underline">get in touch</a> to book your spot.</p>
+      <p>We are organising the May Day Adventure again — bungalows, food, park tickets and tours of your choice. If you want to be part of the next crew, check out our <a href="/en/tours" class="text-emerald-400 hover:text-emerald-300 underline">tours</a> and <a href="/en#contact" class="text-emerald-400 hover:text-emerald-300 underline">get in touch</a> to book your spot.</p>
     `,
     author: "Petar & Nevena",
     date: "2026-02-14",

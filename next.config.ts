@@ -195,6 +195,18 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
 
+      // Uklonjena tura prvomajska-avantura — stari URL na listu tura
+      {
+        source: "/ture/prvomajska-avantura",
+        destination: "/ture",
+        permanent: true,
+      },
+      {
+        source: "/en/tours/prvomajska-avantura",
+        destination: "/en/tours",
+        permanent: true,
+      },
+
       // ─── Stari one-off slug ───────────────────────────────────────────────
       {
         source: "/avantura-trnovacko-jezero-kanjoning-hrcavka",

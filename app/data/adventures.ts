@@ -322,71 +322,6 @@ export const adventures: Adventure[] = [
     ]
   },
   {
-    id: "POP-01MAY-01",
-    slug: "prvomajska-avantura",
-    title: "PRVOMAJSKA AVANTURA",
-    category: "popular",
-    location: "Tjentište / NP Sutjeska / Zelengora",
-    image: "/images/tours/gallery/ugljesin-vrh.webp",
-    imageAlt: "Prvomajska avantura – pogled sa Uglješinog vrha, NP Sutjeska",
-    imagePosition: "center 55%",
-    shortDescription: "Prvomajski aranžman u bungalovima na Tjentištu: smještaj, hrana, ulaznice i dvije velike avanture, subota Trnovačko jezero, nedjelja lagana tura po Zelengori.",
-    aboutTour: "Ova trodnevna avantura osmišljena je kao spoj prirode, laganog kretanja i istinskog doživljaja planine, bez žurbe i bez pritiska. Fokus nije na „osvajanju“ kilometara, već na boravku u prostoru, druženju i osjećaju slobode koji planina pruža.",
-    duration: "3 dana / 2 noći",
-    difficulty: "Srednja",
-    price: "185€ po osobi",
-    groupSize: "1–100+ osoba",
-    discount: "5+ osoba - 10% popusta \n\n 10+ osoba - 15% popusta",
-    dates: ["01.05.2026"],
-    highlights: [
-      "Bungalovi na Tjentištu (2 noći)",
-      "Subota: Trnovačko jezero",
-      "Nedjelja: Zelengora (Donje i Gornje bare + vidikovac Borić) — lakša tura",
-      "Lunch paketi za ture",
-      "Subotnja mala žurka i druženje",
-      "Ulaznice: NP Sutjeska + Park prirode Piva"
-    ],
-    itinerary: [
-      {
-        dayTitle: "Dan 1 (petak): Dolazak na Tjentište",
-        description: "Dolazak učesnika planiran je tokom dana na Tjentište. Nakon smještaja slijedi slobodno vrijeme za odmor i prvo upoznavanje sa ambijentom Nacionalnog parka Sutjeska. Lagana šetnja Dolinom heroja i obilazak Spomenika Bitke na Sutjesci uvod su u dane koji slijede, bez žurbe i bez pritiska.\n\n Ovo je dan za prilagođavanje, upoznavanje grupe i uživanje u prostoru. U večernjim satima, oko 20:00, planirana je zajednička večera. Nakon večere slijedi lagano druženje u kampu, razgovor, upoznavanje i opuštanje u prirodnom ambijentu, uz mirnu atmosferu i osjećaj da praznik zaista počinje."
-      },
-      {
-        dayTitle: "Dan 2 (subota):Trnovačko jezero, vidikovci i prašuma Perućica",
-        description: "Nakon doručka preuzimamo lanč pakete i krećemo prema Trnovačkom jezeru. Dolazak na jezero planiran je u prijepodnevnim satima, gdje nas dočekuje jedno od najljepših planinskih jezera regiona. Ovdje imamo dovoljno vremena za odmor, šetnju obalom, fotografisanje i uživanje u prirodi.\n\n Za one koji žele više aktivnosti, nudimo opcije laganog i srednje zahtjevnog hoda do vidikovaca iznad jezera. Kraća varijanta podrazumijeva oko 15 minuta hoda, dok je duža varijanta približno sat i po hoda u jednom pravcu, do vidikovca sa kojeg se vidi cijelo Trnovačko jezero u prepoznatljivom obliku srca. Svako bira tempo i mjeru po sopstvenim željama.\n\n U popodnevnim satima, oko 16:00, krećemo prema Prijevoru, gdje nas čekaju terenska vozila. Pravimo pauzu na panoramskoj tački ispod Maglića, sa pogledom prema Volujaku, Zelengori, Jahorini, Lebršniku i Treskavici. Nakon toga obilazimo vidikovce prašume Perućice, u skladu sa vremenom i uslovima na terenu.\n\n Povratak u kamp je u večernjim satima, gdje nas čeka večera i opušteno druženje uz tihu muziku, sabiranje utisaka i razgovor o danu koji je iza nas."
-      },
-      {
-        dayTitle: "Dan 3 (nedjelja): Zelengora, jezera i završetak avanture",
-        description: "Treći dan započinjemo doručkom, nakon čega krećemo prema Zelengori. Vožnja traje oko sat do sat i po vremena. Dan je osmišljen kao lagan i opuštajući, bez zahtjevnih uspona, sa fokusom na boravak u prirodi i uživanje u prostoru.\n\n Na Zelengori obilazimo vidikovce, područje Borić i jezera Donje bare, uz mogućnost šetnje do Gornjih Bara za one koji žele. Program je fleksibilan, prilagođen grupi i idealan za završetak višednevne avanture u mirnom ritmu.\n\n U popodnevnim satima započinjemo povratak, čime se program za 1. maj zvanično završava.\n\n Za detaljan program, cijenu i sve informacije o ovoj 1. maj avanturi, PDF program možete dobiti javljanjem putem Instagram stranice ili direktno na WhatsApp broj +387 65 797 200."
-      }
-    ],
-    includes: [
-      "Smještaj u bungalovima na Tjentištu (2 noći)",
-      "Večera (petak), doručak + lunch paket (subota), večera (subota), doručak + lunch paket (nedjelja)",
-      "Ulaznice: NP Sutjeska i Park prirode Piva",
-      "Organizacija i vođenje ture",
-      "Bez skrivenih troškova (piće nije uključeno)"
-    ],
-    excludes: [
-      "Piće",
-      "Lični troškovi van programa"
-    ],
-    faqs: [
-      {
-        q: "Kako mogu dobiti detaljan program i cijenu?",
-        a: "Detaljan program, cijenu i sve dodatne informacije možete dobiti u PDF formatu javljanjem putem naše Instagram stranice ili direktno na WhatsApp broj +387 65 797 200. Nakon javljanja šaljemo kompletan program i stojimo na raspolaganju za sva pitanja."
-      },
-      {
-        q: "Da li je tura fizički zahtjevna?",
-        a: "Tura je osmišljena tako da bude pristupačna većini učesnika. Program kombinuje lagane šetnje i mogućnost srednje zahtjevnog hoda do vidikovaca, ali bez obaveze da svi učestvuju u svim aktivnostima. Svako bira tempo i nivo aktivnosti koji mu odgovara."
-      },
-      {
-        q: "Da li ćemo prije polaska dobiti dodatne informacije i upute?",
-        a: "Da. Svi prijavljeni učesnici biće dodani u WhatsApp grupu 1. maj avanture, gdje će dobiti tačne informacije o mjestu okupljanja, satnici, opremi, vremenskoj prognozi i svim važnim uputama prije polaska."
-      }
-    ]
-  },
-  {
     id: "vikend-durmitor-01",
     slug: "vikend-na-durmitoru",
     title: "Vikend na Durmitoru",
@@ -488,7 +423,7 @@ Smještaj biraš ti — bungalov sa zajedničkim kupatilom ili šator (oprema ob
     difficulty: "Lako - Srednje",
     price: "od 150€ po osobi",
     groupSize: "6–30 osoba",
-    dates: ["05.-07.07.", "24.-26.07."],
+    dates: ["05.-07.06.", "24.-26.07."],
     highlights: [
       "Smještaj u kampu Tjentište — bungalov ili šator",
       "Subota: Trnovačko jezero ILI Prašuma Perućica (ti biraš)",

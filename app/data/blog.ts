@@ -660,7 +660,7 @@ export const blogPosts: BlogPost[] = [
 
       <h2>Šta nas čeka ove godine?</h2>
       
-      <p>Ponovo organizujemo Prvomajsku avanturu – bungalovi, hrana, ulaznice, ture po izboru. Ako želite biti dio sljedeće ekipe, pogledajte našu <a href="/ture/prvomajska-avantura" class="text-emerald-400 hover:text-emerald-300 underline">Prvomajsku avanturu</a> i <a href="/#kontakt" class="text-emerald-400 hover:text-emerald-300 underline">kontaktirajte nas</a> za rezervaciju.</p>
+      <p>Ponovo organizujemo Prvomajsku avanturu – bungalovi, hrana, ulaznice, ture po izboru. Ako želite biti dio sljedeće ekipe, pogledajte naše <a href="/ture" class="text-emerald-400 hover:text-emerald-300 underline">ture</a> i <a href="/#kontakt" class="text-emerald-400 hover:text-emerald-300 underline">kontaktirajte nas</a> za rezervaciju.</p>
     `,
     author: "Udahni Avanturu",
     date: "2026-02-14",
