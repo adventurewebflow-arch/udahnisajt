@@ -429,6 +429,16 @@ export const adventures: Adventure[] = [
     imagePosition: "center 30%",
     image: "/images/tours/vikend-divljina/vikend-u-divljini-hero.webp",
     imageAlt: "Vikend u divljini – NP Sutjeska, Tjentište",
+    images: [
+      { src: "/images/tours/gallery/trnovacko-jezero-najljepsa-slika.webp", alt: "Trnovačko jezero" },
+      { src: "/images/tours/gallery/katuni-trnovacko-jezero.webp", alt: "Katuni" },
+      { src: "/images/tours/gallery/zelengora-jezero.webp", alt: "Jezero na Zelengori" },
+      { src: "/images/tours/gallery/boric-vidikovac-zelengora.webp", alt: "Vidikovac Borić Zelengora" },
+      { src: "/images/tours/gallery/donje-bare-cure-zelengora.webp", alt: "Donje Bare Zelengora" },
+      { src: "/images/tours/gallery/vodopad-skakavac-perucica.webp", alt: "Vodopad Skakavac Perućica" },
+      { src: "/images/tours/gallery/hiking-nacionalni-park-sutjeska.webp", alt: "Hiking NP Sutjeska" },
+      { src: "/images/tours/gallery/uzivanje-na-trnovackom.webp", alt: "Uživanje na Trnovačkom" },
+    ],
     shortDescription:
       "Tri dana u srcu NP Sutjeska. Trnovačko jezero, katuni bez struje i mreže, vidikovac Perućice i Zelengora. Mi se pobrinemo za sve.",
     aboutTour: `Vikend kakav treba.
@@ -1195,6 +1205,18 @@ Prevoz organizujemo po dogovoru iz Beograda, Sarajeva, Dubrovnika, Podgorice, Za
     price: "70€",
     groupSize: "4–50 osoba",
     image: "/images/tours/day-trips/zelengora-bregoc.webp",
+    images: [
+      { src: "/images/tours/gallery/zelengora-vrh.webp", alt: "Vrh Zelengore Bregoč" },
+      { src: "/images/tours/gallery/bregoc-ekipa.webp", alt: "Ekipa na Bregoču" },
+      { src: "/images/tours/gallery/put-na-boric.webp", alt: "Put na Borić" },
+      { src: "/images/tours/gallery/na-boricu.webp", alt: "Na vidikovcu Borić" },
+      { src: "/images/tours/gallery/boric-zelengora-pogled.webp", alt: "Pogled sa Borića" },
+      { src: "/images/tours/gallery/ugljesin-vrh.webp", alt: "Uglješin vrh Zelengora" },
+      { src: "/images/tours/gallery/aleksa-na-zelengori.webp", alt: "Na Zelengori" },
+      { src: "/images/tours/gallery/slika-na-boricu-zelengora.webp", alt: "Borić Zelengora panorama" },
+      { src: "/images/tours/gallery/zelengora-vidikovci.webp", alt: "Vidikovci Zelengora" },
+      { src: "/images/tours/gallery/pauza-do-vidikovca.webp", alt: "Pauza na putu" },
+    ],
     highlights: [
       "Bregoč (2017m)",
       "Panoramski vidici",
@@ -1247,6 +1269,18 @@ Prevoz organizujemo po dogovoru iz Beograda, Sarajeva, Dubrovnika, Podgorice, Za
     price: "70€",
     groupSize: "4–50 osoba",
     image: "/images/tours/day-trips/zelengora-jezera.webp",
+    images: [
+      { src: "/images/tours/gallery/zelengora-jezero.webp", alt: "Jezero na Zelengori" },
+      { src: "/images/tours/gallery/zelengora-orlovacko.webp", alt: "Orlovačko jezero" },
+      { src: "/images/tours/gallery/donje-bare-cure-zelengora.webp", alt: "Donje Bare Zelengora" },
+      { src: "/images/tours/gallery/zelengora-vidikovci.webp", alt: "Vidikovci Zelengora" },
+      { src: "/images/tours/gallery/boric-vidikovac-zelengora.webp", alt: "Vidikovac Borić" },
+      { src: "/images/tours/gallery/par-na-zelengori.webp", alt: "Par na Zelengori" },
+      { src: "/images/tours/gallery/pauza-zelengora.webp", alt: "Pauza na Zelengori" },
+      { src: "/images/tours/gallery/kanjon-sutjeske-zelengora.webp", alt: "Kanjon Sutjeske sa Zelengore" },
+      { src: "/images/tours/gallery/uzivanje-zelengora.webp", alt: "Uživanje na Zelengori" },
+      { src: "/images/tours/gallery/zelengora-djevojka-u-planini.webp", alt: "Zelengora planina" },
+    ],
     highlights: [
       "Donje bare",
       "Gornje bare",
@@ -1295,6 +1329,9 @@ Prevoz organizujemo po dogovoru iz Beograda, Sarajeva, Dubrovnika, Podgorice, Za
     price: "90€",
     groupSize: "4–20 osoba",
     image: "/images/tours/day-trips/perucica-skakavac.webp",
+    images: [
+      { src: "/images/tours/gallery/vodopad-skakavac-perucica.webp", alt: "Vodopad Skakavac Perućica" },
+    ],
     highlights: [
       "Prašuma Perućica",
       "Vodopad Skakavac",
@@ -1394,6 +1431,18 @@ Prevoz organizujemo po dogovoru iz Beograda, Sarajeva, Dubrovnika, Podgorice, Za
     price: "75€",
     groupSize: "4–50 osoba",
     image: "/images/tours/day-trips/trnovacko-jezero.webp",
+    images: [
+      { src: "/images/tours/gallery/trnovacko-jezero-najljepsa-slika.webp", alt: "Trnovačko jezero" },
+      { src: "/images/tours/gallery/trnovacko-lijepa.webp", alt: "Trnovačko jezero ljepota" },
+      { src: "/images/tours/gallery/put-na-trnovacko-jezero.webp", alt: "Put na Trnovačko jezero" },
+      { src: "/images/tours/gallery/suva-jezerina-put-na-trnovacko.webp", alt: "Staza Trnovačko jezero" },
+      { src: "/images/tours/gallery/sreca-trnovacko-konacno.webp", alt: "Sreća na Trnovačkom jezeru" },
+      { src: "/images/tours/gallery/uzivanje-na-trnovackom.webp", alt: "Uživanje na Trnovačkom jezeru" },
+      { src: "/images/tours/gallery/vidikovac-trnovackojezero.webp", alt: "Vidikovac Trnovačko jezero" },
+      { src: "/images/tours/gallery/kupanje-trnovacko-jezero.webp", alt: "Kupanje na Trnovačkom jezeru" },
+      { src: "/images/tours/gallery/trnovacko-na-kamenu.webp", alt: "Na kamenu Trnovačko jezero" },
+      { src: "/images/tours/gallery/katuni-trnovacko-jezero.webp", alt: "Katuni Trnovačko jezero" },
+    ],
     highlights: [
       "Trnovačko jezero",
       "Vidikovci",
@@ -1447,6 +1496,15 @@ Prevoz organizujemo po dogovoru iz Beograda, Sarajeva, Dubrovnika, Podgorice, Za
     price: "95€",
     groupSize: "4–20 osoba",
     image: "/images/tours/day-trips/maglic-trnovacko.webp",
+    images: [
+      { src: "/images/tours/gallery/ekipa-ide-na-maglic.webp", alt: "Ekipa ide na Maglić" },
+      { src: "/images/tours/gallery/pogled-sa-vrha-maglica.webp", alt: "Pogled sa vrha Maglića" },
+      { src: "/images/tours/gallery/pogled-maglic.webp", alt: "Maglić pogled" },
+      { src: "/images/tours/gallery/trnovacko-jezero-najljepsa-slika.webp", alt: "Trnovačko jezero" },
+      { src: "/images/tours/gallery/vidikovac-trnovackojezero.webp", alt: "Vidikovac Trnovačko jezero" },
+      { src: "/images/tours/gallery/put-na-trnovacko-jezero.webp", alt: "Put na Trnovačko jezero" },
+      { src: "/images/tours/gallery/katuni-trnovacko-jezero.webp", alt: "Katuni Trnovačko jezero" },
+    ],
     highlights: [
       "Maglić (2386m)",
       "Trnovačko jezero",
@@ -1498,6 +1556,16 @@ Prevoz organizujemo po dogovoru iz Beograda, Sarajeva, Dubrovnika, Podgorice, Za
     price: "70€ po osobi",
     groupSize: "4–16 osoba",
     image: "/images/tours/day-trips/jeep-safari-zelengora.webp",
+    images: [
+      { src: "/images/tours/gallery/zelengora-jezero.webp", alt: "Jezero na Zelengori" },
+      { src: "/images/tours/gallery/zelengora-orlovacko.webp", alt: "Orlovačko jezero" },
+      { src: "/images/tours/gallery/zelengora-vidikovci.webp", alt: "Vidikovci Zelengora" },
+      { src: "/images/tours/gallery/grupna-slika-donje-bare.webp", alt: "Grupna slika Donje Bare" },
+      { src: "/images/tours/gallery/boric-vidikovac-zelengora.webp", alt: "Vidikovac Borić" },
+      { src: "/images/tours/gallery/kanjon-sutjeske-zelengora.webp", alt: "Kanjon Sutjeske" },
+      { src: "/images/tours/gallery/par-na-zelengori.webp", alt: "Par na Zelengori" },
+      { src: "/images/tours/gallery/zelengora-djevojka-u-planini.webp", alt: "Zelengora planina" },
+    ],
     highlights: [
       "Jeep safari",
       "Zelengora",
@@ -1539,6 +1607,10 @@ Prevoz organizujemo po dogovoru iz Beograda, Sarajeva, Dubrovnika, Podgorice, Za
     price: "65€ po osobi",
     groupSize: "4–16 osoba",
     image: "/images/tours/day-trips/via-ferata-piva.webp",
+    images: [
+      { src: "/images/tours/gallery/via-ferata-piva.webp", alt: "Via ferrata Piva" },
+      { src: "/images/tours/gallery/via-ferata-piva-djevojka-na-stijeni.webp", alt: "Via ferrata Piva na stijeni" },
+    ],
     highlights: [
       "Via ferrata",
       "Piva",
