@@ -33,18 +33,18 @@ export const blogPosts: BlogPost[] = [
       <h2>Zašto je Trnovačko jezero posebno</h2>
       
       <p>Trnovačko jezero smatra se jednim od najljepših planinskih jezera u regionu zbog svoje boje, okruženja i pogleda na planinu Maglić. Okruženo je strmim planinskim padinama, zelenim livadama i kamenitim vrhovima koji stvaraju impresivan pejzaž.</p>
-      <p>Tokom ljetnih mjeseci voda jezera poprima tirkizne nijanse, dok planinski vrhovi stvaraju dramatičnu pozadinu koja oduzima dah. Jezero je formirano tokom ledenog doba i proteže se na oko 700 metara dužine i 300 metara širine, sa maksimalnom dubinom od 15 metara. Kristalno čista voda reflektuje okolne planine – Maglić, Volujak i Bioč – stvarajući panorame koje ostaju u sjećanju svakog posjetioca.</p>
+      <p>Tokom ljetnih mjeseci voda jezera poprima tirkizne nijanse, dok planinski vrhovi stvaraju dramatičnu pozadinu koja oduzima dah. Jezero je formirano tokom ledenog doba i proteže se na oko 500 metara dužine i 300 metara širine, sa maksimalnom dubinom od 15 metara. Kristalno čista voda reflektuje okolne planine – Maglić, Volujak i Bioč – stvarajući panorame koje ostaju u sjećanju svakog posjetioca.</p>
 
       <h2>Kako doći do Trnovačkog jezera</h2>
       
       <p>Postoji nekoliko načina da se dođe do Trnovačkog jezera.</p>
-      <p><strong>1. Planinarska ruta iz pravca Prijevora.</strong> Jedna od najčešćih ruta vodi iz pravca Prijevora i traje nekoliko sati planinarenja kroz planinske pašnjake i staze.</p>
-      <p><strong>2. Ruta iz pravca Crne Gore.</strong> Druga ruta vodi iz pravca sela Mratinje u Crnoj Gori i uključuje dužu planinarsku stazu.</p>
-      <p><strong>3. Organizovana tura sa vodičem.</strong> Za mnoge posjetioce najjednostavniji način je dolazak uz organizovanu turu sa vodičem koji poznaje teren. Ruta iz Prijevora traje oko 3–4 sata planinarenja i zahtijeva srednju fizičku kondiciju. Ruta iz Crne Gore je nešto duža i uključuje više sati hoda kroz planinske pašnjake i staze. U oba slučaja preporučujemo da provjerite vremensku prognozu i da budete pripremljeni za promjenu vremena u planinama.</p>
+      <p><strong>1. Planinarska ruta iz pravca Prijevora.</strong> Jedna od najčešćih ruta vodi iz pravca Prijevora i traje oko 1:40min planinarenja kroz planinske pašnjake i staze.</p>
+      <p><strong>2. Ruta iz pravca Crne Gore.</strong> Druga ruta vodi iz pravca sela Mratinje u Crnoj Gori i uključuje dužu planinarsku stazu oko 5 sati planinarenja.</p>
+      <p><strong>3. Organizovana tura sa vodičem.</strong> Za mnoge posjetioce najjednostavniji način je dolazak uz organizovanu turu sa vodičem koji poznaje teren. Ruta iz Prijevora traje oko 1:40min planinarenja i zahtijeva normalnu fizičku kondiciju. Ruta iz Crne Gore je nešto duža i uključuje više sati hoda kroz planinske pašnjake i staze. U oba slučaja preporučujemo da provjerite vremensku prognozu i da budete pripremljeni za promjenu vremena u planinama.</p>
 
       <h2>Kampovanje na Trnovačkom jezeru</h2>
       
-      <p>Kampovanje na Trnovačkom jezeru jedno je od najposebnijih iskustava koje planinari i ljubitelji prirode mogu doživjeti u Bosni i Hercegovini.</p>
+      <p>Kampovanje na Trnovačkom jezeru jedno je od najposebnijih iskustava koje planinari i ljubitelji prirode mogu doživjeti u Crnoj Gori.</p>
       <p>Noć pod zvijezdama, pogled na planinu Maglić i jutarnja magla iznad jezera stvaraju atmosferu koja ostaje u sjećanju cijeli život.</p>
       <p>Tokom ljeta mnogi planinari postavljaju šatore na livadama oko jezera i provode noć u prirodi. Uz jezero postoji planinska kafana gdje možete popiti kafu, čaj ili nešto jače dok uživate u pogledu. Za kampovanje potrebna vam je odgovarajuća oprema – šator, spavaća vreća prilagođena visini, karimat i topla odjeća, jer noći na 1500 metara mogu biti hladne čak i u ljetnim mjesecima.</p>
 
@@ -86,7 +86,7 @@ export const blogPosts: BlogPost[] = [
 
       <p>Također preporučujemo ture na <a href="/ture/zelengora-jezera-vidikovci" class="text-emerald-400 hover:text-emerald-300 underline">Zelengoru</a> i kroz <a href="/ture/prasuma-perucica-vodopad-skakavac" class="text-emerald-400 hover:text-emerald-300 underline">prašumu Perućica</a> – sve u okviru Nacionalnog parka Sutjeska i parka prirode Piva.</p>
     `,
-    author: "Marko Petrović",
+    author: "Petar Kostić",
     date: "2026-02-05",
     image: "/images/tours/blog/trnovacko-jezero-maglic-sutjeska.webp",
     imageAlt: "Trnovačko jezero ispod planine Maglić u Nacionalnom parku Sutjeska",
