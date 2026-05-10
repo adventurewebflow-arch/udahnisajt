@@ -13,6 +13,16 @@ body {
   background: #020617; /* slate-950 */
 }
 
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 /* Blog article typography */
 .ua-article {
   color: rgb(209 213 219); /* gray-300 */

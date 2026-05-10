@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Image from "next/image";
 
 interface GalleryImage {
@@ -17,12 +17,29 @@ export default function TourGallery({ images }: { images: GalleryImage[] }) {
   const prev = () => setCurrent((c) => (c - 1 + images.length) % images.length);
   const next = () => setCurrent((c) => (c + 1) % images.length);
 
+  const touchStartX = useRef<number | null>(null);
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStartX.current = e.changedTouches[0]?.clientX ?? null;
+  };
+
+  const handleTouchEnd = (e: React.TouchEvent) => {
+    if (touchStartX.current == null || images.length < 2) return;
+    const endX = e.changedTouches[0]?.clientX;
+    if (endX == null) return;
+    const dx = endX - touchStartX.current;
+    touchStartX.current = null;
+    if (Math.abs(dx) < 50) return;
+    if (dx < 0) next();
+    else prev();
+  };
+
   return (
     <div className="mt-8">
       <h2 className="text-2xl font-bold text-white mb-4">Galerija</h2>
 
       <div
-        className="relative rounded-2xl overflow-hidden aspect-[16/9] bg-slate-900 cursor-pointer"
+        className="relative rounded-2xl overflow-hidden aspect-[3/4] md:aspect-[16/9] bg-slate-900 cursor-pointer"
         onClick={() => setLightbox(true)}
         role="button"
         tabIndex={0}
@@ -38,7 +55,7 @@ export default function TourGallery({ images }: { images: GalleryImage[] }) {
           src={images[current].src}
           alt={images[current].alt}
           fill
-          className="object-cover"
+          className="object-cover transition-opacity duration-300"
           sizes="(max-width: 768px) 100vw, 800px"
         />
         <button
@@ -68,19 +85,19 @@ export default function TourGallery({ images }: { images: GalleryImage[] }) {
         </div>
       </div>
 
-      <div className="flex gap-2 mt-3 overflow-x-auto pb-2">
+      <div className="flex gap-2 mt-3 overflow-x-auto pb-2 scrollbar-hide">
         {images.map((img, i) => (
           <button
             key={i}
             type="button"
             onClick={() => setCurrent(i)}
-            className={`relative flex-shrink-0 w-16 h-16 rounded-lg overflow-hidden border-2 transition ${
+            className={`relative flex-shrink-0 w-20 h-20 md:w-16 md:h-16 rounded-lg overflow-hidden border-2 transition ${
               i === current ? "border-emerald-500" : "border-transparent opacity-60 hover:opacity-100"
             }`}
             aria-label={`Slika ${i + 1}`}
             aria-current={i === current ? "true" : undefined}
           >
-            <Image src={img.src} alt={img.alt} fill className="object-cover" sizes="64px" />
+            <Image src={img.src} alt={img.alt} fill className="object-cover" sizes="80px" />
           </button>
         ))}
       </div>
@@ -103,15 +120,19 @@ export default function TourGallery({ images }: { images: GalleryImage[] }) {
             ‹
           </button>
           <div
-            className="relative w-full max-w-4xl max-h-[85vh] aspect-[4/3] mx-8"
+            className="relative w-full max-w-4xl mx-4"
+            style={{ height: "85vh" }}
             onClick={(e) => e.stopPropagation()}
+            onTouchStart={handleTouchStart}
+            onTouchEnd={handleTouchEnd}
           >
             <Image
               src={images[current].src}
               alt={images[current].alt}
               fill
-              className="object-contain"
+              className="object-contain pointer-events-none"
               sizes="100vw"
+              priority
             />
           </div>
           <button
