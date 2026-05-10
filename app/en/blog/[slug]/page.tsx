@@ -53,7 +53,7 @@ export default async function BlogPostPageEN({ params }: { params: Promise<{ slu
     <main className="min-h-screen pt-20">
       <BlogPostSchema post={post} lang="en" />
       {/* Hero cover image */}
-      <section className="relative h-[45vh] min-h-[320px] lg:h-[60vh] lg:min-h-[480px] flex items-center justify-center">
+      <section className="relative h-[55vh] min-h-[360px] lg:h-[65vh] lg:min-h-[500px] flex items-end">
         <div className="absolute inset-0">
           {coverSrc ? (
             <Image
@@ -65,19 +65,21 @@ export default async function BlogPostPageEN({ params }: { params: Promise<{ slu
               sizes="100vw"
             />
           ) : (
-            <div className="w-full h-full bg-gradient-to-br from-gray-800 to-gray-900" />
+            <div className="w-full h-full bg-gradient-to-br from-slate-900 to-slate-800" />
           )}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/65 via-black/35 to-black/70" />
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent" />
         </div>
-        <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-white leading-tight mb-4">
-            {post.title}
-          </h1>
-          <div className="flex items-center justify-center gap-2 text-gray-300 text-sm">
+        <div className="relative z-10 w-full max-w-4xl mx-auto px-4 pb-10 md:pb-14">
+          <div className="flex items-center gap-2 text-emerald-400 text-xs uppercase tracking-widest mb-3 font-medium">
+            <span>Blog</span>
+            <span>·</span>
             <span>{new Date(post.date).toLocaleDateString("en-GB")}</span>
-            <span>•</span>
+            <span>·</span>
             <span>~{readingTime} min read</span>
           </div>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight">
+            {post.title}
+          </h1>
         </div>
       </section>
 
