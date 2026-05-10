@@ -8,6 +8,15 @@ export const metadata: Metadata = {
   title: "Zelengora – 9 planinskih jezera i panorame | Hiking i jeep safari iz Foče",
   description:
     "Devet jezera, vidikovci na sve strane i nijedno turističko razgledanje. Zelengora se može pješice, jeepom ili kombinirano — organizovane ture iz Foče sa licenciranim vodičem. Od 70€ po osobi.",
+  keywords:
+    "zelengora, zelengora jezera, zelengora hiking, zelengora ture, zelengora np sutjeska, bregoc uspon, orlovacko jezero, donje bare zelengora",
+  openGraph: {
+    title: "Zelengora – 9 planinskih jezera i panorame | Hiking i jeep safari iz Foče",
+    description:
+      "Devet jezera, vidikovci na sve strane i nijedno turističko razgledanje. Zelengora se može pješice, jeepom ili kombinirano — od 70€ po osobi.",
+    url: "https://www.udahniavanturu.com/zelengora",
+    type: "website",
+  },
   alternates: {
     canonical: `${BASE}/zelengora`,
   },

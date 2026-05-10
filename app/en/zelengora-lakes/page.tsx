@@ -8,6 +8,15 @@ export const metadata: Metadata = {
   title: "Zelengora – The Most Beautiful Mountain of Former Yugoslavia | Lakes & Hiking Guide",
   description:
     "Nine mountain lakes, Dinaric meadows and panoramas that take your breath away. Zelengora before the tourist crowds arrive. Hiking, jeep safari and camping — guided tours from Foča with licensed guide Petar.",
+  keywords:
+    "zelengora, zelengora lakes, zelengora hiking, zelengora tours, zelengora sutjeska national park, bregoc hike, orlovacko lake, donje bare zelengora",
+  openGraph: {
+    title: "Zelengora – 9 mountain lakes and panoramas | Hiking & jeep safari from Foča",
+    description:
+      "Nine lakes, viewpoints in every direction and no sightseeing bus crowds. Zelengora on foot, by jeep or combined — from €70 per person.",
+    url: "https://www.udahniavanturu.com/en/zelengora-lakes",
+    type: "website",
+  },
   alternates: {
     canonical: `${BASE}/en/zelengora-lakes`,
   },
