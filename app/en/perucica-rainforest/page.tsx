@@ -5,9 +5,9 @@ import Link from "next/link";
 const BASE = "https://www.udahniavanturu.com";
 
 export const metadata: Metadata = {
-  title: "Perućica Rainforest & Skakavac Waterfall | Bosnia Hiking Guide",
+  title: "Perućica Rainforest Bosnia – One of 2 Primeval Forests in Europe | Skakavac Waterfall",
   description:
-    "A rainforest thousands of years old and Skakavac waterfall dropping 75 metres. One of only two primeval forests left in Europe — untouched, wild and perfect. Small groups, licensed guide, tours from Foča.",
+    "Ancient trees, complete silence and a 75-metre waterfall. Perućica is one of only two primeval forests left in Europe. Day tours from Foča — licensed guide required. From €90.",
   alternates: {
     canonical: `${BASE}/en/perucica-rainforest`,
   },

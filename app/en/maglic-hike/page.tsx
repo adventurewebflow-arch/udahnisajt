@@ -5,9 +5,9 @@ import Link from "next/link";
 const BASE = "https://www.udahniavanturu.com";
 
 export const metadata: Metadata = {
-  title: "Maglić – The Highest Peak in Bosnia and Herzegovina | Hike Guide",
+  title: "Hike Maglić – Highest Peak in Bosnia (2,386m) | Guided Tours from Foča",
   description:
-    "Maglić (2,386m) — the highest peak in Bosnia and Herzegovina with views stretching to the Adriatic. A summit you remember for life. Routes, gear and guided tours from Foča. Book your spot today.",
+    "Stand on the highest peak in Bosnia and Herzegovina. Maglić summit via Trnovačko Lake — guided day trips and camping tours from Foča. Small groups, licensed guide. Book now.",
   alternates: {
     canonical: `${BASE}/en/maglic-hike`,
   },

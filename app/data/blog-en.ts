@@ -100,9 +100,9 @@ export const blogPostsEN: BlogPostEN[] = [
     slug: "maglic-hike-guide",
     excerpt:
       "Maglić is the highest peak in Bosnia and Herzegovina at 2,386 metres. Everything you need to know about the hike — from preparation to safety and the best routes.",
-    metadataTitle: "Maglić Hike – Bosnia's Highest Peak | Sutjeska National Park",
+    metadataTitle: "Hiking Maglić in Bosnia – Complete Guide | Summit, Routes & Tips",
     metadataDescription:
-      "Complete guide to hiking Maglić (2,386m), the highest peak in Bosnia and Herzegovina. Routes, gear, safety tips and best time to go.",
+      "Everything you need to know before hiking Maglić (2,386m). Routes, difficulty, what to pack and how to get there. Guided tours from Foča available — small groups.",
     content: `
       <h2>About Maglić</h2>
 
@@ -377,9 +377,9 @@ export const blogPostsEN: BlogPostEN[] = [
     slug: "perucica-rainforest-guide",
     excerpt:
       "Perućica is one of the last primeval forests in Europe and one of the most important natural monuments in Bosnia and Herzegovina. Discover everything you need to know about this untouched wilderness.",
-    metadataTitle: "Perućica Rainforest Guide – Europe's Ancient Primeval Forest | Bosnia",
+    metadataTitle: "Perućica Rainforest Guide – Bosnia's Hidden Natural Wonder | Skakavac",
     metadataDescription:
-      "Complete guide to Perućica primeval rainforest in Sutjeska National Park, Bosnia. What to see, how to get there, best time to visit and organised tours.",
+      "One of only two primeval forests in Europe. Trees over 300 years old, Skakavac waterfall (75m) and vipers that guard the spring. Day tours from Foča from €90.",
     content: `
       <h2>What is Perućica?</h2>
 
