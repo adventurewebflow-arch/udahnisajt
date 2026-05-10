@@ -108,39 +108,45 @@ export default async function TourDetailPageEN({ params }: { params: Promise<{ s
   return (
     <main className="min-h-screen pt-20">
       <TourSchema adventure={adventure} slug={slug} lang="en" />
-      {/* Hero Banner */}
-      <section className="ua-tour-hero relative w-full min-h-[85vh] md:min-h-screen flex items-center justify-center">
-        <div className="ua-tour-heroMedia absolute inset-0">
+      <section className="relative h-[55vh] min-h-[360px] lg:h-[65vh] lg:min-h-[500px] flex items-end">
+        <div className="absolute inset-0">
           {adventure.image ? (
-            <>
-              <div className="absolute inset-0">
-                <Image
-                  src={adventure.image}
-                  alt={adventure.imageAlt ?? adventure.title}
-                  fill
-                  className="object-cover object-center"
-                  priority
-                  sizes="100vw"
-                  style={{ objectPosition: adventure.imagePosition ?? "center" }}
-                />
-              </div>
-              <div className="absolute inset-0 bg-black/40" aria-hidden />
-            </>
+            <Image
+              src={adventure.image}
+              alt={adventure.imageAlt ?? adventure.title}
+              fill
+              className="object-cover"
+              style={{ objectPosition: adventure.imagePosition ?? "center" }}
+              priority
+              sizes="100vw"
+            />
           ) : (
-            <div className="w-full h-full bg-gradient-to-br from-gray-800 to-gray-900" />
+            <div className="w-full h-full bg-gradient-to-br from-slate-900 to-slate-800" />
           )}
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent" />
         </div>
-
-        <div className="ua-tour-heroText relative z-10 w-full max-w-4xl mx-auto px-4 py-6 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
+        <div className="relative z-10 w-full max-w-5xl mx-auto px-4 pb-10 md:pb-14">
+          <div className="flex items-center gap-2 text-emerald-400 text-xs uppercase tracking-widest mb-3 font-medium">
+            <span>
+              {adventure.category === "popular"
+                ? "Popular Tours"
+                : adventure.category === "premium"
+                  ? "Premium"
+                  : adventure.category === "multi-day"
+                    ? "Multi-day Adventures"
+                    : "Day Trips"}
+            </span>
+            <span>·</span>
+            <span>{adventure.duration}</span>
+            <span>·</span>
+            <span>{adventure.difficulty}</span>
+          </div>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight mb-3">
             {adventure.title}
           </h1>
-          <p className="text-xl text-gray-200 max-w-[70ch] mx-auto">
+          <p className="text-slate-300 text-base md:text-lg max-w-2xl leading-relaxed">
             {adventure.shortDescription}
           </p>
-          {adventure.location && (
-            <p className="text-lg text-gray-300 mt-2">{adventure.location}</p>
-          )}
         </div>
       </section>
 
