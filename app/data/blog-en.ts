@@ -765,6 +765,86 @@ export const blogPostsEN: BlogPostEN[] = [
     coverAlt: "View from Maglić summit towards Trnovačko Lake — Sutjeska National Park",
     tags: ["Sarajevo", "Maglić", "Sutjeska National Park", "Trnovačko Lake", "day trip"],
   },
+  {
+    id: "11",
+    slug: "zelengora-mountain-complete-guide",
+    title: "Zelengora — Complete Guide to the Most Beautiful Mountain in the Former Yugoslavia",
+    metadataTitle: "Zelengora Mountain Guide — Lakes, Hiking & Tours | Udahni Avanturu",
+    metadataDescription:
+      "Everything you need to know about Zelengora — glacial lakes, Bregoč summit, Borić viewpoint, mountain homesteads and how to get there. Guided tours from Foča from €70.",
+    excerpt:
+      "Zelengora is not a mountain in the conventional sense. No sharp peaks, no icy cliffs. Something different — vast meadows as green as velvet, seven mountain lakes and a silence that draws you in slowly, without force.",
+    content: `
+    <h2>Why It Is Called Zelengora</h2>
+<p>The name is not a metaphor. Zelengora literally means Green Mountain. When Jovo Popović wrote about it in 1935 in his book "Through the Mountains of Bosnia and Herzegovina", he described a mountain unlike any other he had seen: "There is no mountain in our lands that nature has adorned so beautifully, so gently-romantically." Ninety years later — nothing has changed.</p>
+
+<p>Unlike Maglić, which hits you with power and altitude, Zelengora wins you over slowly. No dramatic cliffs, no demanding ascents. Wide meadows, seven lakes, hundreds of crystal-clear springs and — in August — wild blueberries growing along every trail. Guests who see them for the first time cannot believe they are allowed to pick them straight from the mountain.</p>
+
+<h2>The Lakes of Zelengora — Which Ones and Where</h2>
+<p>Zelengora has seven glacial lakes. Popović described them precisely in 1935: Štirinsko is the largest, Kotlaničko the deepest, and Crno jezero the most beautiful in terms of its natural setting — though that is debatable.</p>
+
+<p>On one side of the mountain, accessible by dirt road (poor road quality — off-road vehicles recommended), are: <strong>Orlovačko Lake, Kotlaničko Lake, Štirinsko Lake and Jugovo Lake</strong>. You reach them from the direction of Kalinovik or via Tjentište and Čemerno pass. Orlovačko has been "declared" the most beautiful lake on Zelengora — mostly because it is the most accessible and the most photographed. We would not necessarily agree.</p>
+
+<p>On the other side of the mountain, coming from Tjentište, are <strong>Donje Bare and Gornje Bare</strong> — two lakes reached by an hour's drive on a rough dirt road from Tjentište, accessible by off-road vehicles only. Or on foot — which is a beautiful trail through the forest where we have seen chamois running alongside us.</p>
+
+<h2>Bregoč — The Summit That Is Not Scary</h2>
+<p>Bregoč is the highest peak of Zelengora at 2,015 metres. It sounds intimidating — it is not. The ascent takes around an hour and forty minutes at a relaxed pace and is not technically demanding. From the summit you can see everything: Maglić, Volujak, Jahorina, Treskavica, and in the distance the direction of the Adriatic.</p>
+
+<p>Directly opposite Bregoč are the <strong>Kozje Strane</strong> — a ridge that looks like an ordinary mountain path, but with sheer drops on both sides. The name is no accident — only goats (and experienced hikers) feel entirely comfortable there. For those who enjoy a touch of adrenaline without technical difficulty — Kozje Strane is a must.</p>
+
+<h2>Borić Viewpoint — Our Favourite</h2>
+<p>Thirty minutes on foot from Donje Bare is the Borić viewpoint. For us — the finest viewpoint on all of Zelengora. From Borić you can see the Sutjeska river canyon, Maglić in the background, Volujak and Zelengora spread before you. The photographs you take from here need no editing.</p>
+
+<p>Above Donje Bare is Uglješin Vrh — from where a spectacular panorama opens in every direction.</p>
+
+<h2>Tito's Villa at Donje Bare</h2>
+<p>Josip Broz Tito knew how to choose his locations. At Donje Bare he had a villa where he rested with Jovanka. Tito had two villas in Sutjeska National Park — the only place in all of Yugoslavia where he allowed himself this within the boundaries of a national park. Donje Bare were beautiful enough for him to make an exception. The remains of the villa still stand today.</p>
+
+<h2>Mountain Homesteads — A Life Unchanged</h2>
+<p>Scattered across Zelengora are katuns — summer pastoral settlements where people bring their livestock in summer and stay until late autumn. Stone houses, sheep, horses, smoke from chimneys. Jovo Popović listed them in 1935 — many of those same katuns exist today, in the same places.</p>
+
+<p>At a homestead on the mountain you can buy fresh kajmak, milk, sometimes cheese. It is not a shop — it is someone's home. Stopping by, saying hello, buying kajmak and having a coffee — that is part of an experience you will not find in any tourist guide.</p>
+
+<h2>Palić's Spruce — An Endemic Species</h2>
+<p>On the trail from Tjentište towards Donje Bare, you pass through a forest of Palić's spruce — an endemic tree species that grows only in this part of the world. Popović recorded them in 1935 on Husad mountain, but they also grow along the trail to Donje Bare. Very few visitors know what they are looking at — we always tell the group what it is and why it matters.</p>
+
+<h2>Wild Blueberries in August</h2>
+<p>This is a detail that appears in no tourist description of Zelengora. In August, wild blueberries grow along almost every trail on the mountain. Picking them is free — you simply reach out and pick. Guests who come for the first time cannot believe it. Blueberries straight from the mountain, no pesticides, no plastic boxes — just the mountain and you.</p>
+
+<h2>Čemerno Pass — Where Two Seas Meet</h2>
+<p>At Čemerno pass, which you cross on the way to Zelengora, lies one of the most interesting geographical points in the region. On one side of the pass, water flows towards the <strong>Adriatic Sea</strong> (into the Neretva). On the other — towards the <strong>Black Sea</strong> (into the Drina, then the Sava, then the Danube). Two rivers, two seas, one mountain pass. Very few tourist guides mention this.</p>
+
+<h2>How to Get to Zelengora</h2>
+<p>Zelengora is accessible from two directions:</p>
+
+<p><strong>From Tjentište</strong> (towards Donje Bare, Gornje Bare and Borić viewpoint) — one hour on a rough dirt road. Off-road vehicles only. From Foča it is 30km of asphalt to Tjentište, then dirt road up the mountain.</p>
+
+<p><strong>From Kalinovik</strong> (towards Orlovačko, Štirinsko and Kotlaničko Lakes) — poor dirt road, not recommended for standard cars. You approach either through Kalinovik or via Čemerno pass.</p>
+
+<p>We organise transport by off-road vehicle from Foča — both to Donje Bare and to Orlovačko Lake. You do not need to worry about the road.</p>
+
+<h2>When to Visit Zelengora</h2>
+<p>Zelengora is beautiful from June to October. June brings flowers and the lush green that gave the mountain its name. July and August — blueberries, warm temperatures, ideal for camping. September — perhaps the finest month: golden colours, fewer visitors, clear skies. Popović wrote in 1935 that "the most pleasant time to visit is from June to the end of September" — and it holds true today.</p>
+
+<h2>Our Organised Tours to Zelengora</h2>
+<p>We offer four tour formats so you can experience Zelengora:</p>
+
+<p><strong>Jeep Safari Zelengora</strong> (€70) — panoramic off-road tour with stops at lakes and viewpoints. Ideal for those who want to see the mountain without long walking. <a href="/en/tours/jeep-safari-zelengora" class="text-emerald-400 hover:text-emerald-300 underline">View tour →</a></p>
+
+<p><strong>Zelengora — Lakes and Viewpoints</strong> (€70) — an easy day walk through Zelengora. Donje Bare, Gornje Bare, Borić viewpoint. <a href="/en/tours/zelengora-jezera-vidikovci" class="text-emerald-400 hover:text-emerald-300 underline">View tour →</a></p>
+
+<p><strong>Zelengora — Bregoč Summit</strong> (€70) — for those who want the highest peak. An hour and forty minutes to the summit, panorama in every direction. <a href="/en/tours/zelengora-uspon-bregoč" class="text-emerald-400 hover:text-emerald-300 underline">View tour →</a></p>
+
+<p><strong>Camping on Zelengora + Jeep Safari</strong> (€160) — three days by the lake, Bregoč ascent and a safari through the mountain. <a href="/en/tours/kampovanje-zelengora-bregoč-jeep-safari" class="text-emerald-400 hover:text-emerald-300 underline">View tour →</a></p>
+`,
+    author: "Petar & Nevena",
+    date: "2026-05-10",
+    image: "/images/tours/gallery/zelengora-jezero.webp",
+    imageAlt: "Zelengora mountain lakes Sutjeska National Park Bosnia",
+    coverImage: "/images/tours/gallery/zelengora-jezero.webp",
+    coverAlt: "Zelengora mountain lakes Sutjeska National Park Bosnia",
+    tags: ["zelengora", "hiking", "lakes", "sutjeska national park", "bosnia"],
+  },
 ];
 
 export function getBlogPostENBySlug(slug: string): BlogPostEN | undefined {

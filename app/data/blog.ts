@@ -837,6 +837,86 @@ export const blogPosts: BlogPost[] = [
     coverAlt: "Pogled sa Maglića na Trnovačko jezero — NP Sutjeska",
     tags: ["Sarajevo", "Maglić", "NP Sutjeska", "Trnovačko jezero", "izlet"],
   },
+  {
+    id: "11",
+    slug: "zelengora-vodic-planina-bih",
+    title: "Zelengora — kompletan vodič kroz najljepšu planinu bivše Jugoslavije",
+    metadataTitle: "Zelengora — vodič, jezera, Bregoč i ture | Udahni Avanturu",
+    metadataDescription:
+      "Sve što trebaš znati o Zelengori — jezera, Bregoč uspon, Borić vidikovac, katuni, Titova vila i kako doći. Organizovane ture iz Foče od 70€.",
+    excerpt:
+      "Zelengora nije planina u uobičajenom smislu. Nema špicastih vrhova ni ledenih litica. Ima nešto drugačije — prostrane pašnjake zelene kao baršun, sedam planinskih jezera i tišinu koja te uvlači polako, bez nasilja.",
+    content: `
+    <h2>Zašto se zove Zelengora</h2>
+<p>Ime nije metafora. Zelengora doslovno znači — Zelen Gora. Kad je Jovo Popović 1935. pisao o njoj u svojoj knjizi "Kroz planine Bosne i Hercegovine", opisao je planinu kakvu je rijetko gdje vidio: "Nema nijedne planine u našim krajevima, koju je priroda tako lijepo, pitomo-romantički nakitila." Devedeset godina kasnije — ništa se nije promijenilo.</p>
+
+<p>Za razliku od Maglića koji te udari snagom i visinom, Zelengora te osvoji polako. Nema dramatičnih litica ni zahtjevnih uspona. Ima prostrane pašnjake, sedam jezera, stotine izvora bistre vode i — u avgustu — borovnice koje rastu uz stazu. Gosti koji ih prvi put vide ne mogu da vjeruju da im je dozvoljena da ih beru direktno sa planine.</p>
+
+<h2>Jezera Zelengore — koja su i gdje se nalaze</h2>
+<p>Zelengora ima sedam glacijalnih jezera. Popović ih je 1935. opisao precizno: Štirinsko je najveće, Kotlaničko najdublje, a Crno jezero najljepše po prirodnom položaju — mada bi se o tome dalo raspravljati.</p>
+
+<p>Sa jedne strane planine, dostupne makadamskim putem (loš put, preporučujemo terensko vozilo), nalaze se: <strong>Orlovačko jezero, Kotlaničko jezero, Štirinsko jezero i Jugovo jezero</strong>. Do njih se dolazi iz pravca Kalinovika ili preko Tjentišta pa Čemerna. Orlovačko je "proglašeno" najljepšim jezerom Zelengore — uglavnom zato što je najdostupnije i najviše fotografisano. Mi se s tim ne bismo složili.</p>
+
+<p>Sa druge strane planine, iz pravca Tjentišta, nalaze se <strong>Donje i Gornje Bare</strong> — dva jezera do kojih se dolazi sat vremena po lošem putu iz Tjentišta, isključivo terenskim vozilima. Ili pješice — što je prelijepa staza kroz šumu gdje smo vidjeli divokoze kako trče pored nas.</p>
+
+<h2>Bregoč — uspon koji nije strašan</h2>
+<p>Bregoč je najviši vrh Zelengore na 2.015 metara. Zvuči zastrašujuće — nije. Uspon traje nekih sat i četrdeset minuta laganog hoda i tehnički nije zahtjevan. Sa vrha se vidi sve: Maglić, Volujak, Jahorina, Treskavica, u daljini se nazire pravac prema Jadranskom moru.</p>
+
+<p>Direktno preko puta Bregoča nalaze se <strong>Kozje strane</strong> — greben koji izgleda kao obična planinska stazica, ali sa obje strane su provalije. Naziv nije slučajan — samo koze (i iskusni planinari) se osjećaju sasvim sigurno. Ko ima smisla za adrenalin bez tehničkih poteškoća — Kozje strane su obavezan usputni posjet.</p>
+
+<h2>Vidikovac Borić — naš favorit</h2>
+<p>Trideset minuta hoda od Donjih bara nalazi se vidikovac Borić. Za nas — najljepši vidikovac na cijeloj Zelengori. Sa Borića se vidi kanjon rijeke Sutjeske, Maglić u pozadini, Volujak i Zelengora pred tobom. Fotografije koje odavde izađu ne trebaju nikakvu obradu.</p>
+
+<p>Iznad Donjih bara odmah je Uglješin vrh — odakle se pruža fantastičan panoramski pogled na sve strane.</p>
+
+<h2>Titova vila na Donjim barama</h2>
+<p>Josip Broz Tito je znao birati mjesta. Na Donjim barama je imao vilu gdje je odmarao sa Jovankom. Tito je u Nacionalnom parku Sutjeska imao dvije vile — jedino mjesto u cijeloj Jugoslaviji gdje je to sebi dozvolio unutar granica nacionalnog parka. Donje bare su mu bile dovoljno lijepe da napravi izuzetak. Ostaci vile i danas stoje.</p>
+
+<h2>Katuni — život koji se nije promijenio</h2>
+<p>Po cijeloj Zelengori rasuti su katuni — ljetni pastirski stanovi gdje ljudi izlaze sa stokom u ljeto i ostaju do kasne jeseni. Kamene kućice, ovce, konji, dim iz dimnjaka. Jovo Popović ih je popisao 1935. — mnogi od tih katuna postoje i danas, na istim mjestima.</p>
+
+<p>Kod domaćina na katunu možeš kupiti svježi kajmak, mlijeko, ponekad sir. Nije to prodavnica — to je kuća u kojoj neko živi. Svratiti, pozdraviti se, kupiti kajmak i popiti kafu — to je dio iskustva koje ne možeš naći u turističkim vodičima.</p>
+
+<h2>Palićeve omorike — endemska vrsta</h2>
+<p>Na stazi od Tjentišta prema Donjim barama prolazi se kroz šumu Palićevih omorika — endemske vrste drveta koja raste samo na ovim prostorima. Popović ih je zabilježio 1935. na Husad planini, ali ih ima i duž staze prema Donjim barama. Malo koji posjetilac zna što gleda — mi uvijek kažemo grupi šta je to i zašto je posebno.</p>
+
+<h2>Borovnice u avgustu</h2>
+<p>Ovo je detalj koji ne stoji ni u jednom turističkom opisu Zelengore. U avgustu, uz skoro sve staze na Zelengori, rastu divlje borovnice. Branje je slobodno — samo protegneš ruku i bereš. Gosti koji prvi put dođu ne mogu da vjeruju. Borovnice direktno sa planine, bez pesticida, bez plastičnih kutija — samo planina i ti.</p>
+
+<h2>Čemerno — gdje se susreću dva mora</h2>
+<p>Na prevoju Čemerno, koji presijecate na putu prema Zelengori, nalazi se jedna od najinteresantnijih geoloških tačaka u regionu. Sa jedne strane prevoja voda teče prema <strong>Jadranskom moru</strong> (u Neretvu). Sa druge strane — prema <strong>Crnom moru</strong> (u Drinu, pa Savu, pa Dunav). Dvije rijeke, dva mora, jedna planinska tačka. Malo koji turistički vodič pominje ovo.</p>
+
+<h2>Kako doći na Zelengoru</h2>
+<p>Zelengora je dostupna iz dva pravca:</p>
+
+<p><strong>Iz pravca Tjentišta</strong> (prema Donjim i Gornjim barama i vidikovcu Borić) — sat vremena lošim makadamskim putem. Isključivo terenskim vozilima. Iz Foče je do Tjentišta 30km asfaltom, pa makadamom na planinu.</p>
+
+<p><strong>Iz pravca Kalinovika</strong> (prema Orlovačkom, Štirinskom i Kotlaničkom jezeru) — loš makadamski put, ne preporučujemo osobnim automobilom. Dolazite ili kroz Kalinovik ili preko Čemerna.</p>
+
+<p>Mi organizujemo prijevoz terenskim vozilima iz Foče — i na Donje bare i na Orlovačko jezero. Ne trebaš brinuti o putu.</p>
+
+<h2>Kada ići na Zelengoru</h2>
+<p>Zelengora je prelijepa od juna do oktobra. Juni donosi cvijeće i bujno zelenilo koje je planinu i nazvalo. Juli i august — borovnice, toplo, idealno za kampovanje. Septembar — možda najljepše: zlatne boje, manje posjetilaca, bistro nebo. Popović je 1935. pisao da je "najugodnija posjeta od juna do kraja septembra" — i danas vrijedi isto.</p>
+
+<h2>Naše organizovane ture na Zelengoru</h2>
+<p>Nudimo četiri formata tura da doživite Zelengoru:</p>
+
+<p><strong>Jeep safari Zelengora</strong> (70€) — panoramska vožnja terenskim vozilima sa zaustavljanjima na jezerima i vidikovcima. Idealno za one koji žele vidjeti planinu bez dugog pješačenja. <a href="/ture/jeep-safari-zelengora" class="text-emerald-400 hover:text-emerald-300 underline">Pogledaj turu →</a></p>
+
+<p><strong>Zelengora — jezera i vidikovci</strong> (70€) — lagana jednodnevna šetnja kroz Zelengoru. Donje bare, Gornje bare, vidikovac Borić. <a href="/ture/zelengora-jezera-vidikovci" class="text-emerald-400 hover:text-emerald-300 underline">Pogledaj turu →</a></p>
+
+<p><strong>Zelengora — uspon na Bregoč</strong> (70€) — za one koji žele najviši vrh. Sat i četrdeset minuta do vrha, panorama na sve strane. <a href="/ture/zelengora-uspon-bregoč" class="text-emerald-400 hover:text-emerald-300 underline">Pogledaj turu →</a></p>
+
+<p><strong>Kampovanje na Zelengori + Jeep safari</strong> (160€) — tri dana uz jezero, uspon na Bregoč i safari kroz planinu. <a href="/ture/kampovanje-zelengora-bregoč-jeep-safari" class="text-emerald-400 hover:text-emerald-300 underline">Pogledaj turu →</a></p>
+`,
+    author: "Petar & Nevena",
+    date: "2026-05-10",
+    image: "/images/tours/gallery/zelengora-jezero.webp",
+    imageAlt: "Zelengora planinska jezera NP Sutjeska",
+    coverImage: "/images/tours/gallery/zelengora-jezero.webp",
+    coverAlt: "Zelengora planinska jezera NP Sutjeska",
+    tags: ["zelengora", "planinarenje", "jezera", "np sutjeska", "bosna"],
+  },
 ];
 
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {
