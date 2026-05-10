@@ -913,8 +913,8 @@ export const blogPosts: BlogPost[] = [
     date: "2026-05-10",
     image: "/images/tours/gallery/vidikovac-zelengora.webp",
     imageAlt: "Vidikovac Zelengora NP Sutjeska",
-    coverImage: "/images/tours/gallery/zelengora-jezero.webp",
-    coverAlt: "Zelengora planinska jezera NP Sutjeska",
+    coverImage: "/images/tours/gallery/vidikovac-zelengora.webp",
+    coverAlt: "Vidikovac Zelengora NP Sutjeska",
     tags: ["zelengora", "planinarenje", "jezera", "np sutjeska", "bosna"],
   },
 ];
