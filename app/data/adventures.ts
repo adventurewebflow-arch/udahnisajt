@@ -501,7 +501,7 @@ Smještaj biraš ti — bungalov sa zajedničkim kupatilom ili šator (oprema ob
     faqs: [
       {
         q: "Koji smještaj da odaberem — bungalov ili šator?",
-        a: "Bungalov (160€) je sa zajedničkim kupatilom u kampu — komforniji, u čvrstom objektu. Šator (140€) je naša oprema, postavlja se u kampu, koristiš toalete u kampu. Obje opcije imaju isti program i iste obroke. Ako trebaš sobu sa posebnim toaletom, javi nam se da provjerimo dostupnost.",
+        a: "Bungalov (170€) je sa zajedničkim kupatilom u kampu — komforniji, u čvrstom objektu. Šator (155€) je naša oprema, postavlja se u kampu, koristiš toalete u kampu. Obje opcije imaju isti program i iste obroke. Ako trebaš sobu sa posebnim toaletom, javi nam se da provjerimo dostupnost.",
       },
       {
         q: "Koju aktivnost da odaberem u subotu — Trnovačko jezero ili Perućicu?",
