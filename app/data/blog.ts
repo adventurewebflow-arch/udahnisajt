@@ -13,6 +13,7 @@ export interface BlogPost {
   tags: string[];
   metadataTitle?: string;
   metadataDescription?: string;
+  images?: { src: string; alt: string }[];
 }
 
 export const blogPosts: BlogPost[] = [
@@ -916,6 +917,38 @@ export const blogPosts: BlogPost[] = [
     coverImage: "/images/tours/gallery/vidikovac-zelengora.webp",
     coverAlt: "Vidikovac Zelengora NP Sutjeska",
     tags: ["zelengora", "planinarenje", "jezera", "np sutjeska", "bosna"],
+  },
+  {
+    id: "12",
+    slug: "anastasija-alex-marco-lin-sutjeska",
+    title: "Anastasija, Alex, Marco i Lin — Perućica, Zelengora, rafting",
+    excerpt:
+      "Fotografije i utisci sa višednevne avanture kroz Prašumu Perućicu, Trnovačko jezero, Zelengoru i rafting na Tari.",
+    content: `
+    <p>Fotografije sa avanture Anastasije, Alex-a, Marco-a i Lin-a kroz Nacionalni park Sutjeska — Prašumu Perućicu, Trnovačko jezero, Zelengoru i rafting na Tari.</p>
+    <p>Pogledaj naše <a href="/ture" class="text-emerald-400 hover:text-emerald-300 underline">ture</a> ili <a href="/#kontakt" class="text-emerald-400 hover:text-emerald-300 underline">kontaktiraj nas</a> za rezervaciju.</p>
+    `,
+    author: "Petar & Nevena",
+    date: "2026-05-23",
+    image: "/images/tours/blog-trnovacko-perucica-rafting/japanci-na-trnovackom-jezeru.webp",
+    imageAlt: "Gosti na Trnovačkom jezeru NP Sutjeska",
+    tags: ["NP Sutjeska", "Perućica", "Trnovačko jezero", "Zelengora", "rafting"],
+    images: [
+      { src: "/images/tours/blog-trnovacko-perucica-rafting/ekipa-prasuma.webp", alt: "Ekipa u Prašumi Perućica" },
+      { src: "/images/tours/blog-trnovacko-perucica-rafting/odmor-perucica.webp", alt: "Odmor u Perućici" },
+      { src: "/images/tours/blog-trnovacko-perucica-rafting/japanci-na-trnovackom-jezeru.webp", alt: "Japanci na Trnovačkom jezeru" },
+      { src: "/images/tours/blog-trnovacko-perucica-rafting/alex-na-trnovackom-jezeru.webp", alt: "Alex na Trnovačkom jezeru" },
+      { src: "/images/tours/blog-trnovacko-perucica-rafting/ekipa-na-trnovackom.webp", alt: "Ekipa na Trnovačkom jezeru" },
+      { src: "/images/tours/blog-trnovacko-perucica-rafting/trnovacko-u-maju.webp", alt: "Trnovačko jezero u maju" },
+      { src: "/images/tours/blog-trnovacko-perucica-rafting/zelengora-gornje-bare.webp", alt: "Zelengora Gornje bare" },
+      { src: "/images/tours/blog-trnovacko-perucica-rafting/gornje-bare-anastasija.webp", alt: "Anastasija na Gornjim barama" },
+      { src: "/images/tours/blog-trnovacko-perucica-rafting/put-za-boric-anastasija.webp", alt: "Put za Borić" },
+      { src: "/images/tours/blog-trnovacko-perucica-rafting/boric-anastasija-pogled.webp", alt: "Pogled sa Borića" },
+      { src: "/images/tours/blog-trnovacko-perucica-rafting/vidikovac-bešikta.webp", alt: "Vidikovac Bešikta" },
+      { src: "/images/tours/blog-trnovacko-perucica-rafting/skakavac-vodopad-pogled.webp", alt: "Vodopad Skakavac" },
+      { src: "/images/tours/blog-trnovacko-perucica-rafting/boric-pogled-maglic-perucica.webp", alt: "Pogled sa Borića na Maglić i Perućicu" },
+      { src: "/images/tours/blog-trnovacko-perucica-rafting/pored-puta-za-tjentiste.webp", alt: "Pored puta za Tjentište" },
+    ],
   },
 ];
 

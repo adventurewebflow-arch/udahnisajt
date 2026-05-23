@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { getBlogPostBySlug, blogPosts } from "../../data/blog";
 import BlogPostSchema from "../../components/BlogPostSchema";
 import InquiryForm from "../../components/InquiryForm";
+import TourGallery from "../../components/TourGallery";
 import type { Metadata } from "next";
 
 export async function generateStaticParams() {
@@ -99,6 +100,12 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
         </article>
+
+        {post.images && post.images.length > 0 && (
+          <div className="mt-10">
+            <TourGallery images={post.images} />
+          </div>
+        )}
 
         {/* Tags */}
         {post.tags && post.tags.length > 0 && (
