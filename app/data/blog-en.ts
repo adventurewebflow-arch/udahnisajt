@@ -13,6 +13,7 @@ export interface BlogPostEN {
   tags: string[];
   metadataTitle?: string;
   metadataDescription?: string;
+  images?: { src: string; alt: string }[];
 }
 
 export const blogPostsEN: BlogPostEN[] = [
@@ -844,6 +845,103 @@ export const blogPostsEN: BlogPostEN[] = [
     imageAlt: "Zelengora viewpoint Sutjeska National Park Bosnia",
     coverAlt: "Zelengora viewpoint Sutjeska National Park Bosnia",
     tags: ["zelengora", "hiking", "lakes", "sutjeska national park", "bosnia"],
+  },
+  {
+    id: "12",
+    slug: "anastasija-alex-marco-lin-sutjeska",
+    title: "A Russian Who Visited Antarctica and Three Americans — Left Speechless in Perućica",
+    metadataTitle: "International Guests in Sutjeska NP — Perućica, Zelengora & Tara Rafting",
+    metadataDescription:
+      "Anastasija has travelled the world including Antarctica. Alex, Marco and Lin are Americans of Japanese heritage. All four were left speechless in Perućica. Here is what happened.",
+    excerpt:
+      "Anastasija has been travelling the world for years. She has been to Antarctica. And then she arrived in Bosnia and said something I have not forgotten: 'I cannot believe everything you have in such a small area.'",
+    date: "2026-05-21",
+    image: "/images/tours/blog-trnovacko-perucica-rafting/japanci-na-trnovackom-jezeru.webp",
+    coverImage: "/images/tours/blog-trnovacko-perucica-rafting/japanci-na-trnovackom-jezeru.webp",
+    imageAlt: "Guests at Trnovačko Lake Sutjeska National Park",
+    coverAlt: "Guests at Trnovačko Lake Sutjeska National Park",
+    author: "Petar & Nevena",
+    tags: ["perućica", "skakavac", "zelengora", "tara rafting", "international guests", "sutjeska national park"],
+    images: [
+      { src: "/images/tours/blog-trnovacko-perucica-rafting/ekipa-prasuma.webp", alt: "Group in Perućica Rainforest" },
+      { src: "/images/tours/blog-trnovacko-perucica-rafting/odmor-perucica.webp", alt: "Rest in Perućica" },
+      { src: "/images/tours/blog-trnovacko-perucica-rafting/japanci-na-trnovackom-jezeru.webp", alt: "Japanese-Americans at Trnovačko Lake" },
+      { src: "/images/tours/blog-trnovacko-perucica-rafting/alex-na-trnovackom-jezeru.webp", alt: "Alex at Trnovačko Lake" },
+      { src: "/images/tours/blog-trnovacko-perucica-rafting/ekipa-na-trnovackom.webp", alt: "Group at Trnovačko Lake" },
+      { src: "/images/tours/blog-trnovacko-perucica-rafting/trnovacko-u-maju.webp", alt: "Trnovačko Lake in May" },
+      { src: "/images/tours/blog-trnovacko-perucica-rafting/zelengora-gornje-bare.webp", alt: "Zelengora Gornje Bare" },
+      { src: "/images/tours/blog-trnovacko-perucica-rafting/gornje-bare-anastasija.webp", alt: "Anastasija at Gornje Bare" },
+      { src: "/images/tours/blog-trnovacko-perucica-rafting/put-za-boric-anastasija.webp", alt: "On the way to Borić" },
+      { src: "/images/tours/blog-trnovacko-perucica-rafting/boric-anastasija-pogled.webp", alt: "View from Borić" },
+      { src: "/images/tours/blog-trnovacko-perucica-rafting/skakavac-vodopad-pogled.webp", alt: "Skakavac Waterfall" },
+      { src: "/images/tours/blog-trnovacko-perucica-rafting/boric-pogled-maglic-perucica.webp", alt: "View from Borić towards Maglić and Perućica" },
+      { src: "/images/tours/blog-trnovacko-perucica-rafting/pored-puta-za-tjentiste.webp", alt: "On the road to Tjentište" },
+    ],
+    content: `<p>Anastasija has been travelling the world for years. She has been to Antarctica. She has seen things most of us never will. And then she arrived in Bosnia and said something I have not forgotten: "I cannot believe everything you have in such a small area."</p>
+
+<p>With her were three friends from America — Alex, Marco and Lin, of Japanese heritage. Four completely different people, with experiences from all over the world. And all four were left speechless in the same place — in front of Skakavac.</p>
+
+<h2>When You Hear the Waterfall Before You See It</h2>
+
+<p>Perućica does not hit you immediately. You enter slowly, through forest that grows denser, trees taller, light scarcer. And then you start to hear a sound. Quiet at first, then louder.</p>
+
+<p>Alex was the first to stop. "This sounds insane" — he said, still through the trees, before we had reached the clearing.</p>
+
+<p>That day Skakavac was at full power. The winter had left plenty of snow, the tributaries were swollen, and 75 metres of water were falling with everything they had. The spray was felt three metres away, the wind from the waterfall carrying fine droplets and a cold that cuts through you.</p>
+
+<p>Marco and Lin immediately headed towards it. They wanted to swim. Three metres away — they stopped, laughed and gave up. The temperature of the water and the wind left no other option. Which was probably for the best.</p>
+
+<h2>A Rainforest That Has Never Been Touched</h2>
+
+<p>The Japanese have a particular relationship with nature and antiquity. When we told them on the path through Perućica about a tree three hundred years old standing a few metres away from us, and about the tree beside it that fell nobody knows when and is slowly returning to the earth — Alex, Marco and Lin stopped walking.</p>
+
+<p>They stood still. They looked. There was the kind of silence you never hear in a city.</p>
+
+<p>"So nobody has ever touched this?" — Lin asked.</p>
+
+<p>"Nobody. Not a single human hand."</p>
+
+<p>They were taken aback. Japan has ancient forests, but most are managed, protected, tended. A rainforest that lives and dies by its own rules — that is something different. That left them more speechless than the waterfall itself.</p>
+
+<h2>Anastasija and the Bad Roads</h2>
+
+<p>On one of our roads — and our roads are what they are — Anastasija was looking out the window and said: "Petar, I really cannot believe how bad these roads are."</p>
+
+<p>I told her: "Do you think the nature would be this wild if the roads were good?"</p>
+
+<p>She laughed. Thought about it. "You are right. If the roads were good, there would be a hundred more people around us right now. This way we are alone."</p>
+
+<p>Anastasija has been to Antarctica. She has seen places you cannot reach even with good roads. And she said that Bosnia has enormous potential — but that there is something special in precisely that inaccessibility. That the wilderness is wild because nobody owns it or tidies it up.</p>
+
+<h2>Rafting the Tara — From Brstenovica</h2>
+
+<p>We did the rafting from Brstenovica — the point where the real rafting begins, not the shorter version from halfway down. I have over ten years of experience on the Tara, I learned to swim and dive on it, and I know it well enough to know when it is safe to start from the beginning and when it is not.</p>
+
+<p>That section most groups avoid — it is not avoided by accident. The rapids are bigger, the water faster, the raft less predictable. But we were a good team, and the Tara rewarded us.</p>
+
+<p>On one of the big rapids — the raft tilted, the wave hit, water came in over the side. Anastasija went down to the bottom of the raft, grabbed her paddle, sat back in her place.</p>
+
+<p>And said, loudly, while we were all laughing: "This is f***ing amazing. This is f***ing insane."</p>
+
+<p>Perfectly put.</p>
+
+<h2>Maglić — Next Time</h2>
+
+<p>They wanted to go to Maglić. There was heavy snow and ice on the trail, and we did not climb — safety always comes before ambition. When the ground is not safe, we do not go up regardless of how beautiful the sky looks.</p>
+
+<p>Anastasija said she is coming back next year. With a friend who was blown away by the photos and videos. Maglić is on the list.</p>
+
+<p>Alex, Marco and Lin — who knows. But Perućica changed them in ways I did not expect. When someone who grew up in Japanese culture — with a deep respect for nature — stands in front of a rainforest thousands of years old and asks "nobody has ever touched this?" — and in the silence understands what that means — then you know that your corner of the world is something special.</p>
+
+<h2>As Far as I Am Concerned</h2>
+
+<p>I have guided tours for years. I have seen the reactions of hundreds of people. But this group reminded me why I do what I do.</p>
+
+<p>Anastasija, who had been to Antarctica — and was moved by Bosnia. Alex, who heard Skakavac through the trees and said "this sounds insane". Lin, who stopped in front of an ancient tree and asked if anyone had ever touched it.</p>
+
+<p>They did not come here because it is easy to get here. They came because it is worth it.</p>
+
+<p>And that, in the end, is the only travel guide that ever makes sense.</p>`,
   },
 ];
 
