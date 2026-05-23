@@ -921,12 +921,78 @@ export const blogPosts: BlogPost[] = [
   {
     id: "12",
     slug: "anastasija-alex-marco-lin-sutjeska",
-    title: "Anastasija, Alex, Marco i Lin — Perućica, Zelengora, rafting",
+    title: "Ruskinja koja je obišla Antarktik i trojica Amerikanaca — ostali bez teksta u Perućici",
+    metadataTitle: "Strani gosti u NP Sutjeska — Perućica, Zelengora i Rafting Tarom | Udahni Avanturu",
+    metadataDescription:
+      "Anastasija je obišla cijeli svijet uključujući Antarktik. Alex, Marco i Lin su Amerikanci japanskog porijekla. Svi su ostali bez teksta u Perućici. Evo šta se desilo.",
     excerpt:
-      "Fotografije i utisci sa višednevne avanture kroz Prašumu Perućicu, Trnovačko jezero, Zelengoru i rafting na Tari.",
+      "Anastasija putuje po svijetu već godinama. Bila je na Antarktiku. A onda je stigla u Bosnu i rekla nešto što nisam zaboravio: 'Ne mogu da vjerujem šta sve imate na tako malom prostoru.'",
     content: `
-    <p>Fotografije sa avanture Anastasije, Alex-a, Marco-a i Lin-a kroz Nacionalni park Sutjeska — Prašumu Perućicu, Trnovačko jezero, Zelengoru i rafting na Tari.</p>
-    <p>Pogledaj naše <a href="/ture" class="text-emerald-400 hover:text-emerald-300 underline">ture</a> ili <a href="/#kontakt" class="text-emerald-400 hover:text-emerald-300 underline">kontaktiraj nas</a> za rezervaciju.</p>
+<p>Anastasija putuje po svijetu već godinama. Bila je na Antarktiku. Vidjela je stvari koje većina nas nikad neće. A onda je stigla u Bosnu i rekla nešto što nisam zaboravio: "Ne mogu da vjerujem šta sve imate na tako malom prostoru."</p>
+
+<p>Sa njom su bila tri prijatelja iz Amerike — Alex, Marco i Lin, japanskog porijekla. Četvero potpuno različitih ljudi, sa iskustvima iz cijeloga svijeta. I svi su ostali bez teksta na istom mjestu — ispred Skakavca.</p>
+
+<h2>Kada počuješ vodopad prije nego ga vidiš</h2>
+
+<p>Perućica te ne udari odmah. Ulazi se polako, kroz šumu koja postaje sve gušća, stabla sve viša, svjetlost sve rjeđa. A onda počneš čuti zvuk. Tiho, pa sve glasnije.</p>
+
+<p>Alex je bio prvi koji je stao. "Ovo zvuči ludo" — rekao je, još uvijek kroz šumu, prije nego smo izašli na čistinu.</p>
+
+<p>Taj dan je Skakavac bio u punom sjaju. Zima je ostavila dosta snijega, pritoci nabujali, i 75 metara vode padalo je s punom snagom. Prskanje se osjećalo na tri metra udaljenosti, vjetar od vodopada nosio je sitne kapljice i hladnoću koja para kožu.</p>
+
+<p>Marco i Lin su odmah krenuli prema njemu. Htjeli su se kupati. Na tri metra od njega — zaustavili su se, nasmijali i odustali. Temperatura vode i vjetar nije ostavljao nikakvu drugu opciju. Što je vjerovatno i dobro.</p>
+
+<h2>Prašuma koja nikad nije dotaknuta</h2>
+
+<p>Japanci imaju poseban odnos prema prirodi i drevnosti. Kad smo im na putu kroz Perućicu pričali o stablu starom 300 godina koje stoji na nekoliko metara od nas, i o stablu pored njega koje je palo ko zna kada i polako se vraća u zemlju — Alex, Marco i Lin su prestali hodati.</p>
+
+<p>Stali su. Gledali. Bila je tišina koju u gradu nikad ne čuješ.</p>
+
+<p>"Dakle ovo niko nije dirao?" — pitao je Lin.</p>
+
+<p>"Niko. Ni jedna ljudska ruka."</p>
+
+<p>Ostali su zatečeni. U Japanu postoje drevne šume, ali većinom su upravljane, čuvane, dotjerivane. Prašuma koja živi i umire po sopstvenim pravilima — to je nešto drugo. To ih je ostavilo bez teksta više od samog vodopada.</p>
+
+<h2>Anastasija i loši putevi</h2>
+
+<p>Na jednom od naših puteva — a naši putevi su ono što jesu — Anastasija je gledala kroz prozor i rekla: "Petar, stvarno ne mogu da vjerujem kako su ovi putevi loši."</p>
+
+<p>Rekao sam joj: "Misliš da bi bila ovako divlja priroda da su putevi dobri?"</p>
+
+<p>Nasmijala se. Razmislila. "U pravu si. Da su dobri putevi, oko nas bi sada bilo još 100 ljudi. Ovako smo sami."</p>
+
+<p>Anastasija je obišla Antarktik. Vidjela je mjesta do kojih se ne stiže ni dobrim putevima. I rekla je da Bosna ima veliki potencijal — ali i da je nešto posebno upravo u toj nedostupnosti. Da je divljina divlja jer je niko ne posjeduje ni ne uređuje.</p>
+
+<h2>Rafting Tarom — od Brstenovice</h2>
+
+<p>Rafting smo radili od Brstenovice — tačke od koje kreće pravi rafting, ne ona skraćena varijanta od pola trase. Imam preko deset godina iskustva na Tari, na njoj sam naučio plivati i skakati "laste", i znam je dovoljno dobro da znam kada je sigurno ići od početka i kada nije.</p>
+
+<p>Taj dio koji većina izbjegava — nije izbjegan slučajno. Brzaci su veći, voda brža, camac manje predvidljiv. Ali mi smo bili dobra ekipa, i Tara nas je nagradila.</p>
+
+<p>Na jednom od velikih brzaka — camac se nakrenuo, val je udario, voda pljusnula unutra. Anastasija je pala na dno camca, zgrabila veslo, sjela nazad na mjesto.</p>
+
+<p>I rekla, glasno, dok smo se svi smijali: "Ovo je jebeno dobro. Ovo je jebeno ludilo."</p>
+
+<p>Savršeno opisano.</p>
+
+<h2>Maglić — sljedeći put</h2>
+
+<p>Htjeli su na Maglić. Bila je jaka zima, snijeg i led na stazi, i nismo se penjali — sigurnost je uvijek ispred ambicije. Kada zemlja nije sigurna, ne idemo gore bez obzira koliko je nebo lijepo.</p>
+
+<p>Anastasija je rekla da se vraća sljedeće godine. Sa prijateljicom koja se "odušila slikama i video snimcima". Maglić je na listi.</p>
+
+<p>Alex, Marco i Lin — ko zna. Ali Perućica ih je promijenila na načine koje nisam očekivao. Kad čovjek koji je odrastao u japanskoj kulturi poštovanja prema prirodi stane ispred prašume stare hiljadama godina i kaže "niko ovo nije dirao" — i u tišini shvati šta to znači — tada znaš da je tvoj kraj nešto posebno.</p>
+
+<h2>Što se mene tiče</h2>
+
+<p>Vodim ture godinama. Vidio sam reakcije stotina ljudi. Ali ova ekipa me podsjetila zašto radim ovo što radim.</p>
+
+<p>Anastasija koja je bila na Antarktiku — i odušila se Bosnom. Alex koji je čuo Skakavac kroz šumu i rekao "ovo zvuči ludo". Lin koji je stao ispred drevnog stabla i pitao da li ga je neko ikad dirao.</p>
+
+<p>Nisu došli ovdje jer je lako doći. Došli su jer je vrijedno.</p>
+
+<p>I to je, na kraju, jedini turistički vodič koji ikad ima smisla.</p>
     `,
     author: "Petar & Nevena",
     date: "2026-05-23",
