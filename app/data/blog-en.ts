@@ -848,7 +848,7 @@ export const blogPostsEN: BlogPostEN[] = [
   },
   {
     id: "12",
-    slug: "anastasija-alex-marco-lin-sutjeska",
+    slug: "tara-rafting-perucica-rainforest-bosnia",
     title: "A Russian Who Visited Antarctica and Three Americans — Left Speechless in Perućica",
     metadataTitle: "International Guests in Sutjeska NP — Perućica, Zelengora & Tara Rafting",
     metadataDescription:

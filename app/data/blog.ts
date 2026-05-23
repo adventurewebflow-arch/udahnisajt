@@ -920,7 +920,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     id: "12",
-    slug: "anastasija-alex-marco-lin-sutjeska",
+    slug: "perucica-zelengora-rafting-tara-iskustvo",
     title: "Ruskinja koja je obišla Antarktik i trojica Amerikanaca — ostali bez teksta u Perućici",
     metadataTitle: "Strani gosti u NP Sutjeska — Perućica, Zelengora i Rafting Tarom | Udahni Avanturu",
     metadataDescription:

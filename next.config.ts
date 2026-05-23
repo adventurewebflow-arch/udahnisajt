@@ -156,11 +156,21 @@ const nextConfig: NextConfig = {
         destination: "/en/blog/day-trip-sarajevo-maglic-sutjeska",
         permanent: true,
       },
+      {
+        source: "/en/blog/anastasija-alex-marco-lin-sutjeska",
+        destination: "/en/blog/tara-rafting-perucica-rainforest-bosnia",
+        permanent: true,
+      },
 
       // SR blog: engleski slug (pogrešan jezik u putanji) → ispravan srpski slug
       {
         source: "/vodici/day-trip-sarajevo-maglic-sutjeska",
         destination: "/vodici/izlet-iz-sarajeva-sutjeska-maglic",
+        permanent: true,
+      },
+      {
+        source: "/vodici/anastasija-alex-marco-lin-sutjeska",
+        destination: "/vodici/perucica-zelengora-rafting-tara-iskustvo",
         permanent: true,
       },
 
