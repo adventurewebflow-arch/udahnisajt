@@ -41,6 +41,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: encodeURI(`${BASE}/zelengora`), lastModified },
     { url: encodeURI(`${BASE}/perucica`), lastModified },
     { url: encodeURI(`${BASE}/sutjeska`), lastModified },
+    { url: encodeURI(`${BASE}/sutjeska-nacionalni-park`), lastModified },
     { url: encodeURI(`${BASE}/kako-doci`), lastModified },
     ...tourDetailsSr,
     ...vodiciDetails,

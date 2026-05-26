@@ -31,6 +31,7 @@ export default function Footer() {
         { href: "/#izleti", label: "Izleti" },
         { href: "/galerija", label: "Galerija" },
         { href: "/vodici", label: "Blog" },
+        { href: "/sutjeska-nacionalni-park", label: "NP Sutjeska — vodič" },
         { href: "/#kontakt", label: "Kontakt" },
       ];
 

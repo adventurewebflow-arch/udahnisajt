@@ -121,8 +121,8 @@ export default function SutjeskaNationalParkPage() {
       {/* Hero */}
       <section className="relative h-[60vh] min-h-[420px] lg:h-[70vh] flex items-end">
         <Image
-          src="/images/tours/gallery/trnovacko-jezero-najljepsa-slika.webp"
-          alt="Sutjeska National Park Bosnia — Trnovačko Lake and Maglić"
+          src="/images/tours/gallery/zelengora-djevojka-u-planini.webp"
+          alt="Sutjeska National Park Bosnia — wild mountain landscape"
           fill
           priority
           sizes="100vw"

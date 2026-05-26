@@ -98,7 +98,13 @@ export default function Home() {
                     {tag}
                   </span>
                 ))}
-                {["NP Sutjeska", "Park prirode Piva", "NP Durmitor"].map((tag) => (
+                <Link
+                  href="/sutjeska-nacionalni-park"
+                  className="rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3 py-1 text-xs text-emerald-300/90 backdrop-blur-sm hover:bg-emerald-500/20 transition-colors"
+                >
+                  NP Sutjeska — vodič
+                </Link>
+                {["Park prirode Piva", "NP Durmitor"].map((tag) => (
                   <span key={tag} className="rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3 py-1 text-xs text-emerald-300/90 backdrop-blur-sm">
                     {tag}
                   </span>
