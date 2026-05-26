@@ -11,6 +11,7 @@ import {
   dayTripAdventuresEN,
   multiDayAdventuresEN,
 } from "../data/adventures-en";
+import { blogPostsEN } from "../data/blog-en";
 import type { Metadata } from "next";
 
 const BASE = "https://www.udahniavanturu.com";
@@ -208,6 +209,44 @@ export default function HomeEN() {
       </section>
 
       <GalleryPreview />
+
+      {/* Blog section */}
+      <section className="py-16 md:py-24 relative">
+        <div className="relative mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-12">
+            <h2 className="text-3xl font-bold text-white">Stories from the trails</h2>
+            <div className="w-14 h-1 bg-emerald-400 mt-3 mb-3" />
+            <Link href="/en/blog" className="inline-block text-sm text-emerald-400 hover:text-emerald-300 transition">
+              All stories →
+            </Link>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {blogPostsEN.slice(0, 3).map((post) => (
+              <Link key={post.slug} href={`/en/blog/${post.slug}`} className="group block">
+                <div className="relative aspect-[16/10] rounded-2xl overflow-hidden mb-4">
+                  <Image
+                    src={post.image ?? "/hero.webp"}
+                    alt={post.imageAlt ?? post.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                </div>
+                <p className="text-emerald-400 text-xs uppercase tracking-widest mb-2">
+                  {new Date(post.date).toLocaleDateString("en-GB")}
+                </p>
+                <h3 className="text-white font-bold text-lg leading-snug group-hover:text-emerald-400 transition-colors mb-2">
+                  {post.title}
+                </h3>
+                <p className="text-slate-400 text-sm leading-relaxed line-clamp-2">
+                  {post.excerpt}
+                </p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* About */}
       <section id="about" className="py-16 md:py-24 relative">
