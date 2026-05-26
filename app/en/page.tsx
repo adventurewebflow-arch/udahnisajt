@@ -101,7 +101,12 @@ export default function HomeEN() {
                   </span>
                 </div>
                 <div className="flex flex-wrap justify-center gap-2 text-xs sm:text-sm">
-                  <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-slate-200/90">NP Sutjeska</span>
+                  <Link
+                    href="/en/sutjeska-national-park"
+                    className="rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3 py-1 text-emerald-300/90 hover:bg-emerald-500/20 transition-colors"
+                  >
+                    NP Sutjeska — visitor guide
+                  </Link>
                   <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-slate-200/90">Piva Nature Park</span>
                   <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-slate-200/90">NP Durmitor</span>
                 </div>

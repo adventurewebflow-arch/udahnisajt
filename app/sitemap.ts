@@ -56,6 +56,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...blogDetailsEn,
     { url: encodeURI(`${BASE}/en/maglic-hike`), lastModified },
     { url: encodeURI(`${BASE}/en/sutjeska-hiking`), lastModified },
+    { url: encodeURI(`${BASE}/en/sutjeska-national-park`), lastModified },
     { url: encodeURI(`${BASE}/en/trnovacko-lake`), lastModified },
     { url: encodeURI(`${BASE}/en/perucica-rainforest`), lastModified },
     { url: encodeURI(`${BASE}/en/zelengora-lakes`), lastModified },

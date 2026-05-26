@@ -22,6 +22,7 @@ export default function Footer() {
         { href: "/en#day-trips", label: "Day Trips" },
         { href: "/en/galerija", label: "Gallery" },
         { href: "/en/blog", label: "Blog" },
+        { href: "/en/sutjeska-national-park", label: "Sutjeska National Park" },
         { href: "/en#contact", label: "Contact" },
       ]
     : [

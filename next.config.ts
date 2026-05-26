@@ -185,6 +185,11 @@ const nextConfig: NextConfig = {
         destination: "/en",
         permanent: true,
       },
+      {
+        source: "/en/sutjeska",
+        destination: "/en/sutjeska-national-park",
+        permanent: true,
+      },
 
       // ─── Ostale stranice ──────────────────────────────────────────────────
       // FIX #5: uklonjen /ture → /#ture (bio redirect chain za sve gore)
