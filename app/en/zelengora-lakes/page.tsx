@@ -1,8 +1,52 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import GridGallery from "../../components/GridGallery";
 
 const BASE = "https://www.udahniavanturu.com";
+
+const galleryImages = [
+  {
+    src: "/images/tours/gallery/izlet-na-zelengoru.webp",
+    alt: "Hikers at a Zelengora viewpoint overlooking the peaks",
+  },
+  {
+    src: "/images/tours/gallery/gornje-bare.webp",
+    alt: "The green valley and tarns of Gornje Bare on Zelengora",
+  },
+  {
+    src: "/images/tours/gallery/pogled-boric-zelengora.webp",
+    alt: "View of Maglić from Zelengora through mountain pines",
+  },
+  {
+    src: "/images/tours/gallery/setnja-gornje-bare.webp",
+    alt: "Walking along Gornje Bare lake on Zelengora",
+  },
+  {
+    src: "/images/tours/gallery/pogled-na-volujak.webp",
+    alt: "The Volujak massif seen from Zelengora",
+  },
+  {
+    src: "/images/tours/gallery/ugljesin-vrh-zelengora.webp",
+    alt: "Ridge panorama from Uglješin Vrh on Zelengora",
+  },
+  {
+    src: "/images/tours/gallery/setnja-zelengorom.webp",
+    alt: "Hiking up the green slopes of Zelengora",
+  },
+  {
+    src: "/images/tours/gallery/zelen-gora.webp",
+    alt: "Camping in the flowering meadows of Zelengora",
+  },
+  {
+    src: "/images/tours/gallery/put-ugljesin-vrh-vidikovac.webp",
+    alt: "A hiker on the trail to Uglješin Vrh on Zelengora",
+  },
+  {
+    src: "/images/tours/gallery/zelengora-izlet.webp",
+    alt: "View from a Zelengora summit over the surrounding ridges",
+  },
+];
 
 export const metadata: Metadata = {
   title: "Zelengora – The Most Beautiful Mountain of Former Yugoslavia | Lakes & Hiking Guide",
@@ -124,6 +168,10 @@ export default function ZelengoraLakesPage() {
             </Link>
           </div>
         </article>
+      </section>
+
+      <section className="mx-auto w-full max-w-5xl px-4 pb-12 sm:px-6 lg:px-8">
+        <GridGallery images={galleryImages} title="Zelengora Gallery" />
       </section>
     </main>
   );

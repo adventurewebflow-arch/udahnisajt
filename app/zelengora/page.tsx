@@ -1,8 +1,52 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import GridGallery from "../components/GridGallery";
 
 const BASE = "https://www.udahniavanturu.com";
+
+const galleryImages = [
+  {
+    src: "/images/tours/gallery/izlet-na-zelengoru.webp",
+    alt: "Planinari na vidikovcu Zelengore s pogledom na vrhove",
+  },
+  {
+    src: "/images/tours/gallery/gornje-bare.webp",
+    alt: "Zelena dolina i jezerca Gornjih Bara na Zelengori",
+  },
+  {
+    src: "/images/tours/gallery/pogled-boric-zelengora.webp",
+    alt: "Pogled na Maglić sa Zelengore kroz planinske borove",
+  },
+  {
+    src: "/images/tours/gallery/setnja-gornje-bare.webp",
+    alt: "Šetnja pored jezera Gornje Bare na Zelengori",
+  },
+  {
+    src: "/images/tours/gallery/pogled-na-volujak.webp",
+    alt: "Masiv Volujaka viđen sa Zelengore",
+  },
+  {
+    src: "/images/tours/gallery/ugljesin-vrh-zelengora.webp",
+    alt: "Panorama grebena sa Uglješinog vrha na Zelengori",
+  },
+  {
+    src: "/images/tours/gallery/setnja-zelengorom.webp",
+    alt: "Uspon zelenim padinama Zelengore",
+  },
+  {
+    src: "/images/tours/gallery/zelen-gora.webp",
+    alt: "Kampovanje na cvjetnim livadama Zelengore",
+  },
+  {
+    src: "/images/tours/gallery/put-ugljesin-vrh-vidikovac.webp",
+    alt: "Planinar na putu ka Uglješinom vrhu na Zelengori",
+  },
+  {
+    src: "/images/tours/gallery/zelengora-izlet.webp",
+    alt: "Pogled sa vrha Zelengore na okolne planinske grebene",
+  },
+];
 
 export const metadata: Metadata = {
   title: "Zelengora – 9 planinskih jezera i panorame | Hiking i jeep safari iz Foče",
@@ -131,6 +175,10 @@ export default function ZelengoraPage() {
             </Link>
           </div>
         </article>
+      </section>
+
+      <section className="mx-auto w-full max-w-5xl px-4 pb-12 sm:px-6 lg:px-8">
+        <GridGallery images={galleryImages} title="Galerija Zelengore" />
       </section>
     </main>
   );
