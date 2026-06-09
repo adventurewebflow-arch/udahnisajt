@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { landingHreflang } from "@/lib/slugMap";
 
 const BASE = "https://www.udahniavanturu.com";
 
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
     "Stabla stara 300 godina, tišina koju ne možete zamisliti i vodopad koji pada 75 metara ravno. Perućica se ne posjećuje bez vodiča — mi ulazimo svake sedmice. Ture iz Foče od 90€.",
   alternates: {
     canonical: `${BASE}/perucica`,
+    languages: landingHreflang("/perucica"),
   },
 };
 

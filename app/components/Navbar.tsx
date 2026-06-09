@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
+import { getPathPair } from "@/lib/slugMap";
 
 function getAlternatePath(pathname: string): {
   isEn: boolean;
@@ -12,6 +13,16 @@ function getAlternatePath(pathname: string): {
 } {
   const isEn = pathname.startsWith("/en");
 
+  // 1) Exact SR<->EN counterpart from the central map (blog details + landings
+  //    whose slugs differ between languages).
+  const pair = getPathPair(pathname);
+  if (pair) {
+    return { isEn, srPath: pair.sr, enPath: pair.en };
+  }
+
+  // 2) Fallback: naive prefix swap. Correct for shared-slug routes
+  //    (tour details, list pages, and pages with identical paths like
+  //    /galerija, /o-nama, /kako-doci, /kreiraj-avanturu).
   if (isEn) {
     const rest = pathname.replace(/^\/en/, "") || "/";
     const srPath = (rest.replace(/^\/tours/, "/ture").replace(/^\/blog/, "/vodici") || "/");

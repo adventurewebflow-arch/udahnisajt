@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { landingHreflang } from "@/lib/slugMap";
 
 const BASE = "https://www.udahniavanturu.com";
 
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
     "Ancient trees, complete silence and a 75-metre waterfall. Perućica is one of only two primeval forests left in Europe. Day tours from Foča — licensed guide required. From €90.",
   alternates: {
     canonical: `${BASE}/en/perucica-rainforest`,
+    languages: landingHreflang("/en/perucica-rainforest"),
   },
 };
 

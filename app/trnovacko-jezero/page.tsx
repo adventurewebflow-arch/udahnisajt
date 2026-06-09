@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { landingHreflang } from "@/lib/slugMap";
 
 const BASE = "https://www.udahniavanturu.com";
 
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
     "Kampuj na obali Trnovačkog jezera, osvoji Maglić i doručkuj na katunu kod domaćina. Bez mreže, bez žurbe — organizovane ture iz Foče sa licenciranim vodičem. Male grupe, autentično iskustvo.",
   alternates: {
     canonical: `${BASE}/trnovacko-jezero`,
+    languages: landingHreflang("/trnovacko-jezero"),
   },
 };
 

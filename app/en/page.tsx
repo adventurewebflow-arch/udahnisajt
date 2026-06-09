@@ -12,6 +12,7 @@ import {
   multiDayAdventuresEN,
 } from "../data/adventures-en";
 import { blogPostsEN } from "../data/blog-en";
+import { pathHreflang } from "@/lib/slugMap";
 import type { Metadata } from "next";
 
 const BASE = "https://www.udahniavanturu.com";
@@ -66,10 +67,7 @@ export const metadata: Metadata = {
   description: "Discover the beauty of Bosnia and Herzegovina through hiking, rafting, and camping. Unforgettable adventures in nature.",
   alternates: {
     canonical: `${BASE}/en`,
-    languages: {
-      sr: BASE,
-      en: `${BASE}/en`,
-    },
+    languages: pathHreflang("", "/en"),
   },
 };
 

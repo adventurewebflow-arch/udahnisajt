@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { landingHreflang } from "@/lib/slugMap";
 
 const BASE = "https://www.udahniavanturu.com";
 
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
     "Everything you need to know about Sutjeska National Park — Maglić summit, Perućica rainforest, Trnovačko Lake, Zelengora mountain. Guided tours from Foča from €65. Licensed guide, small groups.",
   alternates: {
     canonical: `${BASE}/en/sutjeska-national-park`,
+    languages: landingHreflang("/en/sutjeska-national-park"),
   },
   openGraph: {
     title: "Sutjeska National Park Bosnia — Complete Visitor Guide 2026",

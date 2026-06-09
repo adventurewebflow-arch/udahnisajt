@@ -126,14 +126,27 @@ const nextConfig: NextConfig = {
         destination: "/en/blog/perucica-rainforest-guide",
         permanent: true,
       },
+      // Stari SR slug u EN putanji → direktno na konsolidovani complete-guide (bez chain-a)
       {
         source: "/en/blog/zelengora-jezera-vidikovci-vodic",
-        destination: "/en/blog/zelengora-lakes-hiking-guide",
+        destination: "/en/blog/zelengora-mountain-complete-guide",
         permanent: true,
       },
       {
         source: "/en/blog/vodopad-skakavac-perucica-vodic",
         destination: "/en/blog/skakavac-waterfall-guide",
+        permanent: true,
+      },
+
+      // ─── Zelengora SEO konsolidacija: duplikat vodič → complete-guide ────────
+      {
+        source: "/en/blog/zelengora-lakes-hiking-guide",
+        destination: "/en/blog/zelengora-mountain-complete-guide",
+        permanent: true,
+      },
+      {
+        source: "/vodici/zelengora-jezera-vidikovci-vodic",
+        destination: "/vodici/zelengora-vodic-planina-bih",
         permanent: true,
       },
       {

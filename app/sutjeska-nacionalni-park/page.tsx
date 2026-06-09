@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { landingHreflang } from "@/lib/slugMap";
 
 const BASE = "https://www.udahniavanturu.com";
 
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
     "Sve što trebaš znati o NP Sutjeska — Maglić, Perućica, Trnovačko jezero, Zelengora. Organizovane ture sa licenciranim vodičem. Od 65€.",
   alternates: {
     canonical: `${BASE}/sutjeska-nacionalni-park`,
+    languages: landingHreflang("/sutjeska-nacionalni-park"),
   },
   openGraph: {
     title: "Nacionalni park Sutjeska — Kompletan vodič za posjetioce 2026",

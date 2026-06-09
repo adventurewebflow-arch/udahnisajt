@@ -8,6 +8,7 @@ import Accordion from "./components/Accordion";
 import NewsletterSection from "./components/NewsletterSection";
 import { popularAdventures, premiumAdventures, dayTripAdventures, multiDayAdventures } from "./data/adventures";
 import { blogPosts } from "./data/blog";
+import { pathHreflang } from "@/lib/slugMap";
 import type { Metadata } from "next";
 
 const BASE = "https://www.udahniavanturu.com";
@@ -63,10 +64,7 @@ const faqAccordionItems = faqs.map(({ q, a }) => ({ title: q, content: a }));
 export const metadata: Metadata = {
   alternates: {
     canonical: BASE,
-    languages: {
-      sr: BASE,
-      en: `${BASE}/en`,
-    },
+    languages: pathHreflang("", "/en"),
   },
 };
 

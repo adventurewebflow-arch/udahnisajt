@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { landingHreflang } from "@/lib/slugMap";
 
 const BASE = "https://www.udahniavanturu.com";
 
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
     "Stoji na 2.386 metara i gleda prema Jadranskom moru. Maglić se osvaja iz Foče — terenskim vozilom do Prijevora, pješice do vrha. Male grupe, licencirani vodič, kampovanje na Trnovačkom jezeru opciono.",
   alternates: {
     canonical: `${BASE}/maglic-planina`,
+    languages: landingHreflang("/maglic-planina"),
   },
 };
 

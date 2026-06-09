@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import GridGallery from "../../components/GridGallery";
+import { landingHreflang } from "@/lib/slugMap";
 
 const BASE = "https://www.udahniavanturu.com";
 
@@ -49,20 +50,21 @@ const galleryImages = [
 ];
 
 export const metadata: Metadata = {
-  title: "Zelengora – The Most Beautiful Mountain of Former Yugoslavia | Lakes & Hiking Guide",
+  title: "Zelengora Tours — Guided Hikes, Lakes & Jeep Safari from Foča | Udahni Avanturu",
   description:
-    "Nine mountain lakes, Dinaric meadows and panoramas that take your breath away. Zelengora before the tourist crowds arrive. Hiking, jeep safari and camping — guided tours from Foča with licensed guide Petar.",
+    "Book a guided Zelengora tour from Foča — Bregoč summit hike, mountain lakes or a jeep safari, with a licensed guide and small groups. From €70 per person. Check dates and reserve your spot.",
   keywords:
-    "zelengora, zelengora lakes, zelengora hiking, zelengora tours, zelengora sutjeska national park, bregoc hike, orlovacko lake, donje bare zelengora",
+    "zelengora tours, book zelengora tour, zelengora hiking tour, jeep safari zelengora, bregoc summit hike, zelengora lakes, guided tour zelengora, tours from foca",
   openGraph: {
-    title: "Zelengora – 9 mountain lakes and panoramas | Hiking & jeep safari from Foča",
+    title: "Zelengora Tours — Guided Hikes, Lakes & Jeep Safari from Foča | Udahni Avanturu",
     description:
-      "Nine lakes, viewpoints in every direction and no sightseeing bus crowds. Zelengora on foot, by jeep or combined — from €70 per person.",
+      "Book a guided Zelengora tour from Foča — Bregoč summit, lakes or jeep safari, with a licensed guide. From €70 per person.",
     url: "https://www.udahniavanturu.com/en/zelengora-lakes",
     type: "website",
   },
   alternates: {
     canonical: `${BASE}/en/zelengora-lakes`,
+    languages: landingHreflang("/en/zelengora-lakes"),
   },
 };
 
@@ -91,6 +93,14 @@ export default function ZelengoraLakesPage() {
         <article className="space-y-8 text-slate-200">
           <p className="leading-8 text-lg">
             The name says it all — Zelen Gora, the Green Mountain. So green that it was once declared the most beautiful mountain in former Yugoslavia. Located in the heart of Sutjeska National Park, Zelengora is not a single destination — it is an entire world of lakes, viewpoints, meadows and silence.
+          </p>
+
+          <p className="leading-8">
+            Want to explore the mountain in detail first?{" "}
+            <Link href="/en/blog/zelengora-mountain-complete-guide" className="text-emerald-400 hover:underline font-medium">
+              Read our complete Zelengora guide
+            </Link>{" "}
+            — lakes, routes, viewpoints and tips before you set off.
           </p>
 
           <h2 className="text-2xl font-bold text-white md:text-3xl">How Many Lakes Does Zelengora Have?</h2>

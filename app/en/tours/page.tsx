@@ -5,6 +5,7 @@ import {
   multiDayAdventuresEN,
   dayTripAdventuresEN,
 } from "../../data/adventures-en";
+import { pathHreflang } from "@/lib/slugMap";
 import type { Metadata } from "next";
 
 const BASE = "https://www.udahniavanturu.com";
@@ -14,10 +15,7 @@ export const metadata: Metadata = {
   description: "Browse all outdoor adventure tours in Bosnia and Herzegovina.",
   alternates: {
     canonical: `${BASE}/en/tours`,
-    languages: {
-      sr: BASE,
-      en: `${BASE}/en/tours`,
-    },
+    languages: pathHreflang("/ture", "/en/tours"),
   },
 };
 

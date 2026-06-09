@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { landingHreflang } from "@/lib/slugMap";
 
 const BASE = "https://www.udahniavanturu.com";
 
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
     "Stand on the highest peak in Bosnia and Herzegovina. Maglić summit via Trnovačko Lake — guided day trips and camping tours from Foča. Small groups, licensed guide. Book now.",
   alternates: {
     canonical: `${BASE}/en/maglic-hike`,
+    languages: landingHreflang("/en/maglic-hike"),
   },
 };
 

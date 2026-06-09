@@ -1,3 +1,4 @@
+import { pathHreflang } from "@/lib/slugMap";
 import type { Metadata } from "next";
 
 const BASE = "https://www.udahniavanturu.com";
@@ -7,6 +8,7 @@ export const metadata: Metadata = {
   description: "Pregledajte sve avanturističke ture u Bosni i Hercegovini.",
   alternates: {
     canonical: `${BASE}/ture`,
+    languages: pathHreflang("/ture", "/en/tours"),
   },
 };
 

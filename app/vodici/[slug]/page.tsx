@@ -5,6 +5,7 @@ import { getBlogPostBySlug, blogPosts } from "../../data/blog";
 import BlogPostSchema from "../../components/BlogPostSchema";
 import InquiryForm from "../../components/InquiryForm";
 import TourGallery from "../../components/TourGallery";
+import { blogHreflang } from "@/lib/slugMap";
 import type { Metadata } from "next";
 
 export async function generateStaticParams() {
@@ -27,9 +28,25 @@ export async function generateMetadata({
     };
   }
 
+  const url = `https://www.udahniavanturu.com/vodici/${slug}`;
+  const title = post.metadataTitle ?? `${post.title} - Udahni Avanturu`;
+  const description = post.metadataDescription ?? post.excerpt;
+  const languages = blogHreflang({ sr: slug });
+
   return {
-    title: post.metadataTitle ?? `${post.title} - Udahni Avanturu`,
-    description: post.metadataDescription ?? post.excerpt,
+    title,
+    description,
+    alternates: {
+      canonical: url,
+      ...(languages ? { languages } : {}),
+    },
+    openGraph: {
+      title,
+      description,
+      url,
+      type: "article",
+      ...(post.image ? { images: [{ url: post.image }] } : {}),
+    },
   };
 }
 
@@ -128,6 +145,21 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               className="inline-flex items-center text-emerald-400 hover:text-emerald-300 transition-colors"
             >
               Saznaj više o Trnovačkom jezeru →
+            </Link>
+          </div>
+        )}
+
+        {slug === "zelengora-vodic-planina-bih" && (
+          <div className="mt-10 p-6 rounded-2xl bg-emerald-500/10 border border-emerald-500/30">
+            <h3 className="text-xl font-bold text-white mb-2">Spreman da kročiš na Zelengoru?</h3>
+            <p className="text-gray-300 mb-5">
+              Vodimo vođene ture na Zelengoru iz Foče — usponi, jezera i jeep safari, sa licenciranim vodičem.
+            </p>
+            <Link
+              href="/zelengora"
+              className="inline-flex items-center px-6 py-3 bg-emerald-500 hover:bg-emerald-600 text-white font-medium rounded-lg transition-colors"
+            >
+              Rezerviši turu na Zelengoru →
             </Link>
           </div>
         )}

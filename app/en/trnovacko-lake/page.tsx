@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { landingHreflang } from "@/lib/slugMap";
 
 const BASE = "https://www.udahniavanturu.com";
 
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
     "A heart-shaped lake surrounded by peaks — no signal, no rush, no crowds. Camping on the shore, Maglić summit and breakfast at a mountain homestead. Guided tours from Foča with licensed guide Petar.",
   alternates: {
     canonical: `${BASE}/en/trnovacko-lake`,
+    languages: landingHreflang("/en/trnovacko-lake"),
   },
 };
 

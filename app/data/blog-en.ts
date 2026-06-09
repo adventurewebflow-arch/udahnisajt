@@ -483,48 +483,6 @@ export const blogPostsEN: BlogPostEN[] = [
     tags: ["Perućica Rainforest", "Sutjeska NP", "nature", "biodiversity"],
   },
   {
-    id: "5",
-    title: "Zelengora: Lakes, Viewpoints and the Best Hiking Routes",
-    slug: "zelengora-lakes-hiking-guide",
-    excerpt:
-      "Zelengora offers over nine beautiful lakes, spectacular viewpoints and routes for all levels. A complete guide to this mountain in the heart of Sutjeska National Park.",
-    metadataTitle: "Zelengora Hiking Guide – Lakes, Viewpoints & Routes | Sutjeska NP Bosnia",
-    metadataDescription:
-      "Complete guide to hiking Zelengora mountain in Sutjeska National Park. Nine mountain lakes, viewpoints, the Bregoč summit and routes for all fitness levels.",
-    content: `
-      <h2>Why Zelengora?</h2>
-
-      <p>Zelengora is a mountain in the heart of Sutjeska National Park that offers over nine natural lakes — Orlovačko, Štirinsko, Kotlaničko, Donje and Gornje Bare and others. Each lake has its own character, and the trails connecting them pass through meadows, forests and rocky terrain. The mountain is accessible to beginners on the easier routes and to more experienced hikers on the summit route to Bregoč (2,017m).</p>
-
-      <h2>Most Popular Routes</h2>
-
-      <h3>Lakes and Viewpoints (Easy)</h3>
-      <p>A route passing Orlovačko, Štirinsko and other lakes, with stops at the finest viewpoints. Ideal for a day trip and for photographers. Duration: 4–6 hours.</p>
-
-      <h3>Bregoč Summit (Moderate)</h3>
-      <p>Bregoč is the highest peak on Zelengora at 2,017 metres. The route takes around 4–5 hours of ascent, with spectacular views of the surrounding lakes and peaks. Requires moderate fitness.</p>
-
-      <h2>When to Go</h2>
-
-      <p>The best time is May to October. Summers are warm and sunny; autumn brings golden colours. In winter additional equipment and experience are required.</p>
-
-      <h2>What to Bring</h2>
-
-      <p>Hiking boots, a backpack with at least 2L of water, layered clothing, sun cream and sunglasses. For longer routes — energy food and spare clothing.</p>
-
-      <h2>Organised Tours</h2>
-
-      <p>If you would like to experience Zelengora with a guide, take a look at our <a href="/en/tours/zelengora-jezera-vidikovci" class="text-emerald-400 hover:text-emerald-300 underline">Zelengora Lakes and Viewpoints day tour</a> or the <a href="/en/tours/zelengora-uspon-bregoč" class="text-emerald-400 hover:text-emerald-300 underline">Bregoč summit hike</a>. We also offer a <a href="/en/tours/kampovanje-zelengora-bregoč-jeep-safari" class="text-emerald-400 hover:text-emerald-300 underline">Zelengora camping and jeep safari</a> package.</p>
-
-      <p>For all enquiries and bookings, <a href="/en#contact" class="text-emerald-400 hover:text-emerald-300 underline">contact us</a>.</p>
-    `,
-    author: "Petar & Nevena",
-    date: "2026-02-10",
-    image: "/images/tours/blog/zelengora-jezera-vidikovci.webp",
-    imageAlt: "Zelengora mountain lakes and viewpoints – hiking guide",
-    tags: ["Zelengora", "Sutjeska NP", "lakes", "Bregoč", "hiking"],
-  },
-  {
     id: "6",
     title: "Skakavac Waterfall in Perućica – What to Know Before You Visit",
     slug: "skakavac-waterfall-guide",

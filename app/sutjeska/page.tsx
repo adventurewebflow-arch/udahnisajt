@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { landingHreflang } from "@/lib/slugMap";
 
 const BASE = "https://www.udahniavanturu.com";
 
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
     "Tri evropska rekorda na jednom mjestu — najviši vrh BiH, najstarija prašuma i najdublji kanjon. Hiking, rafting, kanjoning i kampovanje. Organizovano od A do Ž, male grupe, polazak iz Foče.",
   alternates: {
     canonical: `${BASE}/sutjeska`,
+    languages: landingHreflang("/sutjeska"),
   },
 };
 

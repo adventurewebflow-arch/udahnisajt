@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { landingHreflang } from "@/lib/slugMap";
 
 const BASE = "https://www.udahniavanturu.com";
 
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
     "Highest peak in BiH. Oldest rainforest in Europe. Deepest canyon in Europe. All in one place — no signal, no rush. Hiking, rafting, canyoning and camping in Sutjeska NP. Fully guided, small groups.",
   alternates: {
     canonical: `${BASE}/en/sutjeska-hiking`,
+    languages: landingHreflang("/en/sutjeska-hiking"),
   },
 };
 

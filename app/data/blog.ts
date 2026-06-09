@@ -552,49 +552,6 @@ export const blogPosts: BlogPost[] = [
     tags: ["Prašuma Perućica", "NP Sutjeska", "priroda", "biodiverzitet"],
   },
   {
-    id: "5",
-    title: "Zelengora: jezera, vidikovci i najljepše rute",
-    slug: "zelengora-jezera-vidikovci-vodic",
-    excerpt:
-      "Zelengora nudi preko devet prekrasnih jezera, spektakularne vidikove i rute za sve nivoe. Kompletan vodič kroz ovu planinu u srcu NP Sutjeska.",
-    content: `
-      <h1>Zelengora: jezera, vidikovci i najljepše rute</h1>
-      
-      <p>Zelengora je planina u srcu Nacionalnog parka Sutjeska koja nudi preko devet prirodnih jezera, dinarske livade i nezaboravne vidikove. Ovaj vodič će vam pomoći da se pripremite za avanturu na Zelengori i izaberete rutu koja vam odgovara.</p>
-
-      <h2>Zašto Zelengora?</h2>
-      
-      <p>Zelengora je jedinstvena po broju jezera – Orlovačko, Štirinsko, Kotlaničko, Donje i Gornje bare, i druga. Svako jezero ima svoj karakter, a staze koje ih povezuju prolaze kroz livade, šume i kamenite predjele. Planina je pristupačna i za početnike (lakše rute) i za iskusnije planinare (npr. uspon na Bregoč, 2017m).</p>
-
-      <h2>Najpopularnije rute</h2>
-      
-      <h3>Jezera i vidikovci (laka)</h3>
-      <p>Ruta koja vodi kroz Orlovačko, Štirinsko i druga jezera, sa pauzama na vidikovcima. Idealna za jednodnevni izlet i fotografe. Trajanje: 4–6 sati.</p>
-
-      <h3>Uspon na Bregoč (srednja)</h3>
-      <p>Bregoč je najviši vrh Zelengore (2017m). Ruta traje oko 4–5 sati uspona, sa spektakularnim vidicima na okolna jezera i planine. Zahtijeva srednju kondiciju.</p>
-
-      <h2>Kada ići?</h2>
-      
-      <p>Najbolje vrijeme je od maja do oktobra. Ljeti je toplo i sunčano, jesen donosi zlatne boje. Zimi je potrebna posebna oprema i iskustvo.</p>
-
-      <h2>Šta ponijeti?</h2>
-      
-      <p>Planinske cipele, ruksak sa vodom (2L+), slojevita odjeća, krema za sunce i naočale. Za duže ture – hrana za snagu i rezervna odjeća.</p>
-
-      <h2>Organizovane ture</h2>
-      
-      <p>Ako želite iskusiti Zelengoru sa vodičem, pogledajte naše <a href="/ture/zelengora-jezera-vidikovci" class="text-emerald-400 hover:text-emerald-300 underline">jednodnevnu turu Zelengora – jezera i vidikovci</a> ili <a href="/ture/zelengora-uspon-bregoč" class="text-emerald-400 hover:text-emerald-300 underline">uspon na Bregoč</a>. Takođe nudimo <a href="/ture/kampovanje-zelengora-bregoč-jeep-safari" class="text-emerald-400 hover:text-emerald-300 underline">kampovanje na Zelengori sa jeep safarijem</a>.</p>
-
-      <p>Za sve informacije i rezervacije, <a href="/#kontakt" class="text-emerald-400 hover:text-emerald-300 underline">kontaktirajte nas</a>.</p>
-    `,
-    author: "Udahni Avanturu",
-    date: "2026-02-10",
-    image: "/images/tours/blog/zelengora-jezera-vidikovci.webp",
-    imageAlt: "Zelengora: jezera, vidikovci i najljepše rute",
-    tags: ["Zelengora", "NP Sutjeska", "jezera", "Bregoč"],
-  },
-  {
     id: "6",
     title: "Vodopad Skakavac u Perućici: šta treba znati prije ture",
     slug: "vodopad-skakavac-perucica-vodic",

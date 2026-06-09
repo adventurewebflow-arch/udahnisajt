@@ -5,6 +5,7 @@ import { getAdventureENBySlug, adventuresEN } from "../../../data/adventures-en"
 import TourSchema from "../../../components/TourSchema";
 import InquiryForm from "../../../components/InquiryForm";
 import Accordion from "../../../components/Accordion";
+import { tourHreflang } from "@/lib/slugMap";
 import type { Metadata } from "next";
 
 const BASE = "https://www.udahniavanturu.com";
@@ -69,10 +70,7 @@ export async function generateMetadata({
     description: adventure.shortDescription,
     alternates: {
       canonical: `${BASE}/en/tours/${slug}`,
-      languages: {
-        sr: `${BASE}/ture/${slug}`,
-        en: `${BASE}/en/tours/${slug}`,
-      },
+      languages: tourHreflang(slug),
     },
   };
 }

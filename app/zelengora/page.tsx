@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import GridGallery from "../components/GridGallery";
+import { landingHreflang } from "@/lib/slugMap";
 
 const BASE = "https://www.udahniavanturu.com";
 
@@ -49,20 +50,21 @@ const galleryImages = [
 ];
 
 export const metadata: Metadata = {
-  title: "Zelengora – 9 planinskih jezera i panorame | Hiking i jeep safari iz Foče",
+  title: "Zelengora ture — vođeni usponi, jezera i jeep safari iz Foče | Udahni Avanturu",
   description:
-    "Devet jezera, vidikovci na sve strane i nijedno turističko razgledanje. Zelengora se može pješice, jeepom ili kombinirano — organizovane ture iz Foče sa licenciranim vodičem. Od 70€ po osobi.",
+    "Rezerviši vođenu turu na Zelengoru iz Foče — uspon na Bregoč, obilazak jezera ili jeep safari, sa licenciranim vodičem i malim grupama. Od 70€ po osobi. Provjeri termine i rezerviši.",
   keywords:
-    "zelengora, zelengora jezera, zelengora hiking, zelengora ture, zelengora np sutjeska, bregoc uspon, orlovacko jezero, donje bare zelengora",
+    "zelengora ture, zelengora rezervacija, zelengora hiking tura, jeep safari zelengora, uspon bregoč, zelengora jezera, vođena tura zelengora, ture iz foče",
   openGraph: {
-    title: "Zelengora – 9 planinskih jezera i panorame | Hiking i jeep safari iz Foče",
+    title: "Zelengora ture — vođeni usponi, jezera i jeep safari iz Foče | Udahni Avanturu",
     description:
-      "Devet jezera, vidikovci na sve strane i nijedno turističko razgledanje. Zelengora se može pješice, jeepom ili kombinirano — od 70€ po osobi.",
+      "Rezerviši vođenu turu na Zelengoru iz Foče — uspon na Bregoč, jezera ili jeep safari, sa licenciranim vodičem. Od 70€ po osobi.",
     url: "https://www.udahniavanturu.com/zelengora",
     type: "website",
   },
   alternates: {
     canonical: `${BASE}/zelengora`,
+    languages: landingHreflang("/zelengora"),
   },
 };
 
@@ -95,6 +97,14 @@ export default function ZelengoraPage() {
               Nacionalnog parka Sutjeska
             </Link>
             , Zelengora nije jedna tačka na karti — to je cijeli svijet jezera, vidikovaca, livada i tišine.
+          </p>
+
+          <p className="leading-8">
+            Želiš da prvo istražiš planinu u detalje?{" "}
+            <Link href="/vodici/zelengora-vodic-planina-bih" className="text-emerald-400 hover:underline font-medium">
+              Pročitaj kompletan vodič za Zelengoru
+            </Link>{" "}
+            — jezera, rute, vidikovci i savjeti prije polaska.
           </p>
 
           <h2 className="text-2xl font-bold text-white md:text-3xl">Koliko jezera ima Zelengora?</h2>
