@@ -1,8 +1,11 @@
 import type { NextConfig } from "next";
+import { blogSlugPairs, landingPathPairs } from "./lib/slugMap";
 
-const nextConfig: NextConfig = {
-  async redirects() {
-    return [
+type Redirect = { source: string; destination: string; permanent: boolean };
+
+// Existing, hand-written redirects (legacy URLs, content consolidation, etc.).
+// Do NOT remove these — they protect indexed/inbound links.
+const manualRedirects: Redirect[] = [
       // ─── Stare camping stranice ───────────────────────────────────────────
       {
         source: "/camping/trnovackojezero-maglic",
@@ -252,7 +255,50 @@ const nextConfig: NextConfig = {
         destination: "/ture/kampovanje-trnovacko-jezero-maglic",
         permanent: true,
       },
-    ];
+];
+
+/**
+ * Auto-generated "wrong-language slug on a route" redirects, derived from the
+ * central SR<->EN map in lib/slugMap.ts (single source of truth — add a pair
+ * there and the redirects below update themselves).
+ *
+ * Blog pairs:
+ *   /vodici/<en-slug>   -> /vodici/<sr-slug>
+ *   /en/blog/<sr-slug>  -> /en/blog/<en-slug>
+ * Landing pairs:
+ *   /<en-slug>          -> <sr-path>
+ *   /en/<sr-slug>       -> <en-path>
+ */
+function languageSlugRedirects(): Redirect[] {
+  const out: Redirect[] = [];
+
+  for (const { sr, en } of blogSlugPairs) {
+    out.push({ source: `/vodici/${en}`, destination: `/vodici/${sr}`, permanent: true });
+    out.push({ source: `/en/blog/${sr}`, destination: `/en/blog/${en}`, permanent: true });
+  }
+
+  for (const { sr, en } of landingPathPairs) {
+    const srSlug = sr.replace(/^\//, "");
+    const enSlug = en.replace(/^\/en\//, "");
+    out.push({ source: `/${enSlug}`, destination: sr, permanent: true });
+    out.push({ source: `/en/${srSlug}`, destination: en, permanent: true });
+  }
+
+  return out;
+}
+
+const nextConfig: NextConfig = {
+  async redirects() {
+    // Never emit a duplicate source: hand-written redirects win, and a generated
+    // entry is skipped if its source already exists or would be a self-redirect.
+    const seen = new Set(manualRedirects.map((r) => r.source));
+    const generated: Redirect[] = [];
+    for (const r of languageSlugRedirects()) {
+      if (r.source === r.destination || seen.has(r.source)) continue;
+      seen.add(r.source);
+      generated.push(r);
+    }
+    return [...manualRedirects, ...generated];
   },
 };
 
