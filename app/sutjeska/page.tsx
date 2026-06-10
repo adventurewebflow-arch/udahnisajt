@@ -13,6 +13,13 @@ export const metadata: Metadata = {
     canonical: `${BASE}/sutjeska`,
     languages: landingHreflang("/sutjeska"),
   },
+  openGraph: {
+    title: "NP Sutjeska – Maglić, Perućica i Zelengora | Ture iz Foče",
+    description:
+      "Tri evropska rekorda na jednom mjestu — najviši vrh BiH, najstarija prašuma i najdublji kanjon. Hiking, rafting, kanjoning i kampovanje iz Foče.",
+    url: `${BASE}/sutjeska`,
+    type: "website",
+  },
 };
 
 export default function SutjeskaPage() {

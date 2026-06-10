@@ -10,6 +10,12 @@ export const metadata: Metadata = {
     canonical: `${BASE}/ture`,
     languages: pathHreflang("/ture", "/en/tours"),
   },
+  openGraph: {
+    title: "Sve ture - Udahni Avanturu",
+    description: "Pregledajte sve avanturističke ture u Bosni i Hercegovini.",
+    url: `${BASE}/ture`,
+    type: "website",
+  },
 };
 
 export default function TureLayout({ children }: { children: React.ReactNode }) {

@@ -127,6 +127,15 @@ export default async function TourDetailPage({ params }: { params: Promise<{ slu
                   .map((para, i) => (
                     <p key={i}>{para.trim()}</p>
                   ))}
+                {slug === "prasuma-perucica-vodopad-skakavac" && (
+                  <p>
+                    Više o samoj destinaciji pročitaj na stranici{" "}
+                    <Link href="/perucica" className="text-emerald-400 hover:underline">
+                      prašuma Perućica i vodopad Skakavac
+                    </Link>
+                    .
+                  </p>
+                )}
               </div>
             </section>
 

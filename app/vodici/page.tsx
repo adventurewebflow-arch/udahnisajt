@@ -6,6 +6,16 @@ export const metadata = {
   title: "Blog - Udahni Avanturu",
   description:
     "Korisni vodiči, savjeti i priče sa naših avantura. Planinarenje, NP Sutjeska, Zelengora, Perućica i više.",
+  alternates: {
+    canonical: "https://www.udahniavanturu.com/vodici",
+  },
+  openGraph: {
+    title: "Blog - Udahni Avanturu",
+    description:
+      "Korisni vodiči, savjeti i priče sa naših avantura. Planinarenje, NP Sutjeska, Zelengora, Perućica i više.",
+    url: "https://www.udahniavanturu.com/vodici",
+    type: "website",
+  },
 };
 
 function estimateReadingTime(content: string): number {

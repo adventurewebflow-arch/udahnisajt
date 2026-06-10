@@ -13,6 +13,13 @@ export const metadata: Metadata = {
     canonical: `${BASE}/en/maglic-hike`,
     languages: landingHreflang("/en/maglic-hike"),
   },
+  openGraph: {
+    title: "Hike Maglić – Highest Peak in Bosnia (2,386m) | Guided Tours from Foča",
+    description:
+      "Stand on the highest peak in Bosnia and Herzegovina. Maglić summit via Trnovačko Lake — guided day trips and camping tours from Foča.",
+    url: `${BASE}/en/maglic-hike`,
+    type: "website",
+  },
 };
 
 export default function MaglicHikePage() {
@@ -49,7 +56,11 @@ export default function MaglicHikePage() {
 
           <h2 className="text-2xl font-bold text-white md:text-3xl">The View from the Summit</h2>
           <p className="leading-8">
-            On a clear day, the view from Maglić stretches across almost the entire region — the Perućica rainforest directly below, Durmitor in the distance, Zelengora, Jahorina, Volujak, Bioč, Piva Lake, Mratinje, Piva, Plužine, Foča. A panorama that takes your breath away and cannot be described — it has to be experienced.
+            On a clear day, the view from Maglić stretches across almost the entire region — the{" "}
+            <Link href="/en/perucica-rainforest" className="text-emerald-400 hover:underline">
+              Perućica rainforest
+            </Link>{" "}
+            directly below, Durmitor in the distance, Zelengora, Jahorina, Volujak, Bioč, Piva Lake, Mratinje, Piva, Plužine, Foča. A panorama that takes your breath away and cannot be described — it has to be experienced.
           </p>
 
           <h2 className="text-2xl font-bold text-white md:text-3xl">The Route and Difficulty</h2>

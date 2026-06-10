@@ -162,6 +162,15 @@ export default async function TourDetailPageEN({ params }: { params: Promise<{ s
                   .map((para, i) => (
                     <p key={i}>{para.trim()}</p>
                   ))}
+                {slug === "prasuma-perucica-vodopad-skakavac" && (
+                  <p>
+                    Read more about the destination on the{" "}
+                    <Link href="/en/perucica-rainforest" className="text-emerald-400 hover:underline">
+                      Perućica rainforest and Skakavac waterfall
+                    </Link>{" "}
+                    page.
+                  </p>
+                )}
               </div>
             </section>
 

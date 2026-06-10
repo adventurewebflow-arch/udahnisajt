@@ -8,6 +8,13 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.udahniavanturu.com/kako-doci",
   },
+  openGraph: {
+    title: "Kako doći do Tjentišta i NP Sutjeska | Udahni Avanturu",
+    description:
+      "Upute za dolazak do Tjentišta i Nacionalnog parka Sutjeska iz Sarajeva, Beograda, Dubrovnika, Podgorice, Mostara i Zagreba.",
+    url: "https://www.udahniavanturu.com/kako-doci",
+    type: "website",
+  },
 };
 
 const routes = [

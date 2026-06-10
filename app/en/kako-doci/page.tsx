@@ -14,6 +14,13 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${BASE}/en/kako-doci`,
   },
+  openGraph: {
+    title: "How to Get to Sutjeska National Park | Udahni Avanturu",
+    description:
+      "Directions to Tjentište and Sutjeska National Park from Sarajevo, Belgrade, Dubrovnik, Podgorica, Mostar and Zagreb. Transfers by arrangement.",
+    url: `${BASE}/en/kako-doci`,
+    type: "website",
+  },
 };
 
 const routes = [

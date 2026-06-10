@@ -9,6 +9,13 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.udahniavanturu.com/kreiraj-avanturu",
   },
+  openGraph: {
+    title: "Kreiraj svoju avanturu – Tura po mjeri | Udahni Avanturu",
+    description:
+      "Nisi našao turu koja ti odgovara? Složimo je zajedno. Odaberi trajanje, odakle dolaziš i šta želiš doživjeti — ponuda stiže u roku od 1 sat.",
+    url: "https://www.udahniavanturu.com/kreiraj-avanturu",
+    type: "website",
+  },
 };
 
 export default function KreirajAvanturuPage() {

@@ -13,6 +13,13 @@ export const metadata: Metadata = {
     canonical: `${BASE}/en/trnovacko-lake`,
     languages: landingHreflang("/en/trnovacko-lake"),
   },
+  openGraph: {
+    title: "Trnovačko Lake Bosnia – Camping and Maglić in the Heart of Sutjeska | Udahni Avanturu",
+    description:
+      "A heart-shaped lake surrounded by peaks — no signal, no rush, no crowds. Camping on the shore, Maglić summit and breakfast at a mountain homestead.",
+    url: `${BASE}/en/trnovacko-lake`,
+    type: "website",
+  },
 };
 
 export default function TrnovackoLakePage() {
@@ -49,7 +56,10 @@ export default function TrnovackoLakePage() {
 
           <h2 className="text-2xl font-bold text-white md:text-3xl">How to Get There</h2>
           <p className="leading-8">
-            The most common route starts from Prijevor, at around 1,500 metres above sea level. The hike to the lake takes approximately 1.5 hours at a comfortable pace. The terrain is moderate and suitable for most participants.
+            The most common route starts from Prijevor, at around 1,500 metres above sea level. The hike to the lake takes approximately 1.5 hours at a comfortable pace. The terrain is moderate and suitable for most participants. The same national park is also home to the{" "}
+            <Link href="/en/perucica-rainforest" className="text-emerald-400 hover:underline">
+              Perućica rainforest
+            </Link>, so many visitors combine both on a single trip.
           </p>
           <p className="leading-8">
             There is also a route from the village of Mratinje in Montenegro — longer but equally beautiful.

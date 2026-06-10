@@ -201,7 +201,11 @@ export default function HomeEN() {
             <div className="w-16 h-1 bg-emerald-400"></div>
           </div>
           <p className="text-center text-slate-400 mb-12 max-w-2xl mx-auto">
-            Day trips by arrangement &ndash; ideal for those with limited time who still want to enjoy nature.
+            Day trips by arrangement &ndash; ideal for those with limited time who still want to enjoy nature. One of them takes you into the{" "}
+            <Link href="/en/perucica-rainforest" className="text-emerald-400 hover:text-emerald-300 transition">
+              Perućica rainforest
+            </Link>{" "}
+            and to the Skakavac waterfall.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {dayTripAdventuresEN.map((adventure) => (

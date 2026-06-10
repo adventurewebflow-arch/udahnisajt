@@ -388,7 +388,7 @@ export const blogPostsEN: BlogPostEN[] = [
 
       <h2>Where is it?</h2>
 
-      <p>Perućica lies within Sutjeska National Park in south-eastern Bosnia and Herzegovina, close to the border with Montenegro. The forest is part of a wider protected area that also includes Maglić mountain and Trnovačko Lake.</p>
+      <p><a href="/en/perucica-rainforest" class="text-emerald-400 hover:text-emerald-300 underline">Perućica</a> lies within Sutjeska National Park in south-eastern Bosnia and Herzegovina, close to the border with Montenegro. The forest is part of a wider protected area that also includes Maglić mountain and Trnovačko Lake.</p>
 
       <h2>Why is it Important?</h2>
 
@@ -494,7 +494,7 @@ export const blogPostsEN: BlogPostEN[] = [
     content: `
       <h2>Where is Skakavac Waterfall?</h2>
 
-      <p>Skakavac Waterfall is located within the Perućica primeval forest — one of the oldest forests in Europe — inside Sutjeska National Park. Access is only possible with a licensed guide, as the forest is strictly protected. The route from the entrance to the waterfall takes around 2–3 hours of easy walking through untouched wilderness.</p>
+      <p>Skakavac Waterfall is located within the <a href="/en/perucica-rainforest" class="text-emerald-400 hover:text-emerald-300 underline">Perućica primeval forest</a> — one of the oldest forests in Europe — inside Sutjeska National Park. Access is only possible with a licensed guide, as the forest is strictly protected. The route from the entrance to the waterfall takes around 2–3 hours of easy walking through untouched wilderness.</p>
 
       <h2>What to See Along the Way</h2>
 
@@ -841,7 +841,7 @@ export const blogPostsEN: BlogPostEN[] = [
 
 <h2>When You Hear the Waterfall Before You See It</h2>
 
-<p>Perućica does not hit you immediately. You enter slowly, through forest that grows denser, trees taller, light scarcer. And then you start to hear a sound. Quiet at first, then louder.</p>
+<p><a href="/en/perucica-rainforest" class="text-emerald-400 hover:text-emerald-300 underline">Perućica</a> does not hit you immediately. You enter slowly, through forest that grows denser, trees taller, light scarcer. And then you start to hear a sound. Quiet at first, then louder.</p>
 
 <p>Alex was the first to stop. "This sounds insane" — he said, still through the trees, before we had reached the clearing.</p>
 

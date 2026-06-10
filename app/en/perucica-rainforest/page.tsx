@@ -13,6 +13,13 @@ export const metadata: Metadata = {
     canonical: `${BASE}/en/perucica-rainforest`,
     languages: landingHreflang("/en/perucica-rainforest"),
   },
+  openGraph: {
+    title: "Perućica Rainforest Bosnia – One of 2 Primeval Forests in Europe | Skakavac Waterfall",
+    description:
+      "Ancient trees, complete silence and a 75-metre waterfall. Perućica is one of only two primeval forests left in Europe. Day tours from Foča — from €90.",
+    url: `${BASE}/en/perucica-rainforest`,
+    type: "website",
+  },
 };
 
 export default function PerucicaRainforestPage() {

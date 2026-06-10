@@ -13,6 +13,13 @@ export const metadata: Metadata = {
     canonical: `${BASE}/maglic-planina`,
     languages: landingHreflang("/maglic-planina"),
   },
+  openGraph: {
+    title: "Uspon na Maglić – najviši vrh BiH (2.386m) | Organizovane ture iz Foče",
+    description:
+      "Najviši vrh Bosne i Hercegovine. Maglić se osvaja iz Foče — terenskim vozilom do Prijevora, pješice do vrha. Male grupe, licencirani vodič.",
+    url: `${BASE}/maglic-planina`,
+    type: "website",
+  },
 };
 
 export default function MaglicPlaninaPage() {
@@ -49,7 +56,11 @@ export default function MaglicPlaninaPage() {
 
           <h2 className="text-2xl font-bold text-white md:text-3xl">Pogled sa vrha</h2>
           <p className="leading-8">
-            Po lijepom vremenu sa Maglića se vidi gotovo cijela regija — Perućica i njena prašuma direktno ispod, Durmitor u daljini, Zelengora, Jahorina, Volujak, Bioč, Pivsko jezero, Mratinje, Piva, Plužine, Foča. Panorama koja oduzima dah i koja se ne može opisati riječima — treba je doživjeti.
+            Po lijepom vremenu sa Maglića se vidi gotovo cijela regija —{" "}
+            <Link href="/perucica" className="text-emerald-400 hover:underline">
+              prašuma Perućica
+            </Link>{" "}
+            direktno ispod, Durmitor u daljini, Zelengora, Jahorina, Volujak, Bioč, Pivsko jezero, Mratinje, Piva, Plužine, Foča. Panorama koja oduzima dah i koja se ne može opisati riječima — treba je doživjeti.
           </p>
 
           <h2 className="text-2xl font-bold text-white md:text-3xl">Ruta i težina</h2>

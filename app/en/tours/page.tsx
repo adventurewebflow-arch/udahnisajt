@@ -17,6 +17,12 @@ export const metadata: Metadata = {
     canonical: `${BASE}/en/tours`,
     languages: pathHreflang("/ture", "/en/tours"),
   },
+  openGraph: {
+    title: "All Tours - Udahni Avanturu",
+    description: "Browse all outdoor adventure tours in Bosnia and Herzegovina.",
+    url: `${BASE}/en/tours`,
+    type: "website",
+  },
 };
 
 export default function ToursPageEN() {

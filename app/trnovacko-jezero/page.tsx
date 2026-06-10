@@ -13,6 +13,13 @@ export const metadata: Metadata = {
     canonical: `${BASE}/trnovacko-jezero`,
     languages: landingHreflang("/trnovacko-jezero"),
   },
+  openGraph: {
+    title: "Trnovačko jezero – kampovanje, uspon na Maglić i katuni | Udahni Avanturu",
+    description:
+      "Kampuj na obali Trnovačkog jezera, osvoji Maglić i doručkuj na katunu kod domaćina. Bez mreže, bez žurbe — organizovane ture iz Foče.",
+    url: `${BASE}/trnovacko-jezero`,
+    type: "website",
+  },
 };
 
 export default function TrnovackoJezeroPage() {
@@ -71,7 +78,10 @@ export default function TrnovackoJezeroPage() {
             Jezero se nalazi u Nacionalnom parku Sutjeska, u Bosni i Hercegovini, na granici sa Crnom Gorom. Od Foče je
             udaljeno oko 50 kilometara — oko sat vožnje do Prijevora, a zatim 5 kilometara pješačenja do jezera. Staza
             traje sat i po do dva, ovisno o tempu. Nije tehnički zahtjevna — može je proći svako u dobroj fizičkoj formi,
-            od tinejdžera do šezdesetogodišnjaka.
+            od tinejdžera do šezdesetogodišnjaka. Isti nacionalni park krije i{" "}
+            <Link href="/perucica" className="text-emerald-400 hover:underline">
+              prašumu Perućicu
+            </Link>, pa mnogi spoje obje destinacije u istom dolasku.
           </p>
           <p className="leading-8">
             Polazišna tačka za sve naše ture je Foča. Terenskim vozilima idemo do Prijevora, gdje počinje pješačenje.

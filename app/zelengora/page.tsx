@@ -124,7 +124,11 @@ export default function ZelengoraPage() {
                 <Link href="/maglic-planina" className="text-emerald-400 hover:underline">
                   Maglić
                 </Link>{" "}
-                ti je ispred čela. Tu su odmah Donje i Gornje bare, a u blizini je i Uglješin vrh. Na Čemernu, koje gledamo sa vidikovca Borić, nalazi se granica između Bosne i Hercegovine — i evo detalja koji malo ko zna: sa jedne strane Čemerna voda teče prema Jadranskom moru, a sa druge prema Crnom moru. Dva sliva, jedan pogled.
+                ti je ispred čela. U dubini kanjona ispod Borića leži{" "}
+                <Link href="/perucica" className="text-emerald-400 hover:underline">
+                  prašuma Perućica
+                </Link>
+                , jedna od posljednjih u Evropi. Tu su odmah Donje i Gornje bare, a u blizini je i Uglješin vrh. Na Čemernu, koje gledamo sa vidikovca Borić, nalazi se granica između Bosne i Hercegovine — i evo detalja koji malo ko zna: sa jedne strane Čemerna voda teče prema Jadranskom moru, a sa druge prema Crnom moru. Dva sliva, jedan pogled.
               </p>
             </div>
             <div>

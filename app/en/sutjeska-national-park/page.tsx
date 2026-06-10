@@ -185,7 +185,11 @@ export default function SutjeskaNationalParkPage() {
             Sutjeska is Bosnia and Herzegovina's oldest national park, established in 1962. It covers 43,000 hectares of mountains, canyons, rivers and forests in the southeast of the country, near the town of Foča.
           </p>
           <p className="text-slate-300 leading-8 mb-4">
-            Within its boundaries: the highest peak in Bosnia and Herzegovina (Maglić, 2,386m), one of only two remaining primeval forests in Europe (Perućica), one of the deepest canyons in Europe (Sutjeska canyon), and seven glacial lakes on Zelengora mountain.
+            Within its boundaries: the highest peak in Bosnia and Herzegovina (Maglić, 2,386m), one of only two remaining primeval forests in Europe (
+            <Link href="/en/perucica-rainforest" className="text-emerald-400 hover:underline">
+              Perućica
+            </Link>
+            ), one of the deepest canyons in Europe (Sutjeska canyon), and seven glacial lakes on Zelengora mountain.
           </p>
           <p className="text-slate-300 leading-8">
             The park has no mobile signal in most areas. Roads are poor or non-existent in the mountains. That is not a problem — that is precisely what makes it one of the last genuinely wild places in Europe.

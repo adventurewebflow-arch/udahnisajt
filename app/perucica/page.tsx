@@ -13,6 +13,13 @@ export const metadata: Metadata = {
     canonical: `${BASE}/perucica`,
     languages: landingHreflang("/perucica"),
   },
+  openGraph: {
+    title: "Prašuma Perućica – jedna od dvije preostale u Evropi | Vodopad Skakavac 75m",
+    description:
+      "Stabla stara 300 godina, tišina koju ne možete zamisliti i vodopad koji pada 75 metara ravno. Perućica se ne posjećuje bez vodiča — ture iz Foče od 90€.",
+    url: `${BASE}/perucica`,
+    type: "website",
+  },
 };
 
 export default function PerucicaPage() {

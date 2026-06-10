@@ -403,14 +403,17 @@ export const blogPosts: BlogPost[] = [
   },
   {
     id: "4",
-    title: "Prašuma Perućica – šta treba znati",
+    title: "Kako posjetiti Perućicu — pravila i savjeti",
     slug: "prasuma-perucica-sta-treba-znati",
     excerpt:
-      "Prašuma Perućica je najstarija prašuma u Evropi i jedan od najvažnijih prirodnih spomenika u Bosni i Hercegovini. Otkrijte sve što trebate znati o ovoj netaknutoj prirodi.",
+      "Kako se posjećuje prašuma Perućica — pravila ulaska, obavezni vodič, rute, oprema i savjeti prije polaska. Praktičan vodič za posjetu najstarijoj prašumi u Evropi.",
+    metadataTitle: "Kako posjetiti Perućicu — pravila, vodič i savjeti | Udahni Avanturu",
+    metadataDescription:
+      "Pravila ulaska u prašumu Perućicu, zašto je vodič obavezan, rute do vodopada Skakavac, oprema i najbolje vrijeme za posjetu. Praktični savjeti prije polaska.",
     content: `
-      <h1>Prašuma Perućica – sve što trebate znati</h1>
+      <h1>Kako posjetiti Perućicu — pravila i savjeti</h1>
       
-      <p>Prašuma Perućica je jedan od najvažnijih prirodnih spomenika u Bosni i Hercegovini i najstarija prašuma u Evropi. Smještena u Nacionalnom parku Sutjeska, ova netaknuta priroda predstavlja pravi dragulj za sve ljubitelje prirode. Ovaj članak će vam pružiti sve potrebne informacije o prašumi Perućica.</p>
+      <p>Prašuma Perućica je jedan od najvažnijih prirodnih spomenika u Bosni i Hercegovini i najstarija prašuma u Evropi. Smještena u Nacionalnom parku Sutjeska, ova netaknuta priroda predstavlja pravi dragulj za sve ljubitelje prirode. Ako tek planiraš dolazak, počni od glavne stranice <a href="/perucica" class="text-emerald-400 hover:text-emerald-300 underline">prašuma Perućica</a> — ovaj vodič ti donosi pravila, rute i praktične savjete prije polaska.</p>
 
       <h2>Šta je prašuma Perućica?</h2>
       
@@ -560,7 +563,7 @@ export const blogPosts: BlogPost[] = [
     content: `
       <h1>Vodopad Skakavac u Perućici: šta treba znati prije ture</h1>
       
-      <p>Vodopad Skakavac je jedan od najimpresivnijih vodopada u Bosni i Hercegovini. Sa visinom od 75 metara, smješten je u prašumi Perućici, unutar Nacionalnog parka Sutjeska. Ovaj vodič će vam pomoći da se pripremite za posjetu i uživate u ovom spektakularnom prirodnom fenomenu.</p>
+      <p>Vodopad Skakavac je jedan od najimpresivnijih vodopada u Bosni i Hercegovini. Sa visinom od 75 metara, smješten je u <a href="/perucica" class="text-emerald-400 hover:text-emerald-300 underline">prašumi Perućici</a>, unutar Nacionalnog parka Sutjeska. Ovaj vodič će vam pomoći da se pripremite za posjetu i uživate u ovom spektakularnom prirodnom fenomenu.</p>
 
       <h2>Gdje se nalazi Skakavac?</h2>
       
@@ -891,7 +894,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>Kada počuješ vodopad prije nego ga vidiš</h2>
 
-<p>Perućica te ne udari odmah. Ulazi se polako, kroz šumu koja postaje sve gušća, stabla sve viša, svjetlost sve rjeđa. A onda počneš čuti zvuk. Tiho, pa sve glasnije.</p>
+<p><a href="/perucica" class="text-emerald-400 hover:text-emerald-300 underline">Perućica</a> te ne udari odmah. Ulazi se polako, kroz šumu koja postaje sve gušća, stabla sve viša, svjetlost sve rjeđa. A onda počneš čuti zvuk. Tiho, pa sve glasnije.</p>
 
 <p>Alex je bio prvi koji je stao. "Ovo zvuči ludo" — rekao je, još uvijek kroz šumu, prije nego smo izašli na čistinu.</p>
 

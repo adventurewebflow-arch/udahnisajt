@@ -7,7 +7,14 @@ export const metadata: Metadata = {
   description:
     "Can't find the right tour? Let's build it together. Tell us what you want to experience — Petar sends you an offer within 1 hour.",
   alternates: {
-    canonical: "https://www.udahniavanturu.com/en/build-your-adventure",
+    canonical: "https://www.udahniavanturu.com/en/kreiraj-avanturu",
+  },
+  openGraph: {
+    title: "Build Your Adventure – Custom Tour | Udahni Avanturu",
+    description:
+      "Can't find the right tour? Let's build it together. Tell us what you want to experience — Petar sends you an offer within 1 hour.",
+    url: "https://www.udahniavanturu.com/en/kreiraj-avanturu",
+    type: "website",
   },
 };
 

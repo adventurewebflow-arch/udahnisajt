@@ -6,6 +6,16 @@ export const metadata: Metadata = {
   title: "About Us | Breathe Adventure",
   description:
     "Breathe Adventure — Petar and Nevena. Over five years of adventures through Sutjeska, Zelengora, Trnovačko Lake and Perućica. Small groups, a family approach.",
+  alternates: {
+    canonical: "https://www.udahniavanturu.com/en/o-nama",
+  },
+  openGraph: {
+    title: "About Us | Breathe Adventure",
+    description:
+      "Petar and Nevena — over five years of adventures through Sutjeska, Zelengora, Trnovačko Lake and Perućica. Small groups, a family approach.",
+    url: "https://www.udahniavanturu.com/en/o-nama",
+    type: "website",
+  },
 };
 
 export default function AboutPageEN() {

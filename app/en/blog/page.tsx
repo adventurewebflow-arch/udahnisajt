@@ -7,6 +7,16 @@ export const metadata: Metadata = {
   title: "Blog – Breathe Adventure",
   description:
     "Hiking guides, tips and stories from our adventures in Bosnia and Herzegovina. Sutjeska NP, Zelengora, Maglić, Perućica and more.",
+  alternates: {
+    canonical: "https://www.udahniavanturu.com/en/blog",
+  },
+  openGraph: {
+    title: "Blog – Breathe Adventure",
+    description:
+      "Hiking guides, tips and stories from our adventures in Bosnia and Herzegovina. Sutjeska NP, Zelengora, Maglić, Perućica and more.",
+    url: "https://www.udahniavanturu.com/en/blog",
+    type: "website",
+  },
 };
 
 function estimateReadingTime(content: string): number {

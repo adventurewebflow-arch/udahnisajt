@@ -27,6 +27,12 @@ const nextConfig: NextConfig = {
         destination: "/ture/kanjoning-hrcavka",
         permanent: true,
       },
+      // Stari izlet Perućica/Skakavac → landing prašume (prije catch-all-a)
+      {
+        source: "/izleti/perucica-skakavac",
+        destination: "/perucica",
+        permanent: true,
+      },
       // Catch-all za /izleti/* — direktno na /ture (bez chain-a)
       {
         source: "/izleti/:path*",

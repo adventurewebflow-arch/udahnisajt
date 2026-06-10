@@ -250,7 +250,11 @@ export default function Home() {
             </a>
           </div>
           <p className="text-center text-slate-400 mb-12 max-w-2xl mx-auto">
-            Jednodnevne ture po dogovoru - idealne za one koji imaju ograničeno vrijeme ali žele uživati u prirodi.
+            Jednodnevne ture po dogovoru - idealne za one koji imaju ograničeno vrijeme ali žele uživati u prirodi. Među njima je i posjeta{" "}
+            <Link href="/perucica" className="text-emerald-400 hover:text-emerald-300 transition">
+              prašumi Perućica
+            </Link>{" "}
+            i vodopadu Skakavac.
           </p>
           <div
             className={`flex snap-x snap-mandatory gap-8 overflow-x-auto md:grid md:grid-cols-2 md:snap-none md:overflow-x-visible lg:grid-cols-3 ${tourRowScrollbarHide}`}

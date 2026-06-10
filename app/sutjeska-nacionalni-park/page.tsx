@@ -185,7 +185,11 @@ export default function SutjeskaNacionalniParkPage() {
             Sutjeska je najstariji nacionalni park u Bosni i Hercegovini, osnovan 1962. godine. Pokriva 43.000 hektara planina, kanjona, rijeka i šuma u jugoistočnom dijelu zemlje, blizu Foče.
           </p>
           <p className="text-slate-300 leading-8 mb-4">
-            Unutar granica parka: najviši vrh Bosne i Hercegovine (Maglić, 2.386 m), jedna od samo dvije preostale prašume u Evropi (Perućica), jedan od najdubljih kanjona u Evropi (kanjon Sutjeske) i sedam ledenskih jezera na planini Zelengori.
+            Unutar granica parka: najviši vrh Bosne i Hercegovine (Maglić, 2.386 m), jedna od samo dvije preostale prašume u Evropi (
+            <Link href="/perucica" className="text-emerald-400 hover:underline">
+              Perućica
+            </Link>
+            ), jedan od najdubljih kanjona u Evropi (kanjon Sutjeske) i sedam ledenskih jezera na planini Zelengori.
           </p>
           <p className="text-slate-300 leading-8">
             U većini parka nema mobilnog signala. Putevi su loši ili ne postoje u planinama. To nije problem — upravo zato je ovo jedno od posljednjih zaista divljih mjesta u Evropi.

@@ -13,6 +13,13 @@ export const metadata: Metadata = {
     canonical: `${BASE}/en/sutjeska-hiking`,
     languages: landingHreflang("/en/sutjeska-hiking"),
   },
+  openGraph: {
+    title: "Sutjeska National Park – Complete Visitor Guide | Bosnia and Herzegovina",
+    description:
+      "Highest peak in BiH, oldest rainforest in Europe, deepest canyon in Europe. Hiking, rafting, canyoning and camping in Sutjeska NP. Fully guided, small groups.",
+    url: `${BASE}/en/sutjeska-hiking`,
+    type: "website",
+  },
 };
 
 export default function SutjeskaHikingPage() {
@@ -72,7 +79,11 @@ export default function SutjeskaHikingPage() {
 
           <h2 className="text-2xl font-bold text-white md:text-3xl">What Sutjeska Offers</h2>
           <p className="leading-8">
-            Sutjeska is not one destination — it is an entire region. Maglić — the highest peak in Bosnia and Herzegovina. Trnovačko Lake — a breathtaking sight, and though it belongs to Piva Nature Park, everyone passes through Sutjeska to reach it. Zelengora — declared the most beautiful mountain in former Yugoslavia. Perućica — one of the last primeval forests in Europe.
+            Sutjeska is not one destination — it is an entire region. Maglić — the highest peak in Bosnia and Herzegovina. Trnovačko Lake — a breathtaking sight, and though it belongs to Piva Nature Park, everyone passes through Sutjeska to reach it. Zelengora — declared the most beautiful mountain in former Yugoslavia.{" "}
+            <Link href="/en/perucica-rainforest" className="text-emerald-400 hover:underline">
+              Perućica
+            </Link>{" "}
+            — one of the last primeval forests in Europe.
           </p>
 
           <h2 className="text-2xl font-bold text-white md:text-3xl">How to Get There</h2>

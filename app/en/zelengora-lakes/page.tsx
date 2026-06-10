@@ -117,7 +117,11 @@ export default function ZelengoraLakesPage() {
             <div>
               <h3 className="text-xl font-semibold text-emerald-300 mb-2">First area: Borić, Donje and Gornje Bare, Uglješin vrh</h3>
               <p className="leading-8">
-                The Borić viewpoint is a beautiful spot from which Maglić stands right in front of you. Donje and Gornje Bare are close by, and Uglješin vrh is nearby too. From Čemerno, which you see from the Borić viewpoint, lies the border between Bosnia and Herzegovina — and here is a detail very few people know: on one side of Čemerno the water flows toward the Adriatic Sea, and on the other toward the Black Sea. Two watersheds, one view.
+                The Borić viewpoint is a beautiful spot from which Maglić stands right in front of you, with the{" "}
+                <Link href="/en/perucica-rainforest" className="text-emerald-400 hover:underline">
+                  Perućica rainforest
+                </Link>{" "}
+                hidden in the canyon below. Donje and Gornje Bare are close by, and Uglješin vrh is nearby too. From Čemerno, which you see from the Borić viewpoint, lies the border between Bosnia and Herzegovina — and here is a detail very few people know: on one side of Čemerno the water flows toward the Adriatic Sea, and on the other toward the Black Sea. Two watersheds, one view.
               </p>
             </div>
             <div>

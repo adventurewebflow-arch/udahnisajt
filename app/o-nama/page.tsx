@@ -6,6 +6,16 @@ export const metadata: Metadata = {
   title: "O nama | Udahni Avanturu",
   description:
     "Udahni Avanturu — Petar i Nevena. Više od pet godina avantura kroz Sutjesku, Zelengoru, Trnovačko jezero i Perućicu. Male grupe, domaćinski pristup.",
+  alternates: {
+    canonical: "https://www.udahniavanturu.com/o-nama",
+  },
+  openGraph: {
+    title: "O nama | Udahni Avanturu",
+    description:
+      "Petar i Nevena — više od pet godina avantura kroz Sutjesku, Zelengoru, Trnovačko jezero i Perućicu. Male grupe, domaćinski pristup.",
+    url: "https://www.udahniavanturu.com/o-nama",
+    type: "website",
+  },
 };
 
 export default function ONamaPage() {
