@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     siteName: "Udahni Avanturu",
     images: [
       {
-        url: "/opengraph-image.png",
+        url: "/opengraph-image.jpg",
         width: 1200,
         height: 630,
         alt: "Udahni Avanturu – Hiking, Rafting & Camping Tours in Bosnia and Herzegovina",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     title: "Udahni Avanturu – Hiking, rafting i kampovanje u Bosni i Hercegovini",
     description:
       "Organizovane ture u Nacionalnom parku Sutjeska, Bosna i Hercegovina. Male grupe, licencirani vodiči, nezaboravne avanture u prirodi blizu Foče.",
-    images: ["/opengraph-image.png"],
+    images: ["/opengraph-image.jpg"],
   },
   icons: {
     icon: [
