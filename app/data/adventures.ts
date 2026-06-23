@@ -529,7 +529,7 @@ Smještaj biraš ti — bungalov sa zajedničkim kupatilom ili šator (oprema ob
     price: "235€",
     groupSize: "max 16",
     image: "/images/tours/premium/top-tura-rafting-tarom-maglic-perucica.webp",
-    dates: ["14.-26.07.2026"],
+    dates: ["24.-26.07.2026"],
     imageAlt: "Maglić, Trnovačko jezero i rafting Tarom – premium avantura u prirodi",
     highlights: [
       "Kampovanje na Prijevoru",
