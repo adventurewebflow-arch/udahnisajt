@@ -1,5 +1,7 @@
 "use client";
 
+import { trackConversion } from "@/lib/gtag";
+
 export default function WhatsAppButton() {
   const phone = "38765797200";
   const message = encodeURIComponent("Zdravo, upravo gledam vaš sajt i imam par pitanja.");
@@ -8,6 +10,7 @@ export default function WhatsAppButton() {
   return (
     <a
       href={url}
+      onClick={() => trackConversion("whatsapp")}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Kontaktirajte nas na WhatsApp"

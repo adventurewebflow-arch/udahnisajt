@@ -4,6 +4,7 @@ import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { adventures } from "../data/adventures";
 import { adventuresEN } from "../data/adventures-en";
+import { trackConversion } from "@/lib/gtag";
 
 interface InquiryFormProps {
   tourTitle?: string;
@@ -100,6 +101,7 @@ export default function InquiryForm({ tourTitle, tourSlug }: InquiryFormProps) {
         return;
       }
 
+      trackConversion("forma");
       setSubmitted(true);
 
       setFormData({

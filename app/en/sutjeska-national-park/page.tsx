@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { landingHreflang } from "@/lib/slugMap";
+import WhatsAppTrackedLink from "@/app/components/WhatsAppTrackedLink";
 
 const BASE = "https://www.udahniavanturu.com";
 
@@ -148,14 +149,14 @@ export default function SutjeskaNationalParkPage() {
             >
               View all tours →
             </Link>
-            <a
+            <WhatsAppTrackedLink
               href="https://wa.me/38765797200?text=Hello%2C%20I%20would%20like%20to%20visit%20Sutjeska%20National%20Park."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-6 py-3 border border-slate-600 text-slate-300 hover:bg-slate-800 font-semibold rounded-xl transition-colors"
             >
               Ask on WhatsApp
-            </a>
+            </WhatsAppTrackedLink>
           </div>
         </div>
       </section>
@@ -182,7 +183,7 @@ export default function SutjeskaNationalParkPage() {
         <div className="max-w-3xl">
           <h2 className="text-3xl font-bold text-white mb-6">What is Sutjeska National Park?</h2>
           <p className="text-slate-300 leading-8 mb-4">
-            Sutjeska is Bosnia and Herzegovina's oldest national park, established in 1962. It covers 43,000 hectares of mountains, canyons, rivers and forests in the southeast of the country, near the town of Foča.
+            Sutjeska is Bosnia and Herzegovina&apos;s oldest national park, established in 1962. It covers 43,000 hectares of mountains, canyons, rivers and forests in the southeast of the country, near the town of Foča.
           </p>
           <p className="text-slate-300 leading-8 mb-4">
             Within its boundaries: the highest peak in Bosnia and Herzegovina (Maglić, 2,386m), one of only two remaining primeval forests in Europe (
@@ -314,14 +315,14 @@ export default function SutjeskaNationalParkPage() {
             <p className="text-slate-300 leading-8 mb-6">
               We are always in contact with Mountain Rescue. Safety is the only thing that never gets compromised.
             </p>
-            <a
+            <WhatsAppTrackedLink
               href="https://wa.me/38765797200"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-white font-semibold px-6 py-3 rounded-xl transition-colors"
             >
               Contact Petar on WhatsApp
-            </a>
+            </WhatsAppTrackedLink>
           </div>
           <div className="relative aspect-[3/4] rounded-2xl overflow-hidden">
             <Image
@@ -355,17 +356,17 @@ export default function SutjeskaNationalParkPage() {
       <section className="max-w-5xl mx-auto px-4 py-16 text-center">
         <h2 className="text-3xl font-bold text-white mb-4">Ready to explore Sutjeska?</h2>
         <p className="text-slate-400 mb-8 max-w-xl mx-auto">
-          Contact us on WhatsApp — we respond within one hour and can organise your tour with one day's notice.
+          Contact us on WhatsApp — we respond within one hour and can organise your tour with one day&apos;s notice.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a
+          <WhatsAppTrackedLink
             href="https://wa.me/38765797200?text=Hello%2C%20I%20would%20like%20to%20visit%20Sutjeska%20National%20Park."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center px-8 py-4 bg-emerald-500 hover:bg-emerald-400 text-white font-semibold rounded-xl transition-colors"
           >
             WhatsApp — +387 65 797 200
-          </a>
+          </WhatsAppTrackedLink>
           <Link
             href="/en/tours"
             className="inline-flex items-center justify-center px-8 py-4 border border-slate-600 text-slate-300 hover:bg-slate-800 font-semibold rounded-xl transition-colors"

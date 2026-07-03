@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
+import { trackConversion } from "@/lib/gtag";
 
 const FORMSPREE_URL = "https://formspree.io/f/xqedwzll";
 const TOTAL_STEPS = 5;
@@ -370,7 +371,10 @@ export default function AdventureBuilder() {
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify(payload),
       });
-      if (res.ok) setSubmitted(true);
+      if (res.ok) {
+        trackConversion("forma");
+        setSubmitted(true);
+      }
     } catch (err) {
       console.error(err);
     } finally {
@@ -1033,6 +1037,7 @@ export default function AdventureBuilder() {
 
           <a
             href={whatsappUrl}
+            onClick={() => trackConversion("whatsapp")}
             target="_blank"
             rel="noopener noreferrer"
             className="w-full flex items-center justify-center gap-2 bg-green-500 hover:bg-green-400 text-white font-bold py-4 rounded-xl transition mb-4"

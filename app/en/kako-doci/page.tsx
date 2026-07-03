@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Accordion from "../../components/Accordion";
+import WhatsAppTrackedLink from "../../components/WhatsAppTrackedLink";
 
 const KAKO_DOCI_MAP_SRC = "/images/tours/gallery/kako-doci-do-Tjentista.webp";
 
@@ -120,14 +121,14 @@ export default function HowToGetHere() {
           <p className="text-gray-400 max-w-2xl mx-auto">
             From Sarajevo, Belgrade, Dubrovnik, Podgorica, Mostar and Zagreb we organise transfers to Tjentište — by arrangement, not included in the tour price. Contact us for details.
           </p>
-          <a
+          <WhatsAppTrackedLink
             href="https://wa.me/38765797200?text=Hello%2C%20I%27m%20interested%20in%20a%20transfer%20to%20Tjenti%C5%A1te."
             target="_blank"
             rel="noopener noreferrer"
             className="mt-6 inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold px-6 py-3 rounded-xl transition-colors"
           >
             <span>💬</span> Ask about transfer
-          </a>
+          </WhatsAppTrackedLink>
         </div>
       </section>
 

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { landingHreflang } from "@/lib/slugMap";
+import WhatsAppTrackedLink from "@/app/components/WhatsAppTrackedLink";
 
 const BASE = "https://www.udahniavanturu.com";
 
@@ -148,14 +149,14 @@ export default function SutjeskaNacionalniParkPage() {
             >
               Pogledaj sve ture →
             </Link>
-            <a
+            <WhatsAppTrackedLink
               href="https://wa.me/38765797200?text=Zdravo%2C%20%C5%BEelim%20da%20posjetim%20Nacionalni%20park%20Sutjeska."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-6 py-3 border border-slate-600 text-slate-300 hover:bg-slate-800 font-semibold rounded-xl transition-colors"
             >
               Pitaj na WhatsApp
-            </a>
+            </WhatsAppTrackedLink>
           </div>
         </div>
       </section>
@@ -314,14 +315,14 @@ export default function SutjeskaNacionalniParkPage() {
             <p className="text-slate-300 leading-8 mb-6">
               Uvijek smo u kontaktu sa Gorskom službom spašavanja. Sigurnost je jedina stvar koja se nikad ne kompromituje.
             </p>
-            <a
+            <WhatsAppTrackedLink
               href="https://wa.me/38765797200"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-white font-semibold px-6 py-3 rounded-xl transition-colors"
             >
               Kontaktiraj Petra na WhatsApp
-            </a>
+            </WhatsAppTrackedLink>
           </div>
           <div className="relative aspect-[3/4] rounded-2xl overflow-hidden">
             <Image
@@ -358,14 +359,14 @@ export default function SutjeskaNacionalniParkPage() {
           Piši nam na WhatsApp — odgovaramo u roku od jednog sata i možemo organizovati turu i sa jednodnevnim najavom.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a
+          <WhatsAppTrackedLink
             href="https://wa.me/38765797200?text=Zdravo%2C%20%C5%BEelim%20da%20posjetim%20Nacionalni%20park%20Sutjeska."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center px-8 py-4 bg-emerald-500 hover:bg-emerald-400 text-white font-semibold rounded-xl transition-colors"
           >
             WhatsApp — +387 65 797 200
-          </a>
+          </WhatsAppTrackedLink>
           <Link
             href="/ture"
             className="inline-flex items-center justify-center px-8 py-4 border border-slate-600 text-slate-300 hover:bg-slate-800 font-semibold rounded-xl transition-colors"

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Accordion from "../components/Accordion";
+import WhatsAppTrackedLink from "../components/WhatsAppTrackedLink";
 
 export const metadata: Metadata = {
   title: "Kako doći do Tjentišta i NP Sutjeska | Udahni Avanturu",
@@ -160,14 +161,14 @@ export default function KakoDoci() {
           <p className="text-gray-400 max-w-2xl mx-auto mb-6">
             Iz Sarajeva, Beograda, Dubrovnika, Podgorice, Mostara, Zagreba i ostalih gradova — organizujemo kombi ili autobus direktno do Tjentišta. Cijena po dogovoru, zavisno od broja osoba i polazišta.
           </p>
-          <a
+          <WhatsAppTrackedLink
             href="https://wa.me/38765797200?text=Zdravo%2C%20zanima%20me%20transfer%20do%20Tjenti%C5%A1ta."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold px-6 py-3 rounded-xl transition-colors"
           >
             💬 Pitaj za transfer na WhatsApp
-          </a>
+          </WhatsAppTrackedLink>
         </div>
       </section>
 
