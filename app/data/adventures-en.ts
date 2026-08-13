@@ -11,7 +11,6 @@ export interface Adventure {
   price: string;
   groupSize: string;
   transport?: string;
-  dates?: string[];
   discount?: string;
   image?: string;
   imageAlt?: string;
@@ -40,15 +39,6 @@ export const adventuresEN: Adventure[] = [
     price: "170€ per person",
     groupSize: "6–16 people",
     discount: "15% discount for groups of 4+ people",
-    dates: [
-      "29.-31.05.",
-      "12.-14.06.",
-      "03.-05.07",
-      "31.-02.08.",
-      "14.-16.08.",
-      "21.-23.08.",
-      "04.-06.09."
-    ],
     image: "/images/tours/kampovanje-trnovacko/trnovacko-jezero-card.webp",
     imageAlt: "Camping at Trnovačko Lake with ascent to Maglić – Sutjeska NP, Trnovačko Lake",
     highlights: [
@@ -119,10 +109,6 @@ export const adventuresEN: Adventure[] = [
     difficulty: "Easy - Moderate",
     price: "160€ per person",
     groupSize: "6–16 people",
-    dates: [
-      "05.-07.06.",
-      "07.-09.08."
-    ],
     image: "/images/tours/zelengora/zelengora-kampovanje-card.webp",
     imageAlt: "Camping on Zelengora with Bregoč summit and Jeep safari – Sutjeska NP, Zelengora",
     highlights: [
@@ -188,9 +174,6 @@ export const adventuresEN: Adventure[] = [
     difficulty: "Easy",
     price: "On request",
     groupSize: "6–16 people",
-    dates: [
-      "26.-28.06."
-    ],
     image: "/images/tours/rafting-tara/rafting-hero-card.webp",
     imageAlt: "Rafting the Tara through the canyon – rapids, river and nature",
     highlights: [
@@ -259,9 +242,6 @@ export const adventuresEN: Adventure[] = [
     difficulty: "Easy",
     price: "On request",
     groupSize: "4–30 people",
-    dates: [
-      "14.03.2026"
-    ],
     image: "/images/tours/porodicni-vikend-tjentiste-zelengora/porodicni-vikend-zelengora-tjentiste1.webp",
     imageAlt: "Family weekend at Tjentište and Zelengora – nature and walks",
     highlights: [
@@ -341,7 +321,6 @@ Accommodation is also your choice — a bungalow with shared bathroom or a tent 
     difficulty: "Easy - Moderate",
     price: "from €140 per person",
     groupSize: "6–30 people",
-    dates: ["05.-07.07.", "24.-26.07."],
     highlights: [
       "Accommodation at Tjentište camp — bungalow or tent",
       "Saturday: Trnovačko Lake OR Perućica Rainforest (your choice)",
@@ -416,7 +395,6 @@ Accommodation is also your choice — a bungalow with shared bathroom or a tent 
     price: "235€",
     groupSize: "max 16",
     image: "/images/tours/premium/top-tura-rafting-tarom-maglic-perucica.webp",
-    dates: ["19.-21.06.2026"],
     imageAlt: "Maglić, Trnovačko Lake and Tara rafting – premium nature adventure",
     highlights: [
       "Camping at Prijevor",
@@ -488,7 +466,6 @@ Accommodation is also your choice — a bungalow with shared bathroom or a tent 
     price: "255€ per person",
     groupSize: "8–13 people",
     discount: "4+ people - 10% discount",
-    dates: ["10. - 12.07.2026", "28. - 30.08.2026"],
     highlights: [
       "Hrčavka canyoning (longer route, approx. 5–6 hours)",
       "Perućica rainforest",
@@ -558,7 +535,6 @@ Accommodation is also your choice — a bungalow with shared bathroom or a tent 
     price: "On request",
     groupSize: "6–16 people",
     discount: "",
-    dates: ["24. - 26.07.2026"],
     highlights: [
       "Durmitor Ring",
       "Via Ferrata Piva",
@@ -1026,7 +1002,6 @@ Petar is with you for all five days.`,
     price: "550€ per person",
     groupSize: "6–16 people",
     transport: "By arrangement – Belgrade, Sarajevo, Dubrovnik, Podgorica, Zagreb, Tirana",
-    dates: [],
     highlights: [
       "Summit of Maglić (2,386m) — highest peak in BiH",
       "Camping at Trnovačko Lake",
@@ -1132,7 +1107,6 @@ Transport to Foča is arranged separately — we organise transfers from Belgrad
     price: "960€ per person",
     groupSize: "6–16 people",
     transport: "By arrangement – Belgrade, Sarajevo, Dubrovnik, Podgorica, Zagreb, Tirana",
-    dates: [],
     highlights: [
       "Maglić summit (2,386m) — highest peak in BiH",
       "Camping at Trnovačko Lake",
@@ -1252,7 +1226,6 @@ Transport is arranged by agreement from Belgrade, Sarajevo, Dubrovnik, Podgorica
     price: "1,650€ per person",
     groupSize: "6–16 people",
     transport: "By arrangement – Belgrade, Sarajevo, Dubrovnik, Podgorica, Zagreb, Tirana",
-    dates: [],
     highlights: [
       "Maglić summit (2,386m) — highest peak in BiH",
       "Camping at Trnovačko Lake",

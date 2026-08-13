@@ -11,7 +11,6 @@ export interface Adventure {
   price: string;
   groupSize: string;
   transport?: string;
-  dates?: string[];
   discount?: string;
   image?: string;
   imageAlt?: string;
@@ -41,13 +40,6 @@ export const adventures: Adventure[] = [
     price: "170€ po osobi",
     groupSize: "6–16 osoba",
     discount: "15% popusta za grupe od 4+ osoba",
-    dates: [
-      "03.-05.07",
-      "31.-02.08.",
-      "14.-16.08.",
-      "21.-23.08.",
-      "04.-06.09."
-    ],
     image: "/images/tours/kampovanje-trnovacko/trnovacko-jezero-card.webp",
     imageAlt: "Kampovanje na Trnovačkom jezeru s usponom na Maglić – NP Sutjeska, Trnovačko jezero",
     images: [
@@ -131,11 +123,6 @@ export const adventures: Adventure[] = [
     difficulty: "Laka - Srednja",
     price: "160€ po osobi",
     groupSize: "6–16 osoba",
-    dates: [
-      "05.-07.06.",
-      "07.-09.08.",
-      
-    ],
     image: "/images/tours/zelengora/zelengora-kampovanje-card.webp",
     imageAlt: "Kampovanje na Zelengori sa usponom na Bregoč i Jeep safari – NP Sutjeska, Zelengora",
     images: [
@@ -212,9 +199,6 @@ export const adventures: Adventure[] = [
     difficulty: "Lako",
     price: "Na upit",
     groupSize: "6–16 osoba",
-    dates: [
-      "26.-28.06.",
-    ],
     image: "/images/tours/rafting-tara/rafting-hero-card.webp",
     imageAlt: "Rafting Tarom kroz kanjon – brzaci, rijeka i priroda",
     highlights: [
@@ -284,10 +268,6 @@ export const adventures: Adventure[] = [
     difficulty: "Lako",
     price: "Na upit",
     groupSize: "4–30 osoba",
-    dates: [
-      "14.03.2026"
-    
-    ],
     image: "/images/tours/porodicni-vikend-tjentiste-zelengora/porodicni-vikend-zelengora-tjentiste1.webp",
     imageAlt: "Porodični vikend na Tjentištu i Zelengori – priroda i šetnje",
     highlights: [
@@ -359,7 +339,6 @@ export const adventures: Adventure[] = [
     difficulty: "Laka - Srednja",
     price: "Na upit",
     groupSize: "2+ osoba",
-    dates: [],
     highlights: [
       "Kućice sa vanjskim djakuzijem",
       "Pogled na masiv Durmitora",
@@ -454,7 +433,6 @@ Smještaj biraš ti — bungalov sa zajedničkim kupatilom ili šator (oprema ob
     difficulty: "Lako - Srednje",
     price: "od 150€ po osobi",
     groupSize: "6–30 osoba",
-    dates: ["05.-07.06.", "24.-26.07."],
     highlights: [
       "Smještaj u kampu Tjentište — bungalov ili šator",
       "Subota: Trnovačko jezero ILI Prašuma Perućica (ti biraš)",
@@ -529,7 +507,6 @@ Smještaj biraš ti — bungalov sa zajedničkim kupatilom ili šator (oprema ob
     price: "235€",
     groupSize: "max 16",
     image: "/images/tours/premium/top-tura-rafting-tarom-maglic-perucica.webp",
-    dates: ["24.-26.07.2026"],
     imageAlt: "Maglić, Trnovačko jezero i rafting Tarom – premium avantura u prirodi",
     highlights: [
       "Kampovanje na Prijevoru",
@@ -602,9 +579,6 @@ Smještaj biraš ti — bungalov sa zajedničkim kupatilom ili šator (oprema ob
     price: "255€ po osobi",
     groupSize: "8–13 osoba",
     discount: "4+ osoba - 10% popusta",
-    dates: ["10. - 12.07.2026",
-      "28. - 30.08.2026"
-    ],
     highlights: [
       "Kanjoning Hrčavka (duža ruta oko 5-6 sati kanjoninga)",
       "Prašuma Perućica",
@@ -682,7 +656,6 @@ Svaki program pravimo po mjeri grupe. Javite se sa brojem ljudi i terminom, mi p
     difficulty: "Po dogovoru",
     price: "Na upit",
     groupSize: "2–100+ osoba",
-    dates: [],
     highlights: [
       "Rafting Tarom – na naš poseban način",
       "Kanjoning Hrčavka",
@@ -763,7 +736,6 @@ Tura polazi iz Foče, vodi vas kroz tri lica divlje prirode Crne Gore i vraća v
     price: "190€ po osobi",
     groupSize: "1–16 osoba",
     discount: "",
-    dates: ["24. - 26.07.2026"],
     highlights: [
       "Durmitorski prsten",
       "Via ferrata Piva",
@@ -850,7 +822,6 @@ Petar je uz vas svih pet dana.`,
     price: "550€ po osobi",
     groupSize: "6–16 osoba",
     transport: "Po dogovoru – Beograd, Sarajevo, Dubrovnik, Podgorica, Zagreb, Tirana",
-    dates: [],
     highlights: [
       "Uspon na Maglić (2.386m) — najviši vrh BiH",
       "Kampovanje na Trnovačkom jezeru",
@@ -956,7 +927,6 @@ Prevoz do Foče organizujete sami ili po dogovoru — organizujemo transfer iz B
     price: "960€ po osobi",
     groupSize: "6–16 osoba",
     transport: "Po dogovoru – Beograd, Sarajevo, Dubrovnik, Podgorica, Zagreb, Tirana",
-    dates: [],
     highlights: [
       "Uspon na Maglić (2.386m) — najviši vrh BiH",
       "Kampovanje na Trnovačkom jezeru",
@@ -1076,7 +1046,6 @@ Prevoz organizujemo po dogovoru iz Beograda, Sarajeva, Dubrovnika, Podgorice, Za
     price: "1.650€ po osobi",
     groupSize: "6–16 osoba",
     transport: "Po dogovoru – Beograd, Sarajevo, Dubrovnik, Podgorica, Zagreb, Tirana",
-    dates: [],
     highlights: [
       "Uspon na Maglić (2.386m) — najviši vrh BiH",
       "Kampovanje na Trnovačkom jezeru",

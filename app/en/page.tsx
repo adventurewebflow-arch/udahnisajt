@@ -17,6 +17,9 @@ import type { Metadata } from "next";
 
 const BASE = "https://www.udahniavanturu.com";
 
+// Re-render once a day so tour cards stop counting departures that have passed.
+export const revalidate = 86400;
+
 const faqsEn = [
   {
     q: "Can I join alone?",

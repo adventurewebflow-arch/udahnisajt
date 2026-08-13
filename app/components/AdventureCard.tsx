@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Adventure } from "../data/adventures";
+import { getBookableTourDates } from "../data/tour-dates";
 
 interface AdventureCardProps {
   adventure: Adventure;
@@ -8,20 +9,21 @@ interface AdventureCardProps {
 }
 
 export default function AdventureCard({ adventure, linkPrefix = "/ture" }: AdventureCardProps) {
-  const hasDates = Array.isArray(adventure.dates) && adventure.dates.length > 0;
+  const openSpots = getBookableTourDates(adventure.slug).length;
+  const spotsLabel = openSpots === 1 ? "1 termin" : `${openSpots} termina`;
 
   let primaryBadge = { text: "", color: "emerald" as "emerald" | "blue" | "amber" };
   let secondaryBadge = "";
 
   if (adventure.category === "popular") {
-    if (hasDates) {
+    if (openSpots > 0) {
       primaryBadge = { text: "Grupni polasci", color: "emerald" };
-      secondaryBadge = `${adventure.dates!.length} termina`;
+      secondaryBadge = spotsLabel;
     }
   } else if (adventure.category === "premium") {
-    if (hasDates) {
+    if (openSpots > 0) {
       primaryBadge = { text: "Grupni polasci", color: "emerald" };
-      secondaryBadge = `${adventure.dates!.length} termina`;
+      secondaryBadge = spotsLabel;
     } else {
       primaryBadge = { text: "Na upit", color: "amber" };
     }

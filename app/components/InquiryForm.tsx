@@ -4,6 +4,7 @@ import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { adventures } from "../data/adventures";
 import { adventuresEN } from "../data/adventures-en";
+import { formatTourDate, getBookableTourDates } from "../data/tour-dates";
 import { trackConversion } from "@/lib/gtag";
 
 interface InquiryFormProps {
@@ -28,7 +29,9 @@ export default function InquiryForm({ tourTitle, tourSlug }: InquiryFormProps) {
   const [submitted, setSubmitted] = useState(false);
 
   const selectedAdventure = tourList.find((a) => a.slug === formData.selectedTour);
-  const availableDates = selectedAdventure?.dates ?? [];
+  const availableDates = selectedAdventure
+    ? getBookableTourDates(selectedAdventure.slug).map(formatTourDate)
+    : [];
 
   const FORMSPREE_URL = "https://formspree.io/f/xqedwzll";
 

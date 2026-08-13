@@ -13,6 +13,9 @@ import type { Metadata } from "next";
 
 const BASE = "https://www.udahniavanturu.com";
 
+// Re-render once a day so tour cards stop counting departures that have passed.
+export const revalidate = 86400;
+
 const tourRowScrollbarHide =
   "[scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden";
 

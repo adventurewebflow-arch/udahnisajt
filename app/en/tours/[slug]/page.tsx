@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { getAdventureENBySlug, adventuresEN } from "../../../data/adventures-en";
+import { formatTourDate, getUpcomingTourDates } from "../../../data/tour-dates";
 import TourSchema from "../../../components/TourSchema";
 import InquiryForm from "../../../components/InquiryForm";
 import Accordion from "../../../components/Accordion";
@@ -9,6 +10,9 @@ import { tourHreflang } from "@/lib/slugMap";
 import type { Metadata } from "next";
 
 const BASE = "https://www.udahniavanturu.com";
+
+// Re-render once a day so departures that have passed drop off without a deploy.
+export const revalidate = 86400;
 
 function translatePeople(value: string): string {
   if (!value) return value;
@@ -82,6 +86,8 @@ export default async function TourDetailPageEN({ params }: { params: Promise<{ s
   if (!adventure) {
     notFound();
   }
+
+  const upcomingDates = getUpcomingTourDates(adventure.slug);
 
   const itineraryItems =
     adventure.itinerary?.map((d) => ({
@@ -318,16 +324,25 @@ export default async function TourDetailPageEN({ params }: { params: Promise<{ s
                     </div>
                   )}
 
-                  {adventure.dates && adventure.dates.length > 0 && (
+                  {upcomingDates.length > 0 && (
                     <div>
                       <div className="text-sm text-gray-400 mb-3">Available Dates</div>
                       <div className="grid grid-cols-2 gap-x-3 gap-y-2">
-                        {adventure.dates.map((date, index) => (
+                        {upcomingDates.map((date) => (
                           <div
-                            key={index}
-                            className="text-sm px-2 py-1 rounded-lg bg-gray-900 text-emerald-400 font-medium"
+                            key={date.start}
+                            className={`text-sm px-2 py-1 rounded-lg bg-gray-900 ${
+                              date.soldOut ? "text-gray-500" : "text-emerald-400 font-medium"
+                            }`}
                           >
-                            {date}
+                            <span className={date.soldOut ? "line-through" : ""}>
+                              {formatTourDate(date)}
+                            </span>
+                            {date.soldOut && (
+                              <span className="block text-[11px] font-semibold uppercase tracking-wide text-amber-400">
+                                Sold out
+                              </span>
+                            )}
                           </div>
                         ))}
                       </div>

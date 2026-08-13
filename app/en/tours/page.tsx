@@ -10,6 +10,9 @@ import type { Metadata } from "next";
 
 const BASE = "https://www.udahniavanturu.com";
 
+// Re-render once a day so tour cards stop counting departures that have passed.
+export const revalidate = 86400;
+
 export const metadata: Metadata = {
   title: "All Tours - Udahni Avanturu",
   description: "Browse all outdoor adventure tours in Bosnia and Herzegovina.",
