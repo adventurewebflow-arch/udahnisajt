@@ -26,6 +26,7 @@ export const tourDates: Record<string, TourDate[]> = {
   "kampovanje-trnovacko-jezero-maglic": [
     { start: "2026-08-21", end: "2026-08-23", soldOut: true },
     { start: "2026-09-04", end: "2026-09-06" },
+    { start: "2026-09-18", end: "2026-09-20" },
   ],
   "kampovanje-zelengora-bregoč-jeep-safari": [
     { start: "2026-09-11", end: "2026-09-13" },
