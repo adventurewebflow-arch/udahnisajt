@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sutjeska Ground Operator — Partner with Udahni Avanturu</title>
+<meta name="description" content="Local ground operator and DMC inside Sutjeska National Park, Bosnia. Guided hiking, rafting and canyoning, 90 beds in the park, net B2B rates for tour operators.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#020617; --panel:#111827; --panel-2:#1f2937; --line:#374151;
+  --text:#f1f5f9; --muted:#d1d5db; --dim:#9ca3af;
+  --em:#10b981; --em-bright:#34d399; --em-deep:#059669;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;line-height:1.55}
+h1,h2,h3,.disp{font-family:'Bricolage Grotesque',sans-serif;letter-spacing:-.02em;line-height:1.03}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1160px;margin:0 auto;padding:0 22px}
+
+/* eyebrow: thin emerald keyline + sentence-case label, not tracked all-caps */
+.kicker{display:flex;align-items:center;gap:11px;color:var(--em-bright);font-weight:600;font-size:14px;margin-bottom:18px}
+.kicker::before{content:"";width:26px;height:2px;background:var(--em);border-radius:2px}
+
+.lead{font-size:clamp(27px,4.6vw,46px);font-weight:700;max-width:19ch;margin-bottom:16px}
+.sub{color:var(--dim);font-size:17px;max-width:58ch}
+
+.btn{font-weight:600;font-size:15px;padding:15px 26px;border-radius:11px;transition:.18s;display:inline-block}
+.btn-em{background:var(--em);color:#04120c}
+.btn-em:hover{background:var(--em-bright);transform:translateY(-2px)}
+.btn-line{border:1.5px solid var(--line);color:var(--text)}
+.btn-line:hover{border-color:var(--em);color:var(--em-bright)}
+
+/* placeholder image slot */
+.ph{position:relative;width:100%;height:100%;min-height:200px;overflow:hidden;
+  background:radial-gradient(120% 120% at 30% 20%,#12303a,#020617 70%);display:flex;align-items:flex-end;border:1px solid var(--line)}
+.ph.v2{background:radial-gradient(120% 120% at 70% 30%,#123a2b,#020617 70%)}
+.ph::before{content:"◮ "attr(data-t);position:absolute;top:12px;left:14px;font-size:11px;color:rgba(241,245,249,.5)}
+.ph em{position:relative;z-index:1;color:#cfe;font-style:normal;font-weight:500;font-size:13px;padding:14px 16px}
+
+/* contour texture (topographic — grounds it in the mountains) */
+.contour{position:absolute;inset:0;opacity:.5;pointer-events:none}
+.contour svg{width:100%;height:100%}
+.contour path{fill:none;stroke:var(--em);stroke-width:1;opacity:.14}
+
+/* NAV */
+.nav{position:fixed;inset:0 0 auto 0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:16px 22px;transition:.3s}
+.nav.scrolled{background:rgba(2,6,23,.82);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.brand{font-family:'Bricolage Grotesque';font-weight:800;font-size:18px}
+.brand b{color:var(--em)}
+.nav-cta{font-weight:600;font-size:14px;background:var(--em);color:#04120c;padding:10px 18px;border-radius:10px}
+
+/* HERO */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden;
+  background:radial-gradient(130% 100% at 75% 15%,#0c2a33 0%,#020617 60%)}
+.hero-media{position:absolute;inset:0}
+.hero-media .ph{min-height:100svh;border:0}
+.hero-scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(2,6,23,.55),rgba(2,6,23,.2) 40%,rgba(2,6,23,.92))}
+.hero-inner{position:relative;z-index:3;padding-bottom:56px}
+.loc{display:inline-flex;align-items:center;gap:9px;color:var(--em-bright);font-weight:600;font-size:13.5px;
+  border:1px solid rgba(16,185,129,.4);background:rgba(16,185,129,.1);padding:8px 15px;border-radius:100px;margin-bottom:22px}
+.loc .dot{width:7px;height:7px;border-radius:50%;background:var(--em)}
+.hero h1{font-weight:800;font-size:clamp(38px,8vw,84px);max-width:14ch}
+.hero .hsub{color:var(--muted);font-size:clamp(16px,2vw,21px);max-width:46ch;margin-top:22px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.proof{display:flex;gap:28px;margin-top:40px;flex-wrap:wrap}
+.proof div{border-left:2px solid var(--em);padding-left:13px}
+.proof b{font-family:'Bricolage Grotesque';font-weight:700;font-size:22px;display:block}
+.proof span{color:var(--dim);font-size:13px}
+
+/* STATS RAIL */
+.stats{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#060b18}
+.stats-row{display:flex;gap:0;overflow-x:auto;scrollbar-width:none}
+.stats-row::-webkit-scrollbar{display:none}
+.stat{flex:0 0 auto;padding:28px 34px;border-right:1px solid var(--line)}
+.stat b{font-family:'Bricolage Grotesque';font-weight:700;font-size:29px;color:var(--em-bright);display:block}
+.stat span{color:var(--dim);font-size:13px}
+
+section{padding:82px 0}
+.who-grid,.camp-grid{display:grid;grid-template-columns:1fr;gap:30px;align-items:center}
+.who-photo{height:360px}
+.who .name{margin-top:22px;padding-top:20px;border-top:1px solid var(--line);font-weight:600}
+.who .name small{display:block;color:var(--dim);font-weight:400;margin-top:3px}
+
+/* EXPERIENCES — asymmetric */
+.exp-grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:36px}
+.exp{position:relative;overflow:hidden;min-height:240px;border:1px solid var(--line)}
+.exp .ph{min-height:240px;border:0}
+.exp.tall .ph{min-height:340px}
+.exp-scrim{position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(2,6,23,.88))}
+.exp-cap{position:absolute;left:0;bottom:0;z-index:2;padding:22px}
+.exp-cap .k{color:var(--em-bright);font-weight:600;font-size:13px;display:block;margin-bottom:5px}
+.exp-cap h3{font-size:21px;font-weight:700}
+
+/* CAMP */
+.camp-photo{height:320px}
+.camp ul{list-style:none;margin-top:20px;display:grid;gap:12px}
+.camp li{padding-left:24px;position:relative;color:var(--muted);font-size:15.5px}
+.camp li::before{content:"";position:absolute;left:0;top:9px;width:9px;height:9px;background:var(--em);border-radius:2px}
+
+/* WHY — bordered spec grid, no floating clone cards */
+.why{margin-top:38px;border:1px solid var(--line);border-radius:16px;overflow:hidden;
+  display:grid;grid-template-columns:1fr}
+.why-item{padding:28px 26px;border-bottom:1px solid var(--line)}
+.why-item .k{color:var(--em-bright);font-weight:600;font-size:13px;margin-bottom:9px;display:block}
+.why-item h3{font-size:19px;font-weight:700;margin-bottom:8px}
+.why-item p{color:var(--dim);font-size:15px}
+
+/* PACKAGES */
+.pkg-grid{display:grid;grid-template-columns:1fr;gap:16px;margin-top:36px}
+.pkg{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:26px 24px;position:relative}
+.pkg.feature{border:1.5px solid var(--em);background:linear-gradient(180deg,rgba(16,185,129,.07),var(--panel))}
+.pkg .flag{position:absolute;top:-11px;left:24px;background:var(--em);color:#04120c;font-weight:700;font-size:11.5px;padding:5px 12px;border-radius:100px}
+.pkg .k{color:var(--em-bright);font-weight:600;font-size:12.5px}
+.pkg h3{font-size:23px;font-weight:800;margin:6px 0}
+.pkg .dur{color:var(--dim);font-size:13px;font-weight:500;margin-bottom:11px}
+.pkg .desc{color:var(--muted);font-size:14.5px;min-height:46px}
+.pkg .price{font-family:'Bricolage Grotesque';font-weight:800;font-size:33px;margin-top:16px;padding-top:16px;border-top:1px solid var(--line)}
+.pkg .price small{font-family:'Inter';font-weight:500;font-size:12.5px;color:var(--dim)}
+.pkg .price small:first-child{margin-right:6px}
+.pkg-note{margin-top:24px;color:var(--dim);font-size:15px;text-align:center}
+.pkg-note b{color:var(--em-bright)}
+
+/* CTA */
+.cta{position:relative;border-radius:22px;overflow:hidden;border:1px solid var(--line);
+  background:radial-gradient(130% 130% at 15% 20%,rgba(16,185,129,.18),#060b18 60%)}
+.cta-inner{position:relative;z-index:2;padding:52px 34px}
+.cta h2{font-size:clamp(27px,4.6vw,44px);font-weight:800;max-width:17ch}
+.cta p{color:var(--muted);font-size:16.5px;max-width:52ch;margin-top:15px}
+.cta-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.contact-row{display:flex;flex-wrap:wrap;gap:10px 24px;margin-top:26px;font-size:14.5px;color:var(--dim)}
+.contact-row a:hover{color:var(--em-bright)}
+
+.foot{border-top:1px solid var(--line);padding:36px 0;color:var(--dim);font-size:14px;line-height:1.8}
+.foot b{color:var(--text);font-family:'Bricolage Grotesque';font-size:16px}
+
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .6s,transform .6s}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+@media(min-width:720px){
+  .who-grid{grid-template-columns:1.05fr 1fr;gap:46px}
+  .camp-grid{grid-template-columns:1fr 1.05fr;gap:46px}
+  .exp-grid{grid-template-columns:1fr 1fr;grid-auto-rows:1fr}
+  .exp.wide{grid-column:span 2}
+  .why{grid-template-columns:1fr 1fr}
+  .why-item:nth-child(odd){border-right:1px solid var(--line)}
+  .pkg-grid{grid-template-columns:1fr 1fr}
+}
+@media(min-width:1000px){ .pkg-grid{grid-template-columns:repeat(4,1fr)} }
+</style>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <a href="#top" class="brand">Udahni<b>·</b>Avanturu</a>
+  <a href="#contact" class="nav-cta">Partner with us</a>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="hero-media"><div class="ph" data-t="HERO video — drone over Trnovačko Lake (autoplay muted loop, poster fallback on mobile)"><em>Trnovačko Lake · heart-shaped glacial lake beneath Maglić</em></div></div>
+  <div class="hero-scrim"></div>
+  <div class="contour"><svg viewBox="0 0 1200 700" preserveAspectRatio="none"><path d="M-50,180 C250,90 500,240 780,150 1050,70 1300,190 1300,190"/><path d="M-50,260 C250,170 520,320 800,230 1080,150 1300,270 1300,270"/><path d="M-50,350 C260,270 540,410 820,320 1090,240 1300,350 1300,350"/><path d="M-50,450 C260,380 540,510 820,420 1100,340 1300,450 1300,450"/><path d="M-50,560 C260,490 540,610 820,520 1100,450 1300,560 1300,560"/></svg></div>
+  <div class="wrap hero-inner">
+    <span class="loc"><span class="dot"></span> Inside Sutjeska National Park · Bosnia</span>
+    <h1>Send us your groups. We run the wild part.</h1>
+    <p class="hsub">The local team inside Bosnia's oldest national park — guiding, permits, transfers and 90 beds in the mountains. You sell the trip; we deliver it on the ground.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn btn-em">Start a partnership</a>
+      <a href="#experiences" class="btn btn-line">See what we run</a>
+    </div>
+    <div class="proof">
+      <div><b>90</b><span>beds in the park</span></div>
+      <div><b>1,000+</b><span>guests a season</span></div>
+      <div><b>15+</b><span>years guiding</span></div>
+    </div>
+  </div>
+</header>
+
+<!-- STATS RAIL -->
+<div class="stats">
+  <div class="stats-row">
+    <div class="stat"><b>2,386m</b><span>Maglić — highest peak in BiH</span></div>
+    <div class="stat"><b>1 of 2</b><span>primeval forests left in Europe</span></div>
+    <div class="stat"><b>43,000 ha</b><span>of protected wilderness</span></div>
+    <div class="stat"><b>64K</b><span>on Instagram</span></div>
+    <div class="stat"><b>May–Oct</b><span>full operating season</span></div>
+  </div>
+</div>
+
+<!-- WHO -->
+<section id="who">
+  <div class="wrap who-grid reveal">
+    <div>
+      <div class="kicker">Who runs the ground</div>
+      <h2 class="lead">Not a booking desk. The people on the mountain.</h2>
+      <p class="sub">We live in Foča, at the edge of the park. We know every trail, every permit office, the weather windows, and the shepherd who lays out breakfast at 1,500 metres. When your travellers arrive, a licensed guide who actually lives here meets them — never a subcontractor pulled in from another city.</p>
+      <div class="name">Petar Kostić<small>Founder · licensed mountain guide &amp; river skipper</small></div>
+    </div>
+    <div class="who-photo"><div class="ph v2" data-t="Petar / guide team on the trail — Maglić ridge"><em></em></div></div>
+  </div>
+</section>
+
+<!-- EXPERIENCES -->
+<section id="experiences" style="padding-top:6px">
+  <div class="wrap reveal">
+    <div class="kicker">What a group comes for</div>
+    <h2 class="lead">Six wild days, one base, one contact.</h2>
+    <p class="sub">Mix and match any of these into the itinerary your travellers want. We handle guides, gear, permits and transfers between them.</p>
+    <div class="exp-grid">
+      <div class="exp tall wide"><div class="ph" data-t="Trnovačko wild camp at dawn"><em></em></div><div class="exp-scrim"></div><div class="exp-cap"><span class="k">Signature — Trnovačko Wild Camp</span><h3>Two nights off the grid on a heart-shaped lake</h3></div></div>
+      <div class="exp"><div class="ph v2" data-t="Tara rafting"><em></em></div><div class="exp-scrim"></div><div class="exp-cap"><span class="k">Tara Rafting</span><h3>One of the deepest canyons in Europe</h3></div></div>
+      <div class="exp"><div class="ph" data-t="Canyoning Hrčavka"><em></em></div><div class="exp-scrim"></div><div class="exp-cap"><span class="k">Canyoning</span><h3>Jumps, slides, turquoise pools</h3></div></div>
+      <div class="exp"><div class="ph v2" data-t="Maglić summit group"><em></em></div><div class="exp-scrim"></div><div class="exp-cap"><span class="k">Maglić Circular</span><h3>The roof of Bosnia, 2,386m</h3></div></div>
+      <div class="exp"><div class="ph" data-t="Perućica / Skakavac waterfall"><em></em></div><div class="exp-scrim"></div><div class="exp-cap"><span class="k">Perućica</span><h3>Primeval forest — permit &amp; guide only</h3></div></div>
+      <div class="exp wide"><div class="ph v2" data-t="Zelengora lakes &amp; meadows"><em></em></div><div class="exp-scrim"></div><div class="exp-cap"><span class="k">Zelengora</span><h3>Glacial lakes, Dinaric meadows, wild horses</h3></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CAMP -->
+<section id="camp" style="padding-top:6px">
+  <div class="wrap camp-grid reveal">
+    <div class="camp-photo"><div class="ph" data-t="Base camp at Tjentište — cabins, terrace, the Balkans' largest open-air pool"><em></em></div></div>
+    <div>
+      <div class="kicker">Base camp</div>
+      <h2 class="lead">Your group wakes up already inside the park.</h2>
+      <p class="sub">No two-hour transfer to the trailhead every morning. Our base sits at Tjentište, in the heart of Sutjeska — steps from the largest open-air pool in the Balkans, fed straight from the Sutjeska river.</p>
+      <ul>
+        <li>90 beds — cabins and ensuite rooms, plus a wild-camp option on the lake</li>
+        <li>Half board, shepherd breakfasts, welcome dinner</li>
+        <li>Several guides and vans — two coaches handled at once</li>
+        <li>Mixed-ability groups run the same day without splitting up</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section id="why" style="padding-top:6px">
+  <div class="wrap reveal">
+    <div class="kicker">Why partner with us</div>
+    <h2 class="lead">Built for how a tour operator actually works.</h2>
+    <div class="why">
+      <div class="why-item"><span class="k">On location</span><h3>The only camp inside the park</h3><p>Others drive in and out each day. We live here — the shortest route to every trailhead, and a host who tells the story.</p></div>
+      <div class="why-item"><span class="k">Commercials</span><h3>Net rates, your margin</h3><p>Every price is net B2B. You set the selling price; our public prices stay above your margin, guaranteed.</p></div>
+      <div class="why-item"><span class="k">Guiding</span><h3>Mixed groups, no splits</h3><p>Summit and easy options run the same day with separate guides. Nobody waits at the bottom.</p></div>
+      <div class="why-item"><span class="k">Capacity</span><h3>Room for real groups</h3><p>90 beds, several guides and vans. We take larger groups and still keep it personal.</p></div>
+      <div class="why-item"><span class="k">Communication</span><h3>One contact, in English</h3><p>The founder answers within hours. Beds, meals, guides, permits, transfers — all in one place.</p></div>
+      <div class="why-item"><span class="k">No risk</span><h3>Come and see it free</h3><p>Send a test group, or your product manager on a FAM visit, before you commit a season.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PACKAGES -->
+<section id="packages" style="padding-top:6px">
+  <div class="wrap reveal">
+    <div class="kicker">Ready-made, or build your own</div>
+    <h2 class="lead">Starting points, not a fixed menu.</h2>
+    <p class="sub">Net per person, from. Final rates are built per group — tell us nights, activities and size.</p>
+    <div class="pkg-grid">
+      <div class="pkg feature"><span class="flag">Signature</span><span class="k">Off the grid</span><h3>Trnovačko Wild Camp</h3><div class="dur">3 days / 2 nights</div><p class="desc">Wild camp on the lake · Maglić summit · shepherd breakfast · no signal.</p><div class="price"><small>from</small>€170<small>net pp</small></div></div>
+      <div class="pkg"><span class="k">Taster</span><h3>Sutjeska Weekend</h3><div class="dur">3 days / 2 nights</div><p class="desc">2 nights ensuite · half board · Trnovačko Lake · Tara rafting.</p><div class="price"><small>from</small>€199<small>net pp</small></div></div>
+      <div class="pkg"><span class="k">Active</span><h3>Sutjeska Active</h3><div class="dur">4 days / 3 nights</div><p class="desc">3 nights · half board · Trnovačko · Zelengora lakes · Tara rafting.</p><div class="price"><small>from</small>€299<small>net pp</small></div></div>
+      <div class="pkg"><span class="k">The full week</span><h3>Wild Sutjeska Week</h3><div class="dur">7 days / 6 nights</div><p class="desc">Maglić · Perućica · Zelengora · rafting · memorial · sand pyramids.</p><div class="price"><small>from</small>€529<small>net pp</small></div></div>
+    </div>
+    <p class="pkg-note">Groups of 8–15: <b>−10%</b> · groups of 16+: <b>−15%</b> · full rate sheet on request.</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" style="padding-top:6px">
+  <div class="wrap reveal">
+    <div class="cta">
+      <div class="contour"><svg viewBox="0 0 1200 500" preserveAspectRatio="none"><path d="M-50,120 C250,60 520,180 800,110 1080,50 1300,150 1300,150"/><path d="M-50,220 C260,150 540,270 820,190 1100,120 1300,230 1300,230"/><path d="M-50,330 C260,260 540,380 820,300 1100,230 1300,330 1300,330"/><path d="M-50,430 C260,370 540,480 820,400 1100,330 1300,430 1300,430"/></svg></div>
+      <div class="cta-inner">
+        <h2>Let's put a group on the mountain in 2027.</h2>
+        <p>Tell us what your travellers want — nights, activities, group size — and we'll build a tailored net rate. Or send your product manager on a free FAM visit this season and see the ground for yourself.</p>
+        <div class="cta-actions">
+          <a href="mailto:udahniavanturu@gmail.com?subject=Partnership%20—%20Sutjeska%202027" class="btn btn-em">Email us</a>
+          <a href="https://wa.me/38765797200" class="btn btn-line">WhatsApp</a>
+        </div>
+        <div class="contact-row">
+          <a href="mailto:udahniavanturu@gmail.com">✉ udahniavanturu@gmail.com</a>
+          <a href="https://wa.me/38765797200">📞 +387 65 797 200</a>
+          <a href="https://instagram.com/udahniavanturu">◎ @udahniavanturu</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap">
+    <b>Udahni Avanturu</b><br>
+    Foča · Bosnia and Herzegovina · Ground operator &amp; DMC in Sutjeska National Park<br>
+    udahniavanturu.com · @udahniavanturu
+  </div>
+</footer>
+
+<script>
+const nav=document.getElementById('nav');
+addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>40),{passive:true});
+const io=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
