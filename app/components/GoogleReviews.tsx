@@ -128,7 +128,7 @@ export default function GoogleReviews({ lang }: { lang: Lang }) {
         <div
           ref={track}
           onScroll={onScroll}
-          className="mt-10 -mx-4 px-4 flex gap-4 overflow-x-auto snap-x snap-mandatory scroll-px-4 pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden md:mx-0 md:px-0 md:pb-0 md:grid md:grid-cols-2 lg:grid-cols-3 md:overflow-visible md:snap-none"
+          className="mt-10 -mx-4 px-4 flex items-start md:items-stretch gap-4 overflow-x-auto snap-x snap-mandatory scroll-px-4 pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden md:mx-0 md:px-0 md:pb-0 md:grid md:grid-cols-2 lg:grid-cols-3 md:overflow-visible md:snap-none"
           aria-label={t.title}
         >
           {reviews.map((r) => (
