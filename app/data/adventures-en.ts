@@ -996,7 +996,7 @@ What makes this tour different from anything else on the market isn't the itiner
 
 The tour is organised exclusively for private groups of 6 to 16 people. Transport to Foča is arranged separately — we organise transfers from Belgrade, Sarajevo, Dubrovnik, Podgorica, Zagreb and Tirana by arrangement, not included in the price.
 
-Petar is with you for all five days.`,
+Our team of experienced guides is with you for all five days.`,
     duration: "5 days / 4 nights",
     difficulty: "Moderate",
     price: "550€ per person",
@@ -1043,7 +1043,7 @@ Petar is with you for all five days.`,
       },
     ],
     includes: [
-      "Licensed guide Petar — all 5 days",
+      "Licensed guides — all 5 days",
       "Off-road vehicle transfers throughout the tour",
       "1 night camping at Trnovačko Lake (tent, sleeping bag, mat)",
       "3 nights in bungalows at Tjentište",
@@ -1099,7 +1099,7 @@ Petar is with you for all five days.`,
 
 This tour begins where everything begins — on Maglić, the highest peak in Bosnia and Herzegovina. It continues through mountain homesteads where people still live without electricity or signal, through Hrčavka canyon and Perućica rainforest, down the Tara river with skippers who know it like their own home, to Durmitor and the ring road that ranks among the finest drives in the Balkans.
 
-This is not a tour for those who want a hotel and a minute-by-minute programme. This is a tour for those who want to feel the landscape — all of it. Mountain, river, canyon and rainforest. Petar is with you for all seven days, and he knows every detail of this terrain — he is a licensed guide and skipper with over ten years of experience on the Tara.
+This is not a tour for those who want a hotel and a minute-by-minute programme. This is a tour for those who want to feel the landscape — all of it. Mountain, river, canyon and rainforest. Our team of licensed guides and skippers is with you for all seven days, with over 10 years of experience on the Tara.
 
 Transport to Foča is arranged separately — we organise transfers from Belgrade, Sarajevo, Dubrovnik, Podgorica, Zagreb and Tirana by arrangement, not included in the price.`,
     duration: "7 days / 6 nights",
@@ -1160,7 +1160,7 @@ Transport to Foča is arranged separately — we organise transfers from Belgrad
       },
     ],
     includes: [
-      "Licensed guide and skipper Petar — all 7 days",
+      "Licensed guides — all 7 days",
       "Off-road vehicle transfers throughout the tour",
       "1 night camping at Trnovačko Lake",
       "2 nights in bungalows at Tjentište",
@@ -1216,7 +1216,7 @@ Nine days, two countries, several mountains, one rainforest, one river and one l
 
 We begin on Maglić, the highest peak in Bosnia and Herzegovina. We end with a kayak on Piva Lake, surrounded by canyon walls reflected in the water. In between: mountain homesteads where people still live without electricity, a rainforest thousands of years old, a canyon you cannot forget, the Tara river carrying you without rush, the Durmitor ring road ranking among the top 10 drives of a lifetime, and the summit of Prutaš with a panorama that takes your breath away.
 
-Petar is with you for all nine days. Licensed mountain guide with 8 years of experience and a skipper with over 10 years on the Tara — a man who knows every stone of this terrain and who knows when to stop and when to keep going.
+Our team of licensed mountain guides and skippers is with you for all nine days, with over 10 years of experience on the Tara — people who know every stone of this terrain and who know when to stop and when to keep going.
 
 This tour is not for those who want a hotel and a minute-by-minute programme. This tour is for those willing to give nine days and receive in return an experience that lasts a lifetime.
 
@@ -1290,7 +1290,7 @@ Transport is arranged by agreement from Belgrade, Sarajevo, Dubrovnik, Podgorica
       },
     ],
     includes: [
-      "Licensed guide and skipper Petar — all 9 days",
+      "Licensed guides — all 9 days",
       "Off-road vehicle transfers throughout the tour",
       "1 night camping at Trnovačko Lake",
       "2 nights in bungalows at Tjentište",

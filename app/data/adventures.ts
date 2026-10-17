@@ -816,7 +816,7 @@ Ono što ovu turu čini drugačijom od svega što konkurencija nudi nije program
 
 Tura je organizovana isključivo za privatne grupe, od 6 do 16 osoba. Prevoz do Foče organizujete sami ili po dogovoru — organizujemo transfer iz Beograda i Sarajeva, koji nije uključen u cijenu.
 
-Petar je uz vas svih pet dana.`,
+Naš tim iskusnih vodiča je uz vas svih pet dana.`,
     duration: "5 dana / 4 noći",
     difficulty: "Srednja",
     price: "550€ po osobi",
@@ -863,7 +863,7 @@ Petar je uz vas svih pet dana.`,
       },
     ],
     includes: [
-      "Licencirani vodič Petar — svih 5 dana",
+      "Licencirani vodiči — svih 5 dana",
       "Transfer terenskim vozilima tokom cijele ture",
       "1 noć kampovanja na Trnovačkom jezeru (šator, vreća za spavanje, podloška)",
       "3 noći u bungalovima na Tjentištu",
@@ -919,7 +919,7 @@ Petar je uz vas svih pet dana.`,
 
 Ova tura počinje tamo gdje počinje sve — na Magliću, najvišem vrhu Bosne i Hercegovine. Nastavlja se kroz katune gdje se i danas živi bez struje i mreže, kroz kanjon Hrčavke i prašumu Perućicu, niz rijeku Taru sa skiperima koji je znaju kao vlastitu kuću, do Durmitora i prstenom koji spada među najljepše vožnje na Balkanu.
 
-Ovo nije tura za one koji žele hotel i program po minutama. Ovo je tura za one koji žele da osjete prostor — svaki od njega. Planinu, rijeku, kanjon i prašumu. Petara imate uz sebe svih sedam dana, a on zna svaki detalj ovog terena — licencirani je vodič i skipper sa više od desetogodišnjim iskustvom na Tari.
+Ovo nije tura za one koji žele hotel i program po minutama. Ovo je tura za one koji žele da osjete prostor — svaki od njega. Planinu, rijeku, kanjon i prašumu. Naš tim licenciranih vodiča i skipera je uz vas svih sedam dana, sa više od 10 godina iskustva na Tari.
 
 Prevoz do Foče organizujete sami ili po dogovoru — organizujemo transfer iz Beograda, Sarajeva, Dubrovnika, Podgorice, Zagreba i Tirane, nije uključen u cijenu.`,
     duration: "7 dana / 6 noći",
@@ -980,7 +980,7 @@ Prevoz do Foče organizujete sami ili po dogovoru — organizujemo transfer iz B
       },
     ],
     includes: [
-      "Licencirani vodič i skipper Petar — svih 7 dana",
+      "Licencirani vodiči — svih 7 dana",
       "Transfer terenskim vozilima tokom cijele ture",
       "1 noć kampovanja na Trnovačkom jezeru",
       "2 noći u bungalovima na Tjentištu",
@@ -1036,7 +1036,7 @@ Devet dana, dvije države, nekoliko planina, jedna prašuma, jedna rijeka i jedn
 
 Počinjemo na Magliću, najvišem vrhu Bosne i Hercegovine. Završavamo kajakom na Pivskom jezeru, okruženi kanjonima koji se ogledaju u vodi. Između toga: katuni gdje se i danas živi bez struje, prašuma stara hiljadama godina, kanjon koji ne možeš zaboraviti, rijeka Tara koja te nosi bez žurbe, Durmitorski prsten koji spada u top 10 puteva koje čovjek treba obići u životu, i vrh Prutaš sa panoramom koja oduzima dah.
 
-Petar je uz vas svih devet dana. Licencirani planinarski vodič sa 8 godina iskustva i skiper sa više od 10 godina na Tari — čovjek koji zna svaki kamen ovog terena i koji zna kada treba stati i kada treba ići dalje.
+Uz vas je svih devet dana naš tim licenciranih planinarskih vodiča i skipera, sa više od 10 godina iskustva na Tari — ljudi koji znaju svaki kamen ovog terena i koji znaju kada treba stati i kada treba ići dalje.
 
 Ova tura nije za one koji žele hotel i program po minutama. Ova tura je za one koji su spremni da daju devet dana i prime nazad iskustvo koje traje cijeli život.
 
@@ -1110,7 +1110,7 @@ Prevoz organizujemo po dogovoru iz Beograda, Sarajeva, Dubrovnika, Podgorice, Za
       },
     ],
     includes: [
-      "Licencirani vodič i skipper Petar — svih 9 dana",
+      "Licencirani vodiči — svih 9 dana",
       "Transfer terenskim vozilima tokom cijele ture",
       "1 noć kampovanja na Trnovačkom jezeru",
       "2 noći u bungalovima na Tjentištu",

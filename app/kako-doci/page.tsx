@@ -218,7 +218,7 @@ export default function KakoDoci() {
                 <p className="text-gray-500 mb-2 font-medium">Kontakt autobuske stanice:</p>
                 <p className="text-gray-300">Tel: +387 58 211 805</p>
                 <p className="text-gray-300">Tel: +387 58 211 809</p>
-                <p className="text-emerald-400 mt-3">Sa Foče do Tjentišta je još 25 km — organizujemo transfer!</p>
+                <p className="text-emerald-400 mt-3">Sa Foče do Tjentišta je još 30 km — organizujemo transfer!</p>
               </div>
             </div>
           </div>
