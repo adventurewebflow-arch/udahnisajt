@@ -24,8 +24,8 @@ const copy = {
     ],
     whyEyebrow: "Why partner with us",
     whyH2: "One operator on the ground, not a chain of subcontractors",
-    whyP1: "Most agencies selling Bosnia book a Sarajevo office that then hires local guides. We are the local guides. Petar lives in Foča, 50 km from Tjentište, and leads the trips himself.",
-    whyP2: "That means faster answers, one person accountable for your group, and access to places a bus tour never reaches: shepherd huts on Prijevor where breakfast is still made the old way, a tent camp on Trnovačko Lake with no signal, and a full day on the Tara with a skipper who knows every rapid.",
+    whyP1: "Most agencies selling Bosnia book a Sarajevo office that then hires local guides. We are the local guides. Petar lives in Foča, 25 km from Tjentište, and works with a team of three experienced local guides who know these mountains and rivers inside out.",
+    whyP2: "That means faster answers, one team accountable for your group, and access to places a bus tour never reaches: shepherd huts on Prijevor where breakfast is still made the old way, a tent camp on Trnovačko Lake with no signal, and a full day on the Tara with a skipper who knows every rapid.",
     checklist: [
       ["Licensed guides on every programme.", "Mountain guide, whitewater skipper, canyoning and caving licences."],
       ["Net rates about 20% below our public prices,", "so your margin is protected."],
@@ -96,8 +96,8 @@ const copy = {
     ],
     whyEyebrow: "Zašto sa nama",
     whyH2: "Jedan operater na terenu, a ne lanac podizvođača",
-    whyP1: "Većina agencija koje prodaju Bosnu rezerviše kancelariju u Sarajevu, a ona onda angažuje lokalne vodiče. Mi smo ti lokalni vodiči. Petar živi u Foči, 50 km od Tjentišta, i sam vodi ture.",
-    whyP2: "To znači brže odgovore, jednu osobu koja odgovara za vašu grupu i mjesta do kojih autobus nikad ne stiže: katune na Prijevoru gdje se doručak i dalje pravi po starom, kamp na Trnovačkom jezeru bez signala i cijeli dan na Tari sa skiperom koji zna svaki brzak.",
+    whyP1: "Većina agencija koje prodaju Bosnu rezerviše kancelariju u Sarajevu, a ona onda angažuje lokalne vodiče. Mi smo ti lokalni vodiči. Petar živi u Foči, 25 km od Tjentišta, i radi sa još tri iskusna lokalna vodiča koji ove planine i rijeke znaju u dušu.",
+    whyP2: "To znači brže odgovore, jedan tim koji odgovara za vašu grupu i mjesta do kojih autobus nikad ne stiže: katune na Prijevoru gdje se doručak i dalje pravi po starom, kamp na Trnovačkom jezeru bez signala i cijeli dan na Tari sa skiperom koji zna svaki brzak.",
     checklist: [
       ["Licencirani vodiči na svakoj turi.", "Planinarski vodič, skiper na divljim vodama, licence za kanjoning i speleologiju."],
       ["Neto cijene oko 20% ispod javnih,", "tako da je vaša marža zaštićena."],
