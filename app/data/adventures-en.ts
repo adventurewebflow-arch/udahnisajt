@@ -1151,7 +1151,7 @@ Transport to Foča is arranged separately — we organise transfers from Belgrad
       {
         dayTitle: "Day 6 — Rafting the Tara",
         description:
-          "Breakfast at the camp on the Tara riverbank. We collect the rafting equipment and head to the put-in point.\n\nRafting the Tara our way means a full day on the river without rush or time pressure. We float through the canyon, stop where we like, swim, jump and have lunch directly on the river. Petar is a licensed skipper with over ten years of experience on the Tara.\n\nBack at camp, dinner and the quiet satisfaction of one of the freest days of the entire tour.",
+          "Breakfast at the camp on the Tara riverbank. We collect the rafting equipment and head to the put-in point.\n\nRafting the Tara our way means a full day on the river without rush or time pressure. We float through the canyon, stop where we like, swim, jump and have lunch directly on the river. The rafting is led by our licensed skippers, and Petar has over 10 years of experience on the Tara.\n\nBack at camp, dinner and the quiet satisfaction of one of the freest days of the entire tour.",
       },
       {
         dayTitle: "Day 7 — Durmitor ring road, Žabljak and return to Foča",
@@ -1187,7 +1187,7 @@ Transport to Foča is arranged separately — we organise transfers from Belgrad
       },
       {
         q: "Is the rafting safe?",
-        a: "Yes. Petar is a licensed skipper with over ten years of experience on the Tara river. We run the rafting our way — without rush, in safe rafts, with full equipment. This is not extreme rafting; it is a day of enjoyment on one of Europe's most beautiful rivers.",
+        a: "Yes. The rafting is led by our licensed skippers, and Petar has over 10 years of experience on the Tara. We run the rafting our way — without rush, in safe rafts, with full equipment. This is not extreme rafting; it is a day of enjoyment on one of Europe's most beautiful rivers.",
       },
       {
         q: "Can you organise transport from Belgrade, Sarajevo or other cities?",
@@ -1271,7 +1271,7 @@ Transport is arranged by agreement from Belgrade, Sarajevo, Dubrovnik, Podgorica
       {
         dayTitle: "Day 6 — Rafting the Tara — a full day on the river",
         description:
-          "Breakfast at the camp on the Tara riverbank. We collect the rafting equipment and head to the put-in point.\n\nRafting the Tara our way: a full day on the river without rush or time pressure. The second deepest canyon in the world, water that changes colour with the light, stops at places no tourist bus has ever reached. We swim, jump and have lunch directly on the river.\n\nPetar is a licensed skipper with over ten years of experience on the Tara. This is not mass-market rafting — this is a day of freedom on one of the most beautiful rivers in Europe.\n\nBack at camp, dinner and reflection.",
+          "Breakfast at the camp on the Tara riverbank. We collect the rafting equipment and head to the put-in point.\n\nRafting the Tara our way: a full day on the river without rush or time pressure. The second deepest canyon in the world, water that changes colour with the light, stops at places no tourist bus has ever reached. We swim, jump and have lunch directly on the river.\n\nThe rafting is led by our licensed skippers, and Petar has over 10 years of experience on the Tara. This is not mass-market rafting — this is a day of freedom on one of the most beautiful rivers in Europe.\n\nBack at camp, dinner and reflection.",
       },
       {
         dayTitle: "Day 7 — Durmitor ring road, Žabljak and Black Lake",

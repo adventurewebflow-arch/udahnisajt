@@ -971,7 +971,7 @@ Prevoz do Foče organizujete sami ili po dogovoru — organizujemo transfer iz B
       {
         dayTitle: "Dan 6 — Rafting Tarom",
         description:
-          "Doručak u kampu na obali Tare. Preuzimamo rafting opremu i krećemo na spust.\n\nRafting Tarom na naš način znači cijeli dan na rijeci bez žurbe i bez vremenskog pritiska. Spuštamo se kroz kanjon, stajemo gdje nam se sviđa, kupamo se, skačemo, ručamo direktno na rijeci. Petar je licencirani skipper sa više od deset godina iskustva na Tari.\n\nKad se vratimo u kamp čeka nas večera i sabiranje utisaka jednog od najslobodnijih dana na cijeloj turi.",
+          "Doručak u kampu na obali Tare. Preuzimamo rafting opremu i krećemo na spust.\n\nRafting Tarom na naš način znači cijeli dan na rijeci bez žurbe i bez vremenskog pritiska. Spuštamo se kroz kanjon, stajemo gdje nam se sviđa, kupamo se, skačemo, ručamo direktno na rijeci. Rafting vode naši licencirani skiperi, a Petar ima više od 10 godina iskustva na Tari.\n\nKad se vratimo u kamp čeka nas večera i sabiranje utisaka jednog od najslobodnijih dana na cijeloj turi.",
       },
       {
         dayTitle: "Dan 7 — Durmitor, Žabljak i povratak u Foču",
@@ -1007,7 +1007,7 @@ Prevoz do Foče organizujete sami ili po dogovoru — organizujemo transfer iz B
       },
       {
         q: "Da li je rafting bezbijedan?",
-        a: "Da. Petar je licencirani skipper sa više od deset godina iskustva na rijeci Tari. Rafting organizujemo na naš način — bez žurbe, u sigurnim čamcima, sa kompletnom opremom. Tura nije namijenjena ekstremnom raftingu već uživanju u kanjonu i rijeci.",
+        a: "Da. Rafting vode naši licencirani skiperi, a Petar ima više od 10 godina iskustva na Tari. Rafting organizujemo na naš način — bez žurbe, u sigurnim čamcima, sa kompletnom opremom. Tura nije namijenjena ekstremnom raftingu već uživanju u kanjonu i rijeci.",
       },
       {
         q: "Mogu li organizovati prevoz iz Beograda, Sarajeva ili drugih gradova?",
@@ -1091,7 +1091,7 @@ Prevoz organizujemo po dogovoru iz Beograda, Sarajeva, Dubrovnika, Podgorice, Za
       {
         dayTitle: "Dan 6 — Rafting Tarom — cijeli dan na rijeci",
         description:
-          "Doručak u kampu na obali Tare. Preuzimamo rafting opremu i krećemo na spust.\n\nRafting Tarom na naš način: cijeli dan na rijeci bez žurbe i bez vremenskog pritiska. Kanjon drugi po dubini u svijetu, voda koja mijenja boju sa svjetlom, pauze na mjestima gdje nije stao ni jedan turistički autobus. Kupamo se, skačemo, ručamo direktno na rijeci.\n\nPetar je licencirani skipper sa više od deset godina iskustva na Tari. Ovo nije rafting za mase — ovo je dan slobode na jednoj od najljepših rijeka u Evropi.\n\nKad se vratimo u kamp čeka nas večera i sabiranje utisaka.",
+          "Doručak u kampu na obali Tare. Preuzimamo rafting opremu i krećemo na spust.\n\nRafting Tarom na naš način: cijeli dan na rijeci bez žurbe i bez vremenskog pritiska. Kanjon drugi po dubini u svijetu, voda koja mijenja boju sa svjetlom, pauze na mjestima gdje nije stao ni jedan turistički autobus. Kupamo se, skačemo, ručamo direktno na rijeci.\n\nRafting vode naši licencirani skiperi, a Petar ima više od 10 godina iskustva na Tari. Ovo nije rafting za mase — ovo je dan slobode na jednoj od najljepših rijeka u Evropi.\n\nKad se vratimo u kamp čeka nas večera i sabiranje utisaka.",
       },
       {
         dayTitle: "Dan 7 — Durmitorski prsten, Žabljak i Crno jezero",
