@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { reviews, reviewStats, GOOGLE_REVIEWS_URL, type Lang, type Review } from "../data/reviews";
 
 const copy = {
@@ -12,6 +12,7 @@ const copy = {
     more: "Prikaži više",
     less: "Prikaži manje",
     translated: "Prevedeno sa engleskog",
+    swipe: "Prevuci za još recenzija",
   },
   en: {
     title: "What our guests say",
@@ -21,6 +22,7 @@ const copy = {
     more: "Read more",
     less: "Show less",
     translated: "Translated from Serbian",
+    swipe: "Swipe for more reviews",
   },
 };
 
@@ -35,12 +37,16 @@ function Stars() {
 function ReviewCard({ r, lang }: { r: Review; lang: Lang }) {
   const t = copy[lang];
   const text = r.text[lang];
-  const isLong = !r.featured && text.length > 260;
+  const isLong = text.length > 260;
   const [open, setOpen] = useState(false);
+
+  // Featured card: clamped only on phones, always full on desktop.
+  const clamp = !isLong || open ? "" : r.featured ? "line-clamp-6 md:line-clamp-none" : "line-clamp-6";
+  const btnVisibility = r.featured ? "md:hidden" : "";
 
   return (
     <article
-      className={`bg-gray-900 border rounded-2xl p-6 flex flex-col gap-3 min-w-0 ${
+      className={`snap-start shrink-0 w-[85%] sm:w-[70%] md:w-auto bg-gray-900 border rounded-2xl p-6 flex flex-col gap-3 min-w-0 ${
         r.featured ? "md:col-span-2 lg:row-span-2 border-emerald-500/50" : "border-gray-800"
       }`}
     >
@@ -59,29 +65,40 @@ function ReviewCard({ r, lang }: { r: Review; lang: Lang }) {
           {r.tag[lang]}
         </span>
       )}
-      <p
-        className={`text-gray-300 whitespace-pre-line ${r.featured ? "text-lg" : ""} ${
-          isLong && !open ? "line-clamp-6" : ""
-        }`}
-      >
-        {text}
-      </p>
+      <p className={`text-gray-300 whitespace-pre-line ${r.featured ? "md:text-lg" : ""} ${clamp}`}>{text}</p>
       {isLong && (
         <button
           type="button"
           onClick={() => setOpen(!open)}
-          className="self-start text-emerald-400 font-semibold hover:text-emerald-300"
+          className={`self-start text-emerald-400 font-semibold hover:text-emerald-300 ${btnVisibility}`}
         >
           {open ? t.less : t.more}
         </button>
       )}
-      {r.orig !== lang && <span className="text-xs italic text-gray-500">{t.translated}</span>}
+      {r.orig !== lang && <span className="mt-auto text-xs italic text-gray-500">{t.translated}</span>}
     </article>
   );
 }
 
 export default function GoogleReviews({ lang }: { lang: Lang }) {
   const t = copy[lang];
+  const track = useRef<HTMLDivElement>(null);
+  const [active, setActive] = useState(0);
+
+  const onScroll = () => {
+    const el = track.current;
+    if (!el || !el.firstElementChild) return;
+    const card = el.firstElementChild as HTMLElement;
+    const step = card.offsetWidth + 16; // card width + gap-4
+    setActive(Math.min(reviews.length - 1, Math.round(el.scrollLeft / step)));
+  };
+
+  const goTo = (i: number) => {
+    const el = track.current;
+    const card = el?.children[i] as HTMLElement | undefined;
+    if (el && card) el.scrollTo({ left: card.offsetLeft - el.offsetLeft, behavior: "smooth" });
+  };
+
   return (
     <section id={lang === "sr" ? "recenzije" : "reviews"} className="py-16 md:py-24 relative">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-slate-900/40 to-transparent" />
@@ -108,10 +125,31 @@ export default function GoogleReviews({ lang }: { lang: Lang }) {
           </a>
         </div>
 
-        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div
+          ref={track}
+          onScroll={onScroll}
+          className="mt-10 -mx-4 px-4 flex gap-4 overflow-x-auto snap-x snap-mandatory scroll-px-4 pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden md:mx-0 md:px-0 md:pb-0 md:grid md:grid-cols-2 lg:grid-cols-3 md:overflow-visible md:snap-none"
+          aria-label={t.title}
+        >
           {reviews.map((r) => (
             <ReviewCard key={r.name} r={r} lang={lang} />
           ))}
+        </div>
+
+        {/* Dots — phones only */}
+        <div className="md:hidden mt-5 flex flex-col items-center gap-2">
+          <div className="flex gap-2">
+            {reviews.map((r, i) => (
+              <button
+                key={r.name}
+                type="button"
+                aria-label={`${i + 1} / ${reviews.length}`}
+                onClick={() => goTo(i)}
+                className={`h-2 rounded-full transition-all ${i === active ? "w-6 bg-emerald-400" : "w-2 bg-gray-600"}`}
+              />
+            ))}
+          </div>
+          <span className="text-xs text-gray-500">{t.swipe}</span>
         </div>
 
         <div className="mt-8">
