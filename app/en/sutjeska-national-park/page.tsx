@@ -307,7 +307,7 @@ export default function SutjeskaNationalParkPage() {
             <p className="text-emerald-400 text-xs uppercase tracking-widest mb-3">Your guide</p>
             <h2 className="text-3xl font-bold text-white mb-4">Petar Kostić</h2>
             <p className="text-slate-300 leading-8 mb-4">
-              Licensed mountain guide and licensed river skipper with over 15 years of experience in Sutjeska National Park and the surrounding Dinaric Alps. Born and based in Foča.
+              A licensed mountain guide with 8 years of experience in Sutjeska National Park and the surrounding Dinaric Alps, and a licensed river skipper with over 10 years on the Tara. Born and based in Foča.
             </p>
             <p className="text-slate-300 leading-8 mb-4">
               Petar learned to swim and dive in the Tara river. He knows Maglić well enough to know when to turn back. He knows the three vipers that guard the spring in Perućica. He knows Miloš at Trnovačko Lake.

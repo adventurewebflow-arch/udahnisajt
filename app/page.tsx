@@ -143,7 +143,7 @@ export default function Home() {
         </div>
         <div className="grid grid-cols-3 border-t border-white/10 bg-slate-950/80 backdrop-blur-sm">
           {[
-            { num: "10+", label: "godina iskustva" },
+            { num: "2021", label: "na terenu od" },
             { num: "3000+", label: "zadovoljnih gostiju" },
             { num: "3", label: "države" },
           ].map((item) => (

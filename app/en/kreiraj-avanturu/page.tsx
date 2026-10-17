@@ -70,7 +70,7 @@ export default function BuildAdventurePage() {
             </span>
             <div>
               <p className="text-white font-semibold text-sm">Licensed guide</p>
-              <p className="text-slate-400 text-xs">15+ years experience</p>
+              <p className="text-slate-400 text-xs">10+ years on the Tara</p>
             </div>
           </div>
         </div>

@@ -5,14 +5,14 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "O nama | Udahni Avanturu",
   description:
-    "Udahni Avanturu — Petar i Nevena. Više od pet godina avantura kroz Sutjesku, Zelengoru, Trnovačko jezero i Perućicu. Male grupe, domaćinski pristup.",
+    "Udahni Avanturu — Petar i Nevena. Avanture od 2021. kroz Sutjesku, Zelengoru, Trnovačko jezero i Perućicu. Male grupe, domaćinski pristup.",
   alternates: {
     canonical: "https://www.udahniavanturu.com/o-nama",
   },
   openGraph: {
     title: "O nama | Udahni Avanturu",
     description:
-      "Petar i Nevena — više od pet godina avantura kroz Sutjesku, Zelengoru, Trnovačko jezero i Perućicu. Male grupe, domaćinski pristup.",
+      "Petar i Nevena — avanture od 2021. kroz Sutjesku, Zelengoru, Trnovačko jezero i Perućicu. Male grupe, domaćinski pristup.",
     url: "https://www.udahniavanturu.com/o-nama",
     type: "website",
   },
@@ -65,10 +65,10 @@ export default function ONamaPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl space-y-6 text-slate-300 leading-relaxed">
             <p>
-              Udahni Avanturu je nastao iz iskrene ljubavi prema prirodi, kretanju i životu napolju. Mi smo Petar i Nevena, i već više od pet godina organizujemo avanture i ture kroz najljepše krajeve Bosne i Hercegovine — od Sutjeske i Zelengore, preko Trnovačkog jezera i Perućice, do mjesta koja se ne nalaze u klasičnim turističkim brošurama.
+              Udahni Avanturu je nastao iz iskrene ljubavi prema prirodi, kretanju i životu napolju. Mi smo Petar i Nevena, i od 2021. organizujemo avanture i ture kroz najljepše krajeve Bosne i Hercegovine — od Sutjeske i Zelengore, preko Trnovačkog jezera i Perućice, do mjesta koja se ne nalaze u klasičnim turističkim brošurama.
             </p>
             <p>
-              Ideja Udahni Avanturu zvanično je pokrenuta prije 5 godina, kao mali, domaćinski projekat za ljude koji žele više od običnog izleta. Danas je to zajednica avanturista koji cijene dobru organizaciju, pravi ritam, sigurnost i atmosferu u kojoj se svako osjeća kao dio ekipe.
+              Ideja Udahni Avanturu zvanično je pokrenuta 2021. godine, kao mali, domaćinski projekat za ljude koji žele više od običnog izleta. Danas je to zajednica avanturista koji cijene dobru organizaciju, pravi ritam, sigurnost i atmosferu u kojoj se svako osjeća kao dio ekipe.
             </p>
             <p>
               Petar je višegodišnji skiper na divljim rijekama i licencirani vodič, sa bogatim iskustvom rada u zahtjevnim prirodnim uslovima. Zato je bezbjednost kod nas uvijek na prvom mjestu — svaka tura je pažljivo isplanirana, bez lažnih obećanja i bez žurbe. Radimo samo ono što znamo da možemo uraditi kako treba.

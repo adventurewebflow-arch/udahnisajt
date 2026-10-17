@@ -68,7 +68,7 @@ export default function KreirajAvanturuPage() {
             </span>
             <div>
               <p className="text-white font-semibold text-sm">Licencirani vodič</p>
-              <p className="text-slate-400 text-xs">15+ godina iskustva</p>
+              <p className="text-slate-400 text-xs">10+ godina na Tari</p>
             </div>
           </div>
         </div>

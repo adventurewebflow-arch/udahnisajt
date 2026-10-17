@@ -307,7 +307,7 @@ export default function SutjeskaNacionalniParkPage() {
             <p className="text-emerald-400 text-xs uppercase tracking-widest mb-3">Tvoj vodič</p>
             <h2 className="text-3xl font-bold text-white mb-4">Petar Kostić</h2>
             <p className="text-slate-300 leading-8 mb-4">
-              Licencirani planinski vodič i licencirani skiper sa više od 15 godina iskustva u Nacionalnom parku Sutjeska i okolnim Dinaridima. Rođen i sa baze u Foči.
+              Licencirani planinarski vodič sa 8 godina iskustva u Nacionalnom parku Sutjeska i okolnim Dinaridima i licencirani skiper sa više od 10 godina na Tari. Rođen i sa baze u Foči.
             </p>
             <p className="text-slate-300 leading-8 mb-4">
               Petar je naučio plivati i roniti u rijeci Tari. Zna Maglić dovoljno dobro da zna kada se okrenuti. Zna tri zmije koje čuvaju izvor u Perućici. Zna Miloša na Trnovačkom jezeru.

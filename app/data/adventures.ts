@@ -666,7 +666,7 @@ Svaki program pravimo po mjeri grupe. Javite se sa brojem ljudi i terminom, mi p
       "Smještaj u bungalovima na Tjentištu",
       "Konferencijske sale",
       "Program po mjeri grupe",
-      "Petar – vodič sa 15+ godina iskustva"
+      "Petar – licencirani planinarski vodič, 8 godina iskustva"
     ],
     itinerary: [
       {
@@ -688,7 +688,7 @@ Svaki program pravimo po mjeri grupe. Javite se sa brojem ljudi i terminom, mi p
     includes: [
       "Smještaj na Tjentištu (bungalovi)",
       "Svi obroci tokom programa",
-      "Vodič sa licencom – Petar (15+ godina iskustva)",
+      "Vodič sa licencom – Petar (8 godina iskustva)",
       "Transfer tokom programa",
       "Sve aktivnosti po dogovoru",
       "Konferencijska sala (po potrebi)",
@@ -1036,7 +1036,7 @@ Devet dana, dvije države, nekoliko planina, jedna prašuma, jedna rijeka i jedn
 
 Počinjemo na Magliću, najvišem vrhu Bosne i Hercegovine. Završavamo kajakom na Pivskom jezeru, okruženi kanjonima koji se ogledaju u vodi. Između toga: katuni gdje se i danas živi bez struje, prašuma stara hiljadama godina, kanjon koji ne možeš zaboraviti, rijeka Tara koja te nosi bez žurbe, Durmitorski prsten koji spada u top 10 puteva koje čovjek treba obići u životu, i vrh Prutaš sa panoramom koja oduzima dah.
 
-Petar je uz vas svih devet dana. Licencirani vodič i skipper sa petnaest godina iskustva — čovjek koji zna svaki kamen ovog terena i koji zna kada treba stati i kada treba ići dalje.
+Petar je uz vas svih devet dana. Licencirani planinarski vodič sa 8 godina iskustva i skiper sa više od 10 godina na Tari — čovjek koji zna svaki kamen ovog terena i koji zna kada treba stati i kada treba ići dalje.
 
 Ova tura nije za one koji žele hotel i program po minutama. Ova tura je za one koji su spremni da daju devet dana i prime nazad iskustvo koje traje cijeli život.
 

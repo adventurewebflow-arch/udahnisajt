@@ -5,14 +5,14 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About Us | Breathe Adventure",
   description:
-    "Breathe Adventure — Petar and Nevena. Over five years of adventures through Sutjeska, Zelengora, Trnovačko Lake and Perućica. Small groups, a family approach.",
+    "Breathe Adventure — Petar and Nevena. Adventures since 2021 through Sutjeska, Zelengora, Trnovačko Lake and Perućica. Small groups, a family approach.",
   alternates: {
     canonical: "https://www.udahniavanturu.com/en/o-nama",
   },
   openGraph: {
     title: "About Us | Breathe Adventure",
     description:
-      "Petar and Nevena — over five years of adventures through Sutjeska, Zelengora, Trnovačko Lake and Perućica. Small groups, a family approach.",
+      "Petar and Nevena — adventures since 2021 through Sutjeska, Zelengora, Trnovačko Lake and Perućica. Small groups, a family approach.",
     url: "https://www.udahniavanturu.com/en/o-nama",
     type: "website",
   },
@@ -65,10 +65,10 @@ export default function AboutPageEN() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl space-y-6 text-slate-300 leading-relaxed">
             <p>
-              Breathe Adventure grew from a genuine love of nature, movement and life outdoors. We are Petar and Nevena, and for over five years we have been organising adventures and tours through the most beautiful corners of Bosnia and Herzegovina — from Sutjeska and Zelengora to Trnovačko Lake and Perućica, and to places that don&apos;t appear in standard tourist brochures.
+              Breathe Adventure grew from a genuine love of nature, movement and life outdoors. We are Petar and Nevena, and since 2021 we have been organising adventures and tours through the most beautiful corners of Bosnia and Herzegovina — from Sutjeska and Zelengora to Trnovačko Lake and Perućica, and to places that don&apos;t appear in standard tourist brochures.
             </p>
             <p>
-              The idea behind Breathe Adventure was officially launched five years ago as a small, family-style project for people who want more than an ordinary trip. Today it is a community of adventurers who value good organisation, the right pace, safety and an atmosphere where everyone feels part of the team.
+              The idea behind Breathe Adventure was officially launched in 2021 as a small, family-style project for people who want more than an ordinary trip. Today it is a community of adventurers who value good organisation, the right pace, safety and an atmosphere where everyone feels part of the team.
             </p>
             <p>
               Petar is a seasoned river skipper and licensed guide with extensive experience in challenging natural conditions. That&apos;s why safety always comes first — every tour is carefully planned, with no false promises and no rush. We only do what we know we can do well.

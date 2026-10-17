@@ -185,7 +185,7 @@ export default function TrnovackoJezeroPage() {
           <div className="rounded-xl bg-slate-900 border border-white/10 p-8 text-center">
             <h2 className="text-2xl font-bold text-white mb-3">Rezervišite mjesto na Trnovačkom jezeru</h2>
             <p className="text-slate-400 mb-6 max-w-lg mx-auto">
-              Male grupe. Licencirani vodič s 15+ godina iskustva. Sva oprema uključena.
+              Male grupe. Licencirani planinarski vodič sa 8 godina iskustva. Sva oprema uključena.
               Polazak iz Foče.
             </p>
             <div className="flex flex-wrap gap-3 justify-center">

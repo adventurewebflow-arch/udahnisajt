@@ -1216,7 +1216,7 @@ Nine days, two countries, several mountains, one rainforest, one river and one l
 
 We begin on Maglić, the highest peak in Bosnia and Herzegovina. We end with a kayak on Piva Lake, surrounded by canyon walls reflected in the water. In between: mountain homesteads where people still live without electricity, a rainforest thousands of years old, a canyon you cannot forget, the Tara river carrying you without rush, the Durmitor ring road ranking among the top 10 drives of a lifetime, and the summit of Prutaš with a panorama that takes your breath away.
 
-Petar is with you for all nine days. Licensed guide and skipper with fifteen years of experience — a man who knows every stone of this terrain and who knows when to stop and when to keep going.
+Petar is with you for all nine days. Licensed mountain guide with 8 years of experience and a skipper with over 10 years on the Tara — a man who knows every stone of this terrain and who knows when to stop and when to keep going.
 
 This tour is not for those who want a hotel and a minute-by-minute programme. This tour is for those willing to give nine days and receive in return an experience that lasts a lifetime.
 
