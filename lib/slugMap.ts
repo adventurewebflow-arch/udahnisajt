@@ -56,6 +56,7 @@ export const landingPathPairs: PathPair[] = [
   { sr: "/sutjeska-nacionalni-park", en: "/en/sutjeska-national-park" },
   { sr: "/sutjeska", en: "/en/sutjeska-hiking" },
   { sr: "/partneri", en: "/en/partners" },
+  { sr: "/kako-doci", en: "/en/kako-doci" },
 ];
 
 /**
