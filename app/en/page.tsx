@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import AdventureCard from "../components/AdventureCard";
 import GalleryPreview from "../components/GalleryPreview";
+import GoogleReviews from "../components/GoogleReviews";
 import InquiryForm from "../components/InquiryForm";
 import Accordion from "../components/Accordion";
 import NewsletterSection from "../components/NewsletterSection";
@@ -217,6 +218,8 @@ export default function HomeEN() {
           </div>
         </div>
       </section>
+
+      <GoogleReviews lang="en" />
 
       <GalleryPreview />
 

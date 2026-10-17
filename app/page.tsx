@@ -3,6 +3,7 @@ import Link from "next/link";
 import HomeSchema from "./components/HomeSchema";
 import AdventureCard from "./components/AdventureCard";
 import GalleryPreview from "./components/GalleryPreview";
+import GoogleReviews from "./components/GoogleReviews";
 import InquiryForm from "./components/InquiryForm";
 import Accordion from "./components/Accordion";
 import NewsletterSection from "./components/NewsletterSection";
@@ -270,6 +271,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <GoogleReviews lang="sr" />
 
       <GalleryPreview />
 

@@ -17,7 +17,7 @@ const copy = {
     ctaPrimary: "Request the 2027 Partner Pack",
     ctaSecondary: "See net rates",
     facts: [
-      { n: "5.0", t: "Google rating from 30+ reviews" },
+      { n: "5.0", t: "Google rating from 60+ reviews" },
       { n: "~1,000", t: "guests per season" },
       { n: "80", t: "max group size we handle" },
       { n: "10+", t: "years on the Tara as a licensed skipper, 8 as a mountain guide" },
@@ -89,7 +89,7 @@ const copy = {
     ctaPrimary: "Zatraži Partner Pack 2027",
     ctaSecondary: "Pogledaj neto cijene",
     facts: [
-      { n: "5.0", t: "ocjena na Googleu, 30+ recenzija" },
+      { n: "5.0", t: "ocjena na Googleu, 60+ recenzija" },
       { n: "~1.000", t: "gostiju po sezoni" },
       { n: "80", t: "najveća grupa koju vodimo" },
       { n: "10+", t: "godina na Tari kao licencirani skiper, 8 kao planinarski vodič" },
