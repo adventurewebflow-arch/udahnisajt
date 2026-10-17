@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
-import { getPathPair } from "@/lib/slugMap";
+import { getPathPair, isEnOnlyPath } from "@/lib/slugMap";
 
 function getAlternatePath(pathname: string): {
   isEn: boolean;
@@ -39,6 +39,8 @@ export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const pathname = usePathname();
   const { isEn, srPath, enPath } = getAlternatePath(pathname);
+  // EN-only routes (B2B partner pages) have no SR counterpart to switch to.
+  const enOnly = isEnOnlyPath(pathname);
 
   const labels = isEn
     ? {
@@ -153,17 +155,21 @@ export default function Navbar() {
 
             <div className="hidden lg:flex items-center gap-4">
               <div className="flex items-center gap-1 text-sm">
-                <Link
-                  href={srPath}
-                  className={`px-2 py-1 rounded transition-colors ${
-                    !isEn
-                      ? "text-emerald-400 font-semibold"
-                      : "text-slate-400 hover:text-white"
-                  }`}
-                >
-                  SR
-                </Link>
-                <span className="text-slate-600">|</span>
+                {!enOnly && (
+                  <>
+                    <Link
+                      href={srPath}
+                      className={`px-2 py-1 rounded transition-colors ${
+                        !isEn
+                          ? "text-emerald-400 font-semibold"
+                          : "text-slate-400 hover:text-white"
+                      }`}
+                    >
+                      SR
+                    </Link>
+                    <span className="text-slate-600">|</span>
+                  </>
+                )}
                 <Link
                   href={enPath}
                   className={`px-2 py-1 rounded transition-colors ${
@@ -292,18 +298,22 @@ export default function Navbar() {
             </a>
 
             <div className="flex items-center gap-2 text-sm pt-4 mt-4 border-t border-white/10">
-              <Link
-                href={srPath}
-                className={`px-3 py-1 rounded transition-colors ${
-                  !isEn
-                    ? "text-emerald-400 font-semibold"
-                    : "text-slate-400 hover:text-white"
-                }`}
-                onClick={closeMenu}
-              >
-                SR
-              </Link>
-              <span className="text-slate-600">|</span>
+              {!enOnly && (
+                <>
+                  <Link
+                    href={srPath}
+                    className={`px-3 py-1 rounded transition-colors ${
+                      !isEn
+                        ? "text-emerald-400 font-semibold"
+                        : "text-slate-400 hover:text-white"
+                    }`}
+                    onClick={closeMenu}
+                  >
+                    SR
+                  </Link>
+                  <span className="text-slate-600">|</span>
+                </>
+              )}
               <Link
                 href={enPath}
                 className={`px-3 py-1 rounded transition-colors ${

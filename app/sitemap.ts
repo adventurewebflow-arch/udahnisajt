@@ -3,6 +3,7 @@ import { adventures } from "./data/adventures";
 import { adventuresEN } from "./data/adventures-en";
 import { blogPosts } from "./data/blog";
 import { blogPostsEN } from "./data/blog-en";
+import { partnerExperiences } from "@/lib/partnerExperiences";
 
 const BASE = "https://www.udahniavanturu.com";
 
@@ -29,6 +30,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified,
   }));
 
+  // B2B partner detail pages — English only, no SR counterpart.
+  const partnerDetails = partnerExperiences.map((e) => ({
+    url: encodeURI(`${BASE}/en/partners/${e.slug}`),
+    lastModified,
+  }));
+
   return [
     // Serbian
     { url: encodeURI(BASE), lastModified },
@@ -43,6 +50,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: encodeURI(`${BASE}/sutjeska`), lastModified },
     { url: encodeURI(`${BASE}/sutjeska-nacionalni-park`), lastModified },
     { url: encodeURI(`${BASE}/kako-doci`), lastModified },
+    { url: encodeURI(`${BASE}/partneri`), lastModified },
     ...tourDetailsSr,
     ...vodiciDetails,
 
@@ -61,5 +69,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: encodeURI(`${BASE}/en/trnovacko-lake`), lastModified },
     { url: encodeURI(`${BASE}/en/perucica-rainforest`), lastModified },
     { url: encodeURI(`${BASE}/en/zelengora-lakes`), lastModified },
+    { url: encodeURI(`${BASE}/en/partners`), lastModified },
+    ...partnerDetails,
   ];
 }

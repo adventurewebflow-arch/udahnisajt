@@ -23,6 +23,7 @@ export default function Footer() {
         { href: "/en/galerija", label: "Gallery" },
         { href: "/en/blog", label: "Blog" },
         { href: "/en/sutjeska-national-park", label: "Sutjeska National Park" },
+        { href: "/en/partners", label: "For agencies" },
         { href: "/en#contact", label: "Contact" },
       ]
     : [
@@ -32,6 +33,7 @@ export default function Footer() {
         { href: "/galerija", label: "Galerija" },
         { href: "/vodici", label: "Blog" },
         { href: "/sutjeska-nacionalni-park", label: "NP Sutjeska — vodič" },
+        { href: "/partneri", label: "Za agencije" },
         { href: "/#kontakt", label: "Kontakt" },
       ];
 

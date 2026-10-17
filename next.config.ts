@@ -288,6 +288,12 @@ function languageSlugRedirects(): Redirect[] {
 }
 
 const nextConfig: NextConfig = {
+  experimental: {
+    // Turbopack's bundled CA store cannot complete the TLS handshake to
+    // fonts.googleapis.com on some local setups, so next/font silently falls
+    // back and the partner pages lose their display font. Use the system certs.
+    turbopackUseSystemTlsCerts: true,
+  },
   async redirects() {
     // Never emit a duplicate source: hand-written redirects win, and a generated
     // entry is skipped if its source already exists or would be a self-redirect.

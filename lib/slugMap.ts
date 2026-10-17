@@ -55,7 +55,20 @@ export const landingPathPairs: PathPair[] = [
   { sr: "/perucica", en: "/en/perucica-rainforest" },
   { sr: "/sutjeska-nacionalni-park", en: "/en/sutjeska-national-park" },
   { sr: "/sutjeska", en: "/en/sutjeska-hiking" },
+  { sr: "/partneri", en: "/en/partners" },
 ];
+
+/**
+ * Routes that exist in English only (B2B partner detail pages, aimed at foreign
+ * tour operators). They have no SR counterpart, so they are deliberately NOT in
+ * `landingPathPairs` — that map also drives the wrong-language redirects in
+ * next.config.ts, which would point at a Serbian page that does not exist.
+ *
+ * Matching is prefix-based, so nested routes such as /en/partners/trnovacko
+ * are covered too. A path that has an SR/EN pair (the /en/partners hub itself)
+ * is never treated as English-only.
+ */
+export const enOnlyPaths: string[] = ["/en/partners"];
 
 /** All full-path pairs (blog detail + landings) for lookups by pathname. */
 export const pathPairs: PathPair[] = [
@@ -81,6 +94,17 @@ export function getPathPair(pathname: string): PathPair | null {
   return null;
 }
 
+/**
+ * True for English-only routes. The navbar uses this to hide the SR link
+ * instead of falling through to the prefix swap, which would produce a broken
+ * Serbian URL.
+ */
+export function isEnOnlyPath(pathname: string): boolean {
+  const clean = normalizePath(pathname);
+  if (getPathPair(clean)) return false;
+  return enOnlyPaths.some((base) => clean === base || clean.startsWith(`${base}/`));
+}
+
 export function getBlogPairBySrSlug(slug: string): SlugPair | undefined {
   return blogSlugPairs.find((p) => p.sr === slug);
 }
@@ -95,6 +119,18 @@ function buildAlternates(srPath: string, enPath: string): LanguageAlternates {
     en: `${SITE_URL}${enPath}`,
     // x-default points to the EN version (international fallback for unmatched
     // languages).
+    "x-default": `${SITE_URL}${enPath}`,
+  };
+}
+
+/**
+ * hreflang alternates for an English-only page: it is its own `en` version and
+ * also the `x-default` international fallback. No `sr-Latn` entry is emitted,
+ * so no other hreflang pair on the site is affected.
+ */
+export function enOnlyHreflang(enPath: string): LanguageAlternates {
+  return {
+    en: `${SITE_URL}${enPath}`,
     "x-default": `${SITE_URL}${enPath}`,
   };
 }

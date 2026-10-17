@@ -23,6 +23,22 @@ body {
   }
 }
 
+/* B2B partner pages (/en/partners) — scoped so the rest of the site keeps the
+   system font stack. Font variables come from app/en/partners/fonts.ts. */
+.ua-partners {
+  font-family: var(--font-inter), system-ui, sans-serif;
+  line-height: 1.55;
+}
+
+.ua-partners h1,
+.ua-partners h2,
+.ua-partners h3,
+.ua-partners .ua-disp {
+  font-family: var(--font-bricolage), sans-serif;
+  letter-spacing: -0.02em;
+  line-height: 1.03;
+}
+
 /* Blog article typography */
 .ua-article {
   color: rgb(209 213 219); /* gray-300 */
