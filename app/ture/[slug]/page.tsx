@@ -42,6 +42,23 @@ export async function generateMetadata({
       canonical: `${BASE}/ture/${slug}`,
       languages: tourHreflang(slug),
     },
+    openGraph: {
+      title: `${adventure.title} - Udahni Avanturu`,
+      description: adventure.shortDescription,
+      url: `${BASE}/ture/${slug}`,
+      siteName: "Udahni Avanturu",
+      type: "website",
+      locale: "sr_BA",
+      images: adventure.image
+        ? [{ url: adventure.image, alt: adventure.imageAlt ?? adventure.title }]
+        : [{ url: "/opengraph-image.jpg", width: 1200, height: 630 }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${adventure.title} - Udahni Avanturu`,
+      description: adventure.shortDescription,
+      images: [adventure.image ?? "/opengraph-image.jpg"],
+    },
   };
 }
 

@@ -9,30 +9,51 @@ interface AdventureCardProps {
 }
 
 export default function AdventureCard({ adventure, linkPrefix = "/ture" }: AdventureCardProps) {
+  const isEn = linkPrefix.startsWith("/en");
+  const labels = isEn
+    ? {
+        groupDepartures: "Group departures",
+        onRequest: "On request",
+        privateTour: "Private tour",
+        youChoose: "You choose the date",
+        min4: "Min. 4 people",
+        oneDate: "1 date",
+        manyDates: (n: number) => `${n} dates`,
+      }
+    : {
+        groupDepartures: "Grupni polasci",
+        onRequest: "Na upit",
+        privateTour: "Privatna tura",
+        youChoose: "Vi birate datum",
+        min4: "Min. 4 osobe",
+        oneDate: "1 termin",
+        manyDates: (n: number) => `${n} termina`,
+      };
+
   const openSpots = getBookableTourDates(adventure.slug).length;
-  const spotsLabel = openSpots === 1 ? "1 termin" : `${openSpots} termina`;
+  const spotsLabel = openSpots === 1 ? labels.oneDate : labels.manyDates(openSpots);
 
   let primaryBadge = { text: "", color: "emerald" as "emerald" | "blue" | "amber" };
   let secondaryBadge = "";
 
   if (adventure.category === "popular") {
     if (openSpots > 0) {
-      primaryBadge = { text: "Grupni polasci", color: "emerald" };
+      primaryBadge = { text: labels.groupDepartures, color: "emerald" };
       secondaryBadge = spotsLabel;
     }
   } else if (adventure.category === "premium") {
     if (openSpots > 0) {
-      primaryBadge = { text: "Grupni polasci", color: "emerald" };
+      primaryBadge = { text: labels.groupDepartures, color: "emerald" };
       secondaryBadge = spotsLabel;
     } else {
-      primaryBadge = { text: "Na upit", color: "amber" };
+      primaryBadge = { text: labels.onRequest, color: "amber" };
     }
   } else if (adventure.category === "multi-day") {
-    primaryBadge = { text: "Privatna tura", color: "blue" };
-    secondaryBadge = "Vi birate datum";
+    primaryBadge = { text: labels.privateTour, color: "blue" };
+    secondaryBadge = labels.youChoose;
   } else if (adventure.category === "day-trip") {
-    primaryBadge = { text: "Privatna tura", color: "blue" };
-    secondaryBadge = "Min. 4 osobe";
+    primaryBadge = { text: labels.privateTour, color: "blue" };
+    secondaryBadge = labels.min4;
   }
 
   // Safe image check

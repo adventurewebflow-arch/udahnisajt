@@ -2,6 +2,7 @@
 
 import { useRef, useState } from "react";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 interface GalleryImage {
   src: string;
@@ -11,13 +12,32 @@ interface GalleryImage {
 export default function TourGallery({ images }: { images: GalleryImage[] }) {
   const [current, setCurrent] = useState(0);
   const [lightbox, setLightbox] = useState(false);
+  const isEn = usePathname().startsWith("/en");
+  const labels = isEn
+    ? {
+        gallery: "Gallery",
+        openFullscreen: "Open gallery in fullscreen",
+        prev: "Previous image",
+        next: "Next image",
+        close: "Close",
+        image: (n: number) => `Image ${n}`,
+        openImage: (alt: string) => `Open image: ${alt}`,
+      }
+    : {
+        gallery: "Galerija",
+        openFullscreen: "Otvori galeriju preko cijelog ekrana",
+        prev: "Prethodna slika",
+        next: "Sljedeća slika",
+        close: "Zatvori",
+        image: (n: number) => `Slika ${n}`,
+        openImage: (alt: string) => `Otvori sliku: ${alt}`,
+      };
+  const touchStartX = useRef<number | null>(null);
 
   if (!images || images.length === 0) return null;
 
   const prev = () => setCurrent((c) => (c - 1 + images.length) % images.length);
   const next = () => setCurrent((c) => (c + 1) % images.length);
-
-  const touchStartX = useRef<number | null>(null);
 
   const handleTouchStart = (e: React.TouchEvent) => {
     touchStartX.current = e.changedTouches[0]?.clientX ?? null;
@@ -36,7 +56,7 @@ export default function TourGallery({ images }: { images: GalleryImage[] }) {
 
   return (
     <div className="mt-8">
-      <h2 className="text-2xl font-bold text-white mb-4">Galerija</h2>
+      <h2 className="text-2xl font-bold text-white mb-4">{labels.gallery}</h2>
 
       <div
         className="relative rounded-2xl overflow-hidden aspect-[3/4] md:aspect-[16/9] bg-slate-900 cursor-pointer"
@@ -49,7 +69,7 @@ export default function TourGallery({ images }: { images: GalleryImage[] }) {
             setLightbox(true);
           }
         }}
-        aria-label="Otvori galeriju preko cijelog ekrana"
+        aria-label={labels.openFullscreen}
       >
         <Image
           src={images[current].src}
@@ -65,7 +85,7 @@ export default function TourGallery({ images }: { images: GalleryImage[] }) {
             prev();
           }}
           className="absolute left-3 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white rounded-full w-10 h-10 flex items-center justify-center text-lg transition"
-          aria-label="Prethodna slika"
+          aria-label={labels.prev}
         >
           ‹
         </button>
@@ -76,7 +96,7 @@ export default function TourGallery({ images }: { images: GalleryImage[] }) {
             next();
           }}
           className="absolute right-3 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white rounded-full w-10 h-10 flex items-center justify-center text-lg transition"
-          aria-label="Sljedeća slika"
+          aria-label={labels.next}
         >
           ›
         </button>
@@ -94,7 +114,7 @@ export default function TourGallery({ images }: { images: GalleryImage[] }) {
             className={`relative flex-shrink-0 w-20 h-20 md:w-16 md:h-16 rounded-lg overflow-hidden border-2 transition ${
               i === current ? "border-emerald-500" : "border-transparent opacity-60 hover:opacity-100"
             }`}
-            aria-label={`Slika ${i + 1}`}
+            aria-label={labels.image(i + 1)}
             aria-current={i === current ? "true" : undefined}
           >
             <Image src={img.src} alt={img.alt} fill className="object-cover" sizes="80px" />
@@ -115,7 +135,7 @@ export default function TourGallery({ images }: { images: GalleryImage[] }) {
               prev();
             }}
             className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 text-white rounded-full w-12 h-12 flex items-center justify-center text-2xl transition"
-            aria-label="Prethodna slika"
+            aria-label={labels.prev}
           >
             ‹
           </button>
@@ -142,7 +162,7 @@ export default function TourGallery({ images }: { images: GalleryImage[] }) {
               next();
             }}
             className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 text-white rounded-full w-12 h-12 flex items-center justify-center text-2xl transition"
-            aria-label="Sljedeća slika"
+            aria-label={labels.next}
           >
             ›
           </button>
@@ -150,7 +170,7 @@ export default function TourGallery({ images }: { images: GalleryImage[] }) {
             type="button"
             onClick={() => setLightbox(false)}
             className="absolute top-4 right-4 text-white/70 hover:text-white text-2xl"
-            aria-label="Zatvori"
+            aria-label={labels.close}
           >
             ✕
           </button>

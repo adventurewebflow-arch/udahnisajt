@@ -1,10 +1,16 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import { trackConversion } from "@/lib/gtag";
 
 export default function WhatsAppButton() {
+  const isEn = usePathname().startsWith("/en");
   const phone = "38765797200";
-  const message = encodeURIComponent("Zdravo, upravo gledam vaš sajt i imam par pitanja.");
+  const message = encodeURIComponent(
+    isEn
+      ? "Hi, I'm looking at your website and have a few questions."
+      : "Zdravo, upravo gledam vaš sajt i imam par pitanja."
+  );
   const url = `https://wa.me/${phone}?text=${message}`;
 
   return (
@@ -13,7 +19,7 @@ export default function WhatsAppButton() {
       onClick={() => trackConversion("whatsapp")}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="Kontaktirajte nas na WhatsApp"
+      aria-label={isEn ? "Contact us on WhatsApp" : "Kontaktirajte nas na WhatsApp"}
       className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 bg-green-500 hover:bg-green-600 rounded-full shadow-lg transition-all duration-300 hover:scale-110"
     >
       <svg

@@ -42,6 +42,12 @@ function translateDuration(value: string): string {
     .replace(/\bnoć\b/g, "night");
 }
 
+function formatPriceEN(price: string): string {
+  const cleaned = price.replace(/po osobi\.?/i, "").trim();
+  if (/per person/i.test(cleaned) || /on request/i.test(cleaned)) return cleaned;
+  return `${cleaned} per person`;
+}
+
 function translateDifficulty(value: string): string {
   const map: Record<string, string> = {
     Laka: "Easy",
@@ -75,6 +81,23 @@ export async function generateMetadata({
     alternates: {
       canonical: `${BASE}/en/tours/${slug}`,
       languages: tourHreflang(slug),
+    },
+    openGraph: {
+      title: `${adventure.title} - Udahni Avanturu`,
+      description: adventure.shortDescription,
+      url: `${BASE}/en/tours/${slug}`,
+      siteName: "Udahni Avanturu",
+      type: "website",
+      locale: "en_US",
+      images: adventure.image
+        ? [{ url: adventure.image, alt: adventure.imageAlt ?? adventure.title }]
+        : [{ url: "/opengraph-image.jpg", width: 1200, height: 630 }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${adventure.title} - Udahni Avanturu`,
+      description: adventure.shortDescription,
+      images: [adventure.image ?? "/opengraph-image.jpg"],
     },
   };
 }
@@ -281,7 +304,7 @@ export default async function TourDetailPageEN({ params }: { params: Promise<{ s
                     <div>
                       <div className="text-sm text-gray-400 mb-1">Price</div>
                       <div className="text-2xl font-bold text-emerald-400">
-                        {adventure.price.replace(/po osobi\.?/i, "").trim()} per person
+                        {formatPriceEN(adventure.price)}
                       </div>
                     </div>
                   )}

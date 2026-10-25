@@ -17,7 +17,7 @@ export default function TourSchema({ adventure, slug, lang = "sr" }: TourSchemaP
     ? `${BASE}${adventure.image}`
     : `${BASE}/opengraph-image.jpg`;
 
-  const priceMatch = adventure.price?.match(/(\d+)/);
+  const priceMatch = adventure.price?.replace(/[.,](?=\d{3}(\D|$))/g, "").match(/(\d+)/);
   const price = priceMatch ? priceMatch[1] : null;
 
   const schema = {

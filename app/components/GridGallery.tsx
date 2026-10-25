@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 interface GalleryImage {
   src: string;
@@ -17,6 +18,26 @@ export default function GridGallery({
 }) {
   const [lightbox, setLightbox] = useState(false);
   const [current, setCurrent] = useState(0);
+  const isEn = usePathname().startsWith("/en");
+  const labels = isEn
+    ? {
+        gallery: "Gallery",
+        openFullscreen: "Open gallery in fullscreen",
+        prev: "Previous image",
+        next: "Next image",
+        close: "Close",
+        image: (n: number) => `Image ${n}`,
+        openImage: (alt: string) => `Open image: ${alt}`,
+      }
+    : {
+        gallery: "Galerija",
+        openFullscreen: "Otvori galeriju preko cijelog ekrana",
+        prev: "Prethodna slika",
+        next: "Sljedeća slika",
+        close: "Zatvori",
+        image: (n: number) => `Slika ${n}`,
+        openImage: (alt: string) => `Otvori sliku: ${alt}`,
+      };
 
   const prev = useCallback(
     () => setCurrent((c) => (c - 1 + images.length) % images.length),
@@ -73,7 +94,7 @@ export default function GridGallery({
             type="button"
             onClick={() => open(i)}
             className="group relative aspect-[4/3] overflow-hidden rounded-xl bg-slate-900 cursor-pointer"
-            aria-label={`Otvori sliku: ${img.alt}`}
+            aria-label={labels.openImage(img.alt)}
           >
             <Image
               src={img.src}
@@ -100,7 +121,7 @@ export default function GridGallery({
               prev();
             }}
             className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 text-white rounded-full w-12 h-12 flex items-center justify-center text-2xl transition"
-            aria-label="Prethodna slika"
+            aria-label={labels.prev}
           >
             ‹
           </button>
@@ -127,7 +148,7 @@ export default function GridGallery({
               next();
             }}
             className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 text-white rounded-full w-12 h-12 flex items-center justify-center text-2xl transition"
-            aria-label="Sljedeća slika"
+            aria-label={labels.next}
           >
             ›
           </button>
@@ -135,7 +156,7 @@ export default function GridGallery({
             type="button"
             onClick={() => setLightbox(false)}
             className="absolute top-4 right-4 text-white/70 hover:text-white text-2xl"
-            aria-label="Zatvori"
+            aria-label={labels.close}
           >
             ✕
           </button>

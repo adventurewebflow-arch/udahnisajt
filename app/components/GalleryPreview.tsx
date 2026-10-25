@@ -2,10 +2,25 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { galleryImages } from "../data/gallery";
 
 export default function GalleryPreview() {
   const items = galleryImages.slice(0, 6);
+  const isEn = usePathname().startsWith("/en");
+  const t = isEn
+    ? {
+        title: "Gallery",
+        subtitle: "Moments from our adventures.",
+        button: "View gallery",
+        href: "/en/galerija",
+      }
+    : {
+        title: "Galerija",
+        subtitle: "Pogledaj trenutke sa naših avantura.",
+        button: "Pogledaj galeriju",
+        href: "/galerija",
+      };
 
   return (
     <section id="galerija-preview" className="py-16 md:py-24 relative">
@@ -13,19 +28,19 @@ export default function GalleryPreview() {
       <div className="relative mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-8">
           <div>
-            <h2 className="text-4xl font-bold text-white mb-3">Galerija</h2>
+            <h2 className="text-4xl font-bold text-white mb-3">{t.title}</h2>
             <div className="w-16 h-1 bg-emerald-400 mb-3"></div>
-            <p className="text-slate-400">Pogledaj trenutke sa naših avantura.</p>
+            <p className="text-slate-400">{t.subtitle}</p>
           </div>
           <Link
-            href="/galerija"
+            href={t.href}
             className="hidden md:inline-flex px-5 py-3 bg-emerald-500 hover:bg-emerald-600 text-white rounded-lg font-medium transition-colors"
           >
-            Pogledaj galeriju
+            {t.button}
           </Link>
         </div>
 
-        <Link href="/galerija" className="block">
+        <Link href={t.href} className="block">
           <div className="flex gap-4 overflow-x-auto md:grid md:grid-cols-3 md:gap-6 pb-2 md:pb-0">
             {items.map((img) => (
               <div
@@ -46,10 +61,10 @@ export default function GalleryPreview() {
 
         <div className="mt-8 md:hidden">
           <Link
-            href="/galerija"
+            href={t.href}
             className="inline-flex w-full justify-center px-5 py-3 bg-emerald-500 hover:bg-emerald-600 text-white rounded-lg font-medium transition-colors"
           >
-            Pogledaj galeriju
+            {t.button}
           </Link>
         </div>
       </div>

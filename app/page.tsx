@@ -165,9 +165,9 @@ export default function Home() {
               <h2 className="text-3xl font-bold text-white">Popularne ture</h2>
             </div>
             <div className="w-14 h-1 bg-emerald-400 mb-3" />
-            <a href="/ture" className="inline-block text-sm text-emerald-400 hover:text-emerald-300 transition mb-3">
+            <Link href="/ture" className="inline-block text-sm text-emerald-400 hover:text-emerald-300 transition mb-3">
               Sve ture →
-            </a>
+            </Link>
             <p className="text-slate-400 mt-4 text-lg">
               Dolaziš sam, u paru ili sa ekipom — svejedno. Ovdje svi postanu ekipa.
             </p>
@@ -193,9 +193,9 @@ export default function Home() {
               <h2 className="text-3xl font-bold text-white">Premium ture</h2>
             </div>
             <div className="w-14 h-1 bg-emerald-400 mb-3" />
-            <a href="/ture" className="inline-block text-sm text-emerald-400 hover:text-emerald-300 transition mb-3">
+            <Link href="/ture" className="inline-block text-sm text-emerald-400 hover:text-emerald-300 transition mb-3">
               Sve ture →
-            </a>
+            </Link>
           </div>
           <p className="text-slate-400 mt-4 text-lg mb-12">
             Dolaziš sam, u paru ili sa ekipom — svejedno. Ovdje svi postanu ekipa.
@@ -221,9 +221,9 @@ export default function Home() {
               <h2 className="text-3xl font-bold text-white">Višednevne avanture</h2>
             </div>
             <div className="w-14 h-1 bg-emerald-400 mb-3" />
-            <a href="/ture" className="inline-block text-sm text-emerald-400 hover:text-emerald-300 transition mb-3">
+            <Link href="/ture" className="inline-block text-sm text-emerald-400 hover:text-emerald-300 transition mb-3">
               Sve ture →
-            </a>
+            </Link>
           </div>
           <p className="text-center text-slate-400 mb-12 max-w-2xl mx-auto">
             Za one koji žele više od vikenda. Višednevne ture koje te stvarno promijene — planina, kanjon, jezero, autentični ljudi i iskustvo koje nosiš sa sobom zauvijek.
@@ -249,9 +249,9 @@ export default function Home() {
               <h2 className="text-3xl font-bold text-white">Jednodnevni izleti</h2>
             </div>
             <div className="w-14 h-1 bg-emerald-400 mb-3" />
-            <a href="/ture" className="inline-block text-sm text-emerald-400 hover:text-emerald-300 transition mb-3">
+            <Link href="/ture" className="inline-block text-sm text-emerald-400 hover:text-emerald-300 transition mb-3">
               Sve ture →
-            </a>
+            </Link>
           </div>
           <p className="text-center text-slate-400 mb-12 max-w-2xl mx-auto">
             Jednodnevne ture po dogovoru - idealne za one koji imaju ograničeno vrijeme ali žele uživati u prirodi. Među njima je i posjeta{" "}

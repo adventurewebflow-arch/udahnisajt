@@ -67,11 +67,33 @@ const faqsEn = [
 const faqEnAccordionItems = faqsEn.map(({ q, a }) => ({ title: q, content: a }));
 
 export const metadata: Metadata = {
-  title: "Udahni Avanturu - Outdoor Adventure Tours",
-  description: "Discover the beauty of Bosnia and Herzegovina through hiking, rafting, and camping. Unforgettable adventures in nature.",
+  title: "Sutjeska & Tara Adventure Tours in Bosnia | Udahni Avanturu",
+  description: "Guided hiking, camping and Tara rafting in Sutjeska National Park with licensed local guides. Maglić, Trnovačko Lake, Perućica rainforest. Small groups since 2021.",
   alternates: {
     canonical: `${BASE}/en`,
     languages: pathHreflang("", "/en"),
+  },
+  openGraph: {
+    title: "Sutjeska & Tara Adventure Tours in Bosnia | Udahni Avanturu",
+    description: "Guided hiking, camping and Tara rafting in Sutjeska National Park with licensed local guides. Maglić, Trnovačko Lake, Perućica rainforest. Small groups since 2021.",
+    url: "https://www.udahniavanturu.com/en",
+    siteName: "Udahni Avanturu",
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: "/opengraph-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Sutjeska & Tara Adventure Tours in Bosnia | Udahni Avanturu",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sutjeska & Tara Adventure Tours in Bosnia | Udahni Avanturu",
+    description: "Guided hiking, camping and Tara rafting in Sutjeska National Park with licensed local guides. Maglić, Trnovačko Lake, Perućica rainforest. Small groups since 2021.",
+    images: ["/opengraph-image.jpg"],
   },
 };
 
@@ -294,7 +316,7 @@ export default function HomeEN() {
           </div>
           <div className="mt-12 text-center">
             <Link
-              href="/o-nama"
+              href="/en/o-nama"
               className="inline-flex items-center justify-center rounded-lg border border-white/20 bg-white/5 px-6 py-3 font-semibold text-white hover:bg-white/10 transition"
             >
               Learn More
