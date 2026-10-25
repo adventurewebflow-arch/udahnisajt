@@ -243,6 +243,37 @@ export default function HomeEN() {
 
       <GoogleReviews lang="en" />
 
+      {/* Your guides */}
+      <section className="py-16 md:py-24 relative">
+        <div className="relative mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <div className="relative aspect-[4/5] rounded-2xl overflow-hidden border border-white/10">
+              <Image
+                src="/images/b2b-partner/petar-udahni-avanturu.webp"
+                alt="Petar Kostić, licensed mountain guide, by a mountain lake in Sutjeska National Park"
+                fill
+                className="object-cover"
+                style={{ objectPosition: "center 40%" }}
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+            </div>
+            <div>
+              <h2 className="text-4xl font-bold text-white mb-3">Your guides</h2>
+              <div className="w-16 h-1 bg-emerald-400 mb-6"></div>
+              <p className="text-slate-300 text-lg leading-relaxed">
+                Udahni Avanturu is run by Petar Kostić, a licensed mountain guide for 8 years and a licensed whitewater skipper on the Tara for over 10 years. He grew up next to Sutjeska and leads our team of four experienced guides. We also hold canyoning and caving licences. Small groups, real local knowledge, safety first.
+              </p>
+              <Link
+                href="/en/o-nama"
+                className="text-emerald-400 hover:text-emerald-300 font-medium mt-6 inline-block"
+              >
+                Meet the team
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <GalleryPreview />
 
       {/* Blog section */}

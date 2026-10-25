@@ -11,6 +11,7 @@ export interface Adventure {
   price: string;
   groupSize: string;
   transport?: string;
+  meetingPoint?: string;
   discount?: string;
   image?: string;
   imageAlt?: string;
@@ -296,6 +297,81 @@ export const adventuresEN: Adventure[] = [
     ]
   },
   {
+    id: "vikend-durmitor-01",
+    slug: "vikend-na-durmitoru",
+    title: "Weekend on Durmitor",
+    category: "popular",
+    location: "Žabljak / Durmitor NP",
+    image: "/images/tours/predivan-pogled-sa-vidikovca-na-durmitoru.webp",
+    imageAlt: "Weekend on Durmitor – view from a viewpoint over the Durmitor massif",
+    imagePosition: "center 60%",
+    shortDescription:
+      "Your tour, your rules. Cabins with outdoor hot tubs in Žabljak, a licensed guide and activities of your choice — Prutaš, Crvena Greda or Black Lake.",
+    aboutTour:
+      "There are places where everything slows down. Where the morning smells of pine and mountain air, and the evening ends in the warm water of a hot tub while Durmitor stands in front of you, quiet and immense. Žabljak is one of those places, and we found accommodation that matches it.\n\nThe cabins sit in one of the most beautiful spots in Žabljak. Each has its own kitchen, bathroom and living room. Outside, there are hot tubs looking straight at the Durmitor massif. One of the best views in Žabljak, and we say that without hesitation.\n\nThis tour has no fixed programme — you choose. One night or two, activities of your choice, a schedule that suits you. We organise everything, and the guide is with you as agreed.",
+    duration: "1–2 nights / by arrangement",
+    difficulty: "Easy - Moderate",
+    price: "On request",
+    groupSize: "2+ people",
+    highlights: [
+      "Cabins with outdoor hot tubs",
+      "View of the Durmitor massif",
+      "Ascent of Prutaš (2,393m)",
+      "Crvena Greda viewpoint",
+      "Black Lake – UNESCO World Heritage",
+      "Žabljak town visit",
+      "Licensed guide with you on every activity",
+      "Programme entirely of your choice"
+    ],
+    itinerary: [
+      {
+        dayTitle: "Day 1 — Arrival and check-in",
+        description:
+          "Guests arrive in Žabljak and check in to the cabins. Free afternoon to rest, take a first walk around Black Lake or sit in the hot tub facing Durmitor. Dinner and a chat with the guide about the next day — Prutaš, Crvena Greda or Black Lake, you choose."
+      },
+      {
+        dayTitle: "Day 2 — Activity of your choice",
+        description:
+          "After breakfast the chosen activity begins.\n\n**Option A — Ascent of Prutaš (2,393m):** One of the most beautiful peaks of Durmitor. The climb takes about 3.5 hours, with a panorama that takes your breath away — the Durmitor massif, Black Lake and the wide landscapes of Montenegro and Bosnia.\n\n**Option B — Crvena Greda:** A spectacular viewpoint you won't forget. An easier option, just as impressive.\n\n**Option C — Black Lake:** UNESCO World Heritage, a walk through pine forest to the emerald lake below Međed.\n\n**Option D — Žabljak visit:** The centre of Durmitor, local atmosphere, mountain-town feel.\n\nBack at the cabins: free time, hot tub, rest."
+      },
+      {
+        dayTitle: "Day 3 — Departure (or one more day by arrangement)",
+        description:
+          "Breakfast and a slow pack-up. For those who want to stay another day, we organise a second activity of your choice. No rush, no pressure — Durmitor isn't going anywhere."
+      }
+    ],
+    includes: [
+      "Accommodation in a cabin with an outdoor hot tub",
+      "Licensed guide for all activities",
+      "Durmitor National Park entry ticket",
+      "Programme organised by arrangement"
+    ],
+    excludes: [
+      "Transfer to Žabljak (guests arrive on their own)",
+      "Meals by arrangement",
+      "Drinks and personal expenses",
+      "Costs outside the programme"
+    ],
+    faqs: [
+      {
+        q: "How do I book?",
+        a: "Send an enquiry with the number of people and your preferred dates. We send you options — activities, number of nights, meals — and you choose what suits you."
+      },
+      {
+        q: "Do I need hiking experience?",
+        a: "Not for Black Lake or the Žabljak visit. For Prutaš and Crvena Greda we recommend good fitness. The guide is always with you."
+      },
+      {
+        q: "How many people can come?",
+        a: "Minimum 2 people. The cabins sleep up to 6 — ideal for couples, friends or a small family."
+      },
+      {
+        q: "When can we use the hot tub?",
+        a: "The hot tub is available throughout your stay — morning, afternoon and evening. It's best in the evening after an activity, looking out at Durmitor."
+      }
+    ]
+  },
+  {
     id: "vikend-divljina-01",
     slug: "vikend-u-divljini",
     title: "Weekend in the Wild",
@@ -319,7 +395,7 @@ Sunday is for Zelengora — if you want. A relaxed tour to Borić viewpoint and 
 Accommodation is also your choice — a bungalow with shared bathroom or a tent (equipment provided). The difference is just €20.`,
     duration: "3 days / 2 nights",
     difficulty: "Easy - Moderate",
-    price: "from €140 per person",
+    price: "from 150€ per person",
     groupSize: "6–30 people",
     highlights: [
       "Accommodation at Tjentište camp — bungalow or tent",
@@ -365,7 +441,7 @@ Accommodation is also your choice — a bungalow with shared bathroom or a tent 
     faqs: [
       {
         q: "Which accommodation should I choose — bungalow or tent?",
-        a: "The bungalow (€160) has a shared bathroom at the camp — more comfortable, in a solid structure. The tent (€140) uses our equipment, set up at the camp, with camp toilets. Both options have the same programme and the same meals. If you need a room with a private bathroom, contact us to check availability.",
+        a: "The bungalow (170€) has a shared bathroom at the camp — more comfortable, in a solid structure. The tent (150€) uses our equipment, set up at the camp, with camp toilets. Both options have the same programme and the same meals. If you need a room with a private bathroom, contact us to check availability.",
       },
       {
         q: "Which Saturday activity should I choose — Trnovačko Lake or Perućica?",
@@ -392,7 +468,7 @@ Accommodation is also your choice — a bungalow with shared bathroom or a tent 
     aboutTour: "This tour is for those who want more than a classic adventure. The combination of Maglić, Trnovačko Lake and Tara rafting is a physically demanding but extraordinarily rich experience, with powerful landscapes, serious ascents and a complete departure from the comfort zone.\n\nThe group is intentionally small — a maximum of 8, possibly up to 15 participants — in order to maintain the quality of the experience, safety and a genuine team spirit. This is not a mass tour. This is an adventure for people who know why they come to the mountains.",
     duration: "3 days / 2 nights",
     difficulty: "Demanding",
-    price: "235€",
+    price: "235€ per person",
     groupSize: "max 16",
     image: "/images/tours/premium/top-tura-rafting-tarom-maglic-perucica.webp",
     imageAlt: "Maglić, Trnovačko Lake and Tara rafting – premium nature adventure",
@@ -520,6 +596,88 @@ Accommodation is also your choice — a bungalow with shared bathroom or a tent 
     ]
   },
   {
+    id: "P-teambuilding-01",
+    slug: "teambuilding-sutjeska",
+    title: "Team Building in the Heart of Nature – Sutjeska NP",
+    category: "premium",
+    location: "Sutjeska NP / Tjentište / Foča",
+    image: "/images/tours/premium/ekipa-prvi-maj.webp",
+    imageAlt: "Team building in nature – a group in Sutjeska National Park",
+    imagePosition: "center 55%",
+    shortDescription:
+      "Real team building doesn't happen in a room with a projector. It happens on the river, on the mountain, in the canyon — where people show who they really are.",
+    aboutTour: `Fifteen years in tourism taught us one thing: a team that has spent a night in tents at Trnovačko Lake, made it through a canyon or climbed Maglić goes back to the office different. Not because they talked about teamwork — but because they lived it.
+
+Sutjeska National Park is the perfect setting for that. No signal, no emails, no office walls. Just nature, a challenge and a team that has to work together.
+
+One of the most popular options is camping at Trnovačko Lake. Tents on the shore of one of the most beautiful lakes in the Balkans, sleeping under the stars, a morning swim in clear water and a cold beer straight from the spring. No phones, no emails, no pressure. Just people, a fire and conversation that goes late into the night. That's where a team really gets to know each other.
+
+We organise programmes for groups of every size, from 2 to 100+ people. Rafting on the Tara our own way, Hrčavka canyoning, a jeep safari on Zelengora, climbing Maglić or Bregoč, horse riding, or a mix of everything. Bungalow accommodation at Tjentište, conference rooms, meals, transfers — we organise everything from A to Z.
+
+Every programme is built around the group. Get in touch with the number of people and your dates, and we'll propose a programme that makes sense for you.`,
+    duration: "3 days / 2 nights (by arrangement)",
+    difficulty: "By arrangement",
+    price: "On request",
+    groupSize: "2–100+ people",
+    highlights: [
+      "Rafting on the Tara – our own way",
+      "Hrčavka canyoning",
+      "Camping at Trnovačko Lake (no signal, no electricity)",
+      "Ascent of Maglić or Bregoč",
+      "Jeep safari on Zelengora",
+      "Horse riding",
+      "Bungalow accommodation at Tjentište",
+      "Conference rooms",
+      "Programme tailored to the group",
+      "Petar – licensed mountain guide, 8 years of experience"
+    ],
+    itinerary: [
+      {
+        dayTitle: "Day 1 — Arrival and the first adventure",
+        description:
+          "The group arrives at Tjentište or in Foča. Check-in, a short briefing and straight into the first activity — rafting, canyoning or a jeep safari, depending on what we agree. Evening by the fire, dinner and the first real chance for the team to get to know each other — far from the office."
+      },
+      {
+        dayTitle: "Day 2 — The main challenge",
+        description:
+          "The central day of the programme. Climbing Maglić, camping at Trnovačko Lake, canyoning or a combination of activities — all agreed with the group. A full day in nature, no phones, no pressure. Just the challenge and the team."
+      },
+      {
+        dayTitle: "Day 3 — Wrap-up and return",
+        description:
+          "Breakfast, one last activity of your choice (horse riding, a walk in Perućica or an easy jeep safari) and the trip home. The team that leaves is not the same one that arrived."
+      }
+    ],
+    includes: [
+      "Accommodation at Tjentište (bungalows)",
+      "All meals during the programme",
+      "Licensed guide – Petar (8 years of experience)",
+      "Transfers during the programme",
+      "All activities as agreed",
+      "Conference room (if needed)",
+      "Sutjeska NP fees"
+    ],
+    excludes: ["Drinks", "Personal expenses", "Costs outside the programme"],
+    faqs: [
+      {
+        q: "How does the organisation process work?",
+        a: "Get in touch with the number of people and your preferred dates. We propose a programme and a price. Once agreed, we organise everything from A to Z — accommodation, activities, meals and transfers."
+      },
+      {
+        q: "Can you organise for a large group of 50+ people?",
+        a: "Yes. We organise programmes for groups of all sizes — from 2 to 100+ people. For larger groups we build a custom programme with several activities running in parallel."
+      },
+      {
+        q: "Do you have conference rooms?",
+        a: "Yes, conference rooms are available at Tjentište. We can combine outdoor activities with work sessions, depending on what your company needs."
+      },
+      {
+        q: "Can the programme be just one day?",
+        a: "Yes, we also organise one-day programmes. Tell us the number of people and we'll suggest the best option for your team."
+      }
+    ]
+  },
+  {
     id: "P-durmitor-01",
     slug: "durmitorski-prsten-via-ferata-piva-prutas-kajk-pivsko-jezero",
     title: "Durmitor Ring + Via Ferrata Piva + Prutaš Summit + Kayaking on Piva Lake",
@@ -532,7 +690,7 @@ Accommodation is also your choice — a bungalow with shared bathroom or a tent 
     aboutTour: "This tour is pure adventure in the fullest sense of the word. A combination of rock, summits and water, designed for people who want to spend a few days being active, powerful and fully engaged, far from everyday life and routine.\n\nThrough Via Ferrata Piva, the ascent to Prutaš and kayaking on Piva Lake, we pass through three completely different natural worlds — vertical cliffs above the canyon, the wide Durmitor highlands and the calm, emerald water of the lake. Each day brings a new experience and a different rhythm, without repetition and without empty time.\n\nVia Ferrata Piva delivers a powerful sense of height and freedom, but with safety and control. It is a perfect introduction to the tour — adrenaline-fuelled but accessible, and challenging enough to awaken focus and team spirit. Driving the Durmitor Ring after the ferrata further amplifies the sense of space and the scale of the mountain.\n\nThe ascent to Prutaš is a day for real mountaineers. Long, open and visually powerful, with panoramas opening in every direction. This is a day that stays with you — not because of speed or numbers, but because of the feeling of moving through a vast mountain space and the views that remain in your mind long after returning.\n\nThe third day brings complete contrast. After rocks and heights, we come to water. Kayaking on Piva Lake is calm, easy and liberating — the ideal conclusion to the tour. Silence, water and a relaxed pace allow all impressions to settle and the adventure to close in the right way.\n\nThis is not a classic excursion or a tourist tour. This is an experience. A tour for people who want to feel nature with their whole body — to climb, walk, paddle and be part of the space they move through. Those who choose this adventure carry it with them long after returning home.",
     duration: "3 days / 2 nights",
     difficulty: "Moderate–Demanding",
-    price: "On request",
+    price: "170€ per person",
     groupSize: "6–16 people",
     discount: "",
     highlights: [
@@ -601,7 +759,7 @@ Accommodation is also your choice — a bungalow with shared bathroom or a tent 
     aboutTour: "The ascent to Bregoč, the highest peak of Zelengora, is a full-day hiking tour with one of the finest panoramic views in Bosnia and Herzegovina. The tour is designed for people who love hiking and want to spend a day in open space, away from the crowds, with views of Maglić, Volujak, Treskavica and Jahorina.",
     duration: "1 day",
     difficulty: "Easy - Moderate",
-    price: "70€",
+    price: "70€ per person",
     groupSize: "4–50 people",
     image: "/images/tours/day-trips/zelengora-bregoc.webp",
     highlights: [
@@ -653,7 +811,7 @@ Accommodation is also your choice — a bungalow with shared bathroom or a tent 
     aboutTour: "This tour is ideal for those who want a lighter day in nature, without major ascents. The focus is on the open spaces of Zelengora, the mountain lakes and viewpoints, with walking, rest and enjoyment of the clean air.",
     duration: "1 day",
     difficulty: "Easy",
-    price: "70€",
+    price: "70€ per person",
     groupSize: "4–50 people",
     image: "/images/tours/day-trips/zelengora-jezera.webp",
     highlights: [
@@ -701,7 +859,7 @@ Accommodation is also your choice — a bungalow with shared bathroom or a tent 
     aboutTour: "A unique tour through one of the oldest and largest primeval forests in Europe. Perućica and Skakavac Waterfall offer a powerful experience of untouched nature, dense forest and an impressive waterfall. Ideal for those who love nature and want to explore one of the most fascinating destinations in Bosnia and Herzegovina.",
     duration: "1 day",
     difficulty: "Easy",
-    price: "90€",
+    price: "90€ per person",
     groupSize: "4–20 people",
     image: "/images/tours/day-trips/perucica-skakavac.webp",
     highlights: [
@@ -748,7 +906,7 @@ Accommodation is also your choice — a bungalow with shared bathroom or a tent 
     aboutTour: "Canyoning in Hrčavka is a dynamic and highly attractive adventure through water, waterfalls and narrow passages. The tour is exciting but not extreme, and with guides and equipment provides a safe and powerful experience.",
     duration: "1 day",
     difficulty: "Moderate",
-    price: "130€",
+    price: "130€ per person",
     groupSize: "4–12 people",
     image: "/images/tours/day-trips/kanjoning-hrcavka.webp",
     highlights: [
@@ -800,7 +958,7 @@ Accommodation is also your choice — a bungalow with shared bathroom or a tent 
     aboutTour: "Trnovačko Lake is one of the most beautiful mountain lakes in the Balkans, known for its heart shape and setting amid high peaks. This tour is perfect for those who want a combination of hiking and time beside the lake.",
     duration: "1 day",
     difficulty: "Moderate",
-    price: "75€",
+    price: "75€ per person",
     groupSize: "4–50 people",
     image: "/images/tours/day-trips/trnovacko-jezero.webp",
     highlights: [
@@ -853,7 +1011,7 @@ Accommodation is also your choice — a bungalow with shared bathroom or a tent 
     aboutTour: "This tour is a more demanding hiking adventure that combines a powerful ascent with the reward of spending time at one of the most beautiful mountain lakes in the region. We depart from Prijevor, climb toward Maglić, then descend directly to Trnovačko Lake. The tour is designed for physically fit participants who want a serious mountain day.",
     duration: "1 day",
     difficulty: "Demanding",
-    price: "95€",
+    price: "95€ per person",
     groupSize: "4–20 people",
     image: "/images/tours/day-trips/maglic-trnovacko.webp",
     highlights: [

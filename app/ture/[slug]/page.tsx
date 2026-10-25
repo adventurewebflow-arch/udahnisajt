@@ -15,6 +15,9 @@ const BASE = "https://www.udahniavanturu.com";
 // Re-render once a day so departures that have passed drop off without a deploy.
 export const revalidate = 86400;
 
+const DEFAULT_MEETING_POINT_SR = "Foča – tačna lokacija se šalje u WhatsApp grupi ture.";
+const CANCELLATION_SR = "Besplatno otkazivanje do 7 dana prije ture. Povrat 50% od 7 do 3 dana prije. Bez povrata u posljednja 3 dana. Ako mi otkažemo zbog vremena ili sigurnosti, dobijate puni povrat ili novi termin.";
+
 export async function generateStaticParams() {
   return adventures.map((adventure) => ({
     slug: adventure.slug,
@@ -387,6 +390,22 @@ export default async function TourDetailPage({ params }: { params: Promise<{ slu
                       </div>
                     </div>
                   )}
+
+                  {/* Mjesto okupljanja */}
+                  <div>
+                    <div className="text-sm text-gray-400 mb-1">Mjesto okupljanja</div>
+                    <div className="text-sm font-medium text-white leading-relaxed">
+                      {adventure.meetingPoint ?? DEFAULT_MEETING_POINT_SR}
+                    </div>
+                  </div>
+
+                  {/* Otkazivanje */}
+                  <div>
+                    <div className="text-sm text-gray-400 mb-1">Otkazivanje</div>
+                    <div className="text-sm font-medium text-white leading-relaxed">
+                      {CANCELLATION_SR}
+                    </div>
+                  </div>
 
                   {/* Divider */}
                   <div className="border-t border-gray-700 pt-6">

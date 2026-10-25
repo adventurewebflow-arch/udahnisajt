@@ -14,6 +14,9 @@ const BASE = "https://www.udahniavanturu.com";
 // Re-render once a day so departures that have passed drop off without a deploy.
 export const revalidate = 86400;
 
+const DEFAULT_MEETING_POINT_EN = "Foča – the exact location is shared in the tour's WhatsApp group.";
+const CANCELLATION_EN = "Free cancellation up to 7 days before the tour. 50% refund from 7 to 3 days before. No refund in the last 3 days. If we cancel because of weather or safety, you get a full refund or a new date.";
+
 function translatePeople(value: string): string {
   if (!value) return value;
   return value.replace(/\bosoba\b/gi, "people").trim();
@@ -225,19 +228,6 @@ export default async function TourDetailPageEN({ params }: { params: Promise<{ s
               </section>
             )}
 
-            {adventure.slug === "vikend-u-divljini" && (
-              <div className="mt-6">
-                <a
-                  href="/vikend_divljina1.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/30 rounded-xl px-5 py-3 text-emerald-400 hover:bg-emerald-500/20 transition text-sm font-medium"
-                >
-                  📄 Download tour programme (PDF)
-                </a>
-              </div>
-            )}
-
             {/* Itinerary */}
             {itineraryItems.length > 0 && (
               <section>
@@ -371,6 +361,20 @@ export default async function TourDetailPageEN({ params }: { params: Promise<{ s
                       </div>
                     </div>
                   )}
+
+                  <div>
+                    <div className="text-sm text-gray-400 mb-1">Meeting point</div>
+                    <div className="text-sm font-medium text-white leading-relaxed">
+                      {adventure.meetingPoint ?? DEFAULT_MEETING_POINT_EN}
+                    </div>
+                  </div>
+
+                  <div>
+                    <div className="text-sm text-gray-400 mb-1">Cancellation</div>
+                    <div className="text-sm font-medium text-white leading-relaxed">
+                      {CANCELLATION_EN}
+                    </div>
+                  </div>
 
                   <div className="border-t border-gray-700 pt-6">
                     <a

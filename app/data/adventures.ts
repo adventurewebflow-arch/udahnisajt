@@ -11,6 +11,7 @@ export interface Adventure {
   price: string;
   groupSize: string;
   transport?: string;
+  meetingPoint?: string;
   discount?: string;
   image?: string;
   imageAlt?: string;
@@ -339,6 +340,7 @@ export const adventures: Adventure[] = [
     difficulty: "Laka - Srednja",
     price: "Na upit",
     groupSize: "2+ osoba",
+    meetingPoint: "Žabljak – dolazite sami, tačna lokacija kućica se šalje u WhatsApp grupi.",
     highlights: [
       "Kućice sa vanjskim djakuzijem",
       "Pogled na masiv Durmitora",
@@ -477,7 +479,7 @@ Smještaj biraš ti — bungalov sa zajedničkim kupatilom ili šator (oprema ob
     faqs: [
       {
         q: "Koji smještaj da odaberem — bungalov ili šator?",
-        a: "Bungalov (170€) je sa zajedničkim kupatilom u kampu — komforniji, u čvrstom objektu. Šator (155€) je naša oprema, postavlja se u kampu, koristiš toalete u kampu. Obje opcije imaju isti program i iste obroke. Ako trebaš sobu sa posebnim toaletom, javi nam se da provjerimo dostupnost.",
+        a: "Bungalov (170€) je sa zajedničkim kupatilom u kampu — komforniji, u čvrstom objektu. Šator (150€) je naša oprema, postavlja se u kampu, koristiš toalete u kampu. Obje opcije imaju isti program i iste obroke. Ako trebaš sobu sa posebnim toaletom, javi nam se da provjerimo dostupnost.",
       },
       {
         q: "Koju aktivnost da odaberem u subotu — Trnovačko jezero ili Perućicu?",
@@ -504,7 +506,7 @@ Smještaj biraš ti — bungalov sa zajedničkim kupatilom ili šator (oprema ob
     aboutTour: "Ova tura je namijenjena onima koji žele više od klasične avanture. Kombinacija Maglića, Trnovačkog jezera i raftinga Tarom predstavlja fizički zahtjevno, ali izuzetno bogato iskustvo, sa snažnim pejzažima, ozbiljnim usponima i potpunim izlaskom iz zone komfora.\n\n Grupa je namjerno mala – maksimalno do 8, eventualno 15 učesnika – kako bi se zadržao kvalitet doživljaja, sigurnost i pravi timski duh. Ovo nije masovna tura. Ovo je avantura za ljude koji znaju zašto dolaze u planinu.",
     duration: "3 dana / 2 noći",
     difficulty: "Zahtjevna",
-    price: "235€",
+    price: "235€ po osobi",
     groupSize: "max 16",
     image: "/images/tours/premium/top-tura-rafting-tarom-maglic-perucica.webp",
     imageAlt: "Maglić, Trnovačko jezero i rafting Tarom – premium avantura u prirodi",
@@ -656,6 +658,7 @@ Svaki program pravimo po mjeri grupe. Javite se sa brojem ljudi i terminom, mi p
     difficulty: "Po dogovoru",
     price: "Na upit",
     groupSize: "2–100+ osoba",
+    meetingPoint: "Foča ili Tjentište, po dogovoru.",
     highlights: [
       "Rafting Tarom – na naš poseban način",
       "Kanjoning Hrčavka",
@@ -733,7 +736,7 @@ Na turama Udahni avanturu uvijek su prisutni ljudi koji žive život kako treba.
 Tura polazi iz Foče, vodi vas kroz tri lica divlje prirode Crne Gore i vraća vas nazad, bogatije za iskustvo koje se ne može kupiti, samo doživjeti.`,
     duration: "3 dana / 2 noći",
     difficulty: "Srednja–zahtjevna",
-    price: "190€ po osobi",
+    price: "170€ po osobi",
     groupSize: "1–16 osoba",
     discount: "",
     highlights: [
@@ -1169,7 +1172,7 @@ Prevoz organizujemo po dogovoru iz Beograda, Sarajeva, Dubrovnika, Podgorice, Za
     aboutTour: "Uspon na Bregoč, najviši vrh Zelengore, predstavlja cjelodnevnu planinarsku turu sa jednim od najljepših panoramskih pogleda u Bosni i Hercegovini. Tura je namijenjena osobama koje vole planinarenje i žele da provedu dan u otvorenom prostoru, daleko od gužve, uz pogled na Maglić, Volujak, Treskavicu i Jahorinu.",
     duration: "1 dan",
     difficulty: "Laka - Srednja",
-    price: "70€",
+    price: "70€ po osobi",
     groupSize: "4–50 osoba",
     image: "/images/tours/day-trips/zelengora-bregoc.webp",
     images: [
@@ -1233,7 +1236,7 @@ Prevoz organizujemo po dogovoru iz Beograda, Sarajeva, Dubrovnika, Podgorice, Za
     aboutTour: "Ova tura je idealna za one koji žele laganiji dan u prirodi, bez velikih uspona. Fokus je na prostranstvima Zelengore, planinskim jezerima i vidikovcima, uz šetnju, odmor i uživanje u čistom vazduhu.",
     duration: "1 dan",
     difficulty: "Laka",
-    price: "70€",
+    price: "70€ po osobi",
     groupSize: "4–50 osoba",
     image: "/images/tours/day-trips/zelengora-jezera.webp",
     images: [
@@ -1293,7 +1296,7 @@ Prevoz organizujemo po dogovoru iz Beograda, Sarajeva, Dubrovnika, Podgorice, Za
     aboutTour: "Jedinstvena tura kroz jednu od najstarijih i najvećih prašuma u Evropi. Perućica i vodopad Skakavac nude snažan doživljaj netaknute prirode, guste šume i impresivnog vodopada. Idealna za one koji vole prirodu i žele da istraže jednu od najzanimljivijih destinacija u Bosni i Hercegovini.",
     duration: "1 dan",
     difficulty: "Laka",
-    price: "90€",
+    price: "90€ po osobi",
     groupSize: "4–20 osoba",
     image: "/images/tours/day-trips/perucica-skakavac.webp",
     images: [
@@ -1343,7 +1346,7 @@ Prevoz organizujemo po dogovoru iz Beograda, Sarajeva, Dubrovnika, Podgorice, Za
     aboutTour: "Kanjoning Hrčavkom je dinamična i izuzetno atraktivna avantura kroz vodu, slapove i uske prolaze. Tura je uzbudljiva, ali nije ekstremna, i uz vodiče i opremu pruža siguran i snažan doživljaj",
     duration: "1 dan",
     difficulty: "Srednja",
-    price: "130€",
+    price: "130€ po osobi",
     groupSize: "4–12 osoba",
     image: "/images/tours/day-trips/kanjoning-hrcavka.webp",
     highlights: [
@@ -1395,7 +1398,7 @@ Prevoz organizujemo po dogovoru iz Beograda, Sarajeva, Dubrovnika, Podgorice, Za
     aboutTour: "Trnovačko jezero je jedno od najljepših planinskih jezera na Balkanu, poznato po svom obliku i okruženju visokih vrhova. Ova tura je savršena za one koji žele spoj planinarenja i boravka pored jezera",
     duration: "1 dan",
     difficulty: "Srednja",
-    price: "75€",
+    price: "75€ po osobi",
     groupSize: "4–50 osoba",
     image: "/images/tours/day-trips/trnovacko-jezero.webp",
     images: [
@@ -1460,7 +1463,7 @@ Prevoz organizujemo po dogovoru iz Beograda, Sarajeva, Dubrovnika, Podgorice, Za
     aboutTour: "Ova tura je zahtjevnija planinarska avantura koja spaja snažan uspon i nagradu u vidu boravka na jednom od najljepših planinskih jezera u regionu. Polazimo sa Prijevora, penjemo se prema Magliću, a zatim se spuštamo direktno na Trnovačko jezero. Tura je namijenjena fizički spremnim učesnicima koji žele ozbiljniji planinarski dan.",
     duration: "1 dan",
     difficulty: "Zahtjevna",
-    price: "95€",
+    price: "95€ po osobi",
     groupSize: "4–20 osoba",
     image: "/images/tours/day-trips/maglic-trnovacko.webp",
     images: [
