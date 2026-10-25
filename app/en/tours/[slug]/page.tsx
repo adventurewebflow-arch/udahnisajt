@@ -17,6 +17,14 @@ export const revalidate = 86400;
 const DEFAULT_MEETING_POINT_EN = "Foča – the exact location is shared in the tour's WhatsApp group.";
 const CANCELLATION_EN = "Free cancellation up to 7 days before the tour. 50% refund from 7 to 3 days before. No refund in the last 3 days. If we cancel because of weather or safety, you get a full refund or a new date.";
 
+function renderBold(text: string) {
+  return text.split(/(\*\*[^*]+\*\*)/g).map((part, i) =>
+    part.startsWith("**") && part.endsWith("**")
+      ? <strong key={i} className="text-white font-semibold">{part.slice(2, -2)}</strong>
+      : part
+  );
+}
+
 function translatePeople(value: string): string {
   if (!value) return value;
   return value.replace(/\bosoba\b/gi, "people").trim();
@@ -123,7 +131,7 @@ export default async function TourDetailPageEN({ params }: { params: Promise<{ s
           {(d.description ?? "")
             .split(/\n\s*\n/)
             .map((para, i) => (
-              <p key={i}>{para.trim()}</p>
+              <p key={i}>{renderBold(para.trim())}</p>
             ))}
         </div>
       ),

@@ -18,6 +18,14 @@ export const revalidate = 86400;
 const DEFAULT_MEETING_POINT_SR = "Foča – tačna lokacija se šalje u WhatsApp grupi ture.";
 const CANCELLATION_SR = "Besplatno otkazivanje do 7 dana prije ture. Povrat 50% od 7 do 3 dana prije. Bez povrata u posljednja 3 dana. Ako mi otkažemo zbog vremena ili sigurnosti, dobijate puni povrat ili novi termin.";
 
+function renderBold(text: string) {
+  return text.split(/(\*\*[^*]+\*\*)/g).map((part, i) =>
+    part.startsWith("**") && part.endsWith("**")
+      ? <strong key={i} className="text-white font-semibold">{part.slice(2, -2)}</strong>
+      : part
+  );
+}
+
 export async function generateStaticParams() {
   return adventures.map((adventure) => ({
     slug: adventure.slug,
@@ -83,7 +91,7 @@ export default async function TourDetailPage({ params }: { params: Promise<{ slu
           {(d.description ?? "")
             .split(/\n\s*\n/)
             .map((para, i) => (
-              <p key={i}>{para.trim()}</p>
+              <p key={i}>{renderBold(para.trim())}</p>
             ))}
         </div>
       ),

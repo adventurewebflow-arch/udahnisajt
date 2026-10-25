@@ -313,6 +313,7 @@ export const adventuresEN: Adventure[] = [
     difficulty: "Easy - Moderate",
     price: "On request",
     groupSize: "2+ people",
+    meetingPoint: "Žabljak – you arrive on your own; the exact location of the cabins is shared in the WhatsApp group.",
     highlights: [
       "Cabins with outdoor hot tubs",
       "View of the Durmitor massif",
@@ -619,6 +620,7 @@ Every programme is built around the group. Get in touch with the number of peopl
     difficulty: "By arrangement",
     price: "On request",
     groupSize: "2–100+ people",
+    meetingPoint: "Foča or Tjentište, by arrangement.",
     highlights: [
       "Rafting on the Tara – our own way",
       "Hrčavka canyoning",
