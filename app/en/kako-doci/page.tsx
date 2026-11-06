@@ -3,6 +3,7 @@ import Link from "next/link";
 import Accordion from "../../components/Accordion";
 import WhatsAppTrackedLink from "../../components/WhatsAppTrackedLink";
 import { landingHreflang } from "@/lib/slugMap";
+import { socialMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "How to Get to Sutjeska National Park and Tjentište | Udahni Avanturu",
@@ -11,13 +12,13 @@ export const metadata: Metadata = {
     canonical: "https://www.udahniavanturu.com/en/kako-doci",
     languages: landingHreflang("/en/kako-doci"),
   },
-  openGraph: {
+  ...socialMetadata({
     title: "How to Get to Sutjeska National Park and Tjentište | Udahni Avanturu",
     description:
       "Directions to Tjentište and Sutjeska National Park from Sarajevo, Belgrade, Dubrovnik, Podgorica, Mostar and Zagreb: roads, bus lines and nearest airports. We arrange transfers on request.",
-    url: "https://www.udahniavanturu.com/en/kako-doci",
-    type: "website",
-  },
+    path: "/en/kako-doci",
+    lang: "en",
+  }),
 };
 
 const routes = [

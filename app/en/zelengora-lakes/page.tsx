@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import GridGallery from "../../components/GridGallery";
 import { landingHreflang } from "@/lib/slugMap";
+import { socialMetadata } from "@/lib/seo";
 
 const BASE = "https://www.udahniavanturu.com";
 
@@ -53,15 +54,15 @@ export const metadata: Metadata = {
   title: "Zelengora Tours — Guided Hikes, Lakes & Jeep Safari from Foča | Udahni Avanturu",
   description:
     "Book a guided Zelengora tour from Foča — Bregoč summit hike, mountain lakes or a jeep safari, with a licensed guide and small groups. From €70 per person. Check dates and reserve your spot.",
-  keywords:
-    "zelengora tours, book zelengora tour, zelengora hiking tour, jeep safari zelengora, bregoc summit hike, zelengora lakes, guided tour zelengora, tours from foca",
-  openGraph: {
+  ...socialMetadata({
     title: "Zelengora Tours — Guided Hikes, Lakes & Jeep Safari from Foča | Udahni Avanturu",
     description:
       "Book a guided Zelengora tour from Foča — Bregoč summit, lakes or jeep safari, with a licensed guide. From €70 per person.",
-    url: "https://www.udahniavanturu.com/en/zelengora-lakes",
-    type: "website",
-  },
+    path: "/en/zelengora-lakes",
+    lang: "en",
+    image: "/images/og/og-zelengora.jpg",
+    imageAlt: "Zelengora lakes and panoramic viewpoints",
+  }),
   alternates: {
     canonical: `${BASE}/en/zelengora-lakes`,
     languages: landingHreflang("/en/zelengora-lakes"),

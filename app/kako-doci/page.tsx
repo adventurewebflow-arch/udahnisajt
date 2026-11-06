@@ -3,6 +3,7 @@ import Link from "next/link";
 import Accordion from "../components/Accordion";
 import WhatsAppTrackedLink from "../components/WhatsAppTrackedLink";
 import { landingHreflang } from "@/lib/slugMap";
+import { socialMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Kako doći do Tjentišta i NP Sutjeska | Udahni Avanturu",
@@ -11,13 +12,13 @@ export const metadata: Metadata = {
     canonical: "https://www.udahniavanturu.com/kako-doci",
     languages: landingHreflang("/kako-doci"),
   },
-  openGraph: {
+  ...socialMetadata({
     title: "Kako doći do Tjentišta i NP Sutjeska | Udahni Avanturu",
     description:
       "Upute za dolazak do Tjentišta i Nacionalnog parka Sutjeska iz Sarajeva, Beograda, Dubrovnika, Podgorice, Mostara i Zagreba.",
-    url: "https://www.udahniavanturu.com/kako-doci",
-    type: "website",
-  },
+    path: "/kako-doci",
+    lang: "sr",
+  }),
 };
 
 const routes = [

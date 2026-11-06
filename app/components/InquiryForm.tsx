@@ -48,6 +48,8 @@ export default function InquiryForm({ tourTitle, tourSlug }: InquiryFormProps) {
         selectDate: "Select Date *",
         selectDatePh: "Select a date",
         noDates: "No available dates",
+        preferredDate: "Preferred date",
+        preferredDateHint: "No fixed departures for this tour yet — pick the date that suits you and we'll confirm availability.",
         message: "Message",
         messagePh: "Additional information or questions...",
         submit: "Send Inquiry",
@@ -68,6 +70,8 @@ export default function InquiryForm({ tourTitle, tourSlug }: InquiryFormProps) {
         selectDate: "Izaberi datum *",
         selectDatePh: "Odaberi datum",
         noDates: "Nema dostupnih datuma",
+        preferredDate: "Željeni datum",
+        preferredDateHint: "Za ovu turu još nema objavljenih termina — izaberite datum koji vam odgovara, a mi potvrđujemo dostupnost.",
         message: "Poruka",
         messagePh: "Dodatne informacije ili pitanja...",
         submit: "Pošalji upit",
@@ -245,29 +249,45 @@ export default function InquiryForm({ tourTitle, tourSlug }: InquiryFormProps) {
         </div>
 
         <div className="md:col-span-2">
-          <label htmlFor="selectedDate" className="block text-sm font-medium text-gray-300 mb-2">
-            {t.selectDate}
-          </label>
-          <select
-            id="selectedDate"
-            name="selectedDate"
-            required
-            value={formData.selectedDate}
-            onChange={handleChange}
-            disabled={!formData.selectedTour || availableDates.length === 0}
-            className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-white focus:outline-none focus:border-emerald-500 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-          >
-            <option value="">{t.selectDatePh}</option>
-            {availableDates.length === 0 ? (
-              <option disabled>{t.noDates}</option>
-            ) : (
-              availableDates.map((d) => (
-                <option key={d} value={d}>
-                  {d}
-                </option>
-              ))
-            )}
-          </select>
+          {formData.selectedTour && availableDates.length === 0 ? (
+            <>
+              <label htmlFor="selectedDate" className="block text-sm font-medium text-gray-300 mb-2">
+                {t.preferredDate}
+              </label>
+              <input
+                type="date"
+                id="selectedDate"
+                name="selectedDate"
+                value={formData.selectedDate}
+                onChange={handleChange}
+                min={new Date().toISOString().slice(0, 10)}
+                className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-white focus:outline-none focus:border-emerald-500 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+              />
+              <p className="mt-2 text-xs text-gray-400">{t.preferredDateHint}</p>
+            </>
+          ) : (
+            <>
+              <label htmlFor="selectedDate" className="block text-sm font-medium text-gray-300 mb-2">
+                {t.selectDate}
+              </label>
+              <select
+                id="selectedDate"
+                name="selectedDate"
+                required
+                value={formData.selectedDate}
+                onChange={handleChange}
+                disabled={!formData.selectedTour}
+                className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-white focus:outline-none focus:border-emerald-500 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                <option value="">{t.selectDatePh}</option>
+                {availableDates.map((d) => (
+                  <option key={d} value={d}>
+                    {d}
+                  </option>
+                ))}
+              </select>
+            </>
+          )}
         </div>
 
         <div className="md:col-span-2">

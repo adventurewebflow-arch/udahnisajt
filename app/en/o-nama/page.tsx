@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { socialMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "About Us | Breathe Adventure",
@@ -9,13 +10,13 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.udahniavanturu.com/en/o-nama",
   },
-  openGraph: {
+  ...socialMetadata({
     title: "About Us | Breathe Adventure",
     description:
       "Petar and Nevena — adventures since 2021 through Sutjeska, Zelengora, Trnovačko Lake and Perućica. Small groups, a family approach.",
-    url: "https://www.udahniavanturu.com/en/o-nama",
-    type: "website",
-  },
+    path: "/en/o-nama",
+    lang: "en",
+  }),
 };
 
 export default function AboutPageEN() {

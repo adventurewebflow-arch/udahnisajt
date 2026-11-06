@@ -40,7 +40,7 @@ const faqsEn = [
   },
   {
     q: "How many people do I need for a private tour?",
-    a: "The minimum group size is 4 people. Private tours are available at a 20% higher price per person — contact us for a quote.",
+    a: "Private tours have no minimum group size — you can even book on your own. The price per person depends on the size of the group, so send us an inquiry and we'll send you a quote.",
   },
   {
     q: "What equipment do I need?",
@@ -142,7 +142,7 @@ export default function HomeEN() {
               </h1>
 
               <p className="mt-4 text-sm sm:text-base md:text-lg text-slate-100/90 leading-relaxed drop-shadow-[0_10px_30px_rgba(0,0,0,0.75)]">
-                Highest peak in BiH. Oldest rainforest in Europe. Deepest canyon in Europe. Wild and untouched — this is Sutjeska.
+                Highest peak in BiH. Oldest rainforest in Europe. Europe&apos;s deepest canyon, the Tara, right next door. Wild and untouched — this is Sutjeska.
               </p>
 
               <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">

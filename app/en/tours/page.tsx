@@ -7,6 +7,7 @@ import {
 } from "../../data/adventures-en";
 import { pathHreflang } from "@/lib/slugMap";
 import type { Metadata } from "next";
+import { socialMetadata } from "@/lib/seo";
 
 const BASE = "https://www.udahniavanturu.com";
 
@@ -20,12 +21,12 @@ export const metadata: Metadata = {
     canonical: `${BASE}/en/tours`,
     languages: pathHreflang("/ture", "/en/tours"),
   },
-  openGraph: {
+  ...socialMetadata({
     title: "All Tours - Udahni Avanturu",
     description: "Browse all outdoor adventure tours in Bosnia and Herzegovina.",
-    url: `${BASE}/en/tours`,
-    type: "website",
-  },
+    path: "/en/tours",
+    lang: "en",
+  }),
 };
 
 export default function ToursPageEN() {

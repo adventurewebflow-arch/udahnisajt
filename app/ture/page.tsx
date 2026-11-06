@@ -28,12 +28,12 @@ const categories = [
   {
     key: "multi-day",
     label: "Višednevne",
-    description: "Privatne ture za grupe od 6 do 16 osoba — vi birate datum.",
+    description: "Privatne ture za grupe od 2 do 16 osoba — vi birate datum.",
   },
   {
     key: "day-trip",
     label: "Izleti",
-    description: "Privatne ture po dogovoru — minimum 4 osobe.",
+    description: "Privatne ture po dogovoru — i za jednu osobu.",
   },
 ];
 

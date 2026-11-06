@@ -16,7 +16,7 @@ export default function AdventureCard({ adventure, linkPrefix = "/ture" }: Adven
         onRequest: "On request",
         privateTour: "Private tour",
         youChoose: "You choose the date",
-        min4: "Min. 4 people",
+        fromOne: "From 1 person",
         oneDate: "1 date",
         manyDates: (n: number) => `${n} dates`,
       }
@@ -25,7 +25,7 @@ export default function AdventureCard({ adventure, linkPrefix = "/ture" }: Adven
         onRequest: "Na upit",
         privateTour: "Privatna tura",
         youChoose: "Vi birate datum",
-        min4: "Min. 4 osobe",
+        fromOne: "Već od 1 osobe",
         oneDate: "1 termin",
         manyDates: (n: number) => `${n} termina`,
       };
@@ -53,7 +53,7 @@ export default function AdventureCard({ adventure, linkPrefix = "/ture" }: Adven
     secondaryBadge = labels.youChoose;
   } else if (adventure.category === "day-trip") {
     primaryBadge = { text: labels.privateTour, color: "blue" };
-    secondaryBadge = labels.min4;
+    secondaryBadge = labels.fromOne;
   }
 
   // Safe image check

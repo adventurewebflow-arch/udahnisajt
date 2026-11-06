@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { landingHreflang } from "@/lib/slugMap";
+import { socialMetadata } from "@/lib/seo";
 
 const BASE = "https://www.udahniavanturu.com";
 
@@ -13,13 +14,15 @@ export const metadata: Metadata = {
     canonical: `${BASE}/perucica`,
     languages: landingHreflang("/perucica"),
   },
-  openGraph: {
+  ...socialMetadata({
     title: "Prašuma Perućica – jedna od dvije preostale u Evropi | Vodopad Skakavac 75m",
     description:
       "Stabla stara 300 godina, tišina koju ne možete zamisliti i vodopad koji pada 75 metara ravno. Perućica se ne posjećuje bez vodiča — ture iz Foče od 90€.",
-    url: `${BASE}/perucica`,
-    type: "website",
-  },
+    path: "/perucica",
+    lang: "sr",
+    image: "/images/og/og-perucica.jpg",
+    imageAlt: "Vodopad Skakavac u prašumi Perućica",
+  }),
 };
 
 export default function PerucicaPage() {

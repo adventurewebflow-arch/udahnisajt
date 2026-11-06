@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { landingHreflang } from "@/lib/slugMap";
+import { socialMetadata } from "@/lib/seo";
 
 const BASE = "https://www.udahniavanturu.com";
 
@@ -13,13 +14,15 @@ export const metadata: Metadata = {
     canonical: `${BASE}/maglic-planina`,
     languages: landingHreflang("/maglic-planina"),
   },
-  openGraph: {
+  ...socialMetadata({
     title: "Uspon na Maglić – najviši vrh BiH (2.386m) | Organizovane ture iz Foče",
     description:
       "Najviši vrh Bosne i Hercegovine. Maglić se osvaja iz Foče — terenskim vozilom do Prijevora, pješice do vrha. Male grupe, licencirani vodič.",
-    url: `${BASE}/maglic-planina`,
-    type: "website",
-  },
+    path: "/maglic-planina",
+    lang: "sr",
+    image: "/images/og/og-maglic.jpg",
+    imageAlt: "Uspon na Maglić – najviši vrh Bosne i Hercegovine",
+  }),
 };
 
 export default function MaglicPlaninaPage() {

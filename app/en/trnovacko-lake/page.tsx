@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { landingHreflang } from "@/lib/slugMap";
+import { socialMetadata } from "@/lib/seo";
 
 const BASE = "https://www.udahniavanturu.com";
 
@@ -13,13 +14,15 @@ export const metadata: Metadata = {
     canonical: `${BASE}/en/trnovacko-lake`,
     languages: landingHreflang("/en/trnovacko-lake"),
   },
-  openGraph: {
+  ...socialMetadata({
     title: "Trnovačko Lake Bosnia – Camping and Maglić in the Heart of Sutjeska | Udahni Avanturu",
     description:
       "A heart-shaped lake surrounded by peaks — no signal, no rush, no crowds. Camping on the shore, Maglić summit and breakfast at a mountain homestead.",
-    url: `${BASE}/en/trnovacko-lake`,
-    type: "website",
-  },
+    path: "/en/trnovacko-lake",
+    lang: "en",
+    image: "/images/og/og-trnovacko.jpg",
+    imageAlt: "Trnovačko Lake beneath Maglić — mountain lake in the Balkans",
+  }),
 };
 
 export default function TrnovackoLakePage() {

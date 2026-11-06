@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import GridGallery from "../components/GridGallery";
 import { landingHreflang } from "@/lib/slugMap";
+import { socialMetadata } from "@/lib/seo";
 
 const BASE = "https://www.udahniavanturu.com";
 
@@ -53,15 +54,15 @@ export const metadata: Metadata = {
   title: "Zelengora ture — vođeni usponi, jezera i jeep safari iz Foče | Udahni Avanturu",
   description:
     "Rezerviši vođenu turu na Zelengoru iz Foče — uspon na Bregoč, obilazak jezera ili jeep safari, sa licenciranim vodičem i malim grupama. Od 70€ po osobi. Provjeri termine i rezerviši.",
-  keywords:
-    "zelengora ture, zelengora rezervacija, zelengora hiking tura, jeep safari zelengora, uspon bregoč, zelengora jezera, vođena tura zelengora, ture iz foče",
-  openGraph: {
+  ...socialMetadata({
     title: "Zelengora ture — vođeni usponi, jezera i jeep safari iz Foče | Udahni Avanturu",
     description:
       "Rezerviši vođenu turu na Zelengoru iz Foče — uspon na Bregoč, jezera ili jeep safari, sa licenciranim vodičem. Od 70€ po osobi.",
-    url: "https://www.udahniavanturu.com/zelengora",
-    type: "website",
-  },
+    path: "/zelengora",
+    lang: "sr",
+    image: "/images/og/og-zelengora.jpg",
+    imageAlt: "Zelengora – jezera i vidikovci",
+  }),
   alternates: {
     canonical: `${BASE}/zelengora`,
     languages: landingHreflang("/zelengora"),

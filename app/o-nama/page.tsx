@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { socialMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "O nama | Udahni Avanturu",
@@ -9,13 +10,13 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.udahniavanturu.com/o-nama",
   },
-  openGraph: {
+  ...socialMetadata({
     title: "O nama | Udahni Avanturu",
     description:
       "Petar i Nevena — avanture od 2021. kroz Sutjesku, Zelengoru, Trnovačko jezero i Perućicu. Male grupe, domaćinski pristup.",
-    url: "https://www.udahniavanturu.com/o-nama",
-    type: "website",
-  },
+    path: "/o-nama",
+    lang: "sr",
+  }),
 };
 
 export default function ONamaPage() {

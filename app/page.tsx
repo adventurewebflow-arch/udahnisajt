@@ -39,7 +39,7 @@ const faqs = [
   },
   {
     q: "Koliko ljudi je potrebno za privatnu turu?",
-    a: "Minimalan broj učesnika za organizaciju ture je 4 osobe. Privatne ture su moguće uz 20% veću cijenu po osobi — kontaktiraj nas za ponudu.",
+    a: "Privatne ture nemaju minimalan broj osoba — možete se javiti i sami. Cijena po osobi zavisi od veličine grupe, zato nam pošaljite upit i šaljemo vam ponudu.",
   },
   {
     q: "Kakva oprema mi je potrebna?",
@@ -119,7 +119,7 @@ export default function Home() {
               </h1>
 
               <p className="animate-fade-in-up-delay-2 mt-5 mb-6 text-sm sm:text-base md:text-lg text-slate-100/90 leading-relaxed drop-shadow-[0_10px_30px_rgba(0,0,0,0.75)]">
-                Najviši vrh BiH. Najstarija prašuma Evrope. Najdublji kanjon Evrope. Divlja i netaknuta — ovo je Sutjeska.
+                Najviši vrh BiH. Najstarija prašuma Evrope. Najdublji kanjon Evrope, Tara, odmah do. Divlja i netaknuta — ovo je Sutjeska.
               </p>
 
               <div className="animate-fade-in-up-delay-3 mt-8 flex flex-col items-center gap-3">

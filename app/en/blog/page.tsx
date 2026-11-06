@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { blogPostsEN } from "../../data/blog-en";
 import type { Metadata } from "next";
+import { socialMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Blog – Breathe Adventure",
@@ -10,13 +11,13 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.udahniavanturu.com/en/blog",
   },
-  openGraph: {
+  ...socialMetadata({
     title: "Blog – Breathe Adventure",
     description:
       "Hiking guides, tips and stories from our adventures in Bosnia and Herzegovina. Sutjeska NP, Zelengora, Maglić, Perućica and more.",
-    url: "https://www.udahniavanturu.com/en/blog",
-    type: "website",
-  },
+    path: "/en/blog",
+    lang: "en",
+  }),
 };
 
 function estimateReadingTime(content: string): number {

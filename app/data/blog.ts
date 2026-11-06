@@ -118,7 +118,7 @@ export const blogPosts: BlogPost[] = [
       <h3>Ruta iz Foče</h3>
       <p>Alternativna ruta vodi iz Foče, kroz selo Mrkalje, do Prijevora. Ova ruta je nešto kraća ali jednako zahtjevna. Preporučujemo organizovanu turu sa vodičem za obje rute.</p>
 
-      <p>Naša <a href="/ture/kampovanje-trnovacko-jezero-maglic" class="text-emerald-400 hover:text-emerald-300 underline">tura na Maglić sa kampovanjem na Trnovačkom jezeru</a> kombinuje uspon na najviši vrh sa kampovanjem uz jedno od najljepših jezera u BiH, pružajući vam kompletnu avanturu.</p>
+      <p>Naša <a href="/ture/kampovanje-trnovacko-jezero-maglic" class="text-emerald-400 hover:text-emerald-300 underline">tura na Maglić sa kampovanjem na Trnovačkom jezeru</a> kombinuje uspon na najviši vrh sa kampovanjem uz jedno od najljepših jezera na granici BiH i Crne Gore, pružajući vam kompletnu avanturu.</p>
 
       <h2>Težina uspona</h2>
       
@@ -806,15 +806,15 @@ export const blogPosts: BlogPost[] = [
     metadataDescription:
       "Sve što trebaš znati o Zelengori — jezera, Bregoč uspon, Borić vidikovac, katuni, Titova vila i kako doći. Organizovane ture iz Foče od 70€.",
     excerpt:
-      "Zelengora nije planina u uobičajenom smislu. Nema špicastih vrhova ni ledenih litica. Ima nešto drugačije — prostrane pašnjake zelene kao baršun, sedam planinskih jezera i tišinu koja te uvlači polako, bez nasilja.",
+      "Zelengora nije planina u uobičajenom smislu. Nema špicastih vrhova ni ledenih litica. Ima nešto drugačije — prostrane pašnjake zelene kao baršun, devet planinskih jezera i tišinu koja te uvlači polako, bez nasilja.",
     content: `
     <h2>Zašto se zove Zelengora</h2>
 <p>Ime nije metafora. Zelengora doslovno znači — Zelen Gora. Kad je Jovo Popović 1935. pisao o njoj u svojoj knjizi "Kroz planine Bosne i Hercegovine", opisao je planinu kakvu je rijetko gdje vidio: "Nema nijedne planine u našim krajevima, koju je priroda tako lijepo, pitomo-romantički nakitila." Devedeset godina kasnije — ništa se nije promijenilo.</p>
 
-<p>Za razliku od Maglića koji te udari snagom i visinom, Zelengora te osvoji polako. Nema dramatičnih litica ni zahtjevnih uspona. Ima prostrane pašnjake, sedam jezera, stotine izvora bistre vode i — u avgustu — borovnice koje rastu uz stazu. Gosti koji ih prvi put vide ne mogu da vjeruju da im je dozvoljena da ih beru direktno sa planine.</p>
+<p>Za razliku od Maglića koji te udari snagom i visinom, Zelengora te osvoji polako. Nema dramatičnih litica ni zahtjevnih uspona. Ima prostrane pašnjake, devet jezera, stotine izvora bistre vode i — u avgustu — borovnice koje rastu uz stazu. Gosti koji ih prvi put vide ne mogu da vjeruju da im je dozvoljena da ih beru direktno sa planine.</p>
 
 <h2>Jezera Zelengore — koja su i gdje se nalaze</h2>
-<p>Zelengora ima sedam glacijalnih jezera. Popović ih je 1935. opisao precizno: Štirinsko je najveće, Kotlaničko najdublje, a Crno jezero najljepše po prirodnom položaju — mada bi se o tome dalo raspravljati.</p>
+<p>Zelengora ima devet glacijalnih jezera. Popović je 1935. precizno opisao ona najveća: Štirinsko je najveće, Kotlaničko najdublje, a Crno jezero najljepše po prirodnom položaju — mada bi se o tome dalo raspravljati.</p>
 
 <p>Sa jedne strane planine, dostupne makadamskim putem (loš put, preporučujemo terensko vozilo), nalaze se: <strong>Orlovačko jezero, Kotlaničko jezero, Štirinsko jezero i Jugovo jezero</strong>. Do njih se dolazi iz pravca Kalinovika ili preko Tjentišta pa Čemerna. Orlovačko je "proglašeno" najljepšim jezerom Zelengore — uglavnom zato što je najdostupnije i najviše fotografisano. Mi se s tim ne bismo složili.</p>
 

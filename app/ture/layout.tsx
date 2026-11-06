@@ -1,5 +1,6 @@
 import { pathHreflang } from "@/lib/slugMap";
 import type { Metadata } from "next";
+import { socialMetadata } from "@/lib/seo";
 
 const BASE = "https://www.udahniavanturu.com";
 
@@ -10,12 +11,12 @@ export const metadata: Metadata = {
     canonical: `${BASE}/ture`,
     languages: pathHreflang("/ture", "/en/tours"),
   },
-  openGraph: {
+  ...socialMetadata({
     title: "Sve ture - Udahni Avanturu",
     description: "Pregledajte sve avanturističke ture u Bosni i Hercegovini.",
-    url: `${BASE}/ture`,
-    type: "website",
-  },
+    path: "/ture",
+    lang: "sr",
+  }),
 };
 
 export default function TureLayout({ children }: { children: React.ReactNode }) {

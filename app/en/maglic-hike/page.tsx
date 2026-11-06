@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { landingHreflang } from "@/lib/slugMap";
+import { socialMetadata } from "@/lib/seo";
 
 const BASE = "https://www.udahniavanturu.com";
 
@@ -13,13 +14,15 @@ export const metadata: Metadata = {
     canonical: `${BASE}/en/maglic-hike`,
     languages: landingHreflang("/en/maglic-hike"),
   },
-  openGraph: {
+  ...socialMetadata({
     title: "Hike Maglić – Highest Peak in Bosnia (2,386m) | Guided Tours from Foča",
     description:
       "Stand on the highest peak in Bosnia and Herzegovina. Maglić summit via Trnovačko Lake — guided day trips and camping tours from Foča.",
-    url: `${BASE}/en/maglic-hike`,
-    type: "website",
-  },
+    path: "/en/maglic-hike",
+    lang: "en",
+    image: "/images/og/og-maglic.jpg",
+    imageAlt: "Hiking on Maglić above Trnovačko Lake",
+  }),
 };
 
 export default function MaglicHikePage() {

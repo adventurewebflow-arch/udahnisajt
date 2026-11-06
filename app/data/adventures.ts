@@ -124,6 +124,7 @@ export const adventures: Adventure[] = [
     difficulty: "Laka - Srednja",
     price: "160€ po osobi",
     groupSize: "6–16 osoba",
+    discount: "15% popusta za grupe od 4+ osoba",
     image: "/images/tours/zelengora/zelengora-kampovanje-card.webp",
     imageAlt: "Kampovanje na Zelengori sa usponom na Bregoč i Jeep safari – NP Sutjeska, Zelengora",
     images: [
@@ -737,7 +738,7 @@ Tura polazi iz Foče, vodi vas kroz tri lica divlje prirode Crne Gore i vraća v
     duration: "3 dana / 2 noći",
     difficulty: "Srednja–zahtjevna",
     price: "170€ po osobi",
-    groupSize: "1–16 osoba",
+    groupSize: "6–16 osoba",
     discount: "",
     highlights: [
       "Durmitorski prsten",
@@ -796,7 +797,7 @@ Tura polazi iz Foče, vodi vas kroz tri lica divlje prirode Crne Gore i vraća v
       },
       {
         q: "Kako rezervisati?",
-        a: "Kontaktirajte nas sa željenim terminom. Organizujemo ture po dogovoru za grupe od 6 do 14 osoba."
+        a: "Kontaktirajte nas sa željenim terminom. Organizujemo ture po dogovoru za grupe od 6 do 16 osoba."
       }
     ]
   },
@@ -817,13 +818,13 @@ Pet dana u Nacionalnom parku Sutjeska znači pet dana bez brzine, bez uredskih m
 
 Ono što ovu turu čini drugačijom od svega što konkurencija nudi nije program na papiru — nego detalji kojih nema na papiru. Kafa kod Miloša na Prijevoru, čovjeka koji je cijeli život tu i koji zna svaki kamen ove planine. Doručak na katunu — uštipci, domaći kajmak, toplo mlijeko, pršut — kod ljudi koji i danas žive kao što se živjelo prije 300 godina. Pivo hladno sa izvora uz vatru uveče, dok Trnovačko jezero leži ispred tebe tiho i savršeno.
 
-Tura je organizovana isključivo za privatne grupe, od 6 do 16 osoba. Prevoz do Foče organizujete sami ili po dogovoru — organizujemo transfer iz Beograda i Sarajeva, koji nije uključen u cijenu.
+Tura je organizovana isključivo za privatne grupe, od 2 do 16 osoba. Prevoz do Foče organizujete sami ili po dogovoru — organizujemo transfer iz Beograda i Sarajeva, koji nije uključen u cijenu.
 
 Naš tim iskusnih vodiča je uz vas svih pet dana.`,
     duration: "5 dana / 4 noći",
     difficulty: "Srednja",
     price: "550€ po osobi",
-    groupSize: "6–16 osoba",
+    groupSize: "2–16 osoba",
     transport: "Po dogovoru – Beograd, Sarajevo, Dubrovnik, Podgorica, Zagreb, Tirana",
     highlights: [
       "Uspon na Maglić (2.386m) — najviši vrh BiH",
@@ -836,7 +837,7 @@ Naš tim iskusnih vodiča je uz vas svih pet dana.`,
       "Obilazak prašume Perućice i vodopada Skakavac",
       "Smještaj u bungalovima na Tjentištu (3 noći) + kampovanje (1 noć)",
       "11 obroka uključeno",
-      "Samo privatne grupe — 6 do 16 osoba",
+      "Samo privatne grupe — 2 do 16 osoba",
     ],
     itinerary: [
       {
@@ -895,7 +896,7 @@ Naš tim iskusnih vodiča je uz vas svih pet dana.`,
       },
       {
         q: "Da li je tura dostupna za individualne putnike ili samo za grupe?",
-        a: "Tura je organizovana isključivo za privatne grupe od 6 do 16 osoba. Ako ste manja grupa ili par, javite nam se — ponekad možemo spojiti grupe koje imaju isti termin.",
+        a: "Tura je organizovana za privatne grupe od 2 do 16 osoba. Ako putujete sami, javite nam se — ponekad možemo spojiti putnike koji imaju isti termin.",
       },
       {
         q: "Šta znači doručak na katunu?",
@@ -928,7 +929,7 @@ Prevoz do Foče organizujete sami ili po dogovoru — organizujemo transfer iz B
     duration: "7 dana / 6 noći",
     difficulty: "Srednja",
     price: "960€ po osobi",
-    groupSize: "6–16 osoba",
+    groupSize: "2–16 osoba",
     transport: "Po dogovoru – Beograd, Sarajevo, Dubrovnik, Podgorica, Zagreb, Tirana",
     highlights: [
       "Uspon na Maglić (2.386m) — najviši vrh BiH",
@@ -943,7 +944,7 @@ Prevoz do Foče organizujete sami ili po dogovoru — organizujemo transfer iz B
       "Durmitorski prsten + Žabljak + Crno jezero",
       "Kamp na obali Tare",
       "16 obroka uključeno",
-      "Samo privatne grupe — 6 do 16 osoba",
+      "Samo privatne grupe — 2 do 16 osoba",
     ],
     itinerary: [
       {
@@ -1047,7 +1048,7 @@ Prevoz organizujemo po dogovoru iz Beograda, Sarajeva, Dubrovnika, Podgorice, Za
     duration: "9 dana / 8 noći",
     difficulty: "Srednja",
     price: "1.650€ po osobi",
-    groupSize: "6–16 osoba",
+    groupSize: "2–16 osoba",
     transport: "Po dogovoru – Beograd, Sarajevo, Dubrovnik, Podgorica, Zagreb, Tirana",
     highlights: [
       "Uspon na Maglić (2.386m) — najviši vrh BiH",
@@ -1063,7 +1064,7 @@ Prevoz organizujemo po dogovoru iz Beograda, Sarajeva, Dubrovnika, Podgorice, Za
       "Prutaš ili Crvena Greda — po dogovoru sa ekipom",
       "Kajak na Pivskom jezeru",
       "Povratak do polazne tačke uključen",
-      "Samo privatne grupe — 6 do 16 osoba",
+      "Samo privatne grupe — 2 do 16 osoba",
     ],
     itinerary: [
       {
@@ -1173,7 +1174,7 @@ Prevoz organizujemo po dogovoru iz Beograda, Sarajeva, Dubrovnika, Podgorice, Za
     duration: "1 dan",
     difficulty: "Laka - Srednja",
     price: "70€ po osobi",
-    groupSize: "4–50 osoba",
+    groupSize: "1–50 osoba",
     image: "/images/tours/day-trips/zelengora-bregoc.webp",
     images: [
       { src: "/images/tours/gallery/zelengora-vrh.webp", alt: "Vrh Zelengore Bregoč" },
@@ -1221,7 +1222,7 @@ Prevoz organizujemo po dogovoru iz Beograda, Sarajeva, Dubrovnika, Podgorice, Za
       },
       {
         q: "Kako rezervisati?",
-        a: "Kontaktirajte nas sa željenim datumom. Organizujemo ture po dogovoru za grupe od minimum 4 osobe."
+        a: "Kontaktirajte nas sa željenim datumom. Organizujemo ture po dogovoru, i za samo jednu osobu."
       }
     ]
   },
@@ -1237,7 +1238,7 @@ Prevoz organizujemo po dogovoru iz Beograda, Sarajeva, Dubrovnika, Podgorice, Za
     duration: "1 dan",
     difficulty: "Laka",
     price: "70€ po osobi",
-    groupSize: "4–50 osoba",
+    groupSize: "1–50 osoba",
     image: "/images/tours/day-trips/zelengora-jezera.webp",
     images: [
       { src: "/images/tours/gallery/zelengora-jezero.webp", alt: "Jezero na Zelengori" },
@@ -1295,9 +1296,9 @@ Prevoz organizujemo po dogovoru iz Beograda, Sarajeva, Dubrovnika, Podgorice, Za
     shortDescription: "Jednodnevna tura kroz najstariju prašumu u Evropi sa posjetom impresivnom vodopadu Skakavac.",
     aboutTour: "Jedinstvena tura kroz jednu od najstarijih i najvećih prašuma u Evropi. Perućica i vodopad Skakavac nude snažan doživljaj netaknute prirode, guste šume i impresivnog vodopada. Idealna za one koji vole prirodu i žele da istraže jednu od najzanimljivijih destinacija u Bosni i Hercegovini.",
     duration: "1 dan",
-    difficulty: "Laka",
+    difficulty: "Srednja",
     price: "90€ po osobi",
-    groupSize: "4–20 osoba",
+    groupSize: "1–20 osoba",
     image: "/images/tours/day-trips/perucica-skakavac.webp",
     images: [
       { src: "/images/tours/gallery/vodopad-skakavac-perucica.webp", alt: "Vodopad Skakavac Perućica" },
@@ -1347,7 +1348,7 @@ Prevoz organizujemo po dogovoru iz Beograda, Sarajeva, Dubrovnika, Podgorice, Za
     duration: "1 dan",
     difficulty: "Srednja",
     price: "130€ po osobi",
-    groupSize: "4–12 osoba",
+    groupSize: "1–12 osoba",
     image: "/images/tours/day-trips/kanjoning-hrcavka.webp",
     highlights: [
       "Kanjoning kroz Hrčavku",
@@ -1394,12 +1395,12 @@ Prevoz organizujemo po dogovoru iz Beograda, Sarajeva, Dubrovnika, Podgorice, Za
     title: "Trnovačko jezero",
     category: "day-trip",
     location: "Trnovačko jezero / NP Sutjeska",
-    shortDescription: "Jednodnevna tura do jednog od najljepših jezera u BiH sa prekrasnim vidicima i mogućnošću kupanja.",
+    shortDescription: "Jednodnevna tura do jednog od najljepših jezera na granici BiH i Crne Gore sa prekrasnim vidicima i mogućnošću kupanja.",
     aboutTour: "Trnovačko jezero je jedno od najljepših planinskih jezera na Balkanu, poznato po svom obliku i okruženju visokih vrhova. Ova tura je savršena za one koji žele spoj planinarenja i boravka pored jezera",
     duration: "1 dan",
     difficulty: "Srednja",
     price: "75€ po osobi",
-    groupSize: "4–50 osoba",
+    groupSize: "1–50 osoba",
     image: "/images/tours/day-trips/trnovacko-jezero.webp",
     images: [
       { src: "/images/tours/gallery/trnovacko-jezero-najljepsa-slika.webp", alt: "Trnovačko jezero" },
@@ -1464,7 +1465,7 @@ Prevoz organizujemo po dogovoru iz Beograda, Sarajeva, Dubrovnika, Podgorice, Za
     duration: "1 dan",
     difficulty: "Zahtjevna",
     price: "95€ po osobi",
-    groupSize: "4–20 osoba",
+    groupSize: "1–20 osoba",
     image: "/images/tours/day-trips/maglic-trnovacko.webp",
     images: [
       { src: "/images/tours/gallery/ekipa-ide-na-maglic.webp", alt: "Ekipa ide na Maglić" },
@@ -1524,7 +1525,7 @@ Prevoz organizujemo po dogovoru iz Beograda, Sarajeva, Dubrovnika, Podgorice, Za
     duration: "1 dan",
     difficulty: "Lako",
     price: "70€ po osobi",
-    groupSize: "4–16 osoba",
+    groupSize: "1–16 osoba",
     image: "/images/tours/day-trips/jeep-safari-zelengora.webp",
     images: [
       { src: "/images/tours/gallery/zelengora-jezero.webp", alt: "Jezero na Zelengori" },
@@ -1575,7 +1576,7 @@ Prevoz organizujemo po dogovoru iz Beograda, Sarajeva, Dubrovnika, Podgorice, Za
     duration: "1 dan",
     difficulty: "Srednja",
     price: "65€ po osobi",
-    groupSize: "4–16 osoba",
+    groupSize: "1–16 osoba",
     image: "/images/tours/day-trips/via-ferata-piva.webp",
     images: [
       { src: "/images/tours/gallery/via-ferata-piva.webp", alt: "Via ferrata Piva" },

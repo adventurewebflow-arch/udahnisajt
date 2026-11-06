@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { blogPosts } from "../data/blog";
+import { socialMetadata } from "@/lib/seo";
 
 export const metadata = {
   title: "Blog - Udahni Avanturu",
@@ -9,13 +10,13 @@ export const metadata = {
   alternates: {
     canonical: "https://www.udahniavanturu.com/vodici",
   },
-  openGraph: {
+  ...socialMetadata({
     title: "Blog - Udahni Avanturu",
     description:
       "Korisni vodiči, savjeti i priče sa naših avantura. Planinarenje, NP Sutjeska, Zelengora, Perućica i više.",
-    url: "https://www.udahniavanturu.com/vodici",
-    type: "website",
-  },
+    path: "/vodici",
+    lang: "sr",
+  }),
 };
 
 function estimateReadingTime(content: string): number {

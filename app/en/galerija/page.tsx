@@ -72,7 +72,7 @@ export default function GalleryPageEN() {
             >
               <Image
                 src={img.src}
-                alt={img.alt}
+                alt={img.altEn}
                 fill
                 className="object-cover hover:scale-105 transition-transform"
                 sizes="(max-width: 768px) 80vw, 25vw"
@@ -125,7 +125,7 @@ export default function GalleryPageEN() {
             >
               <Image
                 src={galleryImages[activeIndex].src}
-                alt={galleryImages[activeIndex].alt}
+                alt={galleryImages[activeIndex].altEn}
                 fill
                 className="object-contain pointer-events-none"
                 sizes="100vw"

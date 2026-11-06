@@ -110,6 +110,7 @@ export const adventuresEN: Adventure[] = [
     difficulty: "Easy - Moderate",
     price: "160€ per person",
     groupSize: "6–16 people",
+    discount: "15% discount for groups of 4+ people",
     image: "/images/tours/zelengora/zelengora-kampovanje-card.webp",
     imageAlt: "Camping on Zelengora with Bregoč summit and Jeep safari – Sutjeska NP, Zelengora",
     highlights: [
@@ -745,7 +746,7 @@ Every programme is built around the group. Get in touch with the number of peopl
       },
       {
         q: "How do I book?",
-        a: "Contact us with your preferred dates. We organise tours by arrangement for groups of 6 to 14 people."
+        a: "Contact us with your preferred dates. We organise tours by arrangement for groups of 6 to 16 people."
       }
     ]
   },
@@ -762,7 +763,7 @@ Every programme is built around the group. Get in touch with the number of peopl
     duration: "1 day",
     difficulty: "Easy - Moderate",
     price: "70€ per person",
-    groupSize: "4–50 people",
+    groupSize: "1–50 people",
     image: "/images/tours/day-trips/zelengora-bregoc.webp",
     highlights: [
       "Bregoč (2017m)",
@@ -798,7 +799,7 @@ Every programme is built around the group. Get in touch with the number of peopl
       },
       {
         q: "How do I book?",
-        a: "Contact us with your preferred date. We organise tours by arrangement for groups of minimum 4 people."
+        a: "Contact us with your preferred date. We organise tours by arrangement, even for just one person."
       }
     ]
   },
@@ -814,7 +815,7 @@ Every programme is built around the group. Get in touch with the number of peopl
     duration: "1 day",
     difficulty: "Easy",
     price: "70€ per person",
-    groupSize: "4–50 people",
+    groupSize: "1–50 people",
     image: "/images/tours/day-trips/zelengora-jezera.webp",
     highlights: [
       "Donje Bare",
@@ -860,9 +861,9 @@ Every programme is built around the group. Get in touch with the number of peopl
     shortDescription: "A day tour through one of the oldest forests in Europe with a visit to the impressive Skakavac Waterfall.",
     aboutTour: "A unique tour through one of the oldest and largest primeval forests in Europe. Perućica and Skakavac Waterfall offer a powerful experience of untouched nature, dense forest and an impressive waterfall. Ideal for those who love nature and want to explore one of the most fascinating destinations in Bosnia and Herzegovina.",
     duration: "1 day",
-    difficulty: "Easy",
+    difficulty: "Moderate",
     price: "90€ per person",
-    groupSize: "4–20 people",
+    groupSize: "1–20 people",
     image: "/images/tours/day-trips/perucica-skakavac.webp",
     highlights: [
       "Perućica rainforest",
@@ -909,7 +910,7 @@ Every programme is built around the group. Get in touch with the number of peopl
     duration: "1 day",
     difficulty: "Moderate",
     price: "130€ per person",
-    groupSize: "4–12 people",
+    groupSize: "1–12 people",
     image: "/images/tours/day-trips/kanjoning-hrcavka.webp",
     highlights: [
       "Canyoning through Hrčavka",
@@ -956,12 +957,12 @@ Every programme is built around the group. Get in touch with the number of peopl
     title: "Trnovačko Lake",
     category: "day-trip",
     location: "Trnovačko Lake / Sutjeska NP",
-    shortDescription: "A day tour to one of the most beautiful lakes in Bosnia and Herzegovina with stunning views and the option to swim.",
+    shortDescription: "A day tour to one of the most beautiful lakes on the Bosnia–Montenegro border with stunning views and the option to swim.",
     aboutTour: "Trnovačko Lake is one of the most beautiful mountain lakes in the Balkans, known for its heart shape and setting amid high peaks. This tour is perfect for those who want a combination of hiking and time beside the lake.",
     duration: "1 day",
     difficulty: "Moderate",
     price: "75€ per person",
-    groupSize: "4–50 people",
+    groupSize: "1–50 people",
     image: "/images/tours/day-trips/trnovacko-jezero.webp",
     highlights: [
       "Trnovačko Lake",
@@ -1014,7 +1015,7 @@ Every programme is built around the group. Get in touch with the number of peopl
     duration: "1 day",
     difficulty: "Demanding",
     price: "95€ per person",
-    groupSize: "4–20 people",
+    groupSize: "1–20 people",
     image: "/images/tours/day-trips/maglic-trnovacko.webp",
     highlights: [
       "Maglić (2386m)",
@@ -1065,7 +1066,7 @@ Every programme is built around the group. Get in touch with the number of peopl
     duration: "1 day",
     difficulty: "Easy",
     price: "70€ per person",
-    groupSize: "4–16 people",
+    groupSize: "1–16 people",
     image: "/images/tours/day-trips/jeep-safari-zelengora.webp",
     highlights: [
       "Jeep safari",
@@ -1106,7 +1107,7 @@ Every programme is built around the group. Get in touch with the number of peopl
     duration: "1 day",
     difficulty: "Moderate",
     price: "65€ per person",
-    groupSize: "4–16 people",
+    groupSize: "1–16 people",
     image: "/images/tours/day-trips/via-ferata-piva.webp",
     highlights: [
       "Via ferrata",
@@ -1154,13 +1155,13 @@ Five days in Sutjeska National Park means five days without rush, without office
 
 What makes this tour different from anything else on the market isn't the itinerary on paper — it's the details that aren't on paper. Coffee with Miloš at Prijevor, a man who has spent his whole life here and knows every stone of this mountain. Breakfast at the katun — homemade cheese, kajmak, warm milk, prosciutto — prepared on the spot by people who still live the way people lived three hundred years ago. A cold beer from the spring by the fire in the evening, while Trnovačko Lake lies before you silent and perfect.
 
-The tour is organised exclusively for private groups of 6 to 16 people. Transport to Foča is arranged separately — we organise transfers from Belgrade, Sarajevo, Dubrovnik, Podgorica, Zagreb and Tirana by arrangement, not included in the price.
+The tour is organised exclusively for private groups of 2 to 16 people. Transport to Foča is arranged separately — we organise transfers from Belgrade, Sarajevo, Dubrovnik, Podgorica, Zagreb and Tirana by arrangement, not included in the price.
 
 Our team of experienced guides is with you for all five days.`,
     duration: "5 days / 4 nights",
     difficulty: "Moderate",
     price: "550€ per person",
-    groupSize: "6–16 people",
+    groupSize: "2–16 people",
     transport: "By arrangement – Belgrade, Sarajevo, Dubrovnik, Podgorica, Zagreb, Tirana",
     highlights: [
       "Summit of Maglić (2,386m) — highest peak in BiH",
@@ -1173,7 +1174,7 @@ Our team of experienced guides is with you for all five days.`,
       "Visit to Perućica rainforest and Skakavac waterfall",
       "Accommodation in bungalows at Tjentište (3 nights) + camping (1 night)",
       "11 meals included",
-      "Private groups only — 6 to 16 people",
+      "Private groups only — 2 to 16 people",
     ],
     itinerary: [
       {
@@ -1232,7 +1233,7 @@ Our team of experienced guides is with you for all five days.`,
       },
       {
         q: "Is this tour available for solo travellers or only for groups?",
-        a: "The tour is organised exclusively for private groups of 6 to 16 people. If you are a smaller group or a couple, get in touch — we can sometimes combine groups with the same dates.",
+        a: "The tour runs for private groups of 2 to 16 people. If you're travelling solo, get in touch — we can sometimes combine travellers with the same dates.",
       },
       {
         q: "What is breakfast at the mountain homestead like?",
@@ -1265,7 +1266,7 @@ Transport to Foča is arranged separately — we organise transfers from Belgrad
     duration: "7 days / 6 nights",
     difficulty: "Moderate",
     price: "960€ per person",
-    groupSize: "6–16 people",
+    groupSize: "2–16 people",
     transport: "By arrangement – Belgrade, Sarajevo, Dubrovnik, Podgorica, Zagreb, Tirana",
     highlights: [
       "Maglić summit (2,386m) — highest peak in BiH",
@@ -1280,7 +1281,7 @@ Transport to Foča is arranged separately — we organise transfers from Belgrad
       "Durmitor ring road + Žabljak + Black Lake",
       "Camp on the Tara riverbank",
       "16 meals included",
-      "Private groups only — 6 to 16 people",
+      "Private groups only — 2 to 16 people",
     ],
     itinerary: [
       {
@@ -1384,7 +1385,7 @@ Transport is arranged by agreement from Belgrade, Sarajevo, Dubrovnik, Podgorica
     duration: "9 days / 8 nights",
     difficulty: "Moderate",
     price: "1,650€ per person",
-    groupSize: "6–16 people",
+    groupSize: "2–16 people",
     transport: "By arrangement – Belgrade, Sarajevo, Dubrovnik, Podgorica, Zagreb, Tirana",
     highlights: [
       "Maglić summit (2,386m) — highest peak in BiH",
@@ -1400,7 +1401,7 @@ Transport is arranged by agreement from Belgrade, Sarajevo, Dubrovnik, Podgorica
       "Prutaš or Crvena Greda — by agreement with the group",
       "Kayaking on Piva Lake",
       "Return to starting point included",
-      "Private groups only — 6 to 16 people",
+      "Private groups only — 2 to 16 people",
     ],
     itinerary: [
       {

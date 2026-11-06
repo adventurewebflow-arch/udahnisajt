@@ -3,26 +3,27 @@ import Image from "next/image";
 import Link from "next/link";
 import { landingHreflang } from "@/lib/slugMap";
 import WhatsAppTrackedLink from "@/app/components/WhatsAppTrackedLink";
+import { socialMetadata } from "@/lib/seo";
 
 const BASE = "https://www.udahniavanturu.com";
 
 export const metadata: Metadata = {
-  title: "Nacionalni park Sutjeska — Kompletan vodič za posjetioce 2026",
+  title: "Nacionalni park Sutjeska — Kompletan vodič za posjetioce 2027",
   description:
     "Sve što trebaš znati o NP Sutjeska — Maglić, Perućica, Trnovačko jezero, Zelengora. Organizovane ture sa licenciranim vodičem. Od 65€.",
   alternates: {
     canonical: `${BASE}/sutjeska-nacionalni-park`,
     languages: landingHreflang("/sutjeska-nacionalni-park"),
   },
-  openGraph: {
-    title: "Nacionalni park Sutjeska — Kompletan vodič za posjetioce 2026",
+  ...socialMetadata({
+    title: "Nacionalni park Sutjeska — Kompletan vodič za posjetioce 2027",
     description:
-      "Najviši vrh BiH. Najstarija prašuma u Evropi. Najdublji kanjon u Evropi. Licencirane ture od 65€.",
-    url: `${BASE}/sutjeska-nacionalni-park`,
-    type: "website",
-  },
-  keywords:
-    "nacionalni park sutjeska, sutjeska planinarenje, maglić hiking, prašuma perućica, trnovačko jezero, zelengora, ture bosna, organizovane ture sutjeska",
+      "Najviši vrh BiH. Najstarija prašuma u Evropi. Najdublji kanjon Evrope, Tara, odmah do. Licencirane ture od 65€.",
+    path: "/sutjeska-nacionalni-park",
+    lang: "sr",
+    image: "/images/og/og-sutjeska-np.jpg",
+    imageAlt: "Sutjeska National Park Bosnia — wild mountain landscape",
+  }),
 };
 
 const destinations = [
@@ -51,14 +52,14 @@ const destinations = [
     name: "Planina Zelengora",
     slug: "zelengora",
     image: "/images/tours/gallery/zelengora-jezero.webp",
-    desc: "Sedam ledena jezera, otvorene livade i panoramski grebeni. Divlje borovnice u augustu. Titova vila na Donjim Barima. Najpotcenjenija planina u BiH — jer većina ljudi jednostavno ne zna šta je tamo.",
+    desc: "Devet ledenih jezera, otvorene livade i panoramski grebeni. Divlje borovnice u augustu. Titova vila na Donjim Barima. Najpotcenjenija planina u BiH — jer većina ljudi jednostavno ne zna šta je tamo.",
     tag: "Lako do umjereno",
   },
   {
     name: "Kanjon Sutjeske",
     slug: null,
     image: "/images/tours/gallery/kanjon-sutjeske-zelengora.webp",
-    desc: "Najdublji kanjon u Evropi. Rijeka Sutjeska teče kristalno čisto — možeš je piti direktno. Bogata pastrmkom, istorijski značajna iz Drugog svjetskog rata. Nema označenih staza — ovo je prava divljina.",
+    desc: "Jedan od najdubljih kanjona u Evropi. Rijeka Sutjeska teče kristalno čisto — možeš je piti direktno. Bogata pastrmkom, istorijski značajna iz Drugog svjetskog rata. Nema označenih staza — ovo je prava divljina.",
     tag: "Divlje",
   },
 ];
@@ -66,7 +67,7 @@ const destinations = [
 const tours = [
   { name: "Trnovačko jezero", price: "75 €", duration: "1 dan", slug: "trnovacko-jezero", difficulty: "Umjereno" },
   { name: "Maglić + Trnovačko jezero", price: "95 €", duration: "1 dan", slug: "maglic-trnovacko-jezero", difficulty: "Zahtjevno" },
-  { name: "Perućica + Skakavac", price: "90 €", duration: "1 dan", slug: "prasuma-perucica-vodopad-skakavac", difficulty: "Umjereno" },
+  { name: "Perućica + Skakavac", price: "90 €", duration: "1 dan", slug: "prasuma-perucica-vodopad-skakavac", difficulty: "Srednja" },
   { name: "Kanjoning Hrčavka", price: "130 €", duration: "1 dan", slug: "kanjoning-hrcavka", difficulty: "Umjereno" },
   { name: "Zelengora jezera", price: "70 €", duration: "1 dan", slug: "zelengora-jezera-vidikovci", difficulty: "Lako" },
   { name: "Jeep safari Zelengora", price: "70 €", duration: "1 dan", slug: "jeep-safari-zelengora", difficulty: "Lako" },
@@ -140,7 +141,7 @@ export default function SutjeskaNacionalniParkPage() {
             Nacionalni park Sutjeska
           </h1>
           <p className="text-slate-300 text-lg max-w-2xl leading-relaxed mb-6">
-            Najstariji nacionalni park u BiH. Najviši vrh. Posljednja prašuma. Najdublji kanjon. Sve u nekoliko sati vožnje jedno od drugog.
+            Najstariji nacionalni park u BiH. Najviši vrh. Posljednja prašuma. Kanjon Tare, najdublji u Evropi, odmah do. Sve u nekoliko sati vožnje jedno od drugog.
           </p>
           <div className="flex flex-col sm:flex-row gap-3">
             <Link
@@ -166,7 +167,7 @@ export default function SutjeskaNacionalniParkPage() {
         <div className="max-w-5xl mx-auto px-4 py-8 grid grid-cols-2 md:grid-cols-4 gap-6">
           {[
             { num: "1962", label: "Godina osnivanja" },
-            { num: "43.000", label: "Hektara divljine" },
+            { num: "16.000+", label: "Hektara divljine" },
             { num: "2.386 m", label: "Najviši vrh — Maglić" },
             { num: "75 m", label: "Vodopad Skakavac" },
           ].map((f) => (
@@ -183,14 +184,14 @@ export default function SutjeskaNacionalniParkPage() {
         <div className="max-w-3xl">
           <h2 className="text-3xl font-bold text-white mb-6">Šta je Nacionalni park Sutjeska?</h2>
           <p className="text-slate-300 leading-8 mb-4">
-            Sutjeska je najstariji nacionalni park u Bosni i Hercegovini, osnovan 1962. godine. Pokriva 43.000 hektara planina, kanjona, rijeka i šuma u jugoistočnom dijelu zemlje, blizu Foče.
+            Sutjeska je najstariji nacionalni park u Bosni i Hercegovini, osnovan 1962. godine. Pokriva više od 16.000 hektara planina, kanjona, rijeka i šuma u jugoistočnom dijelu zemlje, blizu Foče.
           </p>
           <p className="text-slate-300 leading-8 mb-4">
             Unutar granica parka: najviši vrh Bosne i Hercegovine (Maglić, 2.386 m), jedna od samo dvije preostale prašume u Evropi (
             <Link href="/perucica" className="text-emerald-400 hover:underline">
               Perućica
             </Link>
-            ), jedan od najdubljih kanjona u Evropi (kanjon Sutjeske) i sedam ledenskih jezera na planini Zelengori.
+            ), jedan od najdubljih kanjona u Evropi (kanjon Sutjeske) i devet ledenskih jezera na planini Zelengori.
           </p>
           <p className="text-slate-300 leading-8">
             U većini parka nema mobilnog signala. Putevi su loši ili ne postoje u planinama. To nije problem — upravo zato je ovo jedno od posljednjih zaista divljih mjesta u Evropi.

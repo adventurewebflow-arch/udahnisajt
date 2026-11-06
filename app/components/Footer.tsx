@@ -107,7 +107,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-white/10 mt-8 pt-8 text-center text-slate-400 text-sm">
-          <p>© 2026 Udahni Avanturu. {rights}.</p>
+          <p>© {new Date().getFullYear()} Udahni Avanturu. {rights}.</p>
         </div>
       </div>
     </footer>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { landingHreflang } from "@/lib/slugMap";
+import { socialMetadata } from "@/lib/seo";
 
 const BASE = "https://www.udahniavanturu.com";
 
@@ -13,13 +14,15 @@ export const metadata: Metadata = {
     canonical: `${BASE}/trnovacko-jezero`,
     languages: landingHreflang("/trnovacko-jezero"),
   },
-  openGraph: {
+  ...socialMetadata({
     title: "Trnovačko jezero – kampovanje, uspon na Maglić i katuni | Udahni Avanturu",
     description:
       "Kampuj na obali Trnovačkog jezera, osvoji Maglić i doručkuj na katunu kod domaćina. Bez mreže, bez žurbe — organizovane ture iz Foče.",
-    url: `${BASE}/trnovacko-jezero`,
-    type: "website",
-  },
+    path: "/trnovacko-jezero",
+    lang: "sr",
+    image: "/images/og/og-trnovacko.jpg",
+    imageAlt: "Trnovačko jezero s planinskom pozadinom Maglića",
+  }),
 };
 
 export default function TrnovackoJezeroPage() {

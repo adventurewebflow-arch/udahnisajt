@@ -237,8 +237,8 @@ export default function AdventureBuilder() {
       next: isEn ? "Next →" : "Dalje →",
       back: isEn ? "← Back" : "← Nazad",
       minPeople: isEn
-        ? "\u26A0\uFE0F Minimum group size is 2 people."
-        : "\u26A0\uFE0F Minimalan broj osoba je 2.",
+        ? "\u26A0\uFE0F Minimum group size is 1 person."
+        : "\u26A0\uFE0F Minimalan broj osoba je 1.",
       totalPerPersonLabel: isEn ? "Total per person:" : "Ukupno po osobi:",
       totalAllLabel: isEn ? "Total:" : "Ukupno:",
       totalAll: isEn ? "Total" : "Ukupno",
@@ -832,7 +832,7 @@ export default function AdventureBuilder() {
           <div className="flex items-center justify-center gap-6 mb-6">
             <button
               type="button"
-              onClick={() => setPeople((p) => Math.max(2, p - 1))}
+              onClick={() => setPeople((p) => Math.max(1, p - 1))}
               className="w-14 h-14 rounded-xl border border-gray-600 bg-gray-800 text-white text-2xl font-bold hover:bg-gray-700 transition-colors"
             >
               −
@@ -873,7 +873,7 @@ export default function AdventureBuilder() {
             </div>
           )}
 
-          {people < 2 && (
+          {people < 1 && (
             <p className="text-center text-amber-300 text-sm mb-4 max-w-lg mx-auto">{lang.minPeople}</p>
           )}
 

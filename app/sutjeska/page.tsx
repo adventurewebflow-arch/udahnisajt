@@ -2,24 +2,27 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { landingHreflang } from "@/lib/slugMap";
+import { socialMetadata } from "@/lib/seo";
 
 const BASE = "https://www.udahniavanturu.com";
 
 export const metadata: Metadata = {
   title: "NP Sutjeska – Maglić, Perućica i Zelengora | Ture iz Foče",
   description:
-    "Tri evropska rekorda na jednom mjestu — najviši vrh BiH, najstarija prašuma i najdublji kanjon. Hiking, rafting, kanjoning i kampovanje. Organizovano od A do Ž, male grupe, polazak iz Foče.",
+    "Tri evropska rekorda na jednom mjestu — najviši vrh BiH, najstarija prašuma i, odmah do, kanjon Tare, najdublji u Evropi. Hiking, rafting, kanjoning i kampovanje. Organizovano od A do Ž, male grupe, polazak iz Foče.",
   alternates: {
     canonical: `${BASE}/sutjeska`,
     languages: landingHreflang("/sutjeska"),
   },
-  openGraph: {
+  ...socialMetadata({
     title: "NP Sutjeska – Maglić, Perućica i Zelengora | Ture iz Foče",
     description:
-      "Tri evropska rekorda na jednom mjestu — najviši vrh BiH, najstarija prašuma i najdublji kanjon. Hiking, rafting, kanjoning i kampovanje iz Foče.",
-    url: `${BASE}/sutjeska`,
-    type: "website",
-  },
+      "Tri evropska rekorda na jednom mjestu — najviši vrh BiH, najstarija prašuma i, odmah do, kanjon Tare, najdublji u Evropi. Hiking, rafting, kanjoning i kampovanje iz Foče.",
+    path: "/sutjeska",
+    lang: "sr",
+    image: "/images/og/og-sutjeska.jpg",
+    imageAlt: "Nacionalni park Sutjeska – Maglić i Trnovačko jezero",
+  }),
 };
 
 export default function SutjeskaPage() {

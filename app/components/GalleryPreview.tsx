@@ -49,7 +49,7 @@ export default function GalleryPreview() {
               >
                 <Image
                   src={img.src}
-                  alt={img.alt}
+                  alt={isEn ? img.altEn : img.alt}
                   fill
                   className="object-cover hover:scale-105 transition-transform"
                   sizes="(max-width: 768px) 80vw, 33vw"

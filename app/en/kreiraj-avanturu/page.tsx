@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import AdventureBuilder from "../../components/AdventureBuilder";
+import { socialMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Build Your Adventure – Custom Tour | Udahni Avanturu",
@@ -9,13 +10,15 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.udahniavanturu.com/en/kreiraj-avanturu",
   },
-  openGraph: {
+  ...socialMetadata({
     title: "Build Your Adventure – Custom Tour | Udahni Avanturu",
     description:
       "Can't find the right tour? Let's build it together. Tell us what you want to experience — Petar sends you an offer within 1 hour.",
-    url: "https://www.udahniavanturu.com/en/kreiraj-avanturu",
-    type: "website",
-  },
+    path: "/en/kreiraj-avanturu",
+    lang: "en",
+    image: "/images/og/og-sutjeska-np.jpg",
+    imageAlt: "Planinarenje na Zelengori – Udahni Avanturu",
+  }),
 };
 
 export default function BuildAdventurePage() {
@@ -60,7 +63,7 @@ export default function BuildAdventurePage() {
               {"\uD83D\uDC65"}
             </span>
             <div>
-              <p className="text-white font-semibold text-sm">Small groups — min. 4 people</p>
+              <p className="text-white font-semibold text-sm">Small groups — no minimum</p>
               <p className="text-slate-400 text-xs">Personalised experience</p>
             </div>
           </div>

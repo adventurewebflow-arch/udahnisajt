@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import AdventureBuilder from "../components/AdventureBuilder";
+import { socialMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Kreiraj svoju avanturu – Tura po mjeri | Udahni Avanturu",
@@ -9,13 +10,15 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.udahniavanturu.com/kreiraj-avanturu",
   },
-  openGraph: {
+  ...socialMetadata({
     title: "Kreiraj svoju avanturu – Tura po mjeri | Udahni Avanturu",
     description:
       "Nisi našao turu koja ti odgovara? Složimo je zajedno. Odaberi trajanje, odakle dolaziš i šta želiš doživjeti — ponuda stiže u roku od 1 sat.",
-    url: "https://www.udahniavanturu.com/kreiraj-avanturu",
-    type: "website",
-  },
+    path: "/kreiraj-avanturu",
+    lang: "sr",
+    image: "/images/og/og-sutjeska-np.jpg",
+    imageAlt: "Planinarenje na Zelengori – Udahni Avanturu",
+  }),
 };
 
 export default function KreirajAvanturuPage() {
@@ -58,7 +61,7 @@ export default function KreirajAvanturuPage() {
               {"\uD83D\uDC65"}
             </span>
             <div>
-              <p className="text-white font-semibold text-sm">Male grupe — min. 4 osobe</p>
+              <p className="text-white font-semibold text-sm">Male grupe — bez minimuma</p>
               <p className="text-slate-400 text-xs">Personalizovano iskustvo</p>
             </div>
           </div>

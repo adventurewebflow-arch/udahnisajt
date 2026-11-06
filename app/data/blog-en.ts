@@ -117,7 +117,7 @@ export const blogPostsEN: BlogPostEN[] = [
       <h3>Route from Foča</h3>
       <p>An alternative route departs from Foča, through the village of Mrkalje to Prijevor. Slightly shorter but equally demanding. We recommend a guided tour for both routes.</p>
 
-      <p>Our <a href="/en/tours/kampovanje-trnovacko-jezero-maglic" class="text-emerald-400 hover:text-emerald-300 underline">Maglić summit and Trnovačko Lake camping tour</a> combines the ascent of the highest peak with a night beside one of the most beautiful lakes in Bosnia — a complete adventure in one trip.</p>
+      <p>Our <a href="/en/tours/kampovanje-trnovacko-jezero-maglic" class="text-emerald-400 hover:text-emerald-300 underline">Maglić summit and Trnovačko Lake camping tour</a> combines the ascent of the highest peak with a night beside one of the most beautiful lakes on the Bosnia–Montenegro border — a complete adventure in one trip.</p>
 
       <h2>Difficulty</h2>
 
@@ -732,15 +732,15 @@ export const blogPostsEN: BlogPostEN[] = [
     metadataDescription:
       "Everything you need to know about Zelengora — glacial lakes, Bregoč summit, Borić viewpoint, mountain homesteads and how to get there. Guided tours from Foča from €70.",
     excerpt:
-      "Zelengora is not a mountain in the conventional sense. No sharp peaks, no icy cliffs. Something different — vast meadows as green as velvet, seven mountain lakes and a silence that draws you in slowly, without force.",
+      "Zelengora is not a mountain in the conventional sense. No sharp peaks, no icy cliffs. Something different — vast meadows as green as velvet, nine mountain lakes and a silence that draws you in slowly, without force.",
     content: `
     <h2>Why It Is Called Zelengora</h2>
 <p>The name is not a metaphor. Zelengora literally means Green Mountain. When Jovo Popović wrote about it in 1935 in his book "Through the Mountains of Bosnia and Herzegovina", he described a mountain unlike any other he had seen: "There is no mountain in our lands that nature has adorned so beautifully, so gently-romantically." Ninety years later — nothing has changed.</p>
 
-<p>Unlike Maglić, which hits you with power and altitude, Zelengora wins you over slowly. No dramatic cliffs, no demanding ascents. Wide meadows, seven lakes, hundreds of crystal-clear springs and — in August — wild blueberries growing along every trail. Guests who see them for the first time cannot believe they are allowed to pick them straight from the mountain.</p>
+<p>Unlike Maglić, which hits you with power and altitude, Zelengora wins you over slowly. No dramatic cliffs, no demanding ascents. Wide meadows, nine lakes, hundreds of crystal-clear springs and — in August — wild blueberries growing along every trail. Guests who see them for the first time cannot believe they are allowed to pick them straight from the mountain.</p>
 
 <h2>The Lakes of Zelengora — Which Ones and Where</h2>
-<p>Zelengora has seven glacial lakes. Popović described them precisely in 1935: Štirinsko is the largest, Kotlaničko the deepest, and Crno jezero the most beautiful in terms of its natural setting — though that is debatable.</p>
+<p>Zelengora has nine glacial lakes. In 1935 Popović described the main ones precisely: Štirinsko is the largest, Kotlaničko the deepest, and Crno jezero the most beautiful in terms of its natural setting — though that is debatable.</p>
 
 <p>On one side of the mountain, accessible by dirt road (poor road quality — off-road vehicles recommended), are: <strong>Orlovačko Lake, Kotlaničko Lake, Štirinsko Lake and Jugovo Lake</strong>. You reach them from the direction of Kalinovik or via Tjentište and Čemerno pass. Orlovačko has been "declared" the most beautiful lake on Zelengora — mostly because it is the most accessible and the most photographed. We would not necessarily agree.</p>
 

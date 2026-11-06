@@ -3,26 +3,27 @@ import Image from "next/image";
 import Link from "next/link";
 import { landingHreflang } from "@/lib/slugMap";
 import WhatsAppTrackedLink from "@/app/components/WhatsAppTrackedLink";
+import { socialMetadata } from "@/lib/seo";
 
 const BASE = "https://www.udahniavanturu.com";
 
 export const metadata: Metadata = {
-  title: "Sutjeska National Park — Complete Visitor Guide 2026 | Bosnia",
+  title: "Sutjeska National Park — Complete Visitor Guide 2027 | Bosnia",
   description:
     "Everything you need to know about Sutjeska National Park — Maglić summit, Perućica rainforest, Trnovačko Lake, Zelengora mountain. Guided tours from Foča from €65. Licensed guide, small groups.",
   alternates: {
     canonical: `${BASE}/en/sutjeska-national-park`,
     languages: landingHreflang("/en/sutjeska-national-park"),
   },
-  openGraph: {
-    title: "Sutjeska National Park Bosnia — Complete Visitor Guide 2026",
+  ...socialMetadata({
+    title: "Sutjeska National Park Bosnia — Complete Visitor Guide 2027",
     description:
-      "Highest peak in BiH. Oldest rainforest in Europe. Deepest canyon in Europe. Licensed guided tours from €65.",
-    url: `${BASE}/en/sutjeska-national-park`,
-    type: "website",
-  },
-  keywords:
-    "sutjeska national park, sutjeska hiking, maglic hike bosnia, perucica rainforest, trnovacko lake, zelengora mountain, bosnia adventure tours, sutjeska guided tours",
+      "Highest peak in BiH. Oldest rainforest in Europe. Europe's deepest canyon, the Tara, next door. Licensed guided tours from €65.",
+    path: "/en/sutjeska-national-park",
+    lang: "en",
+    image: "/images/og/og-sutjeska-np.jpg",
+    imageAlt: "Sutjeska National Park Bosnia — wild mountain landscape",
+  }),
 };
 
 const destinations = [
@@ -51,14 +52,14 @@ const destinations = [
     name: "Zelengora Mountain",
     slug: "zelengora-lakes",
     image: "/images/tours/gallery/zelengora-jezero.webp",
-    desc: "Seven glacial lakes, open meadows and panoramic ridgelines. Wild blueberries in August. Tito's villa at Donje Bare. The most underrated mountain in Bosnia — because most people simply don't know what's there.",
+    desc: "Nine glacial lakes, open meadows and panoramic ridgelines. Wild blueberries in August. Tito's villa at Donje Bare. The most underrated mountain in Bosnia — because most people simply don't know what's there.",
     tag: "Easy to moderate",
   },
   {
     name: "Sutjeska Canyon",
     slug: null,
     image: "/images/tours/gallery/kanjon-sutjeske-zelengora.webp",
-    desc: "The deepest canyon in Europe. The Sutjeska river runs crystal clear — you can drink directly from it. Rich in trout, historically significant from WWII. No marked trails — this is true wilderness.",
+    desc: "One of the deepest canyons in Europe. The Sutjeska river runs crystal clear — you can drink directly from it. Rich in trout, historically significant from WWII. No marked trails — this is true wilderness.",
     tag: "Wild",
   },
 ];
@@ -71,7 +72,7 @@ const tours = [
   { name: "Zelengora Lakes", price: "€70", duration: "1 day", slug: "zelengora-jezera-vidikovci", difficulty: "Easy" },
   { name: "Zelengora Jeep Safari", price: "€70", duration: "1 day", slug: "jeep-safari-zelengora", difficulty: "Easy" },
   { name: "Camping Trnovačko + Maglić", price: "€170", duration: "3 days", slug: "kampovanje-trnovacko-jezero-maglic", difficulty: "Moderate" },
-  { name: "Sutjeska Heart — 5 days", price: "€550", duration: "5 days", slug: "srce-sutjeske-5-dana", difficulty: "Moderate" },
+  { name: "Heart of Sutjeska — 5 Days", price: "€550", duration: "5 days", slug: "srce-sutjeske-5-dana", difficulty: "Moderate" },
 ];
 
 const faqs = [
@@ -140,7 +141,7 @@ export default function SutjeskaNationalParkPage() {
             Sutjeska National Park
           </h1>
           <p className="text-slate-300 text-lg max-w-2xl leading-relaxed mb-6">
-            The oldest national park in Bosnia. The highest peak. The last primeval forest. The deepest canyon. All within a few hours of each other.
+            The oldest national park in Bosnia. The highest peak. The last primeval forest. Europe&apos;s deepest canyon, the Tara, next door. All within a few hours of each other.
           </p>
           <div className="flex flex-col sm:flex-row gap-3">
             <Link
@@ -166,7 +167,7 @@ export default function SutjeskaNationalParkPage() {
         <div className="max-w-5xl mx-auto px-4 py-8 grid grid-cols-2 md:grid-cols-4 gap-6">
           {[
             { num: "1962", label: "Year established" },
-            { num: "43,000", label: "Hectares of wilderness" },
+            { num: "16,000+", label: "Hectares of wilderness" },
             { num: "2,386m", label: "Highest peak — Maglić" },
             { num: "75m", label: "Skakavac Waterfall" },
           ].map((f) => (
@@ -183,14 +184,14 @@ export default function SutjeskaNationalParkPage() {
         <div className="max-w-3xl">
           <h2 className="text-3xl font-bold text-white mb-6">What is Sutjeska National Park?</h2>
           <p className="text-slate-300 leading-8 mb-4">
-            Sutjeska is Bosnia and Herzegovina&apos;s oldest national park, established in 1962. It covers 43,000 hectares of mountains, canyons, rivers and forests in the southeast of the country, near the town of Foča.
+            Sutjeska is Bosnia and Herzegovina&apos;s oldest national park, established in 1962. It covers more than 16,000 hectares of mountains, canyons, rivers and forests in the southeast of the country, near the town of Foča.
           </p>
           <p className="text-slate-300 leading-8 mb-4">
             Within its boundaries: the highest peak in Bosnia and Herzegovina (Maglić, 2,386m), one of only two remaining primeval forests in Europe (
             <Link href="/en/perucica-rainforest" className="text-emerald-400 hover:underline">
               Perućica
             </Link>
-            ), one of the deepest canyons in Europe (Sutjeska canyon), and seven glacial lakes on Zelengora mountain.
+            ), one of the deepest canyons in Europe (Sutjeska canyon), and nine glacial lakes on Zelengora mountain.
           </p>
           <p className="text-slate-300 leading-8">
             The park has no mobile signal in most areas. Roads are poor or non-existent in the mountains. That is not a problem — that is precisely what makes it one of the last genuinely wild places in Europe.
