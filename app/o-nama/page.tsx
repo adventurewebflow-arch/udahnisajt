@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { socialMetadata } from "@/lib/seo";
+import { pathHreflang } from "@/lib/slugMap";
 
 export const metadata: Metadata = {
   title: "O nama | Udahni Avanturu",
@@ -9,6 +10,7 @@ export const metadata: Metadata = {
     "Udahni Avanturu — Petar i Nevena. Avanture od 2021. kroz Sutjesku, Zelengoru, Trnovačko jezero i Perućicu. Male grupe, domaćinski pristup.",
   alternates: {
     canonical: "https://www.udahniavanturu.com/o-nama",
+    languages: pathHreflang("/o-nama", "/en/o-nama"),
   },
   ...socialMetadata({
     title: "O nama | Udahni Avanturu",

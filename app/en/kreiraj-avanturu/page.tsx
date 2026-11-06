@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import AdventureBuilder from "../../components/AdventureBuilder";
 import { socialMetadata } from "@/lib/seo";
+import { pathHreflang } from "@/lib/slugMap";
 
 export const metadata: Metadata = {
   title: "Build Your Adventure – Custom Tour | Udahni Avanturu",
@@ -9,6 +10,7 @@ export const metadata: Metadata = {
     "Can't find the right tour? Let's build it together. Tell us what you want to experience — Petar sends you an offer within 1 hour.",
   alternates: {
     canonical: "https://www.udahniavanturu.com/en/kreiraj-avanturu",
+    languages: pathHreflang("/kreiraj-avanturu", "/en/kreiraj-avanturu"),
   },
   ...socialMetadata({
     title: "Build Your Adventure – Custom Tour | Udahni Avanturu",

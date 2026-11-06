@@ -8,6 +8,7 @@ import InquiryForm from "../../components/InquiryForm";
 import Accordion from "../../components/Accordion";
 import TourGallery from "@/app/components/TourGallery";
 import { tourHreflang } from "@/lib/slugMap";
+import { GUIDES, TOUR_GUIDES } from "@/lib/destinationGuides";
 import type { Metadata } from "next";
 
 const BASE = "https://www.udahniavanturu.com";
@@ -294,14 +295,20 @@ export default async function TourDetailPage({ params }: { params: Promise<{ slu
               </section>
             )}
 
-            {slug === "kampovanje-trnovacko-jezero-maglic" && (
+            {TOUR_GUIDES[adventure.slug] && (
               <section>
-                <Link
-                  href="/trnovacko-jezero"
-                  className="inline-flex items-center text-emerald-400 hover:text-emerald-300 transition-colors"
-                >
-                  Saznaj više o Trnovačkom jezeru →
-                </Link>
+                <h2 className="text-3xl font-bold mb-6">Planiraj posjetu</h2>
+                <div className="flex flex-col gap-3">
+                  {TOUR_GUIDES[adventure.slug].map((key) => (
+                    <Link
+                      key={key}
+                      href={GUIDES[key].sr.href}
+                      className="inline-flex items-center text-emerald-400 hover:text-emerald-300 transition-colors"
+                    >
+                      {GUIDES[key].sr.label} →
+                    </Link>
+                  ))}
+                </div>
               </section>
             )}
           </div>

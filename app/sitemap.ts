@@ -1,75 +1,79 @@
-import { MetadataRoute } from "next";
+import type { MetadataRoute } from "next";
 import { adventures } from "./data/adventures";
 import { adventuresEN } from "./data/adventures-en";
 import { blogPosts } from "./data/blog";
 import { blogPostsEN } from "./data/blog-en";
 import { partnerExperiences } from "@/lib/partnerExperiences";
+import { getBlogPairBySrSlug, getBlogPairByEnSlug } from "@/lib/slugMap";
 
 const BASE = "https://www.udahniavanturu.com";
+const u = (path: string) => encodeURI(`${BASE}${path}`);
+
+type Entry = MetadataRoute.Sitemap[number];
+
+/** SR + EN entry for one bilingual page, each pointing at the other. */
+function pair(sr: string, en: string, priority: number, lastModified?: string): Entry[] {
+  const languages = { "sr-Latn": u(sr), en: u(en), "x-default": u(en) };
+  return [
+    { url: u(sr), alternates: { languages }, priority, ...(lastModified ? { lastModified } : {}) },
+    { url: u(en), alternates: { languages }, priority, ...(lastModified ? { lastModified } : {}) },
+  ];
+}
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const lastModified = new Date().toISOString();
+  const enSlugs = new Set(adventuresEN.map((a) => a.slug));
 
-  const tourDetailsSr = adventures.map((a) => ({
-    url: encodeURI(`${BASE}/ture/${a.slug}`),
-    lastModified,
-  }));
-
-  const tourDetailsEn = adventuresEN.map((a) => ({
-    url: encodeURI(`${BASE}/en/tours/${a.slug}`),
-    lastModified,
-  }));
-
-  const vodiciDetails = blogPosts.map((p) => ({
-    url: encodeURI(`${BASE}/vodici/${p.slug}`),
-    lastModified,
-  }));
-
-  const blogDetailsEn = blogPostsEN.map((p) => ({
-    url: encodeURI(`${BASE}/en/blog/${p.slug}`),
-    lastModified,
-  }));
-
-  // B2B partner detail pages — English only, no SR counterpart.
-  const partnerDetails = partnerExperiences.map((e) => ({
-    url: encodeURI(`${BASE}/en/partners/${e.slug}`),
-    lastModified,
-  }));
-
-  return [
-    // Serbian
-    { url: encodeURI(BASE), lastModified },
-    { url: encodeURI(`${BASE}/ture`), lastModified },
-    { url: encodeURI(`${BASE}/o-nama`), lastModified },
-    { url: encodeURI(`${BASE}/vodici`), lastModified },
-    { url: encodeURI(`${BASE}/galerija`), lastModified },
-    { url: encodeURI(`${BASE}/trnovacko-jezero`), lastModified },
-    { url: encodeURI(`${BASE}/maglic-planina`), lastModified },
-    { url: encodeURI(`${BASE}/zelengora`), lastModified },
-    { url: encodeURI(`${BASE}/perucica`), lastModified },
-    { url: encodeURI(`${BASE}/sutjeska`), lastModified },
-    { url: encodeURI(`${BASE}/sutjeska-nacionalni-park`), lastModified },
-    { url: encodeURI(`${BASE}/kako-doci`), lastModified },
-    { url: encodeURI(`${BASE}/partneri`), lastModified },
-    ...tourDetailsSr,
-    ...vodiciDetails,
-
-    // English
-    { url: encodeURI(`${BASE}/en`), lastModified },
-    { url: encodeURI(`${BASE}/en/tours`), lastModified },
-    { url: encodeURI(`${BASE}/en/o-nama`), lastModified },
-    { url: encodeURI(`${BASE}/en/galerija`), lastModified },
-    { url: encodeURI(`${BASE}/en/blog`), lastModified },
-    { url: encodeURI(`${BASE}/en/kako-doci`), lastModified },
-    ...tourDetailsEn,
-    ...blogDetailsEn,
-    { url: encodeURI(`${BASE}/en/maglic-hike`), lastModified },
-    { url: encodeURI(`${BASE}/en/sutjeska-hiking`), lastModified },
-    { url: encodeURI(`${BASE}/en/sutjeska-national-park`), lastModified },
-    { url: encodeURI(`${BASE}/en/trnovacko-lake`), lastModified },
-    { url: encodeURI(`${BASE}/en/perucica-rainforest`), lastModified },
-    { url: encodeURI(`${BASE}/en/zelengora-lakes`), lastModified },
-    { url: encodeURI(`${BASE}/en/partners`), lastModified },
-    ...partnerDetails,
+  const pages: Entry[] = [
+    ...pair("", "/en", 1.0),
+    ...pair("/ture", "/en/tours", 0.9),
+    ...pair("/sutjeska-nacionalni-park", "/en/sutjeska-national-park", 0.9),
+    ...pair("/trnovacko-jezero", "/en/trnovacko-lake", 0.9),
+    ...pair("/maglic-planina", "/en/maglic-hike", 0.9),
+    ...pair("/zelengora", "/en/zelengora-lakes", 0.9),
+    ...pair("/perucica", "/en/perucica-rainforest", 0.9),
+    ...pair("/sutjeska", "/en/sutjeska-hiking", 0.8),
+    ...pair("/kako-doci", "/en/kako-doci", 0.7),
+    ...pair("/o-nama", "/en/o-nama", 0.6),
+    ...pair("/galerija", "/en/galerija", 0.5),
+    ...pair("/vodici", "/en/blog", 0.6),
+    ...pair("/kreiraj-avanturu", "/en/kreiraj-avanturu", 0.6),
+    ...pair("/partneri", "/en/partners", 0.5),
   ];
+
+  const tours: Entry[] = adventures.flatMap((a) =>
+    enSlugs.has(a.slug)
+      ? pair(`/ture/${a.slug}`, `/en/tours/${a.slug}`, 0.8)
+      : [{ url: u(`/ture/${a.slug}`), priority: 0.8 }]
+  );
+
+  const srBlog: Entry[] = blogPosts.map((p) => {
+    const match = getBlogPairBySrSlug(p.slug);
+    return {
+      url: u(`/vodici/${p.slug}`),
+      lastModified: p.date,
+      priority: 0.7,
+      ...(match
+        ? { alternates: { languages: { "sr-Latn": u(`/vodici/${match.sr}`), en: u(`/en/blog/${match.en}`), "x-default": u(`/en/blog/${match.en}`) } } }
+        : {}),
+    };
+  });
+
+  const enBlog: Entry[] = blogPostsEN.map((p) => {
+    const match = getBlogPairByEnSlug(p.slug);
+    return {
+      url: u(`/en/blog/${p.slug}`),
+      lastModified: p.date,
+      priority: 0.7,
+      ...(match
+        ? { alternates: { languages: { "sr-Latn": u(`/vodici/${match.sr}`), en: u(`/en/blog/${match.en}`), "x-default": u(`/en/blog/${match.en}`) } } }
+        : {}),
+    };
+  });
+
+  const partners: Entry[] = partnerExperiences.map((e) => ({
+    url: u(`/en/partners/${e.slug}`),
+    priority: 0.4,
+  }));
+
+  return [...pages, ...tours, ...srBlog, ...enBlog, ...partners];
 }

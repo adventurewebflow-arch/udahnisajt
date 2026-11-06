@@ -48,7 +48,8 @@ export default function TourSchema({ adventure, slug, lang = "sr" }: TourSchemaP
           "url": url
         } : undefined,
         "provider": {
-          "@type": "TouristInformationCenter",
+          "@type": "TravelAgency",
+          "@id": `${BASE}/#organization`,
           "name": "Udahni Avanturu",
           "url": BASE,
           "telephone": "+38765797200",

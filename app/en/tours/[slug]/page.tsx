@@ -7,6 +7,7 @@ import TourSchema from "../../../components/TourSchema";
 import InquiryForm from "../../../components/InquiryForm";
 import Accordion from "../../../components/Accordion";
 import { tourHreflang } from "@/lib/slugMap";
+import { GUIDES, TOUR_GUIDES } from "@/lib/destinationGuides";
 import type { Metadata } from "next";
 
 const BASE = "https://www.udahniavanturu.com";
@@ -86,15 +87,17 @@ export async function generateMetadata({
     return { title: "Tour not found" };
   }
 
+  const seoTitle = adventure.seoTitle ?? `${adventure.title} - Udahni Avanturu`;
+
   return {
-    title: `${adventure.title} - Udahni Avanturu`,
+    title: seoTitle,
     description: adventure.shortDescription,
     alternates: {
       canonical: `${BASE}/en/tours/${slug}`,
       languages: tourHreflang(slug),
     },
     openGraph: {
-      title: `${adventure.title} - Udahni Avanturu`,
+      title: seoTitle,
       description: adventure.shortDescription,
       url: `${BASE}/en/tours/${slug}`,
       siteName: "Udahni Avanturu",
@@ -106,7 +109,7 @@ export async function generateMetadata({
     },
     twitter: {
       card: "summary_large_image",
-      title: `${adventure.title} - Udahni Avanturu`,
+      title: seoTitle,
       description: adventure.shortDescription,
       images: [adventure.image ?? "/opengraph-image.jpg"],
     },
@@ -287,6 +290,23 @@ export default async function TourDetailPageEN({ params }: { params: Promise<{ s
               <section>
                 <h2 className="text-3xl font-bold mb-6">Frequently Asked Questions</h2>
                 <Accordion items={faqItems} />
+              </section>
+            )}
+
+            {TOUR_GUIDES[adventure.slug] && (
+              <section>
+                <h2 className="text-3xl font-bold mb-6">Plan your visit</h2>
+                <div className="flex flex-col gap-3">
+                  {TOUR_GUIDES[adventure.slug].map((key) => (
+                    <Link
+                      key={key}
+                      href={GUIDES[key].en.href}
+                      className="inline-flex items-center text-emerald-400 hover:text-emerald-300 transition-colors"
+                    >
+                      {GUIDES[key].en.label} →
+                    </Link>
+                  ))}
+                </div>
               </section>
             )}
           </div>

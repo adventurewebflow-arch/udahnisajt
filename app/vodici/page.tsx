@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { blogPosts } from "../data/blog";
 import { socialMetadata } from "@/lib/seo";
+import { pathHreflang } from "@/lib/slugMap";
 
 export const metadata = {
   title: "Blog - Udahni Avanturu",
@@ -9,6 +10,7 @@ export const metadata = {
     "Korisni vodiči, savjeti i priče sa naših avantura. Planinarenje, NP Sutjeska, Zelengora, Perućica i više.",
   alternates: {
     canonical: "https://www.udahniavanturu.com/vodici",
+    languages: pathHreflang("/vodici", "/en/blog"),
   },
   ...socialMetadata({
     title: "Blog - Udahni Avanturu",

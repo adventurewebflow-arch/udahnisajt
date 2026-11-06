@@ -3,6 +3,7 @@ import Image from "next/image";
 import { blogPostsEN } from "../../data/blog-en";
 import type { Metadata } from "next";
 import { socialMetadata } from "@/lib/seo";
+import { pathHreflang } from "@/lib/slugMap";
 
 export const metadata: Metadata = {
   title: "Blog – Breathe Adventure",
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
     "Hiking guides, tips and stories from our adventures in Bosnia and Herzegovina. Sutjeska NP, Zelengora, Maglić, Perućica and more.",
   alternates: {
     canonical: "https://www.udahniavanturu.com/en/blog",
+    languages: pathHreflang("/vodici", "/en/blog"),
   },
   ...socialMetadata({
     title: "Blog – Breathe Adventure",

@@ -1,69 +1,56 @@
 const BASE = "https://www.udahniavanturu.com";
 
-export default function HomeSchema() {
+const DESCRIPTION = {
+  sr: "Avanturistička agencija iz Foče: vođene ture u Nacionalnom parku Sutjeska i okolini — planinarenje na Maglić i Trnovačko jezero, prašuma Perućica, Zelengora, kanjoning i rafting na Tari. Licencirani vodiči, male grupe.",
+  en: "Adventure travel agency from Foča, Bosnia and Herzegovina: guided tours in Sutjeska National Park and around — Maglić and Trnovačko Lake hikes, Perućica rainforest, Zelengora, canyoning and Tara rafting. Licensed local guides, small groups.",
+};
+
+export default function HomeSchema({ lang = "sr" }: { lang?: "sr" | "en" }) {
   const schema = {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "Organization",
+        "@type": "TravelAgency",
         "@id": `${BASE}/#organization`,
-        "name": "Udahni Avanturu",
-        "url": BASE,
-        "logo": {
-          "@type": "ImageObject",
-          "url": `${BASE}/logo-icon.png`
-        },
-        "telephone": "+38765797200",
-        "email": "info@udahniavanturu.com",
-        "address": {
+        name: "Udahni Avanturu",
+        alternateName: "Breathe Adventure",
+        url: lang === "en" ? `${BASE}/en` : BASE,
+        logo: { "@type": "ImageObject", url: `${BASE}/logo-icon.png` },
+        image: `${BASE}/opengraph-image.jpg`,
+        telephone: "+38765797200",
+        email: "udahniavanturu@gmail.com",
+        priceRange: "€€",
+        foundingDate: "2021",
+        address: {
           "@type": "PostalAddress",
-          "streetAddress": "Foča",
-          "addressLocality": "Foča",
-          "postalCode": "73300",
-          "addressRegion": "Republika Srpska",
-          "addressCountry": "BA"
+          addressLocality: "Foča",
+          postalCode: "73300",
+          addressRegion: "Republika Srpska",
+          addressCountry: "BA",
         },
-        "sameAs": [
-          "https://www.instagram.com/udahniavanturu",
-          "https://www.facebook.com/udahniavanturu"
+        geo: { "@type": "GeoCoordinates", latitude: 43.5067, longitude: 18.7756 },
+        areaServed: [
+          { "@type": "Place", name: "Sutjeska National Park" },
+          { "@type": "Place", name: "Tara River Canyon" },
+          { "@type": "Place", name: "Durmitor National Park" },
         ],
-        "description": "Organizovane avanturističke ture u Nacionalnom parku Sutjeska — hiking, rafting, kanjoning i kampovanje. Licencirani vodič Petar, male grupe, autentično iskustvo."
+        knowsLanguage: ["sr", "en"],
+        sameAs: [
+          "https://www.instagram.com/udahniavanturu",
+          "https://www.tiktok.com/@udahniavanturu",
+          "https://www.facebook.com/p/Udahni-Avanturu-61554918975889/",
+        ],
+        description: DESCRIPTION[lang],
       },
       {
         "@type": "WebSite",
         "@id": `${BASE}/#website`,
-        "url": BASE,
-        "name": "Udahni Avanturu",
-        "description": "Hiking, rafting, kanjoning i kampovanje u NP Sutjeska, Bosna i Hercegovina",
-        "publisher": {
-          "@id": `${BASE}/#organization`
-        },
-        "inLanguage": ["sr", "en"]
+        url: BASE,
+        name: "Udahni Avanturu",
+        publisher: { "@id": `${BASE}/#organization` },
+        inLanguage: ["sr-Latn", "en"],
       },
-      {
-        "@type": "TouristInformationCenter",
-        "name": "Udahni Avanturu",
-        "url": BASE,
-        "image": `${BASE}/logo-icon.png`,
-        "telephone": "+38765797200",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Foča",
-          "addressLocality": "Foča",
-          "postalCode": "73300",
-          "addressRegion": "Republika Srpska",
-          "addressCountry": "BA"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": "43.5067",
-          "longitude": "18.7756"
-        },
-        "openingHours": "Mo-Su 08:00-20:00",
-        "priceRange": "€€",
-        "description": "Avanturistička agencija iz Foče — hiking, rafting, kanjoning i kampovanje u NP Sutjeska i okolini."
-      }
-    ]
+    ],
   };
 
   return (

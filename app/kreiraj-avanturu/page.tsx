@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import AdventureBuilder from "../components/AdventureBuilder";
 import { socialMetadata } from "@/lib/seo";
+import { pathHreflang } from "@/lib/slugMap";
 
 export const metadata: Metadata = {
   title: "Kreiraj svoju avanturu – Tura po mjeri | Udahni Avanturu",
@@ -9,6 +10,7 @@ export const metadata: Metadata = {
     "Nisi našao turu koja ti odgovara? Složimo je zajedno. Odaberi trajanje, odakle dolaziš i šta želiš doživjeti — Petar ti šalje ponudu u roku od 1 sat.",
   alternates: {
     canonical: "https://www.udahniavanturu.com/kreiraj-avanturu",
+    languages: pathHreflang("/kreiraj-avanturu", "/en/kreiraj-avanturu"),
   },
   ...socialMetadata({
     title: "Kreiraj svoju avanturu – Tura po mjeri | Udahni Avanturu",

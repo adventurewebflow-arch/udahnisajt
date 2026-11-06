@@ -2,6 +2,7 @@ export interface Adventure {
   id: string;
   slug: string;
   title: string;
+  seoTitle?: string;
   category: "popular" | "premium" | "day-trip" | "multi-day";
   location: string;
   shortDescription: string;

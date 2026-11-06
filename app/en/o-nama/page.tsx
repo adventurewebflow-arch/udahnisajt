@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { socialMetadata } from "@/lib/seo";
+import { pathHreflang } from "@/lib/slugMap";
 
 export const metadata: Metadata = {
   title: "About Us | Breathe Adventure",
@@ -9,6 +10,7 @@ export const metadata: Metadata = {
     "Breathe Adventure — Petar and Nevena. Adventures since 2021 through Sutjeska, Zelengora, Trnovačko Lake and Perućica. Small groups, a family approach.",
   alternates: {
     canonical: "https://www.udahniavanturu.com/en/o-nama",
+    languages: pathHreflang("/o-nama", "/en/o-nama"),
   },
   ...socialMetadata({
     title: "About Us | Breathe Adventure",

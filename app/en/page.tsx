@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import HomeSchema from "../components/HomeSchema";
 import AdventureCard from "../components/AdventureCard";
 import GalleryPreview from "../components/GalleryPreview";
 import GoogleReviews from "../components/GoogleReviews";
@@ -100,6 +101,7 @@ export const metadata: Metadata = {
 export default function HomeEN() {
   return (
     <main>
+      <HomeSchema lang="en" />
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-slate-950">
         <div className="relative min-h-[78vh]">

@@ -75,7 +75,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main>
-      <HomeSchema />
+      <HomeSchema lang="sr" />
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-slate-950">
         <div className="relative min-h-[75vh]">
