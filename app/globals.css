@@ -125,6 +125,10 @@ body {
   border-color: rgba(255,255,255,0.10);
 }
 
+.ua-article figure { margin: 2rem 0; }
+.ua-article img { width: 100%; height: auto; border-radius: 0.75rem; display: block; }
+.ua-article figcaption { margin-top: 0.5rem; font-size: 0.875rem; color: #9ca3af; text-align: center; }
+
 /* Home hero image: desktop center, mobile lower framing */
 .ua-home-hero-img {
   object-fit: cover;

@@ -18,6 +18,92 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "tara-vol2",
+    title: "Od Tare do Pive: avantura koja spaja prirodu, gradove i ljude",
+    slug: "od-tare-do-pive-foca-pluzine",
+    excerpt:
+      "Rafting na Tari, osvijetljeni mostovi Foče, tirkizno Pivsko jezero i avanturistički sadržaji u Plužinama — dvije destinacije, dvije strane granice i jedno putovanje.",
+    metadataTitle: "Od Tare do Pive: avantura kroz Foču i Plužine | Udahni Avanturu",
+    metadataDescription:
+      "Rafting na Tari, osvijetljeni mostovi Foče, tirkizno Pivsko jezero i avanturistički sadržaji u Plužinama — otkrijte Foču i Plužine kao jedno putovanje.",
+    author: "Udahni Avanturu",
+    date: "2026-11-24",
+    image: "/images/tours/blog/tara-vol2-avantura-na-tari.webp",
+    imageAlt: "Avantura na rijeci Tari kod Foče",
+    coverImage: "/images/tours/blog/tara-vol2-avantura-na-tari.webp",
+    coverAlt: "Avantura na rijeci Tari kod Foče",
+    tags: ["Foča", "Plužine", "Tara", "Pivsko jezero", "T.A.R.A. v2.0", "Sutjeska"],
+    content: `
+      <p>Od brzaka Tare i osvijetljenih mostova Foče do tirkiznog Pivskog jezera i novih avanturističkih sadržaja u Plužinama — dvije susjedne destinacije nude više nego dovoljno razloga da ih doživite kao jedno putovanje.</p>
+
+      <p>Ima mjesta koja pamtimo po prirodi, druga po avanturi, a neka po ulicama, mostovima i pričama koje nose. Foča i Plužine imaju ponešto od svega.</p>
+
+      <p>Smještene s dvije strane granice Bosne i Hercegovine i Crne Gore, povezuju ih rijeke, planinski pejzaži i bogata ponuda aktivnog odmora. To povezivanje dodatno je osnažila i Evropska unija, kroz projekat T.A.R.A. v2.0 (Tourism, Adrenaline and Rafting Adventure), koji podržava razvoj prekogranične turističke ponude, bolju infrastrukturu i zajedničku promociju. Zahvaljujući tome, Foču i Plužine danas je sve lakše upoznati kao dva dijela iste priče.</p>
+
+      <h2>Foča: od adrenalina na Tari do šetnje osvijetljenim gradom</h2>
+
+      <figure><img src="/images/tours/blog/tara-vol2-rafting-na-tari.webp" alt="Rafting na rijeci Tari kod Foče" /><figcaption>Rafting na Tari — nezaobilazno iskustvo za posjetioce Foče</figcaption></figure>
+
+      <p>Za ljubitelje avanture, Foča je odavno ime koje se vezuje za <a href="/ture" class="text-emerald-400 hover:text-emerald-300 underline">rafting na Tari</a>. Brzaci, moćan kanjon i netaknuta priroda čine ovu rijeku jednom od najpoznatijih rafting destinacija u regionu. Spust Tarom spaja adrenalin i mir prirode u isti dan — iskustvo zbog kojeg se mnogi i vraćaju.</p>
+
+      <p>Avantura se nastavlja i na Drini, koja nastaje spajanjem Tare i Pive na Šćepan Polju i otvara prostor za još raftinga i kajaka. Da bi uživanje na vodi bilo i bezbjednije, kroz projekat T.A.R.A. v2.0 nabavljena je oprema za spašavanje na Drini, a krajem oktobra 2025. održana je i vježba spašavanja s trideset učesnika.</p>
+
+      <p>Ali Foča ne staje kad se avantura na rijeci završi.</p>
+
+      <h2>Osvijetljeni grad kad padne mrak</h2>
+
+      <figure><img src="/images/tours/blog/tara-vol2-osvijetljeni-most-foca.webp" alt="Osvijetljeni most preko Ćehotine u Foči" /><figcaption>Nova LED rasvjeta mostova na Ćehotini i Sat-kule</figcaption></figure>
+
+      <p>Šetnja gradom danas nosi još jedan doživljaj. Dva mosta na Ćehotini i Sat-kula Mehmed-paše Kukavice, kulturno-istorijski spomenik iz 18. vijeka, dobili su novu LED rasvjetu. Svjetlo naglašava linije mostova i staru Sat-kulu, i gradskom jezgru uveče daje sasvim drugu atmosferu.</p>
+
+      <p>Taj novi večernji izgled Foče rezultat je projekta T.A.R.A. v2.0, koji finansira Evropska unija, a kroz koji su uređeni pojedini turistički i kulturno-istorijski lokaliteti grada. Tako Foča, uz svoje prirodne ljepote, daje posjetiocu još jedan razlog da nakon dana na Tari prošeta i samim gradom.</p>
+
+      <h2>Novi sadržaji, drugačija Foča</h2>
+
+      <figure><img src="/images/tours/blog/tara-vol2-elektricna-bicikla-foca.webp" alt="Električna bicikla i novi turistički sadržaji u Foči" /><figcaption>Četiri električna bicikla predata Turističkoj organizaciji Grada Foča</figcaption></figure>
+
+      <p>Razvoj turizma nisu samo nove atrakcije, nego i bolji način da posjetilac otkrije ono što već postoji.</p>
+
+      <p>U Foči je postavljen turistički LED bilbord koji promoviše atrakcije Foče i Plužina, pa sadržaji obje opštine dobijaju veću vidljivost. Nabavljena su i četiri električna bicikla, predata Turističkoj organizaciji Grada Foča — s njima se okolina grada može istražiti na posve drugačiji način, uključujući rute prema <a href="/zelengora" class="text-emerald-400 hover:text-emerald-300 underline">Zelengori</a>, u <a href="/sutjeska" class="text-emerald-400 hover:text-emerald-300 underline">Nacionalnom parku Sutjeska</a>, i prema Tari.</p>
+
+      <p>Kroz projekat su postavljeni i nova turistička signalizacija i vidikovci, a na udaljenijim lokalitetima klupe sa solarnim panelima za punjenje telefona. Posjetioci se lakše snalaze, a i daleko od grada imaju gdje da stanu, odmore se i ostanu povezani.</p>
+
+      <p>Sve to vodi istoj ideji — da Foča bude mjesto gdje se avantura, kultura i savremeni turistički sadržaji prirodno dopunjuju.</p>
+
+      <h2>Preko granice: Plužine kao nastavak avanture</h2>
+
+      <figure><img src="/images/tours/blog/tara-vol2-pivsko-jezero.webp" alt="Panorama Pivskog jezera u Crnoj Gori" /><figcaption>Tirkizno Pivsko jezero, jedan od najljepših prizora ovog dijela Crne Gore</figcaption></figure>
+
+      <p>Nakon Foče, put se može nastaviti prema Plužinama, gdje čekaju drugačiji, ali jednako upečatljivi pejzaži. Pivsko jezero, poznato po tirkiznoj boji i planinama koje ga okružuju, jedan je od najljepših prizora ovog dijela Crne Gore. Park prirode Piva nudi prostor za aktivan odmor, istraživanje i uživanje u planini.</p>
+
+      <p>Onima koji traže više adrenalina, poseban doživljaj je Via Ferrata Piva — uređena penjačka ruta koja, uz opremu i vođenje, vodi preko stjenovitog terena. Ponuda Plužina dodatno je obogaćena u septembru 2026, otvaranjem novog Avanturističkog parka.</p>
+
+      <figure><img src="/images/tours/blog/tara-vol2-avanturisticki-park-pluzine.webp" alt="Novi Avanturistički park u Plužinama" /><figcaption>Novi Avanturistički park u Plužinama, otvoren u septembru 2026.</figcaption></figure>
+
+      <h2>Dvije destinacije, jedno putovanje</h2>
+
+      <figure><img src="/images/tours/blog/tara-vol2-fam-trip-foca-pluzine.webp" alt="Učesnici FAM tripa Foča–Plužine" /><figcaption>FAM trip koji je povezao turističke doživljaje s obje strane granice</figcaption></figure>
+
+      <p>Ono što Foču i Plužine čini posebno zanimljivim jeste upravo mogućnost da se različita iskustva spoje u jedno putovanje. Rafting na Tari, večernja šetnja osvijetljenim centrom Foče, pejzaži Pive i avanturistički sadržaji u Plužinama — dovoljno razloga da se boravak u ovom kraju produži.</p>
+
+      <p>Potencijal zajedničke ponude predstavljen je i na FAM tripu u septembru 2026, koji je povezao doživljaje s obje strane granice. Iza svega stoji projekat „Tourism, Adrenaline and Rafting Adventure – T.A.R.A. v2.0", koji se realizuje uz podršku Evropske unije kroz IPA III Program prekogranične saradnje Bosna i Hercegovina – Crna Gora. Kroz bolju infrastrukturu, nove sadržaje i zajedničku promociju, projekat čini Foču i Plužine privlačnijima svima koji traže aktivan i sadržajan odmor.</p>
+
+      <h2>Saradnja koja ostaje i nakon projekta</h2>
+
+      <p>T.A.R.A. v2.0 nije donio samo nove sadržaje, nego je i ojačao saradnju institucija s obje strane granice. Službe spašavanja iz Foče i Plužina održale su četiri koordinaciona sastanka i kroz zajedničke vježbe — na Drini u oktobru 2025. i na Pivskom jezeru u novembru 2026. — uvježbavale reagovanje u vanrednim situacijama.</p>
+
+      <p>Jedan od najvažnijih trajnih rezultata je Integrisana strategija razvoja održive turističke destinacije Foča–Plužine 2026–2030, prvi zajednički planski dokument dvije zajednice. Uz Memorandum o razumijevanju o zajedničkom finansiranju turističkih projekata, ona postavlja temelj za nastavak saradnje i poslije projekta.</p>
+
+      <p>Zajednička ponuda predstavljena je i na 46. i 47. Međunarodnom sajmu turizma u Beogradu, a promotivna kampanja u tradicionalnim i digitalnim medijima dosegla je više od 1,7 miliona ljudi — i dodatno povećala vidljivost Foče i Plužina kao povezane destinacije.</p>
+
+      <h2>Avantura se ne završava na granici</h2>
+
+      <p>Najbolja putovanja često su baš ona koja spajaju različite doživljaje. Foča nosi uzbuđenje Tare, bogato kulturno-istorijsko nasljeđe i znamenitosti koje su dobile novi sjaj. Plužine odgovaraju moćnim pejzažima Pive i sve bogatijom avanturističkom ponudom. Zajedno pokazuju da priroda, kultura i avantura mogu biti dio iste priče.</p>
+
+      <p>Dvije destinacije, dvije strane granice — i mnogo razloga da ih otkrijete zajedno.</p>
+    `,
+  },
+  {
     id: "1",
     title: "Trnovačko jezero: Kako doći, gdje spavati i zašto morate doći",
     slug: "trnovacko-jezero-vodic",

@@ -20,6 +20,11 @@ function getAlternatePath(pathname: string): {
     return { isEn, srPath: pair.sr, enPath: pair.en };
   }
 
+  // SR-only blog posts have no EN counterpart; a prefix swap would 404.
+  if (/^\/vodici\/[^/]+\/?$/.test(pathname)) {
+    return { isEn, srPath: pathname, enPath: "/en/blog" };
+  }
+
   // 2) Fallback: naive prefix swap. Correct for shared-slug routes
   //    (tour details, list pages, and pages with identical paths like
   //    /galerija, /o-nama, /kako-doci, /kreiraj-avanturu).
