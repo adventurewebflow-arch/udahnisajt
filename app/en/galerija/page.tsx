@@ -83,9 +83,18 @@ export default function GalleryPageEN() {
 
         {activeIndex !== null && (
           <div
-            className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4"
+            className="fixed inset-0 z-[10000] bg-black/90 flex items-center justify-center p-4"
             onClick={close}
           >
+            <button
+              type="button"
+              onClick={(e) => { e.stopPropagation(); close(); }}
+              className="absolute top-4 right-4 z-10 bg-white/15 hover:bg-white/25 text-white rounded-full w-12 h-12 flex items-center justify-center text-3xl leading-none transition"
+              aria-label="Close"
+            >
+              ×
+            </button>
+
             {/* Prev */}
             <button
               type="button"

@@ -78,7 +78,11 @@ export default function GridGallery({
       else if (e.key === "ArrowRight") next();
     };
     window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
+    document.body.style.overflow = "hidden";
+    return () => {
+      window.removeEventListener("keydown", onKey);
+      document.body.style.overflow = "";
+    };
   }, [lightbox, prev, next]);
 
   if (!images || images.length === 0) return null;
@@ -110,10 +114,18 @@ export default function GridGallery({
 
       {lightbox && (
         <div
-          className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center"
+          className="fixed inset-0 bg-black/90 z-[10000] flex items-center justify-center"
           onClick={() => setLightbox(false)}
           role="presentation"
         >
+          <button
+            type="button"
+            onClick={(e) => { e.stopPropagation(); setLightbox(false); }}
+            className="absolute top-4 right-4 z-10 bg-white/15 hover:bg-white/25 text-white rounded-full w-12 h-12 flex items-center justify-center text-3xl leading-none transition"
+            aria-label={labels.close}
+          >
+            ×
+          </button>
           <button
             type="button"
             onClick={(e) => {
@@ -151,14 +163,6 @@ export default function GridGallery({
             aria-label={labels.next}
           >
             ›
-          </button>
-          <button
-            type="button"
-            onClick={() => setLightbox(false)}
-            className="absolute top-4 right-4 text-white/70 hover:text-white text-2xl"
-            aria-label={labels.close}
-          >
-            ✕
           </button>
           <div className="absolute bottom-4 text-white/60 text-sm pointer-events-none">
             {current + 1} / {images.length}

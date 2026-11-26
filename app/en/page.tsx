@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image, { getImageProps } from "next/image";
 import Link from "next/link";
 import HomeSchema from "../components/HomeSchema";
 import AdventureCard from "../components/AdventureCard";
@@ -99,20 +99,20 @@ export const metadata: Metadata = {
 };
 
 export default function HomeEN() {
+  const common = { alt: "Hiker on a Zelengora meadow, Sutjeska National Park", fill: true, sizes: "100vw", priority: true } as const;
+  const { props: { srcSet: mobileSrcSet } } = getImageProps({ ...common, src: "/images/tours/porodicni-vikend-tjentiste-zelengora/porodicni-vikend-zelengora-tjentiste1.webp", quality: 80 });
+  const { props: desktopProps } = getImageProps({ ...common, src: "/hero.webp", quality: 80 });
+
   return (
     <main>
       <HomeSchema lang="en" />
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-slate-950">
         <div className="relative min-h-[78vh]">
-          <Image
-            src="/hero.webp"
-            alt="Udahni Avanturu hero"
-            fill
-            priority
-            sizes="100vw"
-            className="object-cover object-[90%_70%] md:object-center"
-          />
+          <picture>
+            <source media="(max-width: 767px)" srcSet={mobileSrcSet} />
+            <img {...desktopProps} alt={desktopProps.alt} className="absolute inset-0 h-full w-full object-cover object-[50%_40%] md:object-center" />
+          </picture>
           <div className="absolute inset-0">
             <div className="absolute inset-0 bg-gradient-to-b from-slate-950/30 via-slate-950/20 to-slate-950/55" />
             <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(16,185,129,0.08),transparent_55%)]" />
