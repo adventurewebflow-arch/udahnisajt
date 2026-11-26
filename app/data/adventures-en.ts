@@ -17,7 +17,7 @@ export interface Adventure {
   image?: string;
   imageAlt?: string;
   imagePosition?: string;
-  images?: { src: string; alt: string }[];
+  images?: { src: string; alt: string; altEn?: string }[];
   highlights: string[];
   itinerary: { dayTitle: string; description: string }[];
   includes: string[];
@@ -612,9 +612,9 @@ Accommodation is also your choice — a bungalow with shared bathroom or a tent 
     seoTitle: "Team Building in Sutjeska National Park, Bosnia | Udahni Avanturu",
     category: "premium",
     location: "Sutjeska NP / Tjentište / Foča",
-    image: "/images/tours/premium/ekipa-prvi-maj.webp",
-    imageAlt: "Team building in nature – a group in Sutjeska National Park",
-    imagePosition: "center 55%",
+    image: "/images/sezona2026/ekipa-terasa-trnovacko-jezero.webp",
+    imageAlt: "Group on the terrace at Trnovačko Lake – team building in nature",
+    imagePosition: "center 60%",
     shortDescription:
       "Real team building doesn't happen in a room with a projector. It happens on the river, on the mountain, in the canyon — where people show who they really are.",
     aboutTour: `Fifteen years in tourism taught us one thing: a team that has spent a night in tents at Trnovačko Lake, made it through a canyon or climbed Maglić goes back to the office different. Not because they talked about teamwork — but because they lived it.
@@ -1032,7 +1032,9 @@ Every programme is built around the group. Get in touch with the number of peopl
     difficulty: "Demanding",
     price: "95€ per person",
     groupSize: "1–20 people",
-    image: "/images/tours/day-trips/maglic-trnovacko.webp",
+    image: "/images/sezona2026/grupa-na-vrhu-maglica.webp",
+    imageAlt: "Group on the summit of Maglić, the highest peak in Bosnia and Herzegovina",
+    imagePosition: "center 40%",
     highlights: [
       "Maglić (2386m)",
       "Trnovačko Lake",

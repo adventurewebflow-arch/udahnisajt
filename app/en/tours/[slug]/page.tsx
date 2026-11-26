@@ -2,10 +2,12 @@ import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { getAdventureENBySlug, adventuresEN } from "../../../data/adventures-en";
+import { getAdventureBySlug } from "../../../data/adventures";
 import { formatTourDate, getUpcomingTourDates } from "../../../data/tour-dates";
 import TourSchema from "../../../components/TourSchema";
 import InquiryForm from "../../../components/InquiryForm";
 import Accordion from "../../../components/Accordion";
+import TourGallery from "../../../components/TourGallery";
 import { tourHreflang } from "@/lib/slugMap";
 import { GUIDES, TOUR_GUIDES } from "@/lib/destinationGuides";
 import type { Metadata } from "next";
@@ -125,6 +127,12 @@ export default async function TourDetailPageEN({ params }: { params: Promise<{ s
   }
 
   const upcomingDates = getUpcomingTourDates(adventure.slug);
+
+  const srAdventure = getAdventureBySlug(adventure.slug);
+  const galleryImages = (srAdventure?.images ?? []).map((img, i) => ({
+    src: img.src,
+    alt: img.altEn ?? `${adventure.title} – photo ${i + 1}`,
+  }));
 
   const itineraryItems =
     adventure.itinerary?.map((d) => ({
@@ -246,6 +254,8 @@ export default async function TourDetailPageEN({ params }: { params: Promise<{ s
                 <Accordion items={itineraryItems} defaultOpenIndex={0} />
               </section>
             )}
+
+            {galleryImages.length > 0 && <TourGallery images={galleryImages} />}
 
             {/* Included */}
             {adventure.includes && adventure.includes.length > 0 && (

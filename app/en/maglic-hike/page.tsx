@@ -30,12 +30,13 @@ export default function MaglicHikePage() {
     <main className="min-h-screen bg-slate-950 pt-20">
       <section className="relative h-[42vh] min-h-[320px] flex items-center">
         <Image
-          src="/images/tours/blog/uspon-na-maglic-savjeti.webp"
-          alt="Hiking on Maglić above Trnovačko Lake"
+          src="/images/sezona2026/planinarka-greben-maglic-pogled.webp"
+          alt="Hiker on the Maglić ridge with a view over the mountains"
           fill
           priority
           sizes="100vw"
           className="object-cover"
+          style={{ objectPosition: "center 45%" }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/55 to-slate-950" />
         <div className="relative z-10 mx-auto w-full max-w-5xl px-4 sm:px-6 lg:px-8">

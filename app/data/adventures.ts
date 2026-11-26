@@ -17,7 +17,7 @@ export interface Adventure {
   image?: string;
   imageAlt?: string;
   imagePosition?: string;
-  images?: { src: string; alt: string }[];
+  images?: { src: string; alt: string; altEn?: string }[];
   highlights: string[];
   /** description: use template literal with blank lines between paragraphs, e.g. description: `Paragraph 1...\n\nParagraph 2...`.trim() */
   itinerary: { dayTitle: string; description: string }[];
@@ -45,17 +45,21 @@ export const adventures: Adventure[] = [
     image: "/images/tours/kampovanje-trnovacko/trnovacko-jezero-card.webp",
     imageAlt: "Kampovanje na Trnovačkom jezeru s usponom na Maglić – NP Sutjeska, Trnovačko jezero",
     images: [
-      { src: "/images/tours/gallery/trnovacko-jezero-najljepsa-slika.webp", alt: "Trnovačko jezero" },
-      { src: "/images/tours/gallery/dolazak.trnovacko-jezero.webp", alt: "Dolazak na Trnovačko jezero" },
-      { src: "/images/tours/gallery/hiking-na-trnovacko-jezero.webp", alt: "Hiking na Trnovačko jezero" },
-      { src: "/images/tours/gallery/kamp-na-trnovackom-jezeru.webp", alt: "Kamp na Trnovačkom jezeru" },
-      { src: "/images/tours/gallery/sator-kampovanje-trnovacko-jezero.webp", alt: "Šator na Trnovačkom jezeru" },
-      { src: "/images/tours/gallery/jutro-kampovanje-trnovacko-jezero.webp", alt: "Jutro na kampu Trnovačko" },
-      { src: "/images/tours/gallery/kupanje-trnovacko-jezero.webp", alt: "Kupanje na Trnovačkom jezeru" },
-      { src: "/images/tours/gallery/vidikovac-trnovackojezero.webp", alt: "Vidikovac Trnovačko jezero" },
-      { src: "/images/tours/gallery/pogled-sa-vrha-maglica.webp", alt: "Pogled sa vrha Maglića" },
-      { src: "/images/tours/gallery/katuni-trnovacko-jezero.webp", alt: "Katuni Trnovačko jezero" },
-      { src: "/images/tours/gallery/ekipa-ide-na-maglic.webp", alt: "Ekipa ide na Maglić" },
+      { src: "/images/tours/gallery/trnovacko-jezero-najljepsa-slika.webp", alt: "Trnovačko jezero", altEn: "Trnovačko Lake" },
+      { src: "/images/sezona2026/konj-trnovacko-jezero-odraz-planine.webp", alt: "Konj pije vodu na Trnovačkom jezeru", altEn: "A horse drinking at Trnovačko Lake" },
+      { src: "/images/tours/gallery/hiking-na-trnovacko-jezero.webp", alt: "Hiking na Trnovačko jezero", altEn: "Hiking to Trnovačko Lake" },
+      { src: "/images/tours/gallery/kamp-na-trnovackom-jezeru.webp", alt: "Kamp na Trnovačkom jezeru", altEn: "Camp at Trnovačko Lake" },
+      { src: "/images/tours/gallery/sator-kampovanje-trnovacko-jezero.webp", alt: "Šator na Trnovačkom jezeru", altEn: "Tent at Trnovačko Lake" },
+      { src: "/images/sezona2026/pogled-iz-satora-kamp-trnovacko-jezero.webp", alt: "Pogled iz šatora na kamp kod Trnovačkog jezera", altEn: "View from the tent at the Trnovačko Lake camp" },
+      { src: "/images/sezona2026/kukuruz-na-vatri-kamp-trnovacko-jezero.webp", alt: "Kukuruz na vatri u kampu na Trnovačkom jezeru", altEn: "Corn roasting over the fire at the Trnovačko Lake camp" },
+      { src: "/images/sezona2026/logorska-vatra-kamp-trnovacko-jezero-noc.webp", alt: "Logorska vatra u kampu na Trnovačkom jezeru noću", altEn: "Campfire at the Trnovačko Lake camp at night" },
+      { src: "/images/tours/gallery/kupanje-trnovacko-jezero.webp", alt: "Kupanje na Trnovačkom jezeru", altEn: "Swimming in Trnovačko Lake" },
+      { src: "/images/tours/gallery/vidikovac-trnovackojezero.webp", alt: "Vidikovac Trnovačko jezero", altEn: "Viewpoint above Trnovačko Lake" },
+      { src: "/images/sezona2026/vidikovac-iznad-trnovackog-jezera-planinarka.webp", alt: "Planinarka na stijeni iznad Trnovačkog jezera", altEn: "Hiker on a rock above Trnovačko Lake" },
+      { src: "/images/tours/gallery/ekipa-ide-na-maglic.webp", alt: "Ekipa ide na Maglić", altEn: "Group heading up Maglić" },
+      { src: "/images/sezona2026/grupa-na-vrhu-maglica.webp", alt: "Grupa na vrhu Maglića", altEn: "Group on the summit of Maglić" },
+      { src: "/images/tours/gallery/pogled-sa-vrha-maglica.webp", alt: "Pogled sa vrha Maglića", altEn: "View from the summit of Maglić" },
+      { src: "/images/sezona2026/rucak-na-katunu-grupa.webp", alt: "Ručak sa grupom na katunu ispod Volujka", altEn: "Lunch with the group at a katun below Volujak" },
     ],
     highlights: [
       "Trnovačko jezero",
@@ -411,6 +415,9 @@ export const adventures: Adventure[] = [
     image: "/images/tours/vikend-divljina/vikend-u-divljini-hero.webp",
     imageAlt: "Vikend u divljini – NP Sutjeska, Tjentište",
     images: [
+      { src: "/images/sezona2026/dorucak-terasa-trnovacko-jezero.webp", alt: "Doručak na terasi kod Trnovačkog jezera", altEn: "Breakfast on the terrace at Trnovačko Lake" },
+      { src: "/images/sezona2026/grupa-planinara-trnovacko-jezero-jutro.webp", alt: "Grupa planinara na Trnovačkom jezeru ujutro", altEn: "Group of hikers at Trnovačko Lake in the morning" },
+      { src: "/images/sezona2026/logorska-vatra-grupa-kamp.webp", alt: "Grupa oko logorske vatre u kampu", altEn: "Group around the campfire at camp" },
       { src: "/images/tours/gallery/trnovacko-jezero-najljepsa-slika.webp", alt: "Trnovačko jezero" },
       { src: "/images/tours/gallery/katuni-trnovacko-jezero.webp", alt: "Katuni" },
       { src: "/images/tours/gallery/zelengora-jezero.webp", alt: "Jezero na Zelengori" },
@@ -642,9 +649,17 @@ Smještaj biraš ti — bungalov sa zajedničkim kupatilom ili šator (oprema ob
     title: "Teambuilding u srcu prirode – NP Sutjeska",
     category: "premium",
     location: "NP Sutjeska / Tjentište / Foča",
-    image: "/images/tours/premium/ekipa-prvi-maj.webp",
-    imageAlt: "Teambuilding u prirodi – ekipa u NP Sutjeska",
-    imagePosition: "center 55%",
+    image: "/images/sezona2026/ekipa-terasa-trnovacko-jezero.webp",
+    imageAlt: "Ekipa na terasi kod Trnovačkog jezera – teambuilding u prirodi",
+    imagePosition: "center 60%",
+    images: [
+      { src: "/images/sezona2026/ekipa-terasa-trnovacko-jezero.webp", alt: "Ekipa na terasi kod Trnovačkog jezera", altEn: "Group on the terrace at Trnovačko Lake" },
+      { src: "/images/sezona2026/velika-grupa-trnovacko-jezero.webp", alt: "Velika grupa na Trnovačkom jezeru", altEn: "Large group at Trnovačko Lake" },
+      { src: "/images/sezona2026/ekipa-kamp-trnovacko-jezero-sator.webp", alt: "Ekipa u kampu na Trnovačkom jezeru", altEn: "Group at the Trnovačko Lake camp" },
+      { src: "/images/sezona2026/logorska-vatra-ekipa-noc.webp", alt: "Ekipa oko logorske vatre noću", altEn: "Group around the campfire at night" },
+      { src: "/images/sezona2026/rucak-drvena-koliba-grupa.webp", alt: "Ručak grupe u drvenoj kolibi", altEn: "Group lunch in a wooden shelter" },
+      { src: "/images/sezona2026/grupa-slavlje-katun-volujak-livada.webp", alt: "Grupa slavi na livadi kod katuna ispod Volujka", altEn: "Group celebrating on a meadow by the katun below Volujak" },
+    ],
     shortDescription:
       "Pravi teambuilding nije u sali sa projektorom. On je na rijeci, na planini, u kanjonu — gdje se ljudi upoznaju kakvi zaista jesu.",
     aboutTour: `Petnaest godina rada u turizmu naučilo nas je jedno: tim koji je zajedno proveo noć u šatoru na Trnovačkom jezeru, prošao kroz kanjon ili se popeo na Maglić, vraća se u kancelariju drugačiji. Ne zato što su pričali o timskom radu — već zato što su ga živjeli.
@@ -1404,6 +1419,10 @@ Prevoz organizujemo po dogovoru iz Beograda, Sarajeva, Dubrovnika, Podgorice, Za
     groupSize: "1–50 osoba",
     image: "/images/tours/day-trips/trnovacko-jezero.webp",
     images: [
+      { src: "/images/sezona2026/grupa-planinara-trnovacko-jezero-jutro.webp", alt: "Grupa planinara na Trnovačkom jezeru ujutro", altEn: "Group of hikers at Trnovačko Lake in the morning" },
+      { src: "/images/sezona2026/planinari-na-obali-trnovackog-jezera.webp", alt: "Planinari na obali Trnovačkog jezera", altEn: "Hikers on the shore of Trnovačko Lake" },
+      { src: "/images/sezona2026/trnovacko-jezero-snijeg-proljece-planinari.webp", alt: "Planinari na Trnovačkom jezeru u proljeće pod snijegom", altEn: "Hikers at Trnovačko Lake in spring with snow on the peaks" },
+      { src: "/images/sezona2026/trnovacko-jezero-obala-borovi.webp", alt: "Obala Trnovačkog jezera ispod borova", altEn: "Trnovačko Lake shore under the pines" },
       { src: "/images/tours/gallery/trnovacko-jezero-najljepsa-slika.webp", alt: "Trnovačko jezero" },
       { src: "/images/tours/gallery/trnovacko-lijepa.webp", alt: "Trnovačko jezero ljepota" },
       { src: "/images/tours/gallery/put-na-trnovacko-jezero.webp", alt: "Put na Trnovačko jezero" },
@@ -1467,8 +1486,12 @@ Prevoz organizujemo po dogovoru iz Beograda, Sarajeva, Dubrovnika, Podgorice, Za
     difficulty: "Zahtjevna",
     price: "95€ po osobi",
     groupSize: "1–20 osoba",
-    image: "/images/tours/day-trips/maglic-trnovacko.webp",
+    image: "/images/sezona2026/grupa-na-vrhu-maglica.webp",
+    imageAlt: "Grupa na vrhu Maglića, najvišeg vrha BiH",
+    imagePosition: "center 40%",
     images: [
+      { src: "/images/sezona2026/grupa-na-vrhu-maglica.webp", alt: "Grupa na vrhu Maglića", altEn: "Group on the summit of Maglić" },
+      { src: "/images/sezona2026/planinarka-greben-maglic-pogled.webp", alt: "Planinarka na grebenu Maglića", altEn: "Hiker on the Maglić ridge" },
       { src: "/images/tours/gallery/ekipa-ide-na-maglic.webp", alt: "Ekipa ide na Maglić" },
       { src: "/images/tours/gallery/pogled-sa-vrha-maglica.webp", alt: "Pogled sa vrha Maglića" },
       { src: "/images/tours/gallery/pogled-maglic.webp", alt: "Maglić pogled" },
