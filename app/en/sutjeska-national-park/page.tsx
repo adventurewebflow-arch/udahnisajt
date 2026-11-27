@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { landingHreflang } from "@/lib/slugMap";
 import WhatsAppTrackedLink from "@/app/components/WhatsAppTrackedLink";
+import TempPhoneNote from "@/app/components/TempPhoneNote";
 import { socialMetadata } from "@/lib/seo";
 
 const BASE = "https://www.udahniavanturu.com";
@@ -151,7 +152,7 @@ export default function SutjeskaNationalParkPage() {
               View all tours →
             </Link>
             <WhatsAppTrackedLink
-              href="https://wa.me/38765797200?text=Hello%2C%20I%20would%20like%20to%20visit%20Sutjeska%20National%20Park."
+              href="https://wa.me/38765996951?text=Hello%2C%20I%20would%20like%20to%20visit%20Sutjeska%20National%20Park."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-6 py-3 border border-slate-600 text-slate-300 hover:bg-slate-800 font-semibold rounded-xl transition-colors"
@@ -317,7 +318,7 @@ export default function SutjeskaNationalParkPage() {
               We are always in contact with Mountain Rescue. Safety is the only thing that never gets compromised.
             </p>
             <WhatsAppTrackedLink
-              href="https://wa.me/38765797200"
+              href="https://wa.me/38765996951"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-white font-semibold px-6 py-3 rounded-xl transition-colors"
@@ -357,16 +358,16 @@ export default function SutjeskaNationalParkPage() {
       <section className="max-w-5xl mx-auto px-4 py-16 text-center">
         <h2 className="text-3xl font-bold text-white mb-4">Ready to explore Sutjeska?</h2>
         <p className="text-slate-400 mb-8 max-w-xl mx-auto">
-          Contact us on WhatsApp — we respond within one hour and can organise your tour with one day&apos;s notice.
+          Call or message us on +387 65 996 951 (Viber or WhatsApp) — we reply quickly and can organise your tour with one day&apos;s notice.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <WhatsAppTrackedLink
-            href="https://wa.me/38765797200?text=Hello%2C%20I%20would%20like%20to%20visit%20Sutjeska%20National%20Park."
+            href="https://wa.me/38765996951?text=Hello%2C%20I%20would%20like%20to%20visit%20Sutjeska%20National%20Park."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center px-8 py-4 bg-emerald-500 hover:bg-emerald-400 text-white font-semibold rounded-xl transition-colors"
           >
-            WhatsApp — +387 65 797 200
+            WhatsApp — +387 65 996 951
           </WhatsAppTrackedLink>
           <Link
             href="/en/tours"
@@ -375,6 +376,7 @@ export default function SutjeskaNationalParkPage() {
             Browse all tours
           </Link>
         </div>
+        <TempPhoneNote lang="en" className="mt-2" />
       </section>
 
     </main>

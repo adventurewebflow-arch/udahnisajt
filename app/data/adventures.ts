@@ -496,7 +496,7 @@ Smještaj biraš ti — bungalov sa zajedničkim kupatilom ili šator (oprema ob
       },
       {
         q: "Kako da rezervišem mjesto?",
-        a: "Javi nam se na WhatsApp +387 65 797 200 ili emailom udahniavanturu@gmail.com. Reci nam koji termin i koji smještaj (bungalov ili šator). Rezervacija se potvrđuje avansom od 50€ po osobi, ostatak plaćaš po dolasku.",
+        a: "Javi nam se na WhatsApp +387 65 996 951 ili emailom udahniavanturu@gmail.com. Reci nam koji termin i koji smještaj (bungalov ili šator). Rezervacija se potvrđuje avansom od 50€ po osobi, ostatak plaćaš po dolasku.",
       },
       {
         q: "Može li dijete ići na ovu turu?",

@@ -869,7 +869,7 @@ export const blogPosts: BlogPost[] = [
     <h2>Kako doći iz Sarajeva</h2>
     <p><strong>Autom:</strong> Sarajevo → Kijevo → Trnovo → Dobro Polje → Miljevina → Foča → Tjentište. Oko 2 sata, 130 km.</p>
     <p><strong>Autobusom:</strong> Iz Istočnog Sarajeva svakodnevne linije prema Foči — polasci u 7:45, 8:00, 9:00, 11:00, 13:00, 14:00, 16:00, 18:00, 19:00, 20:00h. Sa Foče organizujemo transfer do Tjentišta.</p>
-    <p><strong>Organizovani transfer:</strong> Direktan kombi iz Sarajeva do Tjentišta — organizujemo po dogovoru za grupe. Pitaj nas na WhatsApp +387 65 797 200.</p>
+    <p><strong>Organizovani transfer:</strong> Direktan kombi iz Sarajeva do Tjentišta — organizujemo po dogovoru za grupe. Pitaj nas na WhatsApp +387 65 996 951.</p>
     <p><strong>Aerodrom Sarajevo</strong> je samo 85 km od Tjentišta — najbliži aerodrom za dolazak u NP Sutjeska.</p>
 
     <h2>Krenite</h2>

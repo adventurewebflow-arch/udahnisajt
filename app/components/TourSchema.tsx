@@ -52,7 +52,7 @@ export default function TourSchema({ adventure, slug, lang = "sr" }: TourSchemaP
           "@id": `${BASE}/#organization`,
           "name": "Udahni Avanturu",
           "url": BASE,
-          "telephone": "+38765797200",
+          "telephone": "+38765996951",
           "address": {
             "@type": "PostalAddress",
             "addressLocality": "Foča",

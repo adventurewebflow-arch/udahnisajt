@@ -37,7 +37,7 @@ const faqsEn = [
   },
   {
     q: "How do I book a spot?",
-    a: "You can book via the contact form on our website, by email, Instagram DM or directly on WhatsApp +387 65 797 200. We respond within 1 hour.",
+    a: "You can book via the contact form on our website, by email, Instagram DM or directly on WhatsApp +387 65 996 951. We respond within 1 hour.",
   },
   {
     q: "How many people do I need for a private tour?",

@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import TempPhoneNote from "./TempPhoneNote";
 
 export default function Footer() {
   const pathname = usePathname();
@@ -75,6 +76,7 @@ export default function Footer() {
                 >
                   udahniavanturu@gmail.com
                 </a>
+                <TempPhoneNote lang={isEn ? "en" : "sr"} className="mt-2" />
               </li>
               <li>Foča, BiH</li>
             </ul>

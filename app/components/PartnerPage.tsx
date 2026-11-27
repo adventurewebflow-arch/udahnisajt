@@ -3,6 +3,8 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import TempPhoneNote from "./TempPhoneNote";
+import { SHOW_WHATSAPP_LINKS } from "@/lib/contact";
 
 const FORMSPREE_URL = "https://formspree.io/f/xqedwzll";
 const HERO_IMAGE = "/images/partners/zelengora-djevojka-u-planini.webp";
@@ -346,12 +348,15 @@ export default function PartnerPage({ lang }: { lang: Lang }) {
             {rule}
             <p className="text-gray-400">{t.formIntro}</p>
             <div className="mt-2 divide-y divide-gray-800">
+              {SHOW_WHATSAPP_LINKS && (
               <div className="py-3">
                 <div className="text-sm text-gray-400">WhatsApp</div>
-                <a href="https://wa.me/38765797200" target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-white hover:text-emerald-400">
-                  +387 65 797 200
+                <a href="https://wa.me/38765996951" target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-white hover:text-emerald-400">
+                  +387 65 996 951
                 </a>
+                <TempPhoneNote lang={lang} className="mt-2" />
               </div>
+              )}
               <div className="py-3">
                 <div className="text-sm text-gray-400">Email</div>
                 <span className="text-lg font-semibold text-white select-all">udahniavanturu@gmail.com</span>

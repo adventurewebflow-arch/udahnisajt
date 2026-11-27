@@ -5,7 +5,7 @@ import { trackConversion } from "@/lib/gtag";
 
 export default function WhatsAppButton() {
   const isEn = usePathname().startsWith("/en");
-  const phone = "38765797200";
+  const phone = "38765996951";
   const message = encodeURIComponent(
     isEn
       ? "Hi, I'm looking at your website and have a few questions."
