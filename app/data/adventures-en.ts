@@ -457,7 +457,7 @@ Accommodation is also your choice — a bungalow with shared bathroom or a tent 
       },
       {
         q: "How do I book?",
-        a: "Contact us on WhatsApp +387 65 996 951 or by email at udahniavanturu@gmail.com. Tell us your dates and which accommodation you prefer (bungalow or tent). Booking is confirmed with a €50 deposit per person, the remainder is paid on arrival.",
+        a: "Contact us on WhatsApp +387 65 797 200 or by email at udahniavanturu@gmail.com. Tell us your dates and which accommodation you prefer (bungalow or tent). Booking is confirmed with a €50 deposit per person, the remainder is paid on arrival.",
       },
       {
         q: "Can children join this tour?",

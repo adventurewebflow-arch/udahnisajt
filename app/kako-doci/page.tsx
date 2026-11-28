@@ -165,19 +165,13 @@ export default function KakoDoci() {
             Iz Sarajeva, Beograda, Dubrovnika, Podgorice, Mostara, Zagreba i ostalih gradova — organizujemo kombi ili autobus direktno do Tjentišta. Cijena po dogovoru, zavisno od broja osoba i polazišta.
           </p>
           <WhatsAppTrackedLink
-            href="https://wa.me/38765996951?text=Zdravo%2C%20zanima%20me%20transfer%20do%20Tjenti%C5%A1ta."
+            href="https://wa.me/38765797200?text=Zdravo%2C%20zanima%20me%20transfer%20do%20Tjenti%C5%A1ta."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold px-6 py-3 rounded-xl transition-colors"
           >
             💬 Pitaj za transfer na WhatsApp
           </WhatsAppTrackedLink>
-          <Link
-            href="/#kontakt"
-            className="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold px-6 py-3 rounded-xl transition-colors"
-          >
-            Pošalji upit za transfer
-          </Link>
         </div>
       </section>
 

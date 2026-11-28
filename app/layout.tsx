@@ -5,7 +5,6 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import WhatsAppButton from "./components/WhatsAppButton";
-import { SHOW_WHATSAPP_BUTTON } from "@/lib/contact";
 
 export const metadata: Metadata = {
   title: "Udahni Avanturu – Hiking, rafting i kampovanje u Bosni i Hercegovini",
@@ -70,7 +69,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main className="pt-20">{children}</main>
         {showVercelAnalytics && <Analytics />}
         <Footer />
-        {SHOW_WHATSAPP_BUTTON && <WhatsAppButton />}
+        <WhatsAppButton />
       </body>
     </html>
   );

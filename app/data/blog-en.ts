@@ -709,7 +709,7 @@ export const blogPostsEN: BlogPostEN[] = [
     <h2>How to Get There from Sarajevo</h2>
     <p><strong>By car:</strong> Sarajevo → Kijevo → Trnovo → Dobro Polje → Miljevina → Foča → Tjentište. Around 2 hours, 130 km.</p>
     <p><strong>By bus:</strong> From East Sarajevo there are daily services to Foča — departures at 07:45, 08:00, 09:00, 11:00, 13:00, 14:00, 16:00, 18:00, 19:00, 20:00. From Foča we organise the transfer to Tjentište.</p>
-    <p><strong>Organised transfer:</strong> Direct minibus from Sarajevo to Tjentište — organised on request for groups. Contact us on WhatsApp +387 65 996 951.</p>
+    <p><strong>Organised transfer:</strong> Direct minibus from Sarajevo to Tjentište — organised on request for groups. Contact us on WhatsApp +387 65 797 200.</p>
     <p><strong>Sarajevo Airport</strong> is just 85 km from Tjentište — the closest airport to Sutjeska National Park.</p>
 
     <h2>Come and See</h2>

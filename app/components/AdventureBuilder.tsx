@@ -4,7 +4,6 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import { trackConversion } from "@/lib/gtag";
-import { SHOW_WHATSAPP_LINKS } from "@/lib/contact";
 
 const FORMSPREE_URL = "https://formspree.io/f/xqedwzll";
 const TOTAL_STEPS = 5;
@@ -385,7 +384,7 @@ export default function AdventureBuilder() {
 
   const activityList = activityLabels;
 
-  const whatsappUrl = `https://wa.me/38765996951?text=${encodeURIComponent(lang.whatsappMsg)}`;
+  const whatsappUrl = `https://wa.me/38765797200?text=${encodeURIComponent(lang.whatsappMsg)}`;
 
   const showTransportToggle = Boolean(origin && origin !== "lokalno" && origin !== "drugo");
   const durmitorTransportWarning =
@@ -1036,7 +1035,6 @@ export default function AdventureBuilder() {
             <p className="text-blue-300 text-sm leading-relaxed">{lang.pricingShort}</p>
           </div>
 
-          {SHOW_WHATSAPP_LINKS && (
           <a
             href={whatsappUrl}
             onClick={() => trackConversion("whatsapp")}
@@ -1049,7 +1047,6 @@ export default function AdventureBuilder() {
             </svg>
             {lang.sendWhatsapp}
           </a>
-          )}
 
           <button
             type="button"

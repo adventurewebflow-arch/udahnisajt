@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { landingHreflang } from "@/lib/slugMap";
 import WhatsAppTrackedLink from "@/app/components/WhatsAppTrackedLink";
-import TempPhoneNote from "@/app/components/TempPhoneNote";
 import { socialMetadata } from "@/lib/seo";
 
 const BASE = "https://www.udahniavanturu.com";
@@ -152,7 +151,7 @@ export default function SutjeskaNacionalniParkPage() {
               Pogledaj sve ture →
             </Link>
             <WhatsAppTrackedLink
-              href="https://wa.me/38765996951?text=Zdravo%2C%20%C5%BEelim%20da%20posjetim%20Nacionalni%20park%20Sutjeska."
+              href="https://wa.me/38765797200?text=Zdravo%2C%20%C5%BEelim%20da%20posjetim%20Nacionalni%20park%20Sutjeska."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-6 py-3 border border-slate-600 text-slate-300 hover:bg-slate-800 font-semibold rounded-xl transition-colors"
@@ -318,7 +317,7 @@ export default function SutjeskaNacionalniParkPage() {
               Uvijek smo u kontaktu sa Gorskom službom spašavanja. Sigurnost je jedina stvar koja se nikad ne kompromituje.
             </p>
             <WhatsAppTrackedLink
-              href="https://wa.me/38765996951"
+              href="https://wa.me/38765797200"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-white font-semibold px-6 py-3 rounded-xl transition-colors"
@@ -358,16 +357,16 @@ export default function SutjeskaNacionalniParkPage() {
       <section className="max-w-5xl mx-auto px-4 py-16 text-center">
         <h2 className="text-3xl font-bold text-white mb-4">Spreman za Sutjesku?</h2>
         <p className="text-slate-400 mb-8 max-w-xl mx-auto">
-          Pozovi ili piši na +387 65 996 951 (Viber ili WhatsApp) — odgovaramo brzo i možemo organizovati turu i sa jednodnevnom najavom.
+          Piši nam na WhatsApp — odgovaramo u roku od jednog sata i možemo organizovati turu i sa jednodnevnim najavom.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <WhatsAppTrackedLink
-            href="https://wa.me/38765996951?text=Zdravo%2C%20%C5%BEelim%20da%20posjetim%20Nacionalni%20park%20Sutjeska."
+            href="https://wa.me/38765797200?text=Zdravo%2C%20%C5%BEelim%20da%20posjetim%20Nacionalni%20park%20Sutjeska."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center px-8 py-4 bg-emerald-500 hover:bg-emerald-400 text-white font-semibold rounded-xl transition-colors"
           >
-            WhatsApp — +387 65 996 951
+            WhatsApp — +387 65 797 200
           </WhatsAppTrackedLink>
           <Link
             href="/ture"
@@ -376,7 +375,6 @@ export default function SutjeskaNacionalniParkPage() {
             Pogledaj sve ture
           </Link>
         </div>
-        <TempPhoneNote lang="sr" className="mt-2" />
       </section>
 
     </main>

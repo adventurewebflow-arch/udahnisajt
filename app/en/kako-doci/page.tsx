@@ -165,19 +165,13 @@ export default function HowToGetHere() {
             From Sarajevo, Belgrade, Dubrovnik, Podgorica, Mostar, Zagreb and other cities — we arrange a minibus or coach straight to Tjentište. The price is agreed in advance and depends on group size and starting point.
           </p>
           <WhatsAppTrackedLink
-            href="https://wa.me/38765996951?text=Hello%2C%20I%E2%80%99m%20interested%20in%20a%20transfer%20to%20Tjenti%C5%A1te."
+            href="https://wa.me/38765797200?text=Hello%2C%20I%E2%80%99m%20interested%20in%20a%20transfer%20to%20Tjenti%C5%A1te."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold px-6 py-3 rounded-xl transition-colors"
           >
             💬 Ask about a transfer on WhatsApp
           </WhatsAppTrackedLink>
-          <Link
-            href="/en#contact"
-            className="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold px-6 py-3 rounded-xl transition-colors"
-          >
-            Ask about a transfer
-          </Link>
         </div>
       </section>
 

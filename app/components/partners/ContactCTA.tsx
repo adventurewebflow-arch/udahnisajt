@@ -1,12 +1,11 @@
 import Image from "next/image";
 import WhatsAppTrackedLink from "../WhatsAppTrackedLink";
-import TempPhoneNote from "../TempPhoneNote";
 import Contour from "./Contour";
 import { BTN_EM, BTN_LINE, WRAP } from "./styles";
 import { PARTNER_IMAGE_BASE } from "@/lib/partnerExperiences";
 
 const EMAIL = "udahniavanturu@gmail.com";
-const WHATSAPP = "https://wa.me/38765996951";
+const WHATSAPP = "https://wa.me/38765797200";
 
 export default function ContactCTA({
   emailSubject = "Partnership — Sutjeska 2027",
@@ -77,7 +76,7 @@ export default function ContactCTA({
                 rel="noopener noreferrer"
                 className="transition-colors hover:text-emerald-400"
               >
-                📞 +387 65 996 951
+                📞 +387 65 797 200
               </WhatsAppTrackedLink>
               <a
                 href="https://instagram.com/udahniavanturu"
@@ -88,7 +87,6 @@ export default function ContactCTA({
                 ◎ @udahniavanturu
               </a>
             </div>
-            <TempPhoneNote lang="en" className="mt-2" />
           </div>
         </div>
       </div>

@@ -17,7 +17,7 @@ export default function HomeSchema({ lang = "sr" }: { lang?: "sr" | "en" }) {
         url: lang === "en" ? `${BASE}/en` : BASE,
         logo: { "@type": "ImageObject", url: `${BASE}/logo-icon.png` },
         image: `${BASE}/opengraph-image.jpg`,
-        telephone: "+38765996951",
+        telephone: "+38765797200",
         email: "udahniavanturu@gmail.com",
         priceRange: "€€",
         foundingDate: "2021",

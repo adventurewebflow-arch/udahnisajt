@@ -35,7 +35,7 @@ const faqs = [
   },
   {
     q: "Kako da rezervišem mjesto?",
-    a: "Možeš rezervisati putem kontakt forme na sajtu, emailom, Instagram DM-om ili direktno na WhatsApp +387 65 996 951. Odgovaramo u roku od 1 sat.",
+    a: "Možeš rezervisati putem kontakt forme na sajtu, emailom, Instagram DM-om ili direktno na WhatsApp +387 65 797 200. Odgovaramo u roku od 1 sat.",
   },
   {
     q: "Koliko ljudi je potrebno za privatnu turu?",
