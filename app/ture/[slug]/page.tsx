@@ -47,6 +47,8 @@ export async function generateMetadata({
     };
   }
 
+  const ogFile = adventure.slug.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+
   return {
     title: `${adventure.title} - Udahni Avanturu`,
     description: adventure.shortDescription,
@@ -61,15 +63,13 @@ export async function generateMetadata({
       siteName: "Udahni Avanturu",
       type: "website",
       locale: "sr_BA",
-      images: adventure.image
-        ? [{ url: adventure.image, alt: adventure.imageAlt ?? adventure.title }]
-        : [{ url: "/opengraph-image.jpg", width: 1200, height: 630 }],
+      images: [{ url: `/images/og/tours/${ogFile}.jpg`, width: 1200, height: 630, alt: adventure.imageAlt ?? adventure.title }],
     },
     twitter: {
       card: "summary_large_image",
       title: `${adventure.title} - Udahni Avanturu`,
       description: adventure.shortDescription,
-      images: [adventure.image ?? "/opengraph-image.jpg"],
+      images: [`/images/og/tours/${ogFile}.jpg`],
     },
   };
 }

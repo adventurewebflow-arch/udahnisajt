@@ -90,6 +90,7 @@ export async function generateMetadata({
   }
 
   const seoTitle = adventure.seoTitle ?? `${adventure.title} - Udahni Avanturu`;
+  const ogFile = adventure.slug.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 
   return {
     title: seoTitle,
@@ -105,15 +106,13 @@ export async function generateMetadata({
       siteName: "Udahni Avanturu",
       type: "website",
       locale: "en_US",
-      images: adventure.image
-        ? [{ url: adventure.image, alt: adventure.imageAlt ?? adventure.title }]
-        : [{ url: "/opengraph-image.jpg", width: 1200, height: 630 }],
+      images: [{ url: `/images/og/tours/${ogFile}.jpg`, width: 1200, height: 630, alt: adventure.imageAlt ?? adventure.title }],
     },
     twitter: {
       card: "summary_large_image",
       title: seoTitle,
       description: adventure.shortDescription,
-      images: [adventure.image ?? "/opengraph-image.jpg"],
+      images: [`/images/og/tours/${ogFile}.jpg`],
     },
   };
 }
