@@ -35,13 +35,6 @@ export const metadata: Metadata = {
       "Organizovane ture u Nacionalnom parku Sutjeska, Bosna i Hercegovina. Male grupe, licencirani vodiči, nezaboravne avanture u prirodi blizu Foče.",
     images: ["/opengraph-image.jpg"],
   },
-  icons: {
-    icon: [
-      { url: "/logo-icon.png", sizes: "512x512", type: "image/png" },
-    ],
-    shortcut: "/logo-icon.png",
-    apple: "/logo-icon.png",
-  },
   manifest: "/site.webmanifest",
 };
 
